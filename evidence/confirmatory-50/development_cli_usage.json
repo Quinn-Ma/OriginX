@@ -1,0 +1,153 @@
+{
+  "schema": "originx_confirmatory_cli_usage_v1",
+  "unique_observed_cli_invocations": 6,
+  "observed_status_counts": {
+    "ok": 6
+  },
+  "known_usage_totals": {
+    "input_tokens": 102367,
+    "cached_input_tokens": 0,
+    "output_tokens": 1011,
+    "reasoning_tokens": 265
+  },
+  "observed_calls_missing_counters": {
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0
+  },
+  "known_invocation_latency_sum_seconds": 56.25190310001199,
+  "observed_calls_missing_latency": 0,
+  "request_files": 6,
+  "requests_without_observed_cli_receipt": [],
+  "broker_inventory_provided": true,
+  "inventory_complete": true,
+  "complete_input_output_token_accounting": true,
+  "interrupted_cli_starts_without_receipt": [],
+  "invalid_receipts": [],
+  "cost_usd": null,
+  "reasoning_tokens_included_in_output_not_added_again": true,
+  "interpretation": "Known observed usage; unpublished/interrupted calls may be unknown. No inferred zero token usage or monetary price.",
+  "calls": [
+    {
+      "invocation_key": "3b8296bdca4f35504d93a6e0d8df960b4e4c18106761093e13e37dd52864dd9d",
+      "status": "ok",
+      "request_ids": [
+        "a1ef7e07ef30b692e37a93c92e6c06cf"
+      ],
+      "receipt_sha256": "50b000a7e952913f7de71b774ae2cedec9f9a084294519dfaa3c37231e84a915",
+      "usage": {
+        "input_tokens": 16795,
+        "cached_input_tokens": 0,
+        "output_tokens": 151,
+        "reasoning_tokens": 37
+      },
+      "latency_seconds": 7.961814900001627,
+      "source_paths": [
+        "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\development_sync\\20261009T190652449606Z\\evidence\\results\\originx-confirmatory-development-20261009-v2\\requests\\a1ef7e07ef30b692e37a93c92e6c06cf\\cli_receipt.json",
+        "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\development_sync\\20261009T190652449606Z\\broker-projection\\batches\\20261009T190455-6650b8f67e04\\receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "72a1530ef638b2dd93a619d23a78e6e716129a5cb320135727f6d350e80a31dc",
+      "status": "ok",
+      "request_ids": [
+        "0c7a6d17db2e911a493df0d9f6503c9f"
+      ],
+      "receipt_sha256": "d2b45e3adcb5588ac5cca89d45fff08ad776fff2458c259c5822697cb7aad6e3",
+      "usage": {
+        "input_tokens": 17204,
+        "cached_input_tokens": 0,
+        "output_tokens": 179,
+        "reasoning_tokens": 53
+      },
+      "latency_seconds": 10.040054199998849,
+      "source_paths": [
+        "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\development_sync\\20261009T190652449606Z\\evidence\\results\\originx-confirmatory-development-20261009-v2\\requests\\0c7a6d17db2e911a493df0d9f6503c9f\\cli_receipt.json",
+        "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\development_sync\\20261009T190652449606Z\\broker-projection\\batches\\20261009T190246-73a010c5a29e\\receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "90705a4ce36f30cc680bd2c079b87f3b4fcafd6bd2c3dc1ef8354dc7353820eb",
+      "status": "ok",
+      "request_ids": [
+        "289334b8d975c07465ca46e11b07cacd"
+      ],
+      "receipt_sha256": "88a6b264b9c2df2967ae7884fca75adee7bfd383b3dd98ecbd6684b8658bd839",
+      "usage": {
+        "input_tokens": 16793,
+        "cached_input_tokens": 0,
+        "output_tokens": 188,
+        "reasoning_tokens": 76
+      },
+      "latency_seconds": 9.182983100006822,
+      "source_paths": [
+        "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\development_sync\\20261009T190652449606Z\\evidence\\results\\originx-confirmatory-development-20261009-v2\\requests\\289334b8d975c07465ca46e11b07cacd\\cli_receipt.json",
+        "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\development_sync\\20261009T190652449606Z\\broker-projection\\batches\\20261009T190341-cb28b5103c57\\receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "a7604e4c0c7276045231f235fb2859c02ba7a57956268c903383f1a4cd545520",
+      "status": "ok",
+      "request_ids": [
+        "09f5a7cf7f1e9f551d398e9d447eb8a2"
+      ],
+      "receipt_sha256": "98577ddb0be571b391c19fc4bcb44a2b46b87698786c502c4067dd75ea25d635",
+      "usage": {
+        "input_tokens": 17202,
+        "cached_input_tokens": 0,
+        "output_tokens": 169,
+        "reasoning_tokens": 27
+      },
+      "latency_seconds": 10.02689370000735,
+      "source_paths": [
+        "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\development_sync\\20261009T190652449606Z\\evidence\\results\\originx-confirmatory-development-20261009-v2\\requests\\09f5a7cf7f1e9f551d398e9d447eb8a2\\cli_receipt.json",
+        "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\development_sync\\20261009T190652449606Z\\broker-projection\\batches\\20261009T190403-dc6ef8763309\\receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "bc1899ae47f57f8c6acb6bc58d6912c3328d3cac09a94b039ac114039ca8cb3d",
+      "status": "ok",
+      "request_ids": [
+        "3b1e5269b1ee724afe9bae95b53128bd"
+      ],
+      "receipt_sha256": "17494725b18bb5dc4c317e190063ab7c4b6df84fdbc5f46acb2b2f7b5f4dd2dd",
+      "usage": {
+        "input_tokens": 17180,
+        "cached_input_tokens": 0,
+        "output_tokens": 164,
+        "reasoning_tokens": 41
+      },
+      "latency_seconds": 8.857720599989989,
+      "source_paths": [
+        "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\development_sync\\20261009T190652449606Z\\evidence\\results\\originx-confirmatory-development-20261009-v2\\requests\\3b1e5269b1ee724afe9bae95b53128bd\\cli_receipt.json",
+        "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\development_sync\\20261009T190652449606Z\\broker-projection\\batches\\20261009T190516-68472acf5d75\\receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "c9dc2e8a333622a86d9fae805e49c6687a8eeb359bdfa311cfca78b7dd332f22",
+      "status": "ok",
+      "request_ids": [
+        "4f9c7490e598b6af688593427c26831c"
+      ],
+      "receipt_sha256": "15b4e0e442aed6daee330a44d7a04bb6f62c8a1e4cddaf4b31ab479a1f10a756",
+      "usage": {
+        "input_tokens": 17193,
+        "cached_input_tokens": 0,
+        "output_tokens": 160,
+        "reasoning_tokens": 31
+      },
+      "latency_seconds": 10.18243660000735,
+      "source_paths": [
+        "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\development_sync\\20261009T190652449606Z\\evidence\\results\\originx-confirmatory-development-20261009-v2\\requests\\4f9c7490e598b6af688593427c26831c\\cli_receipt.json",
+        "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\development_sync\\20261009T190652449606Z\\broker-projection\\batches\\20261009T190313-4ebd3e1db67e\\receipt.json"
+      ],
+      "transcript_problems": []
+    }
+  ]
+}

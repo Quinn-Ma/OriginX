@@ -1,0 +1,3871 @@
+{
+  "schema": "originx_final_delivery_readonly_audit_v1",
+  "started_at_utc": "2026-10-09T22:47:32.760777+00:00",
+  "report_sha256": "d437095e785fd603cb6e99a2ae0d9556dbc2254a212ebef138e4a07c592c8270",
+  "no_experiment_or_cli_called": true,
+  "archives": [
+    {
+      "path": "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\sync\\originx-confirmatory-20261009-v1\\evidence.tar.gz",
+      "sha256": "7793c498d1c87037385eb47f279422e98d34d4ad7a9c60fe5541978c76e731a1",
+      "bytes": 71813198,
+      "receipt_sha256": "f5514052278ba34974297d0ee2483e93032bf960253dec3bb6ad8293b715d5a9",
+      "verified": true
+    },
+    {
+      "path": "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\finalization_v3\\final-analysis-evidence.tar.gz",
+      "sha256": "c812f49d235103b311af98a8fa4501f45c79d1731ebdf8683aaefc09a9143abf",
+      "bytes": 19694578,
+      "receipt_sha256": "f90ae0882cb333f05b8a1db62286b65da1494b03453a777fee23d658012fdd84",
+      "verified": true
+    },
+    {
+      "path": "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\sync_multigpu\\originx-confirmatory-multigpu-20261009-v1\\evidence.tar.gz",
+      "sha256": "f2f8ddaca5bbbafed0f708c3eaf245541e80919faca4a566e309b18e145f4c14",
+      "bytes": 41520097,
+      "receipt_sha256": "9ff5bf3eb0e3f95eae8e26b5f1ddb5d1ffb94d1b3bad75df2378525c6437e7d7",
+      "verified": true
+    },
+    {
+      "path": "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\finalization_multigpu_v1\\final-analysis-evidence.tar.gz",
+      "sha256": "4ddaebddb65e50a6d323557d160a264d3a1f66299d7bbfc443d47d782905f207",
+      "bytes": 2641439,
+      "receipt_sha256": "85ab5e2d7f1a00d4f4b9de75403865fcc9483165111384d0d34910dfa8ab711e",
+      "verified": true
+    },
+    {
+      "path": "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\sync_multigpu_v2\\originx-confirmatory-multigpu-20261009-v2\\evidence.tar.gz",
+      "sha256": "c6be46ffd34bdb686516c7e180e214e96161255e981b8b27651af81b019433d3",
+      "bytes": 103011615,
+      "receipt_sha256": "a7ba141b653192f5f0fb0811c3e9fa8fe55884cf71067bd1efb3be5d171af72e",
+      "verified": true
+    },
+    {
+      "path": "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\finalization_multigpu_v2\\final-analysis-evidence.tar.gz",
+      "sha256": "aa38e46b6cc06e1d5b777b450fe1549d2cc4a20f3a07ea83aa78c78795d2dd88",
+      "bytes": 17772486,
+      "receipt_sha256": "63f6c644c042257efb32a0818eefd7a09896dd17b14a45ab3f5b1ed8d38a7653",
+      "verified": true
+    },
+    {
+      "path": "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\finalization_reduced_v2\\analysis-reduced-v2.tar.gz",
+      "sha256": "56d9c65d3ec9e6a2f9bbb93238cd821fedae134465d78d6c9ce57d086d8ade5a",
+      "bytes": 11245016,
+      "receipt_sha256": "066e7b94f86774d26aa00eca469d7f0a20fecedcfebf0a3445e083ad4102ec76",
+      "verified": true
+    }
+  ],
+  "batches": [
+    {
+      "name": "originx-confirmatory-20261009-v1",
+      "all_claims": 198,
+      "cohort_claims": 7,
+      "outside_cohort_claims": 191,
+      "config_sha256": "7da64fe270ff0026d17ecbe04ceb3f9d119306ee122460d18c8285dafb487bde",
+      "terminal_cleanup_preserved": true
+    },
+    {
+      "name": "originx-confirmatory-multigpu-20261009-v1",
+      "all_claims": 99,
+      "cohort_claims": 99,
+      "outside_cohort_claims": 0,
+      "config_sha256": "a7f303f3a4261dd827e4d87b7572692f77ca9d59a85c9037757842620c2925e9",
+      "terminal_cleanup_preserved": true
+    },
+    {
+      "name": "originx-confirmatory-multigpu-20261009-v2",
+      "all_claims": 244,
+      "cohort_claims": 244,
+      "outside_cohort_claims": 0,
+      "config_sha256": "93372faf9a9b3f548b02fae82ee4a6fdb7a6d9a82585e61534251c8289590297",
+      "terminal_cleanup_preserved": true
+    }
+  ],
+  "scope": {
+    "unique_cases": 50,
+    "unique_arm_assignments": 350,
+    "claims_disjoint": true,
+    "outside_cohort_prior_arms_retained": 191,
+    "all_individual_outcomes_valid": true,
+    "original_2500_confirmation_complete": false,
+    "valid_outcomes_do_not_mean_delivered_interventions": true
+  },
+  "six_comparisons": {
+    "B G_vs_C": {
+      "categories": {
+        "matched": 44,
+        "unknown": 0,
+        "initial_deviation": 6,
+        "prefix_deviation": 0
+      },
+      "valid_paired_2x2": {
+        "both_success": 22,
+        "treatment_only_success": 1,
+        "reference_only_success": 1,
+        "both_failure": 20
+      },
+      "rescues": 1,
+      "regressions": 1,
+      "unresolved_comparisons": 6,
+      "conditional_valid_pair_net_effect": 0.0,
+      "full_cohort_net_effect_bounds": {
+        "low": -0.12,
+        "high": 0.0,
+        "kind": "identification_bounds_not_confidence_interval"
+      },
+      "conditional_bootstrap_95_interval": [
+        -0.06818181818181818,
+        0.06818181818181818
+      ],
+      "matched_treatment_delivery": {
+        "delivered": 27,
+        "early_terminal": 17
+      }
+    },
+    "B L_vs_C": {
+      "categories": {
+        "matched": 45,
+        "unknown": 0,
+        "initial_deviation": 5,
+        "prefix_deviation": 0
+      },
+      "valid_paired_2x2": {
+        "both_success": 23,
+        "treatment_only_success": 0,
+        "reference_only_success": 1,
+        "both_failure": 21
+      },
+      "rescues": 0,
+      "regressions": 1,
+      "unresolved_comparisons": 5,
+      "conditional_valid_pair_net_effect": -0.022222222222222223,
+      "full_cohort_net_effect_bounds": {
+        "low": -0.12,
+        "high": -0.02,
+        "kind": "identification_bounds_not_confidence_interval"
+      },
+      "conditional_bootstrap_95_interval": [
+        -0.06666666666666667,
+        0.0
+      ],
+      "matched_treatment_delivery": {
+        "fallback": 9,
+        "delivered": 19,
+        "early_terminal": 17
+      }
+    },
+    "B R_vs_C": {
+      "categories": {
+        "matched": 47,
+        "unknown": 0,
+        "initial_deviation": 3,
+        "prefix_deviation": 0
+      },
+      "valid_paired_2x2": {
+        "both_success": 25,
+        "treatment_only_success": 0,
+        "reference_only_success": 1,
+        "both_failure": 21
+      },
+      "rescues": 0,
+      "regressions": 1,
+      "unresolved_comparisons": 3,
+      "conditional_valid_pair_net_effect": -0.02127659574468085,
+      "full_cohort_net_effect_bounds": {
+        "low": -0.08,
+        "high": -0.02,
+        "kind": "identification_bounds_not_confidence_interval"
+      },
+      "conditional_bootstrap_95_interval": [
+        -0.06382978723404255,
+        0.0
+      ],
+      "matched_treatment_delivery": {
+        "delivered": 27,
+        "early_terminal": 20
+      }
+    },
+    "B V_vs_C": {
+      "categories": {
+        "matched": 44,
+        "unknown": 0,
+        "initial_deviation": 6,
+        "prefix_deviation": 0
+      },
+      "valid_paired_2x2": {
+        "both_success": 24,
+        "treatment_only_success": 1,
+        "reference_only_success": 0,
+        "both_failure": 19
+      },
+      "rescues": 1,
+      "regressions": 0,
+      "unresolved_comparisons": 6,
+      "conditional_valid_pair_net_effect": 0.022727272727272728,
+      "full_cohort_net_effect_bounds": {
+        "low": -0.08,
+        "high": 0.04,
+        "kind": "identification_bounds_not_confidence_interval"
+      },
+      "conditional_bootstrap_95_interval": [
+        0.0,
+        0.06818181818181818
+      ],
+      "matched_treatment_delivery": {
+        "fallback": 8,
+        "delivered": 18,
+        "early_terminal": 18
+      }
+    },
+    "B V_vs_L": {
+      "categories": {
+        "matched": 42,
+        "unknown": 0,
+        "initial_deviation": 8,
+        "prefix_deviation": 0
+      },
+      "valid_paired_2x2": {
+        "both_success": 21,
+        "treatment_only_success": 2,
+        "reference_only_success": 0,
+        "both_failure": 19
+      },
+      "rescues": 2,
+      "regressions": 0,
+      "unresolved_comparisons": 8,
+      "conditional_valid_pair_net_effect": 0.047619047619047616,
+      "full_cohort_net_effect_bounds": {
+        "low": -0.06,
+        "high": 0.16,
+        "kind": "identification_bounds_not_confidence_interval"
+      },
+      "conditional_bootstrap_95_interval": [
+        0.0,
+        0.11904761904761904
+      ],
+      "matched_treatment_delivery": {
+        "fallback": 8,
+        "delivered": 18,
+        "early_terminal": 16
+      }
+    },
+    "base V_vs_C": {
+      "categories": {
+        "matched": 47,
+        "unknown": 0,
+        "initial_deviation": 3,
+        "prefix_deviation": 0
+      },
+      "valid_paired_2x2": {
+        "both_success": 23,
+        "treatment_only_success": 0,
+        "reference_only_success": 1,
+        "both_failure": 23
+      },
+      "rescues": 0,
+      "regressions": 1,
+      "unresolved_comparisons": 3,
+      "conditional_valid_pair_net_effect": -0.02127659574468085,
+      "full_cohort_net_effect_bounds": {
+        "low": -0.06,
+        "high": 0.0,
+        "kind": "identification_bounds_not_confidence_interval"
+      },
+      "conditional_bootstrap_95_interval": [
+        -0.06382978723404255,
+        0.0
+      ],
+      "matched_treatment_delivery": {
+        "fallback": 10,
+        "delivered": 16,
+        "early_terminal": 21
+      }
+    }
+  },
+  "actual_cli_usage": {
+    "calls": 72,
+    "input_tokens": 1244218,
+    "output_tokens": 24566,
+    "reasoning_tokens": 8705,
+    "latency_sum_seconds": 871.879415399977,
+    "receipt_hashes_and_unique_invocation_keys_verified": true,
+    "scope": "all three main batches including outside cohort; development excluded"
+  },
+  "development_usage_separate": {
+    "B_and_base": {
+      "path": "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\development_cli_usage.json",
+      "sha256": "69c1af862dfca20d796b7fe966f61430e1ea3a858a72a93fec4e64e61a8a8e31",
+      "calls": 6,
+      "tokens": {
+        "input_tokens": 102367,
+        "cached_input_tokens": 0,
+        "output_tokens": 1011,
+        "reasoning_tokens": 265
+      },
+      "latency_sum_seconds": 56.25190310001199
+    },
+    "GR00T_development_only": {
+      "path": "D:\\codex\\2026-10-08\\new-chat\\work\\originx_gr00t_confirmation_20261009_v2\\development_evidence_v2\\evidence\\results\\originx-gr00t-confirmatory-development-20261009-v2\\analysis-final\\cli_usage.json",
+      "sha256": "e05a241391d954e884e66925e602315d45b3431513338edd3342073a726c53a6",
+      "calls": 1,
+      "tokens": {
+        "input_tokens": 17203,
+        "cached_input_tokens": 0,
+        "output_tokens": 213,
+        "reasoning_tokens": 83
+      },
+      "latency_sum_seconds": 10.852536399994278
+    }
+  },
+  "remote_identity_audit": {
+    "batches": [
+      {
+        "batch": "originx-confirmatory-20261009-v1",
+        "recorded_owner_references": 408,
+        "unique_owner_births": 210,
+        "all_recorded_owners_inactive": true,
+        "owners": [
+          {
+            "pid": 1027679,
+            "process_start_ticks": 3868845,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/campaign.owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1087149,
+            "process_start_ticks": 4093663,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-16--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1085117,
+            "process_start_ticks": 4087100,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-16--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1073323,
+            "process_start_ticks": 4052104,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-16--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1060706,
+            "process_start_ticks": 4017295,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-16--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1087152,
+            "process_start_ticks": 4093713,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-17--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1085757,
+            "process_start_ticks": 4089554,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-17--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1073898,
+            "process_start_ticks": 4054609,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-17--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1062197,
+            "process_start_ticks": 4021002,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-17--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1087431,
+            "process_start_ticks": 4095016,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-18--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1085932,
+            "process_start_ticks": 4090655,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-18--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1073940,
+            "process_start_ticks": 4055311,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-18--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1063089,
+            "process_start_ticks": 4023757,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-18--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1087463,
+            "process_start_ticks": 4095267,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-19--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1085953,
+            "process_start_ticks": 4090907,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-19--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1073971,
+            "process_start_ticks": 4055562,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-19--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1064907,
+            "process_start_ticks": 4028515,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-19--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1086023,
+            "process_start_ticks": 4091207,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-20--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1075087,
+            "process_start_ticks": 4059918,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-20--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1067587,
+            "process_start_ticks": 4035327,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-20--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1086600,
+            "process_start_ticks": 4092509,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-21--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1075774,
+            "process_start_ticks": 4062921,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-21--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1068032,
+            "process_start_ticks": 4039735,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-21--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1086744,
+            "process_start_ticks": 4092811,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-22--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1082491,
+            "process_start_ticks": 4079141,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-22--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1071513,
+            "process_start_ticks": 4044591,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-22--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1086831,
+            "process_start_ticks": 4092961,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-23--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1085175,
+            "process_start_ticks": 4087251,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-23--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1072273,
+            "process_start_ticks": 4048396,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-02-23--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031794,
+            "process_start_ticks": 3908648,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-40--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1045084,
+            "process_start_ticks": 3957098,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-40--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031786,
+            "process_start_ticks": 3908644,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-40--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031778,
+            "process_start_ticks": 3908641,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-40--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1048276,
+            "process_start_ticks": 3969513,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-40--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031810,
+            "process_start_ticks": 3908656,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-40--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031802,
+            "process_start_ticks": 3908652,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-40--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031795,
+            "process_start_ticks": 3908648,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-41--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1045790,
+            "process_start_ticks": 3958699,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-41--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031787,
+            "process_start_ticks": 3908645,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-41--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031779,
+            "process_start_ticks": 3908641,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-41--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1048277,
+            "process_start_ticks": 3969563,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-41--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031811,
+            "process_start_ticks": 3908656,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-41--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031803,
+            "process_start_ticks": 3908652,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-41--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031796,
+            "process_start_ticks": 3908649,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-42--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1045986,
+            "process_start_ticks": 3959250,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-42--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031788,
+            "process_start_ticks": 3908645,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-42--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031780,
+            "process_start_ticks": 3908642,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-42--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1048278,
+            "process_start_ticks": 3969564,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-42--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031812,
+            "process_start_ticks": 3908657,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-42--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031804,
+            "process_start_ticks": 3908653,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-42--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031797,
+            "process_start_ticks": 3908649,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-43--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1046352,
+            "process_start_ticks": 3960452,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-43--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031789,
+            "process_start_ticks": 3908646,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-43--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031781,
+            "process_start_ticks": 3908642,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-43--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1048386,
+            "process_start_ticks": 3969965,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-43--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031813,
+            "process_start_ticks": 3908657,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-43--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031805,
+            "process_start_ticks": 3908653,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-43--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031798,
+            "process_start_ticks": 3908650,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-44--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1047862,
+            "process_start_ticks": 3967909,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-44--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031790,
+            "process_start_ticks": 3908646,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-44--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031782,
+            "process_start_ticks": 3908643,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-44--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1048399,
+            "process_start_ticks": 3970015,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-44--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1043419,
+            "process_start_ticks": 3952141,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-44--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031806,
+            "process_start_ticks": 3908654,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-44--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031799,
+            "process_start_ticks": 3908650,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-45--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1047947,
+            "process_start_ticks": 3968360,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-45--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031791,
+            "process_start_ticks": 3908647,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-45--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031783,
+            "process_start_ticks": 3908643,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-45--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1048563,
+            "process_start_ticks": 3970817,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-45--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1043470,
+            "process_start_ticks": 3952192,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-45--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031807,
+            "process_start_ticks": 3908654,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-45--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031800,
+            "process_start_ticks": 3908651,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-46--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1048021,
+            "process_start_ticks": 3968761,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-46--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031792,
+            "process_start_ticks": 3908647,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-46--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031784,
+            "process_start_ticks": 3908644,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-46--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1048761,
+            "process_start_ticks": 3971569,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-46--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1044217,
+            "process_start_ticks": 3953744,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-46--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031808,
+            "process_start_ticks": 3908655,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-46--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031801,
+            "process_start_ticks": 3908651,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-47--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1048275,
+            "process_start_ticks": 3969512,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-47--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031793,
+            "process_start_ticks": 3908647,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-47--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031785,
+            "process_start_ticks": 3908644,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-47--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1049772,
+            "process_start_ticks": 3973723,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-47--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1044540,
+            "process_start_ticks": 3955696,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-47--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031809,
+            "process_start_ticks": 3908655,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-22-47--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1060661,
+            "process_start_ticks": 4016793,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1058568,
+            "process_start_ticks": 4010680,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1052365,
+            "process_start_ticks": 3985589,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1062471,
+            "process_start_ticks": 4021754,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1054598,
+            "process_start_ticks": 3995408,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1048753,
+            "process_start_ticks": 3971468,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1051086,
+            "process_start_ticks": 3979831,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1060847,
+            "process_start_ticks": 4017996,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-01--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1058669,
+            "process_start_ticks": 4010982,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-01--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1052548,
+            "process_start_ticks": 3986392,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-01--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1063000,
+            "process_start_ticks": 4022906,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-01--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1055124,
+            "process_start_ticks": 3997812,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-01--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1048936,
+            "process_start_ticks": 3972320,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-01--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1051335,
+            "process_start_ticks": 3980832,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-01--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1061124,
+            "process_start_ticks": 4018647,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-02--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1058892,
+            "process_start_ticks": 4011483,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-02--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1052632,
+            "process_start_ticks": 3986843,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-02--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1063161,
+            "process_start_ticks": 4023958,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-02--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1055532,
+            "process_start_ticks": 3999414,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-02--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1049653,
+            "process_start_ticks": 3972971,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-02--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1051757,
+            "process_start_ticks": 3982735,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-02--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1061132,
+            "process_start_ticks": 4018698,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-03--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1060208,
+            "process_start_ticks": 4014287,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-03--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1052775,
+            "process_start_ticks": 3987344,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-03--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1064617,
+            "process_start_ticks": 4027712,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-03--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1055581,
+            "process_start_ticks": 3999765,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-03--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1049664,
+            "process_start_ticks": 3973122,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-03--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1051813,
+            "process_start_ticks": 3982835,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-03--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1061469,
+            "process_start_ticks": 4019449,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-04--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1060273,
+            "process_start_ticks": 4014487,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-04--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1053089,
+            "process_start_ticks": 3988597,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-04--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1064623,
+            "process_start_ticks": 4027863,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-04--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1055758,
+            "process_start_ticks": 4000566,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-04--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1049766,
+            "process_start_ticks": 3973623,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-04--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1052190,
+            "process_start_ticks": 3984688,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-04--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1061659,
+            "process_start_ticks": 4019850,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-05--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1060511,
+            "process_start_ticks": 4015239,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-05--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1053217,
+            "process_start_ticks": 3989248,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-05--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1064627,
+            "process_start_ticks": 4027914,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-05--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1056427,
+            "process_start_ticks": 4003571,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-05--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1049830,
+            "process_start_ticks": 3973874,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-05--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1052523,
+            "process_start_ticks": 3986140,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-05--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1062202,
+            "process_start_ticks": 4021053,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-06--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1060556,
+            "process_start_ticks": 4015740,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-06--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1053306,
+            "process_start_ticks": 3989700,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-06--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1065406,
+            "process_start_ticks": 4029567,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-06--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1056954,
+            "process_start_ticks": 4005473,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-06--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1049870,
+            "process_start_ticks": 3974025,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-06--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1052536,
+            "process_start_ticks": 3986291,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-06--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1062401,
+            "process_start_ticks": 4021454,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-07--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1060649,
+            "process_start_ticks": 4016592,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-07--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1053410,
+            "process_start_ticks": 3990201,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-07--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1065407,
+            "process_start_ticks": 4029567,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-07--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1057669,
+            "process_start_ticks": 4008778,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-07--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1050215,
+            "process_start_ticks": 3975427,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-07--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1053036,
+            "process_start_ticks": 3988346,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-25-07--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1073861,
+            "process_start_ticks": 4054258,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-16--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1065548,
+            "process_start_ticks": 4029818,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-16--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1067834,
+            "process_start_ticks": 4037881,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-16--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1079994,
+            "process_start_ticks": 4073082,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-16--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1072322,
+            "process_start_ticks": 4048447,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-16--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1056251,
+            "process_start_ticks": 4002769,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-16--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1053302,
+            "process_start_ticks": 3989649,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-16--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1073904,
+            "process_start_ticks": 4054760,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-17--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1065568,
+            "process_start_ticks": 4030019,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-17--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1067847,
+            "process_start_ticks": 4038132,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-17--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1080144,
+            "process_start_ticks": 4073783,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-17--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1072561,
+            "process_start_ticks": 4049048,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-17--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1057149,
+            "process_start_ticks": 4005924,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-17--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1054148,
+            "process_start_ticks": 3993404,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-17--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1074079,
+            "process_start_ticks": 4056263,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-18--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1066000,
+            "process_start_ticks": 4031721,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-18--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1067852,
+            "process_start_ticks": 4038233,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-18--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1080557,
+            "process_start_ticks": 4074835,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-18--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1073003,
+            "process_start_ticks": 4050500,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-18--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1057342,
+            "process_start_ticks": 4006875,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-18--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1054154,
+            "process_start_ticks": 3993454,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-18--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1074617,
+            "process_start_ticks": 4058616,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-19--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1066078,
+            "process_start_ticks": 4032172,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-19--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1068020,
+            "process_start_ticks": 4039635,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-19--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1080921,
+            "process_start_ticks": 4075536,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-19--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1073069,
+            "process_start_ticks": 4051202,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-19--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1057389,
+            "process_start_ticks": 4007326,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-19--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1054437,
+            "process_start_ticks": 3994556,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-19--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1074752,
+            "process_start_ticks": 4059317,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-20--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1066358,
+            "process_start_ticks": 4032723,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-20--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1069305,
+            "process_start_ticks": 4042338,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-20--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1082073,
+            "process_start_ticks": 4078289,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-20--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1073075,
+            "process_start_ticks": 4051302,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-20--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1058635,
+            "process_start_ticks": 4010881,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-20--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1054509,
+            "process_start_ticks": 3994957,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-20--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1076866,
+            "process_start_ticks": 4066325,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-21--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1066548,
+            "process_start_ticks": 4033074,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-21--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1071440,
+            "process_start_ticks": 4043740,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-21--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1082259,
+            "process_start_ticks": 4078590,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-21--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1073306,
+            "process_start_ticks": 4052054,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-21--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1059037,
+            "process_start_ticks": 4011734,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-21--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1054872,
+            "process_start_ticks": 3996510,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-21--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1077545,
+            "process_start_ticks": 4069428,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-22--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1066749,
+            "process_start_ticks": 4033575,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-22--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1071597,
+            "process_start_ticks": 4045543,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-22--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1082560,
+            "process_start_ticks": 4079342,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-22--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1073550,
+            "process_start_ticks": 4052755,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-22--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1060639,
+            "process_start_ticks": 4016541,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-22--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1054958,
+            "process_start_ticks": 3996961,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-22--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1077651,
+            "process_start_ticks": 4070179,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-23--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1067827,
+            "process_start_ticks": 4037680,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-23--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1071932,
+            "process_start_ticks": 4047145,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-23--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1083432,
+            "process_start_ticks": 4082946,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-23--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1073693,
+            "process_start_ticks": 4053357,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-23--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1060702,
+            "process_start_ticks": 4017244,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-23--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1056195,
+            "process_start_ticks": 4002669,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-32-23--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1085933,
+            "process_start_ticks": 4090656,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-46-40--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1087169,
+            "process_start_ticks": 4093814,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/episodes/fresh-46-41--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031456,
+            "process_start_ticks": 3907004,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/preflight.owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031433,
+            "process_start_ticks": 3906554,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/prepare.owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1031775,
+            "process_start_ticks": 3908627,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/rollout.owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1027680,
+            "process_start_ticks": 3868850,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/socket-probe.owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 969173,
+            "process_start_ticks": 3406380,
+            "source": "config.models.0",
+            "state": "absent"
+          },
+          {
+            "pid": 1024653,
+            "process_start_ticks": 3845805,
+            "source": "config.models.1",
+            "state": "absent"
+          },
+          {
+            "pid": 1025312,
+            "process_start_ticks": 3852844,
+            "source": "config.models.2",
+            "state": "absent"
+          },
+          {
+            "pid": 1025829,
+            "process_start_ticks": 3859654,
+            "source": "config.models.3",
+            "state": "absent"
+          },
+          {
+            "pid": 970199,
+            "process_start_ticks": 3415082,
+            "source": "config.models.4",
+            "state": "absent"
+          },
+          {
+            "pid": 1027412,
+            "process_start_ticks": 3866709,
+            "source": "config.models.5",
+            "state": "absent"
+          },
+          {
+            "pid": 970777,
+            "process_start_ticks": 3420551,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/lease.owner.json",
+            "state": "absent"
+          }
+        ],
+        "errors": [],
+        "campaign_finished_present": true,
+        "cleanup": true
+      },
+      {
+        "batch": "originx-confirmatory-multigpu-20261009-v1",
+        "recorded_owner_references": 227,
+        "unique_owner_births": 115,
+        "all_recorded_owners_inactive": true,
+        "owners": [
+          {
+            "pid": 1110807,
+            "process_start_ticks": 4228615,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/campaign.owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111336,
+            "process_start_ticks": 4232192,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-00-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111338,
+            "process_start_ticks": 4232195,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-00-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111341,
+            "process_start_ticks": 4232203,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-00-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111340,
+            "process_start_ticks": 4232200,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-00-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111339,
+            "process_start_ticks": 4232198,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-00-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111361,
+            "process_start_ticks": 4232226,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-00-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111360,
+            "process_start_ticks": 4232223,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-00-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111348,
+            "process_start_ticks": 4232211,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-02-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111342,
+            "process_start_ticks": 4232205,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-02-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1115366,
+            "process_start_ticks": 4244726,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-02-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1115173,
+            "process_start_ticks": 4244019,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-02-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111347,
+            "process_start_ticks": 4232208,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-02-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111363,
+            "process_start_ticks": 4232231,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-02-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111362,
+            "process_start_ticks": 4232229,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-02-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111290,
+            "process_start_ticks": 4232093,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-05-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111286,
+            "process_start_ticks": 4232086,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-05-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111288,
+            "process_start_ticks": 4232088,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-05-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111285,
+            "process_start_ticks": 4232083,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-05-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111289,
+            "process_start_ticks": 4232091,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-05-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111304,
+            "process_start_ticks": 4232129,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-05-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111305,
+            "process_start_ticks": 4232132,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-05-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111280,
+            "process_start_ticks": 4232070,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-13-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111281,
+            "process_start_ticks": 4232073,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-13-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111282,
+            "process_start_ticks": 4232075,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-13-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111283,
+            "process_start_ticks": 4232078,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-13-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111284,
+            "process_start_ticks": 4232080,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-13-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111302,
+            "process_start_ticks": 4232124,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-13-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111303,
+            "process_start_ticks": 4232127,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-13-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1117323,
+            "process_start_ticks": 4252358,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-14-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1118004,
+            "process_start_ticks": 4254379,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-14-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1117862,
+            "process_start_ticks": 4253769,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-14-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1117882,
+            "process_start_ticks": 4254126,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-14-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1117881,
+            "process_start_ticks": 4254123,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-14-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111369,
+            "process_start_ticks": 4232242,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-14-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111367,
+            "process_start_ticks": 4232239,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-14-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1116109,
+            "process_start_ticks": 4247892,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-17-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1117184,
+            "process_start_ticks": 4251805,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-17-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1117124,
+            "process_start_ticks": 4251401,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-17-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1115422,
+            "process_start_ticks": 4244779,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-17-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1115875,
+            "process_start_ticks": 4246987,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-17-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111364,
+            "process_start_ticks": 4232234,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-17-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111366,
+            "process_start_ticks": 4232236,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-17-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1118765,
+            "process_start_ticks": 4256500,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-20-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1117505,
+            "process_start_ticks": 4252815,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-20-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111291,
+            "process_start_ticks": 4232096,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-21-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111295,
+            "process_start_ticks": 4232106,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-21-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111293,
+            "process_start_ticks": 4232101,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-21-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111294,
+            "process_start_ticks": 4232103,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-21-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111292,
+            "process_start_ticks": 4232098,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-21-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111307,
+            "process_start_ticks": 4232137,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-21-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111306,
+            "process_start_ticks": 4232135,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-21-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111296,
+            "process_start_ticks": 4232109,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-24-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111297,
+            "process_start_ticks": 4232111,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-24-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111298,
+            "process_start_ticks": 4232114,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-24-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111315,
+            "process_start_ticks": 4232150,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-24-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111299,
+            "process_start_ticks": 4232116,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-24-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111308,
+            "process_start_ticks": 4232140,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-24-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111309,
+            "process_start_ticks": 4232143,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-24-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111317,
+            "process_start_ticks": 4232156,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-26-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111318,
+            "process_start_ticks": 4232158,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-26-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111319,
+            "process_start_ticks": 4232161,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-26-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111320,
+            "process_start_ticks": 4232164,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-26-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111316,
+            "process_start_ticks": 4232153,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-26-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111310,
+            "process_start_ticks": 4232145,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-26-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111311,
+            "process_start_ticks": 4232148,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-26-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1117001,
+            "process_start_ticks": 4250748,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-27-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1117436,
+            "process_start_ticks": 4252662,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-27-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111328,
+            "process_start_ticks": 4232185,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-33-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111329,
+            "process_start_ticks": 4232187,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-33-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111326,
+            "process_start_ticks": 4232179,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-33-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111330,
+            "process_start_ticks": 4232190,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-33-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111327,
+            "process_start_ticks": 4232182,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-33-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111359,
+            "process_start_ticks": 4232221,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-33-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111352,
+            "process_start_ticks": 4232218,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-33-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111322,
+            "process_start_ticks": 4232169,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-34-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111321,
+            "process_start_ticks": 4232166,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-34-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111324,
+            "process_start_ticks": 4232174,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-34-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111323,
+            "process_start_ticks": 4232172,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-34-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111325,
+            "process_start_ticks": 4232177,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-34-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111350,
+            "process_start_ticks": 4232213,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-34-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111351,
+            "process_start_ticks": 4232216,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-34-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1115598,
+            "process_start_ticks": 4245633,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-35-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1115358,
+            "process_start_ticks": 4244623,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-35-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1115092,
+            "process_start_ticks": 4243566,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-36-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1114983,
+            "process_start_ticks": 4243212,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-36-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111278,
+            "process_start_ticks": 4232065,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-38-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111275,
+            "process_start_ticks": 4232058,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-38-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111277,
+            "process_start_ticks": 4232063,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-38-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111276,
+            "process_start_ticks": 4232060,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-38-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111279,
+            "process_start_ticks": 4232068,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-38-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111301,
+            "process_start_ticks": 4232121,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-38-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1111300,
+            "process_start_ticks": 4232119,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-38-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1118090,
+            "process_start_ticks": 4254582,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-43-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1118093,
+            "process_start_ticks": 4254685,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-43-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1118310,
+            "process_start_ticks": 4255192,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-43-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1118689,
+            "process_start_ticks": 4255996,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-43-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1118183,
+            "process_start_ticks": 4255039,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-43-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1113549,
+            "process_start_ticks": 4237850,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-43-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1113790,
+            "process_start_ticks": 4238804,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/episodes/fresh-43-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1110808,
+            "process_start_ticks": 4228641,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/preflight.owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1092066,
+            "process_start_ticks": 4117194,
+            "source": "config.models.0",
+            "state": "absent"
+          },
+          {
+            "pid": 1091720,
+            "process_start_ticks": 4115403,
+            "source": "config.models.0.guardian",
+            "state": "absent"
+          },
+          {
+            "pid": 1094225,
+            "process_start_ticks": 4124859,
+            "source": "config.models.1",
+            "state": "absent"
+          },
+          {
+            "pid": 1096363,
+            "process_start_ticks": 4131967,
+            "source": "config.models.2",
+            "state": "absent"
+          },
+          {
+            "pid": 1098576,
+            "process_start_ticks": 4139094,
+            "source": "config.models.3",
+            "state": "absent"
+          },
+          {
+            "pid": 1099999,
+            "process_start_ticks": 4146337,
+            "source": "config.models.4",
+            "state": "absent"
+          },
+          {
+            "pid": 1100470,
+            "process_start_ticks": 4148254,
+            "source": "config.models.5",
+            "state": "absent"
+          },
+          {
+            "pid": 1102357,
+            "process_start_ticks": 4158095,
+            "source": "config.models.6",
+            "state": "absent"
+          },
+          {
+            "pid": 1102259,
+            "process_start_ticks": 4156490,
+            "source": "config.models.6.guardian",
+            "state": "absent"
+          },
+          {
+            "pid": 1103236,
+            "process_start_ticks": 4165482,
+            "source": "config.models.7",
+            "state": "absent"
+          },
+          {
+            "pid": 1103984,
+            "process_start_ticks": 4172515,
+            "source": "config.models.8",
+            "state": "absent"
+          },
+          {
+            "pid": 1105045,
+            "process_start_ticks": 4179498,
+            "source": "config.models.9",
+            "state": "absent"
+          },
+          {
+            "pid": 1105807,
+            "process_start_ticks": 4186534,
+            "source": "config.models.10",
+            "state": "absent"
+          },
+          {
+            "pid": 1106053,
+            "process_start_ticks": 4188505,
+            "source": "config.models.11",
+            "state": "absent"
+          }
+        ],
+        "errors": [],
+        "campaign_finished_present": true,
+        "cleanup": true
+      },
+      {
+        "batch": "originx-confirmatory-multigpu-20261009-v2",
+        "recorded_owner_references": 517,
+        "unique_owner_births": 260,
+        "all_recorded_owners_inactive": true,
+        "owners": [
+          {
+            "pid": 1147168,
+            "process_start_ticks": 4522183,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/campaign.owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1162649,
+            "process_start_ticks": 4575196,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-01-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1161560,
+            "process_start_ticks": 4571774,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-01-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1161680,
+            "process_start_ticks": 4571878,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-01-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1162421,
+            "process_start_ticks": 4574837,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-01-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1161681,
+            "process_start_ticks": 4571880,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-01-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1152232,
+            "process_start_ticks": 4539287,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-01-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1152096,
+            "process_start_ticks": 4539084,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-01-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1175163,
+            "process_start_ticks": 4614985,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-03-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1175555,
+            "process_start_ticks": 4616590,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-03-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1176109,
+            "process_start_ticks": 4618195,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-03-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1176443,
+            "process_start_ticks": 4619400,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-03-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1175111,
+            "process_start_ticks": 4614482,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-03-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1157627,
+            "process_start_ticks": 4558410,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-03-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1158563,
+            "process_start_ticks": 4561423,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-03-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1156411,
+            "process_start_ticks": 4553437,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-04-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1156110,
+            "process_start_ticks": 4552526,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-04-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1155810,
+            "process_start_ticks": 4551119,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-04-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1156188,
+            "process_start_ticks": 4552880,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-04-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1156332,
+            "process_start_ticks": 4553233,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-04-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147808,
+            "process_start_ticks": 4525806,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-04-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147806,
+            "process_start_ticks": 4525804,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-04-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1182291,
+            "process_start_ticks": 4638711,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-06-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1182230,
+            "process_start_ticks": 4637957,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-06-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1182996,
+            "process_start_ticks": 4640617,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-06-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1183296,
+            "process_start_ticks": 4641822,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-06-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1183763,
+            "process_start_ticks": 4642876,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-06-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1163130,
+            "process_start_ticks": 4576315,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-06-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1162981,
+            "process_start_ticks": 4576012,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-06-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1187243,
+            "process_start_ticks": 4654067,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-07-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1187619,
+            "process_start_ticks": 4657133,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-07-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1187465,
+            "process_start_ticks": 4655328,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-07-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1187376,
+            "process_start_ticks": 4654374,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-07-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1187265,
+            "process_start_ticks": 4654170,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-07-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1171043,
+            "process_start_ticks": 4601479,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-07-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1172682,
+            "process_start_ticks": 4606403,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-07-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1153824,
+            "process_start_ticks": 4544420,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-08-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1153825,
+            "process_start_ticks": 4544423,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-08-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1154462,
+            "process_start_ticks": 4545889,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-08-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1153293,
+            "process_start_ticks": 4542862,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-08-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1153054,
+            "process_start_ticks": 4542058,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-08-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147797,
+            "process_start_ticks": 4525793,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-08-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147799,
+            "process_start_ticks": 4525796,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-08-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1166241,
+            "process_start_ticks": 4586078,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-09-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1165450,
+            "process_start_ticks": 4583557,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-09-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1166044,
+            "process_start_ticks": 4585521,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-09-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1166387,
+            "process_start_ticks": 4586431,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-09-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1166184,
+            "process_start_ticks": 4585975,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-09-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1153879,
+            "process_start_ticks": 4544529,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-09-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1153880,
+            "process_start_ticks": 4544531,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-09-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1161095,
+            "process_start_ticks": 4569663,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-10-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1161120,
+            "process_start_ticks": 4570067,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-10-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1160992,
+            "process_start_ticks": 4569106,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-10-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1161121,
+            "process_start_ticks": 4570069,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-10-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1161084,
+            "process_start_ticks": 4569510,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-10-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1151614,
+            "process_start_ticks": 4537629,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-10-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1151500,
+            "process_start_ticks": 4537120,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-10-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1167071,
+            "process_start_ticks": 4588893,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-11-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1170389,
+            "process_start_ticks": 4599621,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-11-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1167076,
+            "process_start_ticks": 4588996,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-11-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1166484,
+            "process_start_ticks": 4586584,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-11-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1169404,
+            "process_start_ticks": 4596058,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-11-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1154392,
+            "process_start_ticks": 4545686,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-11-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1154481,
+            "process_start_ticks": 4546092,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-11-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1184101,
+            "process_start_ticks": 4644454,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-12-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1183969,
+            "process_start_ticks": 4644045,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-12-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1184095,
+            "process_start_ticks": 4644401,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-12-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1183974,
+            "process_start_ticks": 4644098,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-12-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1184168,
+            "process_start_ticks": 4644658,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-12-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1164880,
+            "process_start_ticks": 4581996,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-12-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1165016,
+            "process_start_ticks": 4582452,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-12-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1176640,
+            "process_start_ticks": 4619756,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-15-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1176500,
+            "process_start_ticks": 4619503,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-15-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1177010,
+            "process_start_ticks": 4620714,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-15-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1176843,
+            "process_start_ticks": 4620261,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-15-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1177935,
+            "process_start_ticks": 4623421,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-15-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1159068,
+            "process_start_ticks": 4562928,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-15-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1159966,
+            "process_start_ticks": 4565896,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-15-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1162979,
+            "process_start_ticks": 4576007,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-16-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1162763,
+            "process_start_ticks": 4575600,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-16-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1162803,
+            "process_start_ticks": 4575703,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-16-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1163206,
+            "process_start_ticks": 4576469,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-16-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1162980,
+            "process_start_ticks": 4576009,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-16-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1152792,
+            "process_start_ticks": 4541196,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-16-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1152967,
+            "process_start_ticks": 4541649,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-16-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1149610,
+            "process_start_ticks": 4529620,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-18-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147784,
+            "process_start_ticks": 4525769,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-18-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1149621,
+            "process_start_ticks": 4529773,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-18-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147786,
+            "process_start_ticks": 4525772,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-18-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147788,
+            "process_start_ticks": 4525774,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-18-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147756,
+            "process_start_ticks": 4525709,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-18-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147757,
+            "process_start_ticks": 4525711,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-18-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1174624,
+            "process_start_ticks": 4613274,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-19-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1172323,
+            "process_start_ticks": 4605699,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-19-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1174564,
+            "process_start_ticks": 4613068,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-19-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1172689,
+            "process_start_ticks": 4606556,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-19-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1174630,
+            "process_start_ticks": 4613327,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-19-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1157530,
+            "process_start_ticks": 4557957,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-19-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1156960,
+            "process_start_ticks": 4555701,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-19-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147735,
+            "process_start_ticks": 4525659,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-20-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147739,
+            "process_start_ticks": 4525669,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-20-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147737,
+            "process_start_ticks": 4525664,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-20-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147736,
+            "process_start_ticks": 4525661,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-20-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147738,
+            "process_start_ticks": 4525666,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-20-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147761,
+            "process_start_ticks": 4525722,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-22-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147763,
+            "process_start_ticks": 4525727,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-22-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147762,
+            "process_start_ticks": 4525724,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-22-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147759,
+            "process_start_ticks": 4525716,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-22-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147760,
+            "process_start_ticks": 4525719,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-22-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147747,
+            "process_start_ticks": 4525690,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-22-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147746,
+            "process_start_ticks": 4525688,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-22-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147740,
+            "process_start_ticks": 4525672,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-23-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147742,
+            "process_start_ticks": 4525677,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-23-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147741,
+            "process_start_ticks": 4525674,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-23-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147743,
+            "process_start_ticks": 4525680,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-23-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147758,
+            "process_start_ticks": 4525714,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-23-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147744,
+            "process_start_ticks": 4525682,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-23-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147745,
+            "process_start_ticks": 4525685,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-23-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147732,
+            "process_start_ticks": 4525651,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-27-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147731,
+            "process_start_ticks": 4525648,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-27-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147734,
+            "process_start_ticks": 4525656,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-27-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147733,
+            "process_start_ticks": 4525653,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-27-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147730,
+            "process_start_ticks": 4525646,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-27-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1184709,
+            "process_start_ticks": 4645765,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-28-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1184835,
+            "process_start_ticks": 4646375,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-28-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1184807,
+            "process_start_ticks": 4646119,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-28-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1184826,
+            "process_start_ticks": 4646322,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-28-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1184290,
+            "process_start_ticks": 4644911,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-28-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1165784,
+            "process_start_ticks": 4584464,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-28-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1165783,
+            "process_start_ticks": 4584461,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-28-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1149843,
+            "process_start_ticks": 4530629,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-29-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1150415,
+            "process_start_ticks": 4532594,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-29-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1150417,
+            "process_start_ticks": 4532647,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-29-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1149998,
+            "process_start_ticks": 4531183,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-29-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1149819,
+            "process_start_ticks": 4530627,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-29-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147790,
+            "process_start_ticks": 4525779,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-29-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147789,
+            "process_start_ticks": 4525777,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-29-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1183885,
+            "process_start_ticks": 4643430,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-30-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1183967,
+            "process_start_ticks": 4644040,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-30-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1183889,
+            "process_start_ticks": 4643486,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-30-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1183968,
+            "process_start_ticks": 4644042,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-30-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1183886,
+            "process_start_ticks": 4643433,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-30-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1163282,
+            "process_start_ticks": 4576625,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-30-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1163207,
+            "process_start_ticks": 4576471,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-30-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1154499,
+            "process_start_ticks": 4546245,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-31-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1155343,
+            "process_start_ticks": 4549405,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-31-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1155809,
+            "process_start_ticks": 4551116,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-31-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1155728,
+            "process_start_ticks": 4550663,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-31-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1155412,
+            "process_start_ticks": 4549758,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-31-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147802,
+            "process_start_ticks": 4525798,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-31-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147804,
+            "process_start_ticks": 4525801,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-31-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1171742,
+            "process_start_ticks": 4603738,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-32-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1171202,
+            "process_start_ticks": 4602533,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-32-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1170914,
+            "process_start_ticks": 4601126,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-32-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1172271,
+            "process_start_ticks": 4605646,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-32-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1172063,
+            "process_start_ticks": 4604992,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-32-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1156002,
+            "process_start_ticks": 4552123,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-32-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1154529,
+            "process_start_ticks": 4546499,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-32-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147725,
+            "process_start_ticks": 4525633,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-35-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147729,
+            "process_start_ticks": 4525643,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-35-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147726,
+            "process_start_ticks": 4525636,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-35-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147728,
+            "process_start_ticks": 4525641,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-35-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147727,
+            "process_start_ticks": 4525638,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-35-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147723,
+            "process_start_ticks": 4525628,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-36-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147721,
+            "process_start_ticks": 4525623,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-36-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147719,
+            "process_start_ticks": 4525621,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-36-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147724,
+            "process_start_ticks": 4525631,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-36-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147722,
+            "process_start_ticks": 4525626,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-36-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147783,
+            "process_start_ticks": 4525766,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-37-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147777,
+            "process_start_ticks": 4525756,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-37-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147779,
+            "process_start_ticks": 4525761,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-37-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147780,
+            "process_start_ticks": 4525764,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-37-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147778,
+            "process_start_ticks": 4525758,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-37-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147752,
+            "process_start_ticks": 4525703,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-37-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147755,
+            "process_start_ticks": 4525706,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-37-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1181703,
+            "process_start_ticks": 4636647,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-39-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1179350,
+            "process_start_ticks": 4628730,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-39-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1182227,
+            "process_start_ticks": 4637904,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-39-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1181964,
+            "process_start_ticks": 4637301,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-39-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1180658,
+            "process_start_ticks": 4632939,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-39-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1162641,
+            "process_start_ticks": 4575093,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-39-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1162640,
+            "process_start_ticks": 4575090,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-39-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147768,
+            "process_start_ticks": 4525740,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-40-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147765,
+            "process_start_ticks": 4525732,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-40-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147767,
+            "process_start_ticks": 4525737,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-40-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147764,
+            "process_start_ticks": 4525729,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-40-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147766,
+            "process_start_ticks": 4525735,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-40-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147749,
+            "process_start_ticks": 4525696,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-40-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147748,
+            "process_start_ticks": 4525693,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-40-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1164882,
+            "process_start_ticks": 4582049,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-41-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1163313,
+            "process_start_ticks": 4576778,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-41-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1164824,
+            "process_start_ticks": 4581442,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-41-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1163355,
+            "process_start_ticks": 4576981,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-41-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1164291,
+            "process_start_ticks": 4580038,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-41-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1153878,
+            "process_start_ticks": 4544476,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-41-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1153720,
+            "process_start_ticks": 4544167,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-41-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1159406,
+            "process_start_ticks": 4564636,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-42-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1159640,
+            "process_start_ticks": 4565393,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-42-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1160017,
+            "process_start_ticks": 4566400,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-42-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1159308,
+            "process_start_ticks": 4564032,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-42-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1159469,
+            "process_start_ticks": 4564889,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-42-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1150259,
+            "process_start_ticks": 4532087,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-42-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1150297,
+            "process_start_ticks": 4532241,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-42-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1186412,
+            "process_start_ticks": 4651802,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-44-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1186467,
+            "process_start_ticks": 4652306,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-44-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1186810,
+            "process_start_ticks": 4653364,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-44-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1186619,
+            "process_start_ticks": 4652710,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-44-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1186339,
+            "process_start_ticks": 4651499,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-44-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1170340,
+            "process_start_ticks": 4598917,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-44-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1169417,
+            "process_start_ticks": 4596311,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-44-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1156413,
+            "process_start_ticks": 4553490,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-45-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1156601,
+            "process_start_ticks": 4554193,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-45-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1158541,
+            "process_start_ticks": 4561320,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-45-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1156712,
+            "process_start_ticks": 4554597,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-45-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1158388,
+            "process_start_ticks": 4560666,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-45-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1149373,
+            "process_start_ticks": 4528612,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-45-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1149391,
+            "process_start_ticks": 4528716,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-45-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1151592,
+            "process_start_ticks": 4537476,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-46-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1153052,
+            "process_start_ticks": 4542053,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-46-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1152363,
+            "process_start_ticks": 4539691,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-46-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1151504,
+            "process_start_ticks": 4537173,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-46-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1153053,
+            "process_start_ticks": 4542056,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-46-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147794,
+            "process_start_ticks": 4525787,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-46-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147795,
+            "process_start_ticks": 4525790,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-46-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1185760,
+            "process_start_ticks": 4650138,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-47-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1185709,
+            "process_start_ticks": 4649835,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-47-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1184941,
+            "process_start_ticks": 4647229,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-47-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1185825,
+            "process_start_ticks": 4650392,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-47-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1186288,
+            "process_start_ticks": 4651446,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-47-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1165829,
+            "process_start_ticks": 4584717,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-47-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1167059,
+            "process_start_ticks": 4588690,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-47-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147771,
+            "process_start_ticks": 4525745,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-48-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147775,
+            "process_start_ticks": 4525753,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-48-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147773,
+            "process_start_ticks": 4525748,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-48-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147774,
+            "process_start_ticks": 4525751,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-48-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147770,
+            "process_start_ticks": 4525743,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-48-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147750,
+            "process_start_ticks": 4525698,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-48-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147751,
+            "process_start_ticks": 4525701,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-48-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1150477,
+            "process_start_ticks": 4532750,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-49-00--B--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1150997,
+            "process_start_ticks": 4534858,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-49-00--B--G/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1151417,
+            "process_start_ticks": 4536613,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-49-00--B--L/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1151497,
+            "process_start_ticks": 4537067,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-49-00--B--R/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1150930,
+            "process_start_ticks": 4534605,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-49-00--B--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147791,
+            "process_start_ticks": 4525782,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-49-00--base--C/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147793,
+            "process_start_ticks": 4525785,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/episodes/fresh-49-00--base--V/owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1147172,
+            "process_start_ticks": 4522209,
+            "source": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/preflight.owner.json",
+            "state": "absent"
+          },
+          {
+            "pid": 1139480,
+            "process_start_ticks": 4449030,
+            "source": "config.models.0",
+            "state": "absent"
+          },
+          {
+            "pid": 1139280,
+            "process_start_ticks": 4447207,
+            "source": "config.models.0.guardian",
+            "state": "absent"
+          },
+          {
+            "pid": 1140296,
+            "process_start_ticks": 4456610,
+            "source": "config.models.1",
+            "state": "absent"
+          },
+          {
+            "pid": 1141000,
+            "process_start_ticks": 4463873,
+            "source": "config.models.2",
+            "state": "absent"
+          },
+          {
+            "pid": 1141623,
+            "process_start_ticks": 4470980,
+            "source": "config.models.3",
+            "state": "absent"
+          },
+          {
+            "pid": 1142215,
+            "process_start_ticks": 4477869,
+            "source": "config.models.4",
+            "state": "absent"
+          },
+          {
+            "pid": 1142456,
+            "process_start_ticks": 4480266,
+            "source": "config.models.5",
+            "state": "absent"
+          },
+          {
+            "pid": 1139713,
+            "process_start_ticks": 4451003,
+            "source": "config.models.6",
+            "state": "absent"
+          },
+          {
+            "pid": 1139540,
+            "process_start_ticks": 4449252,
+            "source": "config.models.6.guardian",
+            "state": "absent"
+          },
+          {
+            "pid": 1140486,
+            "process_start_ticks": 4458359,
+            "source": "config.models.7",
+            "state": "absent"
+          },
+          {
+            "pid": 1141093,
+            "process_start_ticks": 4465381,
+            "source": "config.models.8",
+            "state": "absent"
+          },
+          {
+            "pid": 1141797,
+            "process_start_ticks": 4472440,
+            "source": "config.models.9",
+            "state": "absent"
+          },
+          {
+            "pid": 1142391,
+            "process_start_ticks": 4479430,
+            "source": "config.models.10",
+            "state": "absent"
+          },
+          {
+            "pid": 1142605,
+            "process_start_ticks": 4481443,
+            "source": "config.models.11",
+            "state": "absent"
+          }
+        ],
+        "errors": [],
+        "campaign_finished_present": true,
+        "cleanup": true
+      }
+    ],
+    "read_only": true,
+    "processes_signalled": 0,
+    "foreign_processes_unmodified": true
+  },
+  "passed": true,
+  "finished_at_utc": "2026-10-09T22:47:34.475222+00:00"
+}

@@ -81,3 +81,38 @@ The campaign driver records about 3 hours 35 minutes, including service initiali
 Source and artifact packaging performed after evaluation is distinguished from the original evaluation entry point. The artifact documentation describes what has and has not been retested. The original evaluation remains unchanged; publishing an inference entry point is not itself a repeat of the 2,500 episodes.
 
 The [official submission requirements](https://github.com/robocasa-benchmark/leaderboard) ask derivatives to attribute the base and demonstrate a measurable improvement from the new contribution. Although this model adds a conditioning branch used by the policy, its contribution has not been established beyond statistical noise in the available paired comparison. We explicitly request organizer review of eligibility and reproducibility rather than presuming acceptance. The verified contribution of this report is the complete frozen-model evaluation and its retained evidence; stronger claims require additional controlled experiments.
+<!-- CONFIRMATORY_50_START -->
+## Fresh-seed follow-up: the amended 50-case study
+
+At the user's three-hour delivery request, the running 2,500-case prospective plan was reduced to one case per task: the minimum pre-existing fresh environment seed for each of 50 tasks. Selection did not inspect outcomes, but the reduction occurred after launch and is not a new untouched preregistration. B2000 has five arms (C/R/G/L/V), and the original Xiaomi policy has C/V: **50 distinct environment cases, 350 planned arm outcomes**. C is unchanged control; R repeats the original instruction; G appends a fixed generic continuation; L receives text-only Astra guidance; V receives image-conditioned Astra guidance. We retain the original horizon, model weights, seeds, native reset, and Astra High settings.
+
+The terminal audit has **350/350 valid arm records**, with **350/350 claimed**. 191 earlier arm records outside this fixed subset remain separately archived. Incomplete or incomparable pairs remain unresolved within the full 50-case denominator.
+
+| Comparison | Fixed cases | Matched | Rescues | Regressions | Unresolved | Full-cohort net-effect bounds (pp) |
+|---|---:|---:|---:|---:|---:|---|
+| B/G_vs_C | 50 | 44 | 1 | 1 | 6 | [-12.0, 0.0] |
+| B/L_vs_C | 50 | 45 | 0 | 1 | 5 | [-12.0, -2.0] |
+| B/R_vs_C | 50 | 47 | 0 | 1 | 3 | [-8.0, -2.0] |
+| B/V_vs_C | 50 | 44 | 1 | 0 | 6 | [-8.0, 4.0] |
+| B/V_vs_L | 50 | 42 | 2 | 0 | 8 | [-6.0, 16.0] |
+| base/V_vs_C | 50 | 47 | 0 | 1 | 3 | [-6.0, 0.0] |
+
+**The follow-up does not establish a net benefit.** B control and visual-assistance arms both record 29/50 successes (58%); repetition records 28/50, generic and text-only advice 27/50 each. These are descriptive arm totals, not a paired causal estimate. V versus C has 44 matched pairs, one treatment-only success and no regression; six initial-state mismatches remain, giving a full-cohort net-effect bound of **−8 to +4 percentage points**. All pairwise technical-unknown and prefix-deviation counts are zero; unresolved counts in the table are initial-state mismatches.
+
+Advice delivery is a separate quantity. The 44 matched B V-versus-C pairs include 18 early-terminal pairs, 18 with visual advice actually delivered, and eight with fallback to the unchanged original instruction. Across all B visual assignments there are 20 delivered interventions, ten fallbacks and 20 early endings. V-versus-L has two V-only successes among 42 matched pairs, but one V arm used fallback and merely retained the success also observed in C; only the other received visual advice. Thus these two events must not both be attributed to visual reasoning. The original Xiaomi policy records 26/50 control and 25/50 visual-arm successes; its 47 matched pairs contain no rescue and one regression.
+
+These are identification bounds that include unresolved comparisons, not confidence intervals. A rescue in this table is a verified reference-arm failure paired with a treatment-arm success; a regression is the reverse. The reference is L in V-versus-L and C otherwise. The B V-versus-L contrast tests the incremental effect of supplying images under the specified interface. Small samples, initial-state mismatches, incomplete advice delivery, and wide bounds limit conclusions; these data do not establish a general visual-reasoning benefit or a benchmark improvement.
+
+**Verified example: WashFruitColander.** At step 1,584, the saved visual advice suggested operating the faucet control to the right of the spout, keeping the colander under the water, and checking whether the mango, peach and apple were in the basket. The V arm applied this instruction and succeeded at step 2,347; matching C and L arms reached their 3,150-step horizon without success. This links actual advice to the successful paired continuation, but does not isolate which suggested physical action caused success.
+
+One continuation stopped when the broker treated an intermediate CLI reconnection event as a terminal error, although the saved invocation eventually completed. The original error, raw events, usage and affected records were retained. The separately audited infrastructure continuation processed only never-claimed work; it never replaces a claimed outcome or regenerates an executed CLI call. The recovery check requires successful terminal completion and validates the saved response, identities and absence of tool calls.
+
+72 unique CLI invocations; known input 1,244,218, output 24,566. Complete input/output accounting: True. Summed invocation latency is 871.88 seconds. Reasoning tokens are included in output, not added again. All original and continuation main-study calls, including out-of-cohort work and failures, are included. Development use is separate: six B/base calls used 102,367 input and 1,011 output tokens (56.25 seconds summed invocation latency); one GR00T admission call used 17,203 input and 213 output tokens (10.85 seconds). These seven calls do not overlap the 72 main-study calls. Dollar cost is unavailable. No additional training, quota reset or paid top-up was used.
+
+GR00T formal cross-architecture evaluation was **not run** within this delivery; development admission is a systems check, not efficacy evidence. The historical records remain **1,496/2,500** and **56/1,004**. These follow-up results are a separate supplementary study and do not produce an accepted leaderboard score.
+
+### Future directions
+
+A larger fresh-seed evaluation should estimate benefit and regression jointly, compare image-conditioned advice against instruction repetition, generic advice and text-only advice, and retain all unresolved pairs. Independent GR00T evaluation is needed for architectural transfer. Fixed-budget comparisons of intervention timing and a stronger stall detector should be prospectively registered. Compute-matched controls, latency accounting, and real-robot evaluation remain open; no outcome-driven retuning is inferred from the present observations.
+
+Terminal report SHA-256: `d437095e785fd603cb6e99a2ae0d9556dbc2254a212ebef138e4a07c592c8270`. Machine-readable evidence: [50-case audit](evidence/confirmatory-50/report.json).

@@ -1,0 +1,1781 @@
+{
+  "schema": "originx_amendment_cli_usage_v1",
+  "unique_observed_cli_invocations": 72,
+  "known_usage_totals": {
+    "input_tokens": 1244218,
+    "cached_input_tokens": 0,
+    "output_tokens": 24566,
+    "reasoning_tokens": 8705
+  },
+  "observed_calls_missing_counters": {
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0
+  },
+  "known_invocation_latency_sum_seconds": 871.879415399977,
+  "observed_calls_missing_latency": 0,
+  "inventory_complete": true,
+  "complete_input_output_token_accounting": true,
+  "invalid_receipts": [],
+  "interrupted_cli_starts_without_receipt": [],
+  "reasoning_tokens_included_in_output_not_added_again": true,
+  "cost_usd": null,
+  "scope": "All original and continuation CLI usage, including work outside the amended 50-case cohort",
+  "no_inferred_zero_counters": true,
+  "calls": [
+    {
+      "invocation_key": "01068ff5e964dbb34cfed7d21875d40d50fa73b6c1a54638b9df7e20681dbdef",
+      "status": "ok",
+      "request_ids": [
+        "7ee2c808b59f10c7a8ef129b4c16f440"
+      ],
+      "receipt_sha256": "e75929da27b55b42c1e08f4b778152c40bc57c4f21acf6674ef180690c312056",
+      "usage": {
+        "input_tokens": 17221,
+        "cached_input_tokens": 0,
+        "output_tokens": 278,
+        "reasoning_tokens": 133
+      },
+      "latency_seconds": 10.123205099996994,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/7ee2c808b59f10c7a8ef129b4c16f440/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221715-b63efdc840ad/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "038d6f21b0672218a6b8fbd75bf5c57c6b51a390c2f68f673e59a868ca3b7077",
+      "status": "ok",
+      "request_ids": [
+        "8edbc50c125307887de058800b5b797f"
+      ],
+      "receipt_sha256": "458f75878fabaa0a146732b68fd7e2116a713e8c707a0c77fb6fb8e0579ca1f9",
+      "usage": {
+        "input_tokens": 16812,
+        "cached_input_tokens": 0,
+        "output_tokens": 242,
+        "reasoning_tokens": 88
+      },
+      "latency_seconds": 10.787479800012079,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/8edbc50c125307887de058800b5b797f/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222856-d257476ca059/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "09325b1549056db5b55a61a6cdcc2d4bba5485a82e6f4ff7e23187f22720ba1b",
+      "status": "ok",
+      "request_ids": [
+        "f9477e80af5de3602d66f481ef667029"
+      ],
+      "receipt_sha256": "a5659db9d3bbcf5e9b2b455df6e137b0bebe2e424cce7fd00a48593b1c144ede",
+      "usage": {
+        "input_tokens": 17209,
+        "cached_input_tokens": 0,
+        "output_tokens": 300,
+        "reasoning_tokens": 150
+      },
+      "latency_seconds": 10.96287809999194,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/f9477e80af5de3602d66f481ef667029/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222443-5de9f8e2f031/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "0aad7e3e29a82d16258bbe0faf0e88b194e7006eff41d9a6499167dbe8a5a6c2",
+      "status": "ok",
+      "request_ids": [
+        "afd5c9550dac35d1271045a2aaab68dc"
+      ],
+      "receipt_sha256": "01ea05d6a8c6b1394e27cab079dac60d9e70057c7cc6bf37309cf8eab75bedfb",
+      "usage": {
+        "input_tokens": 16795,
+        "cached_input_tokens": 0,
+        "output_tokens": 150,
+        "reasoning_tokens": 26
+      },
+      "latency_seconds": 8.473363799988874,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/requests/afd5c9550dac35d1271045a2aaab68dc/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/broker_inventory_final/batches/20261009T211339-e59d3cee9dd8/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        1
+      ]
+    },
+    {
+      "invocation_key": "0b28b7e5713320c662aafcb1daca503637f5f90cd754b70d02d5d5c09d755b8d",
+      "status": "ok",
+      "request_ids": [
+        "822caca88dc7a4eb82549edbf0d0cc64"
+      ],
+      "receipt_sha256": "291c07578464a0a545c1b7117a6df85df3de52c15ccfffa03ba5be1444169ea9",
+      "usage": {
+        "input_tokens": 17200,
+        "cached_input_tokens": 0,
+        "output_tokens": 187,
+        "reasoning_tokens": 45
+      },
+      "latency_seconds": 10.200291100001778,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/822caca88dc7a4eb82549edbf0d0cc64/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T220122-0e1dbf8b5769/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "0ceaf7868142cd35af4627ba3c8e602b67a098001c070296bac5c78f948b5949",
+      "status": "ok",
+      "request_ids": [
+        "41c4ea7fdb57b44657f9569417f40b34"
+      ],
+      "receipt_sha256": "6de7e710e9d2b28889d93cbd6d56e672d0de6664ef62a0fec62f5305ca6d0d40",
+      "usage": {
+        "input_tokens": 17203,
+        "cached_input_tokens": 0,
+        "output_tokens": 320,
+        "reasoning_tokens": 198
+      },
+      "latency_seconds": 11.818717500005732,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/41c4ea7fdb57b44657f9569417f40b34/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221645-e3c36128631c/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "0d8f03208f732e369a7395b6a42752ba48fa01c434e1583475c0ef02694cab12",
+      "status": "ok",
+      "request_ids": [
+        "230b3b962396578885c5c021f3b64def"
+      ],
+      "receipt_sha256": "8c5cdd26c394de1814d7a6671cb9c7793ee0bc7f557446c0a94a957e762c5ed6",
+      "usage": {
+        "input_tokens": 16807,
+        "cached_input_tokens": 0,
+        "output_tokens": 224,
+        "reasoning_tokens": 100
+      },
+      "latency_seconds": 8.930125200000475,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/230b3b962396578885c5c021f3b64def/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T220755-76e2b552c0b8/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "0fbb33086e0a90d1f0f45c6c670d7cc0f63425740d752d87d3b6cd5ddae7a946",
+      "status": "ok",
+      "request_ids": [
+        "39aeffee72be993fa8573cf668f6c80a",
+        "60c28b3f1396b698c7281b8dec4e2bf8",
+        "dde06039d342d38450b2d1fd673e39af",
+        "eb8e48d98d6bb6676712119d0917c6a5",
+        "aa705b197edbed09f916962efff70f0b",
+        "11bd064ac7f31c39757e5fd3c56d8fe2",
+        "578e5cb657e6a87cce85e561b79410f4",
+        "f532cdb966d33e91123ef0581379ce21"
+      ],
+      "receipt_sha256": "7c03acb3505e1ecc447d4281152eb994aae19f0f61a2d490488a7d214872d0d7",
+      "usage": {
+        "input_tokens": 19798,
+        "cached_input_tokens": 0,
+        "output_tokens": 1317,
+        "reasoning_tokens": 355
+      },
+      "latency_seconds": 33.63772910000989,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/f532cdb966d33e91123ef0581379ce21/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/dde06039d342d38450b2d1fd673e39af/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/39aeffee72be993fa8573cf668f6c80a/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/60c28b3f1396b698c7281b8dec4e2bf8/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/11bd064ac7f31c39757e5fd3c56d8fe2/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/aa705b197edbed09f916962efff70f0b/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/578e5cb657e6a87cce85e561b79410f4/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/eb8e48d98d6bb6676712119d0917c6a5/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/broker_inventory_final/batches/20261009T205147-431ffede01c7/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        0
+      ]
+    },
+    {
+      "invocation_key": "110620bdfdc7700a835e35c6f0fe7064bed49c2e3ab094e858e422cf30176087",
+      "status": "error",
+      "request_ids": [
+        "0d1799e6118106f3c248f1e24d8fc4b8"
+      ],
+      "receipt_sha256": "68e02a99d55555fa251e79d810c6a1e858d518c85b30f3f45ac2a9b4263105f0",
+      "usage": {
+        "input_tokens": 17205,
+        "cached_input_tokens": 0,
+        "output_tokens": 299,
+        "reasoning_tokens": 140
+      },
+      "latency_seconds": 13.460286500005168,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/broker_inventory_final/batches/20261009T211401-24fa091b6040/receipt.json"
+      ],
+      "transcript_problems": [
+        "cli_trace_error"
+      ],
+      "source_batches": [
+        1
+      ]
+    },
+    {
+      "invocation_key": "117c532d2c4755baaac9ab81d203590b019445bca81d4c936430dc2cc67c5b88",
+      "status": "ok",
+      "request_ids": [
+        "e9b9085c897838241b71d50a823a1258"
+      ],
+      "receipt_sha256": "7ca094fe093e454e03f7d6c9b200458189421237d0966b3fbd673d785e0d0ae3",
+      "usage": {
+        "input_tokens": 17208,
+        "cached_input_tokens": 0,
+        "output_tokens": 204,
+        "reasoning_tokens": 49
+      },
+      "latency_seconds": 7.6427957999985665,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/e9b9085c897838241b71d50a823a1258/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222248-ce1363982ba7/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "16ed6a0d0f9c82cd503c2d0b70d78ca84e2f09d4dfda6fde416c682602ff269d",
+      "status": "ok",
+      "request_ids": [
+        "e5c031ae3bf7ff571f4c7784e1b24d11"
+      ],
+      "receipt_sha256": "79b6fdb0cec9aa232b84b64cbb43fc2fa0262271173aedbe4dd193a7254abb00",
+      "usage": {
+        "input_tokens": 17203,
+        "cached_input_tokens": 0,
+        "output_tokens": 252,
+        "reasoning_tokens": 101
+      },
+      "latency_seconds": 10.014771299989661,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/e5c031ae3bf7ff571f4c7784e1b24d11/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221418-798cd04733fc/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "188f68114bf2f349b6fdaa305ca0814530aa7f895921d1ebc945a348b2d74fe1",
+      "status": "ok",
+      "request_ids": [
+        "8d973de89c11697616b52fd95646b62a"
+      ],
+      "receipt_sha256": "737ed237a08e32ccf71e44bcb612ef443d21f0d33507c6b36a73f19e6260f17f",
+      "usage": {
+        "input_tokens": 17198,
+        "cached_input_tokens": 0,
+        "output_tokens": 325,
+        "reasoning_tokens": 170
+      },
+      "latency_seconds": 11.926429700004519,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/8d973de89c11697616b52fd95646b62a/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222412-222c0df60381/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "190b58f9020d134b4ca9b9cdc757ba5933927ab5a0d1783f55d0caeed9a0a74f",
+      "status": "ok",
+      "request_ids": [
+        "786492ac9798b32eb94ffcc9a19fb038"
+      ],
+      "receipt_sha256": "cbc0951cc0b8f54b6a9a2f5705360e0f702ca9cc5a60fdd9750bbe2b533205e1",
+      "usage": {
+        "input_tokens": 17197,
+        "cached_input_tokens": 0,
+        "output_tokens": 235,
+        "reasoning_tokens": 81
+      },
+      "latency_seconds": 10.622524699996575,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/786492ac9798b32eb94ffcc9a19fb038/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221315-2ba20721e702/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "1b7ccc8b5e1cc2c0ed7f97377e75749bba81589d3f0236b22dc2e3c1ec48b307",
+      "status": "ok",
+      "request_ids": [
+        "92e9e3b9b5435f3d7976fade27e656eb"
+      ],
+      "receipt_sha256": "9c87eb6867665c5f9020f73a92b6db87fd23be17d1b6a3c80baca4078821361b",
+      "usage": {
+        "input_tokens": 17217,
+        "cached_input_tokens": 0,
+        "output_tokens": 247,
+        "reasoning_tokens": 85
+      },
+      "latency_seconds": 9.577496199999587,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/92e9e3b9b5435f3d7976fade27e656eb/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T220614-29689674ea68/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "24ccbaa98ba3e050f3c4f98cfd119e14bcf39a059082b444914f759cb4e71442",
+      "status": "ok",
+      "request_ids": [
+        "d643d0cd0a8b5eb6dc886633bb46241c",
+        "c61d286e1a432823792f2a2eb4c099ca",
+        "8a25df22428ab64469fc6df57d1e7498",
+        "fc8503a5ad7765c73683f551a29a9bad",
+        "3fc2e202a7a275400295123445c9dc5a",
+        "dd2fcc64ee7f5732a66ef32ca4082b44",
+        "a87881aca270b8ad92351dca462a1f0d",
+        "1f3bdd78cec817861b8f986878c02f0e"
+      ],
+      "receipt_sha256": "31b3a92b3cd599d7ecbbf98f321cacb4cfe3b48300dcc3322dcdc5c5c17e5230",
+      "usage": {
+        "input_tokens": 19630,
+        "cached_input_tokens": 0,
+        "output_tokens": 1156,
+        "reasoning_tokens": 257
+      },
+      "latency_seconds": 31.669757900002878,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/c61d286e1a432823792f2a2eb4c099ca/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/dd2fcc64ee7f5732a66ef32ca4082b44/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/a87881aca270b8ad92351dca462a1f0d/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/d643d0cd0a8b5eb6dc886633bb46241c/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/1f3bdd78cec817861b8f986878c02f0e/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/fc8503a5ad7765c73683f551a29a9bad/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/3fc2e202a7a275400295123445c9dc5a/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/8a25df22428ab64469fc6df57d1e7498/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/broker_inventory_final/batches/20261009T203300-e8e3bf7db58e/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        0
+      ]
+    },
+    {
+      "invocation_key": "3005a6018486240e60a01961f76c57873047cae3e7db3b86595d924e8770b85d",
+      "status": "ok",
+      "request_ids": [
+        "61d4f8b570a716cb0c46ce94b0c64ed7"
+      ],
+      "receipt_sha256": "0036640fb708b9961569801386bd6920be165b605622d831a962a857a2e9b421",
+      "usage": {
+        "input_tokens": 17227,
+        "cached_input_tokens": 0,
+        "output_tokens": 260,
+        "reasoning_tokens": 110
+      },
+      "latency_seconds": 10.34822929999791,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/61d4f8b570a716cb0c46ce94b0c64ed7/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T220841-f66ed2e66f9e/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "32ef1a798f6d25568d2710a946566cb4c32f5db48b258317a0524eedfa8e9255",
+      "status": "ok",
+      "request_ids": [
+        "bed3a4b08e97038c73e96c0eaa607efd"
+      ],
+      "receipt_sha256": "7456c1d4af49922283f447599505e190848ccce82d1e69ed259e1fa7ac5a7060",
+      "usage": {
+        "input_tokens": 16827,
+        "cached_input_tokens": 0,
+        "output_tokens": 199,
+        "reasoning_tokens": 40
+      },
+      "latency_seconds": 8.844027099999948,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/bed3a4b08e97038c73e96c0eaa607efd/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222631-a6e264f8531a/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "382c5706b1faedd19d9e81b20465ec4711b41d3dcab933f8fc8e38ce6759c7e8",
+      "status": "ok",
+      "request_ids": [
+        "ca4dc99fcfc0252ac5d08500a1bf018a"
+      ],
+      "receipt_sha256": "ceb50846a0c4fe6d7873cd0beb2bfeccfe5cabf336eda0aa505bda7710025bf5",
+      "usage": {
+        "input_tokens": 16802,
+        "cached_input_tokens": 0,
+        "output_tokens": 230,
+        "reasoning_tokens": 95
+      },
+      "latency_seconds": 9.742912700006855,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/ca4dc99fcfc0252ac5d08500a1bf018a/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222113-58da7bf9a9c7/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "387c55ef46d3ad86f00a97c998a3d8bdf1d25a1a1dd628bdcbed4ddbe3b0caf1",
+      "status": "ok",
+      "request_ids": [
+        "2002217c7d4630fc4f7cc4988caa16c3"
+      ],
+      "receipt_sha256": "4b60a4c8bf7adba06bb05a61ee4588dd475b9389fa2df6d25b9b2e90eecddd8c",
+      "usage": {
+        "input_tokens": 16808,
+        "cached_input_tokens": 0,
+        "output_tokens": 297,
+        "reasoning_tokens": 159
+      },
+      "latency_seconds": 11.238222100000712,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/2002217c7d4630fc4f7cc4988caa16c3/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222137-0ab2db1f815b/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "396b24bf242f5a3499bc5109c943e7b83fcfa592b18e528775bfe951dc4f0dfb",
+      "status": "ok",
+      "request_ids": [
+        "b083eae6d74909459be4a8571e598510"
+      ],
+      "receipt_sha256": "d34b2a8c8a9a1a4459a33adf7c20b81a711c3c9156eaa83c5893c27b9ecf3558",
+      "usage": {
+        "input_tokens": 17210,
+        "cached_input_tokens": 0,
+        "output_tokens": 367,
+        "reasoning_tokens": 211
+      },
+      "latency_seconds": 13.444174999996903,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/b083eae6d74909459be4a8571e598510/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221546-b47962ae9054/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "3a97c7b4b9958dfd94e695dd01d6a288a1bbf334f60eedfa3f3e7795480d6291",
+      "status": "ok",
+      "request_ids": [
+        "1583004e3d479a5c33abee2829504a11",
+        "b7487fb05fb78aa33b4f12a7c61c65b8",
+        "7f9fee5218085d2f07113ecd08205e9b",
+        "3bd38f092d34af114092ed9cd69359fc",
+        "39990cb6d250c165cf8793ba64a0095e",
+        "b038500d917a1c820180e4130efcdd47",
+        "1c4edf90f10bd243d96bc3b0dfcb4f8b",
+        "f9965908cac5520a07456dcd03700f10"
+      ],
+      "receipt_sha256": "ed8cede1725ef15839d8f7603fcdc169797170cc4d897846f9e428035f292502",
+      "usage": {
+        "input_tokens": 19617,
+        "cached_input_tokens": 0,
+        "output_tokens": 1174,
+        "reasoning_tokens": 200
+      },
+      "latency_seconds": 32.35920390000683,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/b7487fb05fb78aa33b4f12a7c61c65b8/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/7f9fee5218085d2f07113ecd08205e9b/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/39990cb6d250c165cf8793ba64a0095e/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/1c4edf90f10bd243d96bc3b0dfcb4f8b/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/1583004e3d479a5c33abee2829504a11/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/f9965908cac5520a07456dcd03700f10/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/3bd38f092d34af114092ed9cd69359fc/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/b038500d917a1c820180e4130efcdd47/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/broker_inventory_final/batches/20261009T202119-05776d2279b8/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        0
+      ]
+    },
+    {
+      "invocation_key": "3cfdd5ebeb77a644c8456f17885fa33c93e309b37ce713d717382b643ba9f3c5",
+      "status": "ok",
+      "request_ids": [
+        "981becf904b9dc92c4f62a2fbfbc955b",
+        "40512eb9393a9193ac23d67886506fa3"
+      ],
+      "receipt_sha256": "11e97a4202517b609ea441302392f6653097765dc1dc36d30e1e7eba474d5d33",
+      "usage": {
+        "input_tokens": 16923,
+        "cached_input_tokens": 0,
+        "output_tokens": 289,
+        "reasoning_tokens": 54
+      },
+      "latency_seconds": 11.130581599994912,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/981becf904b9dc92c4f62a2fbfbc955b/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/40512eb9393a9193ac23d67886506fa3/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/broker_inventory_final/batches/20261009T203511-2bf5836d5d2b/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        0
+      ]
+    },
+    {
+      "invocation_key": "3e99351a2fe04e38e9741cc280f002c37eb734742b5c3234eb532e10acff52f9",
+      "status": "ok",
+      "request_ids": [
+        "40ca5823aa3405960c7a32047ce56941"
+      ],
+      "receipt_sha256": "d868aade766340a8c77e95d88c15241b09d712956fcc13e0b99dbdd706e98494",
+      "usage": {
+        "input_tokens": 16794,
+        "cached_input_tokens": 0,
+        "output_tokens": 166,
+        "reasoning_tokens": 43
+      },
+      "latency_seconds": 7.975406400000793,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/40ca5823aa3405960c7a32047ce56941/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222226-6f8744775afb/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "4202b444bf5797cfe25283b4b23a9f154ef6364658e9f52b7e3d8587d161e05a",
+      "status": "ok",
+      "request_ids": [
+        "e43fbe265164182187481701cc20ff1e"
+      ],
+      "receipt_sha256": "82678b474c22b6e93925c45b432e7856accb33379d6537fac47d22ca2a295582",
+      "usage": {
+        "input_tokens": 16787,
+        "cached_input_tokens": 0,
+        "output_tokens": 115,
+        "reasoning_tokens": 0
+      },
+      "latency_seconds": 7.517148400002043,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/e43fbe265164182187481701cc20ff1e/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T220159-b3da72f96ed1/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "469ff1cbad50559d087e75739cfa03e1ce4b35fa99c210cd3252711831cc3247",
+      "status": "ok",
+      "request_ids": [
+        "876f8df8c010966161bad462a7d86745"
+      ],
+      "receipt_sha256": "3236d2f6b14f83a082082a1343e2a3be3f8d0df85d2ced283ec16ff1844702b1",
+      "usage": {
+        "input_tokens": 16805,
+        "cached_input_tokens": 0,
+        "output_tokens": 197,
+        "reasoning_tokens": 69
+      },
+      "latency_seconds": 10.574894299992593,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/876f8df8c010966161bad462a7d86745/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221743-0d1335fc8dcd/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "4f657ff3888b73aef3eefb8df2977fb7fcffb3581f13ba79d2dce8994313635a",
+      "status": "ok",
+      "request_ids": [
+        "0348491d352ce86e64403b7f11d7b988"
+      ],
+      "receipt_sha256": "534013d7ad3e4f5b26212a9047eb2d2a624ec1c72e4403709c80abe34891b121",
+      "usage": {
+        "input_tokens": 17207,
+        "cached_input_tokens": 0,
+        "output_tokens": 246,
+        "reasoning_tokens": 85
+      },
+      "latency_seconds": 10.514707000009366,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/0348491d352ce86e64403b7f11d7b988/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T220442-f078e0222565/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "5021a826704a4d2e7ff8b748c13c59185518496d34ce74e8e49bacb9bcce8122",
+      "status": "ok",
+      "request_ids": [
+        "981519c51be0a925a9e3f85becb00cec"
+      ],
+      "receipt_sha256": "3c4988852a1bc855bd645c0c145387de08a6c0d7886eb0c7243d0f30d0a47dc9",
+      "usage": {
+        "input_tokens": 16805,
+        "cached_input_tokens": 0,
+        "output_tokens": 138,
+        "reasoning_tokens": 0
+      },
+      "latency_seconds": 6.746008200003416,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/981519c51be0a925a9e3f85becb00cec/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222742-cd063671889a/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "5338286c4abd4b51064fc4d8990b1b7d685b29c933c62714655c20d400c1796f",
+      "status": "ok",
+      "request_ids": [
+        "95cd3214a754ef325c8b1075c5945483"
+      ],
+      "receipt_sha256": "964914f8d451878e32fac0a4c003eb212d310a98e987741c6aaf3b5c521f20b2",
+      "usage": {
+        "input_tokens": 17207,
+        "cached_input_tokens": 0,
+        "output_tokens": 190,
+        "reasoning_tokens": 36
+      },
+      "latency_seconds": 7.719307799998205,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/95cd3214a754ef325c8b1075c5945483/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222025-b5f841429f14/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "5a510c1dbb61d0fa56359bc50fd5051ec1f623cfe52dd3fbb99906911890bed8",
+      "status": "ok",
+      "request_ids": [
+        "c5aaad1d49f055244748c57332fc3edd"
+      ],
+      "receipt_sha256": "069f6fef61dc0d1f23708b4470e02a989f0b0dfd162bbb2eb764fc0d2cf6f05f",
+      "usage": {
+        "input_tokens": 16796,
+        "cached_input_tokens": 0,
+        "output_tokens": 150,
+        "reasoning_tokens": 38
+      },
+      "latency_seconds": 7.851194400005625,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/c5aaad1d49f055244748c57332fc3edd/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221253-b5a7268dc15f/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "6263057403470b9409939e636056a57715b6e54e092a65cdc96625ea2432ffd5",
+      "status": "ok",
+      "request_ids": [
+        "ec83a671ffb4dad4d36cbd7eb326e750"
+      ],
+      "receipt_sha256": "1e63e14b1f0d85716a66eb46f9474d6021578ec724f05fa9e3ec3be8d45b2fb7",
+      "usage": {
+        "input_tokens": 16799,
+        "cached_input_tokens": 0,
+        "output_tokens": 131,
+        "reasoning_tokens": 0
+      },
+      "latency_seconds": 6.679982299989206,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/ec83a671ffb4dad4d36cbd7eb326e750/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222512-d322de2038d0/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "651a7895805c26ed4d1147f2c8f9aa84effef68dfe010a0ff72a15cd480a5f9d",
+      "status": "ok",
+      "request_ids": [
+        "5361aeb60402987f872a64df6b9dbea4"
+      ],
+      "receipt_sha256": "d9f5802f3b9b57334bdb77856a6054ffb3fb9ceca82acd35ebe9908f0b3f13a4",
+      "usage": {
+        "input_tokens": 17198,
+        "cached_input_tokens": 0,
+        "output_tokens": 236,
+        "reasoning_tokens": 101
+      },
+      "latency_seconds": 12.484085000003688,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/5361aeb60402987f872a64df6b9dbea4/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221901-3f6ad7091b96/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "6b78e2099595040d06744293241e3b7352652a5013e10508b752f98df2340e64",
+      "status": "ok",
+      "request_ids": [
+        "ff464b51cd845ea72807cd0222eee53b"
+      ],
+      "receipt_sha256": "9ed8a61d4c0b2992ec4bd29602cb94334d6eb10ce59f21e111556cbfc8592073",
+      "usage": {
+        "input_tokens": 17192,
+        "cached_input_tokens": 0,
+        "output_tokens": 196,
+        "reasoning_tokens": 61
+      },
+      "latency_seconds": 9.231966199993622,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/ff464b51cd845ea72807cd0222eee53b/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T220728-fe3a975001fa/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "6e4c792c7a15f825402d794876f01e36c2b09662a41af1d0776f30d0a5760f43",
+      "status": "ok",
+      "request_ids": [
+        "b3b6e4efe62fbe72ebef296ca516b6a2",
+        "6ef712dc253e395c53eea6f114beed1c"
+      ],
+      "receipt_sha256": "2be95b7fbddbd7107ffe38618c070ce70dd15e893447f14a7292084813aae645",
+      "usage": {
+        "input_tokens": 17680,
+        "cached_input_tokens": 0,
+        "output_tokens": 575,
+        "reasoning_tokens": 244
+      },
+      "latency_seconds": 17.41532639999059,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/6ef712dc253e395c53eea6f114beed1c/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/b3b6e4efe62fbe72ebef296ca516b6a2/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/broker_inventory_final/batches/20261009T203933-d0b67f3a8dff/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        0
+      ]
+    },
+    {
+      "invocation_key": "6e788c75e054a53e31c996763e779637c218d2efaf4eef9163fb1cf5a925e4a1",
+      "status": "ok",
+      "request_ids": [
+        "8c2b6f571c515938095645e4d45b8d52",
+        "59477bf0554fc9ee8e47592a927527da",
+        "2149938283330cf1af0b3b99d2c84db5",
+        "38d26f879465ecb4d635ba2259ad3b9c",
+        "ac331c11996a5bba6d3f8d78a3085de7",
+        "9fd636f7255932a58606713b383560f9"
+      ],
+      "receipt_sha256": "51da565f14f79c536ea6b392661002fb4c16a57addc1f582d91cb6d21321b1ff",
+      "usage": {
+        "input_tokens": 19335,
+        "cached_input_tokens": 0,
+        "output_tokens": 919,
+        "reasoning_tokens": 214
+      },
+      "latency_seconds": 27.477447299999767,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/2149938283330cf1af0b3b99d2c84db5/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/8c2b6f571c515938095645e4d45b8d52/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/59477bf0554fc9ee8e47592a927527da/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/ac331c11996a5bba6d3f8d78a3085de7/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/9fd636f7255932a58606713b383560f9/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/38d26f879465ecb4d635ba2259ad3b9c/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/broker_inventory_final/batches/20261009T204530-052b66bb9979/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        0
+      ]
+    },
+    {
+      "invocation_key": "704bf9847b9f4bbf76d32c05d50169e5b2a393e0b5287d985f2b0ba4b0f053d5",
+      "status": "ok",
+      "request_ids": [
+        "babcf9146b7e4ae2e3939a9de5dbb7df"
+      ],
+      "receipt_sha256": "241d2f3f12b0690937dbad34d03243bd41a68c85ed00a50470d0dcf76bf45117",
+      "usage": {
+        "input_tokens": 16825,
+        "cached_input_tokens": 0,
+        "output_tokens": 228,
+        "reasoning_tokens": 82
+      },
+      "latency_seconds": 8.049767699994845,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/babcf9146b7e4ae2e3939a9de5dbb7df/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221808-aafd16238fb2/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "7373ea4849f2adfef40ce39e99997c1e72d795dd54712218725479dd3af901f4",
+      "status": "ok",
+      "request_ids": [
+        "71df6c308369ff4eec721c2d44aa329b",
+        "c1b196fc10243a7bd62c09ed9496e597",
+        "c67a7fa60b10ba141abc12a3fee2e9d0",
+        "9744c416b6bb2388c288378424be05d4",
+        "c074270c0f7e91d5e291edcc5296f003",
+        "28ec7d97600ce37695675a1d2e977ac1",
+        "28412a5db43e0cd79c9d4b0aaf1e64d3",
+        "db18b53e1bfcd75de63b49a9c4b150a8"
+      ],
+      "receipt_sha256": "90d3a91a901b4943ad9bfd5bab075f800a55386dcce3f6028f801a7489d7f07a",
+      "usage": {
+        "input_tokens": 17835,
+        "cached_input_tokens": 0,
+        "output_tokens": 1075,
+        "reasoning_tokens": 100
+      },
+      "latency_seconds": 20.284576799997012,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/c1b196fc10243a7bd62c09ed9496e597/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/c67a7fa60b10ba141abc12a3fee2e9d0/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/71df6c308369ff4eec721c2d44aa329b/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/9744c416b6bb2388c288378424be05d4/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/db18b53e1bfcd75de63b49a9c4b150a8/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/28ec7d97600ce37695675a1d2e977ac1/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/c074270c0f7e91d5e291edcc5296f003/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/28412a5db43e0cd79c9d4b0aaf1e64d3/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/broker_inventory_final/batches/20261009T202330-0f7d0a84f561/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        0
+      ]
+    },
+    {
+      "invocation_key": "779a9e0e6d0fd8f34ec72a88849015cdd4a556b44a8b6d702b35cc7229f84553",
+      "status": "ok",
+      "request_ids": [
+        "8b58e1e4abb5053a4bb494d343064de1"
+      ],
+      "receipt_sha256": "306bcdd64e3dc73074cae542f0778d7ea71a92cd1acf3f593d2766c80c3b5d87",
+      "usage": {
+        "input_tokens": 17204,
+        "cached_input_tokens": 0,
+        "output_tokens": 483,
+        "reasoning_tokens": 330
+      },
+      "latency_seconds": 14.544304999988526,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/8b58e1e4abb5053a4bb494d343064de1/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T220910-37900940c64d/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "7b04c03b35745456e32e10a6e6e7451b658da4badb93187e259d5a6890b6b2ab",
+      "status": "ok",
+      "request_ids": [
+        "5cddf061ca3a2120d362115b442e3bf2"
+      ],
+      "receipt_sha256": "c7560cec1d1e3a40dfa1ea8826a27b23ca372296eae6910116a9e2b3ac7fc09f",
+      "usage": {
+        "input_tokens": 17213,
+        "cached_input_tokens": 0,
+        "output_tokens": 491,
+        "reasoning_tokens": 341
+      },
+      "latency_seconds": 16.261330799999996,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/5cddf061ca3a2120d362115b442e3bf2/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221344-da4592e4d6bd/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "7daddf92d6d51fb558ece710bc0d6303f2c70d9159341db512a68ab615565d15",
+      "status": "ok",
+      "request_ids": [
+        "bd3bf61e314b84d9c4495d74a95834a5"
+      ],
+      "receipt_sha256": "c70fefcf9ac64e8fab623f28f469c7429d05bcdad48ed3788df0342038e09215",
+      "usage": {
+        "input_tokens": 16793,
+        "cached_input_tokens": 0,
+        "output_tokens": 113,
+        "reasoning_tokens": 0
+      },
+      "latency_seconds": 6.7923300999973435,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/bd3bf61e314b84d9c4495d74a95834a5/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221204-9a96ef08b666/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "8010e7b4ddf09810ab08dd52b93a4edc1764fd6187a37896b03c91c4101d20ca",
+      "status": "ok",
+      "request_ids": [
+        "b7d7937f8fd1fa8a61661ae9dda492e1"
+      ],
+      "receipt_sha256": "61ce7b794a49a68f3f25d46840e03a9ab58b654b929d5be4ed82d6673ca36605",
+      "usage": {
+        "input_tokens": 16803,
+        "cached_input_tokens": 0,
+        "output_tokens": 129,
+        "reasoning_tokens": 0
+      },
+      "latency_seconds": 6.4187232999975095,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/b7d7937f8fd1fa8a61661ae9dda492e1/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T220707-484faee8e3de/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "8491a303be689334119a79b9826f7c6338879847a77bdf90a02d9822e0b83694",
+      "status": "ok",
+      "request_ids": [
+        "42f2bcc0ea50572000341c46fec783b7"
+      ],
+      "receipt_sha256": "334a9430bc26e5fdcb8c658dba8840f500be056558f7f2264135b9dfc1c4daad",
+      "usage": {
+        "input_tokens": 17203,
+        "cached_input_tokens": 0,
+        "output_tokens": 210,
+        "reasoning_tokens": 64
+      },
+      "latency_seconds": 10.008295500010718,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/42f2bcc0ea50572000341c46fec783b7/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221011-9abec61d646f/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "8a8e7abe9fd6b4089dc88090e9a3a0a6b29cf1b968a2b736bf23f73f106a4143",
+      "status": "ok",
+      "request_ids": [
+        "371558bc4d9d757471f475a32cdabae1"
+      ],
+      "receipt_sha256": "f2805052dbbbf5c8f67624db77bf4137b0b465c92c4e7935dfad534c5173faad",
+      "usage": {
+        "input_tokens": 17206,
+        "cached_input_tokens": 0,
+        "output_tokens": 365,
+        "reasoning_tokens": 217
+      },
+      "latency_seconds": 13.182731700013392,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/371558bc4d9d757471f475a32cdabae1/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221931-a3c6df3efd95/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "8db58e5e53163a88b38e8e0bc3d4dab84198091ac79a19793ec2495448ccfed1",
+      "status": "ok",
+      "request_ids": [
+        "3384fd2c0bfc63c05707d6c24ef14617",
+        "e10a0e3d4c57270504548d3f49626991"
+      ],
+      "receipt_sha256": "12dc49dba5d2bfaaf6e6f83aa28ae056e880db38fc9684ce1c2ccee74cc4b655",
+      "usage": {
+        "input_tokens": 17616,
+        "cached_input_tokens": 0,
+        "output_tokens": 338,
+        "reasoning_tokens": 95
+      },
+      "latency_seconds": 12.745220800003153,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/e10a0e3d4c57270504548d3f49626991/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/3384fd2c0bfc63c05707d6c24ef14617/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/broker_inventory_final/batches/20261009T203612-4ca42b229c13/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        0
+      ]
+    },
+    {
+      "invocation_key": "940c87df81723d136d411c476c42ebe78e899ac67ec13e191b036f73f8246f02",
+      "status": "ok",
+      "request_ids": [
+        "4ed2a0abfa7e4730c3d0279780ba25a7"
+      ],
+      "receipt_sha256": "4ee014d9a5fcfefefe1dc9aa8836b9327ae85f87ca898bb1ab157bb3df9e6bb9",
+      "usage": {
+        "input_tokens": 17217,
+        "cached_input_tokens": 0,
+        "output_tokens": 220,
+        "reasoning_tokens": 68
+      },
+      "latency_seconds": 9.549420600000303,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/4ed2a0abfa7e4730c3d0279780ba25a7/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221447-3927943d6add/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "9806a60c8907acd15faa8ed142c3c243dedf2d8b5ba3844e5a58821456affa40",
+      "status": "ok",
+      "request_ids": [
+        "29e2238bc0cf0f59ecc8704c4a7947da"
+      ],
+      "receipt_sha256": "d2e6689985dfbc32c1762fee35a8087cdfad35ea76d761b8ae9201dc9686f2b8",
+      "usage": {
+        "input_tokens": 17202,
+        "cached_input_tokens": 0,
+        "output_tokens": 284,
+        "reasoning_tokens": 142
+      },
+      "latency_seconds": 11.145530800000415,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/29e2238bc0cf0f59ecc8704c4a7947da/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222803-b868208c526c/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "9b1b5053eca2f333f00c10cee00c0af5a627b0eac8c07a8390b83facdadc7563",
+      "status": "ok",
+      "request_ids": [
+        "894efd284bcaa52a0e11f3b1de90a648"
+      ],
+      "receipt_sha256": "efd2747d3b714808e63df9cd25fbb0cd28c014e1c6800a790fd2f994f5c3b029",
+      "usage": {
+        "input_tokens": 17213,
+        "cached_input_tokens": 0,
+        "output_tokens": 376,
+        "reasoning_tokens": 225
+      },
+      "latency_seconds": 12.292335499994806,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/894efd284bcaa52a0e11f3b1de90a648/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221830-ffc679f90e01/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "9df1bae9dc9c558025ba3fcfbc7f065d3c718daf7078f53e5952034cbfcc25c7",
+      "status": "ok",
+      "request_ids": [
+        "6b4cf074c753d1860bb2036a0e2a94b9"
+      ],
+      "receipt_sha256": "e745a6f694f6563a02d0a766372f1cd1d973833516fe15f0b827b825669e7c7a",
+      "usage": {
+        "input_tokens": 17199,
+        "cached_input_tokens": 0,
+        "output_tokens": 195,
+        "reasoning_tokens": 67
+      },
+      "latency_seconds": 9.102177099994151,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/6b4cf074c753d1860bb2036a0e2a94b9/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222603-9f5ab652a46d/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "a57b0ba5caf5a069e481306b4c87dfccd80404b8eb21c9111762a9a04681a5ca",
+      "status": "ok",
+      "request_ids": [
+        "8594a99e6faad73c8b52ff20c4a13fe5"
+      ],
+      "receipt_sha256": "2391f08760e53892a2881490967325f9d5efcaa760fb94bdfdafc06acbc88f4c",
+      "usage": {
+        "input_tokens": 16813,
+        "cached_input_tokens": 0,
+        "output_tokens": 204,
+        "reasoning_tokens": 67
+      },
+      "latency_seconds": 8.730690299998969,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/8594a99e6faad73c8b52ff20c4a13fe5/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222833-3ec113aafc7f/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "b35ce0b92a3e0cef193b5654c68e9b56e97bad2b75267931177e3b8c11307599",
+      "status": "ok",
+      "request_ids": [
+        "ada85542d95581b3d6cba5f846b81b59",
+        "e1b1e3dc3f0558f837046a5becb54de3",
+        "3727c70955beaab3bcdd290f89c19154",
+        "b588565be017f61f4989e57ad735604f"
+      ],
+      "receipt_sha256": "ed6aabbf25bf57b69fab26d60406a35f530bcab8d40f557632ce60a7c88cac93",
+      "usage": {
+        "input_tokens": 18540,
+        "cached_input_tokens": 0,
+        "output_tokens": 699,
+        "reasoning_tokens": 192
+      },
+      "latency_seconds": 19.69050630000129,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/ada85542d95581b3d6cba5f846b81b59/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/3727c70955beaab3bcdd290f89c19154/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/b588565be017f61f4989e57ad735604f/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/e1b1e3dc3f0558f837046a5becb54de3/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/broker_inventory_final/batches/20261009T204417-5e67692373b1/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        0
+      ]
+    },
+    {
+      "invocation_key": "b42fb70355836340f81819146eebb3d7f018ed5b070847fac1112acbe52dbefc",
+      "status": "ok",
+      "request_ids": [
+        "6b0b9584b33d8673a31a69f264d52d78"
+      ],
+      "receipt_sha256": "ecf4bb9a99d2d19fe04692f5cb97b15298b8dafbaf8ae7abe8ccad2c52c14edc",
+      "usage": {
+        "input_tokens": 17220,
+        "cached_input_tokens": 0,
+        "output_tokens": 306,
+        "reasoning_tokens": 142
+      },
+      "latency_seconds": 11.30485289999342,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/6b0b9584b33d8673a31a69f264d52d78/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222314-669586c67cda/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "b852dbc01319d095689d8314ffbde9133a4df78ad982a7f3abb2af70422ce060",
+      "status": "ok",
+      "request_ids": [
+        "cdad5dc8a3c3de8c269b56e32cb3ccaf",
+        "1c435b2d2d97367a915c6a8c57e464f6"
+      ],
+      "receipt_sha256": "96521f37436dbb96c15cc1f0d114b470cf115d2a6dae5a917932fe64a0272594",
+      "usage": {
+        "input_tokens": 17674,
+        "cached_input_tokens": 0,
+        "output_tokens": 497,
+        "reasoning_tokens": 193
+      },
+      "latency_seconds": 17.888622899990878,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/1c435b2d2d97367a915c6a8c57e464f6/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/cdad5dc8a3c3de8c269b56e32cb3ccaf/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/broker_inventory_final/batches/20261009T204124-9eb48bf93f84/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        0
+      ]
+    },
+    {
+      "invocation_key": "be1e3b18f54773f8f110f1ed7a2d2033ee936141772c1d6b22d9e4ab969d9e23",
+      "status": "ok",
+      "request_ids": [
+        "bc995d26793c8dc007899694459c316a",
+        "b9841ba8cea5dc816f789c556ab139eb",
+        "3117727307b0de92deb2ee51cf5e4ccb",
+        "1d07ae7adf277d779a354dff7ca61202",
+        "3629856fbddbd8acf3487502b7e97cf2",
+        "db1a61c16263cbcab7cdc3dfd16f4db2"
+      ],
+      "receipt_sha256": "6fe5a5c84e2d519eb3661ff89b3cac36dba7febfa8420e7038baa30a59a17207",
+      "usage": {
+        "input_tokens": 17497,
+        "cached_input_tokens": 0,
+        "output_tokens": 702,
+        "reasoning_tokens": 23
+      },
+      "latency_seconds": 15.767507199998363,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/bc995d26793c8dc007899694459c316a/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/db1a61c16263cbcab7cdc3dfd16f4db2/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/3629856fbddbd8acf3487502b7e97cf2/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/1d07ae7adf277d779a354dff7ca61202/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/b9841ba8cea5dc816f789c556ab139eb/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/3117727307b0de92deb2ee51cf5e4ccb/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/broker_inventory_final/batches/20261009T204313-5ab432ae7dc9/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        0
+      ]
+    },
+    {
+      "invocation_key": "c04d0eb1dcba134d0eb0a0f121d4e800fbdeb97db3c04dd178613c5fcf905a33",
+      "status": "ok",
+      "request_ids": [
+        "24225aff2aa57d506ec22adde1ff9cd4"
+      ],
+      "receipt_sha256": "3fc1a2e885a6beb78e8aa95c46bcb3626fc1d718669dd0ec9bf392ae7af6dc0d",
+      "usage": {
+        "input_tokens": 17211,
+        "cached_input_tokens": 0,
+        "output_tokens": 388,
+        "reasoning_tokens": 239
+      },
+      "latency_seconds": 12.525849499987089,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/24225aff2aa57d506ec22adde1ff9cd4/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222920-53b739b31e86/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "c0a2989925cd442f537733c17742154f2611535c60c7128354e4197050a99b13",
+      "status": "ok",
+      "request_ids": [
+        "b52e644236046a04886874992120fb91"
+      ],
+      "receipt_sha256": "bab48b8bfb96db6ef08a48c9832ae894721e02bff9821cf3897c94aff028dc80",
+      "usage": {
+        "input_tokens": 17191,
+        "cached_input_tokens": 0,
+        "output_tokens": 182,
+        "reasoning_tokens": 40
+      },
+      "latency_seconds": 8.80948470000294,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/requests/b52e644236046a04886874992120fb91/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v1/broker_inventory_final/batches/20261009T211312-e59c5669f567/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        1
+      ]
+    },
+    {
+      "invocation_key": "c54d328ae66aaea0684b3414dbb5c0d1f8d8a68d1525a4be8eefcab5a3c4962c",
+      "status": "ok",
+      "request_ids": [
+        "8f5a29a6d61ee56bbf351743c085f4b9"
+      ],
+      "receipt_sha256": "5b438a17151c97bd1a6e1a5f18512bd4fdabd0336915858147019c078e17bf63",
+      "usage": {
+        "input_tokens": 17240,
+        "cached_input_tokens": 0,
+        "output_tokens": 308,
+        "reasoning_tokens": 154
+      },
+      "latency_seconds": 10.011011100010364,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/8f5a29a6d61ee56bbf351743c085f4b9/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221225-3bd6c8ce671e/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "cc1a5f2e2ade4bb70f40e2d402b858d1ab305e6c3deb75236421272702c83a59",
+      "status": "ok",
+      "request_ids": [
+        "05e064892d0af71df66163638cbaac8c",
+        "710a798716a31c07c3a518a2dc026206",
+        "b56af61a96e54b042c0f9cd6c75cee3b",
+        "067e0e30bfb80c10bafb48d6c9ebe57e"
+      ],
+      "receipt_sha256": "634f5718171c22ec114118533db29959fa892e6cbec338317a3701b87a845d02",
+      "usage": {
+        "input_tokens": 18460,
+        "cached_input_tokens": 0,
+        "output_tokens": 645,
+        "reasoning_tokens": 132
+      },
+      "latency_seconds": 20.46644569998898,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/710a798716a31c07c3a518a2dc026206/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/067e0e30bfb80c10bafb48d6c9ebe57e/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/05e064892d0af71df66163638cbaac8c/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/b56af61a96e54b042c0f9cd6c75cee3b/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/broker_inventory_final/batches/20261009T203654-a42829b68513/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        0
+      ]
+    },
+    {
+      "invocation_key": "d3c1974b72aa9c63d56f322a8cace0bd5735b9dae17e11f9b76c545fcdf87577",
+      "status": "ok",
+      "request_ids": [
+        "eb9827f49b47720a9502d6c7d0d54ba5"
+      ],
+      "receipt_sha256": "a89e170a104ae14c825b5612dea081411741655bc416b7fb6a011822490b1075",
+      "usage": {
+        "input_tokens": 17215,
+        "cached_input_tokens": 0,
+        "output_tokens": 290,
+        "reasoning_tokens": 144
+      },
+      "latency_seconds": 10.234194000004209,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/eb9827f49b47720a9502d6c7d0d54ba5/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222344-16dc8ebc4092/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "d6e5c03f08d3c3388948d10acb9529e6042c55c22c4194add7c9cc6d86bf83d8",
+      "status": "ok",
+      "request_ids": [
+        "d460cfd97329e756958a96fe893ce853"
+      ],
+      "receipt_sha256": "0c6a2cc89805a41a84d1a12252eb49ba424317c6d1726f0c3cd83c3164032275",
+      "usage": {
+        "input_tokens": 17226,
+        "cached_input_tokens": 0,
+        "output_tokens": 384,
+        "reasoning_tokens": 225
+      },
+      "latency_seconds": 12.121761700007482,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/d460cfd97329e756958a96fe893ce853/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221109-9df6d564a9c5/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "dc73e5f025fe8062915bf7cbc94fdb5d3f6e271f4b747b2acc8f72907c3edece",
+      "status": "ok",
+      "request_ids": [
+        "97fe6e359e61f1b8b9998aeabf51c0dd"
+      ],
+      "receipt_sha256": "7edc9f2269967cca912da5b95a77768d579a683c1602cd65edab98d56f9471f3",
+      "usage": {
+        "input_tokens": 17212,
+        "cached_input_tokens": 0,
+        "output_tokens": 257,
+        "reasoning_tokens": 102
+      },
+      "latency_seconds": 10.339123400000972,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/97fe6e359e61f1b8b9998aeabf51c0dd/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222714-d1d10b9cc575/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "dfa8d8a18bf301c332e4ee93152797dfb3d3a399efbe7911d4a220ba5c0fbf9d",
+      "status": "ok",
+      "request_ids": [
+        "a33b3494dd88bd84f9da2a0edb49fa93"
+      ],
+      "receipt_sha256": "d40d026c6cd9a55642f7111bde8da305763cec45f2112a9576a8c49aead8be2f",
+      "usage": {
+        "input_tokens": 16791,
+        "cached_input_tokens": 0,
+        "output_tokens": 115,
+        "reasoning_tokens": 0
+      },
+      "latency_seconds": 6.3719758999941405,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/a33b3494dd88bd84f9da2a0edb49fa93/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222654-e348b4108ec5/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "dfbf86c2e574f1f9c34d172ac35091775b28310a764c1b6cb4fe9c5941c0be4b",
+      "status": "ok",
+      "request_ids": [
+        "d43f15684ad2eca16712c133d319e7a7"
+      ],
+      "receipt_sha256": "f86b4c23d3b8452fecd0d4dd66252f1834a6d5b8a81d44b2d16f6e99700afd89",
+      "usage": {
+        "input_tokens": 17203,
+        "cached_input_tokens": 0,
+        "output_tokens": 241,
+        "reasoning_tokens": 107
+      },
+      "latency_seconds": 9.53957100000116,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/d43f15684ad2eca16712c133d319e7a7/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T220220-7ab483d19b0e/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "e02e958d8f99c200cc1de19e3b86a6348de25f92deeeeb3c0a6ccce77d344383",
+      "status": "ok",
+      "request_ids": [
+        "7a3166de3afc02122f99748953575f84"
+      ],
+      "receipt_sha256": "f68c81eb6d1e04966b150b27714f519ec12b9fc25e6e66a6d34a290c165b6bfa",
+      "usage": {
+        "input_tokens": 16805,
+        "cached_input_tokens": 0,
+        "output_tokens": 221,
+        "reasoning_tokens": 88
+      },
+      "latency_seconds": 8.266524200007552,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/7a3166de3afc02122f99748953575f84/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222003-991d36b55f2a/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "e144b07afc64e4154bb5684a0397085ab7f873006eb29cb1932484bdbd717ea3",
+      "status": "ok",
+      "request_ids": [
+        "6be23588c5594365c7009312c3cf4fb6"
+      ],
+      "receipt_sha256": "6122486b42abfcb9268253021438197ae3d42df6d14d9ce3d88eac9fcd653a2e",
+      "usage": {
+        "input_tokens": 16826,
+        "cached_input_tokens": 0,
+        "output_tokens": 244,
+        "reasoning_tokens": 106
+      },
+      "latency_seconds": 9.658241199998884,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/6be23588c5594365c7009312c3cf4fb6/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221140-448ff0c96d91/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "e9b3831441769e02ecb8744dfd7f581d783bccf18f0a6720739ae2c9421e3d7c",
+      "status": "ok",
+      "request_ids": [
+        "4fee83fb7e118c61ff506ba8ac600a79"
+      ],
+      "receipt_sha256": "4bb1dd60a081305bf957ba5eb8de78f18de435cb43ddb762c83ebd7f46493ebb",
+      "usage": {
+        "input_tokens": 17204,
+        "cached_input_tokens": 0,
+        "output_tokens": 338,
+        "reasoning_tokens": 183
+      },
+      "latency_seconds": 11.854410400002962,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/4fee83fb7e118c61ff506ba8ac600a79/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222533-e2938bf6f8ae/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "ebc01d2d023cfa6b6b2a41d810af4359d054677a5338660514fefd3441675e10",
+      "status": "ok",
+      "request_ids": [
+        "87596d10c658348e46ce0eb08fc68458"
+      ],
+      "receipt_sha256": "99562c5e7e80d3f211b5519f07c9cf8e335acb16bbe5e5b7d20b8bf4078335d7",
+      "usage": {
+        "input_tokens": 16809,
+        "cached_input_tokens": 0,
+        "output_tokens": 206,
+        "reasoning_tokens": 57
+      },
+      "latency_seconds": 8.744231999997282,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/87596d10c658348e46ce0eb08fc68458/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T220818-22b0e67702bc/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "ef0ed830951e1cd3c9ef10bcd855722a84731e85a62f0999aa4a7eff47e408a3",
+      "status": "ok",
+      "request_ids": [
+        "d4443dc9e2933ddd42824ee9abfe1376"
+      ],
+      "receipt_sha256": "504e1405f4d5e79230794e427f27ee7f51c45585b6e89093fa8fb15f382fc1b0",
+      "usage": {
+        "input_tokens": 17188,
+        "cached_input_tokens": 0,
+        "output_tokens": 269,
+        "reasoning_tokens": 134
+      },
+      "latency_seconds": 10.092863300000317,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/d4443dc9e2933ddd42824ee9abfe1376/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T220942-d0fedf204008/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "f28351306cf2f06210f088b93ee590ab2e6c8fb2646cb5235b05c60953f28845",
+      "status": "ok",
+      "request_ids": [
+        "1db8022b91df96af631d47c16cd5c13d"
+      ],
+      "receipt_sha256": "a32c379d3e669100f8587ae3d5f4a534d387d39c0fa2299086ec8d1717ebcac8",
+      "usage": {
+        "input_tokens": 17212,
+        "cached_input_tokens": 0,
+        "output_tokens": 252,
+        "reasoning_tokens": 104
+      },
+      "latency_seconds": 9.588872899999842,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/1db8022b91df96af631d47c16cd5c13d/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221617-2ba050f289b9/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "f3b9cacc37f125f0873da0d77f024f4c9c5f8a38647cb19c94327c5a38aed256",
+      "status": "ok",
+      "request_ids": [
+        "61235e1f39376f39e8b51cc299adfe5c"
+      ],
+      "receipt_sha256": "47c6fa2e3402cd183e8aca066821e887408c61c046ba34cf7f2bd58635d65549",
+      "usage": {
+        "input_tokens": 16809,
+        "cached_input_tokens": 0,
+        "output_tokens": 264,
+        "reasoning_tokens": 130
+      },
+      "latency_seconds": 9.592443100002129,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/61235e1f39376f39e8b51cc299adfe5c/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T222202-77abfd9ba796/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "f6ae68d150e281a90635ef7914ed4b75d56283ebd3ed35b2ebe7365ed2235ca8",
+      "status": "ok",
+      "request_ids": [
+        "8fd7bfd60af341cdd39ba6f5a83fdddc"
+      ],
+      "receipt_sha256": "e91e14611b42c295bb8ba92329906cf5973b1744f5efd2ce1a7dc952b532b4fd",
+      "usage": {
+        "input_tokens": 17197,
+        "cached_input_tokens": 0,
+        "output_tokens": 286,
+        "reasoning_tokens": 140
+      },
+      "latency_seconds": 11.68530969999847,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/8fd7bfd60af341cdd39ba6f5a83fdddc/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221039-89cec7dc0dae/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "f7636a566cca169e7055111888a762b15e0db236562a7fd7e177114a4eb676e1",
+      "status": "ok",
+      "request_ids": [
+        "b7d9c69fda94d0263bd10dbfb5d52117"
+      ],
+      "receipt_sha256": "eea2f745be4aba5761d8f6343624e0de244b0491dce3efd19d2669b5056e1b35",
+      "usage": {
+        "input_tokens": 17205,
+        "cached_input_tokens": 0,
+        "output_tokens": 357,
+        "reasoning_tokens": 207
+      },
+      "latency_seconds": 12.44877550000092,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/b7d9c69fda94d0263bd10dbfb5d52117/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T221515-3028aa723b84/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "f8703c218dc6a4004673f7a8e99b16a9933ef783ac99e916090f95cb445e2483",
+      "status": "ok",
+      "request_ids": [
+        "0b07a562d2df904422f6116b6897bd1d"
+      ],
+      "receipt_sha256": "71161268e06b6074e6014e4d7db09be5c7004174207e429eb0ced5223cc7eb14",
+      "usage": {
+        "input_tokens": 16808,
+        "cached_input_tokens": 0,
+        "output_tokens": 208,
+        "reasoning_tokens": 78
+      },
+      "latency_seconds": 8.147279099997832,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/requests/0b07a562d2df904422f6116b6897bd1d/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-multigpu-20261009-v2/broker_inventory_final/batches/20261009T220544-051d7be6195e/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        2
+      ]
+    },
+    {
+      "invocation_key": "fa584d0d198c1baf386dfd991e0e9d7756c00c2ed42f70a870694a53af7b58e9",
+      "status": "ok",
+      "request_ids": [
+        "a47893a3dd7f3b8e14fd8d1da5ba879a"
+      ],
+      "receipt_sha256": "1c87d96ec9e4a67169744f9e741082b469e010fc810d72e9504a6a712f9532a1",
+      "usage": {
+        "input_tokens": 17211,
+        "cached_input_tokens": 0,
+        "output_tokens": 385,
+        "reasoning_tokens": 249
+      },
+      "latency_seconds": 18.47944450000068,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/requests/a47893a3dd7f3b8e14fd8d1da5ba879a/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-20261009-v1/broker_inventory_final/batches/20261009T203223-1ea4131d4ba5/receipt.json"
+      ],
+      "transcript_problems": [],
+      "source_batches": [
+        0
+      ]
+    }
+  ]
+}

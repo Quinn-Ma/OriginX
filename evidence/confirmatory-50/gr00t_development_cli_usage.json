@@ -1,0 +1,53 @@
+{
+  "schema": "originx_gr00t_confirmatory_cli_usage_v1",
+  "unique_observed_cli_invocations": 1,
+  "observed_status_counts": {
+    "ok": 1
+  },
+  "known_usage_totals": {
+    "input_tokens": 17203,
+    "cached_input_tokens": 0,
+    "output_tokens": 213,
+    "reasoning_tokens": 83
+  },
+  "observed_calls_missing_counters": {
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0
+  },
+  "known_invocation_latency_sum_seconds": 10.852536399994278,
+  "observed_calls_missing_latency": 0,
+  "request_files": 1,
+  "requests_without_observed_cli_receipt": [],
+  "broker_inventory_provided": true,
+  "inventory_complete": true,
+  "complete_input_output_token_accounting": true,
+  "interrupted_cli_starts_without_receipt": [],
+  "invalid_receipts": [],
+  "cost_usd": null,
+  "reasoning_tokens_included_in_output_not_added_again": true,
+  "interpretation": "Known observed usage; unpublished/interrupted calls may be unknown. No inferred zero token usage or monetary price.",
+  "calls": [
+    {
+      "invocation_key": "a281664eff7a8ee16cf24a2e675be9d39cbf10892f72ef50ed1a15de0cc14582",
+      "status": "ok",
+      "request_ids": [
+        "65e7de966c64695055f10fe726c5ecbb"
+      ],
+      "receipt_sha256": "50efb13f39f1b2da1b784eb86e6cd30e794fecf0dece3177bf03361ffdc476c4",
+      "usage": {
+        "input_tokens": 17203,
+        "cached_input_tokens": 0,
+        "output_tokens": 213,
+        "reasoning_tokens": 83
+      },
+      "latency_seconds": 10.852536399994278,
+      "source_paths": [
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-gr00t-confirmatory-development-20261009-v2/requests/65e7de966c64695055f10fe726c5ecbb/cli_receipt.json",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-gr00t-confirmatory-development-20261009-v2/broker_inventory/batches/20261009T200102-af61d528b978/receipt.json"
+      ],
+      "transcript_problems": []
+    }
+  ]
+}

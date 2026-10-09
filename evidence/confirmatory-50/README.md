@@ -1,0 +1,11 @@
+# Final 50-case follow-up evidence
+
+The fixed amended cohort has 50 unique environments (one pre-existing fresh seed per task), 350 planned arm records, and no duplicate claims. This is a supplementary study after an outcome-independent, post-launch scope reduction; it does not replace the original 2,500-episode benchmark or the historical 1,004-failure rescue study.
+
+`report.json` is the delivered report (SHA256 d437095e785fd603cb6e99a2ae0d9556dbc2254a212ebef138e4a07c592c8270). `sealed_analysis_report.json` is the original aggregate before local archive metadata was added. `authority.json` and `record_provenance.json` retain the frozen assignment and batch provenance. `normalized_manifest.json` and `normalized_records.json` contain the fixed target cohort and individual records. All 350 individual arm outcomes are valid, but some pairs have initial-state deviations and some assigned advice was not delivered. Read the report's matching and delivery counts; raw completion does not imply a valid intervention.
+
+`outside_cohort_prior_records.json` preserves 191 earlier assignments outside the amended cohort. `all_original_assignment_records.json` preserves all original batch records; these must not be treated as additional independent study cases. Old infrastructure-error evidence and fallback outcomes were not overwritten or selectively rerun.
+
+`cli_usage.json` counts all 72 unique main-study invocations, including earlier out-of-cohort and failed/unapplied work: 1,244,218 input and 24,566 output tokens; output includes reasoning tokens. Summed invocation latency is 871.8794 seconds, not wall-clock experiment duration or per-case waiting time. Development costs are separate: B/base 6 calls (102,367 input, 1,011 output; 56.2519 seconds) and GR00T admission 1 call (17,203 input, 213 output; 10.8525 seconds). None overlaps the 72 main-study calls. Dollar charges are unavailable. Formal GR00T efficacy evaluation was not run.
+
+`final-delivery-audit.json` verifies archive SHA256s, disjoint claims, original receipt hashes, and all owned process identities inactive. The three raw campaign archives remain retained locally with hashes and sizes in this audit. No foreign processes were modified.

@@ -1,0 +1,25 @@
+\section{Scope-Amended 50-Case Follow-Up}
+\label{sec:followup}
+\paragraph{Question and sampling.}
+To examine simple-language explanations and potential regressions, a separate study originally sealed 2,500 fresh cases (50 per task). After execution began, the user requested a three-hour delivery window at 20:46:19 UTC on October 9, 2026. A deterministic amendment retains the minimum originally assigned fresh seed for each task: 50 cases and 350 arm assignments. Selection reads task/seed fields, not outcomes, but occurs after launch; this is a scope-amended follow-up, not completion of the original confirmation plan. The 191 already claimed out-of-cohort arm records remain archived separately. Historical results and their denominators are unchanged.
+
+\paragraph{Interventions and policy comparison.}
+The frozen B endpoint receives five arms: unchanged-instruction sham (C), original-task restatement (R), fixed generic recovery text (G), vision-blind Astra advice (L), and image-conditioned Astra advice (V). The original Xiaomi base receives C/V on the same cases. All use Eq.~\ref{eq:trigger}, their frozen horizons, and the existing append rule; L omits RGB. C traverses the wrapper without changing instruction bytes. The base is closely related to B; it is not cross-architecture replication. Formal GR00T evaluation is unrun, and its separate development checks provide no transfer result.
+
+\paragraph{Estimand and evidence requirements.}
+The primary information contrast is B:V--L; C comparisons quantify gains and harms against no instruction change, and R/G address simpler text. Each paired effect is $(W-L)/50$, where $W$ is treatment-only success and $L$ reference-only success. Initial fingerprints, exact pretrigger traces, and trigger observations must agree. Valid same-prefix early termination remains a paired result without requiring assistant use; clean delivery failure continues the original instruction. Infrastructure failures, initial deviations, and prefix deviations are retained separately. Missing endpoints produce identification bounds, not a fabricated complete-cohort rate. Task-block intervals are conditional descriptive sensitivity, not a multiple-comparison superiority claim.
+
+\begin{table}[t]
+\centering\small
+\input{reduced_comparison_rows}
+\caption{\textbf{Separate 50-case follow-up.} $M$: matched valid pairs; $W/L$: treatment/reference-only successes; $U=50-M$: unresolved comparisons, including deviations. Bounds retain known one-sided endpoints. All counts come from the final reconciled report.}
+\label{tab:followup}
+\end{table}
+
+\paragraph{Results and delivery.}
+All 350 assignments have valid terminal outcomes, but this does not mean 350 valid interventions. Raw B successes are C/R/G/L/V = 29/28/27/27/29 out of 50: V gives no raw gain over C. B:V--C has 44 matched pairs, one V-only success and no C-only success, with bounds of $[-8,+4]$ points. For B:V--L, 42 pairs match, with two V-only successes and bounds of $[-6,+16]$ points. All unresolved comparisons in Table~\ref{tab:followup} are initial deviations; technical-unknown and prefix-deviation counts are zero. Raw rate differences and matched effects are therefore distinct summaries.
+
+Only 20 B:V assignments receive applied visual advice; 20 terminate early and 10 use clean unchanged-instruction fallback. One of the two V--L wins is such a fallback: PickPlaceCounterToStove succeeds in C and V at step 574 while applied L advice fails. The other, WashFruitColander, receives V advice and succeeds at 2,347 steps, while C/L fail at 3,150. Thus two V-arm wins do not mean two rescues by visual advice. The base's raw count falls from 26 to 25; its matched comparison has one regression and no gain. Neither policy provides evidence of an overall assistance benefit here.
+
+\paragraph{Scope.}
+One seed per task cannot estimate within-task variation. Administrative truncation, inherited claims and infrastructure continuations are disclosed in the supplement; the 191 excluded prior arms remain archived. The small cohort, incomplete paired comparability and delivery fallbacks preclude broad transfer or superiority claims. Inference accounting includes 72 unique CLI invocations with complete input/output totals; the supplement separates these costs from task outcomes.
