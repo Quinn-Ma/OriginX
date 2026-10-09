@@ -1,11 +1,11 @@
-# Reproducing and auditing XR1-Continuous-B2000
+# Reproducing and auditing OriginX
 
-**Release contents.** The GitHub release provides `adapter-step-00001613.pt`, `branch-00002000.pt`, `evaluation-evidence.tar.gz`, and `SHA256SUMS`. The adaptation files are the exact artifacts used by the frozen evaluation, not newly trained weights. The base is obtained separately from Xiaomi. Neither training datasets nor base-model weight shards are republished.
+**Release contents.** The prepared OriginX release package contains `adapter-step-00001613.pt`, `branch-00002000.pt`, `evaluation-evidence.tar.gz`, and `SHA256SUMS`. The adaptation files are the exact artifacts used by the frozen evaluation, not newly trained weights. The base is obtained separately from Xiaomi. Neither training datasets nor base-model weight shards are republished.
+
+Download the exact adaptation files and evidence from the [OriginX v1.0.0 release](https://github.com/Quinn-Ma/OriginX/releases/tag/v1.0.0). Place both adaptation `.pt` files in `weights/`. A Hugging Face mirror is planned under the name `OriginX`, but no Hugging Face URL has been verified; this release does not claim that mirror is available.
 
 ```bash
 mkdir -p weights
-gh release download v1.0.0 --repo Quinn-Ma/xr1-continuous-b2000 --pattern '*.pt' --dir weights
-gh release download v1.0.0 --repo Quinn-Ma/xr1-continuous-b2000 --pattern evaluation-evidence.tar.gz --pattern SHA256SUMS
 python verify_evidence.py evaluation-evidence.tar.gz
 ```
 

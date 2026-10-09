@@ -1,4 +1,8 @@
-# XR1-Continuous-B2000
+# OriginX
+
+[Weights and full evaluation evidence](https://github.com/Quinn-Ma/OriginX/releases/tag/v1.0.0) · [Reproduction guide](REPRODUCIBILITY.md) · [Technical report](TECHNICAL_REPORT.md)
+
+**Naming.** OriginX is the public model name. The unchanged internal experiment and checkpoint identifier is B2000; earlier publication drafts used the name XR1-Continuous-B2000. Renaming does not change any weights, experiment records, or provenance hashes.
 
 A continuous conditioning branch on top of an Action LoRA adaptation of [Xiaomi-Robotics-1-RoboCasa365](https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-1-RoboCasa365). Author: Qinzhen Ma. This is an independent derivative and is not affiliated with or endorsed by Xiaomi.
 
@@ -11,7 +15,7 @@ A continuous conditioning branch on top of an Action LoRA adaptation of [Xiaomi-
 | Composite-Unseen | 270 / 800 | 33.75% |
 | Overall | 1,496 / 2,500 | 59.84% |
 
-**Read the experiment.** The [English technical report](TECHNICAL_REPORT.md) explains the inherited training chain, evaluation protocol, data audit, earlier negative result, and limitations. The [Chinese article](TECHNICAL_REPORT.zh-CN.md) presents the same experiment. The [release](https://github.com/Quinn-Ma/xr1-continuous-b2000/releases/tag/v1.0.0) contains the two adaptation weight files and the original per-episode evidence. The base model must be downloaded from Xiaomi's original model repository; it is not repackaged here.
+**Read the experiment.** The [English technical report](TECHNICAL_REPORT.md) explains the inherited training chain, evaluation protocol, data audit, earlier negative result, and limitations. The [Chinese article](TECHNICAL_REPORT.zh-CN.md) presents the same experiment. The public release package contains the two adaptation weight files and the original per-episode evidence. The base model must be downloaded from Xiaomi's original model repository; it is not repackaged here.
 
 **Training chain.** The original Xiaomi policy is adapted with Action LoRA (A1613: rank 16, alpha 16, 80,000 sampled windows over 1,613 updates). B2000 freezes that complete policy and trains a 4,216,839-parameter continuous conditioning branch for 2,000 updates, global batch 128, or 256,000 sampled windows. This branch affects action generation at inference time. Its objectives include frozen-teacher velocity retention and auxiliary stage classification. This repository does not claim to have trained the base model from scratch.
 
