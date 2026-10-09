@@ -1,0 +1,13 @@
+# Transport recovery and never-claimed continuation
+
+The 50-case scope amendment remains fixed: one minimum original fresh environment seed per task; B C/R/G/L/V and base C/V; 350 arm assignments. The amendment was made after the original full campaign started. The 191 earlier out-of-cohort records are retained separately. The historical 1,496/2,500 and 56/1,004 records are unchanged.
+
+The first two-GPU batch stopped on its third CLI invocation. Its raw trace contains an intermediate `Reconnecting` event followed by a valid final response, `turn.completed`, exit code 0 and complete usage (17,205 input / 299 output tokens). The old broker treated the intermediate event as fatal, then its Windows status logger raised a Unicode encoding error. The original receipt, first error, stop/drain markers, stdout, answer and claimed outcomes are preserved. The invocation is not regenerated or republished to change a historical result.
+
+The separately audited v2 broker admits only a tightly specified recovered transport event, successful terminal completion, complete usage, matching response identities and schema, and no tool calls. It records the recovered errors and a separate hash-bound proof. The new aggregation adapter revalidates the proof and raw transcript; it applies only to the v2 namespace. Original and first-continuation outcomes are not reclassified.
+
+Before v2 admission, both prior campaigns, workers and model owners must be stopped, their raw archives verified and broker inventories sealed. All earlier durable claims are excluded irrespective of outcome. Thus 244 never-claimed arm assignments are eligible; 7 target assignments came from the original batch, and 99 were claimed by the first continuation. These are arm counts, not additional unique cases. No claimed rollout or executed CLI is replayed. The new debit audits every actual prior invocation, including failed or unapplied calls, and does not reset the main-study resource caps.
+
+New model services use only separately verified idle GPUs 3 and 6, with independent owner records and 360-second same-socket action/RNG parity admission. The intervention, model weights, original task/seed/horizon, prompts, Astra High setting and action budget remain unchanged. Completed evidence and any unresolved assignments retain the full fixed denominator. GR00T formal transfer is not run within this delivery schedule.
+
+This document describes the infrastructure correction and its admission rules, not a successful launch or an efficacy result. Actual launch, completion, resource use and final counts require the corresponding immutable receipts and final reconciled report. The user's delivery deadline remains 2026-10-09 23:46:19 UTC; no multi-day extension is inferred.

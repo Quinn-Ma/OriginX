@@ -1,0 +1,29 @@
+{
+  "schema": "originx_preserved_v1_transport_error_review_v1",
+  "original_receipt_status": "error",
+  "returncode": 0,
+  "turn_completed": true,
+  "semantic_answer_and_usage_recoverable": true,
+  "historical_receipt_or_marks_modified": false,
+  "historical_response_republished": false,
+  "new_cli_invoked": false,
+  "tokens": {
+    "input_tokens": 17205,
+    "cached_input_tokens": 0,
+    "output_tokens": 299,
+    "reasoning_tokens": 140
+  },
+  "latency_seconds": 13.460286500005168,
+  "publication_decision": "No v1 republish or replacement. Preserve historical failed receipt and use corrected validator only for new-v2 unclaimed work.",
+  "files_sha256": {
+    "work\\confirmatory_20261009\\broker_multigpu_v1\\batches\\20261009T211401-24fa091b6040\\receipt.json": "68e02a99d55555fa251e79d810c6a1e858d518c85b30f3f45ac2a9b4263105f0",
+    "work\\confirmatory_20261009\\broker_multigpu_v1\\batches\\20261009T211401-24fa091b6040\\stdout.jsonl": "2025ffaac0866e5ae8ee8ca8e56d41f0fba5e568c23bb4fb888794ef406f2099",
+    "work\\confirmatory_20261009\\broker_multigpu_v1\\batches\\20261009T211401-24fa091b6040\\stderr.txt": "1414828bbf929d7970cf393d107b6c7d324ba4a00193be5e95b8a611d04c6486",
+    "work\\confirmatory_20261009\\broker_multigpu_v1\\batches\\20261009T211401-24fa091b6040\\response.json": "3849a03e0f1383fa0de5fc84efd08f90c68e8934903acec3481ec186b7e424d1",
+    "work\\confirmatory_20261009\\broker_multigpu_v1\\batches\\20261009T211401-24fa091b6040\\batch.json": "41ad4acdaf47e93e7b25001e4ea75eddbc35dda66b6f8eb05f0ca0e96470ef43",
+    "work\\confirmatory_20261009\\broker_multigpu_v1\\batches\\20261009T211401-24fa091b6040\\cli_started.json": "43f9a9ebbcc3922f0290d67515333558c9449fe8a17f763c4bd2621b0113baf7"
+  },
+  "helper_sha256": "ff19d688761fd3c6f000c9d9b0510c8237f968991f8fa6654a0458ba7cd6708b",
+  "existing_v1_finalizer_compatible": true,
+  "finalizer_reason": "receipt records completed process and auditable input/output counts even though status=error; frozen aggregate retains original invalid assistance and still includes failed-call usage"
+}

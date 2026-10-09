@@ -1,0 +1,31 @@
+{
+  "schema": "originx_multigpu_continuation_offline_validation_v2",
+  "source_sha256": {
+    "continue_multigpu_v2.py": "bdd8e17ac5bb62cdf61264843ce06d2453476a77b8d77aa33cea2e6d69dd2d9d",
+    "aggregate_reduced_v2.py": "51609688703d19e6b51e4c428738553ea88ce5292a08f3f3c669d9e71e05b788",
+    "multigpu_services_v2.py": "ed9284bf00aae2aba10e07f5a30a6e5a1cc11684939bc07a3a936b303020ffd1"
+  },
+  "windows_pytest_passed": 35,
+  "wsl_linux_service_unittest_passed": 14,
+  "wsl_linux_tracked_child_unittest_passed": 21,
+  "wsl_linux_tracked_child_windows_only_skipped": 1,
+  "real_linux_pidfd_child_reaped": true,
+  "wsl_pytest_available": false,
+  "no_remote_operations": true,
+  "no_training_rollout_cli_or_model_start": true,
+  "claim_partition_fixture": {
+    "fixed_cases": 50,
+    "fixed_arms": 350,
+    "original_in_cohort_claimed": 7,
+    "v1_claimed": 99,
+    "eligible_never_claimed": 244,
+    "outside_cohort_preserved": 191
+  },
+  "original_and_v1_sources_and_results_unchanged": true,
+  "superseded_prelaunch_source_sha256": {
+    "continue_multigpu_v2.py": "9ae5008abf4bc6ea7d7741742c9df2888bae5f839ba1cbb8bc26fd1ad8469a4d",
+    "aggregate_reduced_v2.py": "ba46cd365e1eee94ecce140c90b7caa18e6e73533ea56137c1a1b8d380fd1c31",
+    "multigpu_services_v2.py": "ed9284bf00aae2aba10e07f5a30a6e5a1cc11684939bc07a3a936b303020ffd1"
+  },
+  "real_broker_lifecycle_generated_debit_contract_passed": true
+}
