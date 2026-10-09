@@ -35,6 +35,10 @@
     "bytes": 6268178,
     "sha256": "63649ebc4d466802b3db623efb8ab0c844658f510106502f520d57d3683f5f7f"
   },
+  "publication-verification-v3.json": {
+    "bytes": 2788,
+    "sha256": "f2ab55d61e1ccc6ab7a6475a791a37fd02b5a69fd494cca68f2f732b5238c344"
+  },
   "README.md": {
     "bytes": 2232,
     "sha256": "7f0b4368b7009d3dcaa3c9f56e09f456a7489a156d0701ac55b6b3dfd673e654"

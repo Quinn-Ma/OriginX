@@ -1,0 +1,70 @@
+{
+  "verified_at_utc": "2026-10-09T22:53:56.175603+00:00",
+  "git_commit": "5dc2a087257dd0d267d5f18d7888fa06be9a76f7",
+  "cloudflare_deployment": "https://4106cf84.originx-robotics.pages.dev",
+  "published_site": "https://robocasa.originxairobotics.com/",
+  "assets": [
+    {
+      "url": "https://robocasa.originxairobotics.com/",
+      "http_status": 200,
+      "bytes": 30334,
+      "sha256": "7140bc42bec0dbbe1356eea4c542bd8f3d854369ad5c9c79330632f3dba40903",
+      "matches_local": false,
+      "matches_local_after_removing_cloudflare_injected_beacon": true,
+      "hosting_transformation": "One Cloudflare Insights beacon script inserted before closing body; all original HTML is byte-for-byte unchanged after removing that script."
+    },
+    {
+      "url": "https://robocasa.originxairobotics.com/confirmatory-50-summary.json",
+      "http_status": 200,
+      "bytes": 232326,
+      "sha256": "d437095e785fd603cb6e99a2ae0d9556dbc2254a212ebef138e4a07c592c8270",
+      "matches_local": true
+    },
+    {
+      "url": "https://robocasa.originxairobotics.com/TECHNICAL_REPORT.md",
+      "http_status": 200,
+      "bytes": 22009,
+      "sha256": "4460bdf57149223227354f2c6bfed8178f59a86ea8a15bb4a7ef4b9fc9ddddf3",
+      "matches_local": true
+    },
+    {
+      "url": "https://robocasa.originxairobotics.com/TECHNICAL_REPORT_ZH.md",
+      "http_status": 200,
+      "bytes": 18755,
+      "sha256": "d0983649a0dc7c8589d3fc47bf6acb09489708f2270f0576e30d0fd6a5f6b704",
+      "matches_local": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Quinn-Ma/OriginX/main/paper/OriginX_CVPR2027_revised_v3.pdf",
+      "http_status": 200,
+      "bytes": 319367,
+      "sha256": "bf46b03c2a4eaa40a3cef2ae11b4977a22117cd0e4bda25f8644646601f0ee1b",
+      "matches_local": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Quinn-Ma/OriginX/main/paper/OriginX_CVPR2027_supplement_v3.pdf",
+      "http_status": 200,
+      "bytes": 133993,
+      "sha256": "233d0f6559031a13fcf7e4f57dcf857e2ffca756c58191390439c943766e830f",
+      "matches_local": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Quinn-Ma/OriginX/main/paper/OriginX_CVPR2027_source_v3.zip",
+      "http_status": 200,
+      "bytes": 1868546,
+      "sha256": "0d6b74ad2fe7994dcd880b07710aad2b55451aa194c229c79ad6543336f940f3",
+      "matches_local": true
+    }
+  ],
+  "browser_verification": {
+    "public_custom_domain_reloaded": true,
+    "new_50_case_section_visible": true,
+    "paper_v3_links_present": true,
+    "negative_and_fallback_results_visible": true,
+    "narrow_viewport_width": 620,
+    "document_width": 605,
+    "horizontal_table_container_no_document_overflow": true
+  },
+  "all_publication_checks_passed": true,
+  "completed_at_utc": "2026-10-09T22:54:52.108542+00:00"
+}
