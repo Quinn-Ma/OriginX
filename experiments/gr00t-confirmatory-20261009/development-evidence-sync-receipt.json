@@ -1,0 +1,10 @@
+{
+  "archive": "/ephemeral/qinzhen/robocasa-xr1-20261003/originx_gr00t_confirmation_20261009_v2/exports/development-v2/evidence.tar.gz",
+  "sha256": "3aaa22ab4b74ec1f1b39411bf7ed053d15af2a0fc589c24c8dcb7df83693fc86",
+  "file_count": 171,
+  "bytes": 4137077,
+  "admission_sha256": "156e6652d2825f91bf12a34fe2ab77eaac3c1791934537655dafcc425e9a6039",
+  "all_file_hashes_verified": true,
+  "local_directory": "D:\\codex\\2026-10-08\\new-chat\\work\\originx_gr00t_confirmation_20261009_v2\\development_evidence_v2",
+  "no_rollout_or_cli_started": true
+}

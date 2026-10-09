@@ -1,6 +1,6 @@
 # Independent GR00T replication: prospective registration
 
-Status: engineering parity passed for the unchanged official model; the corrected four-outcome development executor still requires admission. No confirmatory efficacy result is available.
+Status: engineering parity and independent four-outcome development admission both passed. No confirmatory efficacy result is available. See [raw-evidence admission](development-admission.json) and the [development review](development-review.md).
 
 This separate study uses the official RoboCasa GR00T N1.5 multitask checkpoint at update 120000, repository revision `c484448aba1a9b60a04c9b0ca117241518ea69f3`, and the official evaluation fork at `9d7d7a9eb7ad30bd8ce30448d9ab53a918b45b10`. No training, weight selection or outcome-based prompt tuning is performed.
 
@@ -12,7 +12,7 @@ Valid episodes ending before the intervention remain in the system-outcome denom
 
 Formal execution is sequential after the main Xiaomi/B2000 study. It requires a new live service profile with six-stream action/RNG parity through a 360-second same-socket hold, successful independent development admission, and a sealed debit of all prior study CLI receipts. The shared ceilings are 1,500 CLI batches, 25M reported input tokens and 2M reported output tokens, with one final batch possibly crossing a token threshold. No further quota reset or paid top-up is allowed. Missing accounting or exhausted resources prevent new formal calls; unfinished assignments remain unknown. The GR00T campaign itself has a five-day maximum, not a completion promise.
 
-Development v1 encountered a process-start identity race. All four planned outcomes are unknown, with zero policy queries and zero actual Astra calls. Its original failed completion is retained; a separate terminal audit verified all four workers, model, campaign and broker inactive. The complete archive contains 147 verified files. This does not count as a model failure or an efficacy result.
+Development v1 encountered a process-start identity race. All four planned outcomes are unknown, with zero policy queries and zero actual Astra calls. Its original failed completion is retained; a separate terminal audit verified all four workers, model, campaign and broker inactive. The complete archive contains 147 verified files. This does not count as a model failure or an efficacy result. Corrected development v2 subsequently completed all four outcomes with both pairs matched and one verified visual-assistant application. One pair succeeded before intervention and one pair failed in both arms: zero development rescues and zero regressions. All own processes exited and all 171 evidence files were verified locally. These two development cases are excluded from confirmation.
 
 The [v2 correction](INFRASTRUCTURE_V2.md) changes startup ownership and the study namespace. The seven actually executed service files remain byte-identical. All 14 study modules are frozen in `source-freeze.remote.json`; 88 local CPU tests and six real Linux child-lifecycle checks passed. Development IDs are disclosed in the frozen runner and excluded from the formal cohort. Source code contains environment-specific paths that require explicit adaptation and re-admission on another host.
 
