@@ -1,6 +1,6 @@
 # OriginX
 
-[Project website](https://originx.thumbnodirosving.chatgpt.site) · [Weights and full evaluation evidence](https://github.com/Quinn-Ma/OriginX/releases/tag/v1.0.0) · [Reproduction guide](REPRODUCIBILITY.md) · [Technical report](TECHNICAL_REPORT.md)
+[Model weights on Hugging Face](https://huggingface.co/Qinzhen3/OriginX) · [Project website](https://originx.thumbnodirosving.chatgpt.site) · [Evaluation evidence](https://github.com/Quinn-Ma/OriginX/releases/tag/v1.0.0) · [Reproduction guide](REPRODUCIBILITY.md) · [Technical report](TECHNICAL_REPORT.md)
 
 **Naming.** OriginX is the public model name. The unchanged internal experiment and checkpoint identifier is B2000; earlier publication drafts used the name XR1-Continuous-B2000. Renaming does not change any weights, experiment records, or provenance hashes.
 
