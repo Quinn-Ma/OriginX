@@ -1,12 +1,12 @@
 # OriginX
 
-[Weights and full evaluation evidence](https://github.com/Quinn-Ma/OriginX/releases/tag/v1.0.0) · [Reproduction guide](REPRODUCIBILITY.md) · [Technical report](TECHNICAL_REPORT.md)
+[Project website](https://originx.thumbnodirosving.chatgpt.site) · [Weights and full evaluation evidence](https://github.com/Quinn-Ma/OriginX/releases/tag/v1.0.0) · [Reproduction guide](REPRODUCIBILITY.md) · [Technical report](TECHNICAL_REPORT.md)
 
 **Naming.** OriginX is the public model name. The unchanged internal experiment and checkpoint identifier is B2000; earlier publication drafts used the name XR1-Continuous-B2000. Renaming does not change any weights, experiment records, or provenance hashes.
 
 A continuous conditioning branch on top of an Action LoRA adaptation of [Xiaomi-Robotics-1-RoboCasa365](https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-1-RoboCasa365). Author: Qinzhen Ma. This is an independent derivative and is not affiliated with or endorsed by Xiaomi.
 
-**Author-run RoboCasa365 result: 59.84% across all 2,500 episodes.** This result is prepared for organizer review; it is not an accepted leaderboard rank. The available earlier paired comparison did not establish a statistically reliable improvement from our changes.
+**Author-run RoboCasa365 result: 59.84% across all 2,500 episodes.** [Official submission PR #26](https://github.com/robocasa-benchmark/leaderboard/pull/26) is open for organizer review; it is not an accepted leaderboard rank. The submission summary check passed. The available earlier paired comparison did not establish a statistically reliable improvement from our changes.
 
 | Split | Successes / episodes | Success rate |
 |---|---:|---:|
@@ -26,3 +26,5 @@ A continuous conditioning branch on top of an Action LoRA adaptation of [Xiaomi-
 **Inspect and reproduce.** See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for loading the released weights, exact source provenance, artifact checks, and the distinction between the original evaluated entry point and the portable publication entry point. The `evidence/` directory contains the complete aggregate report, final audit, and the original fixed manifest and configuration. Evidence includes original experiment paths for provenance; those paths are not credentials.
 
 **Attribution and license.** The public base checkpoint and upstream Xiaomi code retain their Apache-2.0 license and attribution. Original files in this derivative release are provided under Apache-2.0. Third-party source snapshots retain their own notices; see [NOTICE](NOTICE). Dataset assets and the Xiaomi base checkpoint are not redistributed.
+
+**Website source.** The public project page is mirrored in [website/](website/). It contains the editorial release article and original desktop/mobile architecture diagrams; it does not change the frozen model artifacts or evaluated release tag.

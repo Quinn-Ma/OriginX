@@ -1,0 +1,5 @@
+split,tasks,successes,episodes,success_rate_percent,source
+Atomic-Seen,18,747,900,83,author-run native-reset B2000 evaluation
+Composite-Seen,16,479,800,59.875,author-run native-reset B2000 evaluation
+Composite-Unseen,16,270,800,33.75,author-run native-reset B2000 evaluation
+Overall,50,1496,2500,59.84,author-run native-reset B2000 evaluation
