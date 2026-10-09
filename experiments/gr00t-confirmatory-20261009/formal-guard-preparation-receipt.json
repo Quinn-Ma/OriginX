@@ -1,0 +1,71 @@
+{
+  "schema": "originx_gr00t_formal_guard_preparation_receipt_v1",
+  "created_at": "2026-10-09T20:17:37.236458+00:00",
+  "files_sha256": {
+    "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\gr00t_formal_service_guard.py": "ec2bf78d864df60992b51b5b67204eb14337223f96544960a60be2fe319d62d4",
+    "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\tests\\test_gr00t_formal_service_guard.py": "3c4e95f65250b6fd2c2882e25bd83f9ea4af4654f6e39999f238f9073b4d9d3d",
+    "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\GR00T_FORMAL_SERVICE_GUARD.md": "0a783a9083533bc69afac07a6cd7030cdc3a05a8138ae8c0f6ff19e890bf7d8f"
+  },
+  "tests": [
+    {
+      "platform": "windows",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "work/confirmatory_20261009/tests",
+        "-p",
+        "test_gr00t_formal_service_guard.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "log": "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\formal-guard-cpu-validation-v1\\windows.log",
+      "log_sha256": "fe7d2e86eff76525441587095a24b09b4f87c893431ecf16845c2256ab4fafdf"
+    },
+    {
+      "platform": "wsl-linux",
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-22.04",
+        "--cd",
+        "/mnt/d/codex/2026-10-08/new-chat",
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "work/confirmatory_20261009/tests",
+        "-p",
+        "test_gr00t_formal_service_guard.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "log": "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\formal-guard-cpu-validation-v1\\wsl-linux.log",
+      "log_sha256": "7c3adc6b5f1e89dfb3128b20df911fcbbe19580163e60972b2775a43cbeda095"
+    }
+  ],
+  "linux_tests_passed": 18,
+  "windows_tests_passed": 15,
+  "windows_linux_only_skipped": 3,
+  "tracked_child_original_path": "D:\\codex\\2026-10-08\\new-chat\\work\\robocasa365-model\\experiments\\gr00t-confirmatory-20261009\\runtime\\processes.py",
+  "tracked_child_original_sha256": "89bf3178e1e71ff0cbb19e0d3bbc1c6bc880b27450a12e9ec424ff6b41d2c6d8",
+  "copied_source_segments_exact": {
+    "require": true,
+    "birth": true,
+    "identity": true,
+    "open_pidfd": true,
+    "send_pidfd": true,
+    "close_pidfd": true,
+    "TrackedChild": true
+  },
+  "independent_review": "paper_review_cvpr: no unresolved blocking findings; same-birth argv/cwd drift corrected",
+  "remote_processes_started": 0,
+  "gpu_models_loaded": 0,
+  "rollouts_started": 0,
+  "astra_invocations": 0,
+  "scientific_approval_created": false,
+  "actual_shared_debit_created": false
+}

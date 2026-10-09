@@ -1,0 +1,33 @@
+{
+  "schema": "originx_confirmatory_full_start_v1",
+  "started": true,
+  "campaign_owner": {
+    "pid": 1027679,
+    "process_start_ticks": 3868845,
+    "command": [
+      "/ephemeral/qinzhen/robocasa-xr1-20261003/envs/sim/bin/python",
+      "-B",
+      "-u",
+      "-m",
+      "originx_confirmatory_20261009.campaign",
+      "--duration-seconds",
+      "432000"
+    ],
+    "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003",
+    "development": false,
+    "unix": 1791576579.0174077
+  },
+  "duration_seconds": 432000,
+  "approval_sha256": "da000b11903058ab8ed9f0a93eacd65f18b64f6b52d76847c106734ac1313534",
+  "extension_sha256": "952784d222e11f4cf241a0cb16b455076571e8fbf76d555796e4988a6e9d19ed",
+  "launcher_source_sha256": "157dcdde03e64455a6efd7d6595741259afb34350754e41d1d7eaa81b5a7c58a",
+  "broker_source_sha256": "706d85e48a2655e05cb857a2fbf98b1f8a9c1714e81a373a5e60b7eb1211cd99",
+  "broker_started_by_tool": false,
+  "model_count": 6,
+  "gpu_index": 6,
+  "gpu_uuid": "GPU-35278907-aae0-4ccc-e0fc-c25cb3a8bd17",
+  "next_phase": "Campaign performs full socket probe/preflight and waits for separately started fixed broker",
+  "external_spawn_handshakes": true,
+  "frozen_service_source_unmodified": true,
+  "new_service_children": 4
+}

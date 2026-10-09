@@ -1,0 +1,268 @@
+{
+  "schema": "originx_confirmatory_socket_probe_v1",
+  "namespace": "originx_confirmatory_20261009",
+  "passed": true,
+  "models": 6,
+  "clients": 36,
+  "full_forwards": 108,
+  "required_hold_seconds": 360,
+  "elapsed_seconds": 375.2968401540056,
+  "no_reconnect": true,
+  "one_reset_per_stream": true,
+  "no_environment_rollouts": true,
+  "scope": "Exact action/RNG replay of historical engineering fixtures, six concurrent connections per endpoint, third action verified after unchanged same-socket hold; not an environment-result claim",
+  "records": [
+    {
+      "service_id": "B-gpu6-r0",
+      "client_index": 0,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r0-client0.json"
+    },
+    {
+      "service_id": "B-gpu6-r0",
+      "client_index": 1,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r0-client1.json"
+    },
+    {
+      "service_id": "B-gpu6-r0",
+      "client_index": 2,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r0-client2.json"
+    },
+    {
+      "service_id": "B-gpu6-r0",
+      "client_index": 3,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r0-client3.json"
+    },
+    {
+      "service_id": "B-gpu6-r0",
+      "client_index": 4,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r0-client4.json"
+    },
+    {
+      "service_id": "B-gpu6-r0",
+      "client_index": 5,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r0-client5.json"
+    },
+    {
+      "service_id": "B-gpu6-r1",
+      "client_index": 0,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r1-client0.json"
+    },
+    {
+      "service_id": "B-gpu6-r1",
+      "client_index": 1,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r1-client1.json"
+    },
+    {
+      "service_id": "B-gpu6-r1",
+      "client_index": 2,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r1-client2.json"
+    },
+    {
+      "service_id": "B-gpu6-r1",
+      "client_index": 3,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r1-client3.json"
+    },
+    {
+      "service_id": "B-gpu6-r1",
+      "client_index": 4,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r1-client4.json"
+    },
+    {
+      "service_id": "B-gpu6-r1",
+      "client_index": 5,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r1-client5.json"
+    },
+    {
+      "service_id": "B-gpu6-r2",
+      "client_index": 0,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r2-client0.json"
+    },
+    {
+      "service_id": "B-gpu6-r2",
+      "client_index": 1,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r2-client1.json"
+    },
+    {
+      "service_id": "B-gpu6-r2",
+      "client_index": 2,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r2-client2.json"
+    },
+    {
+      "service_id": "B-gpu6-r2",
+      "client_index": 3,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r2-client3.json"
+    },
+    {
+      "service_id": "B-gpu6-r2",
+      "client_index": 4,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r2-client4.json"
+    },
+    {
+      "service_id": "B-gpu6-r2",
+      "client_index": 5,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r2-client5.json"
+    },
+    {
+      "service_id": "B-gpu6-r3",
+      "client_index": 0,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r3-client0.json"
+    },
+    {
+      "service_id": "B-gpu6-r3",
+      "client_index": 1,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r3-client1.json"
+    },
+    {
+      "service_id": "B-gpu6-r3",
+      "client_index": 2,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r3-client2.json"
+    },
+    {
+      "service_id": "B-gpu6-r3",
+      "client_index": 3,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r3-client3.json"
+    },
+    {
+      "service_id": "B-gpu6-r3",
+      "client_index": 4,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r3-client4.json"
+    },
+    {
+      "service_id": "B-gpu6-r3",
+      "client_index": 5,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/B-gpu6-r3-client5.json"
+    },
+    {
+      "service_id": "base-gpu6-r0",
+      "client_index": 0,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/base-gpu6-r0-client0.json"
+    },
+    {
+      "service_id": "base-gpu6-r0",
+      "client_index": 1,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/base-gpu6-r0-client1.json"
+    },
+    {
+      "service_id": "base-gpu6-r0",
+      "client_index": 2,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/base-gpu6-r0-client2.json"
+    },
+    {
+      "service_id": "base-gpu6-r0",
+      "client_index": 3,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/base-gpu6-r0-client3.json"
+    },
+    {
+      "service_id": "base-gpu6-r0",
+      "client_index": 4,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/base-gpu6-r0-client4.json"
+    },
+    {
+      "service_id": "base-gpu6-r0",
+      "client_index": 5,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/base-gpu6-r0-client5.json"
+    },
+    {
+      "service_id": "base-gpu6-r1",
+      "client_index": 0,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/base-gpu6-r1-client0.json"
+    },
+    {
+      "service_id": "base-gpu6-r1",
+      "client_index": 1,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/base-gpu6-r1-client1.json"
+    },
+    {
+      "service_id": "base-gpu6-r1",
+      "client_index": 2,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/base-gpu6-r1-client2.json"
+    },
+    {
+      "service_id": "base-gpu6-r1",
+      "client_index": 3,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/base-gpu6-r1-client3.json"
+    },
+    {
+      "service_id": "base-gpu6-r1",
+      "client_index": 4,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/base-gpu6-r1-client4.json"
+    },
+    {
+      "service_id": "base-gpu6-r1",
+      "client_index": 5,
+      "passed": true,
+      "error": null,
+      "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-services-20261009-v2/probes/confirmatory-v1/base-gpu6-r1-client5.json"
+    }
+  ]
+}

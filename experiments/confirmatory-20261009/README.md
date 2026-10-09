@@ -1,6 +1,6 @@
 # Prospective OriginX confirmation
 
-**Status: all 14 development outcomes passed raw-evidence admission; the formal cohort has not started. No confirmatory efficacy outcomes reported.**
+**Status: the formal cohort started on 2026-10-09 after all 14 development outcomes passed raw-evidence admission and 36 full-cohort service streams passed numerical/keepalive validation. Efficacy results remain pending terminal reconciliation.**
 The historical 1,496/2,500 benchmark and 56/1,004 conditional rescues are unchanged.
 
 The sealed seed-level design uses the same 50 tasks and 50 fresh seeds/task.
@@ -29,3 +29,5 @@ rescues and regressions are reported. Untriggered valid early successes remain i
 the primary system outcome. All arms share action budgets; actual compute/latency
 is measured and is not claimed to be matched. No training or checkpoint selection
 is part of this experiment. No benchmark rank or conference acceptance is claimed.
+
+Formal startup is recorded in `formal-start.json`; six GPU6 model services and 36 connections passed 108 numerical forward checks through a 375.3-second probe (`formal-socket-probe.json`). This validates infrastructure, not task success. The five-day rollout ceiling leaves unfinished or technically invalid work explicit in fixed-denominator analysis.

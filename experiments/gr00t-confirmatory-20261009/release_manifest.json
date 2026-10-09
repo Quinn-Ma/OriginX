@@ -1,13 +1,17 @@
 {
+  "build_gr00t_shared_debit.py": "87a6a6d0a90c8554bb99cabeacccb204f0f083c5fbda33d16cbcb628c4987c67",
   "development-admission.json": "156e6652d2825f91bf12a34fe2ab77eaac3c1791934537655dafcc425e9a6039",
   "development-evidence-sync-receipt.json": "9e077f97a5905867131cddba96de676eb02dd8e69cc0d48a3024ee467719f925",
   "development-review.md": "79008a7e38c443eb65f5ac6970736652055f33dd4823338f4bb1518ca67d7efe",
   "development-v1-archive-receipt.json": "6e9ed79bb6ba8103b4d636b1233edbe4d254c393236b6b2aaa84f5af9b5a2837",
   "engineering-v3-sync-receipt.json": "fe23db4bd973e5416b597144dc5505dd994c9b8244becf12e203d2716ae6f842",
+  "formal-guard-preparation-receipt.json": "8793828e51719a7e1602d38e79ad0885a1211085c7a75c52da9230f2859ea627",
   "gr00t_admit_v2.py": "49fdf61a5a76f9b89b13a04bcf1c3887419bc33e5638b8b036ec3182fdbeb61c",
+  "GR00T_FORMAL_SERVICE_GUARD.md": "0a783a9083533bc69afac07a6cd7030cdc3a05a8138ae8c0f6ff19e890bf7d8f",
+  "gr00t_formal_service_guard.py": "ec2bf78d864df60992b51b5b67204eb14337223f96544960a60be2fe319d62d4",
   "INFRASTRUCTURE_V2.md": "17e5a49f7726f730c840fd5e5f8f159483aac5554c749d4151ef8100310958f5",
   "local-release.json": "3759921285356f221ff84f5d877fef363495db2bbf3c3bb416900bcab6c332d3",
-  "README.md": "a860c35639a5f4e7ba0a3ad44b29cd01a66cc2afb1d93cd4610fd9c2bf7911a8",
+  "README.md": "cbc4f0cc326544d445875783a6a6f6cf7831a6e3f3144a33777a7ae962d42554",
   "runtime/__init__.py": "fb769a894e28f0ffd1ac6081745d1a776e90473cc339102a3569595c613e5f85",
   "runtime/adapter.py": "daf0b5333cc8430e2330a7e6d4d2482269be51eaec14a405d33aea03c6e24b5b",
   "runtime/aggregate.py": "b7c2d545bace63eb349d061f09818d6d741e0cc1dda2096b3d8bb32c22535ea3",
@@ -22,8 +26,12 @@
   "runtime/runner.py": "c3042b0c74c10024be7713a07eee8be3482c2cfe68aa4d3e3c75b1f0013479a6",
   "runtime/server.py": "dd9564cf9a4be486de866cc631f79528d707c1e8f3a307999c9b5a40f74f6565",
   "runtime/wire.py": "5e94665f8fe25a49abf732ee335ff579fa2f2583c13917a2677db6d84a7ee5b8",
+  "shared-debit-validation.json": "4203d8bbad8e4e304c11e5aafe4478b9fcccdc362b88fcf79cbdec3148e3f919",
+  "SHARED_DEBIT_INTERFACE.md": "521b7b610703376f52a518f29aceae1b7f31f952eadd3cd6a70773dc7a80d23c",
   "source-freeze.remote.json": "605586d326862a19862fee7f0db42184b7c6baa13bba3820a442a5439dfce3c5",
   "spawn-linux-regression.json": "85cb80dfe41982d45f736ffdc6f40dcbe58fed70ab66685c3b2ea6d316dfcf1c",
   "stage_gr00t_study_v2.py": "53f7d01be699629c2d8795613e1972bddee08ca5e78f8bd15bf71b17fad20477",
-  "start_gr00t_development_v2.py": "89b68a588eaa3ea1b258a47eaa36c11a7f7c7364615e6107d1e6fa7ddea244e9"
+  "start_gr00t_development_v2.py": "89b68a588eaa3ea1b258a47eaa36c11a7f7c7364615e6107d1e6fa7ddea244e9",
+  "tests/test_gr00t_formal_service_guard.py": "3c4e95f65250b6fd2c2882e25bd83f9ea4af4654f6e39999f238f9073b4d9d3d",
+  "tests/test_shared_debit.py": "a296833d29800bc058bfefff3ed4cec70ba3c8b73883027975c4020cb61abc2c"
 }

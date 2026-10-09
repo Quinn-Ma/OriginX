@@ -1,0 +1,15 @@
+{
+  "schema": "originx_shared_debit_builder_validation_v1",
+  "tested_at": "2026-10-09T20:19:43.1861994Z",
+  "tests_passed": 19,
+  "test_command": "python -B -m unittest discover -s work/confirmatory_20261009/tests -p test_shared_debit.py -v",
+  "source_sha256": {
+    "work/confirmatory_20261009/build_gr00t_shared_debit.py": "87a6a6d0a90c8554bb99cabeacccb204f0f083c5fbda33d16cbcb628c4987c67",
+    "work/confirmatory_20261009/SHARED_DEBIT_INTERFACE.md": "521b7b610703376f52a518f29aceae1b7f31f952eadd3cd6a70773dc7a80d23c",
+    "work/confirmatory_20261009/tests/test_shared_debit.py": "a296833d29800bc058bfefff3ed4cec70ba3c8b73883027975c4020cb61abc2c"
+  },
+  "fixture_only": true,
+  "actual_debit_generated": false,
+  "ssh_or_cli_or_gpu_invoked": false,
+  "frozen_runtime_changed": false
+}
