@@ -1,0 +1,13 @@
+# Prospective scheduling addendum: complete coverage priority
+
+**Recorded decision: 2026-10-09 20:36 UTC (15:36 America/Chicago).** The user selected complete coverage of the fixed study before incorporating its final results into the paper. This is an administrative scheduling preference, not a decision based on observed effects. It does not retrospectively change the running, frozen experiment.
+
+The preregistered 2,500-case roster remains fixed: 17,500 main-study arm-episodes and 5,000 GR00T arm-episodes. Policy weights, arm assignments, seeds, horizons, assistance prompts and scientific parameters remain unchanged. The current five-day batch time cap remains in force; reaching that cap ends the current batch, not automatically the entire planned study.
+
+A later batch may continue **only assignments that have never been executed**. Before any continuation, verify that all relevant prior owners, workers, models and brokers have stopped; reconcile unique assignment IDs against the complete execution evidence and durable CLI ledger; and prevent duplicate episode execution or CLI invocation. Any necessary new runtime or configuration must use a separately named, frozen version with recorded source hashes and matching evidence. Existing sequencing and admission requirements remain applicable. No existing frozen source, configuration or result is overwritten.
+
+All executed assignments retain their original outcomes, including negative, incomplete and unknown outcomes. They are not rerun to improve the reported result. Reaching every assignment does not by itself establish that every outcome is valid or known; final accounting must preserve that distinction.
+
+The shared resource caps remain **1,500 CLI invocations, 25,000,000 input tokens and 2,000,000 output tokens**, with prior usage debited and the existing documented final-batch overshoot rule unchanged. Reasoning tokens remain included in output tokens. The scheduling preference does not authorize a larger budget, paid top-ups or another quota reset. If budget exhaustion or infrastructure prevents further execution, preserve and report the intermediate evidence and notify the user; do not claim complete coverage.
+
+Existing finalizers may produce terminal results for an individual batch. Preserve those outputs as versioned batch results. The final paper update must await reconciliation of the entire fixed plan across batches, with each assignment accounted for exactly once and completion, validity and unknown outcomes explicitly verified. If that reconciliation remains blocked, report the study as incomplete rather than presenting a batch result as the complete study.
