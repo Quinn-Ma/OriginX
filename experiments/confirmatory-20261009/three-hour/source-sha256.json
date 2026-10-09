@@ -1,0 +1,16 @@
+{
+  "multigpu_services_v1.py": "9504e17868783952a17181c95102ff224b7c92b1f558185ac8ce9714741864e5",
+  "continue_multigpu_v1.py": "142b0ac2bdccd4edffc7515134227d2961d9be7796734e52f62601fcf0b18968",
+  "broker_multigpu_v1.py": "201b896300a93f9d41ad9d449c488f8a589c2afa7a9a4df8a8d89555605346e3",
+  "aggregate_reduced_v1.py": "e5ef204cd61f19726d26afbb4a1424fe876f27d85dac15fc775a7a61d31f6151",
+  "sync_multigpu_v1.py": "630474799df9aafe9c31904c6bd5e197afc793ed66ba0936838239f7839ba3eb",
+  "finalize_multigpu_v1.py": "3c612d5ae46a58be4556847fa8f9b881176ecf8ba3062782890930953d4485bd",
+  "finalize_reduced_v1.py": "0c6ea454e915e349955b90faff9466b33b0426d2963eb29b996014e0d451a0cb",
+  "prepare_reduced_launch_v1.py": "14da9a8eaf71523711bd6dc6d2772cb21313fa9dc6b29f1fb9fc5e032f5cfeb7",
+  "MULTIGPU_SERVICES_V1.md": "88723395b64294c1e0af200d63dc52ffb6af098f4a9fafb1ad7f6688d2eee682",
+  "multigpu-service-validation-v1.json": "73febc6570fe99ae00bbc42ef452986c8d218441a23e35ae267e4e3601596368",
+  "tests/test_broker_multigpu.py": "30bf6c3beb5f92e92f2d2ddefdf41931bfc21e750fcb1383328a9b90d005ee18",
+  "tests/test_continue_multigpu_v1.py": "6bd80e3f73145889d0b0e3ddfdaa98853a3e227dc3f62da5f3c8c5b7afae8402",
+  "tests/test_aggregate_reduced_v1.py": "b0b30da3c0e64f9cfc891c94be543e03943f2aa40d4d3fb752986a4708c8efdc",
+  "tests/test_multigpu_services_v1.py": "9dba947ebee783808d4a119d00ab4ec8b5d5032d72da5cfef6850ec12c51a3e3"
+}

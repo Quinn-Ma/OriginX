@@ -1,0 +1,11 @@
+{
+  "schema": "originx_multigpu_service_offline_validation_v1",
+  "helper_sha256": "9504e17868783952a17181c95102ff224b7c92b1f558185ac8ce9714741864e5",
+  "tests_sha256": "9dba947ebee783808d4a119d00ab4ec8b5d5032d72da5cfef6850ec12c51a3e3",
+  "tracked_child_source_sha256": "157dcdde03e64455a6efd7d6595741259afb34350754e41d1d7eaa81b5a7c58a",
+  "windows": {"new_helper_passed": 14, "tracked_child_passed": 21, "tracked_child_linux_skip": 1},
+  "wsl_ubuntu_22_04": {"new_helper_passed": 14, "tracked_child_passed": 21, "tracked_child_windows_skip": 1, "real_linux_pidfd_child_handshake_and_reap_passed": true},
+  "no_remote_operations": true,
+  "no_cuda_no_models_no_rollouts_no_Astra": true,
+  "frozen_probe_inspection": "No GPU-index literal in probe.py. It calls the isolated services adapter for layout/owner/profile and immutable policy identity validation; six-stream exact action/RNG checks are unchanged."
+}
