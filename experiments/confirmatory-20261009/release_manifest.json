@@ -1,12 +1,13 @@
 {
   "admit_full.py": "a9cc287845d188be23f2bf26cbb94b82d4915be5134669cd5415537b9a4fa170",
   "assignment_order.csv": "d6213a348c5e27d73510750a015ed009d9b16332f7f9613b1e5777397b81a282",
-  "audit-tools-manifest.json": "248bd9dd6cd45def5fdb3fc91c5788f41e0b6b1f4d1f424bbc69219c83e878c9",
+  "audit-tools-manifest.json": "58d73a990d2943f380a7271374bd47e4570ffb0bdac92e020cfec7731f1132be",
   "broker.py": "706d85e48a2655e05cb857a2fbf98b1f8a9c1714e81a373a5e60b7eb1211cd99",
   "design_review.md": "8c97e6e556c208d5ed2a996eefe594ac4f44efa425657808d2053edffa7a3548",
   "development-admission-receipt.sha256": "a1f80037c82c6f05cde819d6cf6d2b24a6d0689b565298aabb13c0477d4aa1b3",
   "development-admission.md": "67577073e5bfb6db548ccccfa88f9922b0ae23a955e5e8ee841c300ebea5c4e4",
   "EXPERIMENT.md": "75520055aad6eeae008035b52943b095ebc7bce5a649a0a02ad9535fc7d453e3",
+  "external-startup-correction.md": "23d3714fe4397a3d0ebb12c045263d0ccf6b813e2c4cc35ad0dea3b81f89f4bd",
   "finalize_full.py": "634ff87b589069214add932a72e959e2c04523750f23be0f975a2f9793dd8202",
   "finalize_full_v2.py": "56fb609fdeb0c959d56f2acd3d9b3524a032024a8d2f76b75d4095b7cbc5a103",
   "finalize_full_v3.py": "382f3bea89982c09fde453867ee3a6c4b48c74fb6cd12f9e9f2afbb400cdc2b8",
@@ -29,6 +30,9 @@
   "shared_prospective_prelaunch_audit.json": "48b59c6eb9fd3ae6d466de0eee1c99ec0aa71d520d58fb74a568a8a2fdfeb2bf",
   "source-freeze.ready.json": "a0c3535d696dd559264ea1bc28fc0389918b9b12478819f8602bd410a508747b",
   "start_full_admitted.py": "8f2ed99384a123c01467be8b4f610166d1e9df28b277d7e85ef0684f3f7eadaf",
+  "start_full_admitted_v2.py": "157dcdde03e64455a6efd7d6595741259afb34350754e41d1d7eaa81b5a7c58a",
   "sync.py": "bb3367ec99a3c4c888d747d55a8012214f2b27db0c638f81736195608ffe49e6",
-  "task_roster.json": "fb3e869354f3a5647be04b35c1015f69c43a8cdcc0d0f01ca061464b4095bb05"
+  "task_roster.json": "fb3e869354f3a5647be04b35c1015f69c43a8cdcc0d0f01ca061464b4095bb05",
+  "tests/test_finalizer_v3.py": "9c49b9a531771cb44c3b879399efc0dc9b12885db82420a60d90c7451ac7d59a",
+  "tests/test_start_full_admitted_v2.py": "02285082ffbb4fa6298ca72135e0d8a1e8cef94e8fa301133a09a83a97446371"
 }
