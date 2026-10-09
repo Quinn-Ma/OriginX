@@ -1,15 +1,23 @@
 # Portable frozen B2000 inference
 
-`b2000_portable.py` loads the published A1613 LoRA adapter followed by the B2000
+`b2000_portable.py` loads the published A2000 LoRA adapter followed by the B2000
 online stage branch. It imports the original core classes unchanged and replaces
 only the deployment-specific artifact locator. It needs no optimizer state,
 training data, historical checkpoints, or original absolute project directory.
 
-Use the released base model `XiaomiRobotics/Xiaomi-Robotics-1-RoboCasa365`, pinned
-to Hugging Face revision `3a6d0293bfa90759d34a7fc48c2c62413cd7bcf4`. Download that
-complete snapshot into a clean directory: the original full base-asset identity
-and original loaded-tensor identity are both checked, in addition to sidecar SHA256.
-Do not replace the base with a later revision or alter its processor/config files.
+## Prepare assets from Hugging Face and GitHub
+
+The model snapshot is [Qinzhen3/OriginX](https://huggingface.co/Qinzhen3/OriginX). Python code stays in this GitHub checkout. `prepare_originx.py` combines 15 pinned non-code assets from the model snapshot with three pinned original Python model files in `upstream_model_code/`. It verifies all 18 sizes and hashes and reconstructs the exact original base identity. It also verifies and copies the two adaptation files. Install `huggingface_hub` for download mode, or use the offline snapshot option:
+
+```bash
+python prepare_originx.py --revision main --output-dir assets
+# Or reuse an already downloaded complete snapshot, with no network call:
+python prepare_originx.py --snapshot /path/to/OriginX-snapshot --output-dir assets
+```
+
+For a reproducible download, replace `main` with the recorded OriginX Hugging Face commit SHA. Preparation fails if that revision is incomplete. Outputs are `assets/base/`, containing exactly the original 18 identity assets, and `assets/weights/`, containing `adapter-originx-2000.pt` and `branch-00002000.pt`. Different existing files are never overwritten. Download mode caches under `assets/.hf-cache/`; allow disk space for both cached and materialized base weights. No GPU or training is used by preparation.
+
+A2000 is the release alias for the unchanged historical A1613 adapter (1,613 actual optimizer updates, 80,000 sampled windows). B2000 is the subsequent 2,000-update continuous branch. The underlying Xiaomi base remains revision `3a6d0293bfa90759d34a7fc48c2c62413cd7bcf4`; do not substitute later assets or edit the assembled model files. Do not place this preparation helper, release manifest, README, or new configuration files inside `assets/base/`.
 
 The original project uses CUDA, PyTorch, Transformers and FlashAttention 2. Use
 the captured original environment requirements supplied with the release. GPU
@@ -26,17 +34,19 @@ records which files were present in the old endpoint source inventory.
 ```bash
 python b2000_portable.py verify \
   --runtime-root source_snapshot \
-  --adapter weights/adapter-step-00001613.pt \
-  --branch weights/branch-00002000.pt \
-  --output cpu-validation.json
+  --adapter assets/weights/adapter-originx-2000.pt \
+  --branch assets/weights/branch-00002000.pt \
+  --output local-cpu-validation.json
 ```
 
-This validates both exact sidecars, all tensor names/shapes/dtypes, finite values,
+This optional CPU command validates both exact sidecars, all tensor names/shapes/dtypes, finite values,
 the adapter's internal checksum, A/B shared base identity, and real B branch
 weights. A synthetic base actor exercises the unchanged StageInferenceView's
 one-VLM/five-Euler hook contract, `[1,16,60]` action shape, repeated deterministic
 results, cleanup and rejection of oracle stage inputs. It is not a real-model
-GPU action-parity test and does not repeat the 2,500 rollout benchmark.
+GPU action-parity test and does not repeat the 2,500 rollout benchmark. The existing
+`cpu-validation.json` is the preserved historical receipt; write any new check to
+`local-cpu-validation.json` instead of overwriting it.
 
 ## GPU serving (explicit user execution)
 
@@ -44,8 +54,8 @@ GPU action-parity test and does not repeat the 2,500 rollout benchmark.
 CUDA_VISIBLE_DEVICES=0 CUBLAS_WORKSPACE_CONFIG=:4096:8 \
 python b2000_portable.py serve \
   --runtime-root source_snapshot --base-model assets/base \
-  --adapter weights/adapter-step-00001613.pt \
-  --branch weights/branch-00002000.pt --device cuda:0 --port 18000
+  --adapter assets/weights/adapter-originx-2000.pt \
+  --branch assets/weights/branch-00002000.pt --device cuda:0 --port 18000
 ```
 
 The server binds only `127.0.0.1`, reusing the original multiplex server and its
@@ -81,8 +91,8 @@ RNG bank, and writes the full action tensor plus final RNG hashes:
 ```bash
 python b2000_portable.py infer-fixture \
   --runtime-root source_snapshot --base-model assets/base \
-  --adapter weights/adapter-step-00001613.pt \
-  --branch weights/branch-00002000.pt \
+  --adapter assets/weights/adapter-originx-2000.pt \
+  --branch assets/weights/branch-00002000.pt \
   --fixture fixtures/first_request.json --seed 940001 --output action-check.pt
 ```
 

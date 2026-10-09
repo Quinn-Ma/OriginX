@@ -1,6 +1,12 @@
 {
-  "b2000_portable.py": "4a0db1a7a8161f15a5fca29c35d9a700924c3c048fbd4c93510e21cc1223c515",
+  "b2000_portable.py": "c587e490c911b2fc8db1afa902a37304872317f1f7e0a9fc14bd15de05fac6b9",
   "runtime-source-provenance.json": "ced1af3176cc60ddd478acfb5605df1356b855ddbe1c17959befb0984e5b8327",
   "cpu-validation.json": "447c8e084253e1e398d0d9ef5cca479dee152cf9b62dc9c51795cdfeeb3a3f04",
-  "PORTABLE_INFERENCE.md": "bfcc835c8da0bd8a09e1cbedc93bde3a23a32ce3ce8540161caae26e8854e19a"
+  "PORTABLE_INFERENCE.md": "b8b3162554100218334ec0276d4920b802d503490fa0b3e081c1e73523314f5b",
+  "REPRODUCIBILITY.md": "6b0c5bfdf9728794207f63d1562d61a325d0d335ed418711648a7c5ec6b24185",
+  "prepare_originx.py": "6bdd30131e55d1abc0c03acb71f34b3cf2d5066aec0e9da9ae3f39562b379f33",
+  "base-model-assets.json": "eb37d767f1255a4001ec97fd3cd0fee32bb2d501b83b1470f55b49d8d916a989",
+  "upstream_model_code/configuration_mibot.py": "5297e5e4b750ada89618629b793f23a4c9f86205cadc4b59e81019b2326b40c0",
+  "upstream_model_code/modeling_mibot.py": "d2f90e88391ae06ce7beca27416544ad2cb623a2963b6c61ba9ddafa2fd42ec9",
+  "upstream_model_code/processing_mibot.py": "45c618e4d852d4948cec32f56fc55fb24548d4a15855e2ae2d7313db4b4d3389"
 }

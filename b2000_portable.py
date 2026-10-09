@@ -40,7 +40,7 @@ def configure_runtime(root):
 
 def artifacts(adapter,branch):
     import torch
-    require(sha(adapter)==A_SHA,'Expected exact completed A1613 adapter bytes')
+    require(sha(adapter)==A_SHA,'Expected exact completed A2000 adapter bytes')
     require(sha(branch)==B_SHA,'Expected exact completed B2000 branch bytes')
     a=torch.load(adapter,map_location='cpu',weights_only=True)
     b=torch.load(branch,map_location='cpu',weights_only=True)

@@ -3,7 +3,10 @@ Original derivative work and technical report: Qinzhen Ma, 2026.
 
 This work depends on and attributes Xiaomi-Robotics-1 and the
 Xiaomi-Robotics-1-RoboCasa365 base checkpoint, released by Xiaomi Robotics.
-The base checkpoint is not redistributed by this repository.
+The complete base assets and the two adaptation weights are distributed at
+https://huggingface.co/Qinzhen3/OriginX. Python implementation code, including
+the pinned original model code, is distributed through the GitHub repository.
+The redistributed base retains its original identity and Apache-2.0 license.
 Upstream project: https://github.com/XiaomiRobotics/Xiaomi-Robotics-1
 Upstream model: https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-1-RoboCasa365
 Upstream code and model license: Apache License, Version 2.0.
@@ -21,4 +24,3 @@ robosuite: https://github.com/ARISE-Initiative/robosuite
 
 The original evidence retains project-relative and original absolute paths
 as provenance. It does not include credentials, datasets, or base weights.
-This release is not endorsed by Xiaomi Robotics or the RoboCasa organizers.

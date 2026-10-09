@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="380" height="560" viewBox="0 0 380 560" role="img" aria-labelledby="title desc">
 <title id="title">OriginX mobile architecture diagram</title>
-<desc id="desc">Observation features and robot state feed a frozen Xiaomi-Robotics-1 policy with A1613 Action LoRA and a trainable continuous conditioning branch with 4.22 million parameters. Both pathways condition native action generation. Inference does not use ground-truth stage labels.</desc>
+<desc id="desc">Observation features and robot state feed a frozen Xiaomi-Robotics-1 policy with A2000 Action LoRA and a trainable continuous conditioning branch with 4.22 million parameters. Both pathways condition native action generation. Inference does not use ground-truth stage labels. A2000 is the release alias of historical A1613; the weights are unchanged and the actual training count is 1,613 updates.</desc>
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070c20"/><stop offset="1" stop-color="#121836"/></linearGradient>
   <linearGradient id="branch" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3359ea"/><stop offset="1" stop-color="#6856d9"/></linearGradient>
@@ -23,7 +23,7 @@
   <text x="103" y="267" font-size="12" letter-spacing="1.1" fill="#9eb2e7">FROZEN POLICY</text>
   <text x="103" y="296" font-size="18" fill="#e1e8ff">Xiaomi</text>
   <text x="103" y="319" font-size="18" fill="#e1e8ff">Robotics-1</text>
-  <text x="103" y="349" font-size="14" fill="#9eb2e7">+ A1613 LoRA</text>
+  <text x="103" y="349" font-size="14" fill="#9eb2e7">+ A2000 LoRA</text>
 
   <rect x="197" y="242" width="160" height="133" rx="15" fill="url(#branch)" stroke="#8b9df3" stroke-opacity=".45"/>
   <text x="277" y="267" font-size="12" letter-spacing="1.1" fill="#e0e6ff">TRAINABLE</text>
