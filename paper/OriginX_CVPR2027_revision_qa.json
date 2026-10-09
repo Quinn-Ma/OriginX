@@ -1,0 +1,66 @@
+{
+  "updated_at_utc": "2026-10-09T17:39:23.601185+00:00",
+  "title": "OriginX: One-Shot Language Assistance under Matched Robot Replays",
+  "main_pdf_pages": 9,
+  "main_content_last_page": 8,
+  "reference_pages": [
+    8,
+    9
+  ],
+  "supplement_pdf_pages": 5,
+  "template": "Official cvpr-org/author-kit, current CVPR2026 revision, provisional for2027",
+  "template_sha256": "2602473285d1a7df2a445ac89b76e1afa0acab78e056f0369d19770245190153",
+  "compiler": "Tectonic0.17.0",
+  "compilation_succeeded": true,
+  "overfull_boxes": false,
+  "undefined_references": false,
+  "font_substitution_warnings": false,
+  "future_directions_in_main": true,
+  "all_50_task_rows_in_supplement": true,
+  "visual_review": "All9main and5supplement pages rendered with Poppler at1600px and inspected in contact sheets; supplement pages1/5 and main page8 additionally inspected full-size. No clipping or overlap observed.",
+  "pdf_author_metadata_empty": true,
+  "personal_identifying_strings_absent": true,
+  "final_2027_anonymity_compliance_claim": false,
+  "new_training": false,
+  "new_rollouts": false,
+  "new_model_calls": false,
+  "historical_evidence_hashes_unchanged": {
+    "outputs\\OriginX_Astra救援复测结果.json": "7c82a8f993ae83ae809d49c195312766b1f356379843aac3e5b9ac4b7bf370ea",
+    "outputs\\OriginX_Astra救援CLI用量最终.json": "a95b394d712958e5abee05a96d8e61836cd1989acc9f803321bba559d5712e65",
+    "work\\astra_rescue_20261009\\failure_manifest.json": "fe3b4d29408ad476cdde3f83af18321cb294014eb26c9b716a21ddb51d7d222b"
+  },
+  "audit_checks": {
+    "fixed_B_failure_cohort": true,
+    "unique_cases": 1004,
+    "source_hashes": true,
+    "strict_case_flags": true,
+    "verified_E_request_response_receipt_and_image_hashes": 869,
+    "paired_exact_prefixes_recomputed": 869,
+    "paired_prefix_query_count": 60892,
+    "original_initial_fingerprint_records_recompared": 1738,
+    "full_query_step_sequences_checked": 1738,
+    "result_success_bits_checked": 1738,
+    "actual_receipt_dedup": true
+  },
+  "case_selection": "All two historical OpenDrawer failures:186 and586; actual assistance-input RGB views, not endpoint images.",
+  "known_scientific_gaps": [
+    "Simple language intervention controls",
+    "Fresh full-cohort evaluation including regressions",
+    "Independent policy/environment replication",
+    "Isolated branch ablations"
+  ],
+  "outputs": {
+    "OriginX_CVPR2027_revised.pdf": {
+      "bytes": 736831,
+      "sha256": "45f4ba02a5a16af03d0641a428b8d536a981e96346f549b4f2ff75bea0cabe94"
+    },
+    "OriginX_CVPR2027_supplement.pdf": {
+      "bytes": 65531,
+      "sha256": "75ca2267a40e03dc24540822949bc181d493f3d13008ee813a6914362ed009fb"
+    },
+    "OriginX_CVPR2027_source.zip": {
+      "bytes": 850371,
+      "sha256": "f21e5ec809af638ce63139df0e04f6880d70d309305c36d3f88019f870ea272e"
+    }
+  }
+}
