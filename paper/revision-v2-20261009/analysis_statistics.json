@@ -1,0 +1,1670 @@
+{
+  "schema": "originx_retrospective_paper_evidence_audit_v1",
+  "summary": {
+    "n": 1004,
+    "rescued": 56,
+    "not_rescued": 813,
+    "unknown": 28,
+    "initial_state_deviation": 107,
+    "M": 874,
+    "E": 869,
+    "R_over_N": 0.055776892430278883,
+    "R_over_M": 0.06407322654462243,
+    "R_over_E": 0.06444188722669736,
+    "paired_M": {
+      "both_success": 0,
+      "control_only": 0,
+      "astra_only": 56,
+      "both_failure": 818
+    },
+    "paired_E": {
+      "both_success": 0,
+      "control_only": 0,
+      "astra_only": 56,
+      "both_failure": 813
+    }
+  },
+  "by_stratum": {
+    "atomic_seen": {
+      "n": 153,
+      "rescued": 12,
+      "not_rescued": 125,
+      "unknown": 0,
+      "initial_state_deviation": 16,
+      "M": 137,
+      "E": 137,
+      "R_over_N": 0.0784313725490196,
+      "R_over_M": 0.08759124087591241,
+      "R_over_E": 0.08759124087591241,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 12,
+        "both_failure": 125
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 12,
+        "both_failure": 125
+      }
+    },
+    "composite_seen": {
+      "n": 321,
+      "rescued": 25,
+      "not_rescued": 218,
+      "unknown": 8,
+      "initial_state_deviation": 70,
+      "M": 244,
+      "E": 243,
+      "R_over_N": 0.0778816199376947,
+      "R_over_M": 0.10245901639344263,
+      "R_over_E": 0.102880658436214,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 25,
+        "both_failure": 219
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 25,
+        "both_failure": 218
+      }
+    },
+    "composite_unseen": {
+      "n": 530,
+      "rescued": 19,
+      "not_rescued": 470,
+      "unknown": 20,
+      "initial_state_deviation": 21,
+      "M": 493,
+      "E": 489,
+      "R_over_N": 0.035849056603773584,
+      "R_over_M": 0.038539553752535496,
+      "R_over_E": 0.03885480572597137,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 19,
+        "both_failure": 474
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 19,
+        "both_failure": 470
+      }
+    }
+  },
+  "task_equal": {
+    "tasks_with_original_failures": 49,
+    "tasks_with_verified_pairs": 48,
+    "rate_fixed_failure_cohort": 0.07826095231854789,
+    "rate_conditional_verified": 0.08893417411393881,
+    "note": "49-task macro conditions on having at least one original failure; CloseFridge has zero failures and no defined rescue rate. 48-task E macro additionally omits OpenStandMixerHead with no valid pairs; not directly comparable."
+  },
+  "task_concentration": {
+    "tasks_with_rescue": 27,
+    "top_two_rescues": 13,
+    "top_five_rescues": 24,
+    "top_five_tasks": [
+      "BreadSelection",
+      "PrepareCoffee",
+      "CuttingToolSelection",
+      "KettleBoiling",
+      "CloseToasterOvenDoor"
+    ],
+    "original_zero_success_tasks": [
+      "GatherTableware",
+      "HeatKebabSandwich",
+      "PanTransfer"
+    ],
+    "original_zero_success_summary": {
+      "n": 150,
+      "rescued": 1,
+      "not_rescued": 134,
+      "unknown": 6,
+      "initial_state_deviation": 9,
+      "M": 137,
+      "E": 135,
+      "R_over_N": 0.006666666666666667,
+      "R_over_M": 0.0072992700729927005,
+      "R_over_E": 0.007407407407407408,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 136
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 134
+      }
+    },
+    "original_bottom_five_tasks": [
+      "GatherTableware",
+      "HeatKebabSandwich",
+      "PanTransfer",
+      "CategorizeCondiments",
+      "SeparateFreezerRack"
+    ],
+    "original_bottom_five_summary": {
+      "n": 237,
+      "rescued": 1,
+      "not_rescued": 218,
+      "unknown": 9,
+      "initial_state_deviation": 9,
+      "M": 222,
+      "E": 219,
+      "R_over_N": 0.004219409282700422,
+      "R_over_M": 0.0045045045045045045,
+      "R_over_E": 0.0045662100456621,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 221
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 218
+      }
+    }
+  },
+  "pilot_sensitivity": {
+    "development_assignment_indices": [
+      48,
+      97,
+      249,
+      345
+    ],
+    "primary_development_rows": [
+      {
+        "case_id": "native-B-0048-TurnOnElectricKettle-2090900048",
+        "classification": "not_rescued"
+      },
+      {
+        "case_id": "native-B-0097-SlideDishwasherRack-2090900097",
+        "classification": "rescued"
+      },
+      {
+        "case_id": "native-B-0249-TurnOnMicrowave-2090900249",
+        "classification": "not_rescued"
+      },
+      {
+        "case_id": "native-B-0345-NavigateKitchen-2090900345",
+        "classification": "not_rescued"
+      }
+    ],
+    "excluded_development_ids": {
+      "n": 1000,
+      "rescued": 55,
+      "not_rescued": 810,
+      "unknown": 28,
+      "initial_state_deviation": 107,
+      "M": 870,
+      "E": 865,
+      "R_over_N": 0.055,
+      "R_over_M": 0.06321839080459771,
+      "R_over_E": 0.06358381502890173,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 55,
+        "both_failure": 815
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 55,
+        "both_failure": 810
+      }
+    },
+    "note": "Development execution outcomes 0/4 were not merged. The same four IDs remained in main study with new primary execution outcomes 1/4. Excluding identities gives 55/1000, not 56/1000."
+  },
+  "missingness": {
+    "reasons": {
+      "unknown:missing_invalid_or_infrastructure_episode": 23,
+      "initial_state_deviation:original_initial_fingerprints_differ": 107,
+      "unknown:assistance_broker_error": 5,
+      "not_rescued:assisted_episode_failed": 813,
+      "rescued:control_failed_astra_succeeded_with_verified_intervention": 56
+    },
+    "deviation_arms": {
+      "control": 40,
+      "astra": 27,
+      "control+astra": 40
+    },
+    "deviation_fields_case_counts": {
+      "rgb": 104,
+      "physics_state": 106,
+      "layout_id": 15,
+      "xml_sha256": 27,
+      "style_id": 15,
+      "proprioception": 64,
+      "instruction": 6
+    },
+    "deviation_fields_arm_counts": {
+      "rgb": 140,
+      "physics_state": 142,
+      "xml_sha256": 40,
+      "style_id": 20,
+      "proprioception": 86,
+      "layout_id": 20,
+      "instruction": 10
+    },
+    "overlapping_fields": true,
+    "technical_unknown_assistance": {
+      "timeout": 22,
+      "applied": 1,
+      "broker_error": 5
+    },
+    "note": "23 invalid/infrastructure pairs (22 timeout, one applied intervention with invalid outcome); 5 complete pairs with broker_error. Deviation category precedes all outcome classification; not a policy failure."
+  },
+  "assistance_accounting": {
+    "all_statuses": {
+      "timeout": 23,
+      "applied": 909,
+      "broker_error": 5,
+      "not_reached": 67
+    },
+    "verified_E": 869,
+    "receipts_with_verified_E": 132,
+    "wait_verified_E_seconds": {
+      "n": 869,
+      "mean": 192.78832680247638,
+      "median": 191.37673335600084,
+      "minimum": 71.52925256399976,
+      "p25": 149.12877275099981,
+      "p75": 228.28383076499995,
+      "p90": 263.22908937839964,
+      "p95": 287.3943999931998,
+      "maximum": 434.7907169959999
+    },
+    "wait_all_records_seconds": {
+      "n": 1004,
+      "mean": 202.96689312938744,
+      "median": 188.56399445699935,
+      "minimum": 0.0,
+      "p25": 141.7113503870005,
+      "p75": 227.8954441032497,
+      "p90": 268.60509347099935,
+      "p95": 313.80271923694823,
+      "maximum": 1200.4996116919997
+    },
+    "wait_note": "Observed request-to-response waiting includes batching, queue and transport; waiting pauses simulation. It is distinct from per-batch CLI latency and not real-time robot performance.",
+    "paired_wall_seconds": {
+      "control": {
+        "n": 869,
+        "mean": 799.5330337239712,
+        "median": 814.6275495859991,
+        "minimum": 130.25364814000204,
+        "p25": 593.9755102479994,
+        "p75": 1010.3162894060006,
+        "p90": 1389.8826794536,
+        "p95": 1494.6245627649982,
+        "maximum": 1628.9439311420028
+      },
+      "astra": {
+        "n": 869,
+        "mean": 810.5832892227204,
+        "median": 822.2950396959995,
+        "minimum": 216.05676038800084,
+        "p25": 616.1736362880001,
+        "p75": 974.051690909997,
+        "p90": 1230.1737321140004,
+        "p95": 1333.4536902554012,
+        "maximum": 1595.6257571759998
+      }
+    }
+  },
+  "CLI": {
+    "calls": 135,
+    "statuses": {
+      "ok": 134,
+      "error": 1
+    },
+    "known_tokens": {
+      "input_tokens": 2592713,
+      "cached_input_tokens": 0,
+      "output_tokens": 195237,
+      "reasoning_tokens": 75511
+    },
+    "incomplete_totals": true,
+    "missing_usage_calls": 1,
+    "latency_seconds": {
+      "n": 135,
+      "mean": 45.825467707406936,
+      "median": 46.15696479999315,
+      "minimum": 2.334180500001821,
+      "p25": 37.80487385000015,
+      "p75": 54.870055149996915,
+      "p90": 62.41638866000285,
+      "p95": 65.52264737000296,
+      "maximum": 77.35145840000041
+    },
+    "latency_sum": 6186.438140499937,
+    "cost_usd": null,
+    "reasoning_in_output_not_additive": true,
+    "mean_batch_requests": 6.881481481481481,
+    "total_request_references": 929
+  },
+  "task_resampling": {
+    "seed": 20261009,
+    "repeats": 30000,
+    "method": "Percentile resampling of whole tasks within original split, fixed task counts 17/16/16.",
+    "interpretation": "Exploratory task-composition stability only; exchangeable-task superpopulation assumption is unverified. Not finite-cohort sampling uncertainty or causal confidence.",
+    "fixed_denominator_rate_percentile_95": [
+      0.03589220215203082,
+      0.07954574063901856
+    ],
+    "equal_task_rate_percentile_95": [
+      0.04819693825646787,
+      0.11240443219247452
+    ],
+    "verified_pair_rate_percentile_95": [
+      0.04210499297525127,
+      0.0911459193361955
+    ]
+  },
+  "hypothesis_tests": {
+    "earlier_600_pair_McNemar_exact_two_sided": 0.617299413589252,
+    "rescue_McNemar_recommended": false,
+    "reason": "Controls are selected original failures under a fixed deterministic replay. Thus absence of control success and reverse discordance is expected by design. A McNemar calculation or binomial test would not establish an unbiased full-population effect. No individual-episode iid interval is promoted."
+  },
+  "by_task": [
+    {
+      "task": "ArrangeBreadBasket",
+      "stratum": "composite_unseen",
+      "n": 15,
+      "rescued": 1,
+      "not_rescued": 14,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 15,
+      "E": 15,
+      "R_over_N": 0.06666666666666667,
+      "R_over_M": 0.06666666666666667,
+      "R_over_E": 0.06666666666666667,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 14
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 14
+      }
+    },
+    {
+      "task": "ArrangeTea",
+      "stratum": "composite_unseen",
+      "n": 27,
+      "rescued": 1,
+      "not_rescued": 25,
+      "unknown": 1,
+      "initial_state_deviation": 0,
+      "M": 26,
+      "E": 26,
+      "R_over_N": 0.037037037037037035,
+      "R_over_M": 0.038461538461538464,
+      "R_over_E": 0.038461538461538464,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 25
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 25
+      }
+    },
+    {
+      "task": "BreadSelection",
+      "stratum": "composite_unseen",
+      "n": 30,
+      "rescued": 7,
+      "not_rescued": 22,
+      "unknown": 1,
+      "initial_state_deviation": 0,
+      "M": 29,
+      "E": 29,
+      "R_over_N": 0.23333333333333334,
+      "R_over_M": 0.2413793103448276,
+      "R_over_E": 0.2413793103448276,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 7,
+        "both_failure": 22
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 7,
+        "both_failure": 22
+      }
+    },
+    {
+      "task": "CategorizeCondiments",
+      "stratum": "composite_unseen",
+      "n": 45,
+      "rescued": 0,
+      "not_rescued": 44,
+      "unknown": 1,
+      "initial_state_deviation": 0,
+      "M": 45,
+      "E": 44,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 45
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 44
+      }
+    },
+    {
+      "task": "CloseBlenderLid",
+      "stratum": "atomic_seen",
+      "n": 32,
+      "rescued": 1,
+      "not_rescued": 27,
+      "unknown": 0,
+      "initial_state_deviation": 4,
+      "M": 28,
+      "E": 28,
+      "R_over_N": 0.03125,
+      "R_over_M": 0.03571428571428571,
+      "R_over_E": 0.03571428571428571,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 27
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 27
+      }
+    },
+    {
+      "task": "CloseToasterOvenDoor",
+      "stratum": "atomic_seen",
+      "n": 6,
+      "rescued": 3,
+      "not_rescued": 3,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 6,
+      "E": 6,
+      "R_over_N": 0.5,
+      "R_over_M": 0.5,
+      "R_over_E": 0.5,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 3,
+        "both_failure": 3
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 3,
+        "both_failure": 3
+      }
+    },
+    {
+      "task": "CoffeeSetupMug",
+      "stratum": "atomic_seen",
+      "n": 17,
+      "rescued": 1,
+      "not_rescued": 16,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 17,
+      "E": 17,
+      "R_over_N": 0.058823529411764705,
+      "R_over_M": 0.058823529411764705,
+      "R_over_E": 0.058823529411764705,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 16
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 16
+      }
+    },
+    {
+      "task": "CuttingToolSelection",
+      "stratum": "composite_unseen",
+      "n": 26,
+      "rescued": 4,
+      "not_rescued": 22,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 26,
+      "E": 26,
+      "R_over_N": 0.15384615384615385,
+      "R_over_M": 0.15384615384615385,
+      "R_over_E": 0.15384615384615385,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 4,
+        "both_failure": 22
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 4,
+        "both_failure": 22
+      }
+    },
+    {
+      "task": "DeliverStraw",
+      "stratum": "composite_seen",
+      "n": 23,
+      "rescued": 1,
+      "not_rescued": 21,
+      "unknown": 1,
+      "initial_state_deviation": 0,
+      "M": 22,
+      "E": 22,
+      "R_over_N": 0.043478260869565216,
+      "R_over_M": 0.045454545454545456,
+      "R_over_E": 0.045454545454545456,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 21
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 21
+      }
+    },
+    {
+      "task": "GarnishPancake",
+      "stratum": "composite_unseen",
+      "n": 12,
+      "rescued": 0,
+      "not_rescued": 11,
+      "unknown": 1,
+      "initial_state_deviation": 0,
+      "M": 11,
+      "E": 11,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 11
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 11
+      }
+    },
+    {
+      "task": "GatherTableware",
+      "stratum": "composite_unseen",
+      "n": 50,
+      "rescued": 1,
+      "not_rescued": 47,
+      "unknown": 2,
+      "initial_state_deviation": 0,
+      "M": 48,
+      "E": 48,
+      "R_over_N": 0.02,
+      "R_over_M": 0.020833333333333332,
+      "R_over_E": 0.020833333333333332,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 47
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 47
+      }
+    },
+    {
+      "task": "GetToastedBread",
+      "stratum": "composite_seen",
+      "n": 32,
+      "rescued": 0,
+      "not_rescued": 30,
+      "unknown": 2,
+      "initial_state_deviation": 0,
+      "M": 30,
+      "E": 30,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 30
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 30
+      }
+    },
+    {
+      "task": "HeatKebabSandwich",
+      "stratum": "composite_unseen",
+      "n": 50,
+      "rescued": 0,
+      "not_rescued": 48,
+      "unknown": 2,
+      "initial_state_deviation": 0,
+      "M": 48,
+      "E": 48,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 48
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 48
+      }
+    },
+    {
+      "task": "KettleBoiling",
+      "stratum": "composite_seen",
+      "n": 17,
+      "rescued": 4,
+      "not_rescued": 10,
+      "unknown": 0,
+      "initial_state_deviation": 3,
+      "M": 14,
+      "E": 14,
+      "R_over_N": 0.23529411764705882,
+      "R_over_M": 0.2857142857142857,
+      "R_over_E": 0.2857142857142857,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 4,
+        "both_failure": 10
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 4,
+        "both_failure": 10
+      }
+    },
+    {
+      "task": "LoadDishwasher",
+      "stratum": "composite_seen",
+      "n": 13,
+      "rescued": 3,
+      "not_rescued": 10,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 13,
+      "E": 13,
+      "R_over_N": 0.23076923076923078,
+      "R_over_M": 0.23076923076923078,
+      "R_over_E": 0.23076923076923078,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 3,
+        "both_failure": 10
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 3,
+        "both_failure": 10
+      }
+    },
+    {
+      "task": "MakeIceLemonade",
+      "stratum": "composite_unseen",
+      "n": 24,
+      "rescued": 0,
+      "not_rescued": 23,
+      "unknown": 1,
+      "initial_state_deviation": 0,
+      "M": 23,
+      "E": 23,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 23
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 23
+      }
+    },
+    {
+      "task": "NavigateKitchen",
+      "stratum": "atomic_seen",
+      "n": 9,
+      "rescued": 0,
+      "not_rescued": 6,
+      "unknown": 0,
+      "initial_state_deviation": 3,
+      "M": 6,
+      "E": 6,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 6
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 6
+      }
+    },
+    {
+      "task": "OpenCabinet",
+      "stratum": "atomic_seen",
+      "n": 3,
+      "rescued": 0,
+      "not_rescued": 3,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 3,
+      "E": 3,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 3
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 3
+      }
+    },
+    {
+      "task": "OpenDrawer",
+      "stratum": "atomic_seen",
+      "n": 2,
+      "rescued": 1,
+      "not_rescued": 1,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 2,
+      "E": 2,
+      "R_over_N": 0.5,
+      "R_over_M": 0.5,
+      "R_over_E": 0.5,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 1
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 1
+      }
+    },
+    {
+      "task": "OpenStandMixerHead",
+      "stratum": "atomic_seen",
+      "n": 2,
+      "rescued": 0,
+      "not_rescued": 0,
+      "unknown": 0,
+      "initial_state_deviation": 2,
+      "M": 0,
+      "E": 0,
+      "R_over_N": 0.0,
+      "R_over_M": null,
+      "R_over_E": null,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 0
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "task": "PackIdenticalLunches",
+      "stratum": "composite_seen",
+      "n": 32,
+      "rescued": 2,
+      "not_rescued": 29,
+      "unknown": 1,
+      "initial_state_deviation": 0,
+      "M": 31,
+      "E": 31,
+      "R_over_N": 0.0625,
+      "R_over_M": 0.06451612903225806,
+      "R_over_E": 0.06451612903225806,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 2,
+        "both_failure": 29
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 2,
+        "both_failure": 29
+      }
+    },
+    {
+      "task": "PanTransfer",
+      "stratum": "composite_unseen",
+      "n": 50,
+      "rescued": 0,
+      "not_rescued": 39,
+      "unknown": 2,
+      "initial_state_deviation": 9,
+      "M": 41,
+      "E": 39,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 41
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 39
+      }
+    },
+    {
+      "task": "PickPlaceCounterToCabinet",
+      "stratum": "atomic_seen",
+      "n": 8,
+      "rescued": 1,
+      "not_rescued": 7,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 8,
+      "E": 8,
+      "R_over_N": 0.125,
+      "R_over_M": 0.125,
+      "R_over_E": 0.125,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 7
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 7
+      }
+    },
+    {
+      "task": "PickPlaceCounterToStove",
+      "stratum": "atomic_seen",
+      "n": 8,
+      "rescued": 1,
+      "not_rescued": 7,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 8,
+      "E": 8,
+      "R_over_N": 0.125,
+      "R_over_M": 0.125,
+      "R_over_E": 0.125,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 7
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 7
+      }
+    },
+    {
+      "task": "PickPlaceDrawerToCounter",
+      "stratum": "atomic_seen",
+      "n": 3,
+      "rescued": 1,
+      "not_rescued": 2,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 3,
+      "E": 3,
+      "R_over_N": 0.3333333333333333,
+      "R_over_M": 0.3333333333333333,
+      "R_over_E": 0.3333333333333333,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 2
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 2
+      }
+    },
+    {
+      "task": "PickPlaceSinkToCounter",
+      "stratum": "atomic_seen",
+      "n": 3,
+      "rescued": 0,
+      "not_rescued": 2,
+      "unknown": 0,
+      "initial_state_deviation": 1,
+      "M": 2,
+      "E": 2,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 2
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 2
+      }
+    },
+    {
+      "task": "PickPlaceToasterToCounter",
+      "stratum": "atomic_seen",
+      "n": 5,
+      "rescued": 0,
+      "not_rescued": 5,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 5,
+      "E": 5,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 5
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 5
+      }
+    },
+    {
+      "task": "PortionHotDogs",
+      "stratum": "composite_unseen",
+      "n": 35,
+      "rescued": 1,
+      "not_rescued": 32,
+      "unknown": 2,
+      "initial_state_deviation": 0,
+      "M": 34,
+      "E": 33,
+      "R_over_N": 0.02857142857142857,
+      "R_over_M": 0.029411764705882353,
+      "R_over_E": 0.030303030303030304,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 33
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 32
+      }
+    },
+    {
+      "task": "PreSoakPan",
+      "stratum": "composite_seen",
+      "n": 12,
+      "rescued": 0,
+      "not_rescued": 3,
+      "unknown": 0,
+      "initial_state_deviation": 9,
+      "M": 3,
+      "E": 3,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 3
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 3
+      }
+    },
+    {
+      "task": "PrepareCoffee",
+      "stratum": "composite_seen",
+      "n": 39,
+      "rescued": 6,
+      "not_rescued": 33,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 39,
+      "E": 39,
+      "R_over_N": 0.15384615384615385,
+      "R_over_M": 0.15384615384615385,
+      "R_over_E": 0.15384615384615385,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 6,
+        "both_failure": 33
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 6,
+        "both_failure": 33
+      }
+    },
+    {
+      "task": "RecycleBottlesByType",
+      "stratum": "composite_unseen",
+      "n": 38,
+      "rescued": 2,
+      "not_rescued": 35,
+      "unknown": 1,
+      "initial_state_deviation": 0,
+      "M": 37,
+      "E": 37,
+      "R_over_N": 0.05263157894736842,
+      "R_over_M": 0.05405405405405406,
+      "R_over_E": 0.05405405405405406,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 2,
+        "both_failure": 35
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 2,
+        "both_failure": 35
+      }
+    },
+    {
+      "task": "RinseSinkBasin",
+      "stratum": "composite_seen",
+      "n": 18,
+      "rescued": 2,
+      "not_rescued": 4,
+      "unknown": 0,
+      "initial_state_deviation": 12,
+      "M": 6,
+      "E": 6,
+      "R_over_N": 0.1111111111111111,
+      "R_over_M": 0.3333333333333333,
+      "R_over_E": 0.3333333333333333,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 2,
+        "both_failure": 4
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 2,
+        "both_failure": 4
+      }
+    },
+    {
+      "task": "ScrubCuttingBoard",
+      "stratum": "composite_seen",
+      "n": 13,
+      "rescued": 1,
+      "not_rescued": 5,
+      "unknown": 0,
+      "initial_state_deviation": 7,
+      "M": 6,
+      "E": 6,
+      "R_over_N": 0.07692307692307693,
+      "R_over_M": 0.16666666666666666,
+      "R_over_E": 0.16666666666666666,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 5
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 5
+      }
+    },
+    {
+      "task": "SearingMeat",
+      "stratum": "composite_seen",
+      "n": 36,
+      "rescued": 0,
+      "not_rescued": 26,
+      "unknown": 2,
+      "initial_state_deviation": 8,
+      "M": 26,
+      "E": 26,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 26
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 26
+      }
+    },
+    {
+      "task": "SeparateFreezerRack",
+      "stratum": "composite_unseen",
+      "n": 42,
+      "rescued": 0,
+      "not_rescued": 40,
+      "unknown": 2,
+      "initial_state_deviation": 0,
+      "M": 40,
+      "E": 40,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 40
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 40
+      }
+    },
+    {
+      "task": "SetUpCuttingStation",
+      "stratum": "composite_seen",
+      "n": 12,
+      "rescued": 3,
+      "not_rescued": 9,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 12,
+      "E": 12,
+      "R_over_N": 0.25,
+      "R_over_M": 0.25,
+      "R_over_E": 0.25,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 3,
+        "both_failure": 9
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 3,
+        "both_failure": 9
+      }
+    },
+    {
+      "task": "SlideDishwasherRack",
+      "stratum": "atomic_seen",
+      "n": 11,
+      "rescued": 1,
+      "not_rescued": 10,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 11,
+      "E": 11,
+      "R_over_N": 0.09090909090909091,
+      "R_over_M": 0.09090909090909091,
+      "R_over_E": 0.09090909090909091,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 10
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 10
+      }
+    },
+    {
+      "task": "StackBowlsCabinet",
+      "stratum": "composite_seen",
+      "n": 7,
+      "rescued": 0,
+      "not_rescued": 7,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 7,
+      "E": 7,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 7
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 7
+      }
+    },
+    {
+      "task": "SteamInMicrowave",
+      "stratum": "composite_seen",
+      "n": 18,
+      "rescued": 0,
+      "not_rescued": 3,
+      "unknown": 1,
+      "initial_state_deviation": 14,
+      "M": 4,
+      "E": 3,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 4
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 3
+      }
+    },
+    {
+      "task": "StirVegetables",
+      "stratum": "composite_seen",
+      "n": 23,
+      "rescued": 3,
+      "not_rescued": 14,
+      "unknown": 1,
+      "initial_state_deviation": 5,
+      "M": 17,
+      "E": 17,
+      "R_over_N": 0.13043478260869565,
+      "R_over_M": 0.17647058823529413,
+      "R_over_E": 0.17647058823529413,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 3,
+        "both_failure": 14
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 3,
+        "both_failure": 14
+      }
+    },
+    {
+      "task": "StoreLeftoversInBowl",
+      "stratum": "composite_seen",
+      "n": 6,
+      "rescued": 0,
+      "not_rescued": 6,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 6,
+      "E": 6,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 6
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 6
+      }
+    },
+    {
+      "task": "TurnOffStove",
+      "stratum": "atomic_seen",
+      "n": 16,
+      "rescued": 2,
+      "not_rescued": 14,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 16,
+      "E": 16,
+      "R_over_N": 0.125,
+      "R_over_M": 0.125,
+      "R_over_E": 0.125,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 2,
+        "both_failure": 14
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 2,
+        "both_failure": 14
+      }
+    },
+    {
+      "task": "TurnOnElectricKettle",
+      "stratum": "atomic_seen",
+      "n": 2,
+      "rescued": 0,
+      "not_rescued": 2,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 2,
+      "E": 2,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 2
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 2
+      }
+    },
+    {
+      "task": "TurnOnMicrowave",
+      "stratum": "atomic_seen",
+      "n": 18,
+      "rescued": 0,
+      "not_rescued": 18,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 18,
+      "E": 18,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 18
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 18
+      }
+    },
+    {
+      "task": "TurnOnSinkFaucet",
+      "stratum": "atomic_seen",
+      "n": 8,
+      "rescued": 0,
+      "not_rescued": 2,
+      "unknown": 0,
+      "initial_state_deviation": 6,
+      "M": 2,
+      "E": 2,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 2
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 2
+      }
+    },
+    {
+      "task": "WaffleReheat",
+      "stratum": "composite_unseen",
+      "n": 32,
+      "rescued": 1,
+      "not_rescued": 29,
+      "unknown": 2,
+      "initial_state_deviation": 0,
+      "M": 30,
+      "E": 30,
+      "R_over_N": 0.03125,
+      "R_over_M": 0.03333333333333333,
+      "R_over_E": 0.03333333333333333,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 29
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 29
+      }
+    },
+    {
+      "task": "WashFruitColander",
+      "stratum": "composite_unseen",
+      "n": 18,
+      "rescued": 0,
+      "not_rescued": 6,
+      "unknown": 0,
+      "initial_state_deviation": 12,
+      "M": 6,
+      "E": 6,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 6
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 6
+      }
+    },
+    {
+      "task": "WashLettuce",
+      "stratum": "composite_seen",
+      "n": 20,
+      "rescued": 0,
+      "not_rescued": 8,
+      "unknown": 0,
+      "initial_state_deviation": 12,
+      "M": 8,
+      "E": 8,
+      "R_over_N": 0.0,
+      "R_over_M": 0.0,
+      "R_over_E": 0.0,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 8
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 0,
+        "both_failure": 8
+      }
+    },
+    {
+      "task": "WeighIngredients",
+      "stratum": "composite_unseen",
+      "n": 36,
+      "rescued": 1,
+      "not_rescued": 33,
+      "unknown": 2,
+      "initial_state_deviation": 0,
+      "M": 34,
+      "E": 34,
+      "R_over_N": 0.027777777777777776,
+      "R_over_M": 0.029411764705882353,
+      "R_over_E": 0.029411764705882353,
+      "paired_M": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 33
+      },
+      "paired_E": {
+        "both_success": 0,
+        "control_only": 0,
+        "astra_only": 1,
+        "both_failure": 33
+      }
+    }
+  ],
+  "verified_checks": {
+    "fixed_B_failure_cohort": true,
+    "unique_cases": 1004,
+    "source_hashes": true,
+    "strict_case_flags": true,
+    "verified_E_request_response_receipt_and_image_hashes": 869,
+    "paired_exact_prefixes_recomputed": 869,
+    "paired_prefix_query_count": 60892,
+    "original_initial_fingerprint_records_recompared": 1738,
+    "full_query_step_sequences_checked": 1738,
+    "result_success_bits_checked": 1738,
+    "actual_receipt_dedup": true
+  }
+}

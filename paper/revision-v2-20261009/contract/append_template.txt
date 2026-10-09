@@ -1,0 +1,3 @@
+<ORIGINAL_INSTRUCTION>
+Immediate next actions: <STRIPPED_SUBGOAL>
+Then complete the original task.

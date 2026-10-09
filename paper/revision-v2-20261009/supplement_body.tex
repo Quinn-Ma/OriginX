@@ -1,0 +1,141 @@
+\section{Policy substrate and training provenance}
+\label{s:substrate}
+The rescue experiment freezes the complete endpoint. This section documents its construction for reproducibility; the assistance result does not identify a benefit of the conditioning branch.
+
+\paragraph{Lineage and observations.}
+Let $\theta_0$ be the released Xiaomi-Robotics-1-RoboCasa365 model. Rank-16, alpha-16 Action LoRA parameters $\alpha$ produce the adapted teacher $\theta_A=(\theta_0,\alpha)$. Only branch parameters $\phi$ are updated in the final training stage. The release alias A2000 refers to an unchanged adapter actually trained for 1,613 updates; B2000 records the branch endpoint at 2,000 updates. These names do not denote separately pretrained foundation models.
+
+For each sample, the frozen visual-language pass returns $H\in\mathbb R^{S\times D}$, $D=2560$. Three cameras each supply four observed frames. The processor forms two temporal patch groups; the branch averages spatial tokens in the most recent group for each camera to obtain $\bar h_1,\bar h_2,\bar h_3$. Let $h_{\mathrm{last}}$ be the last valid post-video token in the released prompt order. The padded state history is $s\in\mathbb R^{4\times 60}$; only coordinates $0$--$13$ are valid, and the remaining coordinates are checked to be zero. The detached branch input and outputs are
+\begin{align}
+x&=[\bar h_1;\bar h_2;\bar h_3;h_{\mathrm{last}};
+       \operatorname{vec}(s_{:,0:14})]\in\mathbb R^{4 D+56},\label{s:eq:input}\\
+z&=\operatorname{SiLU}(W_e x+b_e)\in\mathbb R^{256},\qquad
+\ell=W_s z+b_s\in\mathbb R^7,\\
+\Delta_\phi&=\operatorname{reshape}(W_\Delta z+b_\Delta,6,1024).
+\end{align}
+The output projection $W_\Delta,b_\Delta$ is initialized to zero. Including the auxiliary stage head, the branch contains 4,216,839 trainable parameters. A scoped forward hook adds the residual to the native time-projector output before its six-channel reshape:
+\begin{equation}
+\widetilde m(t,o,s)=m_{\theta_A}(t)+\Delta_\phi(o,s).
+\end{equation}
+The native action transformer consumes this conditioning through adaptive normalization. The residual modifies conditioning, not a motor command. One visual-language pass serves each action query, and the same observation-derived residual is available to the five Euler evaluations. The hook is removed on normal and exceptional exits; reentrant requests are rejected.
+
+\paragraph{Losses and information boundary.}
+For demonstrated action chunk $a$, noise $\epsilon$, and flow time $t$, training uses $a_t=(1-t)\epsilon+ta$ and target $a-\epsilon$. Let $M_i$ combine valid action coordinates and time steps, with a nonempty mask for every sample. Define
+\begin{equation}
+\operatorname{MSE}_{M_i}(r)=\frac{\sum_jM_{ij}r_{ij}^2}{\sum_jM_{ij}}.
+\end{equation}
+Writing $v_{B,i}=v_{\theta_A,\phi}(a_{t,i},t_i\mid o_i,s_i)$ and $v_{A,i}$ for the frozen adapted teacher under the same inputs, the recorded objective is
+\begin{align}
+L_{\mathrm{flow}}&=\frac 1 B\sum_i\operatorname{MSE}_{M_i}\bigl(v_{B,i}-(a_i-\epsilon_i)\bigr),\\
+L_{\mathrm{ret}}&=\frac 1 B\sum_i\operatorname{MSE}_{M_i}\bigl(v_{B,i}-\operatorname{stopgrad}(v_{A,i})\bigr),\\
+L_{\mathrm{stage}}&=\frac 1 B\sum_i\mathbf 1[y_i\geq 0,\ q_i\geq 1]\operatorname{CE}(\ell_i,y_i),\\
+L&=L_{\mathrm{flow}}+L_{\mathrm{ret}}+0.05 L_{\mathrm{stage}}.
+\end{align}
+The teacher retains its enabled LoRA and shares the student's noisy action, time, state embeddings, and cached visual-language context. Its evaluation uses no gradients and is checked not to mutate shared inputs or consume extra random state. Annotation confidence $q_i$ is detached; missing or low-confidence labels suppress only the auxiliary term. That term is normalized by all batch windows, not by admitted labels. Stage labels, stage confidence, and externally supplied stage residuals are excluded at inference. The seven logits do not select a hard option. Teacher consistency on training samples is a penalty, not a guarantee against rollout regressions.
+
+\paragraph{Data and optimization.}
+A2000 processed 80,000 sampled windows across 1,613 updates with changing batch size. B2000 processed 256,000 sampled windows across 2,000 updates at global batch size 128, learning rate $10^{-4}$, and gradient-clipping threshold 1.0; recorded elapsed training time was 8,453.98 s. These window counts can contain repeated samples and must not be described as distinct trajectories. Branch master parameters use FP32; the original model path retains recorded mixed precision. No unverified optimizer setting is inferred from the endpoint.
+
+B samples Human300 replay and a 200-trajectory development collection in equal proportions. The collection covers 16 Composite-Seen tasks, with 168 training and 32 diagnostic held-out trajectories. Existing annotation fields supply stage targets; this stage adds neither new human labels, reasoning-model annotations, nor MimicGen data. The local sample-plan audit covers all 80,000 A entries and 256,000 B entries, marked as human data. Their task names lie within Human300 and do not intersect the 16 official Composite-Unseen tasks. This is an audit of the bound adaptation plans, not an independent reconstruction of the base model's pretraining data. The diagnostic trajectory split is not an unseen-task test. No further training is performed for language assistance.
+
+\section{Evaluation manifest and execution record}
+\label{s:execution}
+The historical manifest has 18 Atomic-Seen, 16 Composite-Seen, and 16 Composite-Unseen tasks in pretraining scenes, each with 50 episodes. Policy and environment seeds are fixed in the range 2090900000--2090902499; registered task horizons are retained. Inference uses five Euler steps, replanning every 16 environment steps, history length four, observation interval two, and crop ratio 0.95. Original Counter reset source is checked before and after each episode. All 2,500 original episodes terminate with known outcomes: 1,496 successes and 1,004 failures, with no unattempted or infrastructure-unknown cases. Every original failure reaches its horizon. Equal episode allocation makes the task macro mean equal to 1,496/2,500; averaging the three split percentages without their task weights would be incorrect.
+
+\paragraph{Environment.}
+Model inference used Python 3.12, PyTorch 2.8.0 with CUDA 12.8, Transformers 4.57.1, and flash-attn 2.8.3. Simulation used Python 3.11, CPU PyTorch 2.7.1, NumPy 2.2.5, MuJoCo 3.3.1, robosuite 1.5.2, RoboCasa 1.0.1, and Gymnasium 0.29.1. CPU OSMesa rendering, rendering decimation with query-pixel checks, context-lifetime management, and readback guards are execution choices that must be reproduced or checked for parity. They are not assumed equivalent to every default graphics configuration. The baseline campaign used 18 frozen services across three H100 GPUs and up to 108 simulation clients with isolated RNG streams. The continuation rescue campaign used 12 services and up to 72 clients across two H100 GPUs. Throughput configurations do not change task success definitions.
+
+\paragraph{Provenance and replay.}
+The retained record binds model assets, adapter and branch tensors, endpoint configuration, runtime sources, manifest entries, episode results, and readback receipts by cryptographic digest. The baseline audit accounts for all 2,500 result files and 2,500 guard receipts. The original evidence archive stores outcome and integrity records, not reconstructed original videos; hashes cannot recover pixels. RGB images used for assistance are observations from new replays. A later portable loader is a packaging artifact, not the evaluated entry point; its CPU identity checks do not establish GPU action parity or a repeated benchmark. An anonymous artifact package must preserve executable configurations and verification logic while removing identifying paths and release links. Artifact hashes certify identity and consistency, not scientific correctness.
+
+\section{Assistant contract and strict classification}
+\label{s:eligibility}
+Each of the 1,004 historical failures is assigned one unassisted and one assisted replay, preserving the endpoint, task, seed, horizon, and policy settings. The intervention query is $\tau=16\lceil H/32\rceil$. The fixed schedule is not a learned failure detector. The assistant receives only the original instruction, three current 256$\times$256 RGB views, remaining steps, and routing metadata. Proprioception remains an ordinary robot-policy input but is not sent to the assistant. No hidden simulator state, success predicate, historical outcome, or future frame is supplied.
+
+The following short excerpt is copied from the recorded assistant prompt:
+\begin{quote}\small
+``For each case, provide a short, concrete next-action subgoal that helps the robot complete its original instruction within its remaining action-step budget.''
+\end{quote}
+The full contract grounds advice in visible content, preserves the task, forbids tool use and hidden-state access, and requests one schema-valid response per routed request. Each batch contains at most eight separately routed image rows with left/right/wrist columns. Subgoal and rationale fields are each limited to 1,500 characters. Only the subgoal is appended to the original policy instruction, between ``Immediate next actions:'' and ``Then complete the original task.'' It persists in subsequent queries. The assistant has no iterative feedback or motor-action interface. Shared batch context can introduce dependence; a batched invocation is not eight independent model calls.
+
+\paragraph{Eligibility.}
+Let $I_i$ indicate that both replay initial fingerprints match the historical case, $P_i$ exact equality of their entire preintervention query records, and $C_i$ valid completion of both arms. Let $A_i$ indicate valid linked evidence of an applied assistant response. With replay success bits $Y_i^0,Y_i^1$, define
+\begin{align}
+M&=\sum_{i=1}^{1004}I_iP_iC_i=874,\\
+E&=\sum_{i=1}^{1004}I_iP_iC_iA_i=869,\\
+R&=\sum_{i=1}^{1004}I_iP_iC_iA_i(1-Y_i^0)Y_i^1=56.
+\end{align}
+Initial fingerprints cover RGB, proprioception, physics state, instruction, layout, style, and scene XML. Query records bind step, state, image, instruction, and action hashes. Applied-assistance evidence links request identity and budget, all image hashes, the response, CLI receipt and completed event trace, and the augmented instruction observed at the intervention query. The trace is checked for prohibited tool calls. The requested service model is \texttt{gpt-6-astra}, reasoning effort \texttt{high}; the record is not an independently signed identity of service-side weights.
+
+The revised audit independently re-compares 1,738 initial fingerprint records and result success bits, checks 1,738 full query-step sequences, compares 60,892 paired preintervention query records, and checks the request/response/receipt/image hashes for all 869 eligible pairs. In $M$, the paired table has 56 assisted-only successes and 818 failures in both arms; control-only and both-arm successes are zero. Five complete pairs have broker errors and are not in $E$, whose corresponding counts are 56 and 813.
+
+\paragraph{Unknowns and initial deviations.}
+Classification first separates initial-state deviations, then invalid/incomplete episodes and missing assistance evidence; raw success never overrides these exclusions. There are 28 technical unknowns: 22 timed-out invalid pairs, one pair with assistance marked applied but an invalid assisted outcome, and five complete pairs with broker errors. The 107 deviation cases comprise 40 control-only, 27 assisted-only, and 40 both-arm deviations. Overlapping field-level counts are 106 physics-state, 104 RGB, 64 proprioception, 27 XML, 15 layout, 15 style, and six instruction differences. These counts do not identify the root cause of a reset mismatch and should not be described as only rendering variation. All unknowns and deviations remain in the 1,004-case denominator; they are neither verified rescues nor demonstrated policy failures on the matched historical state.
+
+\paragraph{Continuation and development exposure.}
+The first execution partition claimed 36 cases; the continuation was assigned the other 968 through a claim-frozen whole-case partition. Each case contributes from exactly one partition, without cross-run fallback or choosing a better outcome. The continuation adds same-thread, same-socket read-only RNG keepalives every 120 s during a bounded 1,200 s assistant wait, with no reconnect or reset. It permits further dispatch after a recorded initial-state deviation, preserving that deviation. These infrastructure differences and the initial error record remain part of the evidence.
+
+The four development executions, assignment IDs 48/97/249/345, produced 0/4 rescues and are not merged as primary outcomes. Their identities remain in the main cohort and are development-exposed. The primary replay of 97 is rescued; 48/249/345 are not. Excluding all four identities gives 55 rescues, 810 non-rescues, 28 unknowns, and 107 deviations over 1,000 cases: 5.50\%, $M=870$, $E=865$. This sensitivity must not be confused with excluding only the pilot execution records.
+
+\section{Resource accounting and statistical interpretation}
+\label{s:statistics}
+The primary ledger contains 135 unique CLI invocations: 134 successful and one quota error. Usage is deduplicated by invocation receipt, not multiplied by per-case references. Known input tokens total 2,592,713 and output tokens 195,237, including 75,511 reasoning tokens; reasoning is not an additional disjoint output count. The error invocation lacks counters, so complete totals remain unknown. The pilot adds one separately accounted invocation with 19,071 input, 629 output, and 137 reasoning tokens. Dollar cost is unavailable for the authenticated CLI quota; it is not assumed zero.
+
+Primary CLI execution latency totals 6,186.44 s, with median 46.16 s and range 2.33--77.35 s per invocation. This excludes much of the queue and transport overhead. Among 869 eligible cases, actual request waiting has median 191.38 s, interquartile range 149.13--228.28 s, and range 71.53--434.79 s. Simulation pauses during waiting, so action horizons remain unchanged despite additional compute and wall time. The experiment demonstrates neither real-time assistance nor a compute-matched comparison. Failed and unapplied calls remain in the ledger; 132 distinct primary receipts supply the 869 eligible comparisons.
+
+\paragraph{Estimands and task dependence.}
+The realized fixed-cohort confirmation fraction is 56/1,004=5.58\%; the eligible-pair fraction is 56/869=6.44\%. The 1,004 cases form the complete selected historical-failure cohort, not an independent sample of all future episodes. Equal-task averaging over the 49 tasks with at least one historical failure gives 7.826\%; CloseFridge has no failure cohort and no defined conditional rescue rate. Averaging eligible-pair task rates over 48 tasks gives 8.893\%, additionally omitting OpenStandMixerHead with no eligible pair. These macro summaries use different populations and are not interchangeable with the pooled fractions.
+
+An exploratory stability calculation resamples whole tasks within their original splits, preserving 17/16/16 failure-containing tasks. With 30,000 draws and pseudorandom seed 20261009, the 2.5th--97.5th percentile ranges are 3.59--7.95\% for the pooled confirmation fraction, 4.82--11.24\% for the equal-task fraction, and 4.21--9.11\% for the eligible-pair fraction. Each sampled task retains its complete case counts, including unknowns and deviations. These are sensitivity ranges under an unverified exchangeable-task assumption, not confidence intervals for the observed census or a causal treatment effect. They do not account for all shared batch, model, or execution dependence. We do not promote episode-i.i.d. intervals or a rescue McNemar significance claim: zero control successes are observed rather than required by eligibility. Selection on historical failure and the absence of replayed historical successes prevent interpreting the paired asymmetry as full-population improvement. The archived historical trajectory is not reconstructed by agreement between the new arms.
+
+\paragraph{Earlier negative comparison.}
+A distinct development confirmation compared the original Xiaomi policy with B2000 on 30 tasks and 20 new seeds per task. Success counts were 413/600 and 419/600, respectively, with 53 B-only, 47 original-only, and 500 tied outcomes. The difference was 1.00 percentage point. The retained report gives a 95\% interval of $[-2.17,4.17]$ points; that interval's construction has not been independently reconstructed here and is retained as reported. The exact two-sided McNemar probability independently recomputes to 0.6172994 from the 53/47 discordances. Predeclared requirements of at least a five-point gain and a positive interval lower bound were not met. This is insufficient evidence of improvement, not evidence of equivalence. These 600 pairs use an earlier protocol and must not be pooled with the final 2,500 episodes. Because the comparison changes both LoRA and the branch, it does not isolate the branch either.
+
+\paragraph{Attribution limits.}
+There is no same-budget generic restatement, deterministic subgoal, nonvisual-language, or alternative-assistant control. The observations therefore do not identify an Astra-specific reasoning advantage. No matched final-manifest original/A-only/B/zero-branch/stage/retention ablation is available. A generated rationale and one RGB triplet do not establish a physical failure cause. The complete two-case OpenDrawer failure subset is shown as an illustration, not a representative random sample of failure mechanisms. Overall benchmark improvement, cross-embodiment transfer, physical-robot safety, and independent organizer acceptance require evidence beyond this study.
+
+\input{behavior_supplement}
+
+\clearpage
+\onecolumn
+\section{Complete task-level record}
+\label{s:tasks}
+Table~\ref{s:tab:tasks} joins the historical 50-task evaluation and all 49 nonempty failure cohorts without selecting favorable tasks. Every original task has 50 episodes. AS, CS, and CU denote Atomic-Seen, Composite-Seen, and Composite-Unseen. $H$ is the original environment-step horizon; $S$ original successes; $N=50-S$ historical failures; $R$ strict rescues; NR strict non-rescues; $U$ technical unknowns; $D$ initial-state deviations. $M$ and $E$ are the matched-complete and verified-assistance counts defined above. For CloseFridge, no rescue case was scheduled; dashes distinguish absence of a cohort from an observed failure. In the final row, all planned historical failures are retained.
+\input{task_table}
+
+\clearpage
+\section{Task heterogeneity and timing summaries}
+\paragraph{Limits of task-difficulty summaries.}
+The task scatter in Fig.~\ref{s:fig:difficulty} includes every task with a defined corresponding denominator. Historical success over 50 episodes per task is a policy-specific proxy, not an externally measured intrinsic difficulty. Spearman associations between that proxy and $E/N$, $R/E$, and $R/N$ are 0.2290 (49 tasks), 0.1174 (48), and 0.0753 (49), respectively. Rank ties use average ranks. CloseFridge has no historical failures, and OpenStandMixerHead additionally has no eligible pair. These descriptive associations and overlapping difficult-task subsets neither identify a causal mechanism nor justify a monotonic difficulty claim. Historical scores and rescue fractions also share finite-sample cohort counts.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{figures/task_difficulty.pdf}
+\caption{\textbf{Every task with a defined denominator.} Each point is a task; identical coordinates overlap without jitter. Neither valid coverage nor recovery has a strong monotonic relation to the historical score. These are retrospective descriptive associations.}
+\label{s:fig:difficulty}
+\end{figure}
+
+\paragraph{Keep event counts and denominators visible.}
+Table~\ref{s:tab:timing} reports the same cumulative events under three explicit denominators. The primary eligible-cohort curve uses $E=869$, so the 813 eligible non-rescues remain present. The $R=56$ column describes only the distribution among observed rescues; it must not be read as a rescue probability. The $N=1004$ column retains every original failure, including unknown and deviating cases that cannot contribute a verified success event. All values are computed from the recorded terminal steps; no new horizon or intervention-time experiment is performed.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Remaining budget consumed & Events & Events/$E$ & Events/$R$ & Events/$N$\\
+\midrule
+25\% &11&1.27\%&19.64\%&1.10\%\\
+50\% &27&3.11\%&48.21\%&2.69\%\\
+75\% &41&4.72\%&73.21\%&4.08\%\\
+90\% &49&5.64\%&87.50\%&4.88\%\\
+100\% &56&6.44\%&100.00\%&5.58\%\\
+\bottomrule
+\end{tabular}
+\caption{Cumulative verified events and three different descriptive denominators.}
+\label{s:tab:timing}
+\end{table}
+
+\paragraph{Development identities and dependency.}
+These post hoc analyses retain the four disclosed development identities in the primary cohort, as do the original classifications. The leave-four-out yield is separately 55/1,000. Neither task scatter nor event timing creates a fresh test set. The 132 eligible invocation batches share context within each call, and each task shares an environment and policy; simple episode-independent sampling assumptions would miss both structures. Whole-task resampling and leave-one-batch-out deletion probe different sensitivities and are not combined into a synthetic confidence interval.
+
+\input{assistant_contract}

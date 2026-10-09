@@ -1,0 +1,61 @@
+{
+  "updated_at_utc": "2026-10-09T18:25:11.955337+00:00",
+  "title": "OriginX: Measuring One-Shot Recovery in a Frozen Robot Policy",
+  "revision": 2,
+  "pages": {
+    "main": 9,
+    "main_content": 8,
+    "supplement": 8
+  },
+  "template_sha256": "2602473285d1a7df2a445ac89b76e1afa0acab78e056f0369d19770245190153",
+  "template": "Unmodified current CVPR2026 author kit, provisional for2027",
+  "compiler": "Tectonic0.17.0",
+  "successful_compilation": true,
+  "overfull_boxes": false,
+  "undefined_references": false,
+  "font_substitution_warnings": false,
+  "pdf_author_metadata_empty": true,
+  "personal_identifying_pdf_strings_absent": true,
+  "visual_review": "All17pages rendered at1600px; complete contact sheets inspected. Main5/8 and supplement6 plus executed-contract pages inspected at full size. No clipping or overlap observed.",
+  "future_directions_in_main": true,
+  "complete_executed_prompt_and_schema_in_supplement": true,
+  "analysis_evidence_sha256": "a14201596d4baa31a606bdf1b24b2e710e9f7af1792f948308b9dd302aafff28",
+  "new_analyses": {
+    "eligible_trigger_output_differences": 869,
+    "eligible_denominator": 869,
+    "rescued": 56,
+    "success_conditioned_median_posttrigger_steps": 361,
+    "success_conditioned_median_remaining_budget_fraction": 0.5167342342342343,
+    "batch_deletion_sensitivity": [
+      0.06155632984901278,
+      0.06504065040650407
+    ]
+  },
+  "no_new_training_or_rollouts_or_experimental_assistant_calls": true,
+  "historical_evidence_unchanged": {
+    "outputs\\OriginX_Astra救援复测结果.json": "7c82a8f993ae83ae809d49c195312766b1f356379843aac3e5b9ac4b7bf370ea",
+    "outputs\\OriginX_Astra救援CLI用量最终.json": "a95b394d712958e5abee05a96d8e61836cd1989acc9f803321bba559d5712e65",
+    "work\\astra_rescue_20261009\\failure_manifest.json": "fe3b4d29408ad476cdde3f83af18321cb294014eb26c9b716a21ddb51d7d222b"
+  },
+  "review": "Independent manuscript critique and numerical audit; contiguous-array assumption and causal overstatements corrected.",
+  "missing_evidence_for_stronger_claims": [
+    "Simple/sham language controls",
+    "Fresh full-cohort net benefit including regressions",
+    "Cross-policy/assistant/environment replication"
+  ],
+  "final_2027_submission_compliance_or_acceptance_claim": false,
+  "outputs": {
+    "OriginX_CVPR2027_revised_v2.pdf": {
+      "bytes": 314013,
+      "sha256": "26212165220f813c278a1148b7b962b47f3b65727e29c6883a846de3da3b5647"
+    },
+    "OriginX_CVPR2027_supplement_v2.pdf": {
+      "bytes": 123401,
+      "sha256": "dccb7e027d31d4efc45ab916055cfbcd16b334bec6ee4412f2933b235b5fd17c"
+    },
+    "OriginX_CVPR2027_source_v2.zip": {
+      "bytes": 1207373,
+      "sha256": "d700f59833c69737acaa0f8d5e499f13275532c887c65d509c204efbaf4dfd35"
+    }
+  }
+}
