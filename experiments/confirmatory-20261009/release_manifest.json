@@ -1,0 +1,20 @@
+{
+  "assignment_order.csv": "d6213a348c5e27d73510750a015ed009d9b16332f7f9613b1e5777397b81a282",
+  "broker.py": "706d85e48a2655e05cb857a2fbf98b1f8a9c1714e81a373a5e60b7eb1211cd99",
+  "design_review.md": "8c97e6e556c208d5ed2a996eefe594ac4f44efa425657808d2053edffa7a3548",
+  "EXPERIMENT.md": "75520055aad6eeae008035b52943b095ebc7bce5a649a0a02ad9535fc7d453e3",
+  "fresh_cases.csv": "52eff4bdd316b78cfff3ff46474ff2638021d56aa19f4ea936ce94fa67c81327",
+  "README.md": "004a988b902c015ab341523923c74d9dc2b7d5f29f4ed9619498de7facddca3c",
+  "runtime/__init__.py": "372c69303701459d3296ca381fa293a2bf8503bb01a31237dfbf95a4e577fcc3",
+  "runtime/aggregate.py": "8304b44220e9831d1de7c24f4d577848c99120e28b54e6b9e2a99220df5cb9fc",
+  "runtime/analysis.py": "406b8916ba0d8b69f250362fe5ce0f8a73bb3c463f5f7a168c2c946a277c4009",
+  "runtime/assistance.py": "8b47b99ae5930f5104e8d1a17b85c4c37cfc3660cea6c05fb067b1813de9a06f",
+  "runtime/campaign.py": "7790d0eddd01d743c7d93e5fb2ac31db0df753dca51af9fca9cba402055b606a",
+  "runtime/lease.py": "04bb2dd08fe9b5acbfebf9632d0b21a740e987ea7dc101bfa6c33dead735ffa5",
+  "runtime/probe.py": "b1db00fde2e0644895d96bd7e1059961a6e24e3f51d8de2864b92d2b4933f8d6",
+  "runtime/protocol.py": "f0a4189cc53c6594637f456b4fd5730b3e75fb71965fe860e24a1419cd7b5a1c",
+  "runtime/runner.py": "ddff4598157cf6f3b64ec945e6e1b9a0243a59055e8676a0adaf68137131ea58",
+  "runtime/services.py": "db3d4ab562d609a6c6884c5ddd4cf6aab035ea05fd6f7be27100ce04e5a6c867",
+  "source-freeze.ready.json": "a0c3535d696dd559264ea1bc28fc0389918b9b12478819f8602bd410a508747b",
+  "task_roster.json": "fb3e869354f3a5647be04b35c1015f69c43a8cdcc0d0f01ca061464b4095bb05"
+}

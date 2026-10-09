@@ -1,0 +1,19 @@
+{
+  "schema": "originx_confirmatory_source_freeze_v1",
+  "created_at": "2026-10-09T18:57:49.192005+00:00",
+  "source_sha256": {
+    "__init__.py": "372c69303701459d3296ca381fa293a2bf8503bb01a31237dfbf95a4e577fcc3",
+    "aggregate.py": "8304b44220e9831d1de7c24f4d577848c99120e28b54e6b9e2a99220df5cb9fc",
+    "analysis.py": "406b8916ba0d8b69f250362fe5ce0f8a73bb3c463f5f7a168c2c946a277c4009",
+    "assistance.py": "8b47b99ae5930f5104e8d1a17b85c4c37cfc3660cea6c05fb067b1813de9a06f",
+    "campaign.py": "7790d0eddd01d743c7d93e5fb2ac31db0df753dca51af9fca9cba402055b606a",
+    "lease.py": "04bb2dd08fe9b5acbfebf9632d0b21a740e987ea7dc101bfa6c33dead735ffa5",
+    "probe.py": "b1db00fde2e0644895d96bd7e1059961a6e24e3f51d8de2864b92d2b4933f8d6",
+    "protocol.py": "f0a4189cc53c6594637f456b4fd5730b3e75fb71965fe860e24a1419cd7b5a1c",
+    "runner.py": "ddff4598157cf6f3b64ec945e6e1b9a0243a59055e8676a0adaf68137131ea58",
+    "services.py": "db3d4ab562d609a6c6884c5ddd4cf6aab035ea05fd6f7be27100ce04e5a6c867"
+  },
+  "broker_source_sha256": "706d85e48a2655e05cb857a2fbf98b1f8a9c1714e81a373a5e60b7eb1211cd99",
+  "tests": "pytest work/confirmatory_20261009/tests -q",
+  "confirmed_outcomes_seen": false
+}

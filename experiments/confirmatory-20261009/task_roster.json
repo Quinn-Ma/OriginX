@@ -1,0 +1,252 @@
+[
+  {
+    "task": "CloseBlenderLid",
+    "stratum": "atomic_seen",
+    "horizon": 900
+  },
+  {
+    "task": "CloseFridge",
+    "stratum": "atomic_seen",
+    "horizon": 900
+  },
+  {
+    "task": "CloseToasterOvenDoor",
+    "stratum": "atomic_seen",
+    "horizon": 450
+  },
+  {
+    "task": "CoffeeSetupMug",
+    "stratum": "atomic_seen",
+    "horizon": 600
+  },
+  {
+    "task": "NavigateKitchen",
+    "stratum": "atomic_seen",
+    "horizon": 450
+  },
+  {
+    "task": "OpenCabinet",
+    "stratum": "atomic_seen",
+    "horizon": 1050
+  },
+  {
+    "task": "OpenDrawer",
+    "stratum": "atomic_seen",
+    "horizon": 750
+  },
+  {
+    "task": "OpenStandMixerHead",
+    "stratum": "atomic_seen",
+    "horizon": 450
+  },
+  {
+    "task": "PickPlaceCounterToCabinet",
+    "stratum": "atomic_seen",
+    "horizon": 750
+  },
+  {
+    "task": "PickPlaceCounterToStove",
+    "stratum": "atomic_seen",
+    "horizon": 600
+  },
+  {
+    "task": "PickPlaceDrawerToCounter",
+    "stratum": "atomic_seen",
+    "horizon": 750
+  },
+  {
+    "task": "PickPlaceSinkToCounter",
+    "stratum": "atomic_seen",
+    "horizon": 900
+  },
+  {
+    "task": "PickPlaceToasterToCounter",
+    "stratum": "atomic_seen",
+    "horizon": 600
+  },
+  {
+    "task": "SlideDishwasherRack",
+    "stratum": "atomic_seen",
+    "horizon": 450
+  },
+  {
+    "task": "TurnOffStove",
+    "stratum": "atomic_seen",
+    "horizon": 750
+  },
+  {
+    "task": "TurnOnElectricKettle",
+    "stratum": "atomic_seen",
+    "horizon": 450
+  },
+  {
+    "task": "TurnOnMicrowave",
+    "stratum": "atomic_seen",
+    "horizon": 450
+  },
+  {
+    "task": "TurnOnSinkFaucet",
+    "stratum": "atomic_seen",
+    "horizon": 600
+  },
+  {
+    "task": "DeliverStraw",
+    "stratum": "composite_seen",
+    "horizon": 2550
+  },
+  {
+    "task": "GetToastedBread",
+    "stratum": "composite_seen",
+    "horizon": 3000
+  },
+  {
+    "task": "KettleBoiling",
+    "stratum": "composite_seen",
+    "horizon": 1500
+  },
+  {
+    "task": "LoadDishwasher",
+    "stratum": "composite_seen",
+    "horizon": 1800
+  },
+  {
+    "task": "PackIdenticalLunches",
+    "stratum": "composite_seen",
+    "horizon": 3900
+  },
+  {
+    "task": "PreSoakPan",
+    "stratum": "composite_seen",
+    "horizon": 2400
+  },
+  {
+    "task": "PrepareCoffee",
+    "stratum": "composite_seen",
+    "horizon": 1800
+  },
+  {
+    "task": "RinseSinkBasin",
+    "stratum": "composite_seen",
+    "horizon": 1350
+  },
+  {
+    "task": "ScrubCuttingBoard",
+    "stratum": "composite_seen",
+    "horizon": 1200
+  },
+  {
+    "task": "SearingMeat",
+    "stratum": "composite_seen",
+    "horizon": 4350
+  },
+  {
+    "task": "SetUpCuttingStation",
+    "stratum": "composite_seen",
+    "horizon": 2400
+  },
+  {
+    "task": "StackBowlsCabinet",
+    "stratum": "composite_seen",
+    "horizon": 2100
+  },
+  {
+    "task": "SteamInMicrowave",
+    "stratum": "composite_seen",
+    "horizon": 2100
+  },
+  {
+    "task": "StirVegetables",
+    "stratum": "composite_seen",
+    "horizon": 2400
+  },
+  {
+    "task": "StoreLeftoversInBowl",
+    "stratum": "composite_seen",
+    "horizon": 2550
+  },
+  {
+    "task": "WashLettuce",
+    "stratum": "composite_seen",
+    "horizon": 1650
+  },
+  {
+    "task": "ArrangeBreadBasket",
+    "stratum": "composite_unseen",
+    "horizon": 4350
+  },
+  {
+    "task": "ArrangeTea",
+    "stratum": "composite_unseen",
+    "horizon": 2250
+  },
+  {
+    "task": "BreadSelection",
+    "stratum": "composite_unseen",
+    "horizon": 1950
+  },
+  {
+    "task": "CategorizeCondiments",
+    "stratum": "composite_unseen",
+    "horizon": 1650
+  },
+  {
+    "task": "CuttingToolSelection",
+    "stratum": "composite_unseen",
+    "horizon": 1200
+  },
+  {
+    "task": "GarnishPancake",
+    "stratum": "composite_unseen",
+    "horizon": 2700
+  },
+  {
+    "task": "GatherTableware",
+    "stratum": "composite_unseen",
+    "horizon": 2250
+  },
+  {
+    "task": "HeatKebabSandwich",
+    "stratum": "composite_unseen",
+    "horizon": 2700
+  },
+  {
+    "task": "MakeIceLemonade",
+    "stratum": "composite_unseen",
+    "horizon": 3000
+  },
+  {
+    "task": "PanTransfer",
+    "stratum": "composite_unseen",
+    "horizon": 1800
+  },
+  {
+    "task": "PortionHotDogs",
+    "stratum": "composite_unseen",
+    "horizon": 2250
+  },
+  {
+    "task": "RecycleBottlesByType",
+    "stratum": "composite_unseen",
+    "horizon": 2850
+  },
+  {
+    "task": "SeparateFreezerRack",
+    "stratum": "composite_unseen",
+    "horizon": 2400
+  },
+  {
+    "task": "WaffleReheat",
+    "stratum": "composite_unseen",
+    "horizon": 4050
+  },
+  {
+    "task": "WashFruitColander",
+    "stratum": "composite_unseen",
+    "horizon": 3150
+  },
+  {
+    "task": "WeighIngredients",
+    "stratum": "composite_unseen",
+    "horizon": 3000
+  }
+]
