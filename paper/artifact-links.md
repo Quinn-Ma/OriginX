@@ -6,7 +6,7 @@ Author: Qinzhen Ma. Updated October 9, 2026.
 - Public repository: https://github.com/Quinn-Ma/OriginX
 - Original benchmark release: https://github.com/Quinn-Ma/OriginX/releases/tag/v1.0.0
 - Astra rescue evidence release: https://github.com/Quinn-Ma/OriginX/releases/tag/v1.1.0-astra-rescue
-- Published project website: https://originx.thumbnodirosving.chatgpt.site
+- Published project website: https://robocasa.originxairobotics.com
 - Official RoboCasa365 submission pull request: https://github.com/robocasa-benchmark/leaderboard/pull/26 — submitted and pending review; not accepted.
 - Audited source release commit: `e04001d5a6ccb7836bdd8b18be8c11ac28d5aee7`
 
