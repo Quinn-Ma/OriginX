@@ -1,0 +1,29 @@
+{
+  "kind": "final1613_dev150_decision_v1",
+  "frozen_before_new_outcomes": true,
+  "endpoint_samples": 80000,
+  "endpoint_step": 1613,
+  "manifest_sha256": "8643051dab874f68ca8763242265ad3016788c4da62af3f57060004fe5144fe1",
+  "arms": [
+    "base",
+    "L",
+    "A"
+  ],
+  "primary_candidate": "A",
+  "L_role": "LoRA without teacher; diagnostic ablation, cannot substitute for A based on these results",
+  "primary_dev_gate": {
+    "net_success_gain_over_base_at_least": 8,
+    "composite_success_count_difference_at_least": 0,
+    "all_450_completed": true,
+    "infrastructure_unknowns": 0
+  },
+  "next_if_pass": "freeze A and compare with contemporaneous base on independent confirm600/arm; original +5pp and lower95%CI>0 gate before formal2500",
+  "next_if_not_pass": "report no promotion; no checkpoint/role switch or extra episodes added after viewing results",
+  "renderer": "CPU private OSMesa llvmpipe LP4 with frozen observation schedule/guard/context fixes",
+  "comparison": "independent resets per arm, same fixed30 tasks and five episodes each; not scene paired",
+  "failures": "infrastructure issues remain unknown; preserve all claims/results; no retry until success",
+  "no_claims": [
+    "no leaderboard score from development",
+    "no reuse of historical57.92 as contemporary control"
+  ]
+}

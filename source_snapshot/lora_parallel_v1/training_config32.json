@@ -1,0 +1,19 @@
+{
+  "kind": "lora_retention_batch32_training_only_v1",
+  "global_batch": 32,
+  "target_samples": 80000,
+  "gpu_replicas_per_arm": 2,
+  "microbatch_selected_by_actual_capacity": [
+    4,
+    8,
+    16
+  ],
+  "learning_rate": 0.0001,
+  "learning_rate_change_from_parent": false,
+  "optimizer_and_moments": "continue original AdamW; no reset",
+  "candidate_endpoint": "exactly80000 consumed fixed training windows; no development or rollout evaluation in this phase",
+  "parent_prefix": "actual completed batch8 updates before common migration checkpoint",
+  "sampling_plan_sha256": "82cf5e8e0a2cc02c8c438a56ba28cb9cad13b0c70771354a1eedabe79af788b4",
+  "batch_change_reason": "user explicitly requested batch32 and fastest training completion; total sample budget is preserved, optimizer update count is reduced",
+  "valid_loss_weighting": "equal sample means for action and teacher retention; independent original slot noise/time"
+}

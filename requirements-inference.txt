@@ -1,0 +1,10 @@
+# Observed relevant packages in the original Python 3.12 inference environment.
+# Install the CUDA 12.8 PyTorch build separately before building FlashAttention.
+torch==2.8.0
+transformers==4.57.1
+flash-attn==2.8.3
+numpy==2.5.2
+Pillow==12.3.0
+einops==0.8.2
+safetensors==0.8.0
+huggingface-hub==0.36.2

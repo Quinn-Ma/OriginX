@@ -1,0 +1,31 @@
+{
+  "status": "FROZEN local v1;12 CPU tests pass; real GPU/TCP parity pending root execution",
+  "source_sha256": {
+    "__init__.py": "b1565e3350bf57af67af78216133d4f0858e5d6b677e79f5f7de50b1a658fc60",
+    "client.py": "9a9be5cf0a4f7418650080a837c64dda02778b0f8cb66f6dc2064ebddcb207c6",
+    "core.py": "36c66b29cb1a22e1c99af0718c519d42fd6b2b3b474ede29593d7865bfafea16",
+    "parity.py": "f40dee366aae59310da4dfebeefed655ac90a98ca7aab428066f87101c5fd8e6",
+    "server.py": "455f566e9cbe27081271db414fce8286e1771a3f27175fb0c461927d12aaf62d",
+    "test_client.py": "ef346a2ba1f26e04804e31264858c97dc296b09f4c1557e87e6909d111ca563e",
+    "test_core.py": "feebca892e8cd8d666f3760e79e7fe185fc96c79049ec3a88ee9681893df25bc"
+  },
+  "cpu_checks": [
+    "Two interleaved independent seeds match serial actions and all Python/NumPy/TorchCPU RNG hashes",
+    "Single worker, concurrent queued requests, poisoned-session isolation",
+    "Cache/position/num_steps/logits overrides rejected",
+    "Two wire clients via fragmented in-memory transport",
+    "Original fixture raw BF16 restoration and hash-corruption rejection"
+  ],
+  "local_tcp_limit": "This sandbox rejects socket creation with PermissionError; no localhost TCP or GPU job was run here",
+  "gpu_gate": "PYTHONPATH=\"$ROOT\" CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=3 \"$ROOT/envs/training/bin/python\" -u -m multiplex_inference.parity --xr1-repo \"$ROOT/code/Xiaomi-Robotics-1\" --model /ephemeral/qinzhen/ckpt/robocasa/Xiaomi-Robotics-1-RoboCasa365 --request-a \"$ROOT/results/dev/randomized-fixed12-vs16-v1/episodes/ScalePortioning-1000001/first_request.json\" --request-b \"$ROOT/results/dev/randomized-fixed12-vs16-v1/episodes/MicrowaveThawingFridge-1000001/first_request.json\" --minimum-free-gib 24 --report \"$ROOT/results/multiplex/parity-v1.json\"",
+  "gate_behavior": "One official model load; six exact serial reference forwards, then two real simultaneous sockets interleaved six forwards at different sequence lengths; compare all60 action dimensions and all four RNG families after every request; dynamically allocated temporary localhost port0 closes at end. No existing service connection.",
+  "persistent_server_after_gate_only": "PYTHONPATH=\"$ROOT\" CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=3 \"$ROOT/envs/training/bin/python\" -u -m multiplex_inference.server --xr1-repo \"$ROOT/code/Xiaomi-Robotics-1\" --model /ephemeral/qinzhen/ckpt/robocasa/Xiaomi-Robotics-1-RoboCasa365 --port NEW_UNUSED_PORT --max-clients 4",
+  "interface": "New robocasa-multiplex-rng-v1 protocol. hello shared_model=true, exclusive_connection=false, isolated_rng_stream=true, exact model asset/code/runtime config hashes and actual worker thread identity. Do not use or modify old OfficialEvalPolicy. Optional MultiplexEvalClient preserves official processor/crop/decode and accepts one initial episode seed only.",
+  "limits": [
+    "No throughput speedup claimed; full forwards remain serial",
+    "No logits optimization or KV continuation",
+    "Only trusted localhost pickle protocol, complete batch1/history4/chunk16 requests",
+    "Current gate checks two prompt lengths, not every possible input",
+    "No collection task started and no active server replaced"
+  ]
+}

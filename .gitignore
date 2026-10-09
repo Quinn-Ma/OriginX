@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+*.pt
+*.safetensors
+*.tar.gz
+*.zip
+weights/
+downloads/

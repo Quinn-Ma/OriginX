@@ -1,0 +1,53 @@
+{
+  "parent_checkpoint": "/ephemeral/qinzhen/robocasa-xr1-20261003/training/lora-retention-v1/A/checkpoint-00001000.pt",
+  "parent_checkpoint_sha256": "61572c1d79501fbd4dbf193f8ba01cf218bcdfd13348a8d943fe0950f535e0fe",
+  "restored_step": 1000,
+  "restored_samples": 8000,
+  "strict_old_identity_verified": true,
+  "execution": {
+    "kind": "two_replica_global64_v1",
+    "source_sha256": {
+      "lora_parallel64_v1/train.py": "9bd4ef08d4d42e76540c77d1e2c984d9f23e163a8d6958658b19804c3c3a3822",
+      "lora_parallel64_v1/replicas.py": "73d211e7cddbf154bbe50b6ddf4704f59730af3ede1840096f012e1712a59a4c",
+      "lora_parallel64_v1/batching.py": "b76855edbd2e8ce21940713cb242a9816d10f032d8623428c16995f1ef10bfc6",
+      "lora_parallel64_v1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lora_parallel64_v1/training_config64.json": "7404e2c8298aa4838028296c5d6c85331444392d053fe307d04e51290017995b",
+      "lora_parallel_v1/train.py": "e030d5149900bcfc92de522b6c9b5bd4ef5e8adff2ec66ac3d7f4fe4c0590442",
+      "lora_parallel_v1/provider.py": "31ce2dd03f0c985ab8e8f3f9eabac78a3a778c7892b2fcb1054782e111a3db74",
+      "lora_parallel_v1/batched_bridge.py": "d9a3938caa873b45ceed7504e78eeed50427c0fcffd381c2a0f9834bf552a4a1",
+      "lora_parallel_v1/__init__.py": "8c21b9dba86ad12ffa79a3bc1c701ccb15efad763de8e5b2046b4282a45e54db",
+      "cpu_prefetch_mechanical_v1/run.py": "c681c735a98432ec870f482162627616a171b50d29667919d3cd77ceefba3f98",
+      "cpu_prefetch_mechanical_v1/core.py": "d346a0a02d1b09eb10220ef903505404b6102c718f2dee14ddf61613a822fb3a",
+      "cpu_prefetch_mechanical_v1/external-pins.json": "389d1b0750462fc0b2d7c1fef514e987169413b4c3495a68cb1e10105def1367",
+      "cpu_prefetch_mechanical_v1/__init__.py": "bd3d02dcfe8ccec49340ad683c5834f30a9e3b1d36c4f13b9c32db9698b08f74"
+    },
+    "parent_checkpoint_sha256": "61572c1d79501fbd4dbf193f8ba01cf218bcdfd13348a8d943fe0950f535e0fe",
+    "parent_run_identity_sha256": "a3403c9158e9076a2fa690996b27a5b4b7958ab3c04e559c0072273be3843dcd",
+    "devices": [
+      {
+        "physical_gpu": 6,
+        "gpu_uuid": "GPU-35278907-aae0-4ccc-e0fc-c25cb3a8bd17"
+      },
+      {
+        "physical_gpu": 5,
+        "gpu_uuid": "GPU-0ce652dc-0300-56f2-cb52-12a207162770"
+      }
+    ],
+    "workers": 16,
+    "prefetch": 32,
+    "global_batch": 64,
+    "microbatch_per_device": 32,
+    "accumulation_calls_per_device": 1,
+    "checkpoint_accumulate": 64,
+    "checkpoint_accumulate_units": "global sample contribution count per optimizer update",
+    "target_samples": 80000,
+    "final_partial_batch": "none;1125 full64 updates from8000 through80000",
+    "per_sample_equal_weight": true,
+    "precision": "BF16 compute, FP32 LoRA/AdamW",
+    "optimizer_recipe_unchanged": true,
+    "sampling_unchanged": true,
+    "batch_kernel_rounding_may_differ": true,
+    "stop_after_updates": null
+  },
+  "time": 1791072802.0227523
+}

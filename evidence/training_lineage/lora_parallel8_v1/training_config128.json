@@ -1,0 +1,16 @@
+{
+  "kind": "four_replica_lora_retention_global128_training_only_v1",
+  "global_batch": 128,
+  "target_samples": 80000,
+  "gpu_replicas_per_arm": 4,
+  "microbatch_per_device": 32,
+  "learning_rate": 0.0001,
+  "optimizer_and_moments": "continue verified batch64 AdamW; no reset",
+  "sampling_plan_sha256": "82cf5e8e0a2cc02c8c438a56ba28cb9cad13b0c70771354a1eedabe79af788b4",
+  "batch_change_reason": "User explicitly authorized all8GPU and global128 per arm for shortest training time",
+  "candidate_endpoint": "exactly80000 fixed training windows, no evaluation",
+  "final_partial_batch": "if64 remain use2 active replicas micro32, no dropped samples",
+  "checkpoint_every_optimizer_updates": 50,
+  "default_cpu_workers": 32,
+  "default_prefetch": 128
+}

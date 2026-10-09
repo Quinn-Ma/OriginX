@@ -1,0 +1,7 @@
+{
+  "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/training/continuous-pilot-2000-v3/B/checkpoint-00002000.pt",
+  "sha256": "64716a009d9853ef7622f53b62a93860ed8ddd6e15bd16771dbd94b9b194c628",
+  "step": 2000,
+  "samples": 256000,
+  "roundtrip_exact": true
+}

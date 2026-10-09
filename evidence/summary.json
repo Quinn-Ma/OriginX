@@ -1,0 +1,443 @@
+{
+  "complete": true,
+  "smoke": false,
+  "episodes": 2500,
+  "successes": 1496,
+  "overall_task_mean": 0.5983999999999999,
+  "strata": {
+    "atomic_seen": {
+      "tasks": 18,
+      "success_rate": 0.8299999999999998
+    },
+    "composite_seen": {
+      "tasks": 16,
+      "success_rate": 0.5987500000000001
+    },
+    "composite_unseen": {
+      "tasks": 16,
+      "success_rate": 0.3375
+    }
+  },
+  "tasks": {
+    "CloseBlenderLid": {
+      "task": "CloseBlenderLid",
+      "stratum": "atomic_seen",
+      "horizon": 900,
+      "episodes": 50,
+      "successes": 18,
+      "success_rate": 0.36
+    },
+    "CloseFridge": {
+      "task": "CloseFridge",
+      "stratum": "atomic_seen",
+      "horizon": 900,
+      "episodes": 50,
+      "successes": 50,
+      "success_rate": 1.0
+    },
+    "CloseToasterOvenDoor": {
+      "task": "CloseToasterOvenDoor",
+      "stratum": "atomic_seen",
+      "horizon": 450,
+      "episodes": 50,
+      "successes": 44,
+      "success_rate": 0.88
+    },
+    "CoffeeSetupMug": {
+      "task": "CoffeeSetupMug",
+      "stratum": "atomic_seen",
+      "horizon": 600,
+      "episodes": 50,
+      "successes": 33,
+      "success_rate": 0.66
+    },
+    "NavigateKitchen": {
+      "task": "NavigateKitchen",
+      "stratum": "atomic_seen",
+      "horizon": 450,
+      "episodes": 50,
+      "successes": 41,
+      "success_rate": 0.82
+    },
+    "OpenCabinet": {
+      "task": "OpenCabinet",
+      "stratum": "atomic_seen",
+      "horizon": 1050,
+      "episodes": 50,
+      "successes": 47,
+      "success_rate": 0.94
+    },
+    "OpenDrawer": {
+      "task": "OpenDrawer",
+      "stratum": "atomic_seen",
+      "horizon": 750,
+      "episodes": 50,
+      "successes": 48,
+      "success_rate": 0.96
+    },
+    "OpenStandMixerHead": {
+      "task": "OpenStandMixerHead",
+      "stratum": "atomic_seen",
+      "horizon": 450,
+      "episodes": 50,
+      "successes": 48,
+      "success_rate": 0.96
+    },
+    "PickPlaceCounterToCabinet": {
+      "task": "PickPlaceCounterToCabinet",
+      "stratum": "atomic_seen",
+      "horizon": 750,
+      "episodes": 50,
+      "successes": 42,
+      "success_rate": 0.84
+    },
+    "PickPlaceCounterToStove": {
+      "task": "PickPlaceCounterToStove",
+      "stratum": "atomic_seen",
+      "horizon": 600,
+      "episodes": 50,
+      "successes": 42,
+      "success_rate": 0.84
+    },
+    "PickPlaceDrawerToCounter": {
+      "task": "PickPlaceDrawerToCounter",
+      "stratum": "atomic_seen",
+      "horizon": 750,
+      "episodes": 50,
+      "successes": 47,
+      "success_rate": 0.94
+    },
+    "PickPlaceSinkToCounter": {
+      "task": "PickPlaceSinkToCounter",
+      "stratum": "atomic_seen",
+      "horizon": 900,
+      "episodes": 50,
+      "successes": 47,
+      "success_rate": 0.94
+    },
+    "PickPlaceToasterToCounter": {
+      "task": "PickPlaceToasterToCounter",
+      "stratum": "atomic_seen",
+      "horizon": 600,
+      "episodes": 50,
+      "successes": 45,
+      "success_rate": 0.9
+    },
+    "SlideDishwasherRack": {
+      "task": "SlideDishwasherRack",
+      "stratum": "atomic_seen",
+      "horizon": 450,
+      "episodes": 50,
+      "successes": 39,
+      "success_rate": 0.78
+    },
+    "TurnOffStove": {
+      "task": "TurnOffStove",
+      "stratum": "atomic_seen",
+      "horizon": 750,
+      "episodes": 50,
+      "successes": 34,
+      "success_rate": 0.68
+    },
+    "TurnOnElectricKettle": {
+      "task": "TurnOnElectricKettle",
+      "stratum": "atomic_seen",
+      "horizon": 450,
+      "episodes": 50,
+      "successes": 48,
+      "success_rate": 0.96
+    },
+    "TurnOnMicrowave": {
+      "task": "TurnOnMicrowave",
+      "stratum": "atomic_seen",
+      "horizon": 450,
+      "episodes": 50,
+      "successes": 32,
+      "success_rate": 0.64
+    },
+    "TurnOnSinkFaucet": {
+      "task": "TurnOnSinkFaucet",
+      "stratum": "atomic_seen",
+      "horizon": 600,
+      "episodes": 50,
+      "successes": 42,
+      "success_rate": 0.84
+    },
+    "DeliverStraw": {
+      "task": "DeliverStraw",
+      "stratum": "composite_seen",
+      "horizon": 2550,
+      "episodes": 50,
+      "successes": 27,
+      "success_rate": 0.54
+    },
+    "GetToastedBread": {
+      "task": "GetToastedBread",
+      "stratum": "composite_seen",
+      "horizon": 3000,
+      "episodes": 50,
+      "successes": 18,
+      "success_rate": 0.36
+    },
+    "KettleBoiling": {
+      "task": "KettleBoiling",
+      "stratum": "composite_seen",
+      "horizon": 1500,
+      "episodes": 50,
+      "successes": 33,
+      "success_rate": 0.66
+    },
+    "LoadDishwasher": {
+      "task": "LoadDishwasher",
+      "stratum": "composite_seen",
+      "horizon": 1800,
+      "episodes": 50,
+      "successes": 37,
+      "success_rate": 0.74
+    },
+    "PackIdenticalLunches": {
+      "task": "PackIdenticalLunches",
+      "stratum": "composite_seen",
+      "horizon": 3900,
+      "episodes": 50,
+      "successes": 18,
+      "success_rate": 0.36
+    },
+    "PreSoakPan": {
+      "task": "PreSoakPan",
+      "stratum": "composite_seen",
+      "horizon": 2400,
+      "episodes": 50,
+      "successes": 38,
+      "success_rate": 0.76
+    },
+    "PrepareCoffee": {
+      "task": "PrepareCoffee",
+      "stratum": "composite_seen",
+      "horizon": 1800,
+      "episodes": 50,
+      "successes": 11,
+      "success_rate": 0.22
+    },
+    "RinseSinkBasin": {
+      "task": "RinseSinkBasin",
+      "stratum": "composite_seen",
+      "horizon": 1350,
+      "episodes": 50,
+      "successes": 32,
+      "success_rate": 0.64
+    },
+    "ScrubCuttingBoard": {
+      "task": "ScrubCuttingBoard",
+      "stratum": "composite_seen",
+      "horizon": 1200,
+      "episodes": 50,
+      "successes": 37,
+      "success_rate": 0.74
+    },
+    "SearingMeat": {
+      "task": "SearingMeat",
+      "stratum": "composite_seen",
+      "horizon": 4350,
+      "episodes": 50,
+      "successes": 14,
+      "success_rate": 0.28
+    },
+    "SetUpCuttingStation": {
+      "task": "SetUpCuttingStation",
+      "stratum": "composite_seen",
+      "horizon": 2400,
+      "episodes": 50,
+      "successes": 38,
+      "success_rate": 0.76
+    },
+    "StackBowlsCabinet": {
+      "task": "StackBowlsCabinet",
+      "stratum": "composite_seen",
+      "horizon": 2100,
+      "episodes": 50,
+      "successes": 43,
+      "success_rate": 0.86
+    },
+    "SteamInMicrowave": {
+      "task": "SteamInMicrowave",
+      "stratum": "composite_seen",
+      "horizon": 2100,
+      "episodes": 50,
+      "successes": 32,
+      "success_rate": 0.64
+    },
+    "StirVegetables": {
+      "task": "StirVegetables",
+      "stratum": "composite_seen",
+      "horizon": 2400,
+      "episodes": 50,
+      "successes": 27,
+      "success_rate": 0.54
+    },
+    "StoreLeftoversInBowl": {
+      "task": "StoreLeftoversInBowl",
+      "stratum": "composite_seen",
+      "horizon": 2550,
+      "episodes": 50,
+      "successes": 44,
+      "success_rate": 0.88
+    },
+    "WashLettuce": {
+      "task": "WashLettuce",
+      "stratum": "composite_seen",
+      "horizon": 1650,
+      "episodes": 50,
+      "successes": 30,
+      "success_rate": 0.6
+    },
+    "ArrangeBreadBasket": {
+      "task": "ArrangeBreadBasket",
+      "stratum": "composite_unseen",
+      "horizon": 4350,
+      "episodes": 50,
+      "successes": 35,
+      "success_rate": 0.7
+    },
+    "ArrangeTea": {
+      "task": "ArrangeTea",
+      "stratum": "composite_unseen",
+      "horizon": 2250,
+      "episodes": 50,
+      "successes": 23,
+      "success_rate": 0.46
+    },
+    "BreadSelection": {
+      "task": "BreadSelection",
+      "stratum": "composite_unseen",
+      "horizon": 1950,
+      "episodes": 50,
+      "successes": 20,
+      "success_rate": 0.4
+    },
+    "CategorizeCondiments": {
+      "task": "CategorizeCondiments",
+      "stratum": "composite_unseen",
+      "horizon": 1650,
+      "episodes": 50,
+      "successes": 5,
+      "success_rate": 0.1
+    },
+    "CuttingToolSelection": {
+      "task": "CuttingToolSelection",
+      "stratum": "composite_unseen",
+      "horizon": 1200,
+      "episodes": 50,
+      "successes": 24,
+      "success_rate": 0.48
+    },
+    "GarnishPancake": {
+      "task": "GarnishPancake",
+      "stratum": "composite_unseen",
+      "horizon": 2700,
+      "episodes": 50,
+      "successes": 38,
+      "success_rate": 0.76
+    },
+    "GatherTableware": {
+      "task": "GatherTableware",
+      "stratum": "composite_unseen",
+      "horizon": 2250,
+      "episodes": 50,
+      "successes": 0,
+      "success_rate": 0.0
+    },
+    "HeatKebabSandwich": {
+      "task": "HeatKebabSandwich",
+      "stratum": "composite_unseen",
+      "horizon": 2700,
+      "episodes": 50,
+      "successes": 0,
+      "success_rate": 0.0
+    },
+    "MakeIceLemonade": {
+      "task": "MakeIceLemonade",
+      "stratum": "composite_unseen",
+      "horizon": 3000,
+      "episodes": 50,
+      "successes": 26,
+      "success_rate": 0.52
+    },
+    "PanTransfer": {
+      "task": "PanTransfer",
+      "stratum": "composite_unseen",
+      "horizon": 1800,
+      "episodes": 50,
+      "successes": 0,
+      "success_rate": 0.0
+    },
+    "PortionHotDogs": {
+      "task": "PortionHotDogs",
+      "stratum": "composite_unseen",
+      "horizon": 2250,
+      "episodes": 50,
+      "successes": 15,
+      "success_rate": 0.3
+    },
+    "RecycleBottlesByType": {
+      "task": "RecycleBottlesByType",
+      "stratum": "composite_unseen",
+      "horizon": 2850,
+      "episodes": 50,
+      "successes": 12,
+      "success_rate": 0.24
+    },
+    "SeparateFreezerRack": {
+      "task": "SeparateFreezerRack",
+      "stratum": "composite_unseen",
+      "horizon": 2400,
+      "episodes": 50,
+      "successes": 8,
+      "success_rate": 0.16
+    },
+    "WaffleReheat": {
+      "task": "WaffleReheat",
+      "stratum": "composite_unseen",
+      "horizon": 4050,
+      "episodes": 50,
+      "successes": 18,
+      "success_rate": 0.36
+    },
+    "WashFruitColander": {
+      "task": "WashFruitColander",
+      "stratum": "composite_unseen",
+      "horizon": 3150,
+      "episodes": 50,
+      "successes": 32,
+      "success_rate": 0.64
+    },
+    "WeighIngredients": {
+      "task": "WeighIngredients",
+      "stratum": "composite_unseen",
+      "horizon": 3000,
+      "episodes": 50,
+      "successes": 14,
+      "success_rate": 0.28
+    }
+  },
+  "native_reset": true,
+  "protocol": {
+    "reset": "unmodified Counter.get_reset_regions",
+    "pythonhashseed": 0,
+    "split": "pretrain",
+    "replan": 16,
+    "history": 4,
+    "interval": 2,
+    "crop": 0.95,
+    "Euler": 5,
+    "horizon": "official 1.0.1 get_task_horizon",
+    "render": "CPU OSMesa, query-pixel-preserving decimation",
+    "organizer_verified": false,
+    "automatic_submission": false
+  },
+  "limits": [
+    "Local execution of the official task/split/horizon protocol; organizer acceptance and leaderboard submission have not occurred.",
+    "Frozen B2000 weights include prior adapters; no claim of training exclusively on the official baseline dataset.",
+    "CPU OSMesa and previously validated query-pixel-preserving rendering optimization are disclosed."
+  ]
+}

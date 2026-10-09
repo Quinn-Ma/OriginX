@@ -1,0 +1,74 @@
+{
+  "completed": true,
+  "arm": "B",
+  "updates": 2000,
+  "samples": 256000,
+  "global_batch": 128,
+  "branch_file_sha256": "41988b92391953687b39a0bc5a35bce962fbfcd08fbf6e550108430850d9944f",
+  "branch": {
+    "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/training/continuous-pilot-2000-v3/B/branch-00002000.pt",
+    "sha256": "41988b92391953687b39a0bc5a35bce962fbfcd08fbf6e550108430850d9944f"
+  },
+  "branch_identity": {
+    "kind": "continuous_branch_sidecar_v3",
+    "anchor": {
+      "kind": "continuous_frozen_A_anchor_v3",
+      "binding_sha256": "fb47bbc98c4671f9afbed6d91eae0c3947badecf574070b5848df7686695d890",
+      "adapter_file_sha256": "5892389863751f2245f83a6d3b96bf5725a052aa5b023230b093d8d8ece70ac4",
+      "base_identity": "ccaa65176cf4294b7c0c618e1cc3be7b65617359630c35d3a18dd75c406fc184",
+      "base_tensor_sha256": "76ed019984ec84fbef0a350b7b00d976c51f4cecfe4b78922bdd040c03c57b60",
+      "wire_anchor": {
+        "arm": "A",
+        "binding_sha256": "fb47bbc98c4671f9afbed6d91eae0c3947badecf574070b5848df7686695d890",
+        "adapter_file_sha256": "5892389863751f2245f83a6d3b96bf5725a052aa5b023230b093d8d8ece70ac4",
+        "adapter_payload_sha256": "b4702ddf5cff398c3f7fdf5660c955064c94b5876b643f9b4302e0f33301295d",
+        "base_identity": "ccaa65176cf4294b7c0c618e1cc3be7b65617359630c35d3a18dd75c406fc184",
+        "base_tensor_sha256": "76ed019984ec84fbef0a350b7b00d976c51f4cecfe4b78922bdd040c03c57b60",
+        "endpoint_updates": 1613,
+        "endpoint_samples": 80000,
+        "global_batch": 128,
+        "completion_audit_sha256": "58addb0dca22f647394e6de1fdf89b18845bccf75c2eb939f1bdd1c86e144138",
+        "lora_B_nonzero_tensors": 72,
+        "lora_B_tensor_count": 72,
+        "lora": {
+          "rank": 16,
+          "alpha": 16,
+          "seed": 20261004
+        },
+        "inference_arithmetic": "full_forward_cuda_bfloat16_autocast_fp32_adapter_master",
+        "source_sha256": {
+          "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/loader.py": "f32f87c77a6a71c6770be77ff0db12df51f6f0b1009dc41847c9a41094673ae1",
+          "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/bind_endpoint.py": "c23ad8c1056beaff8e9b3fd4b46e57bcf6f09f2243bc4c5e23976817ea8bd58b",
+          "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/server.py": "ea760b9e8141db785d1e03d314ab0b7afe9bd6c8cdbe9f1d4169d1a28a7ef651",
+          "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/client.py": "b57ccd28e24fa2168ab2871fc784e6e25aaba0296ac9af994d4b9e4a8b41fd30",
+          "/ephemeral/qinzhen/robocasa-xr1-20261003/route_reassessment_20261004/action_lora/action_lora.py": "d6148c1cf3a2ff56d1377944cf0d8d1dc954b6f6376ebad063d0ff21edb8d41f",
+          "/ephemeral/qinzhen/robocasa-xr1-20261003/multiplex_inference/core.py": "36c66b29cb1a22e1c99af0718c519d42fd6b2b3b474ede29593d7865bfafea16",
+          "/ephemeral/qinzhen/robocasa-xr1-20261003/multiplex_inference/server.py": "455f566e9cbe27081271db414fce8286e1771a3f27175fb0c461927d12aaf62d",
+          "/ephemeral/qinzhen/robocasa-xr1-20261003/multiplex_inference/client.py": "9a9be5cf0a4f7418650080a837c64dda02778b0f8cb66f6dc2064ebddcb207c6",
+          "/ephemeral/qinzhen/robocasa-xr1-20261003/multiplex_inference/parity.py": "f40dee366aae59310da4dfebeefed655ac90a98ca7aab428066f87101c5fd8e6",
+          "/ephemeral/qinzhen/robocasa-xr1-20261003/training_bridge/train_single.py": "64839d90fb27ce4a2e72166df0073732ba151cdc02b09922235682f8d93b8c75"
+        }
+      }
+    },
+    "settings": {
+      "hidden_dim": 2560,
+      "dit_dim": 1024,
+      "stage_count": 7,
+      "hidden_mlp_dim": 256,
+      "init_seed": 2126104002
+    },
+    "supervised": true,
+    "retention_coefficient": 1.0,
+    "auxiliary_coefficient": 0.05,
+    "confidence_threshold": 1.0,
+    "auxiliary_normalization": "sum_admitted_CE_divided_by_all_windows",
+    "teacher": "completed_frozen_A_with_LoRA_enabled",
+    "vocabulary_sha256": "e3b7cbef486268961c5e660e0d50a7397d5c3d3ad9caf2e8b41663cd15fa52b0",
+    "training_data_sha256": "877816d5fc48fff5565b159f0d4617370286653d533adc5a836ee20d0d8436aa"
+  },
+  "identity_sha256": "269b63f1c6c1cc532908fbf5e1f318cb17be80a6b1ec8318ef76354ff888a1eb",
+  "teacher": "frozen_completed_A",
+  "old_A_unchanged": true,
+  "completed_unix": 1791352733.0716877,
+  "elapsed_seconds": 8453.975952518998
+}

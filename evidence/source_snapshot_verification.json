@@ -1,0 +1,191 @@
+{
+  "files": [
+    {
+      "file": "source\\continuous_eval2000_v3\\__init__.py",
+      "expected": "1e74b6a0bf5ecf9c89197bc5eb8ab6035b2aae429b83b04260b42be3d35e4bc8",
+      "actual": "1e74b6a0bf5ecf9c89197bc5eb8ab6035b2aae429b83b04260b42be3d35e4bc8",
+      "passed": true
+    },
+    {
+      "file": "source\\continuous_eval2000_v3\\bind_endpoint.py",
+      "expected": "0b496da09a6a693ec978bb57cabe55005747e72575c19f57bd4da57087fdd7c3",
+      "actual": "0b496da09a6a693ec978bb57cabe55005747e72575c19f57bd4da57087fdd7c3",
+      "passed": true
+    },
+    {
+      "file": "source\\continuous_eval2000_v3\\client.py",
+      "expected": "8b460e541cbc9a1f74bc5d35ad01d9cdfe6be3ed0f3a7983953d5599c5c2e00a",
+      "actual": "8b460e541cbc9a1f74bc5d35ad01d9cdfe6be3ed0f3a7983953d5599c5c2e00a",
+      "passed": true
+    },
+    {
+      "file": "source\\continuous_eval2000_v3\\loader.py",
+      "expected": "a16e0bb2628eafce690c326680d6da37ac385dc95e5476325bcce5f41ad52aef",
+      "actual": "a16e0bb2628eafce690c326680d6da37ac385dc95e5476325bcce5f41ad52aef",
+      "passed": true
+    },
+    {
+      "file": "source\\continuous_eval2000_v3\\parity.py",
+      "expected": "1aa31442491f8b3a8e9149b48f918a6a136373b3d8bda6f238abcc26b9566064",
+      "actual": "1aa31442491f8b3a8e9149b48f918a6a136373b3d8bda6f238abcc26b9566064",
+      "passed": true
+    },
+    {
+      "file": "source\\continuous_eval2000_v3\\server.py",
+      "expected": "911860b8ae7c7cf02f7a65472032c935a40d8ab37e484e7d69ec96dc13ff4102",
+      "actual": "911860b8ae7c7cf02f7a65472032c935a40d8ab37e484e7d69ec96dc13ff4102",
+      "passed": true
+    },
+    {
+      "file": "source\\continuous_eval2000_v3\\telemetry.py",
+      "expected": "1675188966da8851dbff196b6fd21444a6d02d0c912491ef222c534108b25975",
+      "actual": "1675188966da8851dbff196b6fd21444a6d02d0c912491ef222c534108b25975",
+      "passed": true
+    },
+    {
+      "file": "source\\continuous_model_v3\\__init__.py",
+      "expected": "ec88b25266bf65839abb110c15f919a427310294f7652f57148d2e6e767bcf06",
+      "actual": "ec88b25266bf65839abb110c15f919a427310294f7652f57148d2e6e767bcf06",
+      "passed": true
+    },
+    {
+      "file": "source\\continuous_model_v3\\branch.py",
+      "expected": "b0afff4d2c3419fbf0761d3b0df7766d276455d3894a2d87224023fdcba25781",
+      "actual": "b0afff4d2c3419fbf0761d3b0df7766d276455d3894a2d87224023fdcba25781",
+      "passed": true
+    },
+    {
+      "file": "source\\continuous_model_v3\\bridge.py",
+      "expected": "21e7f06739b9193364dcee0bf0b5778f0d72c710ec5c3c38697b24f2ab368718",
+      "actual": "21e7f06739b9193364dcee0bf0b5778f0d72c710ec5c3c38697b24f2ab368718",
+      "passed": true
+    },
+    {
+      "file": "source\\continuous_model_v3\\loader.py",
+      "expected": "7b2c5c17aad4dc9084bf04383eaf92aba07b35afb1263a552241b734207a4f3f",
+      "actual": "7b2c5c17aad4dc9084bf04383eaf92aba07b35afb1263a552241b734207a4f3f",
+      "passed": true
+    },
+    {
+      "file": "source\\continuous_model_v3\\observed.py",
+      "expected": "9952ec742801cce7c07ef6fa7a22a99f61c639c5c196760dfce8abbf6e150a91",
+      "actual": "9952ec742801cce7c07ef6fa7a22a99f61c639c5c196760dfce8abbf6e150a91",
+      "passed": true
+    },
+    {
+      "file": "source\\lora_dev150_final_v1\\bind_endpoint.py",
+      "expected": "c23ad8c1056beaff8e9b3fd4b46e57bcf6f09f2243bc4c5e23976817ea8bd58b",
+      "actual": "c23ad8c1056beaff8e9b3fd4b46e57bcf6f09f2243bc4c5e23976817ea8bd58b",
+      "passed": true
+    },
+    {
+      "file": "source\\lora_dev150_final_v1\\client.py",
+      "expected": "b57ccd28e24fa2168ab2871fc784e6e25aaba0296ac9af994d4b9e4a8b41fd30",
+      "actual": "b57ccd28e24fa2168ab2871fc784e6e25aaba0296ac9af994d4b9e4a8b41fd30",
+      "passed": true
+    },
+    {
+      "file": "source\\lora_dev150_final_v1\\loader.py",
+      "expected": "f32f87c77a6a71c6770be77ff0db12df51f6f0b1009dc41847c9a41094673ae1",
+      "actual": "f32f87c77a6a71c6770be77ff0db12df51f6f0b1009dc41847c9a41094673ae1",
+      "passed": true
+    },
+    {
+      "file": "source\\lora_dev150_final_v1\\server.py",
+      "expected": "ea760b9e8141db785d1e03d314ab0b7afe9bd6c8cdbe9f1d4169d1a28a7ef651",
+      "actual": "ea760b9e8141db785d1e03d314ab0b7afe9bd6c8cdbe9f1d4169d1a28a7ef651",
+      "passed": true
+    },
+    {
+      "file": "source\\lora_parallel_v1\\__init__.py",
+      "expected": "8c21b9dba86ad12ffa79a3bc1c701ccb15efad763de8e5b2046b4282a45e54db",
+      "actual": "8c21b9dba86ad12ffa79a3bc1c701ccb15efad763de8e5b2046b4282a45e54db",
+      "passed": true
+    },
+    {
+      "file": "source\\lora_parallel_v1\\batched_bridge.py",
+      "expected": "d9a3938caa873b45ceed7504e78eeed50427c0fcffd381c2a0f9834bf552a4a1",
+      "actual": "d9a3938caa873b45ceed7504e78eeed50427c0fcffd381c2a0f9834bf552a4a1",
+      "passed": true
+    },
+    {
+      "file": "source\\multiplex_inference\\client.py",
+      "expected": "9a9be5cf0a4f7418650080a837c64dda02778b0f8cb66f6dc2064ebddcb207c6",
+      "actual": "9a9be5cf0a4f7418650080a837c64dda02778b0f8cb66f6dc2064ebddcb207c6",
+      "passed": true
+    },
+    {
+      "file": "source\\multiplex_inference\\core.py",
+      "expected": "36c66b29cb1a22e1c99af0718c519d42fd6b2b3b474ede29593d7865bfafea16",
+      "actual": "36c66b29cb1a22e1c99af0718c519d42fd6b2b3b474ede29593d7865bfafea16",
+      "passed": true
+    },
+    {
+      "file": "source\\multiplex_inference\\parity.py",
+      "expected": "f40dee366aae59310da4dfebeefed655ac90a98ca7aab428066f87101c5fd8e6",
+      "actual": "f40dee366aae59310da4dfebeefed655ac90a98ca7aab428066f87101c5fd8e6",
+      "passed": true
+    },
+    {
+      "file": "source\\multiplex_inference\\server.py",
+      "expected": "455f566e9cbe27081271db414fce8286e1771a3f27175fb0c461927d12aaf62d",
+      "actual": "455f566e9cbe27081271db414fce8286e1771a3f27175fb0c461927d12aaf62d",
+      "passed": true
+    },
+    {
+      "file": "source\\route_reassessment_20261004\\action_lora\\action_lora.py",
+      "expected": "d6148c1cf3a2ff56d1377944cf0d8d1dc954b6f6376ebad063d0ff21edb8d41f",
+      "actual": "d6148c1cf3a2ff56d1377944cf0d8d1dc954b6f6376ebad063d0ff21edb8d41f",
+      "passed": true
+    },
+    {
+      "file": "source\\route_reassessment_20261004\\action_lora\\lora_flow_bridge.py",
+      "expected": "ebfc0d2a7c3ca2f09b01e191487cc9fc1f0bccb6b638c9a30af735bc16ab6163",
+      "actual": "ebfc0d2a7c3ca2f09b01e191487cc9fc1f0bccb6b638c9a30af735bc16ab6163",
+      "passed": true
+    },
+    {
+      "file": "source\\teacher_anchor_pilot_v1\\__init__.py",
+      "expected": "d4b8b435afcfc1b774b67a4d790fc0c9b11e1f3285767387f850e99918b03b43",
+      "actual": "d4b8b435afcfc1b774b67a4d790fc0c9b11e1f3285767387f850e99918b03b43",
+      "passed": true
+    },
+    {
+      "file": "source\\teacher_anchor_pilot_v1\\bridge.py",
+      "expected": "94273e31e4cff1540360dbae8f9d6c9254f6967b6b022712b503514d41b4013c",
+      "actual": "94273e31e4cff1540360dbae8f9d6c9254f6967b6b022712b503514d41b4013c",
+      "passed": true
+    },
+    {
+      "file": "source\\training_bridge\\__init__.py",
+      "expected": "8e6f5e5e19fe21cf544987fc80af310f6d77b2594e5aa0d1063c4eb298cf85b2",
+      "actual": "8e6f5e5e19fe21cf544987fc80af310f6d77b2594e5aa0d1063c4eb298cf85b2",
+      "passed": true
+    },
+    {
+      "file": "source\\training_bridge\\bridge.py",
+      "expected": "743722bd86284e68095b1523d550675adc6efc39bd3de710f18fe85c67234266",
+      "actual": "743722bd86284e68095b1523d550675adc6efc39bd3de710f18fe85c67234266",
+      "passed": true
+    },
+    {
+      "file": "source\\training_bridge\\layout.py",
+      "expected": "ae7e8f3404bdeee213ca3947d36381146aae0fef4c1dfcc23b278aa109363f1a",
+      "actual": "ae7e8f3404bdeee213ca3947d36381146aae0fef4c1dfcc23b278aa109363f1a",
+      "passed": true
+    },
+    {
+      "file": "source\\training_bridge\\train_core.py",
+      "expected": "df5d6dd0b721aca57b1319dd2a840359be39787655f3bc33e4e332837c6251bd",
+      "actual": "df5d6dd0b721aca57b1319dd2a840359be39787655f3bc33e4e332837c6251bd",
+      "passed": true
+    },
+    {
+      "file": "source\\training_bridge\\train_single.py",
+      "expected": "64839d90fb27ce4a2e72166df0073732ba151cdc02b09922235682f8d93b8c75",
+      "actual": "64839d90fb27ce4a2e72166df0073732ba151cdc02b09922235682f8d93b8c75",
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

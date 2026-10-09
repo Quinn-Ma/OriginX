@@ -1,0 +1,41 @@
+{
+  "schema": "lora_dev150_final_engineering_gate_v1",
+  "task": "OpenOven",
+  "horizon": 300,
+  "scope": "Infrastructure only; independent engineering seeds; no dev450 assignment consumed",
+  "success_is_gate": false,
+  "max_episodes": 3,
+  "max_control_steps": 900,
+  "jobs": [
+    {
+      "id": "engineering-OpenOven-base-2040200900",
+      "assignment_index": 0,
+      "arm": "base",
+      "task": "OpenOven",
+      "env_seed": 2040200900,
+      "policy_seed": 2040200900,
+      "split": "pretrain",
+      "horizon": 300
+    },
+    {
+      "id": "engineering-OpenOven-L-2040200901",
+      "assignment_index": 0,
+      "arm": "L",
+      "task": "OpenOven",
+      "env_seed": 2040200901,
+      "policy_seed": 2040200901,
+      "split": "pretrain",
+      "horizon": 300
+    },
+    {
+      "id": "engineering-OpenOven-A-2040200902",
+      "assignment_index": 0,
+      "arm": "A",
+      "task": "OpenOven",
+      "env_seed": 2040200902,
+      "policy_seed": 2040200902,
+      "split": "pretrain",
+      "horizon": 300
+    }
+  ]
+}

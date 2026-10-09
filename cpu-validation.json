@@ -1,0 +1,27 @@
+{
+  "cpu_structural_validation_passed": true,
+  "adapter_sha256": "5892389863751f2245f83a6d3b96bf5725a052aa5b023230b093d8d8ece70ac4",
+  "branch_sha256": "41988b92391953687b39a0bc5a35bce962fbfcd08fbf6e550108430850d9944f",
+  "adapter_tensor_count": 144,
+  "adapter_parameters": 3538944,
+  "branch_tensor_count": 6,
+  "branch_parameters": 4216839,
+  "stage_settings": {
+    "hidden_dim": 2560,
+    "dit_dim": 1024,
+    "stage_count": 7,
+    "hidden_mlp_dim": 256,
+    "init_seed": 2126104002
+  },
+  "synthetic_action_shape": [
+    1,
+    16,
+    60
+  ],
+  "original_core_classes": true,
+  "one_vlm_five_euler_hook_contract": true,
+  "temporary_hooks_removed": true,
+  "oracle_inputs_rejected": true,
+  "gpu_action_parity_tested": false,
+  "full_model_rollout_tested": false
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "lora_retention_fixed10000_v1",
+  "model": "/ephemeral/qinzhen/ckpt/robocasa/Xiaomi-Robotics-1-RoboCasa365",
+  "updates": 10000,
+  "batch": 8,
+  "checkpoint_every": 250,
+  "max_grad_norm": 1.0,
+  "train_seed": 20261004,
+  "lora": {
+    "rank": 16,
+    "alpha": 16,
+    "seed": 20261004
+  },
+  "retention_coefficients": {
+    "L": 0.0,
+    "A": 1.0
+  },
+  "optimizer": {
+    "lr": 0.0001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0
+  },
+  "runtime_sources_sha256": "04a67f445f0c868cd63d320b3fc77e6551f2b7cfca074196a86fc9e481594564",
+  "mechanical_report": "results/engineering/lora-real5b-v1/report.json",
+  "mechanical_report_sha256": "bdb1f4a4387e61d1999acd8a8c427e73536c63ba4e65494e00a36237131ddb66",
+  "base_assets": "results/engineering/lora-real5b-v1/base_assets.json",
+  "data_binding": "human_mg_data_bridge_v1/data-binding.ready.json",
+  "data_binding_sha256": "001e5ddf6ff5465a1e358c1a6da04069dd5dc66f634d15235489b10632d21995",
+  "sampling_config_sha256": "de54a2dde22c02433815fd451a018f58452b38a448cc33e8cf0a456c4ac50b7f",
+  "candidate_selection": "step10000 only; intermediate checkpoints are recovery, not selection",
+  "evaluation": "prospective dev150 per model then independent confirmation; no success claim from training loss"
+}

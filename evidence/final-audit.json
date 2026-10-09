@@ -1,0 +1,61 @@
+{
+  "audit": {
+    "schema": "robocasa_final_independent_audit_v1",
+    "passed": true,
+    "episodes": 2500,
+    "tasks": 50,
+    "episodes_per_task": 50,
+    "successes": 1496,
+    "failures": 1004,
+    "infrastructure_unknown": 0,
+    "not_attempted": 0,
+    "success_rate": 0.5984,
+    "strata": {
+      "composite_unseen": {
+        "episodes": 800,
+        "successes": 270,
+        "success_rate": 0.3375
+      },
+      "composite_seen": {
+        "episodes": 800,
+        "successes": 479,
+        "success_rate": 0.59875
+      },
+      "atomic_seen": {
+        "episodes": 900,
+        "successes": 747,
+        "success_rate": 0.83
+      }
+    },
+    "verified_result_hashes": 2500,
+    "verified_guard_hashes": 2500,
+    "native_reset_proofs": 2500,
+    "all_failed_episodes_reached_frozen_horizon": true,
+    "original_seeds_preserved": true,
+    "active_episode_processes": 0,
+    "active_model_processes": 0,
+    "driver_active": false,
+    "owned_model_processes_checked": 18,
+    "allowed_gpu_ids": [
+      3,
+      6,
+      7
+    ],
+    "foreign_processes_modified_by_audit": false,
+    "config_sha256": "a3b0dbed4fb26ddcc472645fb9cc13008694293c23c49c325cc7524b4a93cd04",
+    "manifest_sha256": "cecee25e5750605c2c83643bca0fed55c8c4bfcb46d672a934f0c2d29e760257",
+    "remote_report_file_sha256": "a9c6c6efc54c16d1cafb9039cc7418e8ffb1f69085627c5cfbbc8cc9b5eb303d",
+    "submitted_to_leaderboard": false,
+    "accepted_by_organizer": false
+  },
+  "archive_path": "/ephemeral/qinzhen/robocasa-xr1-20261003/native_campaign_20261009_v1/final-evaluation-evidence.tar.gz",
+  "archive_sha256": "4455049b4eae28214430b702ff20c9f47783dbe5c6966bff1ebe46c7e689ab18",
+  "archive_bytes": 15056790,
+  "archive_members": 10048,
+  "local_archive_verified": true,
+  "local_archive_result_hashes_verified": 2500,
+  "local_report_matches_archived_remote_report": true,
+  "completion_observed_client_utc": "2026-10-09T05:28:39.125000+00:00",
+  "deadline_utc": "2026-10-09T06:33:54+00:00",
+  "completed_before_deadline": true
+}

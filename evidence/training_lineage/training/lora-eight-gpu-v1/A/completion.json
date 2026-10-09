@@ -1,0 +1,20 @@
+{
+  "completed": true,
+  "arm": "A",
+  "updates": 1613,
+  "samples": 80000,
+  "global_batch": 128,
+  "target_samples": 80000,
+  "adapter": {
+    "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/training/lora-eight-gpu-v1/A/adapter-step-00001613.pt",
+    "adapter_parameters": 3538944,
+    "payload_sha256": "b4702ddf5cff398c3f7fdf5660c955064c94b5876b643f9b4302e0f33301295d",
+    "base_state_sha256": "76ed019984ec84fbef0a350b7b00d976c51f4cecfe4b78922bdd040c03c57b60"
+  },
+  "adapter_file_sha256": "5892389863751f2245f83a6d3b96bf5725a052aa5b023230b093d8d8ece70ac4",
+  "identity_sha256": "8efac6df8ae468ba739144e723c2a61256d2d8b65563920be2d51b878daab6d6",
+  "parent_checkpoint_sha256": "d83fd05e227fb25fa622ebae52037e8bee122c9aa06bb4df24c87628ecb3cf0e",
+  "migration_sha256": "07b6e5b5427f83a57edf52335642261e344f70129cb9e1277d7a0f1e9afb7c3a",
+  "elapsed_seconds": 2772.51456752,
+  "completed_unix": 1791076240.8811252
+}

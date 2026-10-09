@@ -1,0 +1,16 @@
+{
+  "root": "/ephemeral/qinzhen/robocasa-xr1-20261003",
+  "arm": "A",
+  "physical_gpu": 1,
+  "gpu_uuid": "GPU-5e27e918-6d56-8a40-47c3-c7c3982e0e9e",
+  "config_sha256": "257154396c6d84b205c7bbf991f0ec0ce77a4322d53a07ad26823ad891750b26",
+  "output": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/engineering/lora-batch-A16-v1",
+  "execution_sources": "lora_parallel_v1/batch-check-sources.json",
+  "execution_sources_sha256": "6510d702e01cc39f4f522162a96c758eb3580fa6beb25ccb8d1328106476eaab",
+  "parent_checkpoint": "/ephemeral/qinzhen/robocasa-xr1-20261003/training/lora-retention-v1/A/checkpoint-00000500.pt",
+  "parent_checkpoint_sha256": "3a97cf7a5d8b247398a015ee1b49af021f76a7c12ef99c2eaef0173c63ce2ebd",
+  "parent_run_identity": "/ephemeral/qinzhen/robocasa-xr1-20261003/training/lora-retention-v1/A/run_identity.json",
+  "parent_run_identity_sha256": "a3403c9158e9076a2fa690996b27a5b4b7958ab3c04e559c0072273be3843dcd",
+  "workers": 8,
+  "prefetch": 16
+}

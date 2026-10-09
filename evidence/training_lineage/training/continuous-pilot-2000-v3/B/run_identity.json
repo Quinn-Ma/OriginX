@@ -1,0 +1,311 @@
+{
+  "experiment": {
+    "config_sha256": "cd30b447277b46653ae6688260d2c144ad9ba12e36e383b72706727900e97bb3",
+    "config": {
+      "schema": "continuous_training_v3",
+      "root": "/ephemeral/qinzhen/robocasa-xr1-20261003",
+      "output": "/ephemeral/qinzhen/robocasa-xr1-20261003/training/continuous-pilot-2000-v3",
+      "arms": [
+        "B"
+      ],
+      "devices": {
+        "B": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "updates": 2000,
+      "global_batch": 128,
+      "samples_per_arm": 256000,
+      "microbatch": 32,
+      "learning_rate": 0.0001,
+      "stage_count": 7,
+      "branch_seed": 2126104002,
+      "teacher_coefficient": 1.0,
+      "auxiliary_coefficient": 0.05,
+      "confidence_threshold": 1.0,
+      "gradient_clip": 1.0,
+      "cpu_workers": 16,
+      "prefetch": 256,
+      "pad_token_id": 151643,
+      "source_sha256": {
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/stage_conditioned_data_v2/__init__.py": "84f8eb8f5d68eb2fdb1d9388f5fa23dfd2e84fdd69a3e1f025821f11edac2afc",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/stage_conditioned_data_v2/core.py": "f19227eb31f7baf863ebaed3705b640dd81d773cb1bacb5f4d59cda38ca2dfb8",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/stage_conditioned_data_v2/labels.py": "ec1841d9757d9543232d4c56f94a11984d062fe20afb047d1a0404dc181bcf3e",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/human_mg_data_bridge_v1/__init__.py": "1efa72156aebabac9302d4019b98e499abc8d9364d367f1cea4c9e0423154991",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/human_mg_data_bridge_v1/bind.py": "ed641ae4dc3aaaac3dd53f6cd22741af5506c3d5f466fec497487b2587cade59",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/human_mg_data_bridge_v1/build.py": "aa184a9d0087a3b01ad54880ee910fb7f676cd9f1ae4b8c8dd3a9538e63b605b",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/human_mg_data_bridge_v1/check.py": "0c3a8e4e095fe9966bc482ca0309b932bfb6c5979b4936520c841a1bf148dd08",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/human_mg_data_bridge_v1/contract.py": "3adf48f3fa4e3fe18e2ad2be829ca14df85abeebf0a613c9b4dd5a891d22edb2",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/human_mg_data_bridge_v1/lerobot_reader.py": "220574fa68f7113207d28ed3907c66b11e5ac69f260cb2e38e10b7d128c72e09",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/human_mg_data_bridge_v1/provenance.py": "7ada974460e67a1e17c73bf94fc0e613c00fbcec24414e1694bcc5bc890c0be4",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/human_mg_data_bridge_v1/provider.py": "623c89b3a439f9c227138d108681998d7e5266aab5d05b740ab35fe053a4a40a",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/human_mg_data_bridge_v1/readers.py": "c1baee0227adc4e0d3f6e9e87f36ee9b444771e3db152eafe3070a6b7e900b99",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/human_mg_data_bridge_v1/test_cpu.py": "2da66d386317af53200301be8d9adff2a9280dd7a41d976792567295e9175672",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/human_mg_training_v1/bridge.py": "90b1f7a49bfcdbfcaf7d2284687ff39fcee0bcee61b083295d978b3fefa56201",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_retention_run_v1/__init__.py": "797b7bc4375c87a2fcca8cf2b6a6d42f11e52d50b629b1ac5f6bbd90f6049a71",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_retention_run_v1/plan.py": "5e7d5b8d5f57480b81acae4b2805a4aa50dbba564f3890ceb467183297dd3f32",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_retention_run_v1/provider.py": "de0e505302e00bf61dd4426c678405c98aa9092e767233a43bbf8dddf470b848",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_retention_run_v1/sample_plan.jsonl": "82cf5e8e0a2cc02c8c438a56ba28cb9cad13b0c70771354a1eedabe79af788b4",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_retention_run_v1/sampling_config.json": "de54a2dde22c02433815fd451a018f58452b38a448cc33e8cf0a456c4ac50b7f",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_retention_run_v1/smoke.py": "7b5675eba05a71eedf818117e9cc642ea29598a1f091c96b358285425d7c2968",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_retention_run_v1/train.py": "4d1c47a7c22a3a703301217265074c7c1ef0ecdb2690aeee06c64a2ddc48e5cd",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/online_flow_training_gate_v1/check.py": "0b6801ab06d93ddd910bda7fd2c5d0bc46c4f691feac46d80225c193c559e8e7",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/route_reassessment_20261004/action_lora/action_lora.py": "d6148c1cf3a2ff56d1377944cf0d8d1dc954b6f6376ebad063d0ff21edb8d41f",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/route_reassessment_20261004/action_lora/lora_flow_bridge.py": "ebfc0d2a7c3ca2f09b01e191487cc9fc1f0bccb6b638c9a30af735bc16ab6163",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/route_reassessment_20261004/action_lora/training_checkpoint.py": "c37cad7c5c045e065cb3bb49c1945de2b2a1b7a5549bac14f0ceafac477cbf8d",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/teacher_anchor_pilot_v1/bridge.py": "94273e31e4cff1540360dbae8f9d6c9254f6967b6b022712b503514d41b4013c",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/training_bridge/__init__.py": "8e6f5e5e19fe21cf544987fc80af310f6d77b2594e5aa0d1063c4eb298cf85b2",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/training_bridge/bridge.py": "743722bd86284e68095b1523d550675adc6efc39bd3de710f18fe85c67234266",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/training_bridge/build_manifest.py": "2b0206d495c4d7a099e3b798ba2f7287af3b6b2beccbe3ede5ea161982ef40ff",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/training_bridge/corrective_reader.py": "7d4949d6fd154ab197260320ff31694c9b70b33285553fd8fb93528342f8240d",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/training_bridge/inspect_data.py": "8d9f86076055b588d176f093b35cb08392a1e8ac91607bf0cc695d8218a33393",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/training_bridge/layout.py": "ae7e8f3404bdeee213ca3947d36381146aae0fef4c1dfcc23b278aa109363f1a",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/training_bridge/lerobot_reader.py": "ef55f6362b0ab6c590bdb16e84879e940c9091a2d2756073ee094e1d1af6ef86",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/training_bridge/mixed_manifest.py": "59c4175b446ab90951bcff724f530b42e2ecfb00098dea3ba448858c446fc7b3",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/training_bridge/mixture.py": "c7124370c069495b8635d6b822f5c794b4884294f6cf319b8bc113af28ae53f9",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/training_bridge/provenance.py": "0c467f409f622c8fac45a92e7b4f57e9aa30c2c7f27beb37e54349e85de23a4f",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/training_bridge/smoke_gpu.py": "6ac8918ac9b4455b9ff0f5f928fadf77051190424f31da932bb90c52e07d3c43",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/training_bridge/train_core.py": "df5d6dd0b721aca57b1319dd2a840359be39787655f3bc33e4e332837c6251bd",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/training_bridge/train_mixed.py": "779a46a7c747b3489d2e8cba97a81c82f5abb5db85cd365efed3c1f9009a543b",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/training_bridge/train_single.py": "64839d90fb27ce4a2e72166df0073732ba151cdc02b09922235682f8d93b8c75",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_parallel8_v1/__init__.py": "fc0188a7958c658bc0d6805e57293660b83656217483c538abadbf76e9722e06",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_parallel8_v1/provider.py": "b09d53509503023a50e8d716dbf7eb4fe331a6c75835080c1ee33c78e5d15869",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_parallel8_v1/test_replicas.py": "07692958f3292ed291c73b1597cccbe01cd5008fa0debe505121eb4465b4916a",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_parallel8_v1/replicas.py": "3cff46cb3d90bd3dbeea8aa1cf81b5a14e4717da6ef0d4fa85dad06df04ffd5b",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_parallel8_v1/batching.py": "b76855edbd2e8ce21940713cb242a9816d10f032d8623428c16995f1ef10bfc6",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_parallel8_v1/train.py": "4831a9e8a3973d7dc155578af32eb2b3be5f11916778b3856b3045c87ea6f510",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_parallel8_v1/test_prefetch_large.py": "1b46c0de3996ca0680a9c51f01c15ae1346bd929b5c35b44a0cbd96f5fcabec5",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/cpu_prefetch_mechanical_v1/core.py": "d346a0a02d1b09eb10220ef903505404b6102c718f2dee14ddf61613a822fb3a",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/cpu_prefetch_mechanical_v1/__init__.py": "bd3d02dcfe8ccec49340ad683c5834f30a9e3b1d36c4f13b9c32db9698b08f74",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/cpu_prefetch_mechanical_v1/test_cpu.py": "f1e6cd315674c044b13092b45e2df275615c4b85aeed2e03c962e1c11506e9ef",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/cpu_prefetch_mechanical_v1/run.py": "c681c735a98432ec870f482162627616a171b50d29667919d3cd77ceefba3f98",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/finalize_services.py": "6641df5bdac47563eda5c8f94747bfe9312230181dd4b43c1a91debe0e1efbe1",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/run_gated_evaluation.py": "b1f6824f1d2043e136be6bbb6877d06ca68872f436bbbe35485aa7a6d68df5dc",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/bind_endpoint.py": "c23ad8c1056beaff8e9b3fd4b46e57bcf6f09f2243bc4c5e23976817ea8bd58b",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/engineering_gate.py": "87923079b8e87f626a4efbede7eae356b0d847380396c31d0827131e1f2a881c",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/__init__.py": "1e74b6a0bf5ecf9c89197bc5eb8ab6035b2aae429b83b04260b42be3d35e4bc8",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/context_lifetime.py": "af1e27d4d22af3a6ec2314a82f0037278a7b74e8b7c05a9d8c375f152b7e80cd",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/dev_extend.py": "d1cbf546043be47e451a487690a650bf3b46d25c090f9b62f220912a83572795",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/audit_seed_metadata_v3.py": "4b3ac1cd3d09879000ef7f519abce932bfb4bfc324e550ee0baadc44b619a921",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/analyze_dev450.py": "8f67223f51702b25b76cc9325f918f2b59429a5361a0c716977d613572b1ec33",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/dev_randomized_broad_alpha.py": "00c56bddfb6b256c0e09de7c68cb99ee831eca5671c4fefd7c64c72088d833aa",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/audit_seed_metadata.py": "9356579dd28ca4a0ca9730f753499dadb0b474d25a4fc0c7e00efd7ac272a0c3",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/loader.py": "f32f87c77a6a71c6770be77ff0db12df51f6f0b1009dc41847c9a41094673ae1",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/dev_repeat_audit.py": "f35d79e8a3d193a332c1c33b1a8d56bb94b01c508c1f3fb52952e634faf23588",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/client.py": "b57ccd28e24fa2168ab2871fc784e6e25aaba0296ac9af994d4b9e4a8b41fd30",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/runner.py": "3a63c3264dc7833d40081c565eed5673917f4ecd2516fb1bf6902a8db85bceb0",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/readback_guard.py": "260430203d4fcb6c35b90da8a2e13c3ea968db6218aa004b89d602c89f71849d",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/candidate.py": "3b6989a44a7aa4945cdba5a8c298ca666fe8a1782e5eed29754c7cc6ade04c90",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/server.py": "ea760b9e8141db785d1e03d314ab0b7afe9bd6c8cdbe9f1d4169d1a28a7ef651",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/audit_engineering_seeds.py": "df941cf59d58d6b7d2adb1ab6b8e11f35b5cdf8954b468e45864732518b50c2d",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/dev_paired.py": "de47225b8fe5146d997d2f4936d87d89b7bffcc4316ed29c1839945a19759c29",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/launch_services.py": "2b62e84dd5ac7fae8b56ca6bf9dffef10619a630be24d3f4f6929ed9586ef6e0",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/teacher_anchor_pilot_v1/__init__.py": "d4b8b435afcfc1b774b67a4d790fc0c9b11e1f3285767387f850e99918b03b43",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/teacher_anchor_pilot_v1/contract.py": "e69172573075f540b7506f3d4da7dd2473819c73bb9b4c653ab22b1e60c736f5",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/teacher_anchor_pilot_v1/test_cpu.py": "3685930bc0d52a4c7bc1843de000d3b945ff7e5d51c1e96c2e9ba199ce4f9957",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/teacher_anchor_pilot_v1/train.py": "8a899b16d896c7718b50f3089a4c9ab48aacf26848c165ed4823cc14aba2121b",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_parallel_v1/__init__.py": "8c21b9dba86ad12ffa79a3bc1c701ccb15efad763de8e5b2046b4282a45e54db",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_parallel_v1/provider.py": "31ce2dd03f0c985ab8e8f3f9eabac78a3a778c7892b2fcb1054782e111a3db74",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_parallel_v1/batch_compare.py": "f9c4447f5ce16b80777a17823769d731a3aa721465ca75e37430f6a39670b4a2",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_parallel_v1/batched_bridge.py": "d9a3938caa873b45ceed7504e78eeed50427c0fcffd381c2a0f9834bf552a4a1",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_parallel_v1/replicas.py": "7eaab8bd4430ba625bebcff8a9a9d31279527ca30a6dedc34751d1db2e4e77db",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_parallel_v1/batching.py": "f5f6170a3f4a4027519ed0d2e7e69b8cfbaa4055421115589b835478cdf204d9",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_parallel_v1/train_dual.py": "acbc1541e553c5adcac45c0294dddaf9217439a6be77d9f9eae820ebce865060",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_parallel_v1/train.py": "e030d5149900bcfc92de522b6c9b5bd4ef5e8adff2ec66ac3d7f4fe4c0590442",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_parallel_v1/check_provider_actual16.py": "2cddd36ee7053785ca296cdbbf9489a4c9777b72c59c9173b5a82f8f109c3cd9",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_model_v3/bridge.py": "21e7f06739b9193364dcee0bf0b5778f0d72c710ec5c3c38697b24f2ab368718",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_model_v3/__init__.py": "ec88b25266bf65839abb110c15f919a427310294f7652f57148d2e6e767bcf06",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_model_v3/loader.py": "7b2c5c17aad4dc9084bf04383eaf92aba07b35afb1263a552241b734207a4f3f",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_model_v3/branch.py": "b0afff4d2c3419fbf0761d3b0df7766d276455d3894a2d87224023fdcba25781",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_model_v3/smoke.py": "5566f5d2194ccf1b731a7aca5baedeefea1a99f6900a57f61db461d8534a295e",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_model_v3/observed.py": "9952ec742801cce7c07ef6fa7a22a99f61c639c5c196760dfce8abbf6e150a91",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_train2000_v3/engine_three.py": "da97e665bcd33eb532db4111e1a369f43f2113089e551e95f3b94ee31bd9533c",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_train2000_v3/__init__.py": "0a04ea98a84d73421860cf8e7c287938754458974e16623d9e2bd0dde7212780",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_train2000_v3/data.py": "70620b70dfa87223b85c27a7b2c696e0f01225833a3d8c206a6c3e16400f1f36",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_train2000_v3/train_three.py": "1d2753981c28a623fb80d6df9b2b3e536b040db0884268072b4acfdd47dcd456",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_train2000_v3/holdout.py": "95987429bd3b8c33405ac9957cf404ada3baa549019e0f37e530b0572c774227",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_train2000_v3/build_plan.py": "08265f30b1a038a001a8fb01d97a9cbc7ab3e94386d3c1f13b0adcc4fe1207b7",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_train2000_v3/train_two_host.py": "7959004cf9276214af400517626e68a903610c94371b59643076e297bf0becca",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_train2000_v3/engine_two_host.py": "69e9f0c10b99085e53009e9d4e3c72ef15058656dc7e69f49d9a2190240cefd8",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_model_v3/clone_host.py": "5b27a1cbba2ec3358fb9827d71b6d2316c887128651dc8068ed69e2d7d32af2f",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_train2000_v3/train_four_host.py": "8f711f722f1bd7043cd9b2f54dc6d3298d896cde2a2bee3602b6d429a6c98a13",
+        "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_train2000_v3/engine_four_host.py": "0a87d2a277b0d32b0fa5daae47d4c45ecde7889a538db9e7abcd75ff3abf9439"
+      },
+      "plan": {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_train2000_v3/sample_plan.jsonl",
+        "sha256": "877816d5fc48fff5565b159f0d4617370286653d533adc5a836ee20d0d8436aa"
+      },
+      "stage_manifest": {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/stage_conditioned_data_v2/pilot200/manifest.json",
+        "sha256": "7b174f21348c148a4f94ab5240625b1d2e79a3375e940282b5a4edce72e7c6a2"
+      },
+      "vocabulary": {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/stage_conditioned_data_v2/pilot200/vocabulary.json",
+        "sha256": "e3b7cbef486268961c5e660e0d50a7397d5c3d3ad9caf2e8b41663cd15fa52b0"
+      },
+      "anchor_binding": {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/lora-dev150-final-v1/A-endpoint.json",
+        "sha256": "fb47bbc98c4671f9afbed6d91eae0c3947badecf574070b5848df7686695d890"
+      },
+      "model_engineering": {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/continuous-branch-v3/model-smoke/report.json",
+        "sha256": "abfb9f89c5e907d15d34cfcbd1d93ae717fe773a65c366c42e6aa2284258b2be"
+      },
+      "data_engineering": {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/continuous-2000-v3/data-engineering.json",
+        "sha256": "3f0a04eb5cc232a16afa0665037c226d95a10a952c296fc2a5f2aad56f86783b"
+      },
+      "holdout_schedule": {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/stage_pilot_train_v2/holdout128.jsonl",
+        "sha256": "53e71814da4ae0e06514875cf8fbaf5378c44b323c7fda99540a3b13b0b18e9b"
+      },
+      "action_keep_all": true,
+      "teacher": "completed_frozen_A",
+      "candidate_selection": "terminal100_only",
+      "control": "same architecture; semantic auxiliary objective disabled",
+      "evaluation": "dev150 per A/C/U only; no600/2500; no automaticMimicGen",
+      "gpu_uuids": [
+        "GPU-73013e8d-51d4-d965-4c70-85bb1f5f4738",
+        "GPU-5e27e918-6d56-8a40-47c3-c7c3982e0e9e",
+        "GPU-0961874e-ad47-c80d-c67a-52b4ef9fa094",
+        "GPU-d0f25b35-5423-72d4-9f45-047dfe7ed87c",
+        "GPU-7e31f11b-2e80-3b21-d419-2b6771107cd4",
+        "GPU-0ce652dc-0300-56f2-cb52-12a207162770",
+        "GPU-35278907-aae0-4ccc-e0fc-c25cb3a8bd17",
+        "GPU-8ce48487-779a-0907-7fdf-3be7a4094888"
+      ],
+      "checkpoint_retention": {
+        "versions_per_arm": 1,
+        "prune_only_after_both_new_checkpoints_verified": true,
+        "final_version": 100,
+        "terminal_training_checkpoint_and_inference_sidecar_are_same_version": true,
+        "frozen_A_reference_retained": true
+      },
+      "physical_devices": [
+        1,
+        4,
+        6,
+        7
+      ],
+      "admission_gates": {
+        "provenance.json": {
+          "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/continuous-branch-v3/provenance.json",
+          "sha256": "21b9d6623d56981fb1ec0535549cc495b558d28a59ca0a76b25b32c4f66de98d"
+        },
+        "reset-gate.json": {
+          "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/continuous-branch-v3/reset-gate.json",
+          "sha256": "a1cf88412e5d005fe98ad267b71d7c28ef3ce76e0e6c38bcfcddcd27562b789f"
+        },
+        "model-smoke/report.json": {
+          "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/continuous-branch-v3/model-smoke/report.json",
+          "sha256": "abfb9f89c5e907d15d34cfcbd1d93ae717fe773a65c366c42e6aa2284258b2be"
+        },
+        "data-engineering.json": {
+          "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/continuous-2000-v3/data-engineering.json",
+          "sha256": "3f0a04eb5cc232a16afa0665037c226d95a10a952c296fc2a5f2aad56f86783b"
+        }
+      },
+      "microbatch_schedule": "four microbatches of32, distributed[2,1,1], extra microbatch rotates each update; one optimizer update/global128",
+      "recovery_from": {
+        "original_config": {
+          "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_train_v3/training-config.json",
+          "sha256": "a03b8ff3547e75506144f5e2a4f0bee7ca77a6363342d8962a2d77462962d06b"
+        },
+        "startup_updates": 0,
+        "quarantined_gpu": 2,
+        "user_authorized_three_cards": true
+      },
+      "user_amendment": {
+        "previous_terminal": 200,
+        "new_terminal": 2000,
+        "three_physical_gpus": [
+          1,
+          4
+        ],
+        "total_samples": 256000,
+        "global_batch": 128,
+        "old_run_optimizer_steps": 0,
+        "selection": "only terminal2000; no early checkpoint evaluation",
+        "quarantined_gpus": [
+          2,
+          3
+        ],
+        "current_physical_gpus": [
+          1,
+          4,
+          6,
+          7
+        ]
+      },
+      "transport": "CPU-staged tensors; no direct peer copies",
+      "resume_from": {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/training/continuous-pilot-2000-v3.twohost-prefix/B/checkpoint-00000025.pt",
+        "sha256": "ecd905dc8e3bb1ebe5306aed548bda5d0b9ad947c733b7e829fea7bb2a95421d"
+      }
+    },
+    "initialized_unix": 1791344142.575929,
+    "candidate_selection": "Only update2000 / sample256000; intermediate saves are recovery evidence"
+  },
+  "arm": "B",
+  "branch_identity": {
+    "kind": "continuous_branch_sidecar_v3",
+    "anchor": {
+      "kind": "continuous_frozen_A_anchor_v3",
+      "binding_sha256": "fb47bbc98c4671f9afbed6d91eae0c3947badecf574070b5848df7686695d890",
+      "adapter_file_sha256": "5892389863751f2245f83a6d3b96bf5725a052aa5b023230b093d8d8ece70ac4",
+      "base_identity": "ccaa65176cf4294b7c0c618e1cc3be7b65617359630c35d3a18dd75c406fc184",
+      "base_tensor_sha256": "76ed019984ec84fbef0a350b7b00d976c51f4cecfe4b78922bdd040c03c57b60",
+      "wire_anchor": {
+        "arm": "A",
+        "binding_sha256": "fb47bbc98c4671f9afbed6d91eae0c3947badecf574070b5848df7686695d890",
+        "adapter_file_sha256": "5892389863751f2245f83a6d3b96bf5725a052aa5b023230b093d8d8ece70ac4",
+        "adapter_payload_sha256": "b4702ddf5cff398c3f7fdf5660c955064c94b5876b643f9b4302e0f33301295d",
+        "base_identity": "ccaa65176cf4294b7c0c618e1cc3be7b65617359630c35d3a18dd75c406fc184",
+        "base_tensor_sha256": "76ed019984ec84fbef0a350b7b00d976c51f4cecfe4b78922bdd040c03c57b60",
+        "endpoint_updates": 1613,
+        "endpoint_samples": 80000,
+        "global_batch": 128,
+        "completion_audit_sha256": "58addb0dca22f647394e6de1fdf89b18845bccf75c2eb939f1bdd1c86e144138",
+        "lora_B_nonzero_tensors": 72,
+        "lora_B_tensor_count": 72,
+        "lora": {
+          "rank": 16,
+          "alpha": 16,
+          "seed": 20261004
+        },
+        "inference_arithmetic": "full_forward_cuda_bfloat16_autocast_fp32_adapter_master",
+        "source_sha256": {
+          "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/loader.py": "f32f87c77a6a71c6770be77ff0db12df51f6f0b1009dc41847c9a41094673ae1",
+          "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/bind_endpoint.py": "c23ad8c1056beaff8e9b3fd4b46e57bcf6f09f2243bc4c5e23976817ea8bd58b",
+          "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/server.py": "ea760b9e8141db785d1e03d314ab0b7afe9bd6c8cdbe9f1d4169d1a28a7ef651",
+          "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/client.py": "b57ccd28e24fa2168ab2871fc784e6e25aaba0296ac9af994d4b9e4a8b41fd30",
+          "/ephemeral/qinzhen/robocasa-xr1-20261003/route_reassessment_20261004/action_lora/action_lora.py": "d6148c1cf3a2ff56d1377944cf0d8d1dc954b6f6376ebad063d0ff21edb8d41f",
+          "/ephemeral/qinzhen/robocasa-xr1-20261003/multiplex_inference/core.py": "36c66b29cb1a22e1c99af0718c519d42fd6b2b3b474ede29593d7865bfafea16",
+          "/ephemeral/qinzhen/robocasa-xr1-20261003/multiplex_inference/server.py": "455f566e9cbe27081271db414fce8286e1771a3f27175fb0c461927d12aaf62d",
+          "/ephemeral/qinzhen/robocasa-xr1-20261003/multiplex_inference/client.py": "9a9be5cf0a4f7418650080a837c64dda02778b0f8cb66f6dc2064ebddcb207c6",
+          "/ephemeral/qinzhen/robocasa-xr1-20261003/multiplex_inference/parity.py": "f40dee366aae59310da4dfebeefed655ac90a98ca7aab428066f87101c5fd8e6",
+          "/ephemeral/qinzhen/robocasa-xr1-20261003/training_bridge/train_single.py": "64839d90fb27ce4a2e72166df0073732ba151cdc02b09922235682f8d93b8c75"
+        }
+      }
+    },
+    "settings": {
+      "hidden_dim": 2560,
+      "dit_dim": 1024,
+      "stage_count": 7,
+      "hidden_mlp_dim": 256,
+      "init_seed": 2126104002
+    },
+    "supervised": true,
+    "retention_coefficient": 1.0,
+    "auxiliary_coefficient": 0.05,
+    "confidence_threshold": 1.0,
+    "auxiliary_normalization": "sum_admitted_CE_divided_by_all_windows",
+    "teacher": "completed_frozen_A_with_LoRA_enabled",
+    "vocabulary_sha256": "e3b7cbef486268961c5e660e0d50a7397d5c3d3ad9caf2e8b41663cd15fa52b0",
+    "training_data_sha256": "877816d5fc48fff5565b159f0d4617370286653d533adc5a836ee20d0d8436aa"
+  },
+  "trainable_parameters": 4216839
+}

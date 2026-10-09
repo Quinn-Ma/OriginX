@@ -1,0 +1,11 @@
+{
+  "repo_id": "XiaomiRobotics/Xiaomi-Robotics-1-RoboCasa365",
+  "revision": "3a6d0293bfa90759d34a7fc48c2c62413cd7bcf4",
+  "evidence": [
+    ".cache/huggingface/download/config.json.metadata",
+    ".cache/huggingface/download/model.safetensors.index.json.metadata"
+  ],
+  "upstream_code_repo": "https://github.com/XiaomiRobotics/Xiaomi-Robotics-1",
+  "upstream_code_commit": "0dd7aef8dc87296246aae812a1f59ccb708e5546",
+  "observed_license": "Apache-2.0"
+}

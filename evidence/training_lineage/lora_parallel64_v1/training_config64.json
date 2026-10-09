@@ -1,0 +1,18 @@
+{
+  "kind": "lora_retention_batch64_training_only_v1",
+  "global_batch": 64,
+  "target_samples": 80000,
+  "gpu_replicas_per_arm": 2,
+  "microbatch_selected_by_actual_capacity": [
+    32
+  ],
+  "learning_rate": 0.0001,
+  "learning_rate_change_from_parent": false,
+  "optimizer_and_moments": "continue original AdamW; no reset",
+  "candidate_endpoint": "exactly80000 fixed training windows;1125 new full64 updates from shared1000/8000 prefix; training only",
+  "parent_prefix": "actual original step1000 /8000 windows, both arms",
+  "sampling_plan_sha256": "82cf5e8e0a2cc02c8c438a56ba28cb9cad13b0c70771354a1eedabe79af788b4",
+  "batch_change_reason": "User explicitly changed effective global batch to64 for fastest training completion; preserve total80000 samples and original AdamW moments",
+  "valid_loss_weighting": "equal sample means for action and teacher retention; independent original slot noise/time",
+  "checkpoint_every_optimizer_updates": 50
+}

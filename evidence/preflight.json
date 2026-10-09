@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "native_reset": {
+    "native_reset": true,
+    "source_path": "/ephemeral/qinzhen/robocasa-xr1-20261003/code/robocasa/robocasa/models/fixtures/counter.py",
+    "source_sha256": "77f992d01aa1ae5f21ed7f170d0aab9c303c32148f4b427651c04912be8ce68a",
+    "method_source_sha256": "c87d0353b3605b40e85c061bec6c1311a63c761c59197b4409a02e7045539de2",
+    "method_code_filename": "/ephemeral/qinzhen/robocasa-xr1-20261003/code/robocasa/robocasa/models/fixtures/counter.py",
+    "pythonhashseed": "0",
+    "reset_patch_applied": false
+  },
+  "episodes": 2500,
+  "unix": 1791494116.8964436
+}

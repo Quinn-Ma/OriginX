@@ -1,0 +1,242 @@
+{
+  "source_config": "D:\\codex\\2026-10-08\\new-chat\\work\\robocasa365-model\\evidence\\config.json",
+  "files": [
+    {
+      "file": "remote_processor_candidate_v1/deps/local_eval/remote_client.py",
+      "bytes": 9277,
+      "expected_sha256": "d79e2a255c2c2399c6884ffba9732ac1a710a9254f780e8680a6e3a5b4334e67",
+      "actual_sha256": "d79e2a255c2c2399c6884ffba9732ac1a710a9254f780e8680a6e3a5b4334e67",
+      "passed": true
+    },
+    {
+      "file": "code/Xiaomi-Robotics-1/eval_robocasa365/entry.py",
+      "bytes": 17701,
+      "expected_sha256": "18d70fade4c990210dc5b9c34285c8030eac142d9c332066c73335e1c0aaa28e",
+      "actual_sha256": "18d70fade4c990210dc5b9c34285c8030eac142d9c332066c73335e1c0aaa28e",
+      "passed": true
+    },
+    {
+      "file": "code/Xiaomi-Robotics-1/eval_robocasa365/dynamic_eval.py",
+      "bytes": 11595,
+      "expected_sha256": "8a358d2e5b566152dbcf60f90ec1d1ab51a8ab080dcf0add03e519afd32cfbaf",
+      "actual_sha256": "8a358d2e5b566152dbcf60f90ec1d1ab51a8ab080dcf0add03e519afd32cfbaf",
+      "passed": true
+    },
+    {
+      "file": "code/robocasa/robocasa/utils/dataset_registry.py",
+      "bytes": 94640,
+      "expected_sha256": "23e8e31bb56bae80de86c34eafadfe32dd1e1eba6608376152ba9fdda5532a4b",
+      "actual_sha256": "23e8e31bb56bae80de86c34eafadfe32dd1e1eba6608376152ba9fdda5532a4b",
+      "passed": true
+    },
+    {
+      "file": "a_eval2000_v1/__init__.py",
+      "bytes": 0,
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "file": "a_eval2000_v1/loader.py",
+      "bytes": 2446,
+      "expected_sha256": "986ab0c50b84de6fcac2bed68fca4793d8d86877b2c25c3a93c115aae0537704",
+      "actual_sha256": "986ab0c50b84de6fcac2bed68fca4793d8d86877b2c25c3a93c115aae0537704",
+      "passed": true
+    },
+    {
+      "file": "a_eval2000_v1/client.py",
+      "bytes": 1557,
+      "expected_sha256": "b57ccd28e24fa2168ab2871fc784e6e25aaba0296ac9af994d4b9e4a8b41fd30",
+      "actual_sha256": "b57ccd28e24fa2168ab2871fc784e6e25aaba0296ac9af994d4b9e4a8b41fd30",
+      "passed": true
+    },
+    {
+      "file": "a_eval2000_v1/server.py",
+      "bytes": 6333,
+      "expected_sha256": "ea760b9e8141db785d1e03d314ab0b7afe9bd6c8cdbe9f1d4169d1a28a7ef651",
+      "actual_sha256": "ea760b9e8141db785d1e03d314ab0b7afe9bd6c8cdbe9f1d4169d1a28a7ef651",
+      "passed": true
+    },
+    {
+      "file": "a_eval2000_v1/bind.py",
+      "bytes": 1944,
+      "expected_sha256": "d182e1e01cc22f373cf37db1204ca3032e8e38ee3bd745304faef25eec3f4cb5",
+      "actual_sha256": "d182e1e01cc22f373cf37db1204ca3032e8e38ee3bd745304faef25eec3f4cb5",
+      "passed": true
+    },
+    {
+      "file": "continuous_branch_v3/reset_fix.py",
+      "bytes": 999,
+      "expected_sha256": "f117c4e50fd6116c761ce709b60fb2f69431203d27bf04426b78b7993458a5db",
+      "actual_sha256": "f117c4e50fd6116c761ce709b60fb2f69431203d27bf04426b78b7993458a5db",
+      "passed": true
+    },
+    {
+      "file": "continuous_branch_v3/scene_identity.py",
+      "bytes": 1142,
+      "expected_sha256": "9adfdc2e068f5c06a0fab2884ab4e838aee2e10332dd3c1d8b87d87b1cbcc3df",
+      "actual_sha256": "9adfdc2e068f5c06a0fab2884ab4e838aee2e10332dd3c1d8b87d87b1cbcc3df",
+      "passed": true
+    },
+    {
+      "file": "official_b2500_v1/dev_repeat_audit.py",
+      "bytes": 28648,
+      "expected_sha256": "f35d79e8a3d193a332c1c33b1a8d56bb94b01c508c1f3fb52952e634faf23588",
+      "actual_sha256": "f35d79e8a3d193a332c1c33b1a8d56bb94b01c508c1f3fb52952e634faf23588",
+      "passed": true
+    },
+    {
+      "file": "official_b2500_v1/__init__.py",
+      "bytes": 0,
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "file": "official_b2500_v1/dev_extend.py",
+      "bytes": 22410,
+      "expected_sha256": "d1cbf546043be47e451a487690a650bf3b46d25c090f9b62f220912a83572795",
+      "actual_sha256": "d1cbf546043be47e451a487690a650bf3b46d25c090f9b62f220912a83572795",
+      "passed": true
+    },
+    {
+      "file": "official_b2500_v1/candidate.py",
+      "bytes": 6609,
+      "expected_sha256": "3b6989a44a7aa4945cdba5a8c298ca666fe8a1782e5eed29754c7cc6ade04c90",
+      "actual_sha256": "3b6989a44a7aa4945cdba5a8c298ca666fe8a1782e5eed29754c7cc6ade04c90",
+      "passed": true
+    },
+    {
+      "file": "official_b2500_v1/start_once.py",
+      "bytes": 3441,
+      "expected_sha256": "fe5f6138c6bdb5151e9eab073e75849bc1b770892d43bbb95c957449b4d92c11",
+      "actual_sha256": "fe5f6138c6bdb5151e9eab073e75849bc1b770892d43bbb95c957449b4d92c11",
+      "passed": true
+    },
+    {
+      "file": "official_b2500_v1/cpu_probe.py",
+      "bytes": 2452,
+      "expected_sha256": "7a2c17717d51edd7c572fc96b01f1aa221ab656ee20470ba5aaf0002658185f7",
+      "actual_sha256": "7a2c17717d51edd7c572fc96b01f1aa221ab656ee20470ba5aaf0002658185f7",
+      "passed": true
+    },
+    {
+      "file": "official_b2500_v1/dev_randomized_broad_alpha.py",
+      "bytes": 33047,
+      "expected_sha256": "00c56bddfb6b256c0e09de7c68cb99ee831eca5671c4fefd7c64c72088d833aa",
+      "actual_sha256": "00c56bddfb6b256c0e09de7c68cb99ee831eca5671c4fefd7c64c72088d833aa",
+      "passed": true
+    },
+    {
+      "file": "official_b2500_v1/context_lifetime.py",
+      "bytes": 2463,
+      "expected_sha256": "af1e27d4d22af3a6ec2314a82f0037278a7b74e8b7c05a9d8c375f152b7e80cd",
+      "actual_sha256": "af1e27d4d22af3a6ec2314a82f0037278a7b74e8b7c05a9d8c375f152b7e80cd",
+      "passed": true
+    },
+    {
+      "file": "official_b2500_v1/layout.py",
+      "bytes": 697,
+      "expected_sha256": "9f654121c43525d58b2369ccefcc1134e1d44597303849cb6a4cc07a15455a24",
+      "actual_sha256": "9f654121c43525d58b2369ccefcc1134e1d44597303849cb6a4cc07a15455a24",
+      "passed": true
+    },
+    {
+      "file": "official_b2500_v1/dev_paired.py",
+      "bytes": 19381,
+      "expected_sha256": "de47225b8fe5146d997d2f4936d87d89b7bffcc4316ed29c1839945a19759c29",
+      "actual_sha256": "de47225b8fe5146d997d2f4936d87d89b7bffcc4316ed29c1839945a19759c29",
+      "passed": true
+    },
+    {
+      "file": "official_b2500_v1/audit_seeds.py",
+      "bytes": 7894,
+      "expected_sha256": "fae2a279ca4d1ccc8ee595fa9e91256c3163f1f922b66a00f01d9f783ba060e1",
+      "actual_sha256": "fae2a279ca4d1ccc8ee595fa9e91256c3163f1f922b66a00f01d9f783ba060e1",
+      "passed": true
+    },
+    {
+      "file": "official_b2500_v1/analyze.py",
+      "bytes": 7879,
+      "expected_sha256": "f72dd29d33a2c739fe32eac3166bb95b026a8f097961e9cd7d1bd821da3994b5",
+      "actual_sha256": "f72dd29d33a2c739fe32eac3166bb95b026a8f097961e9cd7d1bd821da3994b5",
+      "passed": true
+    },
+    {
+      "file": "official_b2500_v1/telemetry.py",
+      "bytes": 1770,
+      "expected_sha256": "1675188966da8851dbff196b6fd21444a6d02d0c912491ef222c534108b25975",
+      "actual_sha256": "1675188966da8851dbff196b6fd21444a6d02d0c912491ef222c534108b25975",
+      "passed": true
+    },
+    {
+      "file": "official_b2500_v1/runner.py",
+      "bytes": 33184,
+      "expected_sha256": "1d44288dd0d394e2c6cdb83f6330a34c787302cd8bb421288e2aa2540d17a443",
+      "actual_sha256": "1d44288dd0d394e2c6cdb83f6330a34c787302cd8bb421288e2aa2540d17a443",
+      "passed": true
+    },
+    {
+      "file": "official_b2500_v1/readback_guard.py",
+      "bytes": 12130,
+      "expected_sha256": "260430203d4fcb6c35b90da8a2e13c3ea968db6218aa004b89d602c89f71849d",
+      "actual_sha256": "260430203d4fcb6c35b90da8a2e13c3ea968db6218aa004b89d602c89f71849d",
+      "passed": true
+    },
+    {
+      "file": "official_b2500_v1/unseen_smoke.py",
+      "bytes": 7064,
+      "expected_sha256": "49add15a10d09257e1ce27acc473403b162a99bcef85c22b55a26411ef06f0f8",
+      "actual_sha256": "49add15a10d09257e1ce27acc473403b162a99bcef85c22b55a26411ef06f0f8",
+      "passed": true
+    },
+    {
+      "file": "official_b2500_v1/launch.py",
+      "bytes": 10738,
+      "expected_sha256": "ce8354d2e47eb616330e87295007a3a8129693528382a922bc86b0d1e4a6120f",
+      "actual_sha256": "ce8354d2e47eb616330e87295007a3a8129693528382a922bc86b0d1e4a6120f",
+      "passed": true
+    },
+    {
+      "file": "official_b2500_v1/runtime-dependencies.json",
+      "bytes": 285,
+      "expected_sha256": "434b394055253f190f2bdc2d6e4ad90b3291aca1e74e2b76d2c942ae5d8200a6",
+      "actual_sha256": "434b394055253f190f2bdc2d6e4ad90b3291aca1e74e2b76d2c942ae5d8200a6",
+      "passed": true
+    },
+    {
+      "file": "native_reset_b2500_v2/__init__.py",
+      "bytes": 59,
+      "expected_sha256": "fd6f8178294ce12b10dc985ea652bd3950f6fd3bab6297c99efa5cbff6315977",
+      "actual_sha256": "fd6f8178294ce12b10dc985ea652bd3950f6fd3bab6297c99efa5cbff6315977",
+      "passed": true
+    },
+    {
+      "file": "native_reset_b2500_v2/runner.py",
+      "bytes": 28748,
+      "expected_sha256": "a4b8d0f71da6b488f579be955eb54e022e2cf079bb34809d9b1f92ab418563ba",
+      "actual_sha256": "a4b8d0f71da6b488f579be955eb54e022e2cf079bb34809d9b1f92ab418563ba",
+      "passed": true
+    },
+    {
+      "file": "code/robocasa/robocasa/models/fixtures/counter.py",
+      "bytes": 34185,
+      "expected_sha256": "77f992d01aa1ae5f21ed7f170d0aab9c303c32148f4b427651c04912be8ce68a",
+      "actual_sha256": "77f992d01aa1ae5f21ed7f170d0aab9c303c32148f4b427651c04912be8ce68a",
+      "passed": true
+    },
+    {
+      "file": "results/continued-ab2000-v1/B-endpoint.json",
+      "bytes": 9609,
+      "expected_sha256": "c3138b49dcf51c0514f129073870701b5cd59cb88df384ac5a4b9ac24a77c601",
+      "actual_sha256": "c3138b49dcf51c0514f129073870701b5cd59cb88df384ac5a4b9ac24a77c601",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "external_system_dependencies_not_downloaded": {
+    "/ephemeral/qinzhen/robocasa-xr1-20261003/runtime/osmesa-private-v1/extracted/usr/lib/x86_64-linux-gnu/libOSMesa.so.8.0.0": "40e28f0f15c4cd13ad3c353509eb2fad79d8041528c59dc56d6e68fae8d1677a"
+  },
+  "legacy_reset_fix": "continuous_branch_v3/reset_fix.py is retained as historical audit input; native_reset_b2500_v2 does not execute its reset patch.",
+  "remote_modified": false
+}

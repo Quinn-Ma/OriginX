@@ -1,0 +1,29 @@
+{
+  "schema": "continuous_eval2000_v3_protocol",
+  "arms": [
+    "A",
+    "B"
+  ],
+  "episodes_per_arm": 150,
+  "net_success_screen": 8,
+  "significance_claim": false,
+  "paired_interval": "paired task-stratified percentile bootstrap 100000 draws; additional task-cluster sensitivity interval",
+  "paired_test": "exact McNemar two-sided, descriptive",
+  "initial_scene": "B must match all A initial fields before model connection or first action; any mismatch blocks cohort",
+  "reset_fix": "isolated stable encounter-order counter region deduplication; development-only change",
+  "policy": {
+    "replan": 16,
+    "history": 4,
+    "interval": 2,
+    "crop": 0.95,
+    "Euler": 5
+  },
+  "selection": "user amended terminal2000 only, no retries/resampling or interim outcomes",
+  "seed_range": [
+    2060700000,
+    2060700149
+  ],
+  "independence": "development screen, not confirm600; same task list as prior dev",
+  "semantic_supervision_claim": false,
+  "amendment": "200 -> 2000 updates; three GPUs1,3,4 with four accumulated micro32; global128 remains fixed; A jobs and execution protocol unchanged"
+}
