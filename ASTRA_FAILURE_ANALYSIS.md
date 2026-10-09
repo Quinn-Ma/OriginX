@@ -1,5 +1,7 @@
 # OriginX：Astra 离线失败案例分析
 
+> Historical offline analysis, preserved as written before the online study. The subsequent 1,004-case B2000 rescue study has now ended with 56 confirmed rescues, 813 not rescued, 28 unknown, and 107 initial-state deviations. See [ASTRA_RESCUE_REPORT.md](ASTRA_RESCUE_REPORT.md). Statements below about zero retests or unknown rescue counts refer only to this earlier analysis stage, not the current result.
+
 日期：2026-10-09。本次通过 **gpt-6-astra 分析子代理**完成离线分析。实际用法是通过 PowerShell、Python 标准库和 `rg` 离线读取现有 JSON、评测证据归档和文章记录，整理失败证据并提出可反证的恢复假设。没有启动 GPU、训练、补跑 rollout、联网检索或控制机器人，也没有在分析脚本中额外调用推理 API。
 
 **完成的是三个失败案例的证据整理和复测方案，不是三个案例的救回。** 已搜索的证据中没有找到 Astra 干预后成功的真实记录；Astra 救回数未知，本次复测次数为 0，已确认的救回记录为 0。原结果仍为 1,496/2,500（59.84%），本分析不产生新的 benchmark 成功。

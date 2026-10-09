@@ -1,0 +1,5 @@
+classification,cases,fixed_denominator,study
+rescued,56,1004,conditional_original_failure_rescue
+not_rescued,813,1004,conditional_original_failure_rescue
+unknown,28,1004,conditional_original_failure_rescue
+initial_state_deviation,107,1004,conditional_original_failure_rescue

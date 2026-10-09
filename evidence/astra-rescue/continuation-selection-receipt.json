@@ -1,0 +1,33 @@
+{
+  "schema": "astra_continuation_selection_verification_v1",
+  "passed": true,
+  "created_utc": "2026-10-09T10:07:29.922131+00:00",
+  "selection_path": "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\continuation_selection.json",
+  "selection_sha256": "ed1a56c174fc25013c31bba08fa43fa9e18341e9d5e5ec2f1c43d4444dc38ee2",
+  "failure_manifest_sha256": "fe3b4d29408ad476cdde3f83af18321cb294014eb26c9b716a21ddb51d7d222b",
+  "v1_config_sha256": "cda706cfda40c8f73dfd66cc2533a41fbe219ae9149505c02c8f57664893d0aa",
+  "v1_manifest_sha256": "e665b315169c787f3f8f2365e4e8510e3e51d333a442a3e8f2afc8a6c129fe8e",
+  "v1_claims_index_canonical_sha256": "3bcc8f15d6fe67ec256d5eb8c0e23d6260bc528d5d6392dfec1a009dc0482873",
+  "fixed_cases": 1004,
+  "v1_cases": 36,
+  "v1_claimed_episodes": 72,
+  "single_arm_claim_cases": 0,
+  "continuation_cases": 968,
+  "continuation_episodes": 1936,
+  "unique_partition_verified": true,
+  "v1_cases_by_stratum": {
+    "atomic_seen": 3,
+    "composite_seen": 12,
+    "composite_unseen": 21
+  },
+  "continuation_cases_by_stratum": {
+    "atomic_seen": 150,
+    "composite_seen": 309,
+    "composite_unseen": 509
+  },
+  "pilot_ids_excluded_from_primary": false,
+  "remote_writes": 0,
+  "jobs_started": 0,
+  "selection_uses_outcomes": false,
+  "local_frozen_manifest_unchanged": true
+}

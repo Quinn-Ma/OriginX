@@ -15,6 +15,8 @@ A continuous conditioning branch on top of an Action LoRA adaptation of [Xiaomi-
 | Composite-Unseen | 270 / 800 | 33.75% |
 | Overall | 1,496 / 2,500 | 59.84% |
 
+**Astra rescue study completed, October 9.** On the fixed **1,004 unique B2000 failure cases**, a frozen `gpt-6-astra high` subgoal wrapper strictly rescued **56 (5.58%)**; 813 were not rescued, 28 remain unknown, and 107 had initial-state deviations. All 2,008 paired arm attempts are terminal. This is a conditional failure-recovery study; the original **59.84%** benchmark is unchanged. Read [the full rescue report](ASTRA_RESCUE_REPORT.md), [paper draft](paper/OriginX_CVPR2027_draft.pdf), and [per-case evidence](evidence/astra-rescue/).
+
 **Read the experiment.** The [English technical report](TECHNICAL_REPORT.md) explains the inherited training chain, evaluation protocol, data audit, earlier negative result, and limitations. The [Chinese article](TECHNICAL_REPORT.zh-CN.md) presents the same experiment. The complete model assets are distributed through [Qinzhen3/OriginX on Hugging Face](https://huggingface.co/Qinzhen3/OriginX): the original base in three safetensors shards, tokenizer/configuration assets, `adapter-originx-2000.pt`, and `branch-00002000.pt`. The three base shards total 10,106,433,336 bytes; the complete snapshot is approximately 10.15 GB. Implementation code is distributed through this GitHub repository, including the three pinned upstream model Python files. Original per-episode evidence remains in the [versioned evaluation release](https://github.com/Quinn-Ma/OriginX/releases/tag/v1.0.0).
 
 **Prepare the complete model.** Clone this repository, then run the hash-verifying preparation helper from its root:

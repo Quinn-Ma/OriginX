@@ -1,0 +1,386 @@
+{
+  "schema": "astra_final_independent_audit_v1",
+  "observed_utc": "2026-10-09T16:57:44.494008+00:00",
+  "passed": true,
+  "source_artifact_sha256": {
+    "OriginX_Astra救援复测结果.json": "7c82a8f993ae83ae809d49c195312766b1f356379843aac3e5b9ac4b7bf370ea",
+    "OriginX_Astra救援复测报告.md": "bfcf8fd19a4748b362ac22907e193fd79d2d6cc1f30671753437407548d9080d",
+    "OriginX_Astra救援CLI用量最终.json": "a95b394d712958e5abee05a96d8e61836cd1989acc9f803321bba559d5712e65",
+    "failure_manifest.json": "fe3b4d29408ad476cdde3f83af18321cb294014eb26c9b716a21ddb51d7d222b",
+    "continuation_selection.json": "ed1a56c174fc25013c31bba08fa43fa9e18341e9d5e5ec2f1c43d4444dc38ee2"
+  },
+  "archive_verification": {
+    "v1": {
+      "archive_sha256": "39d033c56789c76ae511c8e197370b82767a192bdc87ef9f70cd3638c848ddbb",
+      "archive_bytes": 9444422,
+      "individual_files_verified": 1014,
+      "extracted_file_hashes_verified": true,
+      "receipt_sha256": "4c9b4f5683569122f1d6129a8a6fb3e824916a6770675a336e1ad208d06bcd4d",
+      "terminal_observation": "campaign_finished_incomplete"
+    },
+    "continuation": {
+      "archive_sha256": "a293bad10e191f8126068c437904c27b320094fe8b52ad6784eea3cfb72f61aa",
+      "archive_bytes": 274700546,
+      "individual_files_verified": 29177,
+      "extracted_file_hashes_verified": true,
+      "receipt_sha256": "e6ce3ddef30a61a1f97a2229424371c8639ced3378705992715dfb59e6b6a55b",
+      "terminal_observation": "completed_all_attempts_with_unknowns"
+    }
+  },
+  "fixed_case_denominator": 1004,
+  "source_partitions": {
+    "v1": {
+      "cases": 36,
+      "rescued": 0,
+      "not_rescued": 3,
+      "unknown": 28,
+      "initial_state_deviation": 5,
+      "M": 8,
+      "E": 3
+    },
+    "continuation": {
+      "cases": 968,
+      "rescued": 56,
+      "not_rescued": 810,
+      "unknown": 0,
+      "initial_state_deviation": 102,
+      "M": 866,
+      "E": 866
+    }
+  },
+  "terminal_episodes": {
+    "total": 2008,
+    "statuses": {
+      "infrastructure_unknown": 171,
+      "completed": 1837
+    },
+    "by_source": {
+      "v1": {
+        "infrastructure_unknown": 30,
+        "completed": 42
+      },
+      "continuation": {
+        "completed": 1795,
+        "infrastructure_unknown": 141
+      }
+    },
+    "exactly_one_control_and_astra_claim_per_case": true
+  },
+  "classification": {
+    "unknown": 28,
+    "initial_state_deviation": 107,
+    "not_rescued": 813,
+    "rescued": 56
+  },
+  "strict_rescued_R": 56,
+  "matched_complete_pairs_M": 874,
+  "verified_astra_matched_pairs_E": 869,
+  "raw_paired": {
+    "cases": 874,
+    "both_success": 0,
+    "control_only": 0,
+    "astra_only": 56,
+    "both_failure": 818
+  },
+  "ratios": {
+    "R_over_1004": 0.055776892430278883,
+    "R_over_M": 0.06407322654462243,
+    "R_over_E": 0.06444188722669736
+  },
+  "by_stratum": {
+    "composite_seen": {
+      "cases": 321,
+      "rescued": 25,
+      "not_rescued": 218,
+      "unknown": 8,
+      "initial_state_deviation": 70,
+      "M": 244,
+      "E": 243,
+      "strict_R_over_fixed_cases": 0.0778816199376947,
+      "strict_R_over_M": 0.10245901639344263,
+      "strict_R_over_E": 0.102880658436214
+    },
+    "composite_unseen": {
+      "cases": 530,
+      "rescued": 19,
+      "not_rescued": 470,
+      "unknown": 20,
+      "initial_state_deviation": 21,
+      "M": 493,
+      "E": 489,
+      "strict_R_over_fixed_cases": 0.035849056603773584,
+      "strict_R_over_M": 0.038539553752535496,
+      "strict_R_over_E": 0.03885480572597137
+    },
+    "atomic_seen": {
+      "cases": 153,
+      "rescued": 12,
+      "not_rescued": 125,
+      "unknown": 0,
+      "initial_state_deviation": 16,
+      "M": 137,
+      "E": 137,
+      "strict_R_over_fixed_cases": 0.0784313725490196,
+      "strict_R_over_M": 0.08759124087591241,
+      "strict_R_over_E": 0.08759124087591241
+    }
+  },
+  "tasks_with_rescues": 27,
+  "top_tasks_by_rescued_count": [
+    {
+      "task": "BreadSelection",
+      "cases": 30,
+      "rescued": 7,
+      "not_rescued": 22,
+      "unknown": 1,
+      "initial_state_deviation": 0,
+      "M": 29,
+      "E": 29,
+      "strict_R_over_fixed_cases": 0.23333333333333334,
+      "strict_R_over_M": 0.2413793103448276,
+      "strict_R_over_E": 0.2413793103448276
+    },
+    {
+      "task": "PrepareCoffee",
+      "cases": 39,
+      "rescued": 6,
+      "not_rescued": 33,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 39,
+      "E": 39,
+      "strict_R_over_fixed_cases": 0.15384615384615385,
+      "strict_R_over_M": 0.15384615384615385,
+      "strict_R_over_E": 0.15384615384615385
+    },
+    {
+      "task": "CuttingToolSelection",
+      "cases": 26,
+      "rescued": 4,
+      "not_rescued": 22,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 26,
+      "E": 26,
+      "strict_R_over_fixed_cases": 0.15384615384615385,
+      "strict_R_over_M": 0.15384615384615385,
+      "strict_R_over_E": 0.15384615384615385
+    },
+    {
+      "task": "KettleBoiling",
+      "cases": 17,
+      "rescued": 4,
+      "not_rescued": 10,
+      "unknown": 0,
+      "initial_state_deviation": 3,
+      "M": 14,
+      "E": 14,
+      "strict_R_over_fixed_cases": 0.23529411764705882,
+      "strict_R_over_M": 0.2857142857142857,
+      "strict_R_over_E": 0.2857142857142857
+    },
+    {
+      "task": "CloseToasterOvenDoor",
+      "cases": 6,
+      "rescued": 3,
+      "not_rescued": 3,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 6,
+      "E": 6,
+      "strict_R_over_fixed_cases": 0.5,
+      "strict_R_over_M": 0.5,
+      "strict_R_over_E": 0.5
+    },
+    {
+      "task": "LoadDishwasher",
+      "cases": 13,
+      "rescued": 3,
+      "not_rescued": 10,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 13,
+      "E": 13,
+      "strict_R_over_fixed_cases": 0.23076923076923078,
+      "strict_R_over_M": 0.23076923076923078,
+      "strict_R_over_E": 0.23076923076923078
+    },
+    {
+      "task": "SetUpCuttingStation",
+      "cases": 12,
+      "rescued": 3,
+      "not_rescued": 9,
+      "unknown": 0,
+      "initial_state_deviation": 0,
+      "M": 12,
+      "E": 12,
+      "strict_R_over_fixed_cases": 0.25,
+      "strict_R_over_M": 0.25,
+      "strict_R_over_E": 0.25
+    },
+    {
+      "task": "StirVegetables",
+      "cases": 23,
+      "rescued": 3,
+      "not_rescued": 14,
+      "unknown": 1,
+      "initial_state_deviation": 5,
+      "M": 17,
+      "E": 17,
+      "strict_R_over_fixed_cases": 0.13043478260869565,
+      "strict_R_over_M": 0.17647058823529413,
+      "strict_R_over_E": 0.17647058823529413
+    },
+    {
+      "task": "PackIdenticalLunches",
+      "cases": 32,
+      "rescued": 2,
+      "not_rescued": 29,
+      "unknown": 1,
+      "initial_state_deviation": 0,
+      "M": 31,
+      "E": 31,
+      "strict_R_over_fixed_cases": 0.0625,
+      "strict_R_over_M": 0.06451612903225806,
+      "strict_R_over_E": 0.06451612903225806
+    },
+    {
+      "task": "RecycleBottlesByType",
+      "cases": 38,
+      "rescued": 2,
+      "not_rescued": 35,
+      "unknown": 1,
+      "initial_state_deviation": 0,
+      "M": 37,
+      "E": 37,
+      "strict_R_over_fixed_cases": 0.05263157894736842,
+      "strict_R_over_M": 0.05405405405405406,
+      "strict_R_over_E": 0.05405405405405406
+    }
+  ],
+  "unique_cli_usage": {
+    "primary": {
+      "unique_cli_calls": 135,
+      "ok_calls": 134,
+      "error_calls": 1,
+      "tokens": {
+        "input_tokens": {
+          "known_sum": 2592713,
+          "missing_calls": 1,
+          "complete_total": null
+        },
+        "cached_input_tokens": {
+          "known_sum": 0,
+          "missing_calls": 1,
+          "complete_total": null
+        },
+        "output_tokens": {
+          "known_sum": 195237,
+          "missing_calls": 1,
+          "complete_total": null
+        },
+        "reasoning_tokens": {
+          "known_sum": 75511,
+          "missing_calls": 1,
+          "complete_total": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": {
+        "known_calls": 135,
+        "sum": 6186.438140499937,
+        "mean": 45.825467707406936,
+        "median": 46.15696479999315,
+        "minimum": 2.334180500001821,
+        "maximum": 77.35145840000041
+      },
+      "calls_with_at_least_one_verified_astra_matched_case": 132
+    },
+    "pilot": {
+      "unique_cli_calls": 1,
+      "ok_calls": 1,
+      "error_calls": 0,
+      "tokens": {
+        "input_tokens": {
+          "known_sum": 19071,
+          "missing_calls": 0,
+          "complete_total": 19071
+        },
+        "cached_input_tokens": {
+          "known_sum": 0,
+          "missing_calls": 0,
+          "complete_total": 0
+        },
+        "output_tokens": {
+          "known_sum": 629,
+          "missing_calls": 0,
+          "complete_total": 629
+        },
+        "reasoning_tokens": {
+          "known_sum": 137,
+          "missing_calls": 0,
+          "complete_total": 137
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": {
+        "known_calls": 1,
+        "sum": 24.349005099997157,
+        "mean": 24.349005099997157,
+        "median": 24.349005099997157,
+        "minimum": 24.349005099997157,
+        "maximum": 24.349005099997157
+      }
+    }
+  },
+  "cleanup": {
+    "receipt": "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\continuation_sync\\cleanup_independent_verification.json",
+    "sha256": "4bdaf0289384805bea2e0090e97713e3e6022bbc2deb63840b66c4a87b7174b4",
+    "observed_remote_utc": "2026-10-09T16:54:19.028802+00:00",
+    "summary": {
+      "unique_recorded_owners": 1951,
+      "workers": 1936,
+      "models": 12,
+      "other_campaign_runner_launcher_owners": 3,
+      "active_recorded_owners": 0,
+      "unknown_owner_states": 0,
+      "all_recorded_owners_inactive": true,
+      "reason_counts": {
+        "proc_identity_absent": 1951
+      },
+      "gpu_availability_audited": false
+    }
+  },
+  "checks": {
+    "archive_SHA_and_size": true,
+    "archive_all_file_SHA": true,
+    "all_extracted_file_SHA": true,
+    "frozen_config_manifest_selection_bindings": true,
+    "unique_claim_partition_36_plus_968": true,
+    "exact_2008_claims_terminal_records": true,
+    "strict_case_source_projection": true,
+    "four_labels_sum_1004": true,
+    "M_E_independently_recomputed": true,
+    "per_stratum_and_49_task_counts": true,
+    "pilot_IDs_retained_pilot_outcomes_separate": true,
+    "batch_deduplicated_usage_and_latency": true,
+    "135_primary_plus_1_pilot_CLI": true,
+    "missing_token_not_zero": true,
+    "recorded_v2_owners_inactive": true,
+    "case_task_stratum_assignment_matches_frozen_manifest": true,
+    "original_benchmark_metadata_unchanged": true
+  },
+  "limits": [
+    "All 2008 attempts have terminal records; unknown/deviation outcomes remain and experiment_complete is false.",
+    "R/1004 is an observed strict rescue proportion for the fixed original failure subset, not a new official benchmark score.",
+    "M includes 5 technical-unknown pairs without verified Astra application; E is the verified applied-evidence denominator.",
+    "One primary CLI quota error has missing token counters; known totals are lower bounds and dollar cost is null.",
+    "Owner cleanup read only; no model calls, training, retries, signals, public publication or paper modification."
+  ],
+  "original_benchmark": {
+    "episodes": 2500,
+    "successes": 1496,
+    "failures": 1004,
+    "unchanged": true
+  }
+}

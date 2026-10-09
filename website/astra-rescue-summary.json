@@ -1,0 +1,148 @@
+{
+  "schema": "originx_astra_rescue_public_summary_v1",
+  "source_created_utc": "2026-10-09T16:42:31.932559+00:00",
+  "original_benchmark": {
+    "episodes": 2500,
+    "successes": 1496,
+    "failures": 1004,
+    "unchanged": true,
+    "success_rate": 0.5984
+  },
+  "assistance": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "trigger": "replay halfway point",
+    "inputs": [
+      "task description",
+      "three camera views"
+    ],
+    "output": "subgoal guidance for frozen B2000",
+    "retrained": false,
+    "hidden_state_or_stage_oracle": false
+  },
+  "fixed_original_failure_denominator": 1004,
+  "classification": {
+    "rescued": 56,
+    "not_rescued": 813,
+    "unknown": 28,
+    "initial_state_deviation": 107
+  },
+  "strict_rescued_R": 56,
+  "matched_complete_pairs_M": 874,
+  "verified_astra_matched_pairs_E": 869,
+  "R_over_1004": 0.055776892430278883,
+  "R_over_M": 0.06407322654462243,
+  "R_over_E": 0.06444188722669736,
+  "all_selected_cases_attempted": true,
+  "complete_valid_pair_for_every_case": false,
+  "new_official_benchmark_score": null,
+  "primary_partition_counts": {
+    "first_run": 36,
+    "continuation": 968
+  },
+  "pilot_development": {
+    "cases": 4,
+    "rescued": 0,
+    "assignment_indices": [
+      48,
+      97,
+      249,
+      345
+    ],
+    "outcomes_in_primary_results": false,
+    "ids_remain_in_unique_primary_partitions": true
+  },
+  "primary_cli_usage": {
+    "unique_cli_calls": 135,
+    "ok_calls": 134,
+    "error_calls": 1,
+    "unknown_status_calls": 0,
+    "calls_with_verified_applied_case": null,
+    "usage": {
+      "input_tokens": {
+        "known_sum": 2592713,
+        "calls_with_counter": 134,
+        "calls_missing_counter": 1,
+        "complete_total": null
+      },
+      "cached_input_tokens": {
+        "known_sum": 0,
+        "calls_with_counter": 134,
+        "calls_missing_counter": 1,
+        "complete_total": null
+      },
+      "output_tokens": {
+        "known_sum": 195237,
+        "calls_with_counter": 134,
+        "calls_missing_counter": 1,
+        "complete_total": null
+      },
+      "reasoning_tokens": {
+        "known_sum": 75511,
+        "calls_with_counter": 134,
+        "calls_missing_counter": 1,
+        "complete_total": null
+      }
+    },
+    "latency_seconds": {
+      "known_calls": 135,
+      "missing_calls": 0,
+      "sum": 6186.438140499937,
+      "mean": 45.825467707406936,
+      "median": 46.15696479999315,
+      "minimum": 2.334180500001821,
+      "maximum": 77.35145840000041
+    },
+    "cost_usd": null
+  },
+  "pilot_cli_usage": {
+    "unique_cli_calls": 1,
+    "ok_calls": 1,
+    "error_calls": 0,
+    "unknown_status_calls": 0,
+    "calls_with_verified_applied_case": null,
+    "usage": {
+      "input_tokens": {
+        "known_sum": 19071,
+        "calls_with_counter": 1,
+        "calls_missing_counter": 0,
+        "complete_total": 19071
+      },
+      "cached_input_tokens": {
+        "known_sum": 0,
+        "calls_with_counter": 1,
+        "calls_missing_counter": 0,
+        "complete_total": 0
+      },
+      "output_tokens": {
+        "known_sum": 629,
+        "calls_with_counter": 1,
+        "calls_missing_counter": 0,
+        "complete_total": 629
+      },
+      "reasoning_tokens": {
+        "known_sum": 137,
+        "calls_with_counter": 1,
+        "calls_missing_counter": 0,
+        "complete_total": 137
+      }
+    },
+    "latency_seconds": {
+      "known_calls": 1,
+      "missing_calls": 0,
+      "sum": 24.349005099997157,
+      "mean": 24.349005099997157,
+      "median": 24.349005099997157,
+      "minimum": 24.349005099997157,
+      "maximum": 24.349005099997157
+    },
+    "cost_usd": null
+  },
+  "source_hashes": {
+    "classification_sha256": "7c82a8f993ae83ae809d49c195312766b1f356379843aac3e5b9ac4b7bf370ea",
+    "cli_usage_sha256": "a95b394d712958e5abee05a96d8e61836cd1989acc9f803321bba559d5712e65",
+    "selection_sha256": "ed1a56c174fc25013c31bba08fa43fa9e18341e9d5e5ec2f1c43d4444dc38ee2",
+    "failure_manifest_sha256": "fe3b4d29408ad476cdde3f83af18321cb294014eb26c9b716a21ddb51d7d222b"
+  },
+  "interpretation": "Conditional rescue of a fixed known-failure selection. Unknown and initial-state-deviation cases are retained. R/E is conditional on verified applied assistance. Neither ratio changes the original 1496/2500 benchmark; pilot outcomes are development-only. One primary CLI call lacks token counters and full token totals remain unknown."
+}

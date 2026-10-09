@@ -1,0 +1,69 @@
+{
+  "schema": "astra_rescue_infrastructure_pilot_selection_v1",
+  "declared_before_rollouts_utc": "2026-10-09T09:28:31.914699+00:00",
+  "selection_rule": "First failed assignment of each distinct task, sorted by official horizon then assignment_index; take the first four distinct tasks. This minimizes infrastructure test time without new outcome-based selection.",
+  "assignment_indices": [
+    48,
+    97,
+    249,
+    345
+  ],
+  "jobs": [
+    {
+      "id": "native-B-0048-TurnOnElectricKettle-2090900048",
+      "assignment_index": 48,
+      "arm": "B",
+      "task": "TurnOnElectricKettle",
+      "env_seed": 2090900048,
+      "policy_seed": 2090900048,
+      "split": "pretrain",
+      "horizon": 450,
+      "pair_index": 48,
+      "pair_id": "official-B2000-0048"
+    },
+    {
+      "id": "native-B-0097-SlideDishwasherRack-2090900097",
+      "assignment_index": 97,
+      "arm": "B",
+      "task": "SlideDishwasherRack",
+      "env_seed": 2090900097,
+      "policy_seed": 2090900097,
+      "split": "pretrain",
+      "horizon": 450,
+      "pair_index": 97,
+      "pair_id": "official-B2000-0097"
+    },
+    {
+      "id": "native-B-0249-TurnOnMicrowave-2090900249",
+      "assignment_index": 249,
+      "arm": "B",
+      "task": "TurnOnMicrowave",
+      "env_seed": 2090900249,
+      "policy_seed": 2090900249,
+      "split": "pretrain",
+      "horizon": 450,
+      "pair_index": 249,
+      "pair_id": "official-B2000-0249"
+    },
+    {
+      "id": "native-B-0345-NavigateKitchen-2090900345",
+      "assignment_index": 345,
+      "arm": "B",
+      "task": "NavigateKitchen",
+      "env_seed": 2090900345,
+      "policy_seed": 2090900345,
+      "split": "pretrain",
+      "horizon": 450,
+      "pair_index": 345,
+      "pair_id": "official-B2000-0345"
+    }
+  ],
+  "arms": [
+    "control",
+    "astra"
+  ],
+  "planned_episodes": 8,
+  "development_ids_must_be_disclosed": true,
+  "final_primary_case_denominator": 1004,
+  "tuning_based_on_pilot_outcomes_allowed": false
+}

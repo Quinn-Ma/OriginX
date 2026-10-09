@@ -1,0 +1,981 @@
+{
+  "observed_remote_utc": "2026-10-09T10:25:05.266935+00:00",
+  "read_only": true,
+  "actions": [],
+  "owners": [
+    {
+      "pid": 39689,
+      "expected_start_ticks": 120157,
+      "sources": [
+        "campaign-finished.json",
+        "campaign-owner.json",
+        "campaign-status.json",
+        "__sync_remote_snapshot__.json",
+        "__sync_remote_snapshot__.json",
+        "__sync_remote_snapshot__.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 30524,
+      "expected_start_ticks": 67946,
+      "sources": [
+        "campaign-status.json",
+        "__sync_remote_snapshot__.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 12186,
+      "expected_start_ticks": 15686,
+      "sources": [
+        "cleanup.json",
+        "__sync_remote_snapshot__.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 30668,
+      "expected_start_ticks": 68360,
+      "sources": [
+        "cleanup.json",
+        "__sync_remote_snapshot__.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 31539,
+      "expected_start_ticks": 75167,
+      "sources": [
+        "cleanup.json",
+        "__sync_remote_snapshot__.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 33732,
+      "expected_start_ticks": 82115,
+      "sources": [
+        "cleanup.json",
+        "__sync_remote_snapshot__.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 35460,
+      "expected_start_ticks": 88923,
+      "sources": [
+        "cleanup.json",
+        "__sync_remote_snapshot__.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 36125,
+      "expected_start_ticks": 95689,
+      "sources": [
+        "cleanup.json",
+        "__sync_remote_snapshot__.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 13106,
+      "expected_start_ticks": 23126,
+      "sources": [
+        "cleanup.json",
+        "__sync_remote_snapshot__.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 37281,
+      "expected_start_ticks": 102744,
+      "sources": [
+        "cleanup.json",
+        "__sync_remote_snapshot__.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 38076,
+      "expected_start_ticks": 109547,
+      "sources": [
+        "cleanup.json",
+        "__sync_remote_snapshot__.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 39105,
+      "expected_start_ticks": 116436,
+      "sources": [
+        "cleanup.json",
+        "__sync_remote_snapshot__.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 40196,
+      "expected_start_ticks": 123457,
+      "sources": [
+        "cleanup.json",
+        "__sync_remote_snapshot__.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 41190,
+      "expected_start_ticks": 130573,
+      "sources": [
+        "cleanup.json",
+        "__sync_remote_snapshot__.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43967,
+      "expected_start_ticks": 143423,
+      "sources": [
+        "launch.json",
+        "__sync_remote_snapshot__.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43977,
+      "expected_start_ticks": 143435,
+      "sources": [
+        "processes/native-B-0001-SearingMeat-2090900001--astra.json",
+        "episodes/native-B-0001-SearingMeat-2090900001--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43976,
+      "expected_start_ticks": 143434,
+      "sources": [
+        "processes/native-B-0001-SearingMeat-2090900001--control.json",
+        "episodes/native-B-0001-SearingMeat-2090900001--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43979,
+      "expected_start_ticks": 143436,
+      "sources": [
+        "processes/native-B-0002-WaffleReheat-2090900002--astra.json",
+        "episodes/native-B-0002-WaffleReheat-2090900002--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43978,
+      "expected_start_ticks": 143435,
+      "sources": [
+        "processes/native-B-0002-WaffleReheat-2090900002--control.json",
+        "episodes/native-B-0002-WaffleReheat-2090900002--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43981,
+      "expected_start_ticks": 143437,
+      "sources": [
+        "processes/native-B-0004-WashFruitColander-2090900004--astra.json",
+        "episodes/native-B-0004-WashFruitColander-2090900004--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43980,
+      "expected_start_ticks": 143436,
+      "sources": [
+        "processes/native-B-0004-WashFruitColander-2090900004--control.json",
+        "episodes/native-B-0004-WashFruitColander-2090900004--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43983,
+      "expected_start_ticks": 143438,
+      "sources": [
+        "processes/native-B-0005-GetToastedBread-2090900005--astra.json",
+        "episodes/native-B-0005-GetToastedBread-2090900005--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43982,
+      "expected_start_ticks": 143437,
+      "sources": [
+        "processes/native-B-0005-GetToastedBread-2090900005--control.json",
+        "episodes/native-B-0005-GetToastedBread-2090900005--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43985,
+      "expected_start_ticks": 143438,
+      "sources": [
+        "processes/native-B-0007-WeighIngredients-2090900007--astra.json",
+        "episodes/native-B-0007-WeighIngredients-2090900007--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43984,
+      "expected_start_ticks": 143438,
+      "sources": [
+        "processes/native-B-0007-WeighIngredients-2090900007--control.json",
+        "episodes/native-B-0007-WeighIngredients-2090900007--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43987,
+      "expected_start_ticks": 143439,
+      "sources": [
+        "processes/native-B-0010-HeatKebabSandwich-2090900010--astra.json",
+        "episodes/native-B-0010-HeatKebabSandwich-2090900010--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43986,
+      "expected_start_ticks": 143439,
+      "sources": [
+        "processes/native-B-0010-HeatKebabSandwich-2090900010--control.json",
+        "episodes/native-B-0010-HeatKebabSandwich-2090900010--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43990,
+      "expected_start_ticks": 143440,
+      "sources": [
+        "processes/native-B-0011-DeliverStraw-2090900011--astra.json",
+        "episodes/native-B-0011-DeliverStraw-2090900011--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43988,
+      "expected_start_ticks": 143440,
+      "sources": [
+        "processes/native-B-0011-DeliverStraw-2090900011--control.json",
+        "episodes/native-B-0011-DeliverStraw-2090900011--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43993,
+      "expected_start_ticks": 143441,
+      "sources": [
+        "processes/native-B-0014-SeparateFreezerRack-2090900014--astra.json",
+        "episodes/native-B-0014-SeparateFreezerRack-2090900014--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43991,
+      "expected_start_ticks": 143441,
+      "sources": [
+        "processes/native-B-0014-SeparateFreezerRack-2090900014--control.json",
+        "episodes/native-B-0014-SeparateFreezerRack-2090900014--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43995,
+      "expected_start_ticks": 143442,
+      "sources": [
+        "processes/native-B-0016-StirVegetables-2090900016--astra.json",
+        "episodes/native-B-0016-StirVegetables-2090900016--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43994,
+      "expected_start_ticks": 143442,
+      "sources": [
+        "processes/native-B-0016-StirVegetables-2090900016--control.json",
+        "episodes/native-B-0016-StirVegetables-2090900016--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43997,
+      "expected_start_ticks": 143443,
+      "sources": [
+        "processes/native-B-0018-GatherTableware-2090900018--astra.json",
+        "episodes/native-B-0018-GatherTableware-2090900018--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43996,
+      "expected_start_ticks": 143442,
+      "sources": [
+        "processes/native-B-0018-GatherTableware-2090900018--control.json",
+        "episodes/native-B-0018-GatherTableware-2090900018--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43999,
+      "expected_start_ticks": 143444,
+      "sources": [
+        "processes/native-B-0019-PortionHotDogs-2090900019--astra.json",
+        "episodes/native-B-0019-PortionHotDogs-2090900019--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 43998,
+      "expected_start_ticks": 143443,
+      "sources": [
+        "processes/native-B-0019-PortionHotDogs-2090900019--control.json",
+        "episodes/native-B-0019-PortionHotDogs-2090900019--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44001,
+      "expected_start_ticks": 143445,
+      "sources": [
+        "processes/native-B-0021-SteamInMicrowave-2090900021--astra.json",
+        "episodes/native-B-0021-SteamInMicrowave-2090900021--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44000,
+      "expected_start_ticks": 143444,
+      "sources": [
+        "processes/native-B-0021-SteamInMicrowave-2090900021--control.json",
+        "episodes/native-B-0021-SteamInMicrowave-2090900021--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44003,
+      "expected_start_ticks": 143446,
+      "sources": [
+        "processes/native-B-0022-BreadSelection-2090900022--astra.json",
+        "episodes/native-B-0022-BreadSelection-2090900022--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44002,
+      "expected_start_ticks": 143445,
+      "sources": [
+        "processes/native-B-0022-BreadSelection-2090900022--control.json",
+        "episodes/native-B-0022-BreadSelection-2090900022--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44005,
+      "expected_start_ticks": 143447,
+      "sources": [
+        "processes/native-B-0024-PanTransfer-2090900024--astra.json",
+        "episodes/native-B-0024-PanTransfer-2090900024--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44004,
+      "expected_start_ticks": 143446,
+      "sources": [
+        "processes/native-B-0024-PanTransfer-2090900024--control.json",
+        "episodes/native-B-0024-PanTransfer-2090900024--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44007,
+      "expected_start_ticks": 143447,
+      "sources": [
+        "processes/native-B-0026-CategorizeCondiments-2090900026--astra.json",
+        "episodes/native-B-0026-CategorizeCondiments-2090900026--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44006,
+      "expected_start_ticks": 143447,
+      "sources": [
+        "processes/native-B-0026-CategorizeCondiments-2090900026--control.json",
+        "episodes/native-B-0026-CategorizeCondiments-2090900026--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44009,
+      "expected_start_ticks": 143448,
+      "sources": [
+        "processes/native-B-0027-WashLettuce-2090900027--astra.json",
+        "episodes/native-B-0027-WashLettuce-2090900027--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44008,
+      "expected_start_ticks": 143448,
+      "sources": [
+        "processes/native-B-0027-WashLettuce-2090900027--control.json",
+        "episodes/native-B-0027-WashLettuce-2090900027--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44011,
+      "expected_start_ticks": 143449,
+      "sources": [
+        "processes/native-B-0029-RinseSinkBasin-2090900029--astra.json",
+        "episodes/native-B-0029-RinseSinkBasin-2090900029--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44010,
+      "expected_start_ticks": 143449,
+      "sources": [
+        "processes/native-B-0029-RinseSinkBasin-2090900029--control.json",
+        "episodes/native-B-0029-RinseSinkBasin-2090900029--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44013,
+      "expected_start_ticks": 143450,
+      "sources": [
+        "processes/native-B-0038-PickPlaceDrawerToCounter-2090900038--astra.json",
+        "episodes/native-B-0038-PickPlaceDrawerToCounter-2090900038--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44012,
+      "expected_start_ticks": 143450,
+      "sources": [
+        "processes/native-B-0038-PickPlaceDrawerToCounter-2090900038--control.json",
+        "episodes/native-B-0038-PickPlaceDrawerToCounter-2090900038--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44015,
+      "expected_start_ticks": 143451,
+      "sources": [
+        "processes/native-B-0041-PickPlaceCounterToStove-2090900041--astra.json",
+        "episodes/native-B-0041-PickPlaceCounterToStove-2090900041--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44014,
+      "expected_start_ticks": 143451,
+      "sources": [
+        "processes/native-B-0041-PickPlaceCounterToStove-2090900041--control.json",
+        "episodes/native-B-0041-PickPlaceCounterToStove-2090900041--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44017,
+      "expected_start_ticks": 143452,
+      "sources": [
+        "processes/native-B-0048-TurnOnElectricKettle-2090900048--astra.json",
+        "episodes/native-B-0048-TurnOnElectricKettle-2090900048--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44016,
+      "expected_start_ticks": 143452,
+      "sources": [
+        "processes/native-B-0048-TurnOnElectricKettle-2090900048--control.json",
+        "episodes/native-B-0048-TurnOnElectricKettle-2090900048--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44019,
+      "expected_start_ticks": 143453,
+      "sources": [
+        "processes/native-B-0051-SearingMeat-2090900051--astra.json",
+        "episodes/native-B-0051-SearingMeat-2090900051--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44018,
+      "expected_start_ticks": 143453,
+      "sources": [
+        "processes/native-B-0051-SearingMeat-2090900051--control.json",
+        "episodes/native-B-0051-SearingMeat-2090900051--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44021,
+      "expected_start_ticks": 143454,
+      "sources": [
+        "processes/native-B-0052-WaffleReheat-2090900052--astra.json",
+        "episodes/native-B-0052-WaffleReheat-2090900052--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44020,
+      "expected_start_ticks": 143453,
+      "sources": [
+        "processes/native-B-0052-WaffleReheat-2090900052--control.json",
+        "episodes/native-B-0052-WaffleReheat-2090900052--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44023,
+      "expected_start_ticks": 143455,
+      "sources": [
+        "processes/native-B-0053-PackIdenticalLunches-2090900053--astra.json",
+        "episodes/native-B-0053-PackIdenticalLunches-2090900053--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44022,
+      "expected_start_ticks": 143454,
+      "sources": [
+        "processes/native-B-0053-PackIdenticalLunches-2090900053--control.json",
+        "episodes/native-B-0053-PackIdenticalLunches-2090900053--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44025,
+      "expected_start_ticks": 143456,
+      "sources": [
+        "processes/native-B-0055-GetToastedBread-2090900055--astra.json",
+        "episodes/native-B-0055-GetToastedBread-2090900055--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44024,
+      "expected_start_ticks": 143455,
+      "sources": [
+        "processes/native-B-0055-GetToastedBread-2090900055--control.json",
+        "episodes/native-B-0055-GetToastedBread-2090900055--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44027,
+      "expected_start_ticks": 143457,
+      "sources": [
+        "processes/native-B-0056-MakeIceLemonade-2090900056--astra.json",
+        "episodes/native-B-0056-MakeIceLemonade-2090900056--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44026,
+      "expected_start_ticks": 143456,
+      "sources": [
+        "processes/native-B-0056-MakeIceLemonade-2090900056--control.json",
+        "episodes/native-B-0056-MakeIceLemonade-2090900056--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44029,
+      "expected_start_ticks": 143458,
+      "sources": [
+        "processes/native-B-0057-WeighIngredients-2090900057--astra.json",
+        "episodes/native-B-0057-WeighIngredients-2090900057--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44028,
+      "expected_start_ticks": 143457,
+      "sources": [
+        "processes/native-B-0057-WeighIngredients-2090900057--control.json",
+        "episodes/native-B-0057-WeighIngredients-2090900057--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44031,
+      "expected_start_ticks": 143459,
+      "sources": [
+        "processes/native-B-0058-RecycleBottlesByType-2090900058--astra.json",
+        "episodes/native-B-0058-RecycleBottlesByType-2090900058--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44030,
+      "expected_start_ticks": 143458,
+      "sources": [
+        "processes/native-B-0058-RecycleBottlesByType-2090900058--control.json",
+        "episodes/native-B-0058-RecycleBottlesByType-2090900058--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44033,
+      "expected_start_ticks": 143459,
+      "sources": [
+        "processes/native-B-0059-GarnishPancake-2090900059--astra.json",
+        "episodes/native-B-0059-GarnishPancake-2090900059--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44032,
+      "expected_start_ticks": 143459,
+      "sources": [
+        "processes/native-B-0059-GarnishPancake-2090900059--control.json",
+        "episodes/native-B-0059-GarnishPancake-2090900059--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44035,
+      "expected_start_ticks": 143460,
+      "sources": [
+        "processes/native-B-0060-HeatKebabSandwich-2090900060--astra.json",
+        "episodes/native-B-0060-HeatKebabSandwich-2090900060--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44034,
+      "expected_start_ticks": 143460,
+      "sources": [
+        "processes/native-B-0060-HeatKebabSandwich-2090900060--control.json",
+        "episodes/native-B-0060-HeatKebabSandwich-2090900060--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44037,
+      "expected_start_ticks": 143462,
+      "sources": [
+        "processes/native-B-0063-PreSoakPan-2090900063--astra.json",
+        "episodes/native-B-0063-PreSoakPan-2090900063--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44036,
+      "expected_start_ticks": 143461,
+      "sources": [
+        "processes/native-B-0063-PreSoakPan-2090900063--control.json",
+        "episodes/native-B-0063-PreSoakPan-2090900063--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44039,
+      "expected_start_ticks": 143463,
+      "sources": [
+        "processes/native-B-0064-SeparateFreezerRack-2090900064--astra.json",
+        "episodes/native-B-0064-SeparateFreezerRack-2090900064--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44038,
+      "expected_start_ticks": 143462,
+      "sources": [
+        "processes/native-B-0064-SeparateFreezerRack-2090900064--control.json",
+        "episodes/native-B-0064-SeparateFreezerRack-2090900064--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44041,
+      "expected_start_ticks": 143463,
+      "sources": [
+        "processes/native-B-0067-ArrangeTea-2090900067--astra.json",
+        "episodes/native-B-0067-ArrangeTea-2090900067--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44040,
+      "expected_start_ticks": 143463,
+      "sources": [
+        "processes/native-B-0067-ArrangeTea-2090900067--control.json",
+        "episodes/native-B-0067-ArrangeTea-2090900067--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44043,
+      "expected_start_ticks": 143464,
+      "sources": [
+        "processes/native-B-0068-GatherTableware-2090900068--astra.json",
+        "episodes/native-B-0068-GatherTableware-2090900068--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44042,
+      "expected_start_ticks": 143464,
+      "sources": [
+        "processes/native-B-0068-GatherTableware-2090900068--control.json",
+        "episodes/native-B-0068-GatherTableware-2090900068--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44045,
+      "expected_start_ticks": 143465,
+      "sources": [
+        "processes/native-B-0069-PortionHotDogs-2090900069--astra.json",
+        "episodes/native-B-0069-PortionHotDogs-2090900069--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44044,
+      "expected_start_ticks": 143465,
+      "sources": [
+        "processes/native-B-0069-PortionHotDogs-2090900069--control.json",
+        "episodes/native-B-0069-PortionHotDogs-2090900069--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44047,
+      "expected_start_ticks": 143467,
+      "sources": [
+        "processes/native-B-0071-SteamInMicrowave-2090900071--astra.json",
+        "episodes/native-B-0071-SteamInMicrowave-2090900071--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44046,
+      "expected_start_ticks": 143466,
+      "sources": [
+        "processes/native-B-0071-SteamInMicrowave-2090900071--control.json",
+        "episodes/native-B-0071-SteamInMicrowave-2090900071--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44049,
+      "expected_start_ticks": 143468,
+      "sources": [
+        "processes/native-B-0074-PanTransfer-2090900074--astra.json",
+        "episodes/native-B-0074-PanTransfer-2090900074--astra/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    },
+    {
+      "pid": 44048,
+      "expected_start_ticks": 143467,
+      "sources": [
+        "processes/native-B-0074-PanTransfer-2090900074--control.json",
+        "episodes/native-B-0074-PanTransfer-2090900074--control/owner.json"
+      ],
+      "active": false,
+      "identity_checked": true,
+      "reason": "proc_identity_absent"
+    }
+  ],
+  "schema": "astra_v1_owned_process_cleanup_independent_verification_v1",
+  "archive_sha256": "39d033c56789c76ae511c8e197370b82767a192bdc87ef9f70cd3638c848ddbb",
+  "source_cleanup_sha256": "72c4d65d827919346767f5561b9cd5dcdc677c55a039ec860dd419de6a2752bf",
+  "scope": "All unique PID/start identities recorded by archived v1 evidence, including 72 workers, 12 models, runner, campaign owner, expansion owner; no signals or service launches.",
+  "summary": {
+    "unique_recorded_owners": 87,
+    "active_recorded_owners": 0,
+    "unknown_owner_states": 0,
+    "model_owners": 12,
+    "active_model_owners": 0,
+    "all_recorded_owners_inactive": true,
+    "gpu_availability_audited": false
+  }
+}

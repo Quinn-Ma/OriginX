@@ -1,0 +1,4317 @@
+{
+  "schema": "astra_unique_cli_usage_v1",
+  "created_utc": "2026-10-09T16:42:33.302672+00:00",
+  "primary": {
+    "calls": [
+      {
+        "scope": "primary",
+        "batch_id": "20261009T095121-ac766576b8b9",
+        "cli_receipt_sha256": "5fde15233ab56a2ea159573251dfb492cd81f9ac4bc2eebdc463dfb9e1f5b696",
+        "batch_manifest_sha256": "3a438d65f641c15099401b6494e782dea3b827ed30512a5ef831203456f57f6d",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_full_v1"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T09:51:40.449663+00:00",
+        "finished_at": "2026-10-09T09:52:09.559446+00:00",
+        "request_ids": [
+          "native-B-0048-TurnOnElectricKettle-2090900048--astra",
+          "native-B-0041-PickPlaceCounterToStove-2090900041--astra",
+          "native-B-0038-PickPlaceDrawerToCounter-2090900038--astra"
+        ],
+        "usage": {
+          "input_tokens": 18686,
+          "cached_input_tokens": 0,
+          "output_tokens": 657,
+          "reasoning_tokens": 244
+        },
+        "latency_seconds": 29.09416250000504,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T095425-6ae34134d46a",
+        "cli_receipt_sha256": "fc6972f756944c49ef34718f2ef2e7e2775b62a5d1204ee17e51921b7c79b6f7",
+        "batch_manifest_sha256": "0ecf1ead6e69e9390c1169e55ef8aedfbf5ac64509497586cf7da41eecf887b7",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_full_v1"
+        ],
+        "status": "error",
+        "error_kind": "cli_quota_or_rate_limit",
+        "started_at": "2026-10-09T09:54:55.970288+00:00",
+        "finished_at": "2026-10-09T09:54:58.323746+00:00",
+        "request_ids": [
+          "native-B-0074-PanTransfer-2090900074--astra",
+          "native-B-0021-SteamInMicrowave-2090900021--astra",
+          "native-B-0026-CategorizeCondiments-2090900026--astra",
+          "native-B-0019-PortionHotDogs-2090900019--astra",
+          "native-B-0024-PanTransfer-2090900024--astra"
+        ],
+        "usage": {
+          "input_tokens": null,
+          "cached_input_tokens": null,
+          "output_tokens": null,
+          "reasoning_tokens": null
+        },
+        "latency_seconds": 2.334180500001821,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T100305-43d24b05cfd4",
+        "cli_receipt_sha256": "518a80e9ad558a42994878407197ee7e211e068620f256f2e284e4ff23daf0e6",
+        "batch_manifest_sha256": "8b24f8caf9ec342a530f23aec536392284ae3c2daa5c0d945e40e320f66eff68",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_full_v1_after_reset_1"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T10:03:52.676986+00:00",
+        "finished_at": "2026-10-09T10:04:36.356572+00:00",
+        "request_ids": [
+          "native-B-0018-GatherTableware-2090900018--astra",
+          "native-B-0060-HeatKebabSandwich-2090900060--astra",
+          "native-B-0010-HeatKebabSandwich-2090900010--astra",
+          "native-B-0022-BreadSelection-2090900022--astra",
+          "native-B-0007-WeighIngredients-2090900007--astra",
+          "native-B-0055-GetToastedBread-2090900055--astra",
+          "native-B-0067-ArrangeTea-2090900067--astra",
+          "native-B-0014-SeparateFreezerRack-2090900014--astra"
+        ],
+        "usage": {
+          "input_tokens": 19640,
+          "cached_input_tokens": 0,
+          "output_tokens": 1340,
+          "reasoning_tokens": 265
+        },
+        "latency_seconds": 43.665507999998226,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T101530-6e9ca3890c31",
+        "cli_receipt_sha256": "de629a5a77a70355c67b951bccb96bf485341b363bd288de98ef70ac186f5eee",
+        "batch_manifest_sha256": "63893945789fd92c088866628a880180f8bd0823dd30420b395bd35dfac3c2de",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_full_v1_after_reset_1"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T10:16:17.961339+00:00",
+        "finished_at": "2026-10-09T10:17:02.204377+00:00",
+        "request_ids": [
+          "native-B-0059-GarnishPancake-2090900059--astra",
+          "native-B-0069-PortionHotDogs-2090900069--astra",
+          "native-B-0068-GatherTableware-2090900068--astra",
+          "native-B-0005-GetToastedBread-2090900005--astra",
+          "native-B-0011-DeliverStraw-2090900011--astra",
+          "native-B-0064-SeparateFreezerRack-2090900064--astra",
+          "native-B-0016-StirVegetables-2090900016--astra",
+          "native-B-0053-PackIdenticalLunches-2090900053--astra"
+        ],
+        "usage": {
+          "input_tokens": 19582,
+          "cached_input_tokens": 0,
+          "output_tokens": 1337,
+          "reasoning_tokens": 280
+        },
+        "latency_seconds": 44.22569050000311,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T105023-655a01d24f19",
+        "cli_receipt_sha256": "a69abf8fb567c23386eff98893a56d39cac4a2f6a13cd7394511617579fb851e",
+        "batch_manifest_sha256": "4f2648550183dd17b41bb142bafbcaba5886640a51026bb0c4f5a12a9bf709d5",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T10:50:42.497807+00:00",
+        "finished_at": "2026-10-09T10:51:07.349565+00:00",
+        "request_ids": [
+          "native-B-0097-SlideDishwasherRack-2090900097--astra",
+          "native-B-0140-CoffeeSetupMug-2090900140--astra",
+          "native-B-0139-TurnOffStove-2090900139--astra"
+        ],
+        "usage": {
+          "input_tokens": 17986,
+          "cached_input_tokens": 0,
+          "output_tokens": 841,
+          "reasoning_tokens": 435
+        },
+        "latency_seconds": 24.837932999995246,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T105221-9519ed16081f",
+        "cli_receipt_sha256": "5b8531958bd3a5b3252d5bdea00d98406ef69d26ef89ab14db96d8cc2a3bec29",
+        "batch_manifest_sha256": "19a6e0c8ef470c5e6b0aa937789156358c2dc6f7b2ce0f89d090b4ad965f1819",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T10:52:46.945095+00:00",
+        "finished_at": "2026-10-09T10:53:09.419417+00:00",
+        "request_ids": [
+          "native-B-0133-CloseBlenderLid-2090900133--astra",
+          "native-B-0183-CloseBlenderLid-2090900183--astra",
+          "native-B-0081-ScrubCuttingBoard-2090900081--astra",
+          "native-B-0130-CuttingToolSelection-2090900130--astra"
+        ],
+        "usage": {
+          "input_tokens": 18422,
+          "cached_input_tokens": 0,
+          "output_tokens": 642,
+          "reasoning_tokens": 160
+        },
+        "latency_seconds": 22.460037099997862,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T105330-66868b5a46d4",
+        "cli_receipt_sha256": "428ea24362e8a7166c09c47e1ca9afb48fcc3c5a2126b3b054100e4feab32146",
+        "batch_manifest_sha256": "a64c393d2a7fd7a65d32c4b195a5ccc0885a954cad39597c8798376b4b731f61",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T10:54:19.096464+00:00",
+        "finished_at": "2026-10-09T10:55:19.870665+00:00",
+        "request_ids": [
+          "native-B-0076-CategorizeCondiments-2090900076--astra",
+          "native-B-0125-PrepareCoffee-2090900125--astra",
+          "native-B-0075-PrepareCoffee-2090900075--astra",
+          "native-B-0124-PanTransfer-2090900124--astra",
+          "native-B-0126-CategorizeCondiments-2090900126--astra",
+          "native-B-0176-CategorizeCondiments-2090900176--astra",
+          "native-B-0177-WashLettuce-2090900177--astra",
+          "native-B-0174-PanTransfer-2090900174--astra"
+        ],
+        "usage": {
+          "input_tokens": 19524,
+          "cached_input_tokens": 0,
+          "output_tokens": 1945,
+          "reasoning_tokens": 938
+        },
+        "latency_seconds": 60.75820470000326,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T105550-f904db9cc120",
+        "cli_receipt_sha256": "7e408b4fa9f87ea8494f51ae7a9d61a4cb28ff323dc06605b5e3ab6ff021be9a",
+        "batch_manifest_sha256": "9c86b2251606733501fb28b3c403cd4eeaa14b800535bbdc461a91e687d0da53",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T10:56:39.154596+00:00",
+        "finished_at": "2026-10-09T10:57:39.538514+00:00",
+        "request_ids": [
+          "native-B-0171-SteamInMicrowave-2090900171--astra",
+          "native-B-0122-BreadSelection-2090900122--astra",
+          "native-B-0168-GatherTableware-2090900168--astra",
+          "native-B-0190-CoffeeSetupMug-2090900190--astra",
+          "native-B-0114-SeparateFreezerRack-2090900114--astra",
+          "native-B-0111-DeliverStraw-2090900111--astra",
+          "native-B-0118-GatherTableware-2090900118--astra",
+          "native-B-0119-PortionHotDogs-2090900119--astra"
+        ],
+        "usage": {
+          "input_tokens": 19581,
+          "cached_input_tokens": 0,
+          "output_tokens": 1897,
+          "reasoning_tokens": 897
+        },
+        "latency_seconds": 60.36820109999826,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T105810-fc24699bee8b",
+        "cli_receipt_sha256": "3103412337d3639a847e78e1dfed92e1ef974a6a08e98e569f848a8ab863f271",
+        "batch_manifest_sha256": "62fc18661f23494ebf2cbfc505cc287c66b89adb908c6f2fdfda72f747d36252",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T10:58:58.649436+00:00",
+        "finished_at": "2026-10-09T10:59:47.648110+00:00",
+        "request_ids": [
+          "native-B-0167-ArrangeTea-2090900167--astra",
+          "native-B-0117-ArrangeTea-2090900117--astra",
+          "native-B-0161-DeliverStraw-2090900161--astra",
+          "native-B-0186-OpenDrawer-2090900186--astra",
+          "native-B-0160-HeatKebabSandwich-2090900160--astra",
+          "native-B-0164-SeparateFreezerRack-2090900164--astra",
+          "native-B-0110-HeatKebabSandwich-2090900110--astra",
+          "native-B-0158-RecycleBottlesByType-2090900158--astra"
+        ],
+        "usage": {
+          "input_tokens": 19602,
+          "cached_input_tokens": 0,
+          "output_tokens": 1595,
+          "reasoning_tokens": 456
+        },
+        "latency_seconds": 48.98311509999621,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T110018-33c9809ee5b4",
+        "cli_receipt_sha256": "70e04b47e9188d24493a06465aae172b05f0ae6d6a316af6f0909cc23097f782",
+        "batch_manifest_sha256": "ffc5c0a803bbbdf98aab33bb4ed1129d0eff5a549956c206e8b66777efacf00e",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:01:06.551945+00:00",
+        "finished_at": "2026-10-09T11:02:09.087429+00:00",
+        "request_ids": [
+          "native-B-0156-MakeIceLemonade-2090900156--astra",
+          "native-B-0107-WeighIngredients-2090900107--astra",
+          "native-B-0108-RecycleBottlesByType-2090900108--astra",
+          "native-B-0157-WeighIngredients-2090900157--astra",
+          "native-B-0155-GetToastedBread-2090900155--astra",
+          "native-B-0106-MakeIceLemonade-2090900106--astra",
+          "native-B-0153-PackIdenticalLunches-2090900153--astra",
+          "native-B-0180-CuttingToolSelection-2090900180--astra"
+        ],
+        "usage": {
+          "input_tokens": 19570,
+          "cached_input_tokens": 0,
+          "output_tokens": 1801,
+          "reasoning_tokens": 744
+        },
+        "latency_seconds": 62.520649300000514,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T110243-0d2aead5493e",
+        "cli_receipt_sha256": "fe89267979a150dd96e460eda3dece910d749c6cebad6cd37f0d3ce9ab89b309",
+        "batch_manifest_sha256": "10fef68dd43ab9aaabbdeb00b0fd8c9d39535ba2e6367515911d38a2dc37156b",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:03:31.600088+00:00",
+        "finished_at": "2026-10-09T11:04:23.861722+00:00",
+        "request_ids": [
+          "native-B-0197-SlideDishwasherRack-2090900197--astra",
+          "native-B-0218-GatherTableware-2090900218--astra",
+          "native-B-0202-WaffleReheat-2090900202--astra",
+          "native-B-0223-LoadDishwasher-2090900223--astra",
+          "native-B-0207-WeighIngredients-2090900207--astra",
+          "native-B-0200-ArrangeBreadBasket-2090900200--astra",
+          "native-B-0203-PackIdenticalLunches-2090900203--astra",
+          "native-B-0228-KettleBoiling-2090900228--astra"
+        ],
+        "usage": {
+          "input_tokens": 19538,
+          "cached_input_tokens": 0,
+          "output_tokens": 1668,
+          "reasoning_tokens": 719
+        },
+        "latency_seconds": 52.244364499994845,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T110454-559719297ba7",
+        "cli_receipt_sha256": "562a15170e502f99d4e2ccaa6b7ece89683f43df979069e9f05f74e165a0977a",
+        "batch_manifest_sha256": "22d424304adf591d2914df9ee825fd46ea3c4a27871d13d045fe6a4503ee2872",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:05:43.477428+00:00",
+        "finished_at": "2026-10-09T11:07:00.844599+00:00",
+        "request_ids": [
+          "native-B-0221-SteamInMicrowave-2090900221--astra",
+          "native-B-0208-RecycleBottlesByType-2090900208--astra",
+          "native-B-0219-PortionHotDogs-2090900219--astra",
+          "native-B-0237-PickPlaceCounterToCabinet-2090900237--astra",
+          "native-B-0240-CoffeeSetupMug-2090900240--astra",
+          "native-B-0232-OpenCabinet-2090900232--astra",
+          "native-B-0249-TurnOnMicrowave-2090900249--astra",
+          "native-B-0206-MakeIceLemonade-2090900206--astra"
+        ],
+        "usage": {
+          "input_tokens": 19519,
+          "cached_input_tokens": 0,
+          "output_tokens": 2411,
+          "reasoning_tokens": 1482
+        },
+        "latency_seconds": 77.35145840000041,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T110831-ea146bc777e6",
+        "cli_receipt_sha256": "c0725c06cd91240ffb5e8580bce5eb137406a0627010f6503107a004aea24320",
+        "batch_manifest_sha256": "157b11a0d3fa8e8cbc9535be1f8a5ccd73c72f2bbb6ac71fdf01b67f3b95a810",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:08:51.009591+00:00",
+        "finished_at": "2026-10-09T11:09:22.035246+00:00",
+        "request_ids": [
+          "native-B-0225-PrepareCoffee-2090900225--astra",
+          "native-B-0226-CategorizeCondiments-2090900226--astra",
+          "native-B-0201-SearingMeat-2090900201--astra"
+        ],
+        "usage": {
+          "input_tokens": 18018,
+          "cached_input_tokens": 0,
+          "output_tokens": 833,
+          "reasoning_tokens": 451
+        },
+        "latency_seconds": 31.01197239999601,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T111036-b6f1d2701a34",
+        "cli_receipt_sha256": "d4d4ec3cbd3a1d0233ab61e084887a11445b17261ed46008d5035308778b5ac7",
+        "batch_manifest_sha256": "ffbf9f399990a83eef56b7fced2b7c812dca7b399877260f6881403358e1a804",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:11:38.078180+00:00",
+        "finished_at": "2026-10-09T11:12:14.623817+00:00",
+        "request_ids": [
+          "native-B-0230-CuttingToolSelection-2090900230--astra",
+          "native-B-0233-CloseBlenderLid-2090900233--astra",
+          "native-B-0210-HeatKebabSandwich-2090900210--astra",
+          "native-B-0222-BreadSelection-2090900222--astra",
+          "native-B-0224-PanTransfer-2090900224--astra",
+          "native-B-0255-GetToastedBread-2090900255--astra"
+        ],
+        "usage": {
+          "input_tokens": 19290,
+          "cached_input_tokens": 0,
+          "output_tokens": 1149,
+          "reasoning_tokens": 328
+        },
+        "latency_seconds": 36.527971999996225,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T111338-ffe9d9d35333",
+        "cli_receipt_sha256": "f6634894ce1edd2e1ea479417475804457b66aab1f7cd0f860769d8d8e7ca408",
+        "batch_manifest_sha256": "965274bbf260fa81c309e1ce74d1e072edb1eedecc07cdc925fa6d437496da96",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:14:21.231671+00:00",
+        "finished_at": "2026-10-09T11:15:00.025045+00:00",
+        "request_ids": [
+          "native-B-0290-CoffeeSetupMug-2090900290--astra",
+          "native-B-0267-ArrangeTea-2090900267--astra",
+          "native-B-0268-GatherTableware-2090900268--astra",
+          "native-B-0279-RinseSinkBasin-2090900279--astra",
+          "native-B-0280-CuttingToolSelection-2090900280--astra",
+          "native-B-0256-MakeIceLemonade-2090900256--astra",
+          "native-B-0269-PortionHotDogs-2090900269--astra"
+        ],
+        "usage": {
+          "input_tokens": 19620,
+          "cached_input_tokens": 0,
+          "output_tokens": 1255,
+          "reasoning_tokens": 383
+        },
+        "latency_seconds": 38.777102599997306,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T111627-9197204e1016",
+        "cli_receipt_sha256": "daeb7cd19c924323c06787c3fc0e106b3a6511e91aa78b78ed168ef050fcfc76",
+        "batch_manifest_sha256": "2690199981c1f591266d13683acf74a1925ed219e506b689961d0af71841443d",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:17:36.168446+00:00",
+        "finished_at": "2026-10-09T11:18:24.640113+00:00",
+        "request_ids": [
+          "native-B-0277-WashLettuce-2090900277--astra",
+          "native-B-0275-PrepareCoffee-2090900275--astra",
+          "native-B-0253-PackIdenticalLunches-2090900253--astra",
+          "native-B-0264-SeparateFreezerRack-2090900264--astra",
+          "native-B-0283-CloseBlenderLid-2090900283--astra",
+          "native-B-0274-PanTransfer-2090900274--astra",
+          "native-B-0260-HeatKebabSandwich-2090900260--astra"
+        ],
+        "usage": {
+          "input_tokens": 19652,
+          "cached_input_tokens": 0,
+          "output_tokens": 1641,
+          "reasoning_tokens": 673
+        },
+        "latency_seconds": 48.457013899998856,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T111851-7d8296f8e205",
+        "cli_receipt_sha256": "74cdc905ca189f71843265a66b47275a9b41a34dfbb473b22e3341ee4ab4f21a",
+        "batch_manifest_sha256": "c703ed9c2ed9eb23d9a9ed689312027237fad3cdf3802d79411da0f1a430dafe",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:19:41.121795+00:00",
+        "finished_at": "2026-10-09T11:20:25.518014+00:00",
+        "request_ids": [
+          "native-B-0258-RecycleBottlesByType-2090900258--astra",
+          "native-B-0309-GarnishPancake-2090900309--astra",
+          "native-B-0307-WeighIngredients-2090900307--astra",
+          "native-B-0328-KettleBoiling-2090900328--astra",
+          "native-B-0250-ArrangeBreadBasket-2090900250--astra",
+          "native-B-0337-PickPlaceCounterToCabinet-2090900337--astra",
+          "native-B-0326-CategorizeCondiments-2090900326--astra",
+          "native-B-0345-NavigateKitchen-2090900345--astra"
+        ],
+        "usage": {
+          "input_tokens": 19559,
+          "cached_input_tokens": 0,
+          "output_tokens": 1464,
+          "reasoning_tokens": 498
+        },
+        "latency_seconds": 44.38034260000131,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T112055-885a25774c35",
+        "cli_receipt_sha256": "21b74978be2b1896f2eb69fab47340bcbe8fde7be1821dcb9c407a1f996d26b3",
+        "batch_manifest_sha256": "0543f7b224a2531fdef19c29a44d669d50fe8e020db243c12c3ababde7f08743",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:21:44.629642+00:00",
+        "finished_at": "2026-10-09T11:22:38.370154+00:00",
+        "request_ids": [
+          "native-B-0330-CuttingToolSelection-2090900330--astra",
+          "native-B-0324-PanTransfer-2090900324--astra",
+          "native-B-0317-ArrangeTea-2090900317--astra",
+          "native-B-0318-GatherTableware-2090900318--astra",
+          "native-B-0252-WaffleReheat-2090900252--astra",
+          "native-B-0301-SearingMeat-2090900301--astra",
+          "native-B-0319-PortionHotDogs-2090900319--astra",
+          "native-B-0306-MakeIceLemonade-2090900306--astra"
+        ],
+        "usage": {
+          "input_tokens": 19549,
+          "cached_input_tokens": 0,
+          "output_tokens": 1685,
+          "reasoning_tokens": 612
+        },
+        "latency_seconds": 53.72516259999975,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T112309-ccd20af81f4e",
+        "cli_receipt_sha256": "d2a9152937a934433e6a92ed6df7cb0015634d57c43f91cb2fc8a09bc55a024b",
+        "batch_manifest_sha256": "2ce3cda2ea594c3d28e7162ec02cd92e306bc917d4132427931d416c25be4ef5",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:23:59.180493+00:00",
+        "finished_at": "2026-10-09T11:24:53.777622+00:00",
+        "request_ids": [
+          "native-B-0308-RecycleBottlesByType-2090900308--astra",
+          "native-B-0276-CategorizeCondiments-2090900276--astra",
+          "native-B-0323-LoadDishwasher-2090900323--astra",
+          "native-B-0340-CoffeeSetupMug-2090900340--astra",
+          "native-B-0397-SlideDishwasherRack-2090900397--astra",
+          "native-B-0358-RecycleBottlesByType-2090900358--astra",
+          "native-B-0333-CloseBlenderLid-2090900333--astra",
+          "native-B-0375-PrepareCoffee-2090900375--astra"
+        ],
+        "usage": {
+          "input_tokens": 19536,
+          "cached_input_tokens": 0,
+          "output_tokens": 1824,
+          "reasoning_tokens": 742
+        },
+        "latency_seconds": 54.58127550000063,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T112624-58b3b05b24d5",
+        "cli_receipt_sha256": "9550909d763c6a3877249a999c5856e91c4b3713cde80950762effd876229876",
+        "batch_manifest_sha256": "30443a8dd3ccf8a302b520ddf325ce876ebb0f67bfd0e5ff16691154b579e2f9",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:27:07.906814+00:00",
+        "finished_at": "2026-10-09T11:27:40.917790+00:00",
+        "request_ids": [
+          "native-B-0325-PrepareCoffee-2090900325--astra",
+          "native-B-0310-HeatKebabSandwich-2090900310--astra",
+          "native-B-0339-TurnOffStove-2090900339--astra",
+          "native-B-0300-ArrangeBreadBasket-2090900300--astra",
+          "native-B-0376-CategorizeCondiments-2090900376--astra",
+          "native-B-0364-SeparateFreezerRack-2090900364--astra",
+          "native-B-0378-KettleBoiling-2090900378--astra"
+        ],
+        "usage": {
+          "input_tokens": 19680,
+          "cached_input_tokens": 0,
+          "output_tokens": 1111,
+          "reasoning_tokens": 179
+        },
+        "latency_seconds": 32.99523010000121,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T112845-0ab41e25728b",
+        "cli_receipt_sha256": "65d78ad2292dae0ad7765f88e1de0218550d6cfae18e3396b77648c9c8a6bc67",
+        "batch_manifest_sha256": "149d54d2f11d4c06fa0030cb06156a7f1fd09c938a57cf3b57db198e6e7a19a9",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:29:33.625383+00:00",
+        "finished_at": "2026-10-09T11:30:17.675030+00:00",
+        "request_ids": [
+          "native-B-0351-SearingMeat-2090900351--astra",
+          "native-B-0361-DeliverStraw-2090900361--astra",
+          "native-B-0368-GatherTableware-2090900368--astra",
+          "native-B-0357-WeighIngredients-2090900357--astra",
+          "native-B-0374-PanTransfer-2090900374--astra",
+          "native-B-0405-GetToastedBread-2090900405--astra",
+          "native-B-0391-PickPlaceCounterToStove-2090900391--astra",
+          "native-B-0418-GatherTableware-2090900418--astra"
+        ],
+        "usage": {
+          "input_tokens": 19536,
+          "cached_input_tokens": 0,
+          "output_tokens": 1553,
+          "reasoning_tokens": 441
+        },
+        "latency_seconds": 44.03453710000031,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T113148-d288c8b67820",
+        "cli_receipt_sha256": "22e5e90b9950c9aa9d16059f80f81beed6bce8eb0c41a519fe14eec8c13eaeca",
+        "batch_manifest_sha256": "88e3a57b2a9b4b9049f258db1d28e1adc80edde85ae40efbffefb882a21b3c1c",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:31:55.541169+00:00",
+        "finished_at": "2026-10-09T11:32:19.357196+00:00",
+        "request_ids": [
+          "native-B-0426-CategorizeCondiments-2090900426--astra"
+        ],
+        "usage": {
+          "input_tokens": 17200,
+          "cached_input_tokens": 0,
+          "output_tokens": 630,
+          "reasoning_tokens": 465
+        },
+        "latency_seconds": 23.802421400003368,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T113327-e408ebb7e330",
+        "cli_receipt_sha256": "c2a46cfeee282db6c728abfc3d315384022ead7b5436d864f64e408e10f3462a",
+        "batch_manifest_sha256": "a6b37f9eaa27c1186404390021c24e594167147638e4460ffc333597bc9ea918",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:33:58.095758+00:00",
+        "finished_at": "2026-10-09T11:34:38.007747+00:00",
+        "request_ids": [
+          "native-B-0365-SetUpCuttingStation-2090900365--astra",
+          "native-B-0425-PrepareCoffee-2090900425--astra",
+          "native-B-0423-LoadDishwasher-2090900423--astra",
+          "native-B-0377-WashLettuce-2090900377--astra",
+          "native-B-0414-SeparateFreezerRack-2090900414--astra"
+        ],
+        "usage": {
+          "input_tokens": 18878,
+          "cached_input_tokens": 0,
+          "output_tokens": 1124,
+          "reasoning_tokens": 513
+        },
+        "latency_seconds": 39.8970019000044,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T113547-57e25051bd38",
+        "cli_receipt_sha256": "fb5888cb683a480cb05b8d5ffb5ef1bcc4e2870a3283a46d91f65abf85b68f7c",
+        "batch_manifest_sha256": "21ce66c8814105f2a9b75e35d91339479b49672961b6483c59f00d36986e6bdf",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:36:35.479047+00:00",
+        "finished_at": "2026-10-09T11:37:23.675482+00:00",
+        "request_ids": [
+          "native-B-0410-HeatKebabSandwich-2090900410--astra",
+          "native-B-0402-WaffleReheat-2090900402--astra",
+          "native-B-0420-StackBowlsCabinet-2090900420--astra",
+          "native-B-0433-CloseBlenderLid-2090900433--astra",
+          "native-B-0407-WeighIngredients-2090900407--astra",
+          "native-B-0380-CuttingToolSelection-2090900380--astra",
+          "native-B-0457-WeighIngredients-2090900457--astra",
+          "native-B-0360-HeatKebabSandwich-2090900360--astra"
+        ],
+        "usage": {
+          "input_tokens": 19576,
+          "cached_input_tokens": 0,
+          "output_tokens": 1931,
+          "reasoning_tokens": 777
+        },
+        "latency_seconds": 48.181897800001025,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T113905-f84122b12a2b",
+        "cli_receipt_sha256": "13c3c92fd5883ea7b22986322f088e3e8ba918127ee0648ca15c8758154c95b1",
+        "batch_manifest_sha256": "90a77633dae7b75ab3e3127e3b5211be7ec087991347779635a5a0622c5a77af",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:39:49.198970+00:00",
+        "finished_at": "2026-10-09T11:40:45.201686+00:00",
+        "request_ids": [
+          "native-B-0468-GatherTableware-2090900468--astra",
+          "native-B-0371-SteamInMicrowave-2090900371--astra",
+          "native-B-0400-ArrangeBreadBasket-2090900400--astra",
+          "native-B-0408-RecycleBottlesByType-2090900408--astra",
+          "native-B-0422-BreadSelection-2090900422--astra",
+          "native-B-0466-StirVegetables-2090900466--astra",
+          "native-B-0460-HeatKebabSandwich-2090900460--astra"
+        ],
+        "usage": {
+          "input_tokens": 19695,
+          "cached_input_tokens": 0,
+          "output_tokens": 1760,
+          "reasoning_tokens": 874
+        },
+        "latency_seconds": 55.98740459999681,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T114112-94ccbc188950",
+        "cli_receipt_sha256": "da557e8612cc7e11e8e27c6611edf3e1744d5b6421594e1f95858ab1f1d218c2",
+        "batch_manifest_sha256": "f9287c5a59a0ce9d9b7dcc6a531adb2d1d32a5aa5816f175b1e98b69aca8561d",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:42:01.357024+00:00",
+        "finished_at": "2026-10-09T11:43:18.405492+00:00",
+        "request_ids": [
+          "native-B-0424-PanTransfer-2090900424--astra",
+          "native-B-0401-SearingMeat-2090900401--astra",
+          "native-B-0476-CategorizeCondiments-2090900476--astra",
+          "native-B-0456-MakeIceLemonade-2090900456--astra",
+          "native-B-0502-WaffleReheat-2090900502--astra",
+          "native-B-0411-DeliverStraw-2090900411--astra",
+          "native-B-0458-RecycleBottlesByType-2090900458--astra",
+          "native-B-0474-PanTransfer-2090900474--astra"
+        ],
+        "usage": {
+          "input_tokens": 19560,
+          "cached_input_tokens": 0,
+          "output_tokens": 2415,
+          "reasoning_tokens": 1301
+        },
+        "latency_seconds": 77.03216970000358,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T114348-910205aeddf0",
+        "cli_receipt_sha256": "1571a98cac36cc2d9428a755bb8618b0437965a78b0ef522c424db640e14d054",
+        "batch_manifest_sha256": "99591caf292ce777e947788a3c1f8d5ad3c65ae1951f7daa03db66fc8f58c58e",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:44:38.171986+00:00",
+        "finished_at": "2026-10-09T11:45:35.485046+00:00",
+        "request_ids": [
+          "native-B-0491-PickPlaceCounterToStove-2090900491--astra",
+          "native-B-0403-PackIdenticalLunches-2090900403--astra",
+          "native-B-0528-KettleBoiling-2090900528--astra",
+          "native-B-0451-SearingMeat-2090900451--astra",
+          "native-B-0518-GatherTableware-2090900518--astra",
+          "native-B-0483-CloseBlenderLid-2090900483--astra",
+          "native-B-0473-LoadDishwasher-2090900473--astra",
+          "native-B-0510-HeatKebabSandwich-2090900510--astra"
+        ],
+        "usage": {
+          "input_tokens": 19539,
+          "cached_input_tokens": 0,
+          "output_tokens": 1951,
+          "reasoning_tokens": 1034
+        },
+        "latency_seconds": 57.29649190000055,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T114706-4008cf297a90",
+        "cli_receipt_sha256": "7e51bfc79e36a60ced37b714b9db7f4e835b796b6f5843629d3f5b24782661fb",
+        "batch_manifest_sha256": "cf1bb890b8629809dde910ea00255a2e60550f9191fbf25f5eb783d4504850c8",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:47:32.039102+00:00",
+        "finished_at": "2026-10-09T11:47:57.215957+00:00",
+        "request_ids": [
+          "native-B-0459-GarnishPancake-2090900459--astra",
+          "native-B-0472-BreadSelection-2090900472--astra",
+          "native-B-0455-GetToastedBread-2090900455--astra",
+          "native-B-0507-WeighIngredients-2090900507--astra"
+        ],
+        "usage": {
+          "input_tokens": 18468,
+          "cached_input_tokens": 0,
+          "output_tokens": 751,
+          "reasoning_tokens": 208
+        },
+        "latency_seconds": 25.161892199997965,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T114915-65ebd2dc26ea",
+        "cli_receipt_sha256": "7094f7d61409275d12cfe98c9173699d899b948251032b820ce2e2abdf101cb0",
+        "batch_manifest_sha256": "961ac4ebd5c5f6e1495043d9a3ce4c8444678cc38c1fec86fbf822f5763b4886",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:49:45.262716+00:00",
+        "finished_at": "2026-10-09T11:50:15.347544+00:00",
+        "request_ids": [
+          "native-B-0501-SearingMeat-2090900501--astra",
+          "native-B-0450-ArrangeBreadBasket-2090900450--astra",
+          "native-B-0517-ArrangeTea-2090900517--astra",
+          "native-B-0490-CoffeeSetupMug-2090900490--astra",
+          "native-B-0464-SeparateFreezerRack-2090900464--astra"
+        ],
+        "usage": {
+          "input_tokens": 18930,
+          "cached_input_tokens": 0,
+          "output_tokens": 928,
+          "reasoning_tokens": 240
+        },
+        "latency_seconds": 30.069955999999365,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T115125-63aa0271242c",
+        "cli_receipt_sha256": "2c0ed5237b14594cd4ac9f8869b0390d0b81c3abf26ab65c6dc51bcb7268d7d7",
+        "batch_manifest_sha256": "33941c32b9fc2abb063b850252c503c1215d5bba0612768234f75e8aa5b2ab60",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:52:13.779909+00:00",
+        "finished_at": "2026-10-09T11:53:13.642312+00:00",
+        "request_ids": [
+          "native-B-0542-PickPlaceToasterToCounter-2090900542--astra",
+          "native-B-0495-NavigateKitchen-2090900495--astra",
+          "native-B-0475-PrepareCoffee-2090900475--astra",
+          "native-B-0526-CategorizeCondiments-2090900526--astra",
+          "native-B-0505-GetToastedBread-2090900505--astra",
+          "native-B-0567-ArrangeTea-2090900567--astra",
+          "native-B-0524-PanTransfer-2090900524--astra",
+          "native-B-0511-DeliverStraw-2090900511--astra"
+        ],
+        "usage": {
+          "input_tokens": 19535,
+          "cached_input_tokens": 0,
+          "output_tokens": 1987,
+          "reasoning_tokens": 846
+        },
+        "latency_seconds": 59.84535229999892,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T115437-50504801187f",
+        "cli_receipt_sha256": "93edae7bb927aea84c28cb1d89ee7334377ae122b001bf9dec261f0e631a388d",
+        "batch_manifest_sha256": "a8905a864bfa66a50ef28d3841a4df18b3927276c6db5dffd1a18ce936f679cd",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:55:25.139538+00:00",
+        "finished_at": "2026-10-09T11:56:10.823846+00:00",
+        "request_ids": [
+          "native-B-0503-PackIdenticalLunches-2090900503--astra",
+          "native-B-0514-SeparateFreezerRack-2090900514--astra",
+          "native-B-0571-SteamInMicrowave-2090900571--astra",
+          "native-B-0513-PreSoakPan-2090900513--astra",
+          "native-B-0529-RinseSinkBasin-2090900529--astra",
+          "native-B-0552-WaffleReheat-2090900552--astra",
+          "native-B-0504-WashFruitColander-2090900504--astra",
+          "native-B-0506-MakeIceLemonade-2090900506--astra"
+        ],
+        "usage": {
+          "input_tokens": 19629,
+          "cached_input_tokens": 0,
+          "output_tokens": 1428,
+          "reasoning_tokens": 385
+        },
+        "latency_seconds": 45.669490100000985,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T115641-4d6dcaab5af5",
+        "cli_receipt_sha256": "7fab2f6057682ac1577487ff0e7f27f5b8ba37896602ec838b5c3bf4656bafb6",
+        "batch_manifest_sha256": "d17628fbaef7ebeb6322711529717cd6e64b9258dc88a21db7bdec87546ddd98",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T11:57:30.496319+00:00",
+        "finished_at": "2026-10-09T11:58:22.753258+00:00",
+        "request_ids": [
+          "native-B-0585-PickPlaceSinkToCounter-2090900585--astra",
+          "native-B-0519-PortionHotDogs-2090900519--astra",
+          "native-B-0574-PanTransfer-2090900574--astra",
+          "native-B-0533-CloseBlenderLid-2090900533--astra",
+          "native-B-0516-StirVegetables-2090900516--astra",
+          "native-B-0573-LoadDishwasher-2090900573--astra",
+          "native-B-0544-CloseToasterOvenDoor-2090900544--astra",
+          "native-B-0593-TurnOnSinkFaucet-2090900593--astra"
+        ],
+        "usage": {
+          "input_tokens": 19506,
+          "cached_input_tokens": 0,
+          "output_tokens": 1527,
+          "reasoning_tokens": 516
+        },
+        "latency_seconds": 52.24031649999961,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T115954-8196d9dd33e7",
+        "cli_receipt_sha256": "2c30a6ba167d7f02d6ad126d2bb328439625f7b0e601df5a3e883e162f3af034",
+        "batch_manifest_sha256": "7c3f0b29b4879f0dae019cffdc62bccbdf83ff1cf63d5f878083977582aefa99",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:00:37.547256+00:00",
+        "finished_at": "2026-10-09T12:01:33.722134+00:00",
+        "request_ids": [
+          "native-B-0522-BreadSelection-2090900522--astra",
+          "native-B-0568-GatherTableware-2090900568--astra",
+          "native-B-0599-TurnOnMicrowave-2090900599--astra",
+          "native-B-0525-PrepareCoffee-2090900525--astra",
+          "native-B-0551-SearingMeat-2090900551--astra",
+          "native-B-0581-ScrubCuttingBoard-2090900581--astra",
+          "native-B-0610-HeatKebabSandwich-2090900610--astra"
+        ],
+        "usage": {
+          "input_tokens": 19662,
+          "cached_input_tokens": 0,
+          "output_tokens": 1766,
+          "reasoning_tokens": 731
+        },
+        "latency_seconds": 56.1601945999937,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T120258-c70845d8865d",
+        "cli_receipt_sha256": "23fbb3ce8d1a24cb16acd15f897fcc77a42eb3cbd65cbb87dad4de07911f6b10",
+        "batch_manifest_sha256": "35540fbe5acfe9204fb90a534386ab2e8c9c3667de80142c899006c79944d89c",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:03:46.899798+00:00",
+        "finished_at": "2026-10-09T12:04:30.446442+00:00",
+        "request_ids": [
+          "native-B-0560-HeatKebabSandwich-2090900560--astra",
+          "native-B-0564-SeparateFreezerRack-2090900564--astra",
+          "native-B-0553-PackIdenticalLunches-2090900553--astra",
+          "native-B-0586-OpenDrawer-2090900586--astra",
+          "native-B-0572-BreadSelection-2090900572--astra",
+          "native-B-0601-SearingMeat-2090900601--astra",
+          "native-B-0575-PrepareCoffee-2090900575--astra",
+          "native-B-0604-WashFruitColander-2090900604--astra"
+        ],
+        "usage": {
+          "input_tokens": 19612,
+          "cached_input_tokens": 0,
+          "output_tokens": 1498,
+          "reasoning_tokens": 413
+        },
+        "latency_seconds": 43.53055609999865,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T120500-1f2ce390ed7a",
+        "cli_receipt_sha256": "88bc506589fa337e32d9b0e3e8cbfad506d305f5802b1fe4a884617c09dbdb99",
+        "batch_manifest_sha256": "3958ec29c668dc5a516ed5cbf0c1a2448ef9e895f59d67802c779ec59b3827fb",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:05:56.528398+00:00",
+        "finished_at": "2026-10-09T12:06:48.949572+00:00",
+        "request_ids": [
+          "native-B-0643-TurnOnSinkFaucet-2090900643--astra",
+          "native-B-0622-BreadSelection-2090900622--astra",
+          "native-B-0579-RinseSinkBasin-2090900579--astra",
+          "native-B-0607-WeighIngredients-2090900607--astra",
+          "native-B-0589-TurnOffStove-2090900589--astra",
+          "native-B-0595-NavigateKitchen-2090900595--astra",
+          "native-B-0616-StirVegetables-2090900616--astra",
+          "native-B-0637-PickPlaceCounterToCabinet-2090900637--astra"
+        ],
+        "usage": {
+          "input_tokens": 19525,
+          "cached_input_tokens": 0,
+          "output_tokens": 1551,
+          "reasoning_tokens": 516
+        },
+        "latency_seconds": 52.40563649999967,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T120820-807b0c1a5279",
+        "cli_receipt_sha256": "5fd9348269c3478e79c4e43f23c17121fa40e1dfa743d08748e7d2f9f3565693",
+        "batch_manifest_sha256": "7d8328e9ae1fa317b8008bbf8702a0e3382604220fd20c8b28422b62a481eef3",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:09:04.390314+00:00",
+        "finished_at": "2026-10-09T12:09:49.781740+00:00",
+        "request_ids": [
+          "native-B-0697-SlideDishwasherRack-2090900697--astra",
+          "native-B-0627-WashLettuce-2090900627--astra",
+          "native-B-0576-CategorizeCondiments-2090900576--astra",
+          "native-B-0569-PortionHotDogs-2090900569--astra",
+          "native-B-0619-PortionHotDogs-2090900619--astra",
+          "native-B-0668-GatherTableware-2090900668--astra",
+          "native-B-0674-PanTransfer-2090900674--astra"
+        ],
+        "usage": {
+          "input_tokens": 19591,
+          "cached_input_tokens": 0,
+          "output_tokens": 1513,
+          "reasoning_tokens": 491
+        },
+        "latency_seconds": 45.37484420000692,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T121041-1463e184d231",
+        "cli_receipt_sha256": "fb84bbac90eb29752c7a765c91ccf09af40a0e0814bd532df9db4ee9f68664a5",
+        "batch_manifest_sha256": "e38df70e0d060aa84ddb49ef013073a2ea0d0bc36a5e8cb37ea0f62fa7f74f25",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:11:29.775982+00:00",
+        "finished_at": "2026-10-09T12:12:21.957607+00:00",
+        "request_ids": [
+          "native-B-0651-SearingMeat-2090900651--astra",
+          "native-B-0614-SeparateFreezerRack-2090900614--astra",
+          "native-B-0618-GatherTableware-2090900618--astra",
+          "native-B-0647-SlideDishwasherRack-2090900647--astra",
+          "native-B-0676-CategorizeCondiments-2090900676--astra",
+          "native-B-0606-MakeIceLemonade-2090900606--astra",
+          "native-B-0655-GetToastedBread-2090900655--astra",
+          "native-B-0611-DeliverStraw-2090900611--astra"
+        ],
+        "usage": {
+          "input_tokens": 19573,
+          "cached_input_tokens": 0,
+          "output_tokens": 1768,
+          "reasoning_tokens": 695
+        },
+        "latency_seconds": 52.16668699999718,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T121329-4408ce9fdc89",
+        "cli_receipt_sha256": "85195ff911885e83954f7fb32e8808ae094a740704edb96ac12555b5127e74d1",
+        "batch_manifest_sha256": "33b31b25e9e30caf2997211637ba1be41bffa764638dfab7cc9755b4276a77dc",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:14:18.854236+00:00",
+        "finished_at": "2026-10-09T12:15:10.510538+00:00",
+        "request_ids": [
+          "native-B-0603-PackIdenticalLunches-2090900603--astra",
+          "native-B-0649-TurnOnMicrowave-2090900649--astra",
+          "native-B-0624-PanTransfer-2090900624--astra",
+          "native-B-0630-CuttingToolSelection-2090900630--astra",
+          "native-B-0625-PrepareCoffee-2090900625--astra",
+          "native-B-0602-WaffleReheat-2090900602--astra",
+          "native-B-0708-RecycleBottlesByType-2090900708--astra",
+          "native-B-0739-TurnOffStove-2090900739--astra"
+        ],
+        "usage": {
+          "input_tokens": 19504,
+          "cached_input_tokens": 0,
+          "output_tokens": 1491,
+          "reasoning_tokens": 601
+        },
+        "latency_seconds": 51.639807399995334,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T121540-81189817dd74",
+        "cli_receipt_sha256": "8439faede422fe1ef0d50174b276c01219116077877973b3844001697abcf4d4",
+        "batch_manifest_sha256": "7c301650b9129f0e6b5d4a19c62b27c23fe437ed275c61b66c7be7dc7c7baec0",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:16:29.890278+00:00",
+        "finished_at": "2026-10-09T12:17:14.168011+00:00",
+        "request_ids": [
+          "native-B-0660-HeatKebabSandwich-2090900660--astra",
+          "native-B-0672-BreadSelection-2090900672--astra",
+          "native-B-0722-BreadSelection-2090900722--astra",
+          "native-B-0702-WaffleReheat-2090900702--astra",
+          "native-B-0716-StirVegetables-2090900716--astra",
+          "native-B-0725-PrepareCoffee-2090900725--astra",
+          "native-B-0714-SeparateFreezerRack-2090900714--astra",
+          "native-B-0749-TurnOnMicrowave-2090900749--astra"
+        ],
+        "usage": {
+          "input_tokens": 19597,
+          "cached_input_tokens": 0,
+          "output_tokens": 1517,
+          "reasoning_tokens": 395
+        },
+        "latency_seconds": 44.26176710000436,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T121908-24a5a969f06e",
+        "cli_receipt_sha256": "bc198eebfdd6ca53ed1ca2f38bb91b164bc0df2b554c25462d5737e2da993ff5",
+        "batch_manifest_sha256": "8596aeeaa89b52e8a2a2abad230c3a80e03d2fd3d519c325f96e26bf5860bede",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:19:46.178103+00:00",
+        "finished_at": "2026-10-09T12:20:19.388602+00:00",
+        "request_ids": [
+          "native-B-0683-CloseBlenderLid-2090900683--astra",
+          "native-B-0680-CuttingToolSelection-2090900680--astra",
+          "native-B-0726-CategorizeCondiments-2090900726--astra",
+          "native-B-0703-PackIdenticalLunches-2090900703--astra",
+          "native-B-0667-ArrangeTea-2090900667--astra",
+          "native-B-0652-WaffleReheat-2090900652--astra"
+        ],
+        "usage": {
+          "input_tokens": 19290,
+          "cached_input_tokens": 0,
+          "output_tokens": 1059,
+          "reasoning_tokens": 274
+        },
+        "latency_seconds": 33.19545709999511,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T122144-e8d463a020f8",
+        "cli_receipt_sha256": "f683a7d0e51a1f24578881ca8b4c06e976dd9098d1a26e063605830f698a1456",
+        "batch_manifest_sha256": "b040f0dcce817c9b42825f8c7bf47d2d9d339f306d5661d51579da25c8b25868",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:22:31.347439+00:00",
+        "finished_at": "2026-10-09T12:23:03.486303+00:00",
+        "request_ids": [
+          "native-B-0704-WashFruitColander-2090900704--astra",
+          "native-B-0701-SearingMeat-2090900701--astra",
+          "native-B-0755-GetToastedBread-2090900755--astra",
+          "native-B-0759-GarnishPancake-2090900759--astra",
+          "native-B-0767-ArrangeTea-2090900767--astra"
+        ],
+        "usage": {
+          "input_tokens": 18906,
+          "cached_input_tokens": 0,
+          "output_tokens": 947,
+          "reasoning_tokens": 349
+        },
+        "latency_seconds": 32.12420269999711,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T122324-5b1cc439b4e4",
+        "cli_receipt_sha256": "83c3f96dc4a400b924cd0e3d0e14ecdc29cfd67deaf532a0b95f74f8c002081b",
+        "batch_manifest_sha256": "ac85875960122bf17c781521ebcb0d4cade7300fbb1330440596cef64fb7c661",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:24:13.490266+00:00",
+        "finished_at": "2026-10-09T12:25:09.564641+00:00",
+        "request_ids": [
+          "native-B-0741-PickPlaceCounterToStove-2090900741--astra",
+          "native-B-0733-CloseBlenderLid-2090900733--astra",
+          "native-B-0764-SeparateFreezerRack-2090900764--astra",
+          "native-B-0724-PanTransfer-2090900724--astra",
+          "native-B-0790-CoffeeSetupMug-2090900790--astra",
+          "native-B-0774-PanTransfer-2090900774--astra",
+          "native-B-0718-GatherTableware-2090900718--astra",
+          "native-B-0760-HeatKebabSandwich-2090900760--astra"
+        ],
+        "usage": {
+          "input_tokens": 19566,
+          "cached_input_tokens": 0,
+          "output_tokens": 1901,
+          "reasoning_tokens": 782
+        },
+        "latency_seconds": 56.057990000001155,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T122612-519c066cfab9",
+        "cli_receipt_sha256": "2a4ea5e141043045a3c5a09a3de8d28c69e0cd74a1e14048480b313725b83855",
+        "batch_manifest_sha256": "1d6e1806847e48ba8d977f09c8f47431f58f9a4f3b8c709d996aa7facbf6ce16",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:27:02.120466+00:00",
+        "finished_at": "2026-10-09T12:28:04.188442+00:00",
+        "request_ids": [
+          "native-B-0707-WeighIngredients-2090900707--astra",
+          "native-B-0710-HeatKebabSandwich-2090900710--astra",
+          "native-B-0776-CategorizeCondiments-2090900776--astra",
+          "native-B-0795-NavigateKitchen-2090900795--astra",
+          "native-B-0719-PortionHotDogs-2090900719--astra",
+          "native-B-0750-ArrangeBreadBasket-2090900750--astra",
+          "native-B-0768-GatherTableware-2090900768--astra",
+          "native-B-0797-SlideDishwasherRack-2090900797--astra"
+        ],
+        "usage": {
+          "input_tokens": 19503,
+          "cached_input_tokens": 0,
+          "output_tokens": 1968,
+          "reasoning_tokens": 1034
+        },
+        "latency_seconds": 62.05337629999849,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T122936-109450b521ee",
+        "cli_receipt_sha256": "8509c453958e2688a506373ed9b6450869e2af8c5416f0546e1e49b312e42e15",
+        "batch_manifest_sha256": "ad0cc53a2d188d02ff0ee7a552e7798e19fc5373248f9f08d69edc18136f8bcd",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:30:19.473478+00:00",
+        "finished_at": "2026-10-09T12:30:55.894370+00:00",
+        "request_ids": [
+          "native-B-0777-WashLettuce-2090900777--astra",
+          "native-B-0818-GatherTableware-2090900818--astra",
+          "native-B-0756-MakeIceLemonade-2090900756--astra",
+          "native-B-0780-CuttingToolSelection-2090900780--astra",
+          "native-B-0761-DeliverStraw-2090900761--astra",
+          "native-B-0778-KettleBoiling-2090900778--astra",
+          "native-B-0762-StoreLeftoversInBowl-2090900762--astra"
+        ],
+        "usage": {
+          "input_tokens": 19637,
+          "cached_input_tokens": 0,
+          "output_tokens": 1476,
+          "reasoning_tokens": 516
+        },
+        "latency_seconds": 36.40345689999958,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T123147-a7558ad70b3d",
+        "cli_receipt_sha256": "888d43ab9996f38183b939c7a79e4b8690e8372685535c15ccc8e4aa406993fe",
+        "batch_manifest_sha256": "a9bba0e68b0e547dc5e258d00063e54c178a1d7ed2526226c5a4f804f752fd0f",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:32:36.641326+00:00",
+        "finished_at": "2026-10-09T12:33:42.055408+00:00",
+        "request_ids": [
+          "native-B-0837-PickPlaceCounterToCabinet-2090900837--astra",
+          "native-B-0769-PortionHotDogs-2090900769--astra",
+          "native-B-0751-SearingMeat-2090900751--astra",
+          "native-B-0803-PackIdenticalLunches-2090900803--astra",
+          "native-B-0807-WeighIngredients-2090900807--astra",
+          "native-B-0752-WaffleReheat-2090900752--astra",
+          "native-B-0794-CloseToasterOvenDoor-2090900794--astra",
+          "native-B-0798-TurnOnElectricKettle-2090900798--astra"
+        ],
+        "usage": {
+          "input_tokens": 19540,
+          "cached_input_tokens": 0,
+          "output_tokens": 2155,
+          "reasoning_tokens": 1183
+        },
+        "latency_seconds": 65.39753150000615,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T123514-801be26889e5",
+        "cli_receipt_sha256": "83950b4bf49a73a30c6b709d1e9c8bc2aa5532349ba6179b6f94fcdb885bf57a",
+        "batch_manifest_sha256": "09dec3a7de04a71c9fc799124778152d22442e8cc650e5b5b33401c6c7c8b3a4",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:35:52.561660+00:00",
+        "finished_at": "2026-10-09T12:36:28.281692+00:00",
+        "request_ids": [
+          "native-B-0825-PrepareCoffee-2090900825--astra",
+          "native-B-0765-SetUpCuttingStation-2090900765--astra",
+          "native-B-0775-PrepareCoffee-2090900775--astra",
+          "native-B-0873-LoadDishwasher-2090900873--astra",
+          "native-B-0861-DeliverStraw-2090900861--astra",
+          "native-B-0868-GatherTableware-2090900868--astra"
+        ],
+        "usage": {
+          "input_tokens": 19269,
+          "cached_input_tokens": 0,
+          "output_tokens": 1114,
+          "reasoning_tokens": 364
+        },
+        "latency_seconds": 35.70441579999897,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T123724-bae9c0c33b96",
+        "cli_receipt_sha256": "17a7610d2d969c4184b5d8e0fc770420a90fe40431ca81194992ef96f532ea13",
+        "batch_manifest_sha256": "9437c0ad36c3c8c60c0527ab57a6c4380420416935fe7d1888b400e114b588b7",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:38:13.375425+00:00",
+        "finished_at": "2026-10-09T12:39:17.391492+00:00",
+        "request_ids": [
+          "native-B-0880-CuttingToolSelection-2090900880--astra",
+          "native-B-0826-CategorizeCondiments-2090900826--astra",
+          "native-B-0858-RecycleBottlesByType-2090900858--astra",
+          "native-B-0849-TurnOnMicrowave-2090900849--astra",
+          "native-B-0810-HeatKebabSandwich-2090900810--astra",
+          "native-B-0802-WaffleReheat-2090900802--astra",
+          "native-B-0833-CloseBlenderLid-2090900833--astra",
+          "native-B-0850-ArrangeBreadBasket-2090900850--astra"
+        ],
+        "usage": {
+          "input_tokens": 19542,
+          "cached_input_tokens": 0,
+          "output_tokens": 2333,
+          "reasoning_tokens": 1318
+        },
+        "latency_seconds": 63.99952830000257,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T124049-9dc58ed2ebe8",
+        "cli_receipt_sha256": "3dbe9795e63c4db9d6102d664b4c36f1d4426f30df0d0854361b86291e3f0415",
+        "batch_manifest_sha256": "1df77fb229e03401b7c92b2e9f7e2448b631bd614dd07e57dfd1881d173d237a",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:41:27.535123+00:00",
+        "finished_at": "2026-10-09T12:42:14.386371+00:00",
+        "request_ids": [
+          "native-B-0808-RecycleBottlesByType-2090900808--astra",
+          "native-B-0929-RinseSinkBasin-2090900929--astra",
+          "native-B-0805-GetToastedBread-2090900805--astra",
+          "native-B-0874-PanTransfer-2090900874--astra",
+          "native-B-0864-SeparateFreezerRack-2090900864--astra",
+          "native-B-0811-DeliverStraw-2090900811--astra"
+        ],
+        "usage": {
+          "input_tokens": 19326,
+          "cached_input_tokens": 0,
+          "output_tokens": 1334,
+          "reasoning_tokens": 516
+        },
+        "latency_seconds": 46.83612810000341,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T124238-da07552afb28",
+        "cli_receipt_sha256": "9e68d3935e293f86268a9c88a134cc067950bd88d716c34fe4b1b99c2826227a",
+        "batch_manifest_sha256": "62bcfb9fd38c129fb85629e77bb876fbc12159f23a29b4842028e1befea20c99",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:43:27.192050+00:00",
+        "finished_at": "2026-10-09T12:44:16.822370+00:00",
+        "request_ids": [
+          "native-B-0852-WaffleReheat-2090900852--astra",
+          "native-B-0915-SetUpCuttingStation-2090900915--astra",
+          "native-B-0902-WaffleReheat-2090900902--astra",
+          "native-B-0860-HeatKebabSandwich-2090900860--astra",
+          "native-B-0875-PrepareCoffee-2090900875--astra",
+          "native-B-0891-PickPlaceCounterToStove-2090900891--astra",
+          "native-B-0866-StirVegetables-2090900866--astra",
+          "native-B-0857-WeighIngredients-2090900857--astra"
+        ],
+        "usage": {
+          "input_tokens": 19553,
+          "cached_input_tokens": 0,
+          "output_tokens": 1593,
+          "reasoning_tokens": 507
+        },
+        "latency_seconds": 49.614563199997065,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T124549-17e720d3435a",
+        "cli_receipt_sha256": "909269e2ebea876418df502cdb60bbd7ab2bd31651322aa5206b682ab9996e68",
+        "batch_manifest_sha256": "7952080745066c17ac849c06c37cfda7073f8da3ac198796c630f507efe3ad2c",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:46:25.456262+00:00",
+        "finished_at": "2026-10-09T12:47:05.288156+00:00",
+        "request_ids": [
+          "native-B-0855-GetToastedBread-2090900855--astra",
+          "native-B-0869-PortionHotDogs-2090900869--astra",
+          "native-B-0867-ArrangeTea-2090900867--astra",
+          "native-B-0933-CloseBlenderLid-2090900933--astra",
+          "native-B-0878-KettleBoiling-2090900878--astra",
+          "native-B-0909-GarnishPancake-2090900909--astra"
+        ],
+        "usage": {
+          "input_tokens": 19282,
+          "cached_input_tokens": 0,
+          "output_tokens": 1238,
+          "reasoning_tokens": 466
+        },
+        "latency_seconds": 39.81713920000038,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T124830-2616a391828d",
+        "cli_receipt_sha256": "4204ec97db6318ef3be11a95f95915e429f9fe37afd7b8473eaed25391b3f850",
+        "batch_manifest_sha256": "fba8b1c2fc1f3ebac2907a67e7094cae1c6d5a0a5305e0da467bf6e69f7a3e5a",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:49:13.649831+00:00",
+        "finished_at": "2026-10-09T12:50:08.861972+00:00",
+        "request_ids": [
+          "native-B-0918-GatherTableware-2090900918--astra",
+          "native-B-0876-CategorizeCondiments-2090900876--astra",
+          "native-B-0917-ArrangeTea-2090900917--astra",
+          "native-B-0924-PanTransfer-2090900924--astra",
+          "native-B-0908-RecycleBottlesByType-2090900908--astra",
+          "native-B-0905-GetToastedBread-2090900905--astra",
+          "native-B-0973-LoadDishwasher-2090900973--astra"
+        ],
+        "usage": {
+          "input_tokens": 19640,
+          "cached_input_tokens": 0,
+          "output_tokens": 1693,
+          "reasoning_tokens": 836
+        },
+        "latency_seconds": 55.19591239999863,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T125133-90951bd895cb",
+        "cli_receipt_sha256": "cb930851473a1dbc6616de806ba453108d6731caf8100439ae65e0cacc0b9103",
+        "batch_manifest_sha256": "2ab0afec445eac6f10b64fdac96d22cabbdf600c170da1b3bf783df359dafffb",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:52:22.680115+00:00",
+        "finished_at": "2026-10-09T12:53:15.210356+00:00",
+        "request_ids": [
+          "native-B-0958-RecycleBottlesByType-2090900958--astra",
+          "native-B-0980-CuttingToolSelection-2090900980--astra",
+          "native-B-0968-GatherTableware-2090900968--astra",
+          "native-B-0956-MakeIceLemonade-2090900956--astra",
+          "native-B-0925-PrepareCoffee-2090900925--astra",
+          "native-B-0930-CuttingToolSelection-2090900930--astra",
+          "native-B-0997-SlideDishwasherRack-2090900997--astra",
+          "native-B-0910-HeatKebabSandwich-2090900910--astra"
+        ],
+        "usage": {
+          "input_tokens": 19539,
+          "cached_input_tokens": 0,
+          "output_tokens": 1622,
+          "reasoning_tokens": 648
+        },
+        "latency_seconds": 52.513641800003825,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T125446-08e4082f68e6",
+        "cli_receipt_sha256": "91bee86f342349c9e7a4ac4c38c84814927142ff177f5102550b00d6967ec33e",
+        "batch_manifest_sha256": "5d817e6f7ae4ae4c29e06265795c35ecf7bc7cfbc03872ce2fd52d4632cf96df",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:55:12.065769+00:00",
+        "finished_at": "2026-10-09T12:55:46.819891+00:00",
+        "request_ids": [
+          "native-B-1010-HeatKebabSandwich-2090901010--astra",
+          "native-B-0926-CategorizeCondiments-2090900926--astra",
+          "native-B-1024-PanTransfer-2090901024--astra",
+          "native-B-0974-PanTransfer-2090900974--astra"
+        ],
+        "usage": {
+          "input_tokens": 18445,
+          "cached_input_tokens": 0,
+          "output_tokens": 997,
+          "reasoning_tokens": 463
+        },
+        "latency_seconds": 34.73928079999314,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T125604-c3c98d9af7fc",
+        "cli_receipt_sha256": "17dc889b69f68b7152804e644769bcd1f1edc309ff40a5c4df7cd5cfa82d27df",
+        "batch_manifest_sha256": "fdce221d60e9f85cc8922448dd3878469f13e6d0f138c828de2d90c4a6e6434f",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T12:56:52.422087+00:00",
+        "finished_at": "2026-10-09T12:57:50.177798+00:00",
+        "request_ids": [
+          "native-B-1046-OpenStandMixerHead-2090901046--astra",
+          "native-B-0957-WeighIngredients-2090900957--astra",
+          "native-B-0960-HeatKebabSandwich-2090900960--astra",
+          "native-B-1017-ArrangeTea-2090901017--astra",
+          "native-B-0914-SeparateFreezerRack-2090900914--astra",
+          "native-B-0901-SearingMeat-2090900901--astra",
+          "native-B-0975-PrepareCoffee-2090900975--astra",
+          "native-B-0961-DeliverStraw-2090900961--astra"
+        ],
+        "usage": {
+          "input_tokens": 19573,
+          "cached_input_tokens": 0,
+          "output_tokens": 1858,
+          "reasoning_tokens": 830
+        },
+        "latency_seconds": 57.74008429999958,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T125919-d1a94eb67cc7",
+        "cli_receipt_sha256": "0c699afaf85789e146bda8d3ec2788bd10af514654bd89ccaf670e3c27f8baac",
+        "batch_manifest_sha256": "c9e3813155c99899413ff974b7d154742b136e77a324aa38641e1db62e533d64",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:00:07.967933+00:00",
+        "finished_at": "2026-10-09T13:01:14.011167+00:00",
+        "request_ids": [
+          "native-B-0969-PortionHotDogs-2090900969--astra",
+          "native-B-0952-WaffleReheat-2090900952--astra",
+          "native-B-1026-CategorizeCondiments-2090901026--astra",
+          "native-B-1049-TurnOnMicrowave-2090901049--astra",
+          "native-B-1001-SearingMeat-2090901001--astra",
+          "native-B-1028-KettleBoiling-2090901028--astra",
+          "native-B-0976-CategorizeCondiments-2090900976--astra",
+          "native-B-0964-SeparateFreezerRack-2090900964--astra"
+        ],
+        "usage": {
+          "input_tokens": 19562,
+          "cached_input_tokens": 0,
+          "output_tokens": 2017,
+          "reasoning_tokens": 1034
+        },
+        "latency_seconds": 66.02740310000081,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T130246-e8d3cecd104b",
+        "cli_receipt_sha256": "868a09741d2a2132e46f9084ba96008501e7f3b54b753b21c77e17b50ec25573",
+        "batch_manifest_sha256": "d45523a4f2c459f3694dfcb22e739e8b59b73b09605598a435e219555729b069",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:03:28.962447+00:00",
+        "finished_at": "2026-10-09T13:04:15.488321+00:00",
+        "request_ids": [
+          "native-B-1025-PrepareCoffee-2090901025--astra",
+          "native-B-0953-PackIdenticalLunches-2090900953--astra",
+          "native-B-1002-WaffleReheat-2090901002--astra",
+          "native-B-1018-GatherTableware-2090901018--astra",
+          "native-B-1005-GetToastedBread-2090901005--astra",
+          "native-B-1012-StoreLeftoversInBowl-2090901012--astra",
+          "native-B-1058-RecycleBottlesByType-2090901058--astra"
+        ],
+        "usage": {
+          "input_tokens": 19654,
+          "cached_input_tokens": 0,
+          "output_tokens": 1388,
+          "reasoning_tokens": 470
+        },
+        "latency_seconds": 46.50996440000017,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T130544-81da2e123034",
+        "cli_receipt_sha256": "62298bda5b99c7e67d979aa37523c0b156abd6be6d6b705a282aa0d186c10873",
+        "batch_manifest_sha256": "de5eac4492195cd4f98699209f17a4b6eacf04c8e7eb35e614adb90c7143b0ff",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:06:27.351203+00:00",
+        "finished_at": "2026-10-09T13:07:05.424737+00:00",
+        "request_ids": [
+          "native-B-1031-ScrubCuttingBoard-2090901031--astra",
+          "native-B-1019-PortionHotDogs-2090901019--astra",
+          "native-B-1057-WeighIngredients-2090901057--astra",
+          "native-B-1076-CategorizeCondiments-2090901076--astra",
+          "native-B-1059-GarnishPancake-2090901059--astra",
+          "native-B-1064-SeparateFreezerRack-2090901064--astra",
+          "native-B-1051-SearingMeat-2090901051--astra"
+        ],
+        "usage": {
+          "input_tokens": 19671,
+          "cached_input_tokens": 0,
+          "output_tokens": 1179,
+          "reasoning_tokens": 264
+        },
+        "latency_seconds": 38.05755579999823,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T130733-2356229e5d4e",
+        "cli_receipt_sha256": "2f57d82afdbf912cbb6dbb10101ccc28f9742c3bf506df40d9c99115da0afbed",
+        "batch_manifest_sha256": "330efa29b7c3b0afffbdd02de2d23bd37af74b2ff34a3851333abe372982c99b",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:08:22.151761+00:00",
+        "finished_at": "2026-10-09T13:08:54.351169+00:00",
+        "request_ids": [
+          "native-B-1116-StirVegetables-2090901116--astra",
+          "native-B-1060-HeatKebabSandwich-2090901060--astra",
+          "native-B-1050-ArrangeBreadBasket-2090901050--astra",
+          "native-B-1069-PortionHotDogs-2090901069--astra",
+          "native-B-1008-RecycleBottlesByType-2090901008--astra",
+          "native-B-1124-PanTransfer-2090901124--astra",
+          "native-B-1083-CloseBlenderLid-2090901083--astra",
+          "native-B-1078-KettleBoiling-2090901078--astra"
+        ],
+        "usage": {
+          "input_tokens": 19568,
+          "cached_input_tokens": 0,
+          "output_tokens": 1110,
+          "reasoning_tokens": 204
+        },
+        "latency_seconds": 32.183653899999626,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T131026-4752d2b0be4d",
+        "cli_receipt_sha256": "056378a68acf9b3cdbd9e92cc5dbf30666f19495c94a60792fe637f23888c259",
+        "batch_manifest_sha256": "d523da147273e600d81366a9162a27f0750102a3c453c9020b7c81a09216237a",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:11:03.192351+00:00",
+        "finished_at": "2026-10-09T13:11:41.746375+00:00",
+        "request_ids": [
+          "native-B-1077-WashLettuce-2090901077--astra",
+          "native-B-1068-GatherTableware-2090901068--astra",
+          "native-B-1106-MakeIceLemonade-2090901106--astra",
+          "native-B-1033-CloseBlenderLid-2090901033--astra",
+          "native-B-1071-SteamInMicrowave-2090901071--astra",
+          "native-B-1022-BreadSelection-2090901022--astra"
+        ],
+        "usage": {
+          "input_tokens": 19313,
+          "cached_input_tokens": 0,
+          "output_tokens": 1243,
+          "reasoning_tokens": 389
+        },
+        "latency_seconds": 38.538553200000024,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T131306-b9ab42bbd97b",
+        "cli_receipt_sha256": "74af42eb9e4b069f57c62ecfa39f6f06c7ebb05ef6e04ff86a0caed8cb3874b3",
+        "batch_manifest_sha256": "ab6dc0dbda8c306b9495bbeee42d7deadf225799049bc6468b075792aa5c4be3",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:13:43.829864+00:00",
+        "finished_at": "2026-10-09T13:14:14.156064+00:00",
+        "request_ids": [
+          "native-B-1061-DeliverStraw-2090901061--astra",
+          "native-B-1107-WeighIngredients-2090901107--astra",
+          "native-B-1052-WaffleReheat-2090901052--astra",
+          "native-B-1143-TurnOnSinkFaucet-2090901143--astra",
+          "native-B-1090-CoffeeSetupMug-2090901090--astra",
+          "native-B-1108-RecycleBottlesByType-2090901108--astra"
+        ],
+        "usage": {
+          "input_tokens": 19257,
+          "cached_input_tokens": 0,
+          "output_tokens": 1149,
+          "reasoning_tokens": 333
+        },
+        "latency_seconds": 30.311592699996254,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T131539-ab0abde6fe5c",
+        "cli_receipt_sha256": "a8a9805ff1cba91465542fd57e07e24527ce81f7135ea890a0524c5b2c75dd4b",
+        "batch_manifest_sha256": "9746ced6d9e2491ffe2bd74ffd4218920ea38dbf35a5b3108d0b0ebbda689841",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:16:15.437718+00:00",
+        "finished_at": "2026-10-09T13:16:59.558221+00:00",
+        "request_ids": [
+          "native-B-1074-PanTransfer-2090901074--astra",
+          "native-B-1145-NavigateKitchen-2090901145--astra",
+          "native-B-1117-ArrangeTea-2090901117--astra",
+          "native-B-1125-PrepareCoffee-2090901125--astra",
+          "native-B-1072-BreadSelection-2090901072--astra",
+          "native-B-1149-TurnOnMicrowave-2090901149--astra"
+        ],
+        "usage": {
+          "input_tokens": 19281,
+          "cached_input_tokens": 0,
+          "output_tokens": 1292,
+          "reasoning_tokens": 516
+        },
+        "latency_seconds": 44.10496570000396,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T131825-c44eb0573934",
+        "cli_receipt_sha256": "8a1b2670906dafa6a206e06d77740f6a9bee78db740172cf19c85c2b467a5e4d",
+        "batch_manifest_sha256": "6c34f51a40225732482042ad3e309dd054a8ea7db0e687af7964c4d23e487a43",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:18:49.828322+00:00",
+        "finished_at": "2026-10-09T13:19:14.467938+00:00",
+        "request_ids": [
+          "native-B-1053-PackIdenticalLunches-2090901053--astra",
+          "native-B-1180-CuttingToolSelection-2090901180--astra",
+          "native-B-1118-GatherTableware-2090901118--astra",
+          "native-B-1109-GarnishPancake-2090901109--astra"
+        ],
+        "usage": {
+          "input_tokens": 18424,
+          "cached_input_tokens": 0,
+          "output_tokens": 677,
+          "reasoning_tokens": 175
+        },
+        "latency_seconds": 24.62424060000194,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T131952-cea3e98467ae",
+        "cli_receipt_sha256": "945c99b44fa35c3db458f19aebbfed798737c635e75a7e8749bd52734782c840",
+        "batch_manifest_sha256": "8c6de75fdd9470dcf90fce334158779fd66c231e73c16063f9522395f2a28506",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:20:41.334805+00:00",
+        "finished_at": "2026-10-09T13:21:34.118485+00:00",
+        "request_ids": [
+          "native-B-1121-SteamInMicrowave-2090901121--astra",
+          "native-B-1126-CategorizeCondiments-2090901126--astra",
+          "native-B-1110-HeatKebabSandwich-2090901110--astra",
+          "native-B-1119-PortionHotDogs-2090901119--astra",
+          "native-B-1139-TurnOffStove-2090901139--astra",
+          "native-B-1168-GatherTableware-2090901168--astra",
+          "native-B-1130-CuttingToolSelection-2090901130--astra",
+          "native-B-1160-HeatKebabSandwich-2090901160--astra"
+        ],
+        "usage": {
+          "input_tokens": 19560,
+          "cached_input_tokens": 0,
+          "output_tokens": 1781,
+          "reasoning_tokens": 681
+        },
+        "latency_seconds": 52.7685552000039,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T132233-a0e7c70d95eb",
+        "cli_receipt_sha256": "120acffaf110a54d1d1b44dd2f94c12ae41e0c73c1e10d0981cf2a87a10ec70d",
+        "batch_manifest_sha256": "734d263ea4a9041e6db52b0696b89c9d4f4fdfcceff45adf430107c3a1fb1ef3",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:23:23.275248+00:00",
+        "finished_at": "2026-10-09T13:24:31.341731+00:00",
+        "request_ids": [
+          "native-B-1123-LoadDishwasher-2090901123--astra",
+          "native-B-1195-NavigateKitchen-2090901195--astra",
+          "native-B-1161-DeliverStraw-2090901161--astra",
+          "native-B-1114-SeparateFreezerRack-2090901114--astra",
+          "native-B-1164-SeparateFreezerRack-2090901164--astra",
+          "native-B-1237-PickPlaceCounterToCabinet-2090901237--astra",
+          "native-B-1215-SetUpCuttingStation-2090901215--astra",
+          "native-B-1169-PortionHotDogs-2090901169--astra"
+        ],
+        "usage": {
+          "input_tokens": 19587,
+          "cached_input_tokens": 0,
+          "output_tokens": 2049,
+          "reasoning_tokens": 964
+        },
+        "latency_seconds": 68.0502947000059,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T132502-2951ef40e7f8",
+        "cli_receipt_sha256": "a6f36407371ef5e73847191488d774434f4b09e9180a25dcde51549cb02172db",
+        "batch_manifest_sha256": "ee72431d4bbeee9b5a9d8af8c95df7ba25532226b62764de6ad57d16318102f8",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:25:52.169761+00:00",
+        "finished_at": "2026-10-09T13:26:38.342661+00:00",
+        "request_ids": [
+          "native-B-1183-CloseBlenderLid-2090901183--astra",
+          "native-B-1102-WaffleReheat-2090901102--astra",
+          "native-B-1155-GetToastedBread-2090901155--astra",
+          "native-B-1175-PrepareCoffee-2090901175--astra",
+          "native-B-1165-SetUpCuttingStation-2090901165--astra",
+          "native-B-1174-PanTransfer-2090901174--astra",
+          "native-B-1240-CoffeeSetupMug-2090901240--astra",
+          "native-B-1201-SearingMeat-2090901201--astra"
+        ],
+        "usage": {
+          "input_tokens": 19551,
+          "cached_input_tokens": 0,
+          "output_tokens": 1372,
+          "reasoning_tokens": 375
+        },
+        "latency_seconds": 46.15696479999315,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T132810-556a298ec831",
+        "cli_receipt_sha256": "ef1c0bbef5cec21d24f3c097bded237275c3cf9384120a2a693925b31f0ff200",
+        "batch_manifest_sha256": "ea9fb02d3269670f2ceb7471be6aa124321fd9c9d005058f69636d3df596eda3",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:28:59.749614+00:00",
+        "finished_at": "2026-10-09T13:29:43.462516+00:00",
+        "request_ids": [
+          "native-B-1199-TurnOnMicrowave-2090901199--astra",
+          "native-B-1216-StirVegetables-2090901216--astra",
+          "native-B-1244-CloseToasterOvenDoor-2090901244--astra",
+          "native-B-1176-CategorizeCondiments-2090901176--astra",
+          "native-B-1158-RecycleBottlesByType-2090901158--astra",
+          "native-B-1205-GetToastedBread-2090901205--astra",
+          "native-B-1157-WeighIngredients-2090901157--astra",
+          "native-B-1202-WaffleReheat-2090901202--astra"
+        ],
+        "usage": {
+          "input_tokens": 19527,
+          "cached_input_tokens": 0,
+          "output_tokens": 1455,
+          "reasoning_tokens": 472
+        },
+        "latency_seconds": 43.69690550000087,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T133043-cbee6d269d91",
+        "cli_receipt_sha256": "d450a83255ea5f157d8a1c918bd9db4b13271ff28d03ad04785de9f7093a22cf",
+        "batch_manifest_sha256": "3bc619a83f41f365f48429c09aaead55d8dfb84d41071044a6f75d4ecd9cc265",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:31:31.830415+00:00",
+        "finished_at": "2026-10-09T13:32:34.606823+00:00",
+        "request_ids": [
+          "native-B-1167-ArrangeTea-2090901167--astra",
+          "native-B-1218-GatherTableware-2090901218--astra",
+          "native-B-1256-MakeIceLemonade-2090901256--astra",
+          "native-B-1257-WeighIngredients-2090901257--astra",
+          "native-B-1299-TurnOnMicrowave-2090901299--astra",
+          "native-B-1224-PanTransfer-2090901224--astra",
+          "native-B-1225-PrepareCoffee-2090901225--astra",
+          "native-B-1210-HeatKebabSandwich-2090901210--astra"
+        ],
+        "usage": {
+          "input_tokens": 19546,
+          "cached_input_tokens": 0,
+          "output_tokens": 1814,
+          "reasoning_tokens": 838
+        },
+        "latency_seconds": 62.76012669999909,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T133407-544f07e8fb59",
+        "cli_receipt_sha256": "3489a9e9543817e185c1e0245a72ca1759661071e99cec315e93365f9e9b671e",
+        "batch_manifest_sha256": "a43d1384e4ff078943c506b0274731a191cdfde68f4d7c9b2b8215ee70113a59",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:34:31.888086+00:00",
+        "finished_at": "2026-10-09T13:35:03.023289+00:00",
+        "request_ids": [
+          "native-B-1275-PrepareCoffee-2090901275--astra",
+          "native-B-1267-ArrangeTea-2090901267--astra",
+          "native-B-1206-MakeIceLemonade-2090901206--astra",
+          "native-B-1268-GatherTableware-2090901268--astra"
+        ],
+        "usage": {
+          "input_tokens": 18448,
+          "cached_input_tokens": 0,
+          "output_tokens": 875,
+          "reasoning_tokens": 348
+        },
+        "latency_seconds": 31.12096339999698,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T133622-36e632b6e9ea",
+        "cli_receipt_sha256": "b2f2112ad651744e5fa1c58fabd5aeef97e7e82256799de399a1196901b17348",
+        "batch_manifest_sha256": "6f57892f096a026f8f3707de196cc28784bf3d7039511fad9737f5aed0d709a4",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:37:05.234025+00:00",
+        "finished_at": "2026-10-09T13:38:12.579313+00:00",
+        "request_ids": [
+          "native-B-1276-CategorizeCondiments-2090901276--astra",
+          "native-B-1269-PortionHotDogs-2090901269--astra",
+          "native-B-1258-RecycleBottlesByType-2090901258--astra",
+          "native-B-1214-SeparateFreezerRack-2090901214--astra",
+          "native-B-1310-HeatKebabSandwich-2090901310--astra",
+          "native-B-1226-CategorizeCondiments-2090901226--astra",
+          "native-B-1316-StirVegetables-2090901316--astra"
+        ],
+        "usage": {
+          "input_tokens": 19683,
+          "cached_input_tokens": 0,
+          "output_tokens": 1955,
+          "reasoning_tokens": 1006
+        },
+        "latency_seconds": 67.3301072999966,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T133839-ac7db338cf3c",
+        "cli_receipt_sha256": "3a4297f66c82943a5a429ad3a271ed3381ec94d5b39d04bc6670361d3c738269",
+        "batch_manifest_sha256": "190604d1e3ebe1b1776fff9a77e44b089ce583595e52b47f1b4ff781fc5026d1",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:39:51.056087+00:00",
+        "finished_at": "2026-10-09T13:40:39.317069+00:00",
+        "request_ids": [
+          "native-B-1250-ArrangeBreadBasket-2090901250--astra",
+          "native-B-1200-ArrangeBreadBasket-2090901200--astra",
+          "native-B-1283-CloseBlenderLid-2090901283--astra",
+          "native-B-1342-PickPlaceToasterToCounter-2090901342--astra",
+          "native-B-1329-RinseSinkBasin-2090901329--astra",
+          "native-B-1333-CloseBlenderLid-2090901333--astra",
+          "native-B-1260-HeatKebabSandwich-2090901260--astra",
+          "native-B-1264-SeparateFreezerRack-2090901264--astra"
+        ],
+        "usage": {
+          "input_tokens": 19552,
+          "cached_input_tokens": 0,
+          "output_tokens": 1467,
+          "reasoning_tokens": 516
+        },
+        "latency_seconds": 48.244404199998826,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T134151-eeb8b251aecb",
+        "cli_receipt_sha256": "e4661968e8303c0efa022194ed4793e7a0653ba3c06a38a711d182efbe9c5b88",
+        "batch_manifest_sha256": "67d295a5d866083e5bc4e85159ac106ec0cb4b0029aa83427f2911fa2456f924",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:42:38.955265+00:00",
+        "finished_at": "2026-10-09T13:43:21.048464+00:00",
+        "request_ids": [
+          "native-B-1251-SearingMeat-2090901251--astra",
+          "native-B-1270-StackBowlsCabinet-2090901270--astra",
+          "native-B-1325-PrepareCoffee-2090901325--astra",
+          "native-B-1288-PickPlaceDrawerToCounter-2090901288--astra",
+          "native-B-1303-PackIdenticalLunches-2090901303--astra",
+          "native-B-1302-WaffleReheat-2090901302--astra",
+          "native-B-1307-WeighIngredients-2090901307--astra",
+          "native-B-1314-SeparateFreezerRack-2090901314--astra"
+        ],
+        "usage": {
+          "input_tokens": 19579,
+          "cached_input_tokens": 0,
+          "output_tokens": 1355,
+          "reasoning_tokens": 408
+        },
+        "latency_seconds": 42.077999400004046,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T134453-31c11aed106e",
+        "cli_receipt_sha256": "17239c398ab55733dfe3b5ccaf71431d30bce59961ace098366e06fb85774e5d",
+        "batch_manifest_sha256": "6d10f5944196617c4c747f1696457187d7180368a5bc7ecc4417d55dfc8652f2",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:45:36.034746+00:00",
+        "finished_at": "2026-10-09T13:46:24.872712+00:00",
+        "request_ids": [
+          "native-B-1274-PanTransfer-2090901274--astra",
+          "native-B-1340-CoffeeSetupMug-2090901340--astra",
+          "native-B-1255-GetToastedBread-2090901255--astra",
+          "native-B-1319-PortionHotDogs-2090901319--astra",
+          "native-B-1326-CategorizeCondiments-2090901326--astra",
+          "native-B-1379-RinseSinkBasin-2090901379--astra",
+          "native-B-1305-GetToastedBread-2090901305--astra"
+        ],
+        "usage": {
+          "input_tokens": 19621,
+          "cached_input_tokens": 0,
+          "output_tokens": 1431,
+          "reasoning_tokens": 516
+        },
+        "latency_seconds": 48.82175769999594,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T134652-297ba8c018c7",
+        "cli_receipt_sha256": "9777e50797a79ab839ec10496338bd4226a6fbf7e61f38d5fee9ec21a8d26740",
+        "batch_manifest_sha256": "283046e70efa8400550d0eb9d9c100d3b54bc6e1b04bf22d07fd88def4cbba80",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:47:41.180922+00:00",
+        "finished_at": "2026-10-09T13:48:25.947308+00:00",
+        "request_ids": [
+          "native-B-1368-GatherTableware-2090901368--astra",
+          "native-B-1364-SeparateFreezerRack-2090901364--astra",
+          "native-B-1383-CloseBlenderLid-2090901383--astra",
+          "native-B-1332-OpenCabinet-2090901332--astra",
+          "native-B-1371-SteamInMicrowave-2090901371--astra",
+          "native-B-1355-GetToastedBread-2090901355--astra",
+          "native-B-1330-CuttingToolSelection-2090901330--astra",
+          "native-B-1357-WeighIngredients-2090901357--astra"
+        ],
+        "usage": {
+          "input_tokens": 19550,
+          "cached_input_tokens": 0,
+          "output_tokens": 1373,
+          "reasoning_tokens": 427
+        },
+        "latency_seconds": 44.75119960000302,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T134913-3147138656bb",
+        "cli_receipt_sha256": "9d077a4a1e06294fb2327192c4170acc16b4d5b3a470ce001b926c47fac3d4a6",
+        "batch_manifest_sha256": "65263533d99fe19aec9c92bcc5b5036b1a8cb82944a06800356ee7fde51b9c47",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:50:02.089305+00:00",
+        "finished_at": "2026-10-09T13:51:05.687883+00:00",
+        "request_ids": [
+          "native-B-1318-GatherTableware-2090901318--astra",
+          "native-B-1406-MakeIceLemonade-2090901406--astra",
+          "native-B-1352-WaffleReheat-2090901352--astra",
+          "native-B-1372-BreadSelection-2090901372--astra",
+          "native-B-1308-RecycleBottlesByType-2090901308--astra",
+          "native-B-1418-GatherTableware-2090901418--astra",
+          "native-B-1349-TurnOnMicrowave-2090901349--astra",
+          "native-B-1421-SteamInMicrowave-2090901421--astra"
+        ],
+        "usage": {
+          "input_tokens": 19563,
+          "cached_input_tokens": 0,
+          "output_tokens": 2033,
+          "reasoning_tokens": 1034
+        },
+        "latency_seconds": 63.581834500000696,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T135241-17e7e7d3008d",
+        "cli_receipt_sha256": "0adf0b2c94f2ae55deb2012d5dead29e195b1f9f9b78317f71bb0540e431d325",
+        "batch_manifest_sha256": "d81f74dba1b974045623aa2437b6cbe8ab3899ea72886ccb479bb9200c5c3d9e",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:53:12.492619+00:00",
+        "finished_at": "2026-10-09T13:53:50.579973+00:00",
+        "request_ids": [
+          "native-B-1409-GarnishPancake-2090901409--astra",
+          "native-B-1376-CategorizeCondiments-2090901376--astra",
+          "native-B-1380-CuttingToolSelection-2090901380--astra",
+          "native-B-1439-TurnOffStove-2090901439--astra",
+          "native-B-1390-CoffeeSetupMug-2090901390--astra"
+        ],
+        "usage": {
+          "input_tokens": 18864,
+          "cached_input_tokens": 0,
+          "output_tokens": 1009,
+          "reasoning_tokens": 399
+        },
+        "latency_seconds": 38.070990000000165,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T135513-f1f253e1a3cc",
+        "cli_receipt_sha256": "bee6c69fe0923d248511fe06daddc38d76db2bfdf2b8c5dadbe4650cd3f19528",
+        "batch_manifest_sha256": "2f57ff09cbed8dab1228c5cc529054cbd202f331afb505a8390c1025cf9c96e7",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:55:38.481679+00:00",
+        "finished_at": "2026-10-09T13:56:08.467455+00:00",
+        "request_ids": [
+          "native-B-1389-TurnOffStove-2090901389--astra",
+          "native-B-1353-PackIdenticalLunches-2090901353--astra",
+          "native-B-1451-SearingMeat-2090901451--astra",
+          "native-B-1458-RecycleBottlesByType-2090901458--astra"
+        ],
+        "usage": {
+          "input_tokens": 18457,
+          "cached_input_tokens": 0,
+          "output_tokens": 793,
+          "reasoning_tokens": 236
+        },
+        "latency_seconds": 29.971254600000975,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T135659-023b6d3d22aa",
+        "cli_receipt_sha256": "365684b5f878d396be8b0d735b1c1555897354ab80b1c67af68e13751491318d",
+        "batch_manifest_sha256": "4db98542a446ebd253c60be55056511ca57c4e3f49986cdb2c8857e7fb34d2be",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T13:57:49.068594+00:00",
+        "finished_at": "2026-10-09T13:58:51.343808+00:00",
+        "request_ids": [
+          "native-B-1360-HeatKebabSandwich-2090901360--astra",
+          "native-B-1378-KettleBoiling-2090901378--astra",
+          "native-B-1374-PanTransfer-2090901374--astra",
+          "native-B-1469-PortionHotDogs-2090901469--astra",
+          "native-B-1367-ArrangeTea-2090901367--astra",
+          "native-B-1407-WeighIngredients-2090901407--astra",
+          "native-B-1480-CuttingToolSelection-2090901480--astra",
+          "native-B-1433-CloseBlenderLid-2090901433--astra"
+        ],
+        "usage": {
+          "input_tokens": 19538,
+          "cached_input_tokens": 0,
+          "output_tokens": 1848,
+          "reasoning_tokens": 915
+        },
+        "latency_seconds": 62.25999770000635,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T140024-84e41aa2f728",
+        "cli_receipt_sha256": "8e811582231ff2fb9d8e163b098ffc73ef2dc48b3660c0317e3ab59a236a3929",
+        "batch_manifest_sha256": "7e2890a83d61fef6f50cdbd66a8dfdd7db50708858e37ff16503aefc95711e4e",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:01:01.790934+00:00",
+        "finished_at": "2026-10-09T14:01:39.026903+00:00",
+        "request_ids": [
+          "native-B-1419-PortionHotDogs-2090901419--astra",
+          "native-B-1422-BreadSelection-2090901422--astra",
+          "native-B-1441-PickPlaceCounterToStove-2090901441--astra",
+          "native-B-1411-DeliverStraw-2090901411--astra",
+          "native-B-1410-HeatKebabSandwich-2090901410--astra",
+          "native-B-1483-CloseBlenderLid-2090901483--astra"
+        ],
+        "usage": {
+          "input_tokens": 19302,
+          "cached_input_tokens": 0,
+          "output_tokens": 1076,
+          "reasoning_tokens": 299
+        },
+        "latency_seconds": 37.22012840000389,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T140224-17ac3b09556f",
+        "cli_receipt_sha256": "10ae767574a39c24e1ce4950c86c566aa6b8ca8cc98cc2ae785b74c3fde476a1",
+        "batch_manifest_sha256": "28faa3a7e1d2d1d71511d30778e9200996ee8670d8adbf8ec5b5e9e16541042a",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:03:13.448525+00:00",
+        "finished_at": "2026-10-09T14:04:00.222516+00:00",
+        "request_ids": [
+          "native-B-1467-ArrangeTea-2090901467--astra",
+          "native-B-1476-CategorizeCondiments-2090901476--astra",
+          "native-B-1414-SeparateFreezerRack-2090901414--astra",
+          "native-B-1455-GetToastedBread-2090901455--astra",
+          "native-B-1464-SeparateFreezerRack-2090901464--astra",
+          "native-B-1472-BreadSelection-2090901472--astra",
+          "native-B-1460-HeatKebabSandwich-2090901460--astra",
+          "native-B-1401-SearingMeat-2090901401--astra"
+        ],
+        "usage": {
+          "input_tokens": 19651,
+          "cached_input_tokens": 0,
+          "output_tokens": 1484,
+          "reasoning_tokens": 373
+        },
+        "latency_seconds": 46.75902900000074,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T140504-89883dc064f5",
+        "cli_receipt_sha256": "056665f3020c30e0c9a2afb1dbddf28095f4f56eb245597da604807cc7ca0485",
+        "batch_manifest_sha256": "bf8bd60502f067da631a0933c3ac245a07a79d91b1e9a92df19379202663926a",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:05:53.572128+00:00",
+        "finished_at": "2026-10-09T14:06:40.572016+00:00",
+        "request_ids": [
+          "native-B-1452-WaffleReheat-2090901452--astra",
+          "native-B-1426-CategorizeCondiments-2090901426--astra",
+          "native-B-1453-PackIdenticalLunches-2090901453--astra",
+          "native-B-1533-CloseBlenderLid-2090901533--astra",
+          "native-B-1519-PortionHotDogs-2090901519--astra",
+          "native-B-1510-HeatKebabSandwich-2090901510--astra",
+          "native-B-1454-WashFruitColander-2090901454--astra",
+          "native-B-1517-ArrangeTea-2090901517--astra"
+        ],
+        "usage": {
+          "input_tokens": 19559,
+          "cached_input_tokens": 0,
+          "output_tokens": 1310,
+          "reasoning_tokens": 337
+        },
+        "latency_seconds": 46.98426170000312,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T140812-86c56a2b76c8",
+        "cli_receipt_sha256": "613ae7db7acdfd14e11809af90f92b3f90bcddcabf902eb08730f3cc82475bed",
+        "batch_manifest_sha256": "2a2353be21264d69ce8c43f70cdbbb6b62d44d73eb48173e5d8e5ba9c6b593fb",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:08:49.819687+00:00",
+        "finished_at": "2026-10-09T14:09:28.214934+00:00",
+        "request_ids": [
+          "native-B-1505-GetToastedBread-2090901505--astra",
+          "native-B-1513-PreSoakPan-2090901513--astra",
+          "native-B-1526-CategorizeCondiments-2090901526--astra",
+          "native-B-1503-PackIdenticalLunches-2090901503--astra",
+          "native-B-1474-PanTransfer-2090901474--astra",
+          "native-B-1465-SetUpCuttingStation-2090901465--astra"
+        ],
+        "usage": {
+          "input_tokens": 19302,
+          "cached_input_tokens": 0,
+          "output_tokens": 1101,
+          "reasoning_tokens": 366
+        },
+        "latency_seconds": 38.379479200004425,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T141055-73c914f12ae4",
+        "cli_receipt_sha256": "3aa2d1f7377b20d0dcf4fabed87f68c7e882e6cb119588e5efce517bd6c724dd",
+        "batch_manifest_sha256": "01548c8ec52cdff47f6aef9aac244d4462307167f3d970d4b0e29b5bb737d76d",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:11:38.294288+00:00",
+        "finished_at": "2026-10-09T14:12:20.583617+00:00",
+        "request_ids": [
+          "native-B-1507-WeighIngredients-2090901507--astra",
+          "native-B-1530-CuttingToolSelection-2090901530--astra",
+          "native-B-1518-GatherTableware-2090901518--astra",
+          "native-B-1572-BreadSelection-2090901572--astra",
+          "native-B-1545-NavigateKitchen-2090901545--astra",
+          "native-B-1543-TurnOnSinkFaucet-2090901543--astra",
+          "native-B-1511-DeliverStraw-2090901511--astra"
+        ],
+        "usage": {
+          "input_tokens": 19616,
+          "cached_input_tokens": 0,
+          "output_tokens": 1401,
+          "reasoning_tokens": 388
+        },
+        "latency_seconds": 42.27303630000097,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T141345-a671bc93088b",
+        "cli_receipt_sha256": "5ffe38093fa4d48a1a19ef33afbd06c3d5b71e0907e7ecb30bdcd01fe4d3013d",
+        "batch_manifest_sha256": "066846d18d6517eb3c094830d229f946d45e6ba21495d51ff318c2559a9828d9",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:14:36.445403+00:00",
+        "finished_at": "2026-10-09T14:15:14.013728+00:00",
+        "request_ids": [
+          "native-B-1450-ArrangeBreadBasket-2090901450--astra",
+          "native-B-1468-GatherTableware-2090901468--astra",
+          "native-B-1524-PanTransfer-2090901524--astra",
+          "native-B-1522-BreadSelection-2090901522--astra",
+          "native-B-1553-PackIdenticalLunches-2090901553--astra",
+          "native-B-1457-WeighIngredients-2090901457--astra",
+          "native-B-1558-RecycleBottlesByType-2090901558--astra",
+          "native-B-1478-KettleBoiling-2090901478--astra"
+        ],
+        "usage": {
+          "input_tokens": 19555,
+          "cached_input_tokens": 0,
+          "output_tokens": 1196,
+          "reasoning_tokens": 216
+        },
+        "latency_seconds": 37.55219190000207,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T141631-1a83edbf78a2",
+        "cli_receipt_sha256": "f8c59fa3dfa4c04edce1cc471032fe99c5d4ba0d29404181c372ae5685576828",
+        "batch_manifest_sha256": "1949db5abde762abfe40a9c861b01ecc7550586deafa0ceb26a55ed6672ebda7",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:17:20.824585+00:00",
+        "finished_at": "2026-10-09T14:18:00.658387+00:00",
+        "request_ids": [
+          "native-B-1575-PrepareCoffee-2090901575--astra",
+          "native-B-1568-GatherTableware-2090901568--astra",
+          "native-B-1574-PanTransfer-2090901574--astra",
+          "native-B-1560-HeatKebabSandwich-2090901560--astra",
+          "native-B-1514-SeparateFreezerRack-2090901514--astra",
+          "native-B-1642-PickPlaceToasterToCounter-2090901642--astra",
+          "native-B-1633-CloseBlenderLid-2090901633--astra",
+          "native-B-1601-SearingMeat-2090901601--astra"
+        ],
+        "usage": {
+          "input_tokens": 19579,
+          "cached_input_tokens": 0,
+          "output_tokens": 1342,
+          "reasoning_tokens": 369
+        },
+        "latency_seconds": 39.816786400006094,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T141831-c349544194c9",
+        "cli_receipt_sha256": "e24651c85401dbcdcaeb8b5e685c2f5127bc1b04b343275a0090a2ad08afc3b8",
+        "batch_manifest_sha256": "fbb0815deb68c7fd6c4076e9d0164cebb8428bd4bfefde8460ead2de43fd20c3",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:19:20.342680+00:00",
+        "finished_at": "2026-10-09T14:20:14.709283+00:00",
+        "request_ids": [
+          "native-B-1607-WeighIngredients-2090901607--astra",
+          "native-B-1618-GatherTableware-2090901618--astra",
+          "native-B-1610-HeatKebabSandwich-2090901610--astra",
+          "native-B-1525-PrepareCoffee-2090901525--astra",
+          "native-B-1626-CategorizeCondiments-2090901626--astra",
+          "native-B-1624-PanTransfer-2090901624--astra",
+          "native-B-1576-CategorizeCondiments-2090901576--astra",
+          "native-B-1612-StoreLeftoversInBowl-2090901612--astra"
+        ],
+        "usage": {
+          "input_tokens": 19547,
+          "cached_input_tokens": 0,
+          "output_tokens": 1839,
+          "reasoning_tokens": 792
+        },
+        "latency_seconds": 54.3498419000025,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T142146-4a1ebc97beca",
+        "cli_receipt_sha256": "c2bda66e120c64d0320f5e873436886bbb00b44c3bfba733dfd5fe1c4856e4b4",
+        "batch_manifest_sha256": "cad190ddb9f4aca81b0528589f08d7a7a9a6190be62996b7dfa43fe336647595",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:22:23.633025+00:00",
+        "finished_at": "2026-10-09T14:23:12.035505+00:00",
+        "request_ids": [
+          "native-B-1614-SeparateFreezerRack-2090901614--astra",
+          "native-B-1649-TurnOnMicrowave-2090901649--astra",
+          "native-B-1564-SeparateFreezerRack-2090901564--astra",
+          "native-B-1625-PrepareCoffee-2090901625--astra",
+          "native-B-1616-StirVegetables-2090901616--astra",
+          "native-B-1608-RecycleBottlesByType-2090901608--astra"
+        ],
+        "usage": {
+          "input_tokens": 19326,
+          "cached_input_tokens": 0,
+          "output_tokens": 1548,
+          "reasoning_tokens": 806
+        },
+        "latency_seconds": 48.38744089999818,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T142437-5558b4a903a1",
+        "cli_receipt_sha256": "b00efb81c501df19239a87196568e102d84e01fcc9cc3e0b4dba73451ecf8f81",
+        "batch_manifest_sha256": "f73ea12d2b01be64087d43ef7bce1c592ba7fc41bd47ece858dd14fd736e7f7c",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:24:56.925074+00:00",
+        "finished_at": "2026-10-09T14:25:27.729281+00:00",
+        "request_ids": [
+          "native-B-1628-KettleBoiling-2090901628--astra",
+          "native-B-1603-PackIdenticalLunches-2090901603--astra",
+          "native-B-1655-GetToastedBread-2090901655--astra"
+        ],
+        "usage": {
+          "input_tokens": 18024,
+          "cached_input_tokens": 0,
+          "output_tokens": 777,
+          "reasoning_tokens": 311
+        },
+        "latency_seconds": 30.78923190000205,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T142639-64ec54a13c13",
+        "cli_receipt_sha256": "6c02a998a51f2da71ea14bbc12e49ce626d25b232d8f89e9b1af3263968bea3f",
+        "batch_manifest_sha256": "be8fef00271e19cc502f4d3b2fc5a3c5d930fc47ec182aab553879e3f2573377",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:27:28.386389+00:00",
+        "finished_at": "2026-10-09T14:28:07.111769+00:00",
+        "request_ids": [
+          "native-B-1661-DeliverStraw-2090901661--astra",
+          "native-B-1657-WeighIngredients-2090901657--astra",
+          "native-B-1665-SetUpCuttingStation-2090901665--astra",
+          "native-B-1580-CuttingToolSelection-2090901580--astra",
+          "native-B-1697-SlideDishwasherRack-2090901697--astra",
+          "native-B-1651-SearingMeat-2090901651--astra",
+          "native-B-1570-StackBowlsCabinet-2090901570--astra",
+          "native-B-1675-PrepareCoffee-2090901675--astra"
+        ],
+        "usage": {
+          "input_tokens": 19565,
+          "cached_input_tokens": 0,
+          "output_tokens": 1332,
+          "reasoning_tokens": 258
+        },
+        "latency_seconds": 38.70874619999813,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T142858-3f468ae6f0df",
+        "cli_receipt_sha256": "16cd19d7ffed388c4c715850d7c11412c347cce1947b4f34c5586255a919d215",
+        "batch_manifest_sha256": "f623873b4a237bfa9852e06d6ab21f5dacadaa816c2fae1d3d7db67632c90303",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:29:47.281317+00:00",
+        "finished_at": "2026-10-09T14:30:19.389474+00:00",
+        "request_ids": [
+          "native-B-1671-SteamInMicrowave-2090901671--astra",
+          "native-B-1653-PackIdenticalLunches-2090901653--astra",
+          "native-B-1667-ArrangeTea-2090901667--astra",
+          "native-B-1637-PickPlaceCounterToCabinet-2090901637--astra",
+          "native-B-1744-CloseToasterOvenDoor-2090901744--astra",
+          "native-B-1658-RecycleBottlesByType-2090901658--astra",
+          "native-B-1674-PanTransfer-2090901674--astra",
+          "native-B-1681-ScrubCuttingBoard-2090901681--astra"
+        ],
+        "usage": {
+          "input_tokens": 19580,
+          "cached_input_tokens": 0,
+          "output_tokens": 1250,
+          "reasoning_tokens": 330
+        },
+        "latency_seconds": 32.0898898000014,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T143049-7b29499ecc0c",
+        "cli_receipt_sha256": "30913db272826e9dc935fc338157812c8646a2dc3de8f27f7f631de8e5c379d8",
+        "batch_manifest_sha256": "135e9f3596651b70a43a9a95c0fe59fd3b24e053968b88ae717869dab5a4e13b",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:31:53.939066+00:00",
+        "finished_at": "2026-10-09T14:32:29.624910+00:00",
+        "request_ids": [
+          "native-B-1611-DeliverStraw-2090901611--astra",
+          "native-B-1676-CategorizeCondiments-2090901676--astra",
+          "native-B-1668-GatherTableware-2090901668--astra",
+          "native-B-1705-GetToastedBread-2090901705--astra",
+          "native-B-1720-StackBowlsCabinet-2090901720--astra",
+          "native-B-1551-SearingMeat-2090901551--astra",
+          "native-B-1619-PortionHotDogs-2090901619--astra",
+          "native-B-1652-WaffleReheat-2090901652--astra"
+        ],
+        "usage": {
+          "input_tokens": 19566,
+          "cached_input_tokens": 0,
+          "output_tokens": 1427,
+          "reasoning_tokens": 398
+        },
+        "latency_seconds": 35.668895700000576,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T143402-877a2a220ca5",
+        "cli_receipt_sha256": "42bab87b4b7dc1f5ff1e8abfd29cbc0edea725f05896ecd4f6ac597131ad88a0",
+        "batch_manifest_sha256": "a1657b1e8809cd621f1afb348d88e322d86b1f8d68d322d8288cdbc7b59576b7",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:34:21.313201+00:00",
+        "finished_at": "2026-10-09T14:34:39.757797+00:00",
+        "request_ids": [
+          "native-B-1660-HeatKebabSandwich-2090901660--astra",
+          "native-B-1740-CoffeeSetupMug-2090901740--astra",
+          "native-B-1677-WashLettuce-2090901677--astra"
+        ],
+        "usage": {
+          "input_tokens": 18030,
+          "cached_input_tokens": 0,
+          "output_tokens": 638,
+          "reasoning_tokens": 259
+        },
+        "latency_seconds": 18.429525500003365,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T143556-58c97f33754a",
+        "cli_receipt_sha256": "e5c37c8b99ef9a35750b878d120d9e35e7fabc7707bdd1c44adbb832acf3313d",
+        "batch_manifest_sha256": "2e5ccef7a60d959cf55a62a6c08c9d1a2be3c95de77bf62525313d63f5cef781",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:36:39.681853+00:00",
+        "finished_at": "2026-10-09T14:37:39.376164+00:00",
+        "request_ids": [
+          "native-B-1709-GarnishPancake-2090901709--astra",
+          "native-B-1710-HeatKebabSandwich-2090901710--astra",
+          "native-B-1725-PrepareCoffee-2090901725--astra",
+          "native-B-1669-PortionHotDogs-2090901669--astra",
+          "native-B-1714-SeparateFreezerRack-2090901714--astra",
+          "native-B-1756-MakeIceLemonade-2090901756--astra",
+          "native-B-1795-NavigateKitchen-2090901795--astra"
+        ],
+        "usage": {
+          "input_tokens": 19652,
+          "cached_input_tokens": 0,
+          "output_tokens": 1634,
+          "reasoning_tokens": 685
+        },
+        "latency_seconds": 59.67993129999377,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T143839-57c12e601a9b",
+        "cli_receipt_sha256": "139cefa1cef78bae65312fad7ada9813932b9ecf266c9bc9fe9e788b72e2b76c",
+        "batch_manifest_sha256": "d9348b1831c4fa1b0d13dffd04d6b0b92869c5677edd635f0e09f47de5986645",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:39:30.172165+00:00",
+        "finished_at": "2026-10-09T14:40:20.861047+00:00",
+        "request_ids": [
+          "native-B-1718-GatherTableware-2090901718--astra",
+          "native-B-1758-RecycleBottlesByType-2090901758--astra",
+          "native-B-1703-PackIdenticalLunches-2090901703--astra",
+          "native-B-1772-BreadSelection-2090901772--astra",
+          "native-B-1799-TurnOnMicrowave-2090901799--astra",
+          "native-B-1768-GatherTableware-2090901768--astra",
+          "native-B-1782-OpenCabinet-2090901782--astra",
+          "native-B-1672-BreadSelection-2090901672--astra"
+        ],
+        "usage": {
+          "input_tokens": 19569,
+          "cached_input_tokens": 0,
+          "output_tokens": 1411,
+          "reasoning_tokens": 423
+        },
+        "latency_seconds": 50.67234319999989,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T144153-78954ef2f5da",
+        "cli_receipt_sha256": "aa935858c4c784ddcd893fb5a980ac6a9b6723d917ceda99fba8e85a5cf237e3",
+        "batch_manifest_sha256": "4667507afeed92bb11197a8f9144f9eb56f771869bdd9a3f4c7cb3f73553b457",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:42:30.658366+00:00",
+        "finished_at": "2026-10-09T14:43:46.974977+00:00",
+        "request_ids": [
+          "native-B-1654-WashFruitColander-2090901654--astra",
+          "native-B-1664-SeparateFreezerRack-2090901664--astra",
+          "native-B-1774-PanTransfer-2090901774--astra",
+          "native-B-1806-MakeIceLemonade-2090901806--astra",
+          "native-B-1819-PortionHotDogs-2090901819--astra",
+          "native-B-1760-HeatKebabSandwich-2090901760--astra"
+        ],
+        "usage": {
+          "input_tokens": 19336,
+          "cached_input_tokens": 0,
+          "output_tokens": 2345,
+          "reasoning_tokens": 1520
+        },
+        "latency_seconds": 76.30057520000264,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T144456-2b4f6385eeb1",
+        "cli_receipt_sha256": "62cf446668e9cda0c21d5530b4934d9a4c3c6b1b346c16a6be467fe9bbe8e5d4",
+        "batch_manifest_sha256": "a95972a85f3152f5fa74e98b9398f0a707958adc37671dff44b6086327e0ef31",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:45:45.884927+00:00",
+        "finished_at": "2026-10-09T14:46:32.652275+00:00",
+        "request_ids": [
+          "native-B-1779-RinseSinkBasin-2090901779--astra",
+          "native-B-1753-PackIdenticalLunches-2090901753--astra",
+          "native-B-1827-WashLettuce-2090901827--astra",
+          "native-B-1723-LoadDishwasher-2090901723--astra",
+          "native-B-1746-OpenStandMixerHead-2090901746--astra",
+          "native-B-1755-GetToastedBread-2090901755--astra",
+          "native-B-1780-CuttingToolSelection-2090901780--astra",
+          "native-B-1762-StoreLeftoversInBowl-2090901762--astra"
+        ],
+        "usage": {
+          "input_tokens": 19524,
+          "cached_input_tokens": 0,
+          "output_tokens": 1472,
+          "reasoning_tokens": 474
+        },
+        "latency_seconds": 46.752029900002526,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T144703-e5023530a12f",
+        "cli_receipt_sha256": "f598f7a862f906b318d6c68bdbdc4f42846c649db4290eec8e959107b59133bc",
+        "batch_manifest_sha256": "b354bee4b705fc8d5a8812a816ea056d303309e79ac4b76e767399340d8911ec",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:47:52.903817+00:00",
+        "finished_at": "2026-10-09T14:48:56.172080+00:00",
+        "request_ids": [
+          "native-B-1825-PrepareCoffee-2090901825--astra",
+          "native-B-1754-WashFruitColander-2090901754--astra",
+          "native-B-1764-SeparateFreezerRack-2090901764--astra",
+          "native-B-1844-CloseToasterOvenDoor-2090901844--astra",
+          "native-B-1708-RecycleBottlesByType-2090901708--astra",
+          "native-B-1816-StirVegetables-2090901816--astra",
+          "native-B-1821-SteamInMicrowave-2090901821--astra",
+          "native-B-1830-CuttingToolSelection-2090901830--astra"
+        ],
+        "usage": {
+          "input_tokens": 19580,
+          "cached_input_tokens": 0,
+          "output_tokens": 2026,
+          "reasoning_tokens": 1034
+        },
+        "latency_seconds": 63.25301690000924,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T144930-96b700eacd09",
+        "cli_receipt_sha256": "ab7bd4301519612a52ede0183b190830652a96ddbb7bc4c09276750265425392",
+        "batch_manifest_sha256": "1ba1be1ebc32c8f36a97307a491ee2d2035682116faf338bf8ff7dbb12aa413e",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:50:35.082640+00:00",
+        "finished_at": "2026-10-09T14:51:19.464175+00:00",
+        "request_ids": [
+          "native-B-1803-PackIdenticalLunches-2090901803--astra",
+          "native-B-1824-PanTransfer-2090901824--astra",
+          "native-B-1833-CloseBlenderLid-2090901833--astra",
+          "native-B-1808-RecycleBottlesByType-2090901808--astra",
+          "native-B-1801-SearingMeat-2090901801--astra",
+          "native-B-1757-WeighIngredients-2090901757--astra",
+          "native-B-1875-PrepareCoffee-2090901875--astra",
+          "native-B-1873-LoadDishwasher-2090901873--astra"
+        ],
+        "usage": {
+          "input_tokens": 19543,
+          "cached_input_tokens": 0,
+          "output_tokens": 1421,
+          "reasoning_tokens": 311
+        },
+        "latency_seconds": 44.36485240000184,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T145243-e10bf4142c92",
+        "cli_receipt_sha256": "d91e49050981e58c96adb273d36bf388c502b601da94edffc2b9b9aa8cbb2ad8",
+        "batch_manifest_sha256": "a67a658876783157424213e950cad7abfb904272db8bf4b254508173e7c6d847",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:53:33.047498+00:00",
+        "finished_at": "2026-10-09T14:54:29.813587+00:00",
+        "request_ids": [
+          "native-B-1860-HeatKebabSandwich-2090901860--astra",
+          "native-B-1783-CloseBlenderLid-2090901783--astra",
+          "native-B-1810-HeatKebabSandwich-2090901810--astra",
+          "native-B-1863-PreSoakPan-2090901863--astra",
+          "native-B-1802-WaffleReheat-2090901802--astra",
+          "native-B-1887-PickPlaceCounterToCabinet-2090901887--astra",
+          "native-B-1892-PickPlaceToasterToCounter-2090901892--astra",
+          "native-B-1853-PackIdenticalLunches-2090901853--astra"
+        ],
+        "usage": {
+          "input_tokens": 19557,
+          "cached_input_tokens": 0,
+          "output_tokens": 1773,
+          "reasoning_tokens": 834
+        },
+        "latency_seconds": 56.75067950000812,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T145612-f684f42beab3",
+        "cli_receipt_sha256": "45b8073525b432d810e4196a4634e1c46812ed9ef83428a0780ee08036feda99",
+        "batch_manifest_sha256": "4609a27a9d6a8f055d5986bc7b742a45299593645304a3094f034c2e0672ad87",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T14:57:22.704751+00:00",
+        "finished_at": "2026-10-09T14:58:20.725228+00:00",
+        "request_ids": [
+          "native-B-1831-ScrubCuttingBoard-2090901831--astra",
+          "native-B-1826-CategorizeCondiments-2090901826--astra",
+          "native-B-1818-GatherTableware-2090901818--astra",
+          "native-B-1822-BreadSelection-2090901822--astra",
+          "native-B-1805-GetToastedBread-2090901805--astra",
+          "native-B-1856-MakeIceLemonade-2090901856--astra",
+          "native-B-1858-RecycleBottlesByType-2090901858--astra"
+        ],
+        "usage": {
+          "input_tokens": 19660,
+          "cached_input_tokens": 0,
+          "output_tokens": 1933,
+          "reasoning_tokens": 874
+        },
+        "latency_seconds": 58.00377299998945,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T145950-c0a5ae75bff7",
+        "cli_receipt_sha256": "84728adc7207b4a950934006e7a8319102285e345b679fb262b6e46d9f795a05",
+        "batch_manifest_sha256": "d22f56a94e8ff5d1e63dbfe43730ecb2359e951042febf4207c1db400b00d627",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:00:39.900288+00:00",
+        "finished_at": "2026-10-09T15:01:45.730715+00:00",
+        "request_ids": [
+          "native-B-1918-GatherTableware-2090901918--astra",
+          "native-B-1864-SeparateFreezerRack-2090901864--astra",
+          "native-B-1908-RecycleBottlesByType-2090901908--astra",
+          "native-B-1876-CategorizeCondiments-2090901876--astra",
+          "native-B-1878-KettleBoiling-2090901878--astra",
+          "native-B-1931-ScrubCuttingBoard-2090901931--astra",
+          "native-B-1868-GatherTableware-2090901868--astra",
+          "native-B-1919-PortionHotDogs-2090901919--astra"
+        ],
+        "usage": {
+          "input_tokens": 19580,
+          "cached_input_tokens": 0,
+          "output_tokens": 2001,
+          "reasoning_tokens": 1034
+        },
+        "latency_seconds": 65.81458439999551,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T150216-c90bc516588c",
+        "cli_receipt_sha256": "a7ae78740bbd0bfb867080bc17466c2e3314dc164903662fa39d4b4176dcf887",
+        "batch_manifest_sha256": "2e9dd9a57c6713a060ce5912303e865fbcaa48b4464ee66f8b3e7d177e04545b",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:03:06.800861+00:00",
+        "finished_at": "2026-10-09T15:04:04.777286+00:00",
+        "request_ids": [
+          "native-B-1905-GetToastedBread-2090901905--astra",
+          "native-B-1910-HeatKebabSandwich-2090901910--astra",
+          "native-B-1933-CloseBlenderLid-2090901933--astra",
+          "native-B-1857-WeighIngredients-2090901857--astra",
+          "native-B-1916-StirVegetables-2090901916--astra",
+          "native-B-1924-PanTransfer-2090901924--astra",
+          "native-B-1914-SeparateFreezerRack-2090901914--astra",
+          "native-B-1867-ArrangeTea-2090901867--astra"
+        ],
+        "usage": {
+          "input_tokens": 19583,
+          "cached_input_tokens": 0,
+          "output_tokens": 1881,
+          "reasoning_tokens": 736
+        },
+        "latency_seconds": 57.959868399993866,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T150533-80e1cbede115",
+        "cli_receipt_sha256": "a82654cfab29e30478bc18a266b0835da2a62b7854da59690fe1a77f1d73c5ee",
+        "batch_manifest_sha256": "b10bd41876c12d7b2515dd62ac12439b1a94d682ca4b8e360766c3110e88531e",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:06:22.225978+00:00",
+        "finished_at": "2026-10-09T15:07:10.000500+00:00",
+        "request_ids": [
+          "native-B-1874-PanTransfer-2090901874--astra",
+          "native-B-1862-StoreLeftoversInBowl-2090901862--astra",
+          "native-B-1903-PackIdenticalLunches-2090901903--astra",
+          "native-B-1877-WashLettuce-2090901877--astra",
+          "native-B-1953-PackIdenticalLunches-2090901953--astra",
+          "native-B-1851-SearingMeat-2090901851--astra",
+          "native-B-1889-TurnOffStove-2090901889--astra",
+          "native-B-1959-GarnishPancake-2090901959--astra"
+        ],
+        "usage": {
+          "input_tokens": 19568,
+          "cached_input_tokens": 0,
+          "output_tokens": 1438,
+          "reasoning_tokens": 364
+        },
+        "latency_seconds": 47.758393199997954,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T150801-e95ebc699331",
+        "cli_receipt_sha256": "e0504e32fd5e7624fcd3bd5df9451b597fa24ffd28281408fddb9d30ef7ba1dc",
+        "batch_manifest_sha256": "922774c8fce7d1334e159279c45bcac51de6b8e5cec57685fec670070937a008",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:08:50.601687+00:00",
+        "finished_at": "2026-10-09T15:09:54.145703+00:00",
+        "request_ids": [
+          "native-B-1949-TurnOnMicrowave-2090901949--astra",
+          "native-B-1967-ArrangeTea-2090901967--astra",
+          "native-B-1913-PreSoakPan-2090901913--astra",
+          "native-B-1957-WeighIngredients-2090901957--astra",
+          "native-B-1950-ArrangeBreadBasket-2090901950--astra",
+          "native-B-1969-PortionHotDogs-2090901969--astra",
+          "native-B-1922-BreadSelection-2090901922--astra",
+          "native-B-1920-StackBowlsCabinet-2090901920--astra"
+        ],
+        "usage": {
+          "input_tokens": 19574,
+          "cached_input_tokens": 0,
+          "output_tokens": 2002,
+          "reasoning_tokens": 1034
+        },
+        "latency_seconds": 63.5283466999972,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T151128-99fa200fce46",
+        "cli_receipt_sha256": "27986839fddcfdde744fef4af2fa0530f0919995290a8ce57b0307900ded0541",
+        "batch_manifest_sha256": "4e8e614b4e52e87357952652614190c7851cf53bf91a3fbb0838e28da0c35648",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:12:05.916879+00:00",
+        "finished_at": "2026-10-09T15:13:04.336039+00:00",
+        "request_ids": [
+          "native-B-1980-CuttingToolSelection-2090901980--astra",
+          "native-B-1907-WeighIngredients-2090901907--astra",
+          "native-B-1917-ArrangeTea-2090901917--astra",
+          "native-B-1901-SearingMeat-2090901901--astra",
+          "native-B-1990-CoffeeSetupMug-2090901990--astra",
+          "native-B-1983-CloseBlenderLid-2090901983--astra"
+        ],
+        "usage": {
+          "input_tokens": 19273,
+          "cached_input_tokens": 0,
+          "output_tokens": 1747,
+          "reasoning_tokens": 978
+        },
+        "latency_seconds": 58.404217999996035,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T151357-91e59177571d",
+        "cli_receipt_sha256": "abcbeec39d5e041fb65edc2f06d471a6daa0fa4ea9ef8cc9b9f07cae3245d11b",
+        "batch_manifest_sha256": "e92e863956cd02581ee1828b0cc5a692d4194992c382ce064ecb8c14468b51ba",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:14:47.017673+00:00",
+        "finished_at": "2026-10-09T15:15:33.379640+00:00",
+        "request_ids": [
+          "native-B-1939-TurnOffStove-2090901939--astra",
+          "native-B-1956-MakeIceLemonade-2090901956--astra",
+          "native-B-1975-PrepareCoffee-2090901975--astra",
+          "native-B-1966-StirVegetables-2090901966--astra",
+          "native-B-1954-WashFruitColander-2090901954--astra",
+          "native-B-1988-PickPlaceDrawerToCounter-2090901988--astra",
+          "native-B-1925-PrepareCoffee-2090901925--astra",
+          "native-B-1970-StackBowlsCabinet-2090901970--astra"
+        ],
+        "usage": {
+          "input_tokens": 19555,
+          "cached_input_tokens": 0,
+          "output_tokens": 1420,
+          "reasoning_tokens": 457
+        },
+        "latency_seconds": 46.346692299994174,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T151707-5a4f22f4997b",
+        "cli_receipt_sha256": "91086c9e236428cf8a98e0a66d3d3c9209ba1f43ff1811300c73e5f98681879a",
+        "batch_manifest_sha256": "f2e35ef5cca4c25e63bd7ccdb187538de5686c617d7e2164181722bb03ecd87d",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:17:32.668693+00:00",
+        "finished_at": "2026-10-09T15:18:01.797324+00:00",
+        "request_ids": [
+          "native-B-1960-HeatKebabSandwich-2090901960--astra",
+          "native-B-2016-StirVegetables-2090902016--astra",
+          "native-B-1974-PanTransfer-2090901974--astra",
+          "native-B-2007-WeighIngredients-2090902007--astra"
+        ],
+        "usage": {
+          "input_tokens": 18460,
+          "cached_input_tokens": 0,
+          "output_tokens": 794,
+          "reasoning_tokens": 227
+        },
+        "latency_seconds": 29.114198399998713,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T151922-d8be55eb8275",
+        "cli_receipt_sha256": "6a80a4c662664dd7890a455a124b09e296d5ce48d42c840cd8189bbde2f439ba",
+        "batch_manifest_sha256": "499315c4d7b298b7060836cd1aa38413f8bf08e70fdcc4e6338070e24ab3f43e",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:20:12.924791+00:00",
+        "finished_at": "2026-10-09T15:21:09.284018+00:00",
+        "request_ids": [
+          "native-B-1964-SeparateFreezerRack-2090901964--astra",
+          "native-B-2026-CategorizeCondiments-2090902026--astra",
+          "native-B-1987-PickPlaceCounterToCabinet-2090901987--astra",
+          "native-B-2005-GetToastedBread-2090902005--astra",
+          "native-B-1955-GetToastedBread-2090901955--astra",
+          "native-B-2002-WaffleReheat-2090902002--astra",
+          "native-B-2008-RecycleBottlesByType-2090902008--astra",
+          "native-B-1972-BreadSelection-2090901972--astra"
+        ],
+        "usage": {
+          "input_tokens": 19604,
+          "cached_input_tokens": 0,
+          "output_tokens": 1788,
+          "reasoning_tokens": 732
+        },
+        "latency_seconds": 56.343583500012755,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T152244-20724cc65057",
+        "cli_receipt_sha256": "b91528512b452bf07394bd780273b3f88e3aa6d5dcb5882aa85b6f41765aec4c",
+        "batch_manifest_sha256": "adc9dd557174d120071e3e6038bd4d20e8567ae7f53dc06bdbbb4bccb05e5e11",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:23:27.798221+00:00",
+        "finished_at": "2026-10-09T15:24:13.005809+00:00",
+        "request_ids": [
+          "native-B-2039-TurnOffStove-2090902039--astra",
+          "native-B-2018-GatherTableware-2090902018--astra",
+          "native-B-2024-PanTransfer-2090902024--astra",
+          "native-B-2014-SeparateFreezerRack-2090902014--astra",
+          "native-B-2068-GatherTableware-2090902068--astra",
+          "native-B-1958-RecycleBottlesByType-2090901958--astra",
+          "native-B-1952-WaffleReheat-2090901952--astra"
+        ],
+        "usage": {
+          "input_tokens": 19650,
+          "cached_input_tokens": 0,
+          "output_tokens": 1401,
+          "reasoning_tokens": 394
+        },
+        "latency_seconds": 45.191636499992455,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T152443-d41d8a72e90a",
+        "cli_receipt_sha256": "28850de73f832e8c7543b4b23637271aa6e781cb564670e600ec2719863f8f9f",
+        "batch_manifest_sha256": "0b4be11297c3892465a2d7189300a0d314b700a6aab5b948f363f03d04cb5ad4",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:25:59.047346+00:00",
+        "finished_at": "2026-10-09T15:26:40.643390+00:00",
+        "request_ids": [
+          "native-B-2004-WashFruitColander-2090902004--astra",
+          "native-B-1993-TurnOnSinkFaucet-2090901993--astra",
+          "native-B-2010-HeatKebabSandwich-2090902010--astra",
+          "native-B-2022-BreadSelection-2090902022--astra",
+          "native-B-1976-CategorizeCondiments-2090901976--astra",
+          "native-B-1968-GatherTableware-2090901968--astra",
+          "native-B-2028-KettleBoiling-2090902028--astra",
+          "native-B-2075-PrepareCoffee-2090902075--astra"
+        ],
+        "usage": {
+          "input_tokens": 19573,
+          "cached_input_tokens": 0,
+          "output_tokens": 1392,
+          "reasoning_tokens": 368
+        },
+        "latency_seconds": 41.58069439999235,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T152711-e123ecdd810d",
+        "cli_receipt_sha256": "594258f20ffbd405b23aa0977a2d8528ec94caeac0908d43195b4225680d008c",
+        "batch_manifest_sha256": "dd5e42766cf777d580130e452bb41f6544a18d2c1f2529fc441ac7981e50ca17",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:28:02.496663+00:00",
+        "finished_at": "2026-10-09T15:28:48.676025+00:00",
+        "request_ids": [
+          "native-B-2090-CoffeeSetupMug-2090902090--astra",
+          "native-B-2052-WaffleReheat-2090902052--astra",
+          "native-B-2058-RecycleBottlesByType-2090902058--astra",
+          "native-B-2060-HeatKebabSandwich-2090902060--astra",
+          "native-B-2003-PackIdenticalLunches-2090902003--astra",
+          "native-B-2074-PanTransfer-2090902074--astra",
+          "native-B-2103-PackIdenticalLunches-2090902103--astra",
+          "native-B-2006-MakeIceLemonade-2090902006--astra"
+        ],
+        "usage": {
+          "input_tokens": 19580,
+          "cached_input_tokens": 0,
+          "output_tokens": 1536,
+          "reasoning_tokens": 516
+        },
+        "latency_seconds": 46.16324569999415,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T153023-859103e22c9c",
+        "cli_receipt_sha256": "e1cabdaf7b3d1db9eb6f87ed0b918091042c6d63414280a29e82d63ba966e5ad",
+        "batch_manifest_sha256": "4e369a929c3dd702724748de682f3a29aa4e632dbcd3fda035e125879dffe4a6",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:30:57.370674+00:00",
+        "finished_at": "2026-10-09T15:31:26.896845+00:00",
+        "request_ids": [
+          "native-B-2141-PickPlaceCounterToStove-2090902141--astra",
+          "native-B-2120-StackBowlsCabinet-2090902120--astra",
+          "native-B-2009-GarnishPancake-2090902009--astra",
+          "native-B-2019-PortionHotDogs-2090902019--astra",
+          "native-B-2069-PortionHotDogs-2090902069--astra"
+        ],
+        "usage": {
+          "input_tokens": 18878,
+          "cached_input_tokens": 0,
+          "output_tokens": 1126,
+          "reasoning_tokens": 476
+        },
+        "latency_seconds": 29.51212359999772,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T153251-db0f321341d9",
+        "cli_receipt_sha256": "217605f88ce1fb0e060e852fde8f7c89fc2edc9acc50ef2acc967fbb5c21ce48",
+        "batch_manifest_sha256": "64b0cca2311e39040d9aafd9f4d924b6adfbde937864476e089c3b3208bf072c",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:33:32.590008+00:00",
+        "finished_at": "2026-10-09T15:34:11.851518+00:00",
+        "request_ids": [
+          "native-B-2155-GetToastedBread-2090902155--astra",
+          "native-B-2089-TurnOffStove-2090902089--astra",
+          "native-B-2080-CuttingToolSelection-2090902080--astra",
+          "native-B-2173-LoadDishwasher-2090902173--astra",
+          "native-B-2053-PackIdenticalLunches-2090902053--astra",
+          "native-B-2072-BreadSelection-2090902072--astra"
+        ],
+        "usage": {
+          "input_tokens": 19300,
+          "cached_input_tokens": 0,
+          "output_tokens": 1494,
+          "reasoning_tokens": 729
+        },
+        "latency_seconds": 39.24639000000025,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T153539-f357c8fa7a74",
+        "cli_receipt_sha256": "0cb80590d7706bc5db8da9079af04d7aa9a573acb38aa5a76c326bf79a099903",
+        "batch_manifest_sha256": "e9cc68c3f2c255bdf63e83d3abb3364fa886e97c73796ad7834cf52d0c43de79",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:36:22.237178+00:00",
+        "finished_at": "2026-10-09T15:37:05.218394+00:00",
+        "request_ids": [
+          "native-B-2047-SlideDishwasherRack-2090902047--astra",
+          "native-B-2110-HeatKebabSandwich-2090902110--astra",
+          "native-B-2056-MakeIceLemonade-2090902056--astra",
+          "native-B-2118-GatherTableware-2090902118--astra",
+          "native-B-2189-TurnOffStove-2090902189--astra",
+          "native-B-2015-SetUpCuttingStation-2090902015--astra",
+          "native-B-2025-PrepareCoffee-2090902025--astra"
+        ],
+        "usage": {
+          "input_tokens": 19645,
+          "cached_input_tokens": 0,
+          "output_tokens": 1495,
+          "reasoning_tokens": 450
+        },
+        "latency_seconds": 42.96395789999224,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T153828-1fb6adac5e95",
+        "cli_receipt_sha256": "8696100b31a719d641981e84237dd4882eb379985f37dd98709b0139c6b128d6",
+        "batch_manifest_sha256": "a6515dee65c2e093c9a2662cb7e79d08afee926d493baa8b9ed49c772bdcd703",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:39:18.130616+00:00",
+        "finished_at": "2026-10-09T15:40:07.469614+00:00",
+        "request_ids": [
+          "native-B-2114-SeparateFreezerRack-2090902114--astra",
+          "native-B-2101-SearingMeat-2090902101--astra",
+          "native-B-2122-BreadSelection-2090902122--astra",
+          "native-B-2104-WashFruitColander-2090902104--astra",
+          "native-B-2076-CategorizeCondiments-2090902076--astra",
+          "native-B-2126-CategorizeCondiments-2090902126--astra",
+          "native-B-2116-StirVegetables-2090902116--astra",
+          "native-B-2149-TurnOnMicrowave-2090902149--astra"
+        ],
+        "usage": {
+          "input_tokens": 19593,
+          "cached_input_tokens": 0,
+          "output_tokens": 1578,
+          "reasoning_tokens": 516
+        },
+        "latency_seconds": 49.32364499999676,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T154142-8873d0893d43",
+        "cli_receipt_sha256": "10a086ef5a9e0e789a0faa25c10bd5f345199964a42a9c70f3268a5f23d88c41",
+        "batch_manifest_sha256": "ceca08d8901a5bc69ad3a687fe3419f53bd546edcdf0a1b8a30fd353093a0f2e",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:42:25.583380+00:00",
+        "finished_at": "2026-10-09T15:43:13.274978+00:00",
+        "request_ids": [
+          "native-B-2064-SeparateFreezerRack-2090902064--astra",
+          "native-B-2176-CategorizeCondiments-2090902176--astra",
+          "native-B-2160-HeatKebabSandwich-2090902160--astra",
+          "native-B-2108-RecycleBottlesByType-2090902108--astra",
+          "native-B-2179-RinseSinkBasin-2090902179--astra",
+          "native-B-2152-WaffleReheat-2090902152--astra",
+          "native-B-2158-RecycleBottlesByType-2090902158--astra"
+        ],
+        "usage": {
+          "input_tokens": 19684,
+          "cached_input_tokens": 0,
+          "output_tokens": 1468,
+          "reasoning_tokens": 459
+        },
+        "latency_seconds": 47.67474429999129,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T154406-04a9e002b27f",
+        "cli_receipt_sha256": "d9d0e61eafd59a30aa86dedd03939276c99db3dfae13da00c700ae7cd6ebb190",
+        "batch_manifest_sha256": "e7790a4549cea048fb276e1cef37993e80ce3f3c856cc1f55383c756ce152cab",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:44:55.911252+00:00",
+        "finished_at": "2026-10-09T15:45:45.243899+00:00",
+        "request_ids": [
+          "native-B-2227-WashLettuce-2090902227--astra",
+          "native-B-2201-SearingMeat-2090902201--astra",
+          "native-B-2124-PanTransfer-2090902124--astra",
+          "native-B-2219-PortionHotDogs-2090902219--astra",
+          "native-B-2289-TurnOffStove-2090902289--astra",
+          "native-B-2115-SetUpCuttingStation-2090902115--astra",
+          "native-B-2111-DeliverStraw-2090902111--astra",
+          "native-B-2275-PrepareCoffee-2090902275--astra"
+        ],
+        "usage": {
+          "input_tokens": 19546,
+          "cached_input_tokens": 0,
+          "output_tokens": 1500,
+          "reasoning_tokens": 516
+        },
+        "latency_seconds": 49.315061399989645,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T154718-20f3d8182452",
+        "cli_receipt_sha256": "c976f5558890e83f71728158b7ca5a2d53f20a5bfad28932a0100166fea76b26",
+        "batch_manifest_sha256": "9edccb384b7044cfa98ccab2efaf8f7e670400fc298c04efa652eb0792fa6f52",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:48:03.301151+00:00",
+        "finished_at": "2026-10-09T15:48:46.368145+00:00",
+        "request_ids": [
+          "native-B-2107-WeighIngredients-2090902107--astra",
+          "native-B-2197-SlideDishwasherRack-2090902197--astra",
+          "native-B-2156-MakeIceLemonade-2090902156--astra",
+          "native-B-2264-SeparateFreezerRack-2090902264--astra",
+          "native-B-2102-WaffleReheat-2090902102--astra",
+          "native-B-2130-CuttingToolSelection-2090902130--astra",
+          "native-B-2157-WeighIngredients-2090902157--astra"
+        ],
+        "usage": {
+          "input_tokens": 19648,
+          "cached_input_tokens": 0,
+          "output_tokens": 1406,
+          "reasoning_tokens": 516
+        },
+        "latency_seconds": 43.05136929999571,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T155000-3c7bcf524daf",
+        "cli_receipt_sha256": "32581e6a035abebbbdbfcbaced0ba1c89a25dd83e6c433a301f4706fa3ab6d8e",
+        "batch_manifest_sha256": "9431aa5f5ecf0b3e8f1738b8ff0f1bd365b2ed5646cfb5eaf648630b0e3f4999",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:50:50.004233+00:00",
+        "finished_at": "2026-10-09T15:51:35.532728+00:00",
+        "request_ids": [
+          "native-B-2235-PickPlaceSinkToCounter-2090902235--astra",
+          "native-B-2217-ArrangeTea-2090902217--astra",
+          "native-B-2252-WaffleReheat-2090902252--astra",
+          "native-B-2119-PortionHotDogs-2090902119--astra",
+          "native-B-2175-PrepareCoffee-2090902175--astra",
+          "native-B-2208-RecycleBottlesByType-2090902208--astra",
+          "native-B-2150-ArrangeBreadBasket-2090902150--astra",
+          "native-B-2242-PickPlaceToasterToCounter-2090902242--astra"
+        ],
+        "usage": {
+          "input_tokens": 19561,
+          "cached_input_tokens": 0,
+          "output_tokens": 1440,
+          "reasoning_tokens": 498
+        },
+        "latency_seconds": 45.51260290000937,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T155253-c9e73b2103ff",
+        "cli_receipt_sha256": "f37aaeb13a62d116123351e48fa1811ea0aec2a5f19d2383f28556ff0467a3c0",
+        "batch_manifest_sha256": "6a086472d5fd6b21349fc34b51fcb140e41079816293a88c40b1429c8837e778",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:53:43.632310+00:00",
+        "finished_at": "2026-10-09T15:54:33.992513+00:00",
+        "request_ids": [
+          "native-B-2214-SeparateFreezerRack-2090902214--astra",
+          "native-B-2223-LoadDishwasher-2090902223--astra",
+          "native-B-2249-TurnOnMicrowave-2090902249--astra",
+          "native-B-2224-PanTransfer-2090902224--astra",
+          "native-B-2202-WaffleReheat-2090902202--astra",
+          "native-B-2255-GetToastedBread-2090902255--astra",
+          "native-B-2266-StirVegetables-2090902266--astra",
+          "native-B-2153-PackIdenticalLunches-2090902153--astra"
+        ],
+        "usage": {
+          "input_tokens": 19567,
+          "cached_input_tokens": 0,
+          "output_tokens": 1611,
+          "reasoning_tokens": 471
+        },
+        "latency_seconds": 50.34448450000491,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T155604-d4e95d567fb6",
+        "cli_receipt_sha256": "4624b33d7a8427949614a03defe916736f3f4ec0699ebdfbd6d31b8e7b488095",
+        "batch_manifest_sha256": "e71d65345ee7b025ccb45118c9d4c3743d40cfe3c3c31ae1345ef36d6969059d",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T15:56:54.034831+00:00",
+        "finished_at": "2026-10-09T15:57:51.220190+00:00",
+        "request_ids": [
+          "native-B-2276-CategorizeCondiments-2090902276--astra",
+          "native-B-2168-GatherTableware-2090902168--astra",
+          "native-B-2181-ScrubCuttingBoard-2090902181--astra",
+          "native-B-2333-CloseBlenderLid-2090902333--astra",
+          "native-B-2290-CoffeeSetupMug-2090902290--astra",
+          "native-B-2261-DeliverStraw-2090902261--astra",
+          "native-B-2269-PortionHotDogs-2090902269--astra",
+          "native-B-2323-LoadDishwasher-2090902323--astra"
+        ],
+        "usage": {
+          "input_tokens": 19524,
+          "cached_input_tokens": 0,
+          "output_tokens": 1746,
+          "reasoning_tokens": 679
+        },
+        "latency_seconds": 57.1680606000009,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T155916-66bb3c4ff69e",
+        "cli_receipt_sha256": "6c6f2d2ed3d113ffa958c3bc754d0614580f5a21de4a35a5db576edbc6dbf2c5",
+        "batch_manifest_sha256": "0e0c736cc6e36c7b45feb489018ef6a689e0a8dbdc2ee7f21ab5de1c2f2c24d4",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T16:00:05.767808+00:00",
+        "finished_at": "2026-10-09T16:00:40.601979+00:00",
+        "request_ids": [
+          "native-B-2304-WashFruitColander-2090902304--astra",
+          "native-B-2314-SeparateFreezerRack-2090902314--astra",
+          "native-B-2260-HeatKebabSandwich-2090902260--astra",
+          "native-B-2279-RinseSinkBasin-2090902279--astra",
+          "native-B-2278-KettleBoiling-2090902278--astra",
+          "native-B-2210-HeatKebabSandwich-2090902210--astra",
+          "native-B-2272-BreadSelection-2090902272--astra",
+          "native-B-2239-TurnOffStove-2090902239--astra"
+        ],
+        "usage": {
+          "input_tokens": 19632,
+          "cached_input_tokens": 0,
+          "output_tokens": 1305,
+          "reasoning_tokens": 315
+        },
+        "latency_seconds": 34.81683159999375,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T160218-c3250d365367",
+        "cli_receipt_sha256": "73229329552524ca0a9ed7646b8086fec2d6d4fa4160f88313bfa6e75af06918",
+        "batch_manifest_sha256": "10c4414f306c7460c7398a39d31651b59d0a3e91071ce43e97143d858b421b03",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T16:02:44.379147+00:00",
+        "finished_at": "2026-10-09T16:03:31.867761+00:00",
+        "request_ids": [
+          "native-B-2203-PackIdenticalLunches-2090902203--astra",
+          "native-B-2200-ArrangeBreadBasket-2090902200--astra",
+          "native-B-2357-WeighIngredients-2090902357--astra",
+          "native-B-2305-GetToastedBread-2090902305--astra"
+        ],
+        "usage": {
+          "input_tokens": 18440,
+          "cached_input_tokens": 0,
+          "output_tokens": 1396,
+          "reasoning_tokens": 852
+        },
+        "latency_seconds": 47.474476399991545,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T160452-791da8987631",
+        "cli_receipt_sha256": "5ef98e89f1df3756a37371432d6efd4453890fbfa59811445949a3cfaa73e13b",
+        "batch_manifest_sha256": "000ebf2e58930687d124e5ec819c17f1b20332762bdc61cecb1d01ac6094d90d",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T16:05:31.398336+00:00",
+        "finished_at": "2026-10-09T16:06:12.193844+00:00",
+        "request_ids": [
+          "native-B-2222-BreadSelection-2090902222--astra",
+          "native-B-2339-TurnOffStove-2090902339--astra",
+          "native-B-2226-CategorizeCondiments-2090902226--astra",
+          "native-B-2315-SetUpCuttingStation-2090902315--astra",
+          "native-B-2218-GatherTableware-2090902218--astra",
+          "native-B-2324-PanTransfer-2090902324--astra"
+        ],
+        "usage": {
+          "input_tokens": 19284,
+          "cached_input_tokens": 0,
+          "output_tokens": 1102,
+          "reasoning_tokens": 347
+        },
+        "latency_seconds": 40.7799543000001,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T160637-a1eb5a630474",
+        "cli_receipt_sha256": "89784a5938362f3c3123e00feb2e9a7bdf09ad2319293375c25e020f0981acb0",
+        "batch_manifest_sha256": "80f8c3c3a40c876428b0f37aaf070e921f10ceeab07bcf44c353d419dfef69ce",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T16:07:27.759780+00:00",
+        "finished_at": "2026-10-09T16:08:14.075280+00:00",
+        "request_ids": [
+          "native-B-2301-SearingMeat-2090902301--astra",
+          "native-B-2349-TurnOnMicrowave-2090902349--astra",
+          "native-B-2256-MakeIceLemonade-2090902256--astra",
+          "native-B-2376-CategorizeCondiments-2090902376--astra",
+          "native-B-2367-ArrangeTea-2090902367--astra",
+          "native-B-2302-WaffleReheat-2090902302--astra",
+          "native-B-2308-RecycleBottlesByType-2090902308--astra",
+          "native-B-2360-HeatKebabSandwich-2090902360--astra"
+        ],
+        "usage": {
+          "input_tokens": 19599,
+          "cached_input_tokens": 0,
+          "output_tokens": 1504,
+          "reasoning_tokens": 516
+        },
+        "latency_seconds": 46.297652100009145,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T160845-236400185fd5",
+        "cli_receipt_sha256": "60e828565c788be432d6f416fd401e47375ebe36233db17637bfba006fec1141",
+        "batch_manifest_sha256": "541c614f165084a2edcf80116cf74691467629e5c47850a80c51ae131f966ac7",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T16:09:35.054560+00:00",
+        "finished_at": "2026-10-09T16:10:25.190346+00:00",
+        "request_ids": [
+          "native-B-2310-HeatKebabSandwich-2090902310--astra",
+          "native-B-2317-ArrangeTea-2090902317--astra",
+          "native-B-2368-GatherTableware-2090902368--astra",
+          "native-B-2268-GatherTableware-2090902268--astra",
+          "native-B-2283-CloseBlenderLid-2090902283--astra",
+          "native-B-2329-RinseSinkBasin-2090902329--astra",
+          "native-B-2277-WashLettuce-2090902277--astra",
+          "native-B-2299-TurnOnMicrowave-2090902299--astra"
+        ],
+        "usage": {
+          "input_tokens": 19519,
+          "cached_input_tokens": 0,
+          "output_tokens": 1531,
+          "reasoning_tokens": 577
+        },
+        "latency_seconds": 50.11920449999161,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T161158-936640cd862b",
+        "cli_receipt_sha256": "f46f3e2dfa91ade17d3527f49f508d3a922a554c02416ee39428508e106a8b10",
+        "batch_manifest_sha256": "b7ef9c81b64f31e29d27844f05e0c0b94a6cf8401abe9213b25113b30a0fed8e",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T16:12:36.330626+00:00",
+        "finished_at": "2026-10-09T16:13:36.328341+00:00",
+        "request_ids": [
+          "native-B-2274-PanTransfer-2090902274--astra",
+          "native-B-2318-GatherTableware-2090902318--astra",
+          "native-B-2408-RecycleBottlesByType-2090902408--astra",
+          "native-B-2362-StoreLeftoversInBowl-2090902362--astra",
+          "native-B-2251-SearingMeat-2090902251--astra",
+          "native-B-2364-SeparateFreezerRack-2090902364--astra"
+        ],
+        "usage": {
+          "input_tokens": 19326,
+          "cached_input_tokens": 0,
+          "output_tokens": 1754,
+          "reasoning_tokens": 1020
+        },
+        "latency_seconds": 59.98216980000143,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T161503-c6de63140ad6",
+        "cli_receipt_sha256": "e3320e20c2b3bea61dd8a3bbfe1c7f3473ba27e475f47c2a2379edd66b6fbb8d",
+        "batch_manifest_sha256": "e37103743a3f1908bfaed1d7e0568bb70e96ac44df321fa507410c72497a43d9",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T16:15:43.436594+00:00",
+        "finished_at": "2026-10-09T16:16:09.706536+00:00",
+        "request_ids": [
+          "native-B-2372-BreadSelection-2090902372--astra",
+          "native-B-2428-KettleBoiling-2090902428--astra",
+          "native-B-2417-ArrangeTea-2090902417--astra",
+          "native-B-2433-CloseBlenderLid-2090902433--astra",
+          "native-B-2350-ArrangeBreadBasket-2090902350--astra",
+          "native-B-2497-SlideDishwasherRack-2090902497--astra"
+        ],
+        "usage": {
+          "input_tokens": 19307,
+          "cached_input_tokens": 0,
+          "output_tokens": 950,
+          "reasoning_tokens": 206
+        },
+        "latency_seconds": 26.255037900002208,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T161708-c1dabff3ae00",
+        "cli_receipt_sha256": "527a44c17d13bb88e79bd6710348b027d765c2eee890d0f983ab8c866a2372f0",
+        "batch_manifest_sha256": "bebbb4d2d50b38a69fd90c5d62cfb2c8047cf3ea765c0d7e7e161e3e2d2c045e",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T16:17:58.844647+00:00",
+        "finished_at": "2026-10-09T16:18:43.514402+00:00",
+        "request_ids": [
+          "native-B-2418-GatherTableware-2090902418--astra",
+          "native-B-2410-HeatKebabSandwich-2090902410--astra",
+          "native-B-2330-CuttingToolSelection-2090902330--astra",
+          "native-B-2461-DeliverStraw-2090902461--astra",
+          "native-B-2311-DeliverStraw-2090902311--astra",
+          "native-B-2319-PortionHotDogs-2090902319--astra",
+          "native-B-2326-CategorizeCondiments-2090902326--astra",
+          "native-B-2340-CoffeeSetupMug-2090902340--astra"
+        ],
+        "usage": {
+          "input_tokens": 19518,
+          "cached_input_tokens": 0,
+          "output_tokens": 1470,
+          "reasoning_tokens": 516
+        },
+        "latency_seconds": 44.652911800003494,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T161914-4fe45148ce1d",
+        "cli_receipt_sha256": "224df6c87b50143171188add6980c379bfbcee21273739fd54cc87cfe00653ae",
+        "batch_manifest_sha256": "674688f64e64f365c63655f3bcebf75cd2ec495f057f8e198a1deb73c3b287df",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T16:20:03.960070+00:00",
+        "finished_at": "2026-10-09T16:20:41.372946+00:00",
+        "request_ids": [
+          "native-B-2307-WeighIngredients-2090902307--astra",
+          "native-B-2374-PanTransfer-2090902374--astra",
+          "native-B-2455-GetToastedBread-2090902455--astra",
+          "native-B-2499-TurnOnMicrowave-2090902499--astra",
+          "native-B-2303-PackIdenticalLunches-2090902303--astra",
+          "native-B-2316-StirVegetables-2090902316--astra",
+          "native-B-2440-CoffeeSetupMug-2090902440--astra",
+          "native-B-2475-PrepareCoffee-2090902475--astra"
+        ],
+        "usage": {
+          "input_tokens": 19531,
+          "cached_input_tokens": 0,
+          "output_tokens": 1399,
+          "reasoning_tokens": 346
+        },
+        "latency_seconds": 37.39569200000551,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T162112-41eabe0d775f",
+        "cli_receipt_sha256": "75a571c5b0f5fdd20a54ba654980b6806d2cf6b0d4e942a8779062d2aaf87c78",
+        "batch_manifest_sha256": "526037ee37e5313c3a81d048dca963b6071ea4f00eb0d0337eccb43b7715607b",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T16:22:04.918455+00:00",
+        "finished_at": "2026-10-09T16:22:49.066177+00:00",
+        "request_ids": [
+          "native-B-2403-PackIdenticalLunches-2090902403--astra",
+          "native-B-2465-SetUpCuttingStation-2090902465--astra",
+          "native-B-2422-BreadSelection-2090902422--astra",
+          "native-B-2414-SeparateFreezerRack-2090902414--astra",
+          "native-B-2361-DeliverStraw-2090902361--astra",
+          "native-B-2369-PortionHotDogs-2090902369--astra",
+          "native-B-2441-PickPlaceCounterToStove-2090902441--astra",
+          "native-B-2383-CloseBlenderLid-2090902383--astra"
+        ],
+        "usage": {
+          "input_tokens": 19593,
+          "cached_input_tokens": 0,
+          "output_tokens": 1437,
+          "reasoning_tokens": 487
+        },
+        "latency_seconds": 44.130453599995235,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T162415-a7295f77fbb8",
+        "cli_receipt_sha256": "181cf59107efaf28a7a7167c39fc07c040a73a94343669eed21ad6f93347cd43",
+        "batch_manifest_sha256": "deda6bc21f9f1378a7902275f745157e41216370de43dac8d62152168eb07e4f",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T16:25:04.023557+00:00",
+        "finished_at": "2026-10-09T16:25:47.863076+00:00",
+        "request_ids": [
+          "native-B-2415-SetUpCuttingStation-2090902415--astra",
+          "native-B-2405-GetToastedBread-2090902405--astra",
+          "native-B-2424-PanTransfer-2090902424--astra",
+          "native-B-2458-RecycleBottlesByType-2090902458--astra",
+          "native-B-2351-SearingMeat-2090902351--astra",
+          "native-B-2468-GatherTableware-2090902468--astra",
+          "native-B-2480-CuttingToolSelection-2090902480--astra",
+          "native-B-2375-PrepareCoffee-2090902375--astra"
+        ],
+        "usage": {
+          "input_tokens": 19541,
+          "cached_input_tokens": 0,
+          "output_tokens": 1461,
+          "reasoning_tokens": 436
+        },
+        "latency_seconds": 43.82195749999664,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T162721-345e01d78713",
+        "cli_receipt_sha256": "51fb983f6afbcf20d8fe96e171854aa67d95473e54a91301cb0eff5006ec6c9d",
+        "batch_manifest_sha256": "b55d1bb3641b3dbdd9aa4c3a3df8c7658c6fb8a5e047dc5ad59e4610ef474fcc",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T16:28:00.403144+00:00",
+        "finished_at": "2026-10-09T16:28:35.994820+00:00",
+        "request_ids": [
+          "native-B-2411-DeliverStraw-2090902411--astra",
+          "native-B-2366-StirVegetables-2090902366--astra",
+          "native-B-2481-ScrubCuttingBoard-2090902481--astra",
+          "native-B-2439-TurnOffStove-2090902439--astra",
+          "native-B-2416-StirVegetables-2090902416--astra",
+          "native-B-2459-GarnishPancake-2090902459--astra"
+        ],
+        "usage": {
+          "input_tokens": 19302,
+          "cached_input_tokens": 0,
+          "output_tokens": 1144,
+          "reasoning_tokens": 305
+        },
+        "latency_seconds": 35.577296799994656,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T163002-b5d096518b1c",
+        "cli_receipt_sha256": "51e44d963e9fc9498a88b4a8021537fe84218452ce810e4d2f3bf41eb05faa37",
+        "batch_manifest_sha256": "87be2ca801352d650d52f6c300eecf51b00c9177c11eb1ee8dedf4cb5ee3444f",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T16:30:45.685090+00:00",
+        "finished_at": "2026-10-09T16:31:40.859007+00:00",
+        "request_ids": [
+          "native-B-2406-MakeIceLemonade-2090902406--astra",
+          "native-B-2457-WeighIngredients-2090902457--astra",
+          "native-B-2419-PortionHotDogs-2090902419--astra",
+          "native-B-2467-ArrangeTea-2090902467--astra",
+          "native-B-2476-CategorizeCondiments-2090902476--astra",
+          "native-B-2444-CloseToasterOvenDoor-2090902444--astra",
+          "native-B-2425-PrepareCoffee-2090902425--astra"
+        ],
+        "usage": {
+          "input_tokens": 19612,
+          "cached_input_tokens": 0,
+          "output_tokens": 1710,
+          "reasoning_tokens": 816
+        },
+        "latency_seconds": 55.1588347999932,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T163413-305aaa851aac",
+        "cli_receipt_sha256": "2cb40677157c84423206af96048c8b111873badb48d49ce19fcb479cbaf70d93",
+        "batch_manifest_sha256": "15b1f782b0b04bddf3a0fdf8efb70b336abfcc233f02a9a9b522278cb96a8ca1",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T16:34:20.192469+00:00",
+        "finished_at": "2026-10-09T16:34:35.724396+00:00",
+        "request_ids": [
+          "native-B-2483-CloseBlenderLid-2090902483--astra"
+        ],
+        "usage": {
+          "input_tokens": 17669,
+          "cached_input_tokens": 0,
+          "output_tokens": 325,
+          "reasoning_tokens": 183
+        },
+        "latency_seconds": 15.516046999997343,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      },
+      {
+        "scope": "primary",
+        "batch_id": "20261009T163546-159eb6373698",
+        "cli_receipt_sha256": "926806a5d9cf28f5e7934a508212bacc0e04cd9b9a62669cf3d477c22b8f6224",
+        "batch_manifest_sha256": "1f4c338d0fccf530dbc712aff8b4214a7c1476cd6d0b91342ca65fe0c3375a5d",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_continuation_v2_launch2"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T16:35:59.364292+00:00",
+        "finished_at": "2026-10-09T16:36:22.862894+00:00",
+        "request_ids": [
+          "native-B-2460-HeatKebabSandwich-2090902460--astra",
+          "native-B-2472-BreadSelection-2090902472--astra"
+        ],
+        "usage": {
+          "input_tokens": 17634,
+          "cached_input_tokens": 0,
+          "output_tokens": 611,
+          "reasoning_tokens": 248
+        },
+        "latency_seconds": 23.4840392999904,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      }
+    ],
+    "summary": {
+      "unique_cli_calls": 135,
+      "ok_calls": 134,
+      "error_calls": 1,
+      "unknown_status_calls": 0,
+      "calls_with_verified_applied_case": null,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 2592713,
+          "calls_with_counter": 134,
+          "calls_missing_counter": 1,
+          "complete_total": null
+        },
+        "cached_input_tokens": {
+          "known_sum": 0,
+          "calls_with_counter": 134,
+          "calls_missing_counter": 1,
+          "complete_total": null
+        },
+        "output_tokens": {
+          "known_sum": 195237,
+          "calls_with_counter": 134,
+          "calls_missing_counter": 1,
+          "complete_total": null
+        },
+        "reasoning_tokens": {
+          "known_sum": 75511,
+          "calls_with_counter": 134,
+          "calls_missing_counter": 1,
+          "complete_total": null
+        }
+      },
+      "latency_seconds": {
+        "known_calls": 135,
+        "missing_calls": 0,
+        "sum": 6186.438140499937,
+        "mean": 45.825467707406936,
+        "median": 46.15696479999315,
+        "minimum": 2.334180500001821,
+        "maximum": 77.35145840000041
+      },
+      "cost_usd": null
+    },
+    "request_receipt_references_checked": 929,
+    "nonexecuted_batches": []
+  },
+  "pilot": {
+    "calls": [
+      {
+        "scope": "pilot_development",
+        "batch_id": "20261009T093316-c82b642a9391",
+        "cli_receipt_sha256": "d854e22b3b559ea1099d7328a3782e67e6a39da84a9677e34285f0f7459e9614",
+        "batch_manifest_sha256": "9367a1e0246f66f1a3c479ad511d15270767492cd75343a160204a48ef9c9f6b",
+        "source_directories": [
+          "D:\\codex\\2026-10-08\\new-chat\\work\\astra_rescue_20261009\\broker_state_pilot_v1"
+        ],
+        "status": "ok",
+        "error_kind": null,
+        "started_at": "2026-10-09T09:33:40.832707+00:00",
+        "finished_at": "2026-10-09T09:34:05.195249+00:00",
+        "request_ids": [
+          "native-B-0345-NavigateKitchen-2090900345--astra",
+          "native-B-0249-TurnOnMicrowave-2090900249--astra",
+          "native-B-0048-TurnOnElectricKettle-2090900048--astra",
+          "native-B-0097-SlideDishwasherRack-2090900097--astra"
+        ],
+        "usage": {
+          "input_tokens": 19071,
+          "cached_input_tokens": 0,
+          "output_tokens": 629,
+          "reasoning_tokens": 137
+        },
+        "latency_seconds": 24.349005099997157,
+        "cost_usd": null,
+        "verified_applied_case_count": null
+      }
+    ],
+    "summary": {
+      "unique_cli_calls": 1,
+      "ok_calls": 1,
+      "error_calls": 0,
+      "unknown_status_calls": 0,
+      "calls_with_verified_applied_case": null,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 19071,
+          "calls_with_counter": 1,
+          "calls_missing_counter": 0,
+          "complete_total": 19071
+        },
+        "cached_input_tokens": {
+          "known_sum": 0,
+          "calls_with_counter": 1,
+          "calls_missing_counter": 0,
+          "complete_total": 0
+        },
+        "output_tokens": {
+          "known_sum": 629,
+          "calls_with_counter": 1,
+          "calls_missing_counter": 0,
+          "complete_total": 629
+        },
+        "reasoning_tokens": {
+          "known_sum": 137,
+          "calls_with_counter": 1,
+          "calls_missing_counter": 0,
+          "complete_total": 137
+        }
+      },
+      "latency_seconds": {
+        "known_calls": 1,
+        "missing_calls": 0,
+        "sum": 24.349005099997157,
+        "mean": 24.349005099997157,
+        "median": 24.349005099997157,
+        "minimum": 24.349005099997157,
+        "maximum": 24.349005099997157
+      },
+      "cost_usd": null
+    },
+    "request_receipt_references_checked": 4,
+    "nonexecuted_batches": []
+  },
+  "classification_sha256": null,
+  "cost_usd": null,
+  "read_only_sources": true,
+  "publicly_uploaded": false,
+  "notes": [
+    "CLI invocations deduplicated by receipt SHA or batch identity; per-request references never multiply usage.",
+    "All evidenced CLI invocations count, including quota errors and responses not applied to a valid matched case.",
+    "Missing token counters stay unknown; known_sum is a lower bound, not a complete total.",
+    "Latency is measured once per CLI invocation, not per request, queue delay or full rollout.",
+    "Input/cache/output/reasoning counters are kept separate; potentially overlapping counters are not added together.",
+    "No API dollar cost is inferred for authenticated CLI quota."
+  ],
+  "provisional": false,
+  "broker_observation": {
+    "inactive": true,
+    "usage_provisional": false,
+    "checked_utc": "2026-10-09T16:42:32.730906+00:00"
+  }
+}

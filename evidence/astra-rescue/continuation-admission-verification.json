@@ -1,0 +1,10 @@
+{
+  "observed_utc": "2026-10-09T10:59:16.869494+00:00",
+  "config_sha256": "7a7ee33a82a4af4f65d19bb62e1c5ec892b0cd2409d77f0ad17105cddd998cd9",
+  "warmup_passed": true,
+  "warmup_clients": 72,
+  "keepalive_passed": true,
+  "keepalive_models": 12,
+  "duration_seconds": 360,
+  "all_service_receipts_passed": true
+}
