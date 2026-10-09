@@ -1,0 +1,331 @@
+{
+  "schema": "originx_astra_offline_case_analysis_v1",
+  "date": "2026-10-09",
+  "analysis_model": "gpt-6-astra",
+  "model_identity_basis": "Orchestrator selected this analysis subagent as gpt-6-astra; runtime weights are not independently inspected.",
+  "actual_tool_use": [
+    "Offline PowerShell and Python standard-library reads of existing JSON and tar.gz; rg search of local evidence and outputs",
+    "No GPU launch, training, rollout, network lookup, robot control, or external inference API call from the analysis script"
+  ],
+  "status": "completed_offline_analysis_only",
+  "benchmark_successes_unchanged": 1496,
+  "benchmark_episodes_unchanged": 2500,
+  "confirmed_astra_rescue_records_found": 0,
+  "astra_rescue_count": null,
+  "retests_executed": 0,
+  "cause_diagnoses_confirmed": 0,
+  "archive": {
+    "path": "outputs\\RoboCasa_逐回合评测凭据.tar.gz",
+    "sha256": "4455049b4eae28214430b702ff20c9f47783dbe5c6966bff1ebe46c7e689ab18",
+    "members": 10048,
+    "extensions": {
+      ".json": 10048
+    },
+    "astra_or_rescue_text_matches": []
+  },
+  "search_scope": [
+    "work/robocasa365-model/evidence text files",
+    "outputs JSON/Markdown/log files before this analysis output",
+    "all 10048 JSON archive members"
+  ],
+  "record_search_result": "No actual Astra intervention followed by verified success found in searched evidence. Existing Astra mentions in draft and research-route files describe future work. Absence in this scope does not establish zero rescues in all possible external records.",
+  "limits": [
+    "No saved RGB images, video, per-step action/state trajectory, or subgoal timeline in the archive. Initial RGB/proprioception/physics values are hashes, not observations recoverable from them.",
+    "Readback guard failure=null is not proof of no graphics anomalies: after_draw:1281 counters are retained. These records do not attribute policy failure to rendering.",
+    "Cases are selected diagnostic examples, not representative sampling or causal proof."
+  ],
+  "frozen_model_retest_protocol": [
+    "Do not execute now. Preserve original report and all 2500 results unchanged.",
+    "Freeze and verify original base/adapter/branch identities, evaluation config, source, native reset, original env/policy seeds, split, horizons and initial scene fingerprints. First replay the unassisted baseline with real timestamped images and actions recorded; if fingerprints or outcomes differ, report replay mismatch.",
+    "Only after baseline observation supports a candidate hypothesis, implement and freeze an explicit allowed-observation trigger and bounded instruction interface; keep OriginX weights fixed. Archive Astra model/version, complete inputs/outputs, interventions and timing. This creates a new assisted system.",
+    "Use diagnostic replays only for method development. Evaluate the frozen assisted system on a fresh held-out manifest, with no intervention, matched-budget replanning and deterministic recovery controls; same total step/time budget. Apply trigger to every planned episode, not an oracle failure list.",
+    "Report paired success changes, regressions on baseline successes, rescue attempts/successes, full denominator, latency/calls/tokens and uncertainty. A rescue requires baseline failure plus assisted success under the declared protocol. Do not replace old failures in the 1496/2500 benchmark."
+  ],
+  "cases": [
+    {
+      "case_id": "native-B-0133-CloseBlenderLid-2090900133",
+      "original_job": {
+        "id": "native-B-0133-CloseBlenderLid-2090900133",
+        "assignment_index": 133,
+        "arm": "B",
+        "task": "CloseBlenderLid",
+        "env_seed": 2090900133,
+        "policy_seed": 2090900133,
+        "split": "pretrain",
+        "horizon": 900,
+        "pair_index": 133,
+        "pair_id": "official-B2000-0133"
+      },
+      "stats": {
+        "env_name": "CloseBlenderLid",
+        "split": "pretrain",
+        "num_episodes": 1,
+        "successes": 0,
+        "success_rate": 0.0,
+        "horizon": 900,
+        "episodes": [
+          {
+            "episode": 0,
+            "global_episode_index": 0,
+            "seed": 2090900133,
+            "success": false,
+            "steps": 900
+          }
+        ]
+      },
+      "task_aggregate": {
+        "task": "CloseBlenderLid",
+        "stratum": "atomic_seen",
+        "horizon": 900,
+        "episodes": 50,
+        "successes": 18,
+        "success_rate": 0.36
+      },
+      "initial_scene": {
+        "rgb": {
+          "video.robot0_agentview_left": "d59784264b22b564b9a72227f5e1c5b907080a2e8691f2828a388440bf284a75",
+          "video.robot0_agentview_right": "7271cbd5a13f47da359799e64471d007709afee9854a82d2726034fac75e42b4",
+          "video.robot0_eye_in_hand": "2ad3d82733abc1339be37e54a4a9c0cd49fdaadf670e2ff50a890abb3b6ed631"
+        },
+        "proprioception": "cabf2097ca1e0dd9adcf45ab8f033e832773fe04a8bc4b1f081829eac0b45650",
+        "physics_state": "e2331295e4526a8f35b0ce8890cac3afc5d0b706c774a8840d7a3851536ec582",
+        "instruction": "Close the lid blender by securely placing the lid on top.",
+        "layout_id": 58,
+        "style_id": 55,
+        "xml_sha256": "bf4bc8b4cb846367cc1bd6c102a052be4d0aafd676fa93f517b94b4cca59bfad"
+      },
+      "native_reset_before": {
+        "native_reset": true,
+        "source_path": "/ephemeral/qinzhen/robocasa-xr1-20261003/code/robocasa/robocasa/models/fixtures/counter.py",
+        "source_sha256": "77f992d01aa1ae5f21ed7f170d0aab9c303c32148f4b427651c04912be8ce68a",
+        "method_source_sha256": "c87d0353b3605b40e85c061bec6c1311a63c761c59197b4409a02e7045539de2",
+        "method_code_filename": "/ephemeral/qinzhen/robocasa-xr1-20261003/code/robocasa/robocasa/models/fixtures/counter.py",
+        "pythonhashseed": "0",
+        "reset_patch_applied": false
+      },
+      "native_reset_after": {
+        "native_reset": true,
+        "source_path": "/ephemeral/qinzhen/robocasa-xr1-20261003/code/robocasa/robocasa/models/fixtures/counter.py",
+        "source_sha256": "77f992d01aa1ae5f21ed7f170d0aab9c303c32148f4b427651c04912be8ce68a",
+        "method_source_sha256": "c87d0353b3605b40e85c061bec6c1311a63c761c59197b4409a02e7045539de2",
+        "method_code_filename": "/ephemeral/qinzhen/robocasa-xr1-20261003/code/robocasa/robocasa/models/fixtures/counter.py",
+        "pythonhashseed": "0",
+        "reset_patch_applied": false
+      },
+      "readback_guard": {
+        "status": "closed",
+        "raw_frames_checked": 693,
+        "failure": null,
+        "gl_error_counts": {
+          "after_draw:1281": 693
+        }
+      },
+      "source": {
+        "archive_member": "results/native-reset-b2500-20261009-v1/episodes/native-B-0133-CloseBlenderLid-2090900133/result.json",
+        "result_sha256": "26c8d45d23f5cc9499946cc4aa4949581e86d72328ce679eaf79aa3eacc658bc",
+        "report_hash_verified": true,
+        "manifest_job_verified": true,
+        "initial_scene_sha256": "4fb0959f8e316719b4ec843f1a33a24513a2109b623c15d0cf25c707b9f44377",
+        "guard_sha256": "c8b6fcb9bb7e6ac27de31ae1787160d1bbd2c0d1908cb9423a5ebe9003763760"
+      },
+      "astra_analysis": {
+        "hypothesis": "Possible lid acquisition or final placement/alignment failure; neither is observed in the archive.",
+        "strategy": "After diagnostic replay confirms the unmet subgoal, test a bounded instruction decomposition: acquire lid, align over blender, place securely, verify using permitted images. Keep OriginX weights frozen; an instruction wrapper is a new assisted system.",
+        "falsification": "If the lid is correctly seated in the recorded replay or the failure occurs before acquisition for a different reason, reject the alignment account; inspect task predicate offline."
+      },
+      "cause_established": false,
+      "retest_executed": false,
+      "rescue_outcome": null
+    },
+    {
+      "case_id": "native-B-0075-PrepareCoffee-2090900075",
+      "original_job": {
+        "id": "native-B-0075-PrepareCoffee-2090900075",
+        "assignment_index": 75,
+        "arm": "B",
+        "task": "PrepareCoffee",
+        "env_seed": 2090900075,
+        "policy_seed": 2090900075,
+        "split": "pretrain",
+        "horizon": 1800,
+        "pair_index": 75,
+        "pair_id": "official-B2000-0075"
+      },
+      "stats": {
+        "env_name": "PrepareCoffee",
+        "split": "pretrain",
+        "num_episodes": 1,
+        "successes": 0,
+        "success_rate": 0.0,
+        "horizon": 1800,
+        "episodes": [
+          {
+            "episode": 0,
+            "global_episode_index": 0,
+            "seed": 2090900075,
+            "success": false,
+            "steps": 1800
+          }
+        ]
+      },
+      "task_aggregate": {
+        "task": "PrepareCoffee",
+        "stratum": "composite_seen",
+        "horizon": 1800,
+        "episodes": 50,
+        "successes": 11,
+        "success_rate": 0.22
+      },
+      "initial_scene": {
+        "rgb": {
+          "video.robot0_agentview_left": "ef1949cfcbda7d79cade917414991c4b0a551c663ae84ef47b55a4fc182ee6ae",
+          "video.robot0_agentview_right": "fc8d941e7c9372c7667528d403d13fca976d2aff74df95011469270da07649ad",
+          "video.robot0_eye_in_hand": "9773c1424d8afa030b3c09a537a5a6499cc18a146680f503194eb976dc04de87"
+        },
+        "proprioception": "0389fd762eff4541e2535dfe1d2717030f40dc3e63d63346495fde861f771d33",
+        "physics_state": "22eb4de8e6e5216f12ede41d31d1e45a231934f83686f1280ad39e965af47083",
+        "instruction": "Pick the mug from the cabinet, place it under the coffee machine dispenser, and press the start button.",
+        "layout_id": 32,
+        "style_id": 43,
+        "xml_sha256": "78f2f15902770965466591d497bc801f9f1fccc2e0b06d045123f05bbc88d5b6"
+      },
+      "native_reset_before": {
+        "native_reset": true,
+        "source_path": "/ephemeral/qinzhen/robocasa-xr1-20261003/code/robocasa/robocasa/models/fixtures/counter.py",
+        "source_sha256": "77f992d01aa1ae5f21ed7f170d0aab9c303c32148f4b427651c04912be8ce68a",
+        "method_source_sha256": "c87d0353b3605b40e85c061bec6c1311a63c761c59197b4409a02e7045539de2",
+        "method_code_filename": "/ephemeral/qinzhen/robocasa-xr1-20261003/code/robocasa/robocasa/models/fixtures/counter.py",
+        "pythonhashseed": "0",
+        "reset_patch_applied": false
+      },
+      "native_reset_after": {
+        "native_reset": true,
+        "source_path": "/ephemeral/qinzhen/robocasa-xr1-20261003/code/robocasa/robocasa/models/fixtures/counter.py",
+        "source_sha256": "77f992d01aa1ae5f21ed7f170d0aab9c303c32148f4b427651c04912be8ce68a",
+        "method_source_sha256": "c87d0353b3605b40e85c061bec6c1311a63c761c59197b4409a02e7045539de2",
+        "method_code_filename": "/ephemeral/qinzhen/robocasa-xr1-20261003/code/robocasa/robocasa/models/fixtures/counter.py",
+        "pythonhashseed": "0",
+        "reset_patch_applied": false
+      },
+      "readback_guard": {
+        "status": "closed",
+        "raw_frames_checked": 1365,
+        "failure": null,
+        "gl_error_counts": {
+          "after_draw:1281": 1365
+        }
+      },
+      "source": {
+        "archive_member": "results/native-reset-b2500-20261009-v1/episodes/native-B-0075-PrepareCoffee-2090900075/result.json",
+        "result_sha256": "6f332cc4675d3244b10a657142371b88ed14c2604dacf4349dda1c66e5c3d5b9",
+        "report_hash_verified": true,
+        "manifest_job_verified": true,
+        "initial_scene_sha256": "cf0f41ac5a7effe4bff99c47ed2ea37aa1dcff4fb7099f93ffe765605958cd09",
+        "guard_sha256": "b69c11cc056bf5d0eb28fd670647ad5ecf8f3f6bc7ff2bc4aeda7b28590999b4"
+      },
+      "astra_analysis": {
+        "hypothesis": "Possible incomplete subgoal or incorrect order among mug retrieval, dispenser placement, and start-button operation; archive does not locate the failed subgoal.",
+        "strategy": "After replay, derive a visual-only checklist for mug retrieval, dispenser placement and button operation. Trigger at a predeclared observable stall and request only the missing subgoal, preserving original instruction constraints and bounded steps.",
+        "falsification": "If all three visible subgoals are achieved, reject missing/order account and inspect success predicate offline; if no stall occurs, the proposed trigger does not explain this case."
+      },
+      "cause_established": false,
+      "retest_executed": false,
+      "rescue_outcome": null
+    },
+    {
+      "case_id": "native-B-0018-GatherTableware-2090900018",
+      "original_job": {
+        "id": "native-B-0018-GatherTableware-2090900018",
+        "assignment_index": 18,
+        "arm": "B",
+        "task": "GatherTableware",
+        "env_seed": 2090900018,
+        "policy_seed": 2090900018,
+        "split": "pretrain",
+        "horizon": 2250,
+        "pair_index": 18,
+        "pair_id": "official-B2000-0018"
+      },
+      "stats": {
+        "env_name": "GatherTableware",
+        "split": "pretrain",
+        "num_episodes": 1,
+        "successes": 0,
+        "success_rate": 0.0,
+        "horizon": 2250,
+        "episodes": [
+          {
+            "episode": 0,
+            "global_episode_index": 0,
+            "seed": 2090900018,
+            "success": false,
+            "steps": 2250
+          }
+        ]
+      },
+      "task_aggregate": {
+        "task": "GatherTableware",
+        "stratum": "composite_unseen",
+        "horizon": 2250,
+        "episodes": 50,
+        "successes": 0,
+        "success_rate": 0.0
+      },
+      "initial_scene": {
+        "rgb": {
+          "video.robot0_agentview_left": "b956f6ea4ecd56963d1c11f5c90e15ecce85b18669d7740fcd831454c63b1798",
+          "video.robot0_agentview_right": "6093fd10211e8accf1c1c034e626d000d041d10dccb71dc18a6039e3828e8b84",
+          "video.robot0_eye_in_hand": "4b3ae8dfbde820884d786f78412fe7bf2c4330c44e87b0d21621e2677e5af24c"
+        },
+        "proprioception": "fe36adc508b1faa11909d2701faccb19bd1c3bb67ec499594119596ccd635fae",
+        "physics_state": "b6505324a5d8a933ced76e13a3b0ef208c26b45a79be4cb2aafbc827de11bca8",
+        "instruction": "Gather all objects into one cabinet and sort the glasses and bowls to opposite sides.",
+        "layout_id": 41,
+        "style_id": 38,
+        "xml_sha256": "13eb64e45d13b9b2909ddd5f076e16fabff8cc9c20aacc0cf8507abf53ce8eda"
+      },
+      "native_reset_before": {
+        "native_reset": true,
+        "source_path": "/ephemeral/qinzhen/robocasa-xr1-20261003/code/robocasa/robocasa/models/fixtures/counter.py",
+        "source_sha256": "77f992d01aa1ae5f21ed7f170d0aab9c303c32148f4b427651c04912be8ce68a",
+        "method_source_sha256": "c87d0353b3605b40e85c061bec6c1311a63c761c59197b4409a02e7045539de2",
+        "method_code_filename": "/ephemeral/qinzhen/robocasa-xr1-20261003/code/robocasa/robocasa/models/fixtures/counter.py",
+        "pythonhashseed": "0",
+        "reset_patch_applied": false
+      },
+      "native_reset_after": {
+        "native_reset": true,
+        "source_path": "/ephemeral/qinzhen/robocasa-xr1-20261003/code/robocasa/robocasa/models/fixtures/counter.py",
+        "source_sha256": "77f992d01aa1ae5f21ed7f170d0aab9c303c32148f4b427651c04912be8ce68a",
+        "method_source_sha256": "c87d0353b3605b40e85c061bec6c1311a63c761c59197b4409a02e7045539de2",
+        "method_code_filename": "/ephemeral/qinzhen/robocasa-xr1-20261003/code/robocasa/robocasa/models/fixtures/counter.py",
+        "pythonhashseed": "0",
+        "reset_patch_applied": false
+      },
+      "readback_guard": {
+        "status": "closed",
+        "raw_frames_checked": 1704,
+        "failure": null,
+        "gl_error_counts": {
+          "after_draw:1281": 1704
+        }
+      },
+      "source": {
+        "archive_member": "results/native-reset-b2500-20261009-v1/episodes/native-B-0018-GatherTableware-2090900018/result.json",
+        "result_sha256": "9c30ece1fed7495af7bbe25a8bbbfcce43621914894387bbb19291ced8b499bf",
+        "report_hash_verified": true,
+        "manifest_job_verified": true,
+        "initial_scene_sha256": "9e16c3f2c5e97cb8c935cde8b5b9a7f449871d707d88e59f54e05219d4f60256",
+        "guard_sha256": "2684022225f52bca62c7e146c0e097e330b62a118fefacef13d0029583dc46f9"
+      },
+      "astra_analysis": {
+        "hypothesis": "Possible missing object or incomplete glasses/bowls separation; aggregate 0/50 shows persistent failure in the evaluated sample but does not identify its cause.",
+        "strategy": "After replay, test a permitted-image inventory of objects, cabinet destination and opposite-side grouping, then a bounded instruction to address an observed missing placement. No hidden object lists or simulator predicates may guide online intervention.",
+        "falsification": "If all objects and required grouping are visibly correct, reject the inventory/grouping account; if targets are occluded, mark the inventory unknown instead of asserting completion."
+      },
+      "cause_established": false,
+      "retest_executed": false,
+      "rescue_outcome": null
+    }
+  ]
+}
