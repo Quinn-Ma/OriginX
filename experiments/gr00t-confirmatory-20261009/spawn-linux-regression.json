@@ -1,0 +1,415 @@
+{
+  "schema": "originx_gr00t_v2_spawn_linux_regression_v1",
+  "passed": true,
+  "tests": [
+    {
+      "test": "actual_short_lived_exit",
+      "passed": true,
+      "receipt": {
+        "schema": "originx_gr00t_spawn_handshake_v2",
+        "pid": 1015119,
+        "parent_pid": 1015117,
+        "process_start_ticks": null,
+        "requested_command": [
+          "/usr/bin/python3",
+          "-c",
+          "raise SystemExit(7)"
+        ],
+        "requested_cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003",
+        "owner": null,
+        "identity_bound": false,
+        "samples": [],
+        "signals": [],
+        "reaped": true,
+        "returncode": 7,
+        "startup_error": "RuntimeError('Child exited before startup identity binding')"
+      }
+    },
+    {
+      "test": "actual_proc_pidfd_bind_and_drain",
+      "passed": true,
+      "receipt": {
+        "schema": "originx_gr00t_spawn_handshake_v2",
+        "pid": 1015120,
+        "parent_pid": 1015117,
+        "process_start_ticks": 3763605,
+        "requested_command": [
+          "/usr/bin/python3",
+          "-c",
+          "import time;time.sleep(60)"
+        ],
+        "requested_cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003",
+        "owner": {
+          "pid": 1015120,
+          "process_start_ticks": 3763605,
+          "command": [
+            "/usr/bin/python3",
+            "-c",
+            "import time;time.sleep(60)"
+          ],
+          "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003"
+        },
+        "identity_bound": true,
+        "samples": [
+          {
+            "observed": {
+              "pid": 1015120,
+              "process_start_ticks": 3763605,
+              "command": [
+                "/usr/bin/python3",
+                "-c",
+                "import time;time.sleep(60)"
+              ],
+              "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003"
+            },
+            "expected_identity": true
+          },
+          {
+            "observed": {
+              "pid": 1015120,
+              "process_start_ticks": 3763605,
+              "command": [
+                "/usr/bin/python3",
+                "-c",
+                "import time;time.sleep(60)"
+              ],
+              "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003"
+            },
+            "expected_identity": true
+          }
+        ],
+        "signals": [
+          {
+            "signal": 15,
+            "pidfd": true,
+            "bound_owner": true
+          }
+        ],
+        "reaped": true,
+        "returncode": -15,
+        "startup_error": null
+      }
+    },
+    {
+      "test": "actual_child_with_empty_cmdline_reads",
+      "passed": true,
+      "receipt": {
+        "schema": "originx_gr00t_spawn_handshake_v2",
+        "pid": 1015121,
+        "parent_pid": 1015117,
+        "process_start_ticks": 3763608,
+        "requested_command": [
+          "/usr/bin/python3",
+          "-c",
+          "import time;time.sleep(60)"
+        ],
+        "requested_cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003",
+        "owner": {
+          "pid": 1015121,
+          "process_start_ticks": 3763608,
+          "command": [
+            "/usr/bin/python3",
+            "-c",
+            "import time;time.sleep(60)"
+          ],
+          "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003"
+        },
+        "identity_bound": true,
+        "samples": [
+          {
+            "observed": {
+              "pid": 1015121,
+              "process_start_ticks": 3763608,
+              "command": [
+                ""
+              ],
+              "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003"
+            },
+            "expected_identity": false
+          },
+          {
+            "observed": {
+              "pid": 1015121,
+              "process_start_ticks": 3763608,
+              "command": [
+                ""
+              ],
+              "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003"
+            },
+            "expected_identity": false
+          },
+          {
+            "observed": {
+              "pid": 1015121,
+              "process_start_ticks": 3763608,
+              "command": [
+                ""
+              ],
+              "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003"
+            },
+            "expected_identity": false
+          },
+          {
+            "observed": {
+              "pid": 1015121,
+              "process_start_ticks": 3763608,
+              "command": [
+                ""
+              ],
+              "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003"
+            },
+            "expected_identity": false
+          },
+          {
+            "observed": {
+              "pid": 1015121,
+              "process_start_ticks": 3763608,
+              "command": [
+                ""
+              ],
+              "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003"
+            },
+            "expected_identity": false
+          },
+          {
+            "observed": {
+              "pid": 1015121,
+              "process_start_ticks": 3763608,
+              "command": [
+                "/usr/bin/python3",
+                "-c",
+                "import time;time.sleep(60)"
+              ],
+              "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003"
+            },
+            "expected_identity": true
+          },
+          {
+            "observed": {
+              "pid": 1015121,
+              "process_start_ticks": 3763608,
+              "command": [
+                "/usr/bin/python3",
+                "-c",
+                "import time;time.sleep(60)"
+              ],
+              "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003"
+            },
+            "expected_identity": true
+          }
+        ],
+        "signals": [
+          {
+            "signal": 15,
+            "pidfd": true,
+            "bound_owner": true
+          }
+        ],
+        "reaped": true,
+        "returncode": -15,
+        "startup_error": null
+      }
+    },
+    {
+      "test": "actual_unbound_timeout_pidfd_drain",
+      "passed": true,
+      "receipt": {
+        "schema": "originx_gr00t_spawn_handshake_v2",
+        "pid": 1015124,
+        "parent_pid": 1015117,
+        "process_start_ticks": 3763620,
+        "requested_command": [
+          "/usr/bin/python3",
+          "-c",
+          "import time;time.sleep(60)"
+        ],
+        "requested_cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003",
+        "owner": null,
+        "identity_bound": false,
+        "samples": [
+          {
+            "observed": {
+              "pid": 1015124,
+              "process_start_ticks": 3763620,
+              "command": [
+                ""
+              ],
+              "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003"
+            },
+            "expected_identity": false
+          },
+          {
+            "observed": {
+              "pid": 1015124,
+              "process_start_ticks": 3763620,
+              "command": [
+                ""
+              ],
+              "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003"
+            },
+            "expected_identity": false
+          },
+          {
+            "observed": {
+              "pid": 1015124,
+              "process_start_ticks": 3763620,
+              "command": [
+                ""
+              ],
+              "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003"
+            },
+            "expected_identity": false
+          },
+          {
+            "observed": {
+              "pid": 1015124,
+              "process_start_ticks": 3763620,
+              "command": [
+                ""
+              ],
+              "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003"
+            },
+            "expected_identity": false
+          },
+          {
+            "observed": {
+              "pid": 1015124,
+              "process_start_ticks": 3763620,
+              "command": [
+                ""
+              ],
+              "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003"
+            },
+            "expected_identity": false
+          },
+          {
+            "observed": {
+              "pid": 1015124,
+              "process_start_ticks": 3763620,
+              "command": [
+                ""
+              ],
+              "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003"
+            },
+            "expected_identity": false
+          }
+        ],
+        "signals": [
+          {
+            "signal": 15,
+            "pidfd": true,
+            "bound_owner": false
+          }
+        ],
+        "reaped": true,
+        "returncode": -15,
+        "startup_error": "TimeoutError('Bounded child identity handshake expired; pending spawn must be drained')"
+      }
+    },
+    {
+      "test": "actual_unbound_inspection_exception_drain",
+      "passed": true,
+      "receipt": {
+        "schema": "originx_gr00t_spawn_handshake_v2",
+        "pid": 1015125,
+        "parent_pid": 1015117,
+        "process_start_ticks": 3763633,
+        "requested_command": [
+          "/usr/bin/python3",
+          "-c",
+          "import time;time.sleep(60)"
+        ],
+        "requested_cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003",
+        "owner": null,
+        "identity_bound": false,
+        "samples": [],
+        "signals": [
+          {
+            "signal": 15,
+            "pidfd": true,
+            "bound_owner": false
+          }
+        ],
+        "reaped": true,
+        "returncode": -15,
+        "startup_error": "RuntimeError('Injected inspection exception before full binding')"
+      }
+    },
+    {
+      "test": "actual_term_ignored_same_pidfd_kill_and_reap",
+      "passed": true,
+      "receipt": {
+        "schema": "originx_gr00t_spawn_handshake_v2",
+        "pid": 1015126,
+        "parent_pid": 1015117,
+        "process_start_ticks": 3763633,
+        "requested_command": [
+          "/usr/bin/python3",
+          "-c",
+          "import signal,time;signal.signal(signal.SIGTERM,signal.SIG_IGN);print(\"ready\",flush=True);time.sleep(60)"
+        ],
+        "requested_cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003",
+        "owner": {
+          "pid": 1015126,
+          "process_start_ticks": 3763633,
+          "command": [
+            "/usr/bin/python3",
+            "-c",
+            "import signal,time;signal.signal(signal.SIGTERM,signal.SIG_IGN);print(\"ready\",flush=True);time.sleep(60)"
+          ],
+          "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003"
+        },
+        "identity_bound": true,
+        "samples": [
+          {
+            "observed": {
+              "pid": 1015126,
+              "process_start_ticks": 3763633,
+              "command": [
+                "/usr/bin/python3",
+                "-c",
+                "import signal,time;signal.signal(signal.SIGTERM,signal.SIG_IGN);print(\"ready\",flush=True);time.sleep(60)"
+              ],
+              "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003"
+            },
+            "expected_identity": true
+          },
+          {
+            "observed": {
+              "pid": 1015126,
+              "process_start_ticks": 3763633,
+              "command": [
+                "/usr/bin/python3",
+                "-c",
+                "import signal,time;signal.signal(signal.SIGTERM,signal.SIG_IGN);print(\"ready\",flush=True);time.sleep(60)"
+              ],
+              "cwd": "/ephemeral/qinzhen/robocasa-xr1-20261003"
+            },
+            "expected_identity": true
+          }
+        ],
+        "signals": [
+          {
+            "signal": 15,
+            "pidfd": true,
+            "bound_owner": true
+          },
+          {
+            "signal": 9,
+            "pidfd": true,
+            "bound_owner": true
+          }
+        ],
+        "reaped": true,
+        "returncode": -9,
+        "startup_error": null
+      }
+    }
+  ],
+  "all_owned_children_reaped": true,
+  "project_files_written": false,
+  "gpu_loaded": false,
+  "rollouts": 0,
+  "processes_source_sha256": "89bf3178e1e71ff0cbb19e0d3bbc1c6bc880b27450a12e9ec424ff6b41d2c6d8",
+  "checked_at_utc": "2026-10-09T19:52:06.837380+00:00"
+}

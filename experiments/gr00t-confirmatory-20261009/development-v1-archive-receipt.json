@@ -1,0 +1,13 @@
+{
+  "archive": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-gr00t-confirmatory-development-20261009-v1/failed-development-evidence.tar.gz",
+  "sha256": "70f058b37f9d631938089815f2ec209f4a96cb46147a167f7231464f07920295",
+  "files": 147,
+  "bytes": 6177162,
+  "verified_files": 147,
+  "checked_at_local_unix": 1791575236.3315482,
+  "all_file_sha256_match": true,
+  "source_archive_sha256_match": true,
+  "original_failure_preserved": true,
+  "development_admission_granted": false,
+  "local_evidence": "D:\\codex\\2026-10-08\\new-chat\\work\\originx_gr00t_confirmation_20261009\\failed_development_v1_archive\\evidence"
+}

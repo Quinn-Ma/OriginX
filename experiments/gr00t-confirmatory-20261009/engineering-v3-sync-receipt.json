@@ -1,0 +1,9 @@
+{
+  "synced_utc": "2026-10-09T19:59:23.494082+00:00",
+  "archive_sha256": "1816414e907360aa80cedaa5007b760bd5a01bf0d1ca4785ae8370203746975a",
+  "verified_files": 59,
+  "admission_passed": true,
+  "direct_v2_reference_reused": true,
+  "all_17_frozen_root_source_files_match": true,
+  "root_source_file_count": 17
+}

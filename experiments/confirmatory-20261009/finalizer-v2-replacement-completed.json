@@ -1,0 +1,16 @@
+{
+  "reason": "Replace only waiting finalizer with tested zero-CLI accounting guard; original source/state retained",
+  "owner": {
+    "pid": 68204,
+    "command": [
+      "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009\\finalize_full.py"
+    ],
+    "created_at": "2026-10-09T19:32:15.352382+00:00",
+    "hostname": "LAPTOP-75D3IOV6",
+    "creation_filetime": 134360479351826293
+  },
+  "phase": "waiting_campaign",
+  "old_source_sha256": "634ff87b589069214add932a72e959e2c04523750f23be0f975a2f9793dd8202",
+  "new_source_sha256": "56fb609fdeb0c959d56f2acd3d9b3524a032024a8d2f76b75d4095b7cbc5a103",
+  "old_owner_stopped": true
+}

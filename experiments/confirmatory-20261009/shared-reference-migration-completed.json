@@ -1,0 +1,684 @@
+{
+  "schema": "originx_shared_prospective_reference_relocation_v1",
+  "old_path": "/ephemeral/qinzhen/robocasa-xr1-20261003/originx_gr00t_confirmation_20261009/reference/fresh-manifest.json",
+  "canonical_path": "/ephemeral/qinzhen/robocasa-xr1-20261003/originx_confirmatory_20261009/shared-reference/fresh-manifest.json",
+  "sha256": "ef3b1fb0492e0d6136ab4aa0e24193bcfbbd00865e0339a26ee0e2851b04648a",
+  "reason": "Relocate an exact unexecuted shared prospective plan into its experiment namespace; retain original pathname as a symlink, no historical trial or evidence removed",
+  "prelaunch_audit_sha256": "48b59c6eb9fd3ae6d466de0eee1c99ec0aa71d520d58fb74a568a8a2fdfeb2bf",
+  "utc": "2026-10-09T19:41:30.352532+00:00",
+  "public_commit": {
+    "sha": "94aca36f8e452c4d5aa817a127d8af56004dd259",
+    "html_url": "https://github.com/Quinn-Ma/OriginX/commit/94aca36f8e452c4d5aa817a127d8af56004dd259",
+    "commit_utc": "2026-10-09T19:01:56Z"
+  },
+  "completed": true,
+  "prior_genuine_historical_files_exactly_preserved": true,
+  "historical_files_checked": 165,
+  "post_audit": {
+    "passed": true,
+    "method": "explicit seed/env_seed/policy_seed fields in owned project manifest/protocol/plan/seed JSON; no outcome-based selection",
+    "checked": [
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/randomized_fixed_replan_design_v1.json",
+        "sha256": "15201df1b2088fc6ce81fb048ac1794b267129df2d57e0591da3fcf788f11365"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/teacher_anchor_dev_v1/local_seed_audit.json",
+        "sha256": "c393775e46ba69e04f42bac5cec10b9881007c1edb61a5e90caaacad6ce7cbe2"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/teacher_anchor_dev_v1/remote_seed_audit.json",
+        "sha256": "e5b8b75aef18cf4d7dffd0d0d01d2be8aba986d7ac7e06cf7d537015a4ce6837"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/teacher_anchor_dev_v1/manifest.json",
+        "sha256": "e03db6c19f54e3fad3e3518e664d867e28b0a841a53afa57324c392549c4e781"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/returns/server-return-v1/queue/manifest.json",
+        "sha256": "266559f6a4cdf6794a17f0c8be78dbb7f23ca4b56f61a7872a17653e9e2d89b7"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_eval2000_v3/protocol.json",
+        "sha256": "1cb7cac08bf1299dfe66556220911934b6c0fffd441146195637025ee4d67d65"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_eval2000_v3/manifest.json",
+        "sha256": "6817fdd613e1fb5cb5a365bb09ac2d4661a07cecdf74633a9e7c8527255e605f"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/disk_cleanup_20261006/archive-plan.json",
+        "sha256": "a51b41cd5ad21fb227edfdf1bc56428ac5a588b32d99bbc26c04da0e95130d29"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/disk_cleanup_20261006/archive-plan-final.json",
+        "sha256": "b5b05e45493c972be44071447bda71d829edf597c2f3919892fce702e67c2471"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/disk_cleanup_20261006/second-cleanup-plan.json",
+        "sha256": "a23ef9676f616eeee47045a6efb5521c8a23f9ed13735a879fb673f61da1d971"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/disk_cleanup_20261006/first-cleanup-plan.json",
+        "sha256": "bb190256b2623d9c16f42f8a8582a20cd61fca8c6ed1e2edaa2ee9f242f0af71"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/disk_cleanup_20261006/intermediate-plan.json",
+        "sha256": "1f7a68c400d49aa8f22226c1ecc81acc438e5cac8d2c3f404fbcc90757e6a8a5"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/disk_cleanup_20261006/historical-deletion-plan.json",
+        "sha256": "29b8e076be130c7f4a5e914110a6b1b0dd2aff10bb1087ed65f9366f6d356d21"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_acceleration_ops_v1/remote-seed-audit.json",
+        "sha256": "0e672ada3ff73bad88937ff6bf7c40988ee581c50fc522ffac588c5b22b7a286"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_acceleration_ops_v1/local-seed-audit.json",
+        "sha256": "fd4e409d61c9faef47336acd340833576c56f7f9ac5731765998169a306af131"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_acceleration_ops_v1/seed-audit.json",
+        "sha256": "e7cb0772c563be5c0c8903aa2ccf6931a0e40fba4252a7a8935b64bbd0b20469"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/metadata/human300_download_manifest.json",
+        "sha256": "954722041b7d3a779a12f933d5f83307146346448ca31644a51b8fddea9dc24d"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/metadata/causal-pilot-seed-audit-v1.json",
+        "sha256": "b5d8a7bdd44d62d4c40f66c3fe8f9a57a1e27c8e96d06109c26e59e3773af30a"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/metadata/wait-baseline-after-candidate-v1/cleanup-new-server-manifest.json",
+        "sha256": "9b7d9d7198db59de762eafb21b8f51a4426f21dcba04411b4ace5480f45907fb"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/metadata/wait-baseline-after-candidate-v1/candidate-stop-manifest.json",
+        "sha256": "ea0a3df934765276947ce13b10fbf7b6f5ca4d2126f5c5099bd7ba00a6460798"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_eval_v3/protocol.json",
+        "sha256": "e63845124a49205978408988e8abfccd203ab724636976f87fdc8a70507c020f"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_eval_v3/manifest.json",
+        "sha256": "6817fdd613e1fb5cb5a365bb09ac2d4661a07cecdf74633a9e7c8527255e605f"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/human_mg_data_bridge_v1/manifest-sources.json",
+        "sha256": "351471c70388e9dbdb9480e08f85c8bb4ea3e0474e3cd1d9efedcc48db5bf2ca"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/astra_rescue_20261009/failure_manifest.json",
+        "sha256": "fe3b4d29408ad476cdde3f83af18321cb294014eb26c9b716a21ddb51d7d222b"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/astra_rescue_20261009/manifest_verification.json",
+        "sha256": "d08a0f425a6f3d981fc6b2fa797cdd027c208f39a0179f9932cfc2a1659698ac"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/lora-formal2500-48x6-v1/seed-audit.json",
+        "sha256": "bcb94d865a6763d1a8ceb9d24d996fea272b1832b655f1643dd6de54ac3e8cbc"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/dev/base-control200-alpha025-paired-v1/reference_run_manifest.original.json",
+        "sha256": "8109261c6017f227787afcf98132bfee5d504ff307b05c9c562050d782b9c951"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/dev/base-control200-alpha025-paired-v1/run_manifest.json",
+        "sha256": "a49aa0c64e91034b32d87367159b35a9a3b53e4f7bca8ae0eef36a26a448799f"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/dev/base-control200-alpha025-paired-v1/reference_run_manifest.json",
+        "sha256": "8109261c6017f227787afcf98132bfee5d504ff307b05c9c562050d782b9c951"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/dev/randomized-base-beta-v1/run_manifest.json",
+        "sha256": "1bc1b6834de7c00c6315cb10b945758960ae9cb30f5746e02b55b1868dc185e5"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/dev/randomized-fixed12-vs16-v1/run_manifest.json",
+        "sha256": "58071ff828f990ce839b8938e6c47850a8290b7bf147e68fbb59568af23696f8"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/dev/base-mixed200-paired-v1/reference_run_manifest.original.json",
+        "sha256": "8109261c6017f227787afcf98132bfee5d504ff307b05c9c562050d782b9c951"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/dev/base-mixed200-paired-v1/run_manifest.json",
+        "sha256": "f404a16b9a11b431709b47caf083d2e31e3e40ab229de446281bea8e63eb4d88"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/dev/base-mixed200-paired-v1/reference_run_manifest.json",
+        "sha256": "8109261c6017f227787afcf98132bfee5d504ff307b05c9c562050d782b9c951"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/dev/base-control200-paired-v1/run_manifest.json",
+        "sha256": "8109261c6017f227787afcf98132bfee5d504ff307b05c9c562050d782b9c951"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/dev/base-repeat-v1/run_manifest.json",
+        "sha256": "7cbcc6e7273611fcf7b7b32f8984efd4abe11467d85796fa08ea52a950cdd91b"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/dev/randomized-broad-alpha025-v2/run_manifest.json",
+        "sha256": "caa13506cc86dc35c4569e5ab32ecb25a07eaa423ebc73c1ec3ca4f9e5d3ea41"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/019-RemoveCuttingBoardItems-seed701019/manifest.json",
+        "sha256": "12c4294fcc4793b86856c578a1a648866a247b96f9ae9448486b35f463c0908f"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/000-StartElectricKettle-seed701000/manifest.json",
+        "sha256": "e3669e132612a4194cb4efba5373f97b940bed5f11e0c1356c0bc1714e8a02a3"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/025-AddSugarCubes-seed701025/manifest.json",
+        "sha256": "f786c68183c9aed0d5e42b671c54aeddbec193a0aae206bf6d3c4b52bac32aac"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/018-BreadAndCheese-seed701018/manifest.json",
+        "sha256": "4817aab63274ac11ae46e9cba7acc25d58c9e57d4f93f35e4ae3003e7473d032"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/028-StartElectricKettle-seed701028/manifest.json",
+        "sha256": "3df221d84c04b6cb7fc3a490d01ac9c93a623222e8f41ff86e6923a5487de16f"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/022-BreadAndCheese-seed701022/manifest.json",
+        "sha256": "82e8fc058a1c53365684b5b37e511328611e80e735cd775550c262acf43dd639"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/032-StartElectricKettle-seed701032/manifest.json",
+        "sha256": "4f371be7c6e535bebde800ad6b31a5995e058c2600b26239cf953ef2f170bcac"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/014-BreadAndCheese-seed701014/manifest.json",
+        "sha256": "db4d80cc6c7b924fd5d1ece9d2d8b7d13a4ac7477f6e3e6b94f03a8b5025c304"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/024-StartElectricKettle-seed701024/manifest.json",
+        "sha256": "ab9b89d303eb12806d65fa4022d75b1380336414c5d2ea91932d57b7cb462002"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/007-RemoveCuttingBoardItems-seed701007/manifest.json",
+        "sha256": "a40b7da69de3620c0c437f6b2c394f36d5b71cddad3d73381bcf7758b21e414d"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/015-RemoveCuttingBoardItems-seed701015/manifest.json",
+        "sha256": "520f9b8ce86803225921689a8781006f0735e99df5f8e3781ab87ef2e772cfe2"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/035-RemoveCuttingBoardItems-seed701035/manifest.json",
+        "sha256": "568d450c2977d0554cf6f029a8cebd2161a26b0ff667d0e2ecb514dde0e5c9f5"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/002-BreadAndCheese-seed701002/manifest.json",
+        "sha256": "cf1dead420421b27f64a0c67664a38cc186f03babbc97b78df2f9e51d76aa08a"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/006-BreadAndCheese-seed701006/manifest.json",
+        "sha256": "cb3e67020475cc9878dc7be5e11d31423ee5adabf98db9e8e48bce7238c76478"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/021-AddSugarCubes-seed701021/manifest.json",
+        "sha256": "71593cdc3e196563f68fa71206bcacd3ba4ef98ccc1e2b2e08ac34a1604bba49"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/001-AddSugarCubes-seed701001/manifest.json",
+        "sha256": "248f6d970ed3a7a0d9e4b93f4b9f16804df6ce62b5be384ef44935ddbf0853b6"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/038-BreadAndCheese-seed701038/manifest.json",
+        "sha256": "502e19cb473346263ec3ffa15e0694d27aed41853bdd5aca71e7babc6131ae2b"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/039-RemoveCuttingBoardItems-seed701039/manifest.json",
+        "sha256": "e0ad3bf4841ff19ea00460b5514f6340c69d5b620a643d25de04b0f60f45817a"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/004-StartElectricKettle-seed701004/manifest.json",
+        "sha256": "6dd8ba57eb14925fb62c7484469666076493933adaba4b530f227a08f10b9749"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/031-RemoveCuttingBoardItems-seed701031/manifest.json",
+        "sha256": "0edcf127a3e2de9addd6cf489ca475bbb4c7d4cb61159dc8637710531f7bc8a4"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/026-BreadAndCheese-seed701026/manifest.json",
+        "sha256": "1a32bb2a154da3e03b86cdc544add868a8c196ebdae3bd44615fb0cc740d2858"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/010-BreadAndCheese-seed701010/manifest.json",
+        "sha256": "ed7b254a3124dd02d44cf59bffa40624b71d712eb11abb7259ab178abf4a3e6e"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/003-RemoveCuttingBoardItems-seed701003/manifest.json",
+        "sha256": "8217cdaa7c7f830af5178a269d6f254ff5da66412d1da0a6a0c873219a436955"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/012-StartElectricKettle-seed701012/manifest.json",
+        "sha256": "2fd996b49773a2a23b9581ce903188ee1a03d2cf4f56cb0979ea59c50ae70dce"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/005-AddSugarCubes-seed701005/manifest.json",
+        "sha256": "9863c3b3c5762f5fdab64b11080ba9349076b266aba58ed0518052bc320b8bfb"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/034-BreadAndCheese-seed701034/manifest.json",
+        "sha256": "e9d4e78a6633a85dcd359634ea0ce22eb0b5724e53a1d72c37c5fe768242f4ed"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/016-StartElectricKettle-seed701016/manifest.json",
+        "sha256": "8b0cce6a3a21087a357e23adbf57d1009ad15d48c0e5533101881b837066d3f9"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/008-StartElectricKettle-seed701008/manifest.json",
+        "sha256": "3398847a8509165859cd64aa906ccbb5d8ef25fbfd95e17e13dfc3909f91bd36"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/033-AddSugarCubes-seed701033/manifest.json",
+        "sha256": "c84e0940c4c63d4778a169fa329d42fce3d5508b2f66d2282af2d80964e1c98a"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/023-RemoveCuttingBoardItems-seed701023/manifest.json",
+        "sha256": "a76c683a26feeb3abd01fc24b340d05aee61c60b83a30ac50d58d6fba8f3c0a8"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/020-StartElectricKettle-seed701020/manifest.json",
+        "sha256": "a5cc71469736d8df31a08eb1d1645ccb70460a4694abe835ab7c50418739c2a9"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/013-AddSugarCubes-seed701013/manifest.json",
+        "sha256": "3fe73bba87ef03ab74f85eca8ff6851bf110589899e838d62ddbaca9246c4962"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/036-StartElectricKettle-seed701036/manifest.json",
+        "sha256": "b78ae45b0033d697c80a96bd48c55225d94e4487384c1dceadd3ec584f99e90f"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/027-RemoveCuttingBoardItems-seed701027/manifest.json",
+        "sha256": "3518b0ecd14e509b235d7f8d0719aefbb5299e9ed1ed04f115f752b5767b01b1"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/030-BreadAndCheese-seed701030/manifest.json",
+        "sha256": "4c3be5e42fcf45545e3246aa0e2201d5b089bc90b803f086781c90b85c2b4c9d"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/009-AddSugarCubes-seed701009/manifest.json",
+        "sha256": "61b5252b2b3550e1b933b6d127eaf85f3cf70e2250d16211caf481fedee32fff"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/011-RemoveCuttingBoardItems-seed701011/manifest.json",
+        "sha256": "1051b633758bb16fdd1c6ebe5674c7859da5b6817a944360bae30148346fc814"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/017-AddSugarCubes-seed701017/manifest.json",
+        "sha256": "e1738e0ced988a537afe4997ce79059e09e4549a0e4e9540c2a1dd3664855098"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/037-AddSugarCubes-seed701037/manifest.json",
+        "sha256": "d9778af85eaf95a478fa8f4af6614b3718c38d05b41073f550154b22e2690d5c"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-batch40-v1/029-AddSugarCubes-seed701029/manifest.json",
+        "sha256": "34d739ffd58c2fac18022796e84fdfe622f9a92f508e0531272d69b22ffbf303"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/zero-kettle-v1/branch_plan.json",
+        "sha256": "1e2c214efd8c27bceabfe894f0772c94a3f66f8f18812f36d772a36460f04af4"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/zero-kettle-v1/manifest.json",
+        "sha256": "ac9d528acac52293edd69e9e1559ba9c976eed1462a4c3e0bfb05ee7a7f7b6c1"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/recovery/live-kettle-v1/manifest.json",
+        "sha256": "834d5df37c9c4fc37209faf4cf073d7c1e338aff5d0a6ee32d1b41e111b970be"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/continuous-dev150-v3/seed-audit.json",
+        "sha256": "c9fc31285bdd5e3c2c091d926a25437fd5ae4338ba0d089db43989fd4953ecfe"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/engineering/fixed-replan-priority-v1.json",
+        "sha256": "1171357ced9e351daf3adbd197e44fdf80ddcf1647bb2a05bb570ce23dcc7e56"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/engineering/lora-dev150-final-gate-v1/gate_manifest.json",
+        "sha256": "9c56fe3c7bdb7436d2f5105719fefc02d0428dfa9096abc14b1b160b26b76d66"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-development-20261009-v2/seed-audit.json",
+        "sha256": "ddb003b5515e5aac603372ce21e70a35302fe9b6d9fd13ec11c5259cabdf20c4"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-development-20261009-v2/manifest.json",
+        "sha256": "e17be2ccd74ba402d4bf69936dec814ddeabe48f30fd5f2391689fa8429a46f3"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-development-20261009-v2/analysis/normalized_manifest.json",
+        "sha256": "e7d36779598488052fab5f9fc3f34e64344d5ae2c7584a106b017dcaf087219d"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-development-20261009-v2/analysis-final-v2/normalized_manifest.json",
+        "sha256": "e7d36779598488052fab5f9fc3f34e64344d5ae2c7584a106b017dcaf087219d"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/originx-confirmatory-development-20261009-v2/analysis-final/normalized_manifest.json",
+        "sha256": "e7d36779598488052fab5f9fc3f34e64344d5ae2c7584a106b017dcaf087219d"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/stage_conditioned_data_v2/pilot200/manifest.json",
+        "sha256": "7b174f21348c148a4f94ab5240625b1d2e79a3375e940282b5a4edce72e7c6a2"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/stage-dev150-v2/remote-seed-audit.json",
+        "sha256": "3898e252c96334a3762e3216440bce92ccb76abb168fe3bd0290dab06f23c4ea"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/b2500-assets-smoke-v1/seed-audit-scope.json",
+        "sha256": "9b779d2c8af029b329c5e91adfae3bac49f7cb89757634dbec46fa512a59f014"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/b2500-assets-smoke-v1/seed-audit.json",
+        "sha256": "a9da2e5a7a44a4a50bb70167b5670be9a92e36794004a8049b1e50a9dc243d98"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/b2500-assets-smoke-v1/manifest.json",
+        "sha256": "c6a4c2a8dd18ddb5f5db6c9dee8db93cadbe74d041ae51971940b3d086c6e1c9"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/continued-ab2000-v1.before-fourhost/plan.json",
+        "sha256": "4e3946d931d1fa358341a53918fa6284653d0a2f2170d6ab9cd3aff02ec78239"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/continued-ab2000-v1.before-fourhost/seed-audit.json",
+        "sha256": "c9fc31285bdd5e3c2c091d926a25437fd5ae4338ba0d089db43989fd4953ecfe"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/native-reset-b2500-smoke-20261009-v1/manifest.json",
+        "sha256": "fa304937a0680d09ec7a560c944ed0c2fcf27973c7767a145ae6d33a87d59fa3"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/astra-native-reset-pilot-20261009-v1/manifest.json",
+        "sha256": "5327b165feb0aca4244f3475a4674dbfd9972cd5eb3f44875641452c4ce73278"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/native-reset-b2500-20261009-v1/manifest.json",
+        "sha256": "cecee25e5750605c2c83643bca0fed55c8c4bfcb46d672a934f0c2d29e760257"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/lora-formal2500-v1/remote-seed-audit.json",
+        "sha256": "1a21b82e4cc755e04c70d49d7d4316f0c41715f8aa26dcb36285817f270002e6"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/lora-formal2500-v1/local-seed-audit.json",
+        "sha256": "d7c7c227396f99d714d317190e31cd8a37f40b59d6d94c409a19f4d5b5f83830"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/lora-formal2500-v1/seed-audit.json",
+        "sha256": "bcb94d865a6763d1a8ceb9d24d996fea272b1832b655f1643dd6de54ac3e8cbc"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/astra-native-reset-full-20261009-v1/manifest.json",
+        "sha256": "e665b315169c787f3f8f2365e4e8510e3e51d333a442a3e8f2afc8a6c129fe8e"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/continued-ab2000-v1/plan.json",
+        "sha256": "4e3946d931d1fa358341a53918fa6284653d0a2f2170d6ab9cd3aff02ec78239"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/continued-ab2000-v1/seed-audit.json",
+        "sha256": "c9fc31285bdd5e3c2c091d926a25437fd5ae4338ba0d089db43989fd4953ecfe"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/astra-native-reset-continuation-20261009-v2/protocol-diff.json",
+        "sha256": "41ae601a34b48d07a23bd34f1bf1087640a7ec26abe3cc13fb275124d589c8e0"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/astra-native-reset-continuation-20261009-v2/manifest.json",
+        "sha256": "e28db86ba007a9e5be5a252c7ef7d1e174222171475abc4d53a4db59ec82b346"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/baseline/scheduler/full-seed7-20261003-v1/manifest.json",
+        "sha256": "6f6ffb9d23b3e22a59f86661a76cbdf19580c3a64848aeae7fc3fe4a3fe2a5c5"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/baseline/scheduler/full-seed7-exclusive-v2/manifest.json",
+        "sha256": "266559f6a4cdf6794a17f0c8be78dbb7f23ca4b56f61a7872a17653e9e2d89b7"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/lora-dev150-final-v1/seed-audit.json",
+        "sha256": "a8e4fb85729cec0a8d1b072d2bfbfa052db7efeb2e0658c1b5be6ae6c987ec97"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/lora-dev150-final-v1/seed-audit-attempt1.json",
+        "sha256": "4df3fafeb58f7ed787813d03600855b20fe5654579673a81bcd75d1fc9fc631e"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/lora-dev150-final-v1/engineering-seed-audit.json",
+        "sha256": "55c91c02b4472d33be506efd64542c04fe73a1058deb9c79669e31e47511b174"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/continuous-dev150-2000-v3/seed-audit.json",
+        "sha256": "c9fc31285bdd5e3c2c091d926a25437fd5ae4338ba0d089db43989fd4953ecfe"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/lora-confirm600-v1/remote-seed-audit.json",
+        "sha256": "e31551c4fb0332b9f4713d4f345263cdfec8c10925d781fec384a7029b61c016"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/lora-confirm600-v1/local-seed-audit.json",
+        "sha256": "6b7296632554304e442f82d2531b7eab7868180ea392f86fc63a5444bd701584"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/lora-confirm600-v1/seed-audit.json",
+        "sha256": "d0c4d15db66740726119251deb2df77412d3568b384788a5c034b7af3da8acba"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/dev-analysis/teacher-anchor-dev-v1/plan.json",
+        "sha256": "80521193d0b52ed198d28feaff6d6fd4a78c1835545705b63a23b81004d043ef"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/dev-analysis/teacher-anchor-dev-v1/manifest.json",
+        "sha256": "e03db6c19f54e3fad3e3518e664d867e28b0a841a53afa57324c392549c4e781"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/results/frozen-b-confirm600-v1/seed-audit.json",
+        "sha256": "e3323b2c7430f38f1b27f7187ea4cd2f24e6ad339c1f00cc7d0a5cad2583b0ad"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/mimicgen_selected_data_v1/selected-manifest.json",
+        "sha256": "1e4150990706dd537287fb15a31e94c353b04bbca04425ea4abf3ece710b3de8"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/online_flow_posttrain_v1/dev-manifest.json",
+        "sha256": "dad65884f0f7ced1b8c1370b0af5f17b306cf1292446fc66dee3e0cb32aca090"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_confirm600_sixreplica_v1/protocol.json",
+        "sha256": "593bb84ffdfd8f0ef020e3f2181b95aa24ba3cccf57cf1fd282cde707d481b63"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_confirm600_sixreplica_v1/manifest.json",
+        "sha256": "415e140978b774631e57d83d34baba7e1b65f84daf0f79b5229ab1cb76753c5f"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/frozen_b_confirm600_v1/protocol.json",
+        "sha256": "4db4a0e006c82b1b34d760f60e522b5f05f530e6f0b9b83e5de4acb8d978e7c0"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/frozen_b_confirm600_v1/manifest.json",
+        "sha256": "aac8943f4f241dff3075402156851ae989993023968f558c339940d52f1f6ff4"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/five_hour_campaign_v1/improvement/source_manifest.json",
+        "sha256": "42430cbff49b2dc7c08e0a3928347839237c4d90b78adc358621f197a5d9af4f"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/five_hour_campaign_v1/improvement/dev_c2500/protocol.json",
+        "sha256": "b5e5225a5efe219d021a0767de4774dc8855a50ab7943c65076eeb0053279a76"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/five_hour_campaign_v1/improvement/dev_c2500/seed-audit.json",
+        "sha256": "fc82b3538d73f8ad3b665001eb2229cc185662d6167d89997f78d35149c272e1"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/five_hour_campaign_v1/improvement/dev_c2500/manifest.json",
+        "sha256": "216adfe2e83c3cc5166b4e86f4bb5a4fc7f97d28850882caf68f96d80f0ac387"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_train_v3/plan_summary.json",
+        "sha256": "0f18309597a4deadec967af1ccbe244de48dca4904bf70e4691c5d0428061be6"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_train_v3/plan_config.json",
+        "sha256": "7c63658a904b25c34e1669c51567c38c2e1e756a01796e10ae55a5255b940289"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/exports/local5090-v1/manifest.json",
+        "sha256": "266559f6a4cdf6794a17f0c8be78dbb7f23ca4b56f61a7872a17653e9e2d89b7"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/official_b2500_v1/protocol.json",
+        "sha256": "4a483e51fa4605f8236367d02a1538f141ca185a2b254b0721e4d260625c993d"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/official_b2500_v1/manifest.json",
+        "sha256": "1cc808ccb54f116350017ac1a60f85225382920c13bab0e4cfa0a6ec2bce677a"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/next_method_plan_v1/plan.json",
+        "sha256": "80521193d0b52ed198d28feaff6d6fd4a78c1835545705b63a23b81004d043ef"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/stage_pilot_train_v2/plan_summary.json",
+        "sha256": "5d9d6c4f2c541359653ece0c298e5cea71b5e01ee8220ad7ca542dad2af942f7"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/stage_pilot_train_v2/plan_config.json",
+        "sha256": "24ad42a22643c2b34ee74828492c5774e87d569ad2ee8c12a5e443573db83dc1"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_confirm600_48x6_v1/protocol.json",
+        "sha256": "593bb84ffdfd8f0ef020e3f2181b95aa24ba3cccf57cf1fd282cde707d481b63"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_confirm600_48x6_v1/manifest.json",
+        "sha256": "415e140978b774631e57d83d34baba7e1b65f84daf0f79b5229ab1cb76753c5f"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/original_base_dev150_v1/protocol.json",
+        "sha256": "b47d3ad3bc59847b6ec060520904981e546653534109c9381283852ff698614f"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/original_base_dev150_v1/seed-audit.json",
+        "sha256": "9df14d3c7cf55331a0fa5ec97ddcdab3a18fd2b3dd8f0ac1982a5a1d6507fd1a"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/original_base_dev150_v1/manifest.json",
+        "sha256": "baa5e7e513a5c093decef28219693b4f8ac9b5108870c05bbe3fc9ef2ab6b512"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/originx_gr00t_confirmation_20261009/preparation_manifest.json",
+        "sha256": "649d0d7d9d46358012ed40d874358a001fa6bc09c4bafda21bcf91d8055ad094"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/human_mg_pilot_plan_v1/dev-manifest.json",
+        "sha256": "94fd86adb74e62c01d6e2d7781d8c2118c072407f30e0bdece9daf4f7e85f38c"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/human_mg_pilot_plan_v1/seed-audit.json",
+        "sha256": "9c32b9d4038009fbc02bf7fada82c524ad1ff988b63204dfb0e2f2196a387ecf"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/online_flow_training_v1/plan.json",
+        "sha256": "a5a93122f238a574301fea0c634d9d4aab01590ab0d23139d4ef7948d7534326"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/decision-protocol.json",
+        "sha256": "f471643f4eb558d2f0a4d41f7187fc50a78cb48f412f8f8dbf79924ee63a9fb7"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/gate_manifest.json",
+        "sha256": "9c56fe3c7bdb7436d2f5105719fefc02d0428dfa9096abc14b1b160b26b76d66"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_dev150_final_v1/dev450-manifest.json",
+        "sha256": "8643051dab874f68ca8763242265ad3016788c4da62af3f57060004fe5144fe1"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_train2000_v3/plan_summary.json",
+        "sha256": "310013a181c4dd0bf9f5db92f9b1464c590b065645dc1532e987b7f944826a7d"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/continuous_train2000_v3/plan_config.json",
+        "sha256": "f70848f939fcd81f0fde8027ff1586e7f98db7dc69f0c6c7785262c2e39d0a06"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/continued_ab2000_v1/protocol.json",
+        "sha256": "036a404bf6dfbfd0337c352be5bbfb3a27ad08fcf8c57bfcdecd590f50ad0252"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/continued_ab2000_v1/manifest.json",
+        "sha256": "6817fdd613e1fb5cb5a365bb09ac2d4661a07cecdf74633a9e7c8527255e605f"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_confirm600_v1/protocol.json",
+        "sha256": "593bb84ffdfd8f0ef020e3f2181b95aa24ba3cccf57cf1fd282cde707d481b63"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_confirm600_v1/manifest.json",
+        "sha256": "415e140978b774631e57d83d34baba7e1b65f84daf0f79b5229ab1cb76753c5f"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/remote_processor_candidate_v1/bundle-v1/manifest.json",
+        "sha256": "4cdb0c5860337da65657112be1113cbf3d97cf76d81cce45499a867337a26ce3"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_formal2500_48x6_v1/protocol.json",
+        "sha256": "dd9bdf3bcf31f34c0c69038fa7470cafbbad4edf5747a2bf0c273951136ea540"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_formal2500_48x6_v1/manifest.json",
+        "sha256": "2476f1011fd97d6379ab60e3d2c6940cd3690c2982e988eb0b57a47e39f2e3de"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/memory_policy_v1/backup-manifest.json",
+        "sha256": "868b8aa811caa44f22f12f592936a5f61b74ee068b6a8a3f1031a4711c229307"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/memory_policy_v1/gate-manifest.json",
+        "sha256": "97be08b919b29c7ab7b5f148658494c61e602626e732fd135e375fbf8793a194"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/stage_dev150_v2/protocol.json",
+        "sha256": "740106ac05e3564fc7ca7e2db8e8a485a7f727d9b0c58e4ea5487acc3441e785"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/stage_dev150_v2/manifest.json",
+        "sha256": "eb26460367b912f1faf387eef9c028706abb6ed08d1d5189567c2d78c3073a2b"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/online_flow_method_design_v1/small-experiment-plan.json",
+        "sha256": "a5a93122f238a574301fea0c634d9d4aab01590ab0d23139d4ef7948d7534326"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/astra_rescue_continuation_20261009/failure_manifest.json",
+        "sha256": "fe3b4d29408ad476cdde3f83af18321cb294014eb26c9b716a21ddb51d7d222b"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_formal2500_v1/protocol.json",
+        "sha256": "dd9bdf3bcf31f34c0c69038fa7470cafbbad4edf5747a2bf0c273951136ea540"
+      },
+      {
+        "path": "/ephemeral/qinzhen/robocasa-xr1-20261003/lora_formal2500_v1/manifest.json",
+        "sha256": "2476f1011fd97d6379ab60e3d2c6940cd3690c2982e988eb0b57a47e39f2e3de"
+      }
+    ],
+    "new_seed_count": 2500
+  }
+}

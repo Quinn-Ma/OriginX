@@ -1,0 +1,30 @@
+{
+  "schema": "originx_gr00t_v2_local_release_v1",
+  "namespace": "originx_gr00t_confirmation_20261009_v2",
+  "service_namespace": "originx_gr00t_confirmation_20261009",
+  "source_sha256": {
+    "__init__.py": "fb769a894e28f0ffd1ac6081745d1a776e90473cc339102a3569595c613e5f85",
+    "adapter.py": "daf0b5333cc8430e2330a7e6d4d2482269be51eaec14a405d33aea03c6e24b5b",
+    "aggregate.py": "b7c2d545bace63eb349d061f09818d6d741e0cc1dda2096b3d8bb32c22535ea3",
+    "assistance.py": "ccf28773f2904d90f08e72933cc0b90a7731f9e8e2c6e09d7ec835c8376ff4ca",
+    "broker.py": "d6202791834ef06c5f96004a6cf7205af43ab0cf99e5c6b51e2ca989e79031f4",
+    "campaign.py": "f1742d42e3560d869bbb5e7e4eed6d57ae78eb55e2df2c063a438c3d462db646",
+    "capture_native_fixtures.py": "ccc8ed00241a84ee7daae8b8c6e587142de8960ec6747f50232466bc3717ff1b",
+    "client.py": "8d50db9fa8fc0d3193658a7bb7124d310ab342cd0874ec0b379ef1d87fe58d38",
+    "core.py": "3a0df5483786611743500330038d1291bca7141e4d6a13da5e3a5f4dba006bd9",
+    "parity_probe.py": "e703d4db2dfb39d4e85dd987bbc80d6b201644624159ddcf3278d649621684c1",
+    "processes.py": "89bf3178e1e71ff0cbb19e0d3bbc1c6bc880b27450a12e9ec424ff6b41d2c6d8",
+    "runner.py": "c3042b0c74c10024be7713a07eee8be3482c2cfe68aa4d3e3c75b1f0013479a6",
+    "server.py": "dd9564cf9a4be486de866cc631f79528d707c1e8f3a307999c9b5a40f74f6565",
+    "wire.py": "5e94665f8fe25a49abf732ee335ff579fa2f2583c13917a2677db6d84a7ee5b8"
+  },
+  "broker_source_sha256": "d6202791834ef06c5f96004a6cf7205af43ab0cf99e5c6b51e2ca989e79031f4",
+  "local_tests": {
+    "passed": 88,
+    "skipped_linux_only_on_windows": 1
+  },
+  "actual_linux_cpu_spawn_tests": 6,
+  "linux_regression_receipt_sha256": "85cb80dfe41982d45f736ffdc6f40dcbe58fed70ab66685c3b2ea6d316dfcf1c",
+  "no_GPU_or_rollout_started": true,
+  "source_freeze_schema": "originx_gr00t_source_freeze_v1"
+}

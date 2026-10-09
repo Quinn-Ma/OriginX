@@ -1,6 +1,6 @@
 # Prospective OriginX confirmation
 
-**Status: development admission in progress; no confirmatory outcomes reported.**
+**Status: all 14 development outcomes passed raw-evidence admission; the formal cohort has not started. No confirmatory efficacy outcomes reported.**
 The historical 1,496/2,500 benchmark and 56/1,004 conditional rescues are unchanged.
 
 The sealed seed-level design uses the same 50 tasks and 50 fresh seeds/task.
@@ -9,7 +9,7 @@ L (vision-blind Astra High), and V (visual Astra High). The original Xiaomi poli
 receives C/V. This is 2,500 unique environment cases and 17,500 separately planned
 arm outcomes. Original Xiaomi is a related policy, not an independent architecture.
 A separately admitted official GR00T N1.5 C/V replication is being prepared; its
-future protocol and results must be reported separately.
+[registered protocol](../gr00t-confirmatory-20261009/README.md) and results are reported separately.
 
 The actual prospective protocol is [EXPERIMENT.md](EXPERIMENT.md). The longer
 [design review](design_review.md) records recommendations; where different, the

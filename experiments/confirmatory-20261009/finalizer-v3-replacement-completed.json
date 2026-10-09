@@ -1,0 +1,16 @@
+{
+  "reason": "Require explicit typed zero-call accounting, never interpret absent count as zero",
+  "owner": {
+    "pid": 69972,
+    "command": [
+      "D:\\codex\\2026-10-08\\new-chat\\work\\confirmatory_20261009/finalize_full_v2.py"
+    ],
+    "created_at": "2026-10-09T19:51:06.839482+00:00",
+    "hostname": "LAPTOP-75D3IOV6",
+    "creation_filetime": 134360490666687426
+  },
+  "phase": "waiting_campaign",
+  "old_source_sha256": "56fb609fdeb0c959d56f2acd3d9b3524a032024a8d2f76b75d4095b7cbc5a103",
+  "new_source_sha256": "382f3bea89982c09fde453867ee3a6c4b48c74fb6cd12f9e9f2afbb400cdc2b8",
+  "old_owner_stopped": true
+}
