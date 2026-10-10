@@ -15,3 +15,32 @@
 .confirmatory-table-wrap{max-width:980px;margin:30px auto;padding:0 24px;overflow-x:auto}.results-table{width:100%;min-width:680px;border-collapse:collapse;font-size:.875rem;line-height:1.55;text-align:right;font-variant-numeric:tabular-nums}.results-table caption{text-align:left;font-weight:500;color:#45516d;margin-bottom:12px}.results-table th,.results-table td{padding:14px 10px;border-bottom:1px solid #e2e7f0;white-space:nowrap}.results-table th:first-child,.results-table td:first-child{text-align:left}.results-table thead th{font-size:.75rem;color:#637087;font-weight:500}.results-table tbody th{font-weight:500}.results-table tbody tr:nth-child(4){background:#f1f3ff}.confirmatory-table-wrap:focus-visible{outline:2px solid #354bea;outline-offset:4px}@media(max-width:600px){.confirmatory-table-wrap{padding:0 24px}.results-table{font-size:.8125rem}}
 
 .overview-figure{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff}.overview-figure>a{display:block}.overview-figure img{width:100%;height:auto}.overview-figure figcaption{font-size:.8125rem;line-height:1.6;color:var(--muted);padding:16px 22px;border-top:1px solid var(--line)}
+
+/* Architecture-led project presentation. */
+.method-first .article-header-area{padding-top:64px}
+.method-first h1{max-width:860px;font-size:3.7rem;margin-bottom:26px}
+.method-lede{font-size:1.22rem;line-height:1.65;color:#50596e;max-width:720px;margin:0 0 30px}
+.leader-highlight{padding:24px 28px;border:1px solid #c5ccef;border-radius:18px;background:rgba(255,255,255,.82)}
+.leader-highlight .leader-kicker{font-size:.75rem;text-transform:uppercase;letter-spacing:.10em;color:#354bea;font-weight:600;margin:0 0 12px}
+.leader-highlight h2{font-size:1.55rem;font-weight:500;letter-spacing:-.025em;line-height:1.25;margin:0 0 12px;color:#2437a8}
+.leader-highlight>p:last-child{font-size:.85rem;line-height:1.7;color:#535e79;margin:0;max-width:720px}
+.method-first .byline{border-bottom:0;margin-top:22px;padding-bottom:0}
+.method-first .release-links{margin:26px 0 0}
+.method-hero{max-width:1150px;margin:46px auto 0;box-shadow:0 16px 60px #323e6d0a}
+.method-first .article-body{padding-top:30px}
+.method-first .section-label{font-size:.75rem;letter-spacing:.11em;text-transform:uppercase;color:#6775a4;margin-bottom:17px}
+.method-first .idea-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding:0}
+.method-first .idea-card{padding:28px;border:1px solid #e0e4ef;border-radius:18px;background:#fafbff}
+.card-tag{display:block;color:#5364bb;font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px}
+.idea-card h3{font-size:1.18rem;line-height:1.4;min-height:3.3em;margin:0 0 17px}
+.idea-card p{font-size:.93rem;line-height:1.8;color:#626c80;margin:0}
+.method-first .method-note{font-size:.92rem;color:#657189;border-left:2px solid #c2cbeb;padding-left:20px;margin-top:32px}
+.rescue-flow{padding:34px 36px 24px;border:1px solid #d9e2de;background:#f5f9f7;border-radius:20px}
+.rescue-flow ol{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.flow-index{display:block;color:#568173;font-size:.8rem;margin-bottom:15px}
+.rescue-flow h3{font-size:1.25rem;margin-bottom:15px}
+.rescue-flow li p{font-size:.94rem;line-height:1.75;color:#5e7168;margin:0}
+.flow-caption{border-top:1px solid #dce7e1;margin:26px 0 0;padding-top:20px;color:#567365;font-size:.83rem;text-align:center}
+@media(max-width:1100px){.method-first .idea-grid,.rescue-flow{margin-left:32px;margin-right:32px}.idea-card{min-width:0}}
+@media(max-width:760px){.method-first .idea-grid{grid-template-columns:1fr}.idea-card h3{min-height:0;margin-bottom:12px}.rescue-flow ol{grid-template-columns:1fr;gap:26px}.rescue-flow li+li{border-top:1px solid #dce7e1;padding-top:22px}.flow-index{margin-bottom:8px}}
+@media(max-width:600px){.method-first .article-header-area{padding-top:38px}.method-first h1{font-size:2.65rem;line-height:1.13}.method-lede{font-size:1.0625rem;margin-bottom:24px}.leader-highlight{padding:20px;border-radius:14px}.leader-highlight h2{font-size:1.3rem}.leader-highlight .leader-kicker{font-size:.65rem;line-height:1.7}.leader-highlight>p:last-child{font-size:.8rem}.method-first .byline{gap:18px;flex-wrap:wrap}.method-first .author strong{font-size:.86rem}.method-first .author div>span{font-size:.75rem}.method-hero{margin-top:34px;border-radius:14px}.method-hero figcaption{padding:14px 16px;font-size:.75rem}.method-first .article-body{padding-top:0}.method-first .article-body section{padding-top:54px}.method-first .idea-grid{margin:26px 24px}.method-first .idea-card{padding:24px}.method-first .section-label{font-size:.7rem}.method-first .rescue-flow{padding:26px 24px;margin:28px 24px}.method-first .flow-caption{text-align:left;line-height:1.8}.method-first .resource-format{min-width:48px}.method-first .method-note{font-size:.85rem}}
