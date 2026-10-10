@@ -1,13 +1,13 @@
 # OriginX
 
-**Model-focused research preprint** — *OriginX: Continuous Conditioning of a Frozen Robot Policy for RoboCasa365*, by Qinzhen Ma (Rice University) and Harry Yang (The Hong Kong University of Science and Technology). The 23-page manuscript includes the implementation-checked overview, full training recipe, 2,500-episode evaluation, limitations, and supplementary assistance experiments. [PDF](paper/OriginX_arXiv_manuscript.pdf) · [TeX source](paper/OriginX_arXiv_source.zip). This is the prepared preprint manuscript; an arXiv identifier has not yet been assigned.
+**Model-focused research preprint** — *OriginX: Continuous Conditioning of a Frozen Robot Policy for RoboCasa365*, by Qinzhen Ma (Rice University), Harry Yang (The Hong Kong University of Science and Technology), Jialin Wu (University of California San Diego), Shichen Tang (Rice University), and Gordon Dai (New York University), in that order. The 23-page manuscript includes the implementation-checked overview, full training recipe, 2,500-episode evaluation, limitations, and supplementary assistance experiments. [PDF](paper/OriginX_arXiv_manuscript.pdf) · [TeX source](paper/OriginX_arXiv_source.zip). This is the prepared preprint manuscript; an arXiv identifier has not yet been assigned.
 
 
 [Model weights on Hugging Face](https://huggingface.co/Qinzhen3/OriginX) · [Project website](https://robocasa.originxairobotics.com) · [Evaluation evidence](https://github.com/Quinn-Ma/OriginX/releases/tag/v1.0.0) · [Reproduction guide](REPRODUCIBILITY.md) · [Technical report](TECHNICAL_REPORT.md)
 
 **Naming.** OriginX is the public model name. The unchanged internal experiment and checkpoint identifier is B2000; earlier publication drafts used the name XR1-Continuous-B2000. Renaming does not change any weights, experiment records, or provenance hashes. A2000 is the public release alias of historical A1613: the adapter weights are unchanged and were trained for 1,613 actual updates.
 
-A continuous conditioning branch on top of an Action LoRA adaptation of [Xiaomi-Robotics-1-RoboCasa365](https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-1-RoboCasa365). Author: Qinzhen Ma. This is an independent derivative.
+A continuous conditioning branch on top of an Action LoRA adaptation of [Xiaomi-Robotics-1-RoboCasa365](https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-1-RoboCasa365). This is an independent derivative.
 
 **Author-run RoboCasa365 result: 59.84% across all 2,500 episodes.** [Official submission PR #26](https://github.com/robocasa-benchmark/leaderboard/pull/26) is open for organizer review; it is not an accepted leaderboard rank. The available earlier paired comparison did not establish a statistically reliable improvement from our changes.
 
