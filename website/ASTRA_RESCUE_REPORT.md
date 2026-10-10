@@ -36,7 +36,7 @@ The earlier [three-case offline analysis](https://github.com/Quinn-Ma/OriginX/bl
 
 The original 2,500-episode benchmark release is unchanged. The rescue publication preserves both campaign archives, the separate pilot archive, fixed selection and failure manifests, per-case classifications, model/configuration/source hashes, actual request/response evidence, and deduplicated CLI usage. See [the evidence index](https://github.com/Quinn-Ma/OriginX/blob/main/evidence/astra-rescue/README.md) and [execution source snapshot](https://github.com/Quinn-Ma/OriginX/blob/main/rescue_study/README.md). Unknown results and infrastructure errors are retained. All v1 and continuation workers and model services were independently checked inactive by their recorded process identities.
 
-The [CVPR 2027 paper draft](https://github.com/Quinn-Ma/OriginX/blob/main/paper/OriginX_CVPR2027_draft.pdf) is a research draft; publication here is not a conference acceptance or an organizer-accepted leaderboard rank.
+The [research preprint](https://github.com/Quinn-Ma/OriginX/blob/main/paper/OriginX_arXiv_manuscript.pdf) is a research draft; publication here is not a conference acceptance or an organizer-accepted leaderboard rank.
 
 ## 中文结果与方法
 
