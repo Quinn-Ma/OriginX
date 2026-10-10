@@ -1,6 +1,6 @@
 # OriginX
 
-**Model-focused research preprint** — *OriginX: Continuous Conditioning of a Frozen Robot Policy for RoboCasa365*, by Qinzhen Ma (Rice University) and Harry Yang (HKUST Division of Arts and Machine Creativity). The 23-page manuscript includes the implementation-checked overview, full training recipe, 2,500-episode evaluation, limitations, and supplementary assistance experiments. [PDF](paper/OriginX_arXiv_manuscript.pdf) · [TeX source](paper/OriginX_arXiv_source.zip). This is the prepared preprint manuscript; an arXiv identifier has not yet been assigned.
+**Model-focused research preprint** — *OriginX: Continuous Conditioning of a Frozen Robot Policy for RoboCasa365*, by Qinzhen Ma (Rice University) and Harry Yang (The Hong Kong University of Science and Technology). The 23-page manuscript includes the implementation-checked overview, full training recipe, 2,500-episode evaluation, limitations, and supplementary assistance experiments. [PDF](paper/OriginX_arXiv_manuscript.pdf) · [TeX source](paper/OriginX_arXiv_source.zip). This is the prepared preprint manuscript; an arXiv identifier has not yet been assigned.
 
 
 [Model weights on Hugging Face](https://huggingface.co/Qinzhen3/OriginX) · [Project website](https://robocasa.originxairobotics.com) · [Evaluation evidence](https://github.com/Quinn-Ma/OriginX/releases/tag/v1.0.0) · [Reproduction guide](REPRODUCIBILITY.md) · [Technical report](TECHNICAL_REPORT.md)
