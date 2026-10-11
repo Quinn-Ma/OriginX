@@ -1,0 +1,533 @@
+{
+  "schema": "originx_confirmatory_cli_usage_v1",
+  "unique_observed_cli_invocations": 25,
+  "observed_status_counts": {
+    "ok": 25
+  },
+  "known_usage_totals": {
+    "input_tokens": 430501,
+    "cached_input_tokens": 0,
+    "output_tokens": 7548,
+    "reasoning_tokens": 3743
+  },
+  "observed_calls_missing_counters": {
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0
+  },
+  "known_invocation_latency_sum_seconds": 306.5302483999694,
+  "observed_calls_missing_latency": 0,
+  "request_files": 25,
+  "requests_without_observed_cli_receipt": [],
+  "broker_inventory_provided": true,
+  "inventory_complete": true,
+  "complete_input_output_token_accounting": true,
+  "interrupted_cli_starts_without_receipt": [],
+  "invalid_receipts": [],
+  "cost_usd": null,
+  "reasoning_tokens_included_in_output_not_added_again": true,
+  "interpretation": "Known observed usage; unpublished/interrupted calls may be unknown. No inferred zero token usage or monetary price.",
+  "calls": [
+    {
+      "invocation_key": "03e957ff3c5c76c99ee3c90ff345a4712a41357868e68a47981dbe2be2b0dd1d",
+      "status": "ok",
+      "request_ids": [
+        "151f4ddce76b962bf56baa8d8f5b79e1"
+      ],
+      "receipt_sha256": "20075d8d4997fb9e72c56b0cb42e142d0f0383eefd900d00467df21e58983780",
+      "usage": {
+        "input_tokens": 17214,
+        "cached_input_tokens": 0,
+        "output_tokens": 272,
+        "reasoning_tokens": 114
+      },
+      "latency_seconds": 10.473334699985571,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/151f4ddce76b962bf56baa8d8f5b79e1/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T165041-973fdff06143/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "0d50ed033e036183488d6cbbffa4495074220e8d42986e84cffcecf8477a5661",
+      "status": "ok",
+      "request_ids": [
+        "f3b6011e1bb45c9404e0bda8598ae00c"
+      ],
+      "receipt_sha256": "57d1ee7f938637c0961d37511291591e05ad9a08af2b0b2a27710562256d1c09",
+      "usage": {
+        "input_tokens": 17247,
+        "cached_input_tokens": 0,
+        "output_tokens": 368,
+        "reasoning_tokens": 192
+      },
+      "latency_seconds": 15.48669669998344,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/f3b6011e1bb45c9404e0bda8598ae00c/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T164435-c1e57aec7164/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "1c375e92aadf24d375584c07fd77f02183f5d9be2e4c128a4d8d9b17ec1e80d3",
+      "status": "ok",
+      "request_ids": [
+        "5392b5e230e4e4e4a70cd9af5ef196d2"
+      ],
+      "receipt_sha256": "182e983f54abc48d4286a74f8b4af82a2480fc44aa68fd49af034928a96e66b8",
+      "usage": {
+        "input_tokens": 17213,
+        "cached_input_tokens": 0,
+        "output_tokens": 248,
+        "reasoning_tokens": 94
+      },
+      "latency_seconds": 9.843868000025395,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/5392b5e230e4e4e4a70cd9af5ef196d2/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T164806-021c462a37b9/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "27231e51651948baed0adc3a0754d26b9564277f62fccbcbebb7c41ff7e50998",
+      "status": "ok",
+      "request_ids": [
+        "d19abf91464c8046190eb1212a00da15"
+      ],
+      "receipt_sha256": "48c651525cd183b0eb7879fdab0f3cd1f64a1f8c6abf471b95cebee105e7cc5a",
+      "usage": {
+        "input_tokens": 17205,
+        "cached_input_tokens": 0,
+        "output_tokens": 400,
+        "reasoning_tokens": 235
+      },
+      "latency_seconds": 14.055729400017299,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/d19abf91464c8046190eb1212a00da15/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T164634-52ae075059da/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "37ff5f2c49b4b32f6b1c012c7525167e7850c8433ac2d221e2819cf911468525",
+      "status": "ok",
+      "request_ids": [
+        "692e6af4bdca203182eed6e8f39170a0"
+      ],
+      "receipt_sha256": "60644648100cdd9a5aa61502bfcb2d8b6c7cc0c29755fefc71cf1bed4f671d36",
+      "usage": {
+        "input_tokens": 17212,
+        "cached_input_tokens": 0,
+        "output_tokens": 252,
+        "reasoning_tokens": 109
+      },
+      "latency_seconds": 11.439960499992594,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/692e6af4bdca203182eed6e8f39170a0/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T164605-30a0cef3504a/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "3fa582adfa3935d7260b735c66aed25a21876c204f36ea7dbc2eac552752bdca",
+      "status": "ok",
+      "request_ids": [
+        "4a864bd89dbcd78e6c756d80ca0b4854"
+      ],
+      "receipt_sha256": "1d6e217709e06063e846f8f36ed220d552ddc3c7442bc5c4072b709dde1f1d57",
+      "usage": {
+        "input_tokens": 17229,
+        "cached_input_tokens": 0,
+        "output_tokens": 385,
+        "reasoning_tokens": 236
+      },
+      "latency_seconds": 15.001504999992903,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/4a864bd89dbcd78e6c756d80ca0b4854/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T164330-23dddbbb2e14/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "464939c30feffc90184c82b4cb2bdfb4b6f9fe53c7cbef717ddbff366a5bf170",
+      "status": "ok",
+      "request_ids": [
+        "ba7b8d4da10f27a8c36233766008d9bb"
+      ],
+      "receipt_sha256": "46ef152dc340e08115dff4569fd97d1133ead2601925ee9cbcf7a063f58036b3",
+      "usage": {
+        "input_tokens": 17236,
+        "cached_input_tokens": 0,
+        "output_tokens": 342,
+        "reasoning_tokens": 171
+      },
+      "latency_seconds": 13.960513300000457,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/ba7b8d4da10f27a8c36233766008d9bb/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T165005-1c519e179cb4/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "4e5eb3dfe8f5eacdb24bef6243e37acdbab3bf06ee23839aa72968604fa8cb44",
+      "status": "ok",
+      "request_ids": [
+        "f1d0704471de6a84eb0167a9d1716930"
+      ],
+      "receipt_sha256": "43810b672b497dbca13b952cb2cce2fb1a33fbe7419943c5a2c3ebe99454f383",
+      "usage": {
+        "input_tokens": 17214,
+        "cached_input_tokens": 0,
+        "output_tokens": 300,
+        "reasoning_tokens": 153
+      },
+      "latency_seconds": 13.047344099992188,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/f1d0704471de6a84eb0167a9d1716930/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T165212-b962e90a00db/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "5153eb7424e6f536dbc6224237140c3c6925fcd16ef1557a0dbd5b7d26cf4ae0",
+      "status": "ok",
+      "request_ids": [
+        "293cbb78dab58405edaa18b76f1d4d27"
+      ],
+      "receipt_sha256": "c197e47d1af01172c1275448465e644a828e4128b781d53029043474e2053af0",
+      "usage": {
+        "input_tokens": 17242,
+        "cached_input_tokens": 0,
+        "output_tokens": 372,
+        "reasoning_tokens": 198
+      },
+      "latency_seconds": 13.439540799998213,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/293cbb78dab58405edaa18b76f1d4d27/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T164403-996ba72ed9ed/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "62248600d6d8132f521882b74e37e0c740c439cea1d670ea2e73c6f350dbf1fe",
+      "status": "ok",
+      "request_ids": [
+        "12bc22f2aee9a139fef121e87cb4b2a8"
+      ],
+      "receipt_sha256": "751bef2566dededa55a0b9a3d8231ae1a4c2ceebc63a41f336396a7573ed66fa",
+      "usage": {
+        "input_tokens": 17225,
+        "cached_input_tokens": 0,
+        "output_tokens": 271,
+        "reasoning_tokens": 137
+      },
+      "latency_seconds": 12.950680099980673,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/12bc22f2aee9a139fef121e87cb4b2a8/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T165243-8e0f8696d3b5/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "648196cac82db1ceca344141ca6d4cf48a9e3730bc3d376245ef24e29a13073f",
+      "status": "ok",
+      "request_ids": [
+        "275f968dbccb9011061d37fd753bad6c"
+      ],
+      "receipt_sha256": "6e6fcd513c3279135cb2fdfc452a86245a10888bf108fc0e03558609db05d450",
+      "usage": {
+        "input_tokens": 17218,
+        "cached_input_tokens": 0,
+        "output_tokens": 225,
+        "reasoning_tokens": 74
+      },
+      "latency_seconds": 9.818433999986155,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/275f968dbccb9011061d37fd753bad6c/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T164508-bed90ce1da30/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "868eecbecf3e9e72e2296f390b053c11423ec5ce416cf698cab09d6da7ccd7f5",
+      "status": "ok",
+      "request_ids": [
+        "0860cf09c8c041c3df3b3aa2fb8324c6"
+      ],
+      "receipt_sha256": "3a2bbd0055b159a625e3b252356eb847ade1d39c64d16e58d809c03270232b48",
+      "usage": {
+        "input_tokens": 17222,
+        "cached_input_tokens": 0,
+        "output_tokens": 369,
+        "reasoning_tokens": 211
+      },
+      "latency_seconds": 12.943465699994704,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/0860cf09c8c041c3df3b3aa2fb8324c6/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T165109-a5aef1681a52/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "960b1fa09197275786f5e727fc580a71cfc644ba48aca458106276b638600317",
+      "status": "ok",
+      "request_ids": [
+        "9451e9ff5a9cc42fced03985ab6898a0"
+      ],
+      "receipt_sha256": "4f4234262c99b226db390e6bd41f5938985b645a6742d112f5b8132bc8c21b87",
+      "usage": {
+        "input_tokens": 17210,
+        "cached_input_tokens": 0,
+        "output_tokens": 230,
+        "reasoning_tokens": 77
+      },
+      "latency_seconds": 9.49336220000987,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/9451e9ff5a9cc42fced03985ab6898a0/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T164203-b4f37899b139/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "a0b891fa9e4de61aee2e1a1817b628a187d2344f064f05eb345c87ed00467a3f",
+      "status": "ok",
+      "request_ids": [
+        "94ee7e457309aed04e543d6cd51095d4"
+      ],
+      "receipt_sha256": "525e3f2238937ff5c9f6416b92611c9aeceed5de7ae383d9e226246e7c8bd6d1",
+      "usage": {
+        "input_tokens": 17214,
+        "cached_input_tokens": 0,
+        "output_tokens": 261,
+        "reasoning_tokens": 125
+      },
+      "latency_seconds": 12.967419099994004,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/94ee7e457309aed04e543d6cd51095d4/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T165414-3c92fb20bf30/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "ab40dfb62a33f7aa5ff96d332324b94eda78e57df7f5d397a5dcfabd5928cf31",
+      "status": "ok",
+      "request_ids": [
+        "21cd81bcce7149313c7dc54c41530735"
+      ],
+      "receipt_sha256": "26f1f2fe83ebc2bbd1035164e3c21c035a6f024a144602ca1b55decaf6b39def",
+      "usage": {
+        "input_tokens": 17204,
+        "cached_input_tokens": 0,
+        "output_tokens": 399,
+        "reasoning_tokens": 252
+      },
+      "latency_seconds": 12.448970199999167,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/21cd81bcce7149313c7dc54c41530735/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T164300-fbaa19c66988/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "be90ad050d1d45628290c0e939d83a25ac303ba5bcc87a9ba6da94a0401eb494",
+      "status": "ok",
+      "request_ids": [
+        "d7d33222cad9579c4bd8f4bab89b98e5"
+      ],
+      "receipt_sha256": "34e3a2bc2fb18be2b25587af14687f11bb78de77b640947c107960130e5d59fe",
+      "usage": {
+        "input_tokens": 17221,
+        "cached_input_tokens": 0,
+        "output_tokens": 333,
+        "reasoning_tokens": 172
+      },
+      "latency_seconds": 13.130399999994552,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/d7d33222cad9579c4bd8f4bab89b98e5/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T165646-43073cef996b/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "c32461e48c67e9540c5925a44950f13245cb9b3be15eeb7ddbd645ee9b5e06d7",
+      "status": "ok",
+      "request_ids": [
+        "563683d40c1de5c102cd53a6a004fcd1"
+      ],
+      "receipt_sha256": "8192291cdf54de99df717089360bb6aa88672687ff5a7f979c86f7c25a9ddfb6",
+      "usage": {
+        "input_tokens": 17217,
+        "cached_input_tokens": 0,
+        "output_tokens": 347,
+        "reasoning_tokens": 195
+      },
+      "latency_seconds": 13.025644900015322,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/563683d40c1de5c102cd53a6a004fcd1/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T164230-4c9dd98df2ee/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "c827bf56bac7d62d0a9058d66b19b7480beab6c730f0d35a998d38ee3514094b",
+      "status": "ok",
+      "request_ids": [
+        "99baaab24afcce4f4b2872bf707b1328"
+      ],
+      "receipt_sha256": "efdba3ff3b0bd705b9a63bc8cf32c5dc9f8c9cd3df433daf993e8d64ce3ec0be",
+      "usage": {
+        "input_tokens": 17207,
+        "cached_input_tokens": 0,
+        "output_tokens": 216,
+        "reasoning_tokens": 83
+      },
+      "latency_seconds": 10.31135329999961,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/99baaab24afcce4f4b2872bf707b1328/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T164536-2b06d596d284/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "d611a8044cdf1fce9e9c8fcf1bc353960b3cad79fa5340d44ff7875bda9fedcc",
+      "status": "ok",
+      "request_ids": [
+        "37a4f241165fda5005a4d8d6804ba035"
+      ],
+      "receipt_sha256": "f74e4762237a873fbb46e795e6d5c5e1da72f9d793455060ec61dd0bc58c5abe",
+      "usage": {
+        "input_tokens": 17221,
+        "cached_input_tokens": 0,
+        "output_tokens": 344,
+        "reasoning_tokens": 191
+      },
+      "latency_seconds": 12.448900800023694,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/37a4f241165fda5005a4d8d6804ba035/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T165546-0f2cdd2058be/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "dc7756076cc8fb033d4f880a342885b8cc9a6c501b9ad6d6d94a2d641523c681",
+      "status": "ok",
+      "request_ids": [
+        "6122c1b0395b36cb5b90bd5d586e734f"
+      ],
+      "receipt_sha256": "7ad2029dc3cd9d3ab443ab8620ac239deb489a71c480ccd060bb40b5c6f063d9",
+      "usage": {
+        "input_tokens": 17233,
+        "cached_input_tokens": 0,
+        "output_tokens": 232,
+        "reasoning_tokens": 71
+      },
+      "latency_seconds": 10.002440300013404,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/6122c1b0395b36cb5b90bd5d586e734f/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T164938-775dabbac0f6/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "e3c855e9023e0d4ac9613f982495d632011aa5ede46d6d487cb64d71f2b81252",
+      "status": "ok",
+      "request_ids": [
+        "90ecb9237a5b4e7b2e00cab36d85d307"
+      ],
+      "receipt_sha256": "5759d31886c13856b2cfbec0b801a7d2bd5adf15789da75dd9fec68a3c9ebdc4",
+      "usage": {
+        "input_tokens": 17209,
+        "cached_input_tokens": 0,
+        "output_tokens": 200,
+        "reasoning_tokens": 56
+      },
+      "latency_seconds": 9.413563000009162,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/90ecb9237a5b4e7b2e00cab36d85d307/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T164841-1e372c9466bf/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "edcb607f5a1a951005ff6ef4836ca1e1bc5f4396421aabfcaf29331f759d9ed0",
+      "status": "ok",
+      "request_ids": [
+        "ff520ba3aac3f39be367b221c6b1b138"
+      ],
+      "receipt_sha256": "73c35e290d977b4a5eb65745df2ab64cd3c6d5b78a6030680cdfec8a8d48b0e2",
+      "usage": {
+        "input_tokens": 17206,
+        "cached_input_tokens": 0,
+        "output_tokens": 311,
+        "reasoning_tokens": 172
+      },
+      "latency_seconds": 13.491843999974662,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/ff520ba3aac3f39be367b221c6b1b138/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T164127-98e57df87bda/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "eead96c077cb3b4df87df91ec88f96967e718fd2297e7b8b4d8d4aa27719d5ef",
+      "status": "ok",
+      "request_ids": [
+        "fe1ed1430939e405463ddaf37210ee20"
+      ],
+      "receipt_sha256": "6f11e32bd91298b224c712f4d72fef020b03dcd73f49fd624dd4f0811bf07b85",
+      "usage": {
+        "input_tokens": 17227,
+        "cached_input_tokens": 0,
+        "output_tokens": 286,
+        "reasoning_tokens": 158
+      },
+      "latency_seconds": 11.573224899999332,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/fe1ed1430939e405463ddaf37210ee20/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T165139-58313ef3eec8/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "f022cf2dd9bec45638cfb7bbba18b142ae03f3230c287fdc884c00623534766a",
+      "status": "ok",
+      "request_ids": [
+        "25282857c4f4d6de01cb60edac0062dd"
+      ],
+      "receipt_sha256": "5b9ec896886746495d443f732f01f1d070f8ab080925d52225e3c73dba87011a",
+      "usage": {
+        "input_tokens": 17232,
+        "cached_input_tokens": 0,
+        "output_tokens": 264,
+        "reasoning_tokens": 119
+      },
+      "latency_seconds": 12.56361320000724,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/25282857c4f4d6de01cb60edac0062dd/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T164908-646a6141a2c6/receipt.json"
+      ],
+      "transcript_problems": []
+    },
+    {
+      "invocation_key": "f3388e5564dd3f757a55081e7aab20f90ec3e6181c002f2fd691ad439de5a839",
+      "status": "ok",
+      "request_ids": [
+        "f1505b0b2e17bd6b777e07efe6a81a8e"
+      ],
+      "receipt_sha256": "cd837b8ae970058f2ae7f0bbbf2d03684d855801dd4fad3b74d814d4493469ac",
+      "usage": {
+        "input_tokens": 17223,
+        "cached_input_tokens": 0,
+        "output_tokens": 321,
+        "reasoning_tokens": 148
+      },
+      "latency_seconds": 13.198440199979814,
+      "source_paths": [
+        "project/results/originx-sprint-bv-20261011-v1/requests/f1505b0b2e17bd6b777e07efe6a81a8e/cli_receipt.json",
+        "project/originx_sprint_20261011_v1/bv_broker_terminal_state/batches/20261011T165615-8babcb370304/receipt.json"
+      ],
+      "transcript_problems": []
+    }
+  ]
+}

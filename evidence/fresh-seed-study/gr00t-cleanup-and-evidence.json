@@ -1,0 +1,185 @@
+{
+  "schema": "originx_gr_final_cleanup_and_evidence_v1",
+  "verified_at": "2026-10-11T18:03:40.084481+00:00",
+  "passed": true,
+  "process_verification": {
+    "remote_identities": 72,
+    "remote_all_inactive": true,
+    "local_identities": 3,
+    "local_all_inactive": true,
+    "no_scoped_remote_processes": true,
+    "remote_owner_audit": {
+      "path": "workspace/work/sprint_20261011_2h/closed_evidence_gr/remote/owner-audit.json",
+      "sha256": "bc569291d44b0f9a8dcc8166dc486625f1677fda0a21ddb20bf9ded4334fb7ed"
+    },
+    "local_owner_audit": {
+      "path": "workspace/work/sprint_20261011_2h/closed_evidence_gr/local-owner-audit.json",
+      "sha256": "869ff6fdc5c0b46bb54083ff4cddf8919dd8b7fe71b84370191dd6789df20fe6"
+    }
+  },
+  "auxiliary_transfer": {
+    "path": "workspace/work/sprint_20261011_2h/closed_evidence_gr/auxiliary-transfer-verified.json",
+    "sha256": "e6299e0c1dd993f16464712a88fe778bc279fb9bf7c8248f86daddc9f9c13cd0"
+  },
+  "local_evidence_transfer": {
+    "path": "workspace/work/sprint_20261011_2h/closed_evidence_gr/local-transfer-verified.json",
+    "sha256": "13c0dbb8bf701b04969ebfce6e551766b02b952111d47c0a1773d73c850ec302"
+  },
+  "raw_archives": [
+    {
+      "archive": {
+        "path": "workspace/work/sprint_20261011_2h/archives/originx-sprint-gr-20261011-v2.tar.gz",
+        "sha256": "bcc1af0b47ee776c45a57544235987ab911db74131e84d65afb203879eecc2f7"
+      },
+      "receipt": {
+        "path": "workspace/work/sprint_20261011_2h/archives/originx-sprint-gr-20261011-v2.receipt.json",
+        "sha256": "5c59c4f33ca630e606b1600e40a682acc0155a85c41092c115081e9dc187e2c2"
+      },
+      "verified_file_count": 1381
+    },
+    {
+      "archive": {
+        "path": "workspace/work/sprint_20261011_2h/archives/originx-sprint-gr-services-20261011-v2.tar.gz",
+        "sha256": "50a9c536ff1d93f129a369e39c2575f0c890913c90515199e646881e8345ccc9"
+      },
+      "receipt": {
+        "path": "workspace/work/sprint_20261011_2h/archives/originx-sprint-gr-services-20261011-v2.receipt.json",
+        "sha256": "acaeaa43ccf141b1a3f3e2484efdecb567ed8d64d15b2c040fba4f3227d9689f"
+      },
+      "verified_file_count": 11
+    }
+  ],
+  "cleanup": {
+    "manager_failed": true,
+    "reason": "Campaign returned nonzero for fixed administrative dispatch deadline; not a model/worker cleanup failure",
+    "manager_all_workers_inactive": true,
+    "manager_all_direct_children_reaped": true,
+    "manager_errors": [],
+    "guard_failed": false,
+    "guard_all_children_reaped": true,
+    "finalizer_passed": true
+  },
+  "study": {
+    "planned_cases": 50,
+    "planned_arms": 100,
+    "completed_arms": 62,
+    "completed_cases": 31,
+    "not_started_arms": 38,
+    "unknown_cases": 19,
+    "policy_failures_do_not_include_unstarted": true,
+    "technical_invalid_completed_arms": 0,
+    "stop_reasons": [
+      "deadline_stop_dispatch"
+    ],
+    "strict_matched_pairs": 29,
+    "initial_deviation_pairs": 2,
+    "prefix_deviation_pairs": 0,
+    "strict_2x2": {
+      "both_success": 6,
+      "treatment_only_success": 1,
+      "reference_only_success": 0,
+      "both_failure": 22
+    },
+    "rescues": [
+      {
+        "case_id": "sprint-fresh-10",
+        "task": "GarnishPancake",
+        "seed": 2027101110,
+        "C": false,
+        "V": true,
+        "verified_cli_application": true
+      }
+    ],
+    "regressions": [],
+    "initial_deviations": [
+      {
+        "case_id": "sprint-fresh-29",
+        "task": "PreSoakPan",
+        "different_fingerprint_fields": [
+          "rgb:video.robot0_agentview_left",
+          "rgb:video.robot0_agentview_right",
+          "rgb:video.robot0_eye_in_hand",
+          "proprioception",
+          "physics_state",
+          "xml_sha256",
+          "native:state.end_effector_position_relative",
+          "native:state.end_effector_rotation_relative",
+          "native:state.gripper_qpos",
+          "native:state.base_position",
+          "native:state.base_rotation"
+        ],
+        "paired_effect_excluded": true
+      },
+      {
+        "case_id": "sprint-fresh-39",
+        "task": "SteamInMicrowave",
+        "different_fingerprint_fields": [
+          "rgb:video.robot0_agentview_left",
+          "rgb:video.robot0_agentview_right",
+          "rgb:video.robot0_eye_in_hand",
+          "proprioception",
+          "physics_state",
+          "native:state.end_effector_position_relative",
+          "native:state.end_effector_rotation_relative",
+          "native:state.gripper_qpos",
+          "native:state.base_position",
+          "native:state.base_rotation"
+        ],
+        "paired_effect_excluded": true
+      }
+    ],
+    "fixed50_control_anchored_identification_bounds": [
+      -0.36,
+      0.44
+    ],
+    "complete_cohort_net_effect": null,
+    "no_superiority_claim": true
+  },
+  "usage": {
+    "CLI_calls": 28,
+    "input_tokens": 482162,
+    "output_tokens": 7608,
+    "reasoning_tokens": 3401,
+    "reasoning_included_in_output": true,
+    "inventory_complete": true,
+    "independent_terminal_stdout_sum_verified": true
+  },
+  "sources": {
+    "report": {
+      "path": "workspace/work/sprint_20261011_2h/archives/originx-sprint-gr-20261011-v2/results/originx-sprint-gr-20261011-v2/analysis-final-usage-v1/report.json",
+      "sha256": "90d191b54d56b2024508ee9290ce7f54b608c42b7f27b5fb2edeecd5ae606f55"
+    },
+    "normalized_records": {
+      "path": "workspace/work/sprint_20261011_2h/archives/originx-sprint-gr-20261011-v2/results/originx-sprint-gr-20261011-v2/analysis-final-usage-v1/normalized_records.json",
+      "sha256": "33ab8d2c660fe88a558dbfd7db02d23ee2a053fb2b8b73ebdd0233d2844e938d"
+    },
+    "cli_usage": {
+      "path": "workspace/work/sprint_20261011_2h/archives/originx-sprint-gr-20261011-v2/results/originx-sprint-gr-20261011-v2/analysis-final-usage-v1/cli_usage.json",
+      "sha256": "1799d98996671f4d3dede4bd184ccf2096ee98c0380b973b49040ff83aadf26d"
+    },
+    "authority": {
+      "path": "workspace/work/sprint_20261011_2h/archives/originx-sprint-gr-20261011-v2/results/originx-sprint-gr-20261011-v2/analysis-final-usage-v1/authority.json",
+      "sha256": "7165a4e11d5ccb7535baca389d2457df0c6f6f7de2b39a3dee65be08a332526d"
+    },
+    "config": {
+      "path": "workspace/work/sprint_20261011_2h/archives/originx-sprint-gr-20261011-v2/results/originx-sprint-gr-20261011-v2/config.json",
+      "sha256": "33b8367ce61bfd15475d68fae68abf8b68ba177258ea725728fb42e2707f492a"
+    },
+    "manifest": {
+      "path": "workspace/work/sprint_20261011_2h/archives/originx-sprint-gr-20261011-v2/results/originx-sprint-gr-20261011-v2/manifest.json",
+      "sha256": "e01ceff402f8631b06af77bc24d42fe14c56579bd60ff622b980e76266d018d8"
+    },
+    "completion": {
+      "path": "workspace/work/sprint_20261011_2h/archives/originx-sprint-gr-20261011-v2/results/originx-sprint-gr-20261011-v2/completion.json",
+      "sha256": "bd3b57ca425d97ee2fd1534710007c83fdc87376a5e03698724902b8e151c2ca"
+    },
+    "manager_error": {
+      "path": "workspace/work/sprint_20261011_2h/closed_evidence_gr/remote/originx_sprint_gr_manager_20261011_v1/receipts/error.json",
+      "sha256": "27cddb81b140eec78d6d2bb57fb21eb84c600e5fbdafafd62b84b6362fb8070f"
+    },
+    "finalizer_completion": {
+      "path": "workspace/work/sprint_20261011_2h/closed_evidence_gr/remote/originx_sprint_gr_final_usage_20261011_v1/completion.json",
+      "sha256": "e160d60c4ad9334bf4bff72350a01e15516a299987bde694aa77339a88d3b9db"
+    }
+  }
+}

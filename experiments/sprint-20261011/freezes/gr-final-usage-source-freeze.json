@@ -1,0 +1,9 @@
+{
+  "source_sha256": {
+    "finalizer.py": "d2ef4a4ff6f9a494dd43893662329c9ba8683374cf4a1a8ce147d36d04405288",
+    "waiter.py": "1a67af4dfa6d37e50eabb72a61437f49aa6cf8c312f53291e94c0ae3e6b7348e",
+    "test_finalizer.py": "e64644f305d37bba7f56639f953a2294fe14c54e00b723c15e7d2522f546de7b",
+    "test-results.json": "aff3afd863b9cb54f3b3602bf2749866772c8900357a4558fd5326d9a772465d",
+    "manifest-comparison.json": "595a52aef6cd665b486aa76107808c265fe1fe491f23987e7409e2d125da8562"
+  }
+}

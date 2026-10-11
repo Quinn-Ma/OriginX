@@ -1,0 +1,11 @@
+{
+  "schema": "originx_sprint_service_freeze_v1",
+  "files_sha256": {
+    "__init__.py": "a05b210c747dafc31cbea020d188a29fb5752adf06ee0403b63b081e96e92748",
+    "services.py": "eb5e8cb0fd2c8b30eb63c9accec15b327437dd96a1711740c051e2ac5fd8c494",
+    "probe.py": "b13180a3e15e954c7e0345a7aba607bef13fb5e0175d3c4aad828ad4351ac8af",
+    "guard.py": "bdf23a3eeecca6552c06ddb8f4752e7ffed8d3ba7e41fee9589a30acbb5d6a31"
+  },
+  "freeze_time_utc": "2026-10-11T15:53:11.626172+00:00",
+  "no_rollouts_started": true
+}

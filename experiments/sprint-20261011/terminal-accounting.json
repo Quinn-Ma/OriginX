@@ -1,0 +1,28 @@
+{
+  "schema": "originx_sprint_public_terminal_accounting_v1",
+  "fixed_cases": 50,
+  "planned_arms": 300,
+  "completed_arms": 262,
+  "not_started_arms": 38,
+  "arms_by_campaign": {
+    "XAB": {
+      "planned": 150,
+      "completed": 150
+    },
+    "BV": {
+      "planned": 50,
+      "completed": 50
+    },
+    "GR": {
+      "planned": 100,
+      "completed": 62,
+      "not_started": 38
+    }
+  },
+  "unstarted_are_not_policy_failures": true,
+  "source_config_sha256": {
+    "xab": "c325b75ef169c8dc609752e45d93bbe0eadd667030e6fed66acb58b96741496f",
+    "bv": "791c49f0966499aab46613bb71fb89de6ca52a005cded67e96854bea87e9e612",
+    "gr": "33b8367ce61bfd15475d68fae68abf8b68ba177258ea725728fb42e2707f492a"
+  }
+}

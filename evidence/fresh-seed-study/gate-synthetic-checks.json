@@ -1,0 +1,49 @@
+{
+  "schema": "originx_gate_synthetic_checks_v1",
+  "utc": "2026-10-11T15:51:03.674578+00:00",
+  "tests_run": 15,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "real_training_runs": 0,
+  "optimizer_updates_executed": 0,
+  "rollouts": 0,
+  "astra_calls": 0,
+  "empirical_gain_established": false,
+  "synthetic_only": true,
+  "source_sha256": {
+    "demo.py": "84d86dc6b4cce6c0df83178da89c431da4a7a836dc83cea8b11a255bd96bde56",
+    "gate.py": "5aa18ddb57c756609cf9af1bcabd1ca51937513a73bebe0d60400022403884b6",
+    "run_checks.py": "153e3f7663a7ce2205e536b21532f370e23ba205258bd3aa4b67c557edce0d21",
+    "test_gate.py": "1b47b773c39af23f0584e86d6f916c9ad74d548fa47ab3c5415d93732323abeb"
+  },
+  "demo": {
+    "status": "synthetic_logic_demo_only",
+    "trained": false,
+    "empirical_validation": false,
+    "actual_requests": 0,
+    "feature_dimension": 39,
+    "untrained_uniform_probabilities": {
+      "both_success": 0.25,
+      "rescue": 0.25,
+      "regression": 0.25,
+      "both_failure": 0.25
+    },
+    "mock_probabilities_source": "hand_specified_test_fixture",
+    "mock_gate_decision": {
+      "request": true,
+      "reason": "request",
+      "value": 0.79,
+      "synthetic": true,
+      "calibration_status": "uncalibrated",
+      "ledger": {
+        "scene_id": "synthetic-scene-1",
+        "policy_id": "SYNTHETIC_POLICY",
+        "requests": 1,
+        "tokens_reserved": 512,
+        "wait_reserved": 20.0,
+        "last_step": 4
+      }
+    }
+  }
+}

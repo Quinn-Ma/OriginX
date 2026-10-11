@@ -1,0 +1,375 @@
+{
+  "note": "Original runtime references are provenance only. Missing dependencies and checkpoint/environment assets must be supplied and admitted separately.",
+  "dependencies": [
+    {
+      "original_runtime_reference": "a_eval2000_v1/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "a_eval2000_v1/bind.py",
+      "sha256": "d182e1e01cc22f373cf37db1204ca3032e8e38ee3bd745304faef25eec3f4cb5",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "a_eval2000_v1/client.py",
+      "sha256": "b57ccd28e24fa2168ab2871fc784e6e25aaba0296ac9af994d4b9e4a8b41fd30",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "a_eval2000_v1/loader.py",
+      "sha256": "986ab0c50b84de6fcac2bed68fca4793d8d86877b2c25c3a93c115aae0537704",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "a_eval2000_v1/server.py",
+      "sha256": "ea760b9e8141db785d1e03d314ab0b7afe9bd6c8cdbe9f1d4169d1a28a7ef651",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "code/Xiaomi-Robotics-1/eval_robocasa365/dynamic_eval.py",
+      "sha256": "8a358d2e5b566152dbcf60f90ec1d1ab51a8ab080dcf0add03e519afd32cfbaf",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "code/Xiaomi-Robotics-1/eval_robocasa365/entry.py",
+      "sha256": "18d70fade4c990210dc5b9c34285c8030eac142d9c332066c73335e1c0aaa28e",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "code/robocasa/robocasa/models/fixtures/counter.py",
+      "sha256": "77f992d01aa1ae5f21ed7f170d0aab9c303c32148f4b427651c04912be8ce68a",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "code/robocasa/robocasa/utils/dataset_registry.py",
+      "sha256": "23e8e31bb56bae80de86c34eafadfe32dd1e1eba6608376152ba9fdda5532a4b",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "continuous_branch_v3/reset_fix.py",
+      "sha256": "f117c4e50fd6116c761ce709b60fb2f69431203d27bf04426b78b7993458a5db",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "continuous_branch_v3/scene_identity.py",
+      "sha256": "9adfdc2e068f5c06a0fab2884ab4e838aee2e10332dd3c1d8b87d87b1cbcc3df",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "native_reset_b2500_v2/__init__.py",
+      "sha256": "fd6f8178294ce12b10dc985ea652bd3950f6fd3bab6297c99efa5cbff6315977",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "native_reset_b2500_v2/runner.py",
+      "sha256": "a4b8d0f71da6b488f579be955eb54e022e2cf079bb34809d9b1f92ab418563ba",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "official_b2500_v1/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "official_b2500_v1/analyze.py",
+      "sha256": "f72dd29d33a2c739fe32eac3166bb95b026a8f097961e9cd7d1bd821da3994b5",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "official_b2500_v1/audit_seeds.py",
+      "sha256": "fae2a279ca4d1ccc8ee595fa9e91256c3163f1f922b66a00f01d9f783ba060e1",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "official_b2500_v1/candidate.py",
+      "sha256": "3b6989a44a7aa4945cdba5a8c298ca666fe8a1782e5eed29754c7cc6ade04c90",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "official_b2500_v1/context_lifetime.py",
+      "sha256": "af1e27d4d22af3a6ec2314a82f0037278a7b74e8b7c05a9d8c375f152b7e80cd",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "official_b2500_v1/cpu_probe.py",
+      "sha256": "7a2c17717d51edd7c572fc96b01f1aa221ab656ee20470ba5aaf0002658185f7",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "official_b2500_v1/dev_extend.py",
+      "sha256": "d1cbf546043be47e451a487690a650bf3b46d25c090f9b62f220912a83572795",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "official_b2500_v1/dev_paired.py",
+      "sha256": "de47225b8fe5146d997d2f4936d87d89b7bffcc4316ed29c1839945a19759c29",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "official_b2500_v1/dev_randomized_broad_alpha.py",
+      "sha256": "00c56bddfb6b256c0e09de7c68cb99ee831eca5671c4fefd7c64c72088d833aa",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "official_b2500_v1/dev_repeat_audit.py",
+      "sha256": "f35d79e8a3d193a332c1c33b1a8d56bb94b01c508c1f3fb52952e634faf23588",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "official_b2500_v1/launch.py",
+      "sha256": "ce8354d2e47eb616330e87295007a3a8129693528382a922bc86b0d1e4a6120f",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "official_b2500_v1/layout.py",
+      "sha256": "9f654121c43525d58b2369ccefcc1134e1d44597303849cb6a4cc07a15455a24",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "official_b2500_v1/readback_guard.py",
+      "sha256": "260430203d4fcb6c35b90da8a2e13c3ea968db6218aa004b89d602c89f71849d",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "official_b2500_v1/runner.py",
+      "sha256": "1d44288dd0d394e2c6cdb83f6330a34c787302cd8bb421288e2aa2540d17a443",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "official_b2500_v1/runtime-dependencies.json",
+      "sha256": "434b394055253f190f2bdc2d6e4ad90b3291aca1e74e2b76d2c942ae5d8200a6",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "official_b2500_v1/start_once.py",
+      "sha256": "fe5f6138c6bdb5151e9eab073e75849bc1b770892d43bbb95c957449b4d92c11",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "official_b2500_v1/telemetry.py",
+      "sha256": "1675188966da8851dbff196b6fd21444a6d02d0c912491ef222c534108b25975",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "official_b2500_v1/unseen_smoke.py",
+      "sha256": "49add15a10d09257e1ce27acc473403b162a99bcef85c22b55a26411ef06f0f8",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "originx_confirmatory_20261009/__init__.py",
+      "sha256": "372c69303701459d3296ca381fa293a2bf8503bb01a31237dfbf95a4e577fcc3",
+      "existing_repository_file": "../confirmatory-20261009/runtime/__init__.py",
+      "status": "existing_exact_support_source"
+    },
+    {
+      "original_runtime_reference": "originx_confirmatory_20261009/aggregate.py",
+      "sha256": "8304b44220e9831d1de7c24f4d577848c99120e28b54e6b9e2a99220df5cb9fc",
+      "existing_repository_file": "../confirmatory-20261009/runtime/aggregate.py",
+      "status": "existing_exact_support_source"
+    },
+    {
+      "original_runtime_reference": "originx_confirmatory_20261009/analysis.py",
+      "sha256": "406b8916ba0d8b69f250362fe5ce0f8a73bb3c463f5f7a168c2c946a277c4009",
+      "existing_repository_file": "../confirmatory-20261009/runtime/analysis.py",
+      "status": "existing_exact_support_source"
+    },
+    {
+      "original_runtime_reference": "originx_confirmatory_20261009/assistance.py",
+      "sha256": "8b47b99ae5930f5104e8d1a17b85c4c37cfc3660cea6c05fb067b1813de9a06f",
+      "existing_repository_file": "../confirmatory-20261009/runtime/assistance.py",
+      "status": "existing_exact_support_source"
+    },
+    {
+      "original_runtime_reference": "originx_confirmatory_20261009/campaign.py",
+      "sha256": "7790d0eddd01d743c7d93e5fb2ac31db0df753dca51af9fca9cba402055b606a",
+      "existing_repository_file": "../confirmatory-20261009/runtime/campaign.py",
+      "status": "existing_exact_support_source"
+    },
+    {
+      "original_runtime_reference": "originx_confirmatory_20261009/lease.py",
+      "sha256": "04bb2dd08fe9b5acbfebf9632d0b21a740e987ea7dc101bfa6c33dead735ffa5",
+      "existing_repository_file": "../confirmatory-20261009/runtime/lease.py",
+      "status": "existing_exact_support_source"
+    },
+    {
+      "original_runtime_reference": "originx_confirmatory_20261009/probe.py",
+      "sha256": "b1db00fde2e0644895d96bd7e1059961a6e24e3f51d8de2864b92d2b4933f8d6",
+      "existing_repository_file": "../confirmatory-20261009/runtime/probe.py",
+      "status": "existing_exact_support_source"
+    },
+    {
+      "original_runtime_reference": "originx_confirmatory_20261009/protocol.py",
+      "sha256": "f0a4189cc53c6594637f456b4fd5730b3e75fb71965fe860e24a1419cd7b5a1c",
+      "existing_repository_file": "../confirmatory-20261009/runtime/protocol.py",
+      "status": "existing_exact_support_source"
+    },
+    {
+      "original_runtime_reference": "originx_confirmatory_20261009/runner.py",
+      "sha256": "ddff4598157cf6f3b64ec945e6e1b9a0243a59055e8676a0adaf68137131ea58",
+      "existing_repository_file": "../confirmatory-20261009/runtime/runner.py",
+      "status": "existing_exact_support_source"
+    },
+    {
+      "original_runtime_reference": "originx_confirmatory_20261009/services.py",
+      "sha256": "db3d4ab562d609a6c6884c5ddd4cf6aab035ea05fd6f7be27100ce04e5a6c867",
+      "existing_repository_file": "../confirmatory-20261009/runtime/services.py",
+      "status": "existing_exact_support_source"
+    },
+    {
+      "original_runtime_reference": "originx_gr00t_confirmation_20261009/__init__.py",
+      "sha256": "fb769a894e28f0ffd1ac6081745d1a776e90473cc339102a3569595c613e5f85",
+      "existing_repository_file": "../gr00t-confirmatory-20261009/runtime/__init__.py",
+      "status": "existing_exact_support_source"
+    },
+    {
+      "original_runtime_reference": "originx_gr00t_confirmation_20261009/adapter.py",
+      "sha256": "daf0b5333cc8430e2330a7e6d4d2482269be51eaec14a405d33aea03c6e24b5b",
+      "existing_repository_file": "../gr00t-confirmatory-20261009/runtime/adapter.py",
+      "status": "existing_exact_support_source"
+    },
+    {
+      "original_runtime_reference": "originx_gr00t_confirmation_20261009/client.py",
+      "sha256": "8d50db9fa8fc0d3193658a7bb7124d310ab342cd0874ec0b379ef1d87fe58d38",
+      "existing_repository_file": "../gr00t-confirmatory-20261009/runtime/client.py",
+      "status": "existing_exact_support_source"
+    },
+    {
+      "original_runtime_reference": "originx_gr00t_confirmation_20261009/core.py",
+      "sha256": "3a0df5483786611743500330038d1291bca7141e4d6a13da5e3a5f4dba006bd9",
+      "existing_repository_file": "../gr00t-confirmatory-20261009/runtime/core.py",
+      "status": "existing_exact_support_source"
+    },
+    {
+      "original_runtime_reference": "originx_gr00t_confirmation_20261009/parity_probe.py",
+      "sha256": "e703d4db2dfb39d4e85dd987bbc80d6b201644624159ddcf3278d649621684c1",
+      "existing_repository_file": "../gr00t-confirmatory-20261009/runtime/parity_probe.py",
+      "status": "existing_exact_support_source"
+    },
+    {
+      "original_runtime_reference": "originx_gr00t_confirmation_20261009/server.py",
+      "sha256": "dd9564cf9a4be486de866cc631f79528d707c1e8f3a307999c9b5a40f74f6565",
+      "existing_repository_file": "../gr00t-confirmatory-20261009/runtime/server.py",
+      "status": "existing_exact_support_source"
+    },
+    {
+      "original_runtime_reference": "originx_gr00t_confirmation_20261009/wire.py",
+      "sha256": "5e94665f8fe25a49abf732ee335ff579fa2f2583c13917a2677db6d84a7ee5b8",
+      "existing_repository_file": "../gr00t-confirmatory-20261009/runtime/wire.py",
+      "status": "existing_exact_support_source"
+    },
+    {
+      "original_runtime_reference": "originx_sprint_gr_20261011_v2/build_runtime.py",
+      "sha256": "7b611d96b3aa81108b3f340fe3b9b97c2d869ac6584f22b3f6907f5b172996bc",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "originx_sprint_gr_20261011_v2/capture_native_fixtures.py",
+      "sha256": "e1c9d38ac2f1b561189e3f4d43ba859ed4d780418de608580b30f7ba5c1b5000",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "originx_sprint_gr_20261011_v2/legacy_service_guard.py",
+      "sha256": "f0db8f3db5a22826447eebd6adffc5ed839ebb385ff9cd66ea863ef110bf7d6f",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "originx_sprint_gr_20261011_v2/ops.py",
+      "sha256": "240548d4487f38d5152f3ab735bb5cc779d2c6a04cea1329edcc9d0ae0b75d28",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "originx_sprint_gr_20261011_v2/reconcile.py",
+      "sha256": "7e2d87dab39db2ff24ff16e8fc271d9956bae0d034a6ed679afead758cf08c24",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "originx_sprint_gr_20261011_v2/run_checks.py",
+      "sha256": "ea087703fea08c1c1cc2fcbd869500fa6f243fdcdbabceb35b6c2cfde65a0ecc",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "originx_sprint_gr_20261011_v2/test_recovery_audit.py",
+      "sha256": "31064e5df2e84155091892e51f0882b062976f9dc009eead9dbe1977a775598b",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "originx_sprint_gr_20261011_v2/test_sprint.py",
+      "sha256": "c233da2e6905ec7361415b40de2c25253cc27e662cdbe067a35c91773c3139a9",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "remote_processor_candidate_v1/deps/local_eval/remote_client.py",
+      "sha256": "d79e2a255c2c2399c6884ffba9732ac1a710a9254f780e8680a6e3a5b4334e67",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "results/continued-ab2000-v1/B-endpoint.json",
+      "sha256": "c3138b49dcf51c0514f129073870701b5cd59cb88df384ac5a4b9ac24a77c601",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "runtime/osmesa-private-v1/extracted/usr/lib/x86_64-linux-gnu/libOSMesa.so.8.0.0",
+      "sha256": "40e28f0f15c4cd13ad3c353509eb2fad79d8041528c59dc56d6e68fae8d1677a",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    },
+    {
+      "original_runtime_reference": "start_full_admitted_v2.py",
+      "sha256": "157dcdde03e64455a6efd7d6595741259afb34350754e41d1d7eaa81b5a7c58a",
+      "existing_repository_file": null,
+      "status": "not_bundled_environment_or_dependency"
+    }
+  ],
+  "omitted_gr_freeze_entries": [
+    "build_runtime.py",
+    "capture_native_fixtures.py",
+    "legacy_service_guard.py",
+    "ops.py",
+    "reconcile.py",
+    "run_checks.py",
+    "test_recovery_audit.py",
+    "test_sprint.py"
+  ]
+}

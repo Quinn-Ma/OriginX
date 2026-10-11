@@ -1,0 +1,175 @@
+{
+  "schema": "originx_initial_deviation_summary_v1",
+  "retained_strict_matches": 42,
+  "retained_strict_deviations": 8,
+  "no_reclassification": true,
+  "no_rollouts_or_parameter_changes": true,
+  "observed": {
+    "all_8_have_free_object_translation_difference": true,
+    "minimum_across_cases_of_maximum_object_translation_difference_m": 0.9677183013971697,
+    "maximum_across_cases_of_maximum_object_translation_difference_m": 1.9171355472610372,
+    "xml_identical_cases": 7,
+    "xml_different_cases": 1,
+    "layout_style_instruction_identical_cases": 8,
+    "base_position_difference_greater_than_1mm_cases": 6,
+    "only_texture_or_pixel_difference_cases": 0
+  },
+  "inference": [
+    "Differences in sampled object geometry, placements and robot configurations suggest reset/initialization variability upstream of policy inference; the causal source is not established by snapshots.",
+    "No conclusion is made that policy weights, parallel scheduling, set iteration, renderer precision or random generator consumption caused these deviations."
+  ],
+  "future_directions": [
+    "Log asset selection, placement regions, object poses, robot base and all RNG states at reset milestones to localize the first divergence.",
+    "Preregister initial-state checks before policy comparison; preserve deviations and fixed denominators.",
+    "Evaluate a separate explicitly labeled state-snapshot paired protocol without silently changing native-reset benchmark claims."
+  ],
+  "diagnosis_file": "diagnosis.json",
+  "diagnosis_sha256": "aebad1042d583bb302842e7c5e47c5ce93b2decfaf06b8c57f3632b2b502857e",
+  "script_sha256": "8650a3185d870655421bde0f4467403004fbf229e91e88d00491b44b5ed9b566",
+  "cases": [
+    {
+      "case_id": "sprint-fresh-26",
+      "task": "PickPlaceSinkToCounter",
+      "seed": 2027101126,
+      "xml_identical_all": true,
+      "max_base_position_difference_m": 0.15984752887104556,
+      "max_relative_EE_position_difference_m": 0.015352502695758215,
+      "largest_free_object_joint": "container_joint0",
+      "max_free_object_translation_difference_m": 1.2597808800338939,
+      "max_changed_pixel_fraction": 0.8807830810546875,
+      "differing_fields": [
+        "physics_state",
+        "proprioception",
+        "rgb:video.robot0_agentview_left",
+        "rgb:video.robot0_agentview_right",
+        "rgb:video.robot0_eye_in_hand"
+      ]
+    },
+    {
+      "case_id": "sprint-fresh-29",
+      "task": "PreSoakPan",
+      "seed": 2027101129,
+      "xml_identical_all": false,
+      "max_base_position_difference_m": 0.2719197868149985,
+      "max_relative_EE_position_difference_m": 0.017603403933784456,
+      "largest_free_object_joint": "obj1_joint0",
+      "max_free_object_translation_difference_m": 0.9677183013971697,
+      "max_changed_pixel_fraction": 0.9127044677734375,
+      "differing_fields": [
+        "physics_state",
+        "proprioception",
+        "rgb:video.robot0_agentview_left",
+        "rgb:video.robot0_agentview_right",
+        "rgb:video.robot0_eye_in_hand",
+        "xml_sha256"
+      ]
+    },
+    {
+      "case_id": "sprint-fresh-32",
+      "task": "RinseSinkBasin",
+      "seed": 2027101132,
+      "xml_identical_all": true,
+      "max_base_position_difference_m": 0.0,
+      "max_relative_EE_position_difference_m": 0.0,
+      "largest_free_object_joint": "plate_joint0",
+      "max_free_object_translation_difference_m": 1.2020839173768834,
+      "max_changed_pixel_fraction": 0.022186279296875,
+      "differing_fields": [
+        "physics_state",
+        "proprioception",
+        "rgb:video.robot0_agentview_left",
+        "rgb:video.robot0_agentview_right",
+        "rgb:video.robot0_eye_in_hand"
+      ]
+    },
+    {
+      "case_id": "sprint-fresh-33",
+      "task": "ScrubCuttingBoard",
+      "seed": 2027101133,
+      "xml_identical_all": true,
+      "max_base_position_difference_m": 1.917124509811558,
+      "max_relative_EE_position_difference_m": 0.0,
+      "largest_free_object_joint": "sponge_joint0",
+      "max_free_object_translation_difference_m": 1.9171355472610372,
+      "max_changed_pixel_fraction": 0.5605621337890625,
+      "differing_fields": [
+        "physics_state",
+        "proprioception",
+        "rgb:video.robot0_agentview_left",
+        "rgb:video.robot0_agentview_right",
+        "rgb:video.robot0_eye_in_hand"
+      ]
+    },
+    {
+      "case_id": "sprint-fresh-39",
+      "task": "SteamInMicrowave",
+      "seed": 2027101139,
+      "xml_identical_all": true,
+      "max_base_position_difference_m": 0.03684182788100074,
+      "max_relative_EE_position_difference_m": 0.02346919254194745,
+      "largest_free_object_joint": "distr_counter_1_joint0",
+      "max_free_object_translation_difference_m": 1.7102529757953389,
+      "max_changed_pixel_fraction": 0.9369964599609375,
+      "differing_fields": [
+        "physics_state",
+        "proprioception",
+        "rgb:video.robot0_agentview_left",
+        "rgb:video.robot0_agentview_right",
+        "rgb:video.robot0_eye_in_hand"
+      ]
+    },
+    {
+      "case_id": "sprint-fresh-40",
+      "task": "StirVegetables",
+      "seed": 2027101140,
+      "xml_identical_all": true,
+      "max_base_position_difference_m": 0.06780486256910924,
+      "max_relative_EE_position_difference_m": 0.021067480087387607,
+      "largest_free_object_joint": "veg2_joint0",
+      "max_free_object_translation_difference_m": 1.478502067500334,
+      "max_changed_pixel_fraction": 0.9293212890625,
+      "differing_fields": [
+        "physics_state",
+        "proprioception",
+        "rgb:video.robot0_agentview_left",
+        "rgb:video.robot0_agentview_right",
+        "rgb:video.robot0_eye_in_hand"
+      ]
+    },
+    {
+      "case_id": "sprint-fresh-47",
+      "task": "WashFruitColander",
+      "seed": 2027101147,
+      "xml_identical_all": true,
+      "max_base_position_difference_m": 0.03693463317586508,
+      "max_relative_EE_position_difference_m": 0.007479181451392509,
+      "largest_free_object_joint": "colander_joint0",
+      "max_free_object_translation_difference_m": 1.20106332794912,
+      "max_changed_pixel_fraction": 0.7254638671875,
+      "differing_fields": [
+        "physics_state",
+        "proprioception",
+        "rgb:video.robot0_agentview_left",
+        "rgb:video.robot0_agentview_right",
+        "rgb:video.robot0_eye_in_hand"
+      ]
+    },
+    {
+      "case_id": "sprint-fresh-48",
+      "task": "WashLettuce",
+      "seed": 2027101148,
+      "xml_identical_all": true,
+      "max_base_position_difference_m": 0.0,
+      "max_relative_EE_position_difference_m": 0.0,
+      "largest_free_object_joint": "lettuce_container_joint0",
+      "max_free_object_translation_difference_m": 0.9916234474377876,
+      "max_changed_pixel_fraction": 0.0299835205078125,
+      "differing_fields": [
+        "physics_state",
+        "rgb:video.robot0_agentview_left",
+        "rgb:video.robot0_agentview_right",
+        "rgb:video.robot0_eye_in_hand"
+      ]
+    }
+  ]
+}

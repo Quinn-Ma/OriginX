@@ -1,0 +1,51 @@
+{
+  "schema": "originx_confirmatory_config_v1",
+  "development": false,
+  "bv": false,
+  "packages": {
+    "torch": "2.7.1+cpu",
+    "numpy": "2.2.5",
+    "transformers": "4.57.1",
+    "mujoco": "3.3.1",
+    "robosuite": "1.5.2",
+    "robocasa": "1.0.1",
+    "gymnasium": "0.29.1"
+  },
+  "protocol": {
+    "reset": "unmodified Counter.get_reset_regions",
+    "pythonhashseed": 0,
+    "split": "pretrain",
+    "replan": 16,
+    "history": 4,
+    "interval": 2,
+    "crop": 0.95,
+    "Euler": 5,
+    "horizon": "official 1.0.1 get_task_horizon",
+    "render": "CPU OSMesa, query-pixel-preserving decimation",
+    "organizer_verified": false,
+    "automatic_submission": false,
+    "study": "fixed 50 fresh environment cases; X/A/B frozen policies, independent B/V extension",
+    "policy_wait_keepalive_seconds": 120,
+    "seed_replacements": false,
+    "training": false,
+    "action_budget_matched": true,
+    "cross_policy_prefix_equality_required": false,
+    "initial_state_equality_required": true,
+    "A_actual_updates": 1613,
+    "B_actual_updates": 2000,
+    "compute_deadline_utc": "2026-10-11T18:00:18Z"
+  },
+  "budget": {
+    "max_cli_batches": 50,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 100000,
+    "quota_resets_allowed": 0,
+    "paid_topup_allowed": false,
+    "max_batch": 8
+  },
+  "response_wait_seconds": 1200,
+  "intervention_fraction": 0.5,
+  "publication_kind": "configuration_excerpt_not_executable_launch_config",
+  "original_config_sha256": "c325b75ef169c8dc609752e45d93bbe0eadd667030e6fed66acb58b96741496f",
+  "manifest_sha256": "337b416a4e0dd328a3be4fbb861a47f775c895ca8ced1db26011b802b11a3d31"
+}

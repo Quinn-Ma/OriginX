@@ -1,0 +1,303 @@
+{
+  "schema": "originx_sprint_public_source_inventory_v1",
+  "exact_copies": [
+    {
+      "path": "runtime/originx_sprint_20261011_v1/campaign.py",
+      "origin": "originx_sprint_20261011_v1/campaign.py",
+      "sha256": "2cc5ab0c89402c0f2aadbea532cafceefe48d77d74ea5224c9b15bbf34520f22",
+      "copy_sha256_verified": true,
+      "authority": "XAB config.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_20261011_v1/evidence.py",
+      "origin": "originx_sprint_20261011_v1/evidence.py",
+      "sha256": "befaa1b8ee5423207cf66c4dd1fd6fca4dd2d88d67fd29cad0f524e58046f649",
+      "copy_sha256_verified": true,
+      "authority": "XAB config.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_20261011_v1/__init__.py",
+      "origin": "originx_sprint_20261011_v1/__init__.py",
+      "sha256": "a05b210c747dafc31cbea020d188a29fb5752adf06ee0403b63b081e96e92748",
+      "copy_sha256_verified": true,
+      "authority": "XAB config.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_20261011_v1/probe.py",
+      "origin": "originx_sprint_20261011_v1/probe.py",
+      "sha256": "b13180a3e15e954c7e0345a7aba607bef13fb5e0175d3c4aad828ad4351ac8af",
+      "copy_sha256_verified": true,
+      "authority": "XAB config.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_20261011_v1/guard.py",
+      "origin": "originx_sprint_20261011_v1/guard.py",
+      "sha256": "bdf23a3eeecca6552c06ddb8f4752e7ffed8d3ba7e41fee9589a30acbb5d6a31",
+      "copy_sha256_verified": true,
+      "authority": "XAB config.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_20261011_v1/protocol.py",
+      "origin": "originx_sprint_20261011_v1/protocol.py",
+      "sha256": "b99a6c79998a78296c2ad1300551ab90081137558c559964aa770ee0b1d842f6",
+      "copy_sha256_verified": true,
+      "authority": "XAB config.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_20261011_v1/director.py",
+      "origin": "originx_sprint_20261011_v1/director.py",
+      "sha256": "8b833073e09baa192010384940cf9f976fdbdc433f9b9d83dcb7acc92bb8861e",
+      "copy_sha256_verified": true,
+      "authority": "XAB config.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_20261011_v1/services.py",
+      "origin": "originx_sprint_20261011_v1/services.py",
+      "sha256": "eb5e8cb0fd2c8b30eb63c9accec15b327437dd96a1711740c051e2ac5fd8c494",
+      "copy_sha256_verified": true,
+      "authority": "XAB config.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_20261011_v1/episode.py",
+      "origin": "originx_sprint_20261011_v1/episode.py",
+      "sha256": "ba6336e4e739c43d8632413238d4037b776d7e23aa30bc877a310aa9ebd7b4df",
+      "copy_sha256_verified": true,
+      "authority": "XAB config.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_20261011_v1/aggregate.py",
+      "origin": "originx_sprint_20261011_v1/aggregate.py",
+      "sha256": "72de4f51deb24f655f2ebcdf29e504a181d6f66dac20439a5efe2e11a45a14e8",
+      "copy_sha256_verified": true,
+      "authority": "XAB config.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_20261011_v1/bv_broker/broker.py",
+      "origin": "executed BV broker v3/broker.py",
+      "sha256": "247c597e84e5fd2a480d0934e7046e840514af7f6eb07dbd4451360aaa0625bb",
+      "copy_sha256_verified": true,
+      "authority": "BV config.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_20261011_v1/bv_broker/recover_cli_transport_v1.py",
+      "origin": "executed BV broker v3/recover_cli_transport_v1.py",
+      "sha256": "ff19d688761fd3c6f000c9d9b0510c8237f968991f8fa6654a0458ba7cd6708b",
+      "copy_sha256_verified": true,
+      "authority": "BV config.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_20261011_v1/bv_broker/budget.json",
+      "origin": "executed BV broker v3/budget.json",
+      "sha256": "703568e6d6b9a9350a0401b3ffebeeaa24d051448acee1ed3a518e5e29a0c304",
+      "copy_sha256_verified": true,
+      "authority": "BV config.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_20261011_v1/final_audit.py",
+      "origin": "terminal XAB/BV audit/final_audit.py",
+      "sha256": "ff6d374a3d5a92b45f689185ba917046c77e403585505fedab949bfa223d7265",
+      "copy_sha256_verified": true,
+      "authority": "final audit postprocessor_sources_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_20261011_v1/transport_audit.py",
+      "origin": "terminal XAB/BV audit/transport_audit.py",
+      "sha256": "257a3c10d107faa1ee44465137d7dffbe0e1083bdb84832c98049b9ab4a8289d",
+      "copy_sha256_verified": true,
+      "authority": "final audit postprocessor_sources_sha256"
+    },
+    {
+      "path": "control/xab_finalize_wait_v2.py",
+      "origin": "executed XAB/BV CPU finalizer v2",
+      "sha256": "d7d356d059aa9cb72fdebde8b78b57314d0e665ae4e8bb9fc0e600cced0e0c62",
+      "copy_sha256_verified": true,
+      "authority": "executed terminal watcher; postprocessor hashes pinned within source"
+    },
+    {
+      "path": "freezes/xab-service-freeze.json",
+      "origin": "XAB original service freeze",
+      "sha256": "3cbae818e444c07c091c0540ff90806799cd38a30e511f7fa444050c3845f147",
+      "copy_sha256_verified": true,
+      "authority": null
+    },
+    {
+      "path": "runtime/originx_sprint_gr_20261011_v2/__init__.py",
+      "origin": "executed GR v2/__init__.py",
+      "sha256": "fb769a894e28f0ffd1ac6081745d1a776e90473cc339102a3569595c613e5f85",
+      "copy_sha256_verified": true,
+      "authority": "GR source-freeze.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_gr_20261011_v2/adapter.py",
+      "origin": "executed GR v2/adapter.py",
+      "sha256": "daf0b5333cc8430e2330a7e6d4d2482269be51eaec14a405d33aea03c6e24b5b",
+      "copy_sha256_verified": true,
+      "authority": "GR source-freeze.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_gr_20261011_v2/aggregate.py",
+      "origin": "executed GR v2/aggregate.py",
+      "sha256": "3afad11ecea93ed864a4ba0a42d46ddcfc443bbf9fdca7e568ce12326627ffd9",
+      "copy_sha256_verified": true,
+      "authority": "GR source-freeze.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_gr_20261011_v2/assistance.py",
+      "origin": "executed GR v2/assistance.py",
+      "sha256": "83e207d06d6c74e51233db952de3baf8c3b750af34fb7480af56dade324cf41a",
+      "copy_sha256_verified": true,
+      "authority": "GR source-freeze.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_gr_20261011_v2/broker.py",
+      "origin": "executed GR v2/broker.py",
+      "sha256": "95d8c72044ee8b79bf5f78e188c679a7bc5764ad455a21f81b84d80e58f0a8ab",
+      "copy_sha256_verified": true,
+      "authority": "GR source-freeze.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_gr_20261011_v2/campaign.py",
+      "origin": "executed GR v2/campaign.py",
+      "sha256": "b0855ed5f77e5013b94338895b523acb67e97d9b6b188ed03df57bc481ec8ea4",
+      "copy_sha256_verified": true,
+      "authority": "GR source-freeze.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_gr_20261011_v2/client.py",
+      "origin": "executed GR v2/client.py",
+      "sha256": "8d50db9fa8fc0d3193658a7bb7124d310ab342cd0874ec0b379ef1d87fe58d38",
+      "copy_sha256_verified": true,
+      "authority": "GR source-freeze.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_gr_20261011_v2/core.py",
+      "origin": "executed GR v2/core.py",
+      "sha256": "3a0df5483786611743500330038d1291bca7141e4d6a13da5e3a5f4dba006bd9",
+      "copy_sha256_verified": true,
+      "authority": "GR source-freeze.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_gr_20261011_v2/parity_probe.py",
+      "origin": "executed GR v2/parity_probe.py",
+      "sha256": "e703d4db2dfb39d4e85dd987bbc80d6b201644624159ddcf3278d649621684c1",
+      "copy_sha256_verified": true,
+      "authority": "GR source-freeze.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_gr_20261011_v2/processes.py",
+      "origin": "executed GR v2/processes.py",
+      "sha256": "7a24d2bcf39e09462814daaecc4fc7a704f587236d6287548f517ce0a8751472",
+      "copy_sha256_verified": true,
+      "authority": "GR source-freeze.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_gr_20261011_v2/recover_cli_transport_v1.py",
+      "origin": "executed GR v2/recover_cli_transport_v1.py",
+      "sha256": "ff19d688761fd3c6f000c9d9b0510c8237f968991f8fa6654a0458ba7cd6708b",
+      "copy_sha256_verified": true,
+      "authority": "GR source-freeze.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_gr_20261011_v2/runner.py",
+      "origin": "executed GR v2/runner.py",
+      "sha256": "8ac049cecff7ebad8697c82aea65a923e118ba1068c7e19ff43aa3eb7155ee78",
+      "copy_sha256_verified": true,
+      "authority": "GR source-freeze.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_gr_20261011_v2/server.py",
+      "origin": "executed GR v2/server.py",
+      "sha256": "dd9564cf9a4be486de866cc631f79528d707c1e8f3a307999c9b5a40f74f6565",
+      "copy_sha256_verified": true,
+      "authority": "GR source-freeze.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_gr_20261011_v2/service_guard.py",
+      "origin": "executed GR v2/service_guard.py",
+      "sha256": "9685627c16949c2f6a47104980553d8a556a94150342753c7f9d407685f49ac6",
+      "copy_sha256_verified": true,
+      "authority": "GR source-freeze.source_sha256"
+    },
+    {
+      "path": "runtime/originx_sprint_gr_20261011_v2/wire.py",
+      "origin": "executed GR v2/wire.py",
+      "sha256": "5e94665f8fe25a49abf732ee335ff579fa2f2583c13917a2677db6d84a7ee5b8",
+      "copy_sha256_verified": true,
+      "authority": "GR source-freeze.source_sha256"
+    },
+    {
+      "path": "freezes/gr-source-freeze.json",
+      "origin": "GR original source-freeze",
+      "sha256": "a148b90e4fa752fb455e35078a22a11db78b0c85e57f65acdd3389c2b160e5f4",
+      "copy_sha256_verified": true,
+      "authority": null
+    },
+    {
+      "path": "configs/gr-budget.json",
+      "origin": "GR declared independent budget",
+      "sha256": "5ea0198d70da86c85986100d4261c8e90c95d0555b99e5379ece43954a569f92",
+      "copy_sha256_verified": true,
+      "authority": null
+    },
+    {
+      "path": "control/gr_manager.py",
+      "origin": "originx_sprint_gr_manager_20261011_v1/manager.py",
+      "sha256": "a0b60fc603d8233d49e67174b096326780df63079c7d5aa45285e4ed79010c14",
+      "copy_sha256_verified": true,
+      "authority": "originx_sprint_gr_manager_20261011_v1 source-freeze"
+    },
+    {
+      "path": "freezes/gr-manager-source-freeze.json",
+      "origin": "originx_sprint_gr_manager_20261011_v1 original freeze",
+      "sha256": "a31750e0e019136b7935748a84bf57a99bf2e617c561dea6f25a8a54cb93d1ce",
+      "copy_sha256_verified": true,
+      "authority": null
+    },
+    {
+      "path": "control/gr_finalizer.py",
+      "origin": "originx_sprint_gr_final_usage_20261011_v1/finalizer.py",
+      "sha256": "d2ef4a4ff6f9a494dd43893662329c9ba8683374cf4a1a8ce147d36d04405288",
+      "copy_sha256_verified": true,
+      "authority": "originx_sprint_gr_final_usage_20261011_v1 source-freeze"
+    },
+    {
+      "path": "control/gr_waiter.py",
+      "origin": "originx_sprint_gr_final_usage_20261011_v1/waiter.py",
+      "sha256": "1a67af4dfa6d37e50eabb72a61437f49aa6cf8c312f53291e94c0ae3e6b7348e",
+      "copy_sha256_verified": true,
+      "authority": "originx_sprint_gr_final_usage_20261011_v1 source-freeze"
+    },
+    {
+      "path": "freezes/gr-final-usage-source-freeze.json",
+      "origin": "originx_sprint_gr_final_usage_20261011_v1 original freeze",
+      "sha256": "396b3f8095cae94b1182f597451205eca43bf93a5edc2fb6bfbf7d3f9f85b5bb",
+      "copy_sha256_verified": true,
+      "authority": null
+    },
+    {
+      "path": "manifests/xab-manifest.json",
+      "origin": "originx-sprint-xab-20261011-v1/manifest.json",
+      "sha256": "337b416a4e0dd328a3be4fbb861a47f775c895ca8ced1db26011b802b11a3d31",
+      "copy_sha256_verified": true,
+      "authority": "actual prepared config.manifest_sha256"
+    },
+    {
+      "path": "manifests/bv-manifest.json",
+      "origin": "originx-sprint-bv-20261011-v1/manifest.json",
+      "sha256": "4e56f6aca33e858c6805d7238fa6a3e505a772a1b98432461b24cfb54283ccbb",
+      "copy_sha256_verified": true,
+      "authority": "actual prepared config.manifest_sha256"
+    },
+    {
+      "path": "manifests/gr-manifest.json",
+      "origin": "originx-sprint-gr-20261011-v2/manifest.json",
+      "sha256": "e01ceff402f8631b06af77bc24d42fe14c56579bd60ff622b980e76266d018d8",
+      "copy_sha256_verified": true,
+      "authority": "actual prepared config.manifest_sha256"
+    }
+  ],
+  "all_copy_sha256_verified": true,
+  "raw_data_included": false,
+  "credentials_included": false,
+  "local_private_launch_paths_included": false
+}

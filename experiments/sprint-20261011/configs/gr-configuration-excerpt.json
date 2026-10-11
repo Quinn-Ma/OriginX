@@ -1,0 +1,73 @@
+{
+  "schema": "originx_gr00t_confirmatory_config_v1",
+  "namespace": "originx_sprint_gr_20261011_v2",
+  "development": false,
+  "packages": {
+    "torch": "2.7.1+cpu",
+    "numpy": "2.2.5",
+    "transformers": "4.57.1",
+    "mujoco": "3.3.1",
+    "robosuite": "1.5.2",
+    "robocasa": "1.0.1",
+    "gymnasium": "0.29.1"
+  },
+  "protocol": {
+    "native_reset": true,
+    "pythonhashseed": 0,
+    "replan": 16,
+    "policy_context_frames": 1,
+    "evaluator_history": [
+      4,
+      2
+    ],
+    "policy_inputs": "current public named 16D raw-quaternion state plus three RGB frames",
+    "native_tap": "same reset/step return; no extra render/reset/action",
+    "gr00t_denoising_steps": 4,
+    "image_transform": "official GR00T transform; no client crop or extra flip",
+    "action": "official decoded groups concatenated to float32 16x12, existing convert_action",
+    "arms": {
+      "C": "unchanged instruction sham",
+      "V": "Astra High once with three current RGB views"
+    },
+    "trigger": "16*ceil(H/32)",
+    "policy_wait_keepalive_seconds": 120,
+    "response_fallback": "same original instruction",
+    "latency_matched": false,
+    "action_budget_matched": true,
+    "seed_replacements": false,
+    "training": false,
+    "historical_results_unchanged": true,
+    "organizer_verified": false,
+    "automatic_submission": false
+  },
+  "inference": {
+    "primary": [
+      "gr00t:V-C"
+    ],
+    "denominator": 50,
+    "unknowns": "fixed-denominator identification bounds",
+    "statistical_superiority_claim": false
+  },
+  "budget": {
+    "max_cli_batches": 50,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 100000,
+    "quota_resets_allowed": 0,
+    "paid_topup_allowed": false,
+    "max_batch": 8,
+    "prior_usage": {
+      "cli_calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "scope": "2026-10-11 independent GR allowance; historical costs separate; receipt limits may overshoot by one batch"
+  },
+  "response_wait_seconds": 1200,
+  "intervention_fraction": 0.5,
+  "duration_seconds": 3058,
+  "policy_id": "gr00t_n15_robocasa_multitask120000",
+  "service_namespace": "originx_gr00t_confirmation_20261009",
+  "publication_kind": "configuration_excerpt_not_executable_launch_config",
+  "original_config_sha256": "33b8367ce61bfd15475d68fae68abf8b68ba177258ea725728fb42e2707f492a",
+  "manifest_sha256": "e01ceff402f8631b06af77bc24d42fe14c56579bd60ff622b980e76266d018d8"
+}

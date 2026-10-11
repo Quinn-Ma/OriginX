@@ -1,6 +1,9 @@
 # OriginX: An Audited 2,500-Episode RoboCasa365 Evaluation
 
-Qinzhen Ma · October 9, 2026
+Qinzhen Ma · Harry Yang · Jialin Wu · Shichen Tang · Gordon Dai
+
+**Subsequent fresh-seed study.** X/A/B/BV each completed 50 trials, with 30/32/33/32 successes and one matched rescue offset by one regression. The separate GR00T extension completed 31/50 two-arm cases, retaining 19 unknown/unrun cases per arm; 29 matched pairs contain one rescue and no regression. See the [full new study](FRESH_SEED_STUDY.md). The original evaluation and earlier follow-up below retain their own records and are not combined into a new benchmark score.
+
 
 ![OriginX overview: adaptation from a public checkpoint and continuous action conditioning.](docs/assets/originx-overview.png)
 
@@ -113,10 +116,10 @@ One continuation stopped when the broker treated an intermediate CLI reconnectio
 
 72 unique CLI invocations; known input 1,244,218, output 24,566. Complete input/output accounting: True. Summed invocation latency is 871.88 seconds. Reasoning tokens are included in output, not added again. All original and continuation main-study calls, including out-of-cohort work and failures, are included. Development use is separate: six B/base calls used 102,367 input and 1,011 output tokens (56.25 seconds summed invocation latency); one GR00T admission call used 17,203 input and 213 output tokens (10.85 seconds). These seven calls do not overlap the 72 main-study calls. Dollar cost is unavailable. No additional training, quota reset or paid top-up was used.
 
-GR00T formal cross-architecture evaluation was **not run** within this delivery; development admission is a systems check, not efficacy evidence. The historical records remain **1,496/2,500** and **56/1,004**. These follow-up results are a separate supplementary study and do not produce an accepted leaderboard score.
+At the close of that earlier follow-up, GR00T formal cross-architecture evaluation had **not yet run**; development admission is a systems check, not efficacy evidence. A subsequent independent cohort completed 31/50 two-arm cases and retains 19 unknown cases, as reported in the [new study](FRESH_SEED_STUDY.md). The historical records remain **1,496/2,500** and **56/1,004**. These follow-up results are a separate supplementary study and do not produce an accepted leaderboard score.
 
 ### Future directions
 
-A larger fresh-seed evaluation should estimate benefit and regression jointly, compare image-conditioned advice against instruction repetition, generic advice and text-only advice, and retain all unresolved pairs. Independent GR00T evaluation is needed for architectural transfer. Fixed-budget comparisons of intervention timing and a stronger stall detector should be prospectively registered. Compute-matched controls, latency accounting, and real-robot evaluation remain open; no outcome-driven retuning is inferred from the present observations.
+A larger fresh-seed evaluation should estimate benefit and regression jointly, compare image-conditioned advice against instruction repetition, generic advice and text-only advice, and retain all unresolved pairs. Larger, complete GR00T evaluations are still needed to establish architectural transfer beyond the subsequent partial cohort. Fixed-budget comparisons of intervention timing and a stronger stall detector should be prospectively registered. Compute-matched controls, latency accounting, and real-robot evaluation remain open; no outcome-driven retuning is inferred from the present observations.
 
 Terminal report SHA-256: `d437095e785fd603cb6e99a2ae0d9556dbc2254a212ebef138e4a07c592c8270`. Machine-readable evidence: [50-case audit](evidence/confirmatory-50/report.json).

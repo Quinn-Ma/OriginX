@@ -22,6 +22,7 @@ Paimon and Xiaomi: published leaderboard scores. OriginX: our 2,500-episode eval
 
 - **Astra-assisted recovery:** 56 confirmed rescues among 1,004 historical failures, reported separately from the benchmark. [Study](ASTRA_RESCUE_REPORT.md).
 - **50-case follow-up:** control and visual assistance both scored 29/50; no overall benefit established. [Results](evidence/confirmatory-50/).
+- **Fresh-seed policy study:** X/A/B/BV scored 30/32/33/32 out of 50; matched assistance had one rescue and one regression. The partial GR00T extension retains 19 unknown cases per arm. [Study](FRESH_SEED_STUDY.md).
 
 ```bash
 pip install huggingface_hub

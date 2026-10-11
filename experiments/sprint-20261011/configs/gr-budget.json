@@ -1,0 +1,18 @@
+{
+  "schema": "originx_sprint_independent_gr_budget_v1",
+  "namespace": "originx_sprint_gr_20261011_v2",
+  "max_cli_batches": 50,
+  "max_input_tokens": 1000000,
+  "max_output_tokens": 100000,
+  "max_batch": 8,
+  "quota_resets_allowed": 0,
+  "paid_topup_allowed": false,
+  "prior_usage": {
+    "cli_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "compute_cutoff_utc": "2026-10-11T18:00:18Z",
+  "historical_costs_separate": true,
+  "token_limit_interpretation": "Receipt-based fail-closed limits; an in-flight batch has unknown tokens and may exceed a limit. Not an account quota reset."
+}

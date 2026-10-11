@@ -1,0 +1,8 @@
+{
+  "max_cli_batches": 50,
+  "max_input_tokens": 1000000,
+  "max_output_tokens": 100000,
+  "max_batch": 8,
+  "quota_resets_allowed": 0,
+  "paid_topup_allowed": false
+}

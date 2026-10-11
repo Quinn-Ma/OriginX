@@ -1,0 +1,549 @@
+{
+  "schema": "originx_fresh_seed_study_public_summary_v1",
+  "study_id": "originx-sprint-20261011",
+  "status": "terminal_with_GR00T_unrun_cases_retained",
+  "unique_environment_cases": 50,
+  "case_ids": "sprint-fresh-00 through sprint-fresh-49",
+  "environment_and_policy_seed_range": [
+    2027101100,
+    2027101149
+  ],
+  "new_training": false,
+  "real_robot_experiments": false,
+  "historical_results_unchanged": {
+    "original_B2000": {
+      "success": 1496,
+      "denominator": 2500
+    },
+    "historical_failure_rescue": {
+      "strict_rescues": 56,
+      "denominator": 1004
+    },
+    "earlier_50_case_followup": {
+      "control_success": 29,
+      "visual_success": 29,
+      "denominator": 50
+    }
+  },
+  "originx": {
+    "arm_outcomes": {
+      "X": {
+        "denominator": 50,
+        "success": 30,
+        "failure": 20,
+        "unknown": 0
+      },
+      "A": {
+        "denominator": 50,
+        "success": 32,
+        "failure": 18,
+        "unknown": 0
+      },
+      "B": {
+        "denominator": 50,
+        "success": 33,
+        "failure": 17,
+        "unknown": 0
+      },
+      "BV": {
+        "denominator": 50,
+        "success": 32,
+        "failure": 18,
+        "unknown": 0
+      }
+    },
+    "XAB_initial_matched_cases": 42,
+    "XAB_initial_deviation_cases": 8,
+    "BV_vs_B": {
+      "treatment": "V",
+      "reference": "C",
+      "N": 50,
+      "categories": {
+        "matched": 44,
+        "unknown": 0,
+        "initial_deviation": 6,
+        "prefix_deviation": 0
+      },
+      "valid_paired_2x2": {
+        "both_success": 27,
+        "treatment_only_success": 1,
+        "reference_only_success": 1,
+        "both_failure": 15
+      },
+      "rescues": 1,
+      "regressions": 1,
+      "valid_pair_net_count": 0,
+      "unresolved_comparisons": 6,
+      "complete_cohort_net_effect": null,
+      "full_cohort_net_effect_bounds": {
+        "low": -0.1,
+        "high": 0.02,
+        "kind": "identification_bounds_not_confidence_interval"
+      },
+      "conditional_valid_pair_net_effect": 0.0,
+      "conditional_task_bootstrap": {
+        "estimand": "conditional_valid_pair_net_effect",
+        "method": "task_block_percentile_bootstrap",
+        "confidence": 0.95,
+        "seed": 6003146442787665844,
+        "samples": 2000,
+        "task_count": 44,
+        "pair_count": 44,
+        "interval": [
+          -0.06818181818181818,
+          0.06818181818181818
+        ],
+        "generalization_assumption": "task blocks are exchangeable; tasks and within-task batches are not independent episodes",
+        "confirmatory_superiority_test": false
+      },
+      "mcnemar_sensitivity": {
+        "label": "unadjusted_McNemar_independent_pair_sensitivity_only",
+        "discordant_pairs": 2,
+        "two_sided_exact_p": 1.0,
+        "confirmatory_superiority_test": false,
+        "limitation": "assumes independent discordant pairs; task/batch dependence is not corrected; no multiplicity-adjusted claim"
+      },
+      "matched_assistance": {
+        "treatment": {
+          "triggered": 22,
+          "delivered": 22,
+          "fallback": 0,
+          "evidence_valid": 44,
+          "valid_early_terminal": 22,
+          "valid_delivered": 22,
+          "valid_fallback": 0
+        },
+        "reference": {
+          "triggered": 22,
+          "delivered": 0,
+          "fallback": 0,
+          "evidence_valid": 44,
+          "valid_early_terminal": 22,
+          "valid_delivered": 0,
+          "valid_fallback": 0
+        }
+      }
+    },
+    "strict_verified_Astra_rescues": 1,
+    "strict_verified_Astra_regressions": 1,
+    "verified_Astra_applications": 25,
+    "verified_Astra_applications_in_matched_pairs": 22,
+    "cli_usage": {
+      "schema": "originx_confirmatory_cli_usage_v1",
+      "unique_observed_cli_invocations": 25,
+      "observed_status_counts": {
+        "ok": 25
+      },
+      "known_usage_totals": {
+        "input_tokens": 430501,
+        "cached_input_tokens": 0,
+        "output_tokens": 7548,
+        "reasoning_tokens": 3743
+      },
+      "observed_calls_missing_counters": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "known_invocation_latency_sum_seconds": 306.5302483999694,
+      "observed_calls_missing_latency": 0,
+      "request_files": 25,
+      "requests_without_observed_cli_receipt": [],
+      "broker_inventory_provided": true,
+      "inventory_complete": true,
+      "complete_input_output_token_accounting": true,
+      "interrupted_cli_starts_without_receipt": [],
+      "invalid_receipts": [],
+      "cost_usd": null,
+      "reasoning_tokens_included_in_output_not_added_again": true,
+      "interpretation": "Known observed usage; unpublished/interrupted calls may be unknown. No inferred zero token usage or monetary price."
+    }
+  },
+  "gr00t": {
+    "checkpoint": "GR00T N1.5 RoboCasa checkpoint-120000",
+    "planned_cases": 50,
+    "completed_cases": 31,
+    "unrun_cases": 19,
+    "completed_arm_outcomes": 62,
+    "unrun_arm_outcomes": 38,
+    "arms": {
+      "C": {
+        "planned": 50,
+        "present": 31,
+        "individually_valid_terminal_outcomes": 31,
+        "successes": 6,
+        "failures": 25,
+        "unknown": 19,
+        "success_rate_if_individually_complete": null,
+        "success_rate_bounds": [
+          0.12,
+          0.5
+        ],
+        "scope": "individual recorded arm outcomes; pairwise comparability is checked separately",
+        "assistance": {
+          "triggered": 28,
+          "delivered": 0,
+          "fallback": 0,
+          "evidence_valid": 31,
+          "valid_early_terminal": 3,
+          "valid_delivered": 0,
+          "valid_fallback": 0
+        },
+        "invalid_reasons": {
+          "missing_record": 19
+        }
+      },
+      "V": {
+        "planned": 50,
+        "present": 31,
+        "individually_valid_terminal_outcomes": 31,
+        "successes": 7,
+        "failures": 24,
+        "unknown": 19,
+        "success_rate_if_individually_complete": null,
+        "success_rate_bounds": [
+          0.14,
+          0.52
+        ],
+        "scope": "individual recorded arm outcomes; pairwise comparability is checked separately",
+        "assistance": {
+          "triggered": 28,
+          "delivered": 28,
+          "fallback": 0,
+          "evidence_valid": 31,
+          "valid_early_terminal": 3,
+          "valid_delivered": 28,
+          "valid_fallback": 0
+        },
+        "invalid_reasons": {
+          "missing_record": 19
+        }
+      }
+    },
+    "V_vs_C": {
+      "treatment": "V",
+      "reference": "C",
+      "N": 50,
+      "categories": {
+        "matched": 29,
+        "unknown": 19,
+        "initial_deviation": 2,
+        "prefix_deviation": 0
+      },
+      "valid_paired_2x2": {
+        "both_success": 6,
+        "treatment_only_success": 1,
+        "reference_only_success": 0,
+        "both_failure": 22
+      },
+      "rescues": 1,
+      "regressions": 0,
+      "valid_pair_net_count": 1,
+      "unresolved_comparisons": 21,
+      "complete_cohort_net_effect": null,
+      "full_cohort_net_effect_bounds": {
+        "low": -0.36,
+        "high": 0.44,
+        "kind": "identification_bounds_not_confidence_interval"
+      },
+      "conditional_valid_pair_net_effect": 0.034482758620689655,
+      "conditional_task_bootstrap": {
+        "estimand": "conditional_valid_pair_net_effect",
+        "method": "task_block_percentile_bootstrap",
+        "confidence": 0.95,
+        "seed": 18046836812612293570,
+        "samples": 2000,
+        "task_count": 29,
+        "pair_count": 29,
+        "interval": [
+          0.0,
+          0.10344827586206896
+        ],
+        "generalization_assumption": "task blocks are exchangeable; tasks and within-task batches are not independent episodes",
+        "confirmatory_superiority_test": false
+      },
+      "mcnemar_sensitivity": {
+        "label": "unadjusted_McNemar_independent_pair_sensitivity_only",
+        "discordant_pairs": 1,
+        "two_sided_exact_p": 1.0,
+        "confirmatory_superiority_test": false,
+        "limitation": "assumes independent discordant pairs; task/batch dependence is not corrected; no multiplicity-adjusted claim"
+      },
+      "matched_assistance": {
+        "treatment": {
+          "triggered": 26,
+          "delivered": 26,
+          "fallback": 0,
+          "evidence_valid": 29,
+          "valid_early_terminal": 3,
+          "valid_delivered": 26,
+          "valid_fallback": 0
+        },
+        "reference": {
+          "triggered": 26,
+          "delivered": 0,
+          "fallback": 0,
+          "evidence_valid": 29,
+          "valid_early_terminal": 3,
+          "valid_delivered": 0,
+          "valid_fallback": 0
+        }
+      }
+    },
+    "verified_Astra_applications": 28,
+    "verified_Astra_applications_in_matched_pairs": 26,
+    "cli_usage": {
+      "schema": "originx_gr00t_confirmatory_cli_usage_v1",
+      "unique_observed_cli_invocations": 28,
+      "observed_status_counts": {
+        "ok": 28
+      },
+      "known_usage_totals": {
+        "input_tokens": 482162,
+        "cached_input_tokens": 0,
+        "output_tokens": 7608,
+        "reasoning_tokens": 3401
+      },
+      "observed_calls_missing_counters": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "known_invocation_latency_sum_seconds": 322.54755479996675,
+      "observed_calls_missing_latency": 0,
+      "request_files": 28,
+      "requests_without_observed_cli_receipt": [],
+      "broker_inventory_provided": true,
+      "inventory_complete": true,
+      "complete_input_output_token_accounting": true,
+      "interrupted_cli_starts_without_receipt": [],
+      "invalid_receipts": [],
+      "cost_usd": null,
+      "reasoning_tokens_included_in_output_not_added_again": true,
+      "interpretation": "Known observed usage; unpublished/interrupted calls may be unknown. No inferred zero token usage or monetary price."
+    },
+    "archive_sha256": "bcc1af0b47ee776c45a57544235987ab911db74131e84d65afb203879eecc2f7"
+  },
+  "new_study_cli_totals": {
+    "unique_calls": 53,
+    "input_tokens": 912663,
+    "output_tokens": 15156,
+    "reasoning_tokens_included_in_output": 7144,
+    "cli_latency_sum_seconds": 629.0778031999362,
+    "cost_usd": null,
+    "prior_studies_and_development_calls_included": false
+  },
+  "initial_state_diagnostic": {
+    "schema": "originx_initial_deviation_summary_v1",
+    "retained_strict_matches": 42,
+    "retained_strict_deviations": 8,
+    "no_reclassification": true,
+    "no_rollouts_or_parameter_changes": true,
+    "observed": {
+      "all_8_have_free_object_translation_difference": true,
+      "minimum_across_cases_of_maximum_object_translation_difference_m": 0.9677183013971697,
+      "maximum_across_cases_of_maximum_object_translation_difference_m": 1.9171355472610372,
+      "xml_identical_cases": 7,
+      "xml_different_cases": 1,
+      "layout_style_instruction_identical_cases": 8,
+      "base_position_difference_greater_than_1mm_cases": 6,
+      "only_texture_or_pixel_difference_cases": 0
+    },
+    "inference": [
+      "Differences in sampled object geometry, placements and robot configurations suggest reset/initialization variability upstream of policy inference; the causal source is not established by snapshots.",
+      "No conclusion is made that policy weights, parallel scheduling, set iteration, renderer precision or random generator consumption caused these deviations."
+    ],
+    "future_directions": [
+      "Log asset selection, placement regions, object poses, robot base and all RNG states at reset milestones to localize the first divergence.",
+      "Preregister initial-state checks before policy comparison; preserve deviations and fixed denominators.",
+      "Evaluate a separate explicitly labeled state-snapshot paired protocol without silently changing native-reset benchmark claims."
+    ],
+    "diagnosis_file": "diagnosis.json",
+    "diagnosis_sha256": "aebad1042d583bb302842e7c5e47c5ce93b2decfaf06b8c57f3632b2b502857e",
+    "script_sha256": "8650a3185d870655421bde0f4467403004fbf229e91e88d00491b44b5ed9b566",
+    "cases": [
+      {
+        "case_id": "sprint-fresh-26",
+        "task": "PickPlaceSinkToCounter",
+        "seed": 2027101126,
+        "xml_identical_all": true,
+        "max_base_position_difference_m": 0.15984752887104556,
+        "max_relative_EE_position_difference_m": 0.015352502695758215,
+        "largest_free_object_joint": "container_joint0",
+        "max_free_object_translation_difference_m": 1.2597808800338939,
+        "max_changed_pixel_fraction": 0.8807830810546875,
+        "differing_fields": [
+          "physics_state",
+          "proprioception",
+          "rgb:video.robot0_agentview_left",
+          "rgb:video.robot0_agentview_right",
+          "rgb:video.robot0_eye_in_hand"
+        ]
+      },
+      {
+        "case_id": "sprint-fresh-29",
+        "task": "PreSoakPan",
+        "seed": 2027101129,
+        "xml_identical_all": false,
+        "max_base_position_difference_m": 0.2719197868149985,
+        "max_relative_EE_position_difference_m": 0.017603403933784456,
+        "largest_free_object_joint": "obj1_joint0",
+        "max_free_object_translation_difference_m": 0.9677183013971697,
+        "max_changed_pixel_fraction": 0.9127044677734375,
+        "differing_fields": [
+          "physics_state",
+          "proprioception",
+          "rgb:video.robot0_agentview_left",
+          "rgb:video.robot0_agentview_right",
+          "rgb:video.robot0_eye_in_hand",
+          "xml_sha256"
+        ]
+      },
+      {
+        "case_id": "sprint-fresh-32",
+        "task": "RinseSinkBasin",
+        "seed": 2027101132,
+        "xml_identical_all": true,
+        "max_base_position_difference_m": 0.0,
+        "max_relative_EE_position_difference_m": 0.0,
+        "largest_free_object_joint": "plate_joint0",
+        "max_free_object_translation_difference_m": 1.2020839173768834,
+        "max_changed_pixel_fraction": 0.022186279296875,
+        "differing_fields": [
+          "physics_state",
+          "proprioception",
+          "rgb:video.robot0_agentview_left",
+          "rgb:video.robot0_agentview_right",
+          "rgb:video.robot0_eye_in_hand"
+        ]
+      },
+      {
+        "case_id": "sprint-fresh-33",
+        "task": "ScrubCuttingBoard",
+        "seed": 2027101133,
+        "xml_identical_all": true,
+        "max_base_position_difference_m": 1.917124509811558,
+        "max_relative_EE_position_difference_m": 0.0,
+        "largest_free_object_joint": "sponge_joint0",
+        "max_free_object_translation_difference_m": 1.9171355472610372,
+        "max_changed_pixel_fraction": 0.5605621337890625,
+        "differing_fields": [
+          "physics_state",
+          "proprioception",
+          "rgb:video.robot0_agentview_left",
+          "rgb:video.robot0_agentview_right",
+          "rgb:video.robot0_eye_in_hand"
+        ]
+      },
+      {
+        "case_id": "sprint-fresh-39",
+        "task": "SteamInMicrowave",
+        "seed": 2027101139,
+        "xml_identical_all": true,
+        "max_base_position_difference_m": 0.03684182788100074,
+        "max_relative_EE_position_difference_m": 0.02346919254194745,
+        "largest_free_object_joint": "distr_counter_1_joint0",
+        "max_free_object_translation_difference_m": 1.7102529757953389,
+        "max_changed_pixel_fraction": 0.9369964599609375,
+        "differing_fields": [
+          "physics_state",
+          "proprioception",
+          "rgb:video.robot0_agentview_left",
+          "rgb:video.robot0_agentview_right",
+          "rgb:video.robot0_eye_in_hand"
+        ]
+      },
+      {
+        "case_id": "sprint-fresh-40",
+        "task": "StirVegetables",
+        "seed": 2027101140,
+        "xml_identical_all": true,
+        "max_base_position_difference_m": 0.06780486256910924,
+        "max_relative_EE_position_difference_m": 0.021067480087387607,
+        "largest_free_object_joint": "veg2_joint0",
+        "max_free_object_translation_difference_m": 1.478502067500334,
+        "max_changed_pixel_fraction": 0.9293212890625,
+        "differing_fields": [
+          "physics_state",
+          "proprioception",
+          "rgb:video.robot0_agentview_left",
+          "rgb:video.robot0_agentview_right",
+          "rgb:video.robot0_eye_in_hand"
+        ]
+      },
+      {
+        "case_id": "sprint-fresh-47",
+        "task": "WashFruitColander",
+        "seed": 2027101147,
+        "xml_identical_all": true,
+        "max_base_position_difference_m": 0.03693463317586508,
+        "max_relative_EE_position_difference_m": 0.007479181451392509,
+        "largest_free_object_joint": "colander_joint0",
+        "max_free_object_translation_difference_m": 1.20106332794912,
+        "max_changed_pixel_fraction": 0.7254638671875,
+        "differing_fields": [
+          "physics_state",
+          "proprioception",
+          "rgb:video.robot0_agentview_left",
+          "rgb:video.robot0_agentview_right",
+          "rgb:video.robot0_eye_in_hand"
+        ]
+      },
+      {
+        "case_id": "sprint-fresh-48",
+        "task": "WashLettuce",
+        "seed": 2027101148,
+        "xml_identical_all": true,
+        "max_base_position_difference_m": 0.0,
+        "max_relative_EE_position_difference_m": 0.0,
+        "largest_free_object_joint": "lettuce_container_joint0",
+        "max_free_object_translation_difference_m": 0.9916234474377876,
+        "max_changed_pixel_fraction": 0.0299835205078125,
+        "differing_fields": [
+          "physics_state",
+          "rgb:video.robot0_agentview_left",
+          "rgb:video.robot0_agentview_right",
+          "rgb:video.robot0_eye_in_hand"
+        ]
+      }
+    ]
+  },
+  "gate_prototype": {
+    "synthetic_tests": 15,
+    "failures": 0,
+    "training_runs": 0,
+    "rollouts": 0,
+    "empirical_gain_established": false
+  },
+  "development_case_disclosure": {
+    "excluded_from_fresh_cohort": "sprint-dev-00",
+    "seed": 2027201100
+  },
+  "interpretation": "No established prospective net benefit or policy superiority. Partial GR00T results retain the fixed denominator of 50. These studies do not replace the original benchmark.",
+  "source_sha256": {
+    "originx-audit.json": "49279c2d1d78b66ead0c42fb229049181bc25da1b8ed6a686037912592c00c5c",
+    "originx-cli-usage.json": "9e30a83a5f1b571805ef699a7b65777b83ca096709eb55108a8ac54294171ccf",
+    "gr00t-analysis.json": "90d191b54d56b2024508ee9290ce7f54b608c42b7f27b5fb2edeecd5ae606f55",
+    "gr00t-cli-usage.json": "1799d98996671f4d3dede4bd184ccf2096ee98c0380b973b49040ff83aadf26d",
+    "initial-state-diagnostic.json": "d901262488b72a18e24da43528012f0db659f1016315c43cdeabf5cf52f67ed8",
+    "gate-synthetic-checks.json": "f2036639084337a65cf30a820a4c3529babba23558e5fdc085ae1c4f829e608c",
+    "gr00t-cleanup-and-evidence.json": "50af51adf17295f4417a942db6794f3bff7c8aa3d13fe8ab8edf6826b04dfbc1"
+  },
+  "publication_path_redaction": "Machine-specific absolute prefixes in published evidence are replaced by project/ or workspace/. source_sha256 identifies the original unredacted source files; published_evidence_sha256 identifies the public path-normalized files.",
+  "published_evidence_sha256": {
+    "originx-audit.json": "24f21a53e6fa8126ebb86ae07c144029e60d8c401f5b972a66e756913e1cb449",
+    "originx-cli-usage.json": "5a91663eeca83c4946f409e1e7ad0a1a05535fc302a7bb12cc30d0a116eb0895",
+    "gr00t-analysis.json": "90d191b54d56b2024508ee9290ce7f54b608c42b7f27b5fb2edeecd5ae606f55",
+    "gr00t-cli-usage.json": "fa3eea589bfae8d9262f9281b4ed69d8ef1b7ec4433c14baf41d70a964863c20",
+    "initial-state-diagnostic.json": "5778327a5bb1cd861d9e74cc23f8fb72cf8797b213a43f131b3a1f2599aa3ae3",
+    "gate-synthetic-checks.json": "f1ebd0b5360f709bc03701463538854c4fcb36fa62adb16877cbcca65e6cf9d1",
+    "gr00t-cleanup-and-evidence.json": "19b86a5372c30805efb894cc2724e7a6be869bed3570a874444ccb484bd31243"
+  },
+  "gr00t_cleanup_verified": {
+    "passed": true,
+    "remote_identities_inactive": 72,
+    "local_identities_inactive": 3
+  }
+}
