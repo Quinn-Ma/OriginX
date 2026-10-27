@@ -1,0 +1,22 @@
+{
+  "schema": "id60-masks-manifest-refreeze-receipt-v1",
+  "recorded_utc": "2026-10-27T15:55:25.162831+00:00",
+  "why": "The manifests registered on the AutoDL H800 instance (port 40137) on 2026-10-26 are unreachable after the instance shut down; both were re-frozen locally in WSL with the same sources, seeds and arguments.",
+  "formal": {
+    "path": "work/id60-masks-validation/manifest.json",
+    "file_sha256": "74895559be91168a3a5e39d58a3cc69553170adea27e20bac38aaf512c184a9f",
+    "manifest_sha256": "94d4721e1452671ecda3ff0fd988c4c794755fe0a9ae267eae951e2134229278",
+    "server_registered_manifest_sha256_prefix": "94d4721e1452",
+    "matches_server_prefix": true,
+    "args": "--freeze --pairs 12 --workers 2"
+  },
+  "pilot": {
+    "path": "work/id60-masks-validation/pilot-manifest-v1.json",
+    "file_sha256": "6a923a0f9559e4e081e62165f2166be9bbd93881dfd3207f9675276227039d2a",
+    "manifest_sha256": "df91a4d285706b0dc80fbd1fdb8e5156a7b2e0fdd7b1b0178df183d33928ef80",
+    "server_registered_manifest_sha256_prefix": null,
+    "note": "the server pilot manifest hash was not recorded locally; dry run of 6 cases passed on the server",
+    "args": "--freeze --workers 2"
+  },
+  "executed_cases": 0
+}

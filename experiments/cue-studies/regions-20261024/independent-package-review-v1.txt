@@ -1,0 +1,20 @@
+Independent read-only archive-script review, v1
+
+Scope: work/id60-regions-validation/package_regions_validation.py and its synthetic tests; frozen read_record, registration.load_manifest and launcher cleanup sequence inspected by targeted reads. No real archive, run trace, model, simulator or GPU operation was invoked. The owner reports 31 synthetic CPU checks passing; this reviewer did not rerun them.
+
+No blocking defect found in the intended stopped-run path.
+
+Verified boundaries:
+- require_stopped is called before journal traversal; requires terminal launcher status, correct purpose and owned_processes_stopped exactly True.
+- final_audit requires all 24 registered result files, no extra result slots, no unregistered trace directory, exact analysis case order and result byte hashes. UNKNOWN remains a distinct category; missing/partial traces are not called task failures.
+- actual NPZ bytes are validated against the saved SHA by frozen read_record, then every referenced array is reconstructed with allow_pickle=False and checked for saved dtype, shape and array SHA. The new wrapper also checks NPZ byte size, exact key set and in-trace path boundaries.
+- known traces bind metadata, result events, action chunks, terminal scorer state, natural-plan and reset gates, actual renderer admission and per-generation planner CUDA evidence. Logged world geometry/contact remain explicitly logging-only.
+- native CUDA records are matched to saved action chunks using the registered single-worker order, proposal indices and forward/chunk timestamps. This is transparently weaker than action-hash or encoded-input-tensor interception, which the report explicitly does not claim. Extra/failed native evidence is allowed only as a reported interrupted suffix when UNKNOWN cases exist, never as coverage for a saved chunk.
+- registration.load_manifest checks the current 138 source identities and retained 133-source parent set, seed audit and checkpoint asset identity. Prior archive bytes and hashes are checked against their frozen inventory.
+- recursive archive retention omits dependency/cache/weight directories and existing archives. No-overwrite checks prevent archive or inventory reuse. Archive member paths are checked; the archive cannot include itself. Every ZIP member is read back, hashed and size-checked, with source files rehashed after writing.
+
+Suggested defensive checks, sent to owner (not implemented by reviewer):
+1. require_stopped should also reject nonempty cleanup_errors. This matches the paper updater's completed-run prerequisite and makes the cleanup claim explicit even if a future receipt has owned_processes_stopped=True plus reported cleanup errors.
+2. For a known episode, explicitly require policy identity is present, not only result.get('policy_identity') == policy. Normal complete results contain the identity so a missing identity file generally already fails equality; the explicit check also closes the double-missing None == None case and documents the intended claim.
+
+Interpretation limits: a PASS_BYTE_VERIFIED_BACKUP means complete byte preservation plus the separately labeled execution audit, not successful task performance, proof that every UNKNOWN computation was captured, a full physics replay, or a hook on every native encoded input tensor. Partial unknown evidence remains partial even when its retained bytes are fully verified. All final claims remain contingent on actually running this auditor after owned-process shutdown and checking its output.

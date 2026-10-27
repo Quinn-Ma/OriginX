@@ -1,0 +1,12 @@
+{
+  "schema": "id60-masks-pilot-g10-signoff-v1",
+  "recorded_utc": "2026-10-27T15:45:57.517315+00:00",
+  "gate": "G10 (harness-map section 10.4): user sign-off on contact sheets",
+  "sheets_shown": [
+    "autodl-t3/t3/contact/seed-20261026-grasp-initial.png",
+    "autodl-t3/t3/contact/seed-20261026-place-at_site.png"
+  ],
+  "sheet_source": "T3 on the AutoDL H800 (autodl_h800_egl_rgb0 cohort), 3 cameras x {grasp-initial, place-at_site} raw and through the XR1 crop/resize",
+  "user_reply_verbatim": "认可,尽你所能赶紧做好我今天就要提交文章",
+  "note": "The user viewed two of the twelve H800 contact sheets; the remaining ten were inspected by the operating agent only. Sign-off precedes the pilot re-run because the instance was shut down during the first pilot attempt."
+}

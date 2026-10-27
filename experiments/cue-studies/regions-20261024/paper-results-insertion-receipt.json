@@ -1,0 +1,13 @@
+{
+  "status": "ACTUAL_VALIDATION_RESULTS_INSERTED",
+  "analysis_sha256": "fa85d64d082508fcc1b3c091d93653dd2dbd45b114ecac008b3b1ada04381325",
+  "manifest_sha256": "9414bd6546022392a2c813f1b8999a050a2c5230592f6f67fcc61971964eb9e4",
+  "primary_analysis": "registered_rule",
+  "known_outcomes": 22,
+  "unknown": 2,
+  "eligible_pairs": 10,
+  "conclusion": "Under the registered rule, the observed paired success difference is zero; the validation does not establish a region advantage or prove equivalence. Neither analysis supports a success benefit from the region presentation.",
+  "deviation_inclusive_eligible_pairs": 11,
+  "human_review_required": true,
+  "semantic_claims_not_automatically_accepted": true
+}

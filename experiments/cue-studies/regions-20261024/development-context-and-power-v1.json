@@ -1,0 +1,176 @@
+{
+  "status": "HISTORICAL_DEVELOPMENT_CONTEXT_ONLY",
+  "source": "work\\id60-hierarchical-revision\\final-analysis-v1.json",
+  "source_sha256": "dd15b16494cfa55d8ab7f4f7a25a3f2099a4df2afd2b73e35d0cf90df8ca6a04",
+  "historical_seeds": [
+    20261025,
+    20261026,
+    20261027
+  ],
+  "historical_sample_role": "All are development samples reused for diagnosis, visual frame selection and verifier-prompt development.",
+  "historical_arms": {
+    "point": {
+      "successes": 1,
+      "n": 3,
+      "success_rate": 0.3333333333333333,
+      "wilson95": [
+        0.06149194472039621,
+        0.7923403991979522
+      ],
+      "final_xy": {
+        "n": 3,
+        "median_cm": 5.286391196940121,
+        "mean_cm": 4.574934884116627,
+        "minimum_cm": 2.1720402067506623,
+        "maximum_cm": 6.2663732486590975
+      },
+      "per_seed": [
+        {
+          "seed": 20261025,
+          "outcome": "failure",
+          "terminal_xy_cm": 6.2663732486590975
+        },
+        {
+          "seed": 20261026,
+          "outcome": "failure",
+          "terminal_xy_cm": 5.286391196940121
+        },
+        {
+          "seed": 20261027,
+          "outcome": "success",
+          "terminal_xy_cm": 2.1720402067506623
+        }
+      ]
+    },
+    "regions": {
+      "successes": 2,
+      "n": 3,
+      "success_rate": 0.6666666666666666,
+      "wilson95": [
+        0.2076596008020477,
+        0.9385080552796037
+      ],
+      "final_xy": {
+        "n": 3,
+        "median_cm": 3.6382468779741854,
+        "mean_cm": 4.078827139004659,
+        "minimum_cm": 1.2657587812001547,
+        "maximum_cm": 7.332475757839638
+      },
+      "per_seed": [
+        {
+          "seed": 20261025,
+          "outcome": "failure",
+          "terminal_xy_cm": 7.332475757839638
+        },
+        {
+          "seed": 20261026,
+          "outcome": "success",
+          "terminal_xy_cm": 3.6382468779741854
+        },
+        {
+          "seed": 20261027,
+          "outcome": "success",
+          "terminal_xy_cm": 1.2657587812001547
+        }
+      ]
+    },
+    "feedback": {
+      "successes": 1,
+      "n": 3,
+      "success_rate": 0.3333333333333333,
+      "wilson95": [
+        0.06149194472039621,
+        0.7923403991979522
+      ],
+      "final_xy": {
+        "n": 3,
+        "median_cm": 6.985105046730705,
+        "mean_cm": 13.105679936054148,
+        "minimum_cm": 2.397413493852189,
+        "maximum_cm": 29.93452126757955
+      },
+      "per_seed": [
+        {
+          "seed": 20261025,
+          "outcome": "failure",
+          "terminal_xy_cm": 29.93452126757955
+        },
+        {
+          "seed": 20261026,
+          "outcome": "success",
+          "terminal_xy_cm": 2.397413493852189
+        },
+        {
+          "seed": 20261027,
+          "outcome": "failure",
+          "terminal_xy_cm": 6.985105046730705
+        }
+      ]
+    }
+  },
+  "regions_vs_point": {
+    "regions_only_success": 1,
+    "point_only_success": 0,
+    "both_success": 1,
+    "both_failure": 1,
+    "risk_difference": 0.3333333333333333,
+    "mcnemar_exact_two_sided_p": 1.0,
+    "not_established": "General efficacy or statistical significance"
+  },
+  "meaning_of_3_64_cm": "Median terminal XY error over all3 regions episodes, including failedseed25=7.33248cm; not the mean, not success-only, not prerelease error.",
+  "new_design": {
+    "fixed_pairs": 12,
+    "fixed_episodes": 24,
+    "primary": "Official benchmark success within600steps, pairedregions-minus-point.",
+    "analysis_methods": [
+      "Exact two-sided McNemar",
+      "Per-arm Wilson95 on same complete eligiblepairs",
+      "Paired riskdifference with conservative simultaneous Clopper-Pearson95 interval"
+    ],
+    "minimum_one_sided_discordant_count_for_two_sided_p_below_05": {
+      "six_wins_zero_losses_p": 0.03125,
+      "five_wins_zero_losses_p": 0.0625
+    },
+    "illustrative_power_assumptions": [
+      {
+        "p_regions_only_success": 0.3333333333333333,
+        "p_point_only_success": 0,
+        "true_risk_difference": 0.3333333333333333,
+        "exact_mcnemar_two_sided_power_at_12_pairs": 0.17772245649093696
+      },
+      {
+        "p_regions_only_success": 0.4,
+        "p_point_only_success": 0,
+        "true_risk_difference": 0.4,
+        "exact_mcnemar_two_sided_power_at_12_pairs": 0.3347914424320001
+      },
+      {
+        "p_regions_only_success": 0.5,
+        "p_point_only_success": 0,
+        "true_risk_difference": 0.5,
+        "exact_mcnemar_two_sided_power_at_12_pairs": 0.61279296875
+      },
+      {
+        "p_regions_only_success": 0.4,
+        "p_point_only_success": 0.1,
+        "true_risk_difference": 0.30000000000000004,
+        "exact_mcnemar_two_sided_power_at_12_pairs": 0.15054459051000005
+      },
+      {
+        "p_regions_only_success": 0.5,
+        "p_point_only_success": 0.1,
+        "true_risk_difference": 0.4,
+        "exact_mcnemar_two_sided_power_at_12_pairs": 0.28891353774200007
+      }
+    ],
+    "power_caveat": "Multinomial iid seed-pair model with stated probabilities, not estimated prospective effect; 12pairs have low power for modest gains.",
+    "failure_distance_rule": "All valid terminal outcomes including failures enter finalXY. Infraunknown excluded with missingcount; never retain successes only.",
+    "missing_case_rule": "Horizon600 failure differs from infra timeout; unknown is not failure and remains visible. No seed substitution or outcome-dependent optional stopping.",
+    "old_cases_in_new_denominator": false,
+    "secondary": "Paired finalXY descriptives including failures, with unequal termination times disclosed."
+  },
+  "new_model_generations": 0,
+  "new_env_resets": 0,
+  "new_env_steps": 0
+}

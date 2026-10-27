@@ -1,0 +1,30 @@
+{
+  "decision": "NO_BLOCKER_FOR_REGISTERED_LOCAL_24_EPISODE_RUN",
+  "manifest_sha256": "9414bd6546022392a2c813f1b8999a050a2c5230592f6f67fcc61971964eb9e4",
+  "manifest_file_sha256": "ec686401d0300bbb0740d009a7bf9b5570ab3e60f709835fdb00cb991d638bbe",
+  "all_registered_sources_matched": true,
+  "source_count": 138,
+  "owner_checks_sha256": "05473a36737bbe9f5862a1edfb20901f1683660fe7871d8f1606d6a4c10aba5f",
+  "owner_cpu_test_report": {
+    "windows": {
+      "passed": 35,
+      "seconds": 13.01
+    },
+    "wsl": {
+      "passed": 35,
+      "seconds": 15.04
+    }
+  },
+  "new_sources": {
+    "originx_harness/id60_regions_validation/__init__.py": "a4704e63b1d1e3ee8a2e34e7b6c009b32ec1e116cdb29390ae357d243f618857",
+    "originx_harness/id60_regions_validation/runtime.py": "1b71a0e5dd9653c24a2d2981298436e47f78450831e56227ceef764df40b5c93",
+    "originx_harness/id60_regions_validation/registration.py": "19a06096fd04de409de7335c80489d45ebffad56490711b31b2fee25cc51bc6f",
+    "scripts/run_id60_regions_validation_local.py": "8afe5dbbe7a640b713c97ce78ee658d638e0e6b941a706d94a87f287609d6b35",
+    "tests/test_id60_regions_validation.py": "7892a66c66d818379502b70b8ca0d5565084e54574eb627cca99b0b0cd5d7c4d"
+  },
+  "review_sha256": "4382f021246ca0dc8372d4efc7d519c4471dc366afed668555985d833c8bec73",
+  "reviewer_model_generations": 0,
+  "reviewer_env_steps": 0,
+  "reviewer_env_resets": 0,
+  "reviewer_production_edits": 0
+}

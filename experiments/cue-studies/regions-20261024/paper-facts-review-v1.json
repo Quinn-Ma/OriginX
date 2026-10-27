@@ -1,0 +1,86 @@
+{
+  "decision": "FACTUAL_SCAFFOLD_ACCEPTABLE_WITH_SMALL_TEXT_AND_UPDATER_FIXES",
+  "findings": [
+    {
+      "id": "F1",
+      "priority": "revise_wording",
+      "locations": [
+        "paper/abstract.tex:2",
+        "update_paper_results.py:generated abstract"
+      ],
+      "observed": "without changing its actions or weights",
+      "reason": "Policy actions can change when inputs change; the invariant is no direct wrapper override and no parameter update.",
+      "replacement": "without updating its weights or overriding its native action outputs"
+    },
+    {
+      "id": "F2",
+      "priority": "reporting_consistency",
+      "locations": [
+        "paper/protocol.tex:21",
+        "update_paper_results.py:prospective result text/table"
+      ],
+      "observed": "All unknown denominators and bounds for unobserved paired outcomes are kept visible.",
+      "reason": "The updater reports S/F/U and paired intervals but does not print missing-outcome bounds. The analyzer has arm-specific identification bounds, which are not automatically paired-effect bounds.",
+      "replacement": "All unknown counts and excluded-pair denominators are kept visible; paired inference is conditional on admitted complete pairs. Alternatively add and label the actual available bounds."
+    },
+    {
+      "id": "F3",
+      "priority": "fix_before_automatic_update",
+      "locations": [
+        "update_paper_results.py:tex"
+      ],
+      "reason": "Escaping only underscore, percent and ampersand is incomplete for literal exception text. Backslashes, braces, #, $, ^ and ~ can alter or break TeX.",
+      "replacement": "Use a per-character text-mode TeX escaping map for all special characters; test a Windows-style path and a reason containing braces, $, #, ^, ~."
+    },
+    {
+      "id": "F4",
+      "priority": "fix_before_automatic_update",
+      "locations": [
+        "update_paper_results.py:report admission and frozen identities paragraph"
+      ],
+      "reason": "The updater asserts 24 cases/source match/analyzer SHA, but does not match report manifest identity to this validation manifest while hardcoding its digest in the appendix.",
+      "replacement": "Assert report manifest_sha256 equals the frozen manifest loaded from this work directory; verify the manifest file SHA against analysis-plan-v1.json and check its seed/case matrix matches the report before writes."
+    },
+    {
+      "id": "F5",
+      "priority": "caption_precision",
+      "locations": [
+        "update_paper_results.py:validation figure caption"
+      ],
+      "observed": "All available pairs are shown",
+      "reason": "The plot loop requires pair.eligible as well as both distances. A complete but inadmissible pair could have available distances and still be excluded.",
+      "replacement": "All admitted pairs with both recorded terminal distances are shown; excluded or missing-distance pairs remain in the ledger."
+    }
+  ],
+  "source_sha256": {
+    "outputs/id60-regions-validation/paper/abstract.tex": "6a8f3a30a60deaba41f5cdfc1d2b1ea35a2d6e92c891b0139a194bec678b346c",
+    "outputs/id60-regions-validation/paper/appendix.tex": "735860c00866f9fb536306bbcc593910179f4d7aebb0c75ab347b7b62114f291",
+    "outputs/id60-regions-validation/paper/conclusion.tex": "f6ab5c8b81d920cdab01b6578f35d32938ae5d82926ac1b0ec0378c62ceba1f4",
+    "outputs/id60-regions-validation/paper/diagnostics.tex": "60909ebcc90b0fa4656fc408236195d6b2c4fea7c5b0f3a46fc75c162c0959de",
+    "outputs/id60-regions-validation/paper/introduction.tex": "5badd0c051b62af02f27c0f845875fbd8b939fbf3ad07a59c167812a4fa0dde4",
+    "outputs/id60-regions-validation/paper/limitations.tex": "019e9824f3489c621a22b8430e88f20eb3265766e8769c494fe096e4cd7c0eda",
+    "outputs/id60-regions-validation/paper/main.tex": "db12fbda72305225326aed0cecbb485b57a40daabf5b0a1daa813b298ffbc895",
+    "outputs/id60-regions-validation/paper/method.tex": "697b9d03b3bab07ba6bfac45ef0009f296028a17698a9e5dcec46087caf18b4b",
+    "outputs/id60-regions-validation/paper/protocol.tex": "695082e58c7ce2459e240f4edb74636a0245dc8451833409d78c5d3923091e85",
+    "outputs/id60-regions-validation/paper/related.tex": "369de2a1d237208f0997d6a505761a58961661e30710068579364cc997b46523",
+    "outputs/id60-regions-validation/paper/results.tex": "e7dbd838161077e05d960b4b5b25870b8cf1d1e4ad3e26f410ed2986fa68a512",
+    "outputs/id60-regions-validation/paper/validation-details.tex": "ef3dbfffb8fcd33f1e5df8ed2ead6c013608a13daca8775c04f5724f120cf68c",
+    "work/id60-regions-validation/update_paper_results.py": "6de34f77116634f3c8b9c484b76d1d0ccc4836d053a648cff315d7e1be06bba3",
+    "work/id60-regions-validation/analysis-plan-v1.json": "42e2421c8fbd6164de6ed63bf2e7fe5d3488d763658601e8c430c30073161c86",
+    "work/id60-regions-validation/analyze_regions_validation.py": "d9cb8f468b9c493432c5a291b96355f0f693da001296a562b810de2ee57b4aff",
+    "work/id60-hierarchical-revision/final-analysis-v1.json": "dd15b16494cfa55d8ab7f4f7a25a3f2099a4df2afd2b73e35d0cf90df8ca6a04",
+    "work/id60-feedback-repair-v2/null-audit.json": "412e7750a9e60bdb684ffa69281aa7662636262e97e3a03ca4adf292195e7991",
+    "work/id60-feedback-repair-v2/replay-v1-abort-audit.json": "77252dae260ccb9ce06a71b2d3b597f6c668bd5c0e1ed95e1ab51ebd0874b801",
+    "work/id60-feedback-repair-v2/replay-comparison-v2.json": "37014b7bba089eb522f743d2d20f220bdec0a152d12c362c92acbf3ed5fb9fc6",
+    "work/id60-feedback-repair-v2/comparison-v3.json": "3d78d678f0fd83ed09f5a22cc96e826cb60b32ec03ac313ebf41b5ee8076ff60",
+    "work/id60-feedback-repair-v2/atomic-grip-analysis-v1.json": "2c0ca8cd9552e706d40a89efb8d3658ffc3dd17909bc0719ec256467c68ae13e",
+    "work/id60-feedback-repair-v2/replay-semantic-review-v2.txt": "9bebd9bdc56dc46dfc3059421cf53c79185fd1381caecc9f52f46f108f6ed76c",
+    "work/id60-feedback-repair-v2/replay-semantic-review-v3.txt": "4b3893c6c0e3d6b03252fe3b3a853d81d955e112c0c127f65a91dffb93b38ea7"
+  },
+  "review_sha256": "c91fe2c444d8abcdddf5a0bf5bfd372290bcda7d8849bc0f77224f2908d45ce0",
+  "new_model_generations": 0,
+  "new_env_steps": 0,
+  "paper_modified": false,
+  "production_or_analyzer_modified": false,
+  "pdf_visual_review_performed": false
+}

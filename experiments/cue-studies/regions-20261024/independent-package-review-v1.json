@@ -1,0 +1,15 @@
+{
+  "review": "read-only independent archive source audit",
+  "files_sha256": {
+    "independent-package-review-v1.txt": "b2319afa90b1852a1a4ad2455ebc029b353056eabbe560bbbcc137f02386c8b8",
+    "package_regions_validation.py": "872e9400a6e3b86451c5c0badb72183a7745b2dff6619e04347824290d4774a5",
+    "test_package_regions_validation.py": "4d2c856c4f9db5236d8e0e401c77434b213489bb37dcc5c37f0f0aa860f04cd8"
+  },
+  "formal_archive_run": false,
+  "live_trace_scan": false,
+  "new_model_generations": 0,
+  "new_env_resets": 0,
+  "new_env_steps": 0,
+  "blocking_findings": 0,
+  "defensive_suggestions": 2
+}

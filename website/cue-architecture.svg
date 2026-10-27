@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1380" height="700" viewBox="0 0 1380 700" role="img" aria-labelledby="title desc">
+<title id="title">Cue-precision studies: only the stage cue painted on the policy images changes</title>
+<desc id="desc">Three 256 by 256 camera images and the robot state feed a frozen XR1 policy. A stage planner and verifier (Qwen3-VL-4B, frozen) supply the current stage. The only varied component is the cue controller that paints the stage cue on the policy images: a point cue (frozen baseline), a fine-region cue (12 preregistered pairs, 6 of 10 versus 6 of 10, no benefit) or a pixel-exact mask cue (exterior contour rings from single-sample segmentation and a depth-occluded destination ghost box; fidelity verified on an H800, task outcomes not measured). All arms share the preregistered paired protocol with exact McNemar tests.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070c20"/><stop offset="1" stop-color="#121836"/></linearGradient>
+<linearGradient id="vary" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3359ea"/><stop offset="1" stop-color="#6856d9"/></linearGradient>
+<filter id="shadow" x="-15%" y="-25%" width="130%" height="160%"><feDropShadow dx="0" dy="11" stdDeviation="13" flood-color="#000313" flood-opacity=".11"/></filter>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 1 1 L 8 5 L 1 9" fill="none" stroke="#8f9dc9" stroke-width="1.4"/></marker>
+<pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#435689" opacity=".37"/></pattern>
+</defs>
+<rect width="1380" height="700" fill="url(#bg)"/><rect width="1380" height="700" fill="url(#dots)"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="690" y="60" text-anchor="middle" font-size="30" fill="#f1f4ff" letter-spacing="-1">Cue-precision studies: <tspan fill="#8199ff">one component varies</tspan>, everything else stays frozen</text>
+<text x="690" y="90" text-anchor="middle" font-size="15" fill="#91a3d5" letter-spacing=".3">Point cue → fine-region cue → pixel-exact mask cue, painted on the policy's own images at each task stage</text>
+
+<!-- connectors -->
+<path d="M360 262H400" fill="none" stroke="#6383ff" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M980 262H1020" fill="none" stroke="#6383ff" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M1170 344V380" fill="none" stroke="#6383ff" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M1020 448H1000V320" fill="none" stroke="#6383ff" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+<path d="M210 344V380" fill="none" stroke="#6383ff" stroke-width="2" marker-end="url(#arrow)"/>
+<circle cx="1000" cy="320" r="4" fill="#6885ee"/>
+
+<g filter="url(#shadow)">
+<rect x="60" y="180" width="300" height="164" rx="20" fill="#151f41" stroke="#3a507f" fill-opacity=".96"/>
+<rect x="60" y="380" width="300" height="140" rx="20" fill="#151f41" stroke="#3a507f" fill-opacity=".96"/>
+<rect x="400" y="130" width="580" height="420" rx="22" fill="url(#vary)"/>
+<rect x="1020" y="180" width="300" height="164" rx="20" fill="#151f41" stroke="#3a507f" fill-opacity=".96"/>
+<rect x="1020" y="380" width="300" height="140" rx="20" fill="#151f41" stroke="#3a507f" fill-opacity=".96"/>
+</g>
+
+<!-- observe -->
+<text x="84" y="212" fill="#8da1d7" font-size="12" letter-spacing="1.7">OBSERVE · FROZEN</text>
+<text x="84" y="250" fill="#e1e8ff" font-size="21" letter-spacing="-.5">Three 256×256 cameras</text>
+<text x="84" y="278" fill="#e1e8ff" font-size="21" letter-spacing="-.5">+ robot state</text>
+<text x="84" y="306" fill="#8ea4db" font-size="12.5">agentview left and right,</text>
+<text x="84" y="326" fill="#8ea4db" font-size="12.5">eye-in-hand</text>
+
+<!-- environment -->
+<text x="84" y="412" fill="#8da1d7" font-size="12" letter-spacing="1.7">ENVIRONMENT · FROZEN</text>
+<text x="84" y="446" fill="#e1e8ff" font-size="18" letter-spacing="-.4">RoboCasa CoffeeSetupMug</text>
+<text x="84" y="474" fill="#8ea4db" font-size="12.5">600-step horizon; success is read</text>
+<text x="84" y="494" fill="#8ea4db" font-size="12.5">from the simulator, never inferred</text>
+
+<!-- cue controller -->
+<text x="424" y="162" fill="#dfe6ff" font-size="12" letter-spacing="1.7">CUE CONTROLLER · THE ONLY VARIED COMPONENT</text>
+<text x="424" y="194" fill="#ffffff" font-size="21" letter-spacing="-.5">Paints the current stage's cue onto the policy images</text>
+
+<g font-size="12.5">
+<rect x="424" y="214" width="532" height="64" rx="12" fill="#0f1738" fill-opacity=".55" stroke="#9fb0ff" stroke-opacity=".35"/>
+<text x="440" y="238" fill="#ffffff" font-size="15">Point cue · frozen baseline</text>
+<text x="440" y="262" fill="#c9d3ff">Box + crosshair from the frozen controller; byte-identical in every study</text>
+
+<rect x="424" y="288" width="532" height="84" rx="12" fill="#0f1738" fill-opacity=".55" stroke="#9fb0ff" stroke-opacity=".35"/>
+<text x="440" y="312" fill="#ffffff" font-size="15">Fine-region cue · completed study</text>
+<text x="440" y="336" fill="#c9d3ff">Neighborhood + proxy + legend around the target and the destination</text>
+<text x="440" y="356" fill="#c9d3ff">12 preregistered pairs: 6/10 vs 6/10, exact paired p = 1 · no benefit established</text>
+
+<rect x="424" y="382" width="532" height="150" rx="12" fill="#0f1738" fill-opacity=".55" stroke="#ffd27a" stroke-opacity=".55"/>
+<text x="440" y="406" fill="#ffffff" font-size="15">Mask cue · fidelity verified, task outcomes not measured</text>
+<text x="440" y="430" fill="#c9d3ff">Single-sample segmentation with gripper sites hidden → exact object mask</text>
+<text x="440" y="450" fill="#c9d3ff">Depth-occluded, subject-sized ghost box at the destination (ray–box, 3 mm)</text>
+<text x="440" y="470" fill="#c9d3ff">2-px exterior rings: <tspan fill="#ffb000">orange</tspan> target and destination, <tspan fill="#00dcff">cyan</tspan> held object</text>
+<text x="440" y="490" fill="#c9d3ff">Mask interiors never change · supervision 0.27.0 painter ≡ numpy reference</text>
+<text x="440" y="510" fill="#c9d3ff">XR1 crop/resize audited · 70–75 ms per step on an H800 (budget 100 ms)</text>
+</g>
+
+<!-- policy -->
+<text x="1044" y="212" fill="#8da1d7" font-size="12" letter-spacing="1.7">ACT · FROZEN</text>
+<text x="1044" y="250" fill="#e1e8ff" font-size="21" letter-spacing="-.5">XR1 policy</text>
+<text x="1044" y="278" fill="#e1e8ff" font-size="14" letter-spacing="-.2">Xiaomi-Robotics-1-RoboCasa365</text>
+<text x="1044" y="306" fill="#8ea4db" font-size="12.5">16-step action chunks;</text>
+<text x="1044" y="326" fill="#8ea4db" font-size="12.5">no weight updates</text>
+
+<!-- planner -->
+<text x="1044" y="412" fill="#8da1d7" font-size="12" letter-spacing="1.7">PLAN · VERIFY · FROZEN</text>
+<text x="1044" y="446" fill="#e1e8ff" font-size="18" letter-spacing="-.4">Qwen3-VL-4B planner</text>
+<text x="1044" y="474" fill="#8ea4db" font-size="12.5">grasp the mug, then place it</text>
+<text x="1044" y="494" fill="#8ea4db" font-size="12.5">on the coffee machine</text>
+<text x="992" y="344" fill="#8ea4db" font-size="11" text-anchor="end">stage</text>
+
+<!-- protocol band -->
+<rect x="60" y="574" width="1260" height="86" rx="16" fill="#101a3c" stroke="#3a507f"/>
+<text x="84" y="602" fill="#8da1d7" font-size="12" letter-spacing="1.7">PREREGISTERED PAIRED PROTOCOL · SHARED BY EVERY ARM</text>
+<text x="84" y="626" fill="#dbe3ff" font-size="14">12 unused seed pairs · counterbalanced order · a pair is admitted only with an identical initial state and natural plan</text>
+<text x="84" y="648" fill="#dbe3ff" font-size="14">unknowns stay unknown · exact McNemar test on discordant pairs · conservative paired 95% interval</text>
+</g>
+</svg>

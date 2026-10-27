@@ -22,6 +22,7 @@ Xiaomi: published leaderboard result. OriginX: separate author-run evaluation wi
 - **Astra-assisted recovery:** 56 confirmed rescues among 1,004 historical failures, reported separately from the benchmark. [Study](ASTRA_RESCUE_REPORT.md).
 - **50-case follow-up:** control and visual assistance both scored 29/50; no overall benefit established. [Results](evidence/confirmatory-50/).
 - **Fresh-seed policy study:** X/A/B/BV scored 30/32/33/32 out of 50; matched assistance had one rescue and one regression. The partial GR00T extension retains 19 unknown cases per arm. [Study](FRESH_SEED_STUDY.md).
+- **Cue-precision studies:** fine-region cues vs point cues scored 6/10 vs 6/10 under the registered rule (point 7/11 vs fine-region 6/11 with a disclosed rerun); no benefit established. Mask cues: pixel fidelity verified on an H800, task outcomes not measured (compute exhausted). [Studies](experiments/cue-studies/) · [CVPR 2027 submission (anonymous PDF)](paper/OriginX_Masks_CVPR2027_submission_v1.pdf)
 
 ```bash
 pip install huggingface_hub

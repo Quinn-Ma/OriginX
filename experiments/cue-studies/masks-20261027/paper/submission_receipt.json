@@ -1,0 +1,594 @@
+{
+  "schema": "originx-masks-cvpr2027-submission-receipt-v1",
+  "recorded_utc": "2026-10-27T16:50:38.331440+00:00",
+  "output_dir": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_Submission_v1",
+  "title": "Object-Centric Mask Prompts for a Frozen Robot Policy: Pixel-Fidelity Verification and a Preregistered Null Result for Fine-Region Cues",
+  "method_macro": "MaskCue (neutral name; the draft's OriginX-Masks macro was renamed for anonymity)",
+  "cvpr_style": {
+    "option": "review",
+    "paper_id_macro": "none: the supplied CVPR 2027 cvpr.sty defines and prints no paper-ID macro, so the inert \\def\\cvprPaperID{*****} line was removed in the review-fix pass",
+    "hyperref": "pagebackref,breaklinks,colorlinks,allcolors=cvprblue (cvprblue defined as rgb 0.21,0.49,0.74 in main.tex, matching the CVPR kit template)",
+    "anonymous": true
+  },
+  "compile": {
+    "chain": "WSL Ubuntu-22.04 TinyTeX (pdfTeX 3.141592653-2.6-1.40.29, TeX Live 2026), clean directory: pdflatex -interaction=nonstopmode -halt-on-error main.tex && bibtex main && pdflatex ... && pdflatex ... (the exact recorded chain, exit 0), followed by pdflatex passes repeated until the log carried no rerun request: two more passes were needed (five pdflatex passes in total). The shipped main.pdf is the fifth-pass build.",
+    "exit_ok": true,
+    "errors": [],
+    "pdf_pages": 9,
+    "main_text_pages": 8,
+    "main_text_pages_note": "Sec. 7 (Conclusion) ends on page 8 (last numbered line 662, verified from the rendered PDF text via pypdfium2); the LLM Usage Statement and References follow on page 9",
+    "llm_statement_page": 9,
+    "references_start_page": 9,
+    "page_source": "rendered PDF text per page via pypdfium2 in WSL; the regex page counter on the PDF bytes returns 0 because pdfTeX writes compressed object streams, so the pdflatex log line 'Output written on main.pdf (N pages' is the page count",
+    "overfull_hbox_pt": [],
+    "overfull_vbox_pt": [],
+    "overfull_over_10pt": [],
+    "underfull_count": 0,
+    "undefined_reference_or_citation_lines": 0,
+    "warnings_non_silence": [],
+    "pending_macro_uses": 0,
+    "forbidden_identifying_strings_found": [],
+    "bibtex_entries_used": 11,
+    "convergence_record": {
+      "after_pass_3_end_of_exact_chain": "rerunfilecheck: main.brf has changed (pagebackref page lists incomplete); 1 rerun request in the log",
+      "after_pass_4": "main.brf unchanged; lineno 'Line number reference failed, re-run' warning present",
+      "after_pass_5": "no rerun request, no lineno warning; converged",
+      "rule_for_rebuilders": "run pdflatex, bibtex, pdflatex, pdflatex, then repeat pdflatex until main.log contains neither 'Rerun to get' nor 're-run to get' (five pdflatex passes from a clean directory)"
+    },
+    "forbidden_identifying_strings_checked": [
+      "OriginX",
+      "Quinn",
+      "github",
+      "huggingface",
+      "http"
+    ],
+    "aux_files_shipped": "main.bbl only (main.aux/.blg/.brf/.out/.log removed after the build)"
+  },
+  "inputs_sha256": {
+    "draft/main.tex": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/main.tex",
+      "sha256": "3972286695b56a911ab49fd3100f214f768f2db07944c11d67b641a010f1ea24"
+    },
+    "draft/cvpr.sty": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/cvpr.sty",
+      "sha256": "1cd7f434b13d41c475df4a1901a5d82d9ca8b80b8cf6205dc4602a5c164286b4"
+    },
+    "draft/ieeenat_fullname.bst": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/ieeenat_fullname.bst",
+      "sha256": "e38e6166bd7b1e6d23a1b79dcdb55c656e4fcdbe91bdf6b50d827e6b5d1aacfc"
+    },
+    "draft/references.bib": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/references.bib",
+      "sha256": "7e30e263fcc217e8510151e8c43a40d0c0573daf9b773fc95315d7431521488b"
+    },
+    "draft/evidence_snapshot.json": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/evidence_snapshot.json",
+      "sha256": "ac472a99e829eede95372c8d271ac87887f5048071d6176aeeb0bbe9ec2bfe84"
+    },
+    "draft/rendering_cohort_evidence.json": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/rendering_cohort_evidence.json",
+      "sha256": "aaca07af329c3131217ed9c28d7f089d08ee95992336f9cb33d4d550bc96c152"
+    },
+    "draft/compilation_receipt.json": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/compilation_receipt.json",
+      "sha256": "160cd44a62c72015b94b66129fc555575e87e224c433527ee0dde6c44f11ca3a"
+    },
+    "t3_h800_json": {
+      "path": "D:/codex/originx-harness-v2/work/id60-masks-validation/autodl-t3/t3/exactness-checks-autodl-h800-v1.json",
+      "sha256": "98edabfcb3bb8cd75fb3c480436a7167e63b984e58c3fac686ec0c1aa3959e04"
+    },
+    "t3_h800_note": {
+      "path": "D:/codex/originx-harness-v2/work/id60-masks-validation/t3-autodl-h800-note-v1.md",
+      "sha256": "098a3b4616fb53adf63efafc60f4cfa3d366a8e70621072f4e7fb943b8cd5f6b"
+    },
+    "t3_local_wsl_prefix_json": {
+      "path": "D:/codex/originx-harness-v2/work/id60-masks-validation/exactness-checks-local-wsl-v1.json",
+      "sha256": "91f7fd8c2e94dce346da07dee87686aa3d1145750acf8047f7e219307722bae0"
+    },
+    "g10_signoff": {
+      "path": "D:/codex/originx-harness-v2/work/id60-masks-validation/pilot-g10-signoff-v1.json",
+      "sha256": "a133f90280a8b2648119a7ad0f3bae8c0c31f07c6ba4a53cff2319cf422b5f65"
+    },
+    "unused_seeds_audit": {
+      "path": "D:/codex/originx-harness-v2/work/id60-masks-validation/unused-seeds-v1.json",
+      "sha256": "7e27038ec6903ed9159fb0b58391e445ac9d6c73739b34334309d4886120af07"
+    },
+    "rendering_amendment": {
+      "path": "D:/codex/originx-harness-v2/work/id60-masks-validation/rendering-amendment-h800-rgb0-v1.json",
+      "sha256": "ec09794ae328caa2ce71e9e4a78d84e46ccf0ae0f504274637bc39313f63d5f9"
+    },
+    "formal_manifest_local_refreeze": {
+      "path": "D:/codex/originx-harness-v2/work/id60-masks-validation/manifest.json",
+      "sha256": "74895559be91168a3a5e39d58a3cc69553170adea27e20bac38aaf512c184a9f"
+    },
+    "manifest_refreeze_receipt": {
+      "path": "D:/codex/originx-harness-v2/work/id60-masks-validation/manifest-refreeze-receipt-v1.json",
+      "sha256": "408cede081ca8e3a7d0dce584d82935838ac593789a20786aababd9116367870"
+    },
+    "contact_sheet_place_at_site": {
+      "path": "D:/codex/originx-harness-v2/work/id60-masks-validation/autodl-t3/t3/contact/seed-20261026-place-at_site.png",
+      "sha256": "b0c5153b482efcc6bec514ae722f62af84c01b2cfa666510f83f4a58c294bd88"
+    },
+    "contact_sheet_grasp_initial": {
+      "path": "D:/codex/originx-harness-v2/work/id60-masks-validation/autodl-t3/t3/contact/seed-20261026-grasp-initial.png",
+      "sha256": "09c7426a9668bfc044909ee33adb3df6da6c379cc160533376913741d28dbed4"
+    },
+    "regions_conclusions_txt": {
+      "path": "D:/codex/originx-harness-v2/outputs/id60-regions-validation/实验结论.txt",
+      "sha256": "eb33418d4a72303272cbfab2860c6218c7caa4483aa2bad0b8600542071c864f"
+    },
+    "regions_validation_results_json": {
+      "path": "D:/codex/originx-harness-v2/outputs/id60-regions-validation/validation-results.json",
+      "sha256": "fa85d64d082508fcc1b3c091d93653dd2dbd45b114ecac008b3b1ada04381325"
+    },
+    "regions_paper_results_tex": {
+      "path": "D:/codex/originx-harness-v2/outputs/id60-regions-validation/paper/results.tex",
+      "sha256": "ba08f91d1231d0a9fc118098c87b0b616bfeba7ad86446731a1a55a609cc64f5"
+    },
+    "regions_paper_protocol_tex": {
+      "path": "D:/codex/originx-harness-v2/outputs/id60-regions-validation/paper/protocol.tex",
+      "sha256": "eef55321c9bdb15e17e28b654ae42f39534f96b419066ecd24e08cb96a4a7aef"
+    },
+    "implementation_report": {
+      "path": "D:/codex/originx-harness-v2/work/id60-masks-design/implementation-report-v1.json",
+      "sha256": "0a82c00080b867120a15a810a09283888d2c3fcddc46a24481d3eec114188016"
+    },
+    "harness_map_design_doc": {
+      "path": "D:/codex/originx-harness-v2/work/id60-masks-design/harness-map-v1.md",
+      "sha256": "5aae962bdee4222cb7f070c307424420a39ef8d35e36b6168157f96e2cb6abd5"
+    },
+    "draft/sections/abstract.tex": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/sections/abstract.tex",
+      "sha256": "ed72b2fcd99c585bd44b6fbf55849d685ed575a99aabee13de9c3ea2fb279122"
+    },
+    "draft/sections/introduction.tex": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/sections/introduction.tex",
+      "sha256": "7e838f92753901fc1655eb15fb7c180a0dd2102424aff5919999d60be0358f65"
+    },
+    "draft/sections/related.tex": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/sections/related.tex",
+      "sha256": "7abf15c1ff8aea6bf21aeb70538a647a7b9c1a8f0904b098cdcf261200d72392"
+    },
+    "draft/sections/method.tex": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/sections/method.tex",
+      "sha256": "7c4176c72f251e097fb3872e8e354def11239fbda9b78994de007bf8564d093a"
+    },
+    "draft/sections/protocol.tex": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/sections/protocol.tex",
+      "sha256": "ec44927e7b84e554f6fd91cb7bbfabd4c5a503b32eb812e0522a29bd12498b9c"
+    },
+    "draft/sections/results.tex": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/sections/results.tex",
+      "sha256": "fb905bca1c8509bbe9dba83bdb38b58d3cb60ae9f37fb3de15f40d3a9b67e91c"
+    },
+    "draft/sections/limitations.tex": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/sections/limitations.tex",
+      "sha256": "2eb766173364c4f333b08e13da274080f7a681b15d65326b62e96733cb4c84ef"
+    },
+    "draft/sections/conclusion.tex": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/sections/conclusion.tex",
+      "sha256": "d763b77b6f83a2a01636bee35f0d2b6779410fcb2f930b0fe85fdf4aeacee5ed"
+    },
+    "draft/sections/llm_usage.tex": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/sections/llm_usage.tex",
+      "sha256": "b2bf45720d6e1e439a81adbc0e53508c16818aebd0a6e3a4cc4686f7ec7b1a47"
+    }
+  },
+  "outputs_sha256": {
+    "cvpr.sty": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_Submission_v1/cvpr.sty",
+      "sha256": "1cd7f434b13d41c475df4a1901a5d82d9ca8b80b8cf6205dc4602a5c164286b4"
+    },
+    "figures/seed-20261026-grasp-initial.png": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_Submission_v1/figures/seed-20261026-grasp-initial.png",
+      "sha256": "09c7426a9668bfc044909ee33adb3df6da6c379cc160533376913741d28dbed4"
+    },
+    "figures/seed-20261026-place-at_site.png": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_Submission_v1/figures/seed-20261026-place-at_site.png",
+      "sha256": "b0c5153b482efcc6bec514ae722f62af84c01b2cfa666510f83f4a58c294bd88"
+    },
+    "ieeenat_fullname.bst": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_Submission_v1/ieeenat_fullname.bst",
+      "sha256": "e38e6166bd7b1e6d23a1b79dcdb55c656e4fcdbe91bdf6b50d827e6b5d1aacfc"
+    },
+    "main.bbl": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_Submission_v1/main.bbl",
+      "sha256": "4c7122cfb4cfa22ef19ce0a327c598000dee02bd919fd1316033e3af79218c7b"
+    },
+    "main.pdf": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_Submission_v1/main.pdf",
+      "sha256": "e13d04695f432a86a65ee90d6b87d1a0b95718414357da74330847a8c5305e6d"
+    },
+    "main.tex": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_Submission_v1/main.tex",
+      "sha256": "1d1f5479f9c6bfe9e89a7a89325c82b282bc393f1525e0f3439560116ed17cab"
+    },
+    "references.bib": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_Submission_v1/references.bib",
+      "sha256": "53647b8a7e86f74f0c4f306dd92723693593b8dfae0f884e0d2bacb079d6b121"
+    },
+    "sections/abstract.tex": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_Submission_v1/sections/abstract.tex",
+      "sha256": "5c6fbe3106d5a5fed5809518e34d2448888697712437c5364f0448dcefcc9377"
+    },
+    "sections/conclusion.tex": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_Submission_v1/sections/conclusion.tex",
+      "sha256": "6fd16bdcf87e8f4396df36f65b36189050cb62c95465d6ac378e6b89177cde81"
+    },
+    "sections/introduction.tex": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_Submission_v1/sections/introduction.tex",
+      "sha256": "89547d3d006ded26df01aec33d96a3cf8f614507d43e0e9bbcfe81580ef441d6"
+    },
+    "sections/limitations.tex": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_Submission_v1/sections/limitations.tex",
+      "sha256": "7b948a6c192b8bcd8325493ff4ad1f86ed99545f133dc4d11e8aeacd092e4a33"
+    },
+    "sections/llm_usage.tex": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_Submission_v1/sections/llm_usage.tex",
+      "sha256": "01c0ff648c38d48cea178e8a058248f221e8c5bab1884e0992e60b156571b960"
+    },
+    "sections/method.tex": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_Submission_v1/sections/method.tex",
+      "sha256": "e8e38e0f523640372926ed025cc2bd3097ae924042d679361487245872390973"
+    },
+    "sections/protocol.tex": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_Submission_v1/sections/protocol.tex",
+      "sha256": "1a4bfc0fa68b1a645ec1b464293f13d38753de5d78720c8c6be551a35d2282f5"
+    },
+    "sections/related.tex": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_Submission_v1/sections/related.tex",
+      "sha256": "a5b76c0ad1bad7a6b8c7e71c0d9999ec923a8f8888019e21740bf3e21eff2c34"
+    },
+    "sections/results.tex": {
+      "path": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_Submission_v1/sections/results.tex",
+      "sha256": "f69ea617a1b7cbf0d586532c5263e4ec18c8723950751b6de28a6bb181b7933f"
+    }
+  },
+  "numbers_inserted": [
+    {
+      "value": "12 preregistered seeds 20261031-20261042; development seeds 20261025-20261027",
+      "source": "D:/codex/originx-harness-v2/outputs/id60-regions-validation/实验结论.txt"
+    },
+    {
+      "value": "registered rule: 10 admissible pairs; point 6/10; neighborhood 6/10; both-success 6; both-failure 4; 0 discordant",
+      "source": "D:/codex/originx-harness-v2/outputs/id60-regions-validation/validation-results.json (registered_rule_sensitivity) and D:/codex/originx-harness-v2/outputs/id60-regions-validation/实验结论.txt"
+    },
+    {
+      "value": "registered rule: difference 0.0 pp; conservative 95% CI [-35.5, 35.5]; exact paired p = 1",
+      "source": "D:/codex/originx-harness-v2/outputs/id60-regions-validation/validation-results.json and D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/evidence_snapshot.json"
+    },
+    {
+      "value": "per-arm S/F/U over 12 planned cases: point 7/4/1; neighborhood 6/5/1 (registered); neighborhood 6/6/0 (deviation-inclusive)",
+      "source": "D:/codex/originx-harness-v2/outputs/id60-regions-validation/实验结论.txt"
+    },
+    {
+      "value": "deviation-inclusive: 11 pairs; point 7/11; neighborhood 6/11; 1 point-only win; 0 neighborhood-only wins; -9.1 pp; CI [-45.7, 32.7]; p = 1",
+      "source": "D:/codex/originx-harness-v2/outputs/id60-regions-validation/validation-results.json (paired) and D:/codex/originx-harness-v2/outputs/id60-regions-validation/实验结论.txt"
+    },
+    {
+      "value": "Wilson 95% per arm: registered point [31.3, 83.2], neighborhood [31.3, 83.2]; deviation point [35.4, 84.8], neighborhood [28.0, 78.7]",
+      "source": "D:/codex/originx-harness-v2/outputs/id60-regions-validation/validation-results.json (paired_eligible_success_rate_wilson95) and D:/codex/originx-harness-v2/outputs/id60-regions-validation/paper/results.tex"
+    },
+    {
+      "value": "worst-case envelopes over 12 planned seeds: [-16.7, 0.0] pp (registered) and [-16.7, -8.3] pp (with rerun)",
+      "source": "D:/codex/originx-harness-v2/outputs/id60-regions-validation/实验结论.txt"
+    },
+    {
+      "value": "median within-pair terminal XY difference -0.31 cm (10 pairs) and -0.30 cm (11 pairs), negative favors neighborhoods",
+      "source": "D:/codex/originx-harness-v2/outputs/id60-regions-validation/validation-results.json (final_xy_paired_delta_cm) and D:/codex/originx-harness-v2/outputs/id60-regions-validation/实验结论.txt"
+    },
+    {
+      "value": "development stage: 3 episodes per arm; points 1/3; neighborhoods 2/3",
+      "source": "D:/codex/originx-harness-v2/outputs/id60-regions-validation/实验结论.txt and D:/codex/originx-harness-v2/outputs/id60-regions-validation/paper/results.tex"
+    },
+    {
+      "value": "interruption: 6 episodes completed (pairs 20261031-20261033); 7th case seed 20261034 regions arm had 0 trace records; 18 remaining cases re-executed by resume driver; seed 20261042 point arm unknown infrastructure timeout after 544/600 steps (180-s client timeout)",
+      "source": "D:/codex/originx-harness-v2/outputs/id60-regions-validation/实验结论.txt and D:/codex/originx-harness-v2/outputs/id60-regions-validation/paper/protocol.tex"
+    },
+    {
+      "value": "deviation pair seed 20261034: point success, neighborhood failure",
+      "source": "D:/codex/originx-harness-v2/outputs/id60-regions-validation/实验结论.txt"
+    },
+    {
+      "value": "hardware of completed study: local laptop RTX 5090 GPU under WSL, single worker",
+      "source": "D:/codex/originx-harness-v2/outputs/id60-regions-validation/实验结论.txt and D:/codex/originx-harness-v2/outputs/id60-regions-validation/paper/protocol.tex"
+    },
+    {
+      "value": "with 12 pairs, 5 wins / 0 losses gives exact two-sided p = 0.0625",
+      "source": "D:/codex/originx-harness-v2/outputs/id60-regions-validation/paper/protocol.tex (reused protocol wording; exact binomial)"
+    },
+    {
+      "value": "T3 H800: all_passed = false; 11 of 12 declared checks pass",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/autodl-t3/t3/exactness-checks-autodl-h800-v1.json (summary.passed) and D:/codex/originx-harness-v2/work/id60-masks-validation/t3-autodl-h800-note-v1.md"
+    },
+    {
+      "value": "T3 H800 run started 2026-10-26T22:00:37Z, finished 2026-10-26T22:09:01Z; renderer NVIDIA H800 PCIe/PCIe/SSE2 via EGL; GL 4.6.0 NVIDIA 595.71.05; MuJoCo 3.3.1; supervision 0.27.0; numpy 2.2.5; Python 3.12.3; site autodl_h800_egl_rgb0",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/autodl-t3/t3/exactness-checks-autodl-h800-v1.json (started_utc, finished_utc, host, versions)"
+    },
+    {
+      "value": "T3 seeds 20261025, 20261026, 20261027; 100 zero-action + 40 scripted-motion steps per seed; 4 injected place-like states (at_site, above_site, beside_site, in_gripper); state injection test-only",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/autodl-t3/t3/exactness-checks-autodl-h800-v1.json (seeds, results[].zero_steps, motion_steps, state_injection, state_injection_is_test_only)"
+    },
+    {
+      "value": "depth convention legacy selected everywhere; frozen extractor rule vs registry 189,225/189,225 equal",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/autodl-t3/t3/exactness-checks-autodl-h800-v1.json (summary.depth_convention_selected, production_single_sample_registry_checks.strict_with_sites_equal)"
+    },
+    {
+      "value": "registry checks: inconsistent 0; superset_violation_px 0; gained_px_not_site 0; registry_visible 20,058; equal 19,865; contains 193; registry_hidden 9",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/autodl-t3/t3/exactness-checks-autodl-h800-v1.json (summary.production_single_sample_registry_checks)"
+    },
+    {
+      "value": "independent single-sample reference render: 0 mismatched px for segmentation, object masks, depth, analytic ghost, with-sites; 189,225 object-camera comparisons",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/autodl-t3/t3/exactness-checks-autodl-h800-v1.json (summary.single_sample_reference_pixel_comparison)"
+    },
+    {
+      "value": "policy RGB with sites hidden byte-identical (policy_rgb_byte_identical true); policy and mask offscreen samples 0",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/autodl-t3/t3/exactness-checks-autodl-h800-v1.json (summary.passed.policy_rgb_byte_identical, policy_offscreen_samples, mask_offscreen_samples)"
+    },
+    {
+      "value": "ghost GL cross-check: 115 of 117 masks evaluated; IoU min 0.9925 (0.99247); median 1.0; gate G4 (IoU >= 0.98) pass",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/autodl-t3/t3/exactness-checks-autodl-h800-v1.json (summary.gl_evaluated_masks, gl_total_masks, gl_iou_min_evaluated, gl_iou_median_evaluated)"
+    },
+    {
+      "value": "two unevaluated ghost masks: in_gripper injected state, wrist camera, seeds 20261026 and 20261027, analytic 0 px and GL 0 px",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/autodl-t3/t3/exactness-checks-autodl-h800-v1.json (results[1] and results[2].state_injection.in_gripper.gl_cross_check[2])"
+    },
+    {
+      "value": "stricter 1-px-band check FAILS: 3 px outside band total, all in one mask: seed 20261026 scripted-motion step 128, robot0_eye_in_hand, analytic 2,767 px, GL 2,753 px, 14 mismatched px, IoU 0.9949; other 116 masks 0",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/autodl-t3/t3/exactness-checks-autodl-h800-v1.json (summary.gl_mismatch_outside_1px_band_total; results[1].gl_cross_check_trajectory[26]) and D:/codex/originx-harness-v2/work/id60-masks-validation/t3-autodl-h800-note-v1.md"
+    },
+    {
+      "value": "non-ghost pixels of ghost render equal plain render; inside_mask_pixels_changed_total 0; ghost-subject exclusion ok; rings disjoint and exterior; supervision painter equals numpy reference",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/autodl-t3/t3/exactness-checks-autodl-h800-v1.json (summary)"
+    },
+    {
+      "value": "overhead median per seed 74.6 / 72.7 / 70.2 ms (budget 100 ms); augmenter extra 42.6 / 40.7 / 38.8 ms; place cue 32.0 / 32.0 / 31.4 ms",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/autodl-t3/t3/exactness-checks-autodl-h800-v1.json (summary.overhead_ms_median_per_seed, augmenter_extra_ms_median_per_seed, place_cue_ms_median_per_seed)"
+    },
+    {
+      "value": "no code or threshold changed after the T3 result; decision to proceed recorded in the note",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/t3-autodl-h800-note-v1.md"
+    },
+    {
+      "value": "frozen XR1 client preprocessing: center_crop with crop ratio 0.95 and PIL bilinear resampling; downstream model processor not inspected",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/autodl-t3/t3/exactness-checks-autodl-h800-v1.json (actual_xr1_preprocessing_identity)"
+    },
+    {
+      "value": "policy-input audit over 45 camera states (3 seeds x {grasp-initial + 4 injected states} x 3 cameras): source-level inside changed 0, ring-intersects-protected 0, non-ring changed 0 in 45/45; ring visible after crop 45/45; full-coverage interior changed 0 in 45/45; changed px inside nearest-resized mask min 21, median 89, max 388; max interior Chebyshev depth 1 everywhere; 5 wrist-camera states lost 66-173 ring px to the crop (retention 0.728-0.958), retention 1.0 elsewhere",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/autodl-t3/t3/exactness-checks-autodl-h800-v1.json (results[].grasp_initial_cues[cam].actual_xr1_preprocessing and results[].state_injection[state].cues[cam].actual_xr1_preprocessing; aggregated by the paper task)"
+    },
+    {
+      "value": "pre-fix local WSL/D3D12 T3 (finished 2026-10-25T03:13Z, started 2026-10-25T02:58Z; renderer D3D12 NVIDIA GeForce RTX 5090 Laptop GPU): production offscreen samples 4; ghost IoU min 0.763 (0.76329), median 0.934; 7 px outside band; registry superset_violation_px 238,077; gained_px_not_site 221,490; overhead medians 300.9 / 293.2 / 275.9 ms; no-MSAA variant IoU min 0.993 (0.99279), gained_px_not_site 0, superset_violation_px 0",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/exactness-checks-local-wsl-v1.json (summary) and D:/codex/originx-harness-v2/work/id60-masks-design/implementation-report-v1.json"
+    },
+    {
+      "value": "H800 four-sample policy RGB nondeterminism: 2,019-4,833 differing pixels per camera comparison at a fixed state with zero control steps; zero-sample renders byte-identical (three consecutive images per camera); OpenGL error 1281 (material shininess) persists under zero samples",
+      "source": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/rendering_cohort_evidence.json and D:/codex/originx-harness-v2/work/id60-masks-validation/rendering-amendment-h800-rgb0-v1.json"
+    },
+    {
+      "value": "mechanical residency probe: 3 policy/planner worker pairs, 6 resident models, peak 59,497 MiB, at least 21,583 MiB free, 0 environment steps",
+      "source": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/rendering_cohort_evidence.json (mechanical_probe)"
+    },
+    {
+      "value": "unused-seed audit selected 12 seeds 20261044-20261055, disjoint from 20261025-27 and 20261031-42",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/unused-seeds-v1.json"
+    },
+    {
+      "value": "formal manifest: 12 pairs, 24 cases, 2 workers, max_local_seconds 21,000, manifest sha256 94d4721e1452671e...; frozen on the instance 2026-10-26 before the pilot; re-frozen locally 2026-10-27 reproducing the recorded 12-character prefix 94d4721e1452 of the registered digest (the full server digest was never recorded locally; matches_server_prefix true); executed cases 0",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/manifest.json and D:/codex/originx-harness-v2/work/id60-masks-validation/manifest-refreeze-receipt-v1.json and the workflow task statement"
+    },
+    {
+      "value": "budget decomposition 1,800 s startup + 12 cases x 1,600 s per worker = 21,000 s",
+      "source": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/sections/protocol.tex (draft budget paragraph) and D:/codex/originx-harness-v2/work/id60-masks-validation/manifest.json (execution_budget, max_local_seconds)"
+    },
+    {
+      "value": "pilot manifest: 6 cases, 3 pairs on seeds 20261025-27, orders point->masks, masks->point, point->masks; gates G1-G10",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-design/harness-map-v1.md (section 10.4) and the workflow task statement"
+    },
+    {
+      "value": "pilot launched 2026-10-26 23:06:50 UTC on the AutoDL H800 with 2 workers after policy and verifier services loaded; instance unreachable about 20 minutes later (balance exhausted / shutdown); no episode result retrieved; formal run never started; instance not restarted. No local launch record carries the timestamp or cause, so the paper writes 'about 23:07 UTC' and 'its prepaid balance is believed to have been exhausted'.",
+      "source": "workflow task statement (verified facts) and D:/codex/originx-harness-v2/work/id60-masks-validation/manifest-refreeze-receipt-v1.json"
+    },
+    {
+      "value": "G10 sign-off recorded 2026-10-27T15:45:57Z for two of twelve sheets (seed 20261026 grasp-initial and place-at_site); remaining ten inspected by the operating agent only",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/pilot-g10-signoff-v1.json"
+    },
+    {
+      "value": "CPU test suite: 240 WSL tests + 39 subtests; Windows 237 passes + 3 skipped supervision-dependent tests",
+      "source": "D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/sections/results.tex"
+    },
+    {
+      "value": "ring width 2 px (Chebyshev dilation); min component 3 px; DEPTH_TOL 3 mm; legacy depth convention; ORANGE (255,176,0); CYAN (0,220,255); supervision 0.27.0 MaskAnnotator opacity 1.0; three 256x256 cameras; 600-step horizon; 16-step chunks of 16x12",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/autodl-t3/t3/exactness-checks-autodl-h800-v1.json (constants) and D:/codex/originx-harness-v2/work/id60-masks-design/harness-map-v1.md (section 1) and D:/codex/2026-09-27/review/outputs/OriginX_Masks_CVPR2027_WorkingDraft/sections/method.tex"
+    },
+    {
+      "value": "contact sheet PNGs 1536x2144; rows raw render | masks arm | XR1 crop/resize raw | XR1 crop/resize masks; figure shows rows 2 and 4 via trim (label bars rows 0-23 of each 536-px block)",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/autodl-t3/t3/contact/seed-20261026-place-at_site.png and D:/codex/originx-harness-v2/work/id60-masks-validation/autodl-t3/t3/contact/seed-20261026-grasp-initial.png"
+    },
+    {
+      "value": "pre-fix local MSAA registry diagnostics: 12,684 inconsistent entity-camera comparisons (with 238,077 superset-violation px and 221,490 non-site px gained)",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/exactness-checks-local-wsl-v1.json (summary.registry_checks_production_msaa.status.inconsistent) and D:/codex/originx-harness-v2/work/id60-masks-design/implementation-report-v1.json"
+    },
+    {
+      "value": "gripper visualisation sites (drawn in segmentation, never in policy RGB) hid up to 46% of the mug in the wrist camera (537/1171 px at frame 0) and a ring was drawn through the target; fixed by hiding sites for the mask render",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-design/implementation-report-v1.json"
+    },
+    {
+      "value": "G1 = frozen-source check (138 files); manifest historical_source_count 138; the local re-freeze re-verified the sources",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-design/harness-map-v1.md (section 10.4) and D:/codex/originx-harness-v2/work/id60-masks-validation/manifest.json (historical_source_count)"
+    },
+    {
+      "value": "G10 as declared required sheets for 3 cameras x {grasp start, pre-grasp, place start, pre-release}; the signed sheets cover grasp-initial and an injected place-at_site state only, so G10 as declared was not met",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-design/harness-map-v1.md (section 10.4) and D:/codex/originx-harness-v2/work/id60-masks-validation/pilot-g10-signoff-v1.json"
+    },
+    {
+      "value": "contact sheets show the 256x256 frames at 2x nearest-neighbour magnification (presentation_scale 2, presentation_resize nearest)",
+      "source": "D:/codex/originx-harness-v2/work/id60-masks-validation/contact_sheets.py (write_contact_sheet)"
+    }
+  ],
+  "evidence_boundaries": [
+    "No mask task outcome is reported; every mask task-outcome cell reads 'not measured'.",
+    "The engineering pilot is described as a launch event only; it is unknown whether any pilot case finished.",
+    "The T3 fidelity result is reported with its failing check (3 px outside the 1-px band in 1 of 117 masks) and all_passed=false.",
+    "Policy-input audit numbers (45 camera states) were aggregated by the paper task from the per-camera records in the T3 JSON.",
+    "Masks use simulator geometry (oracle-assisted presentation study).",
+    "The completed regions study is the only task-outcome evidence and found no benefit.",
+    "The pilot launch timestamp and shutdown cause come from the workflow task statement only; no local launch record exists, so the paper states them approximately and as believed.",
+    "G1 is covered by the manifest-freeze source verification and its local reproduction, not by a retrieved pilot-time record; G6, G7, G9 and the per-case memory part of G8 have no record; G10 as declared was not met."
+  ],
+  "revision": "v1 final-gate pass, 2026-10-27 (supersedes the review-fix receipt recorded 2026-10-27T16:50:38Z)",
+  "human_author_review": {
+    "status": "not performed as of this receipt",
+    "note": "No human author has reviewed the final manuscript text against the evidence files. The LLM Usage Statement therefore says the authors are responsible for the manuscript's consistency with those files, not that they reviewed it. The user should perform that review before upload."
+  },
+  "review_fix_log_2026_10_27": [
+    {
+      "issue": "llm_usage.tex claimed a completed author consistency review and cited non-existent launch records; dropped research ideation and literature retrieval",
+      "change": "reworded to 'the authors are responsible for the manuscript's consistency with those files'; 'the launch records' -> 'the manifest re-freeze receipt'; restored 'research ideation and literature retrieval'; 'taken from, or computed by simple aggregation of, recorded evidence files'"
+    },
+    {
+      "issue": "conclusion.tex stated fine-region cues 'did not change success' (reads as equivalence)",
+      "change": "now 'found no evidence that fine-region cues change success ... and does not establish equivalence'; abstract 'It found no benefit' -> 'It found no evidence of benefit'"
+    },
+    {
+      "issue": "results.tex registry-diagnostic arithmetic (9 registry-hidden counted inside 20,058)",
+      "change": "'20,058 registry-visible entries (19,865 box-equal, 193 strict containments), 9 registry-hidden entries, 0 inconsistencies, 0 superset-violation pixels, and 0 non-site pixels gained'"
+    },
+    {
+      "issue": "Table tab:status point-cue cell 'same as frozen cue' under an H800 heading",
+      "change": "cell now 'not re-measured'; caption states the point cue is the unchanged frozen controller (a software-test property) and was not re-measured on the H800; 'Tab.~\\ref' -> 'Table~\\ref'"
+    },
+    {
+      "issue": "Sec. 5.4 asserted exact launch time 23:06:50 UTC and balance exhaustion as fact",
+      "change": "'at about 23:07 UTC ... it had shut down, and its prepaid balance is believed to have been exhausted'"
+    },
+    {
+      "issue": "Sec. 5.4 gate mapping (G1 listed as trace-dependent; 'covered by' overstated)",
+      "change": "G1 covered by the manifest-freeze source verification and its local reproduction (pilot-time record not retrieved); G2-G5 and the overhead part of G8 'exercised by the checks of Table 3 on the same host, on zero-action, scripted, and injected states rather than on pilot episodes'; G6, G7, G9 and the memory part of G8 never retrieved"
+    },
+    {
+      "issue": "G10 declared coverage not stated",
+      "change": "Sec. 5.4 and limitations now say the declared pre-grasp, place-start and pre-release episode states were not produced (no pilot trace), so G10 as declared was not met; protocol.tex G10 clause now references Fig. 1"
+    },
+    {
+      "issue": "protocol.tex 'reproduced the registered digest'",
+      "change": "'reproduced that recorded 12-character prefix of the registered digest (the full server digest was not recorded)'"
+    },
+    {
+      "issue": "introduction.tex / method.tex presented 'painted true object pixels' as an observed MSAA failure",
+      "change": "reworded to the measured facts (decoded masks inconsistent with the registry; 12,684 inconsistent comparisons and 238,077 superset-violation px in Sec. 5.2; proxy cross-check IoU 0.763) and attributed the ring-through-target case to the gripper visualisation sites (hid up to 46% of the mug in the wrist camera), fixed by hiding sites"
+    },
+    {
+      "issue": "policy-input aggregates computed by the paper task",
+      "change": "Sec. 5.2 policy-input audit now says 'aggregated by us from the per-camera records of the fidelity report'"
+    },
+    {
+      "issue": "main.tex inert \\cvprPaperID; hyperref color",
+      "change": "removed the \\def\\cvprPaperID line; defined cvprblue and set allcolors=cvprblue"
+    },
+    {
+      "issue": "receipt build chain not convergent (backrefs lost on a 3-pass rebuild)",
+      "change": "receipt now records the exact chain plus repeated pdflatex passes until no rerun request (five passes from clean); shipped PDF is the converged build"
+    },
+    {
+      "issue": "justified narrow table columns",
+      "change": "tabularx X columns made ragged-right globally; Table 1 first column >{\\raggedright\\arraybackslash}p{1.1in}; Tables 1, 3, 4 set in footnotesize with tabcolsep 4pt"
+    },
+    {
+      "issue": "arXiv-only references printed without locator; editorial version notes",
+      "change": "note={arXiv:<id>} added to all nine @misc entries, replacing the two version notes"
+    },
+    {
+      "issue": "Figure 1 magnification not stated; rings small at print size",
+      "change": "caption now says both rows are shown at 2x nearest-neighbor magnification, that rings are two pixels wide in the source frame and best viewed zoomed (layout unchanged to keep the main text at 8 pages)"
+    },
+    {
+      "issue": "page budget after the additions (Conclusion spilled to page 9)",
+      "change": "tightened wording in Secs. 5.2-5.4, limitations, conclusion, intro, and the protocol interrupted-run rules; removed one redundant 'model processor not inspected' sentence from Sec. 5.2 (kept in Sec. 3.6 and limitations); Table 4 labels shortened; no evidence statement removed"
+    }
+  ],
+  "final_gate_pass_2026_10_27": {
+    "changes": [
+      "main.tex: added the inert line \\def\\cvprPaperID{*****} (the supplied cvpr.sty prints no paper ID) as the task instructions require",
+      "references.bib: the working-draft copy had been restored over the arXiv-note version by a file copy; the nine @misc entries were given note={arXiv:<eprint>} again (version notes removed); the regenerated main.bbl is byte-identical to the previously shipped one",
+      "recompiled from a clean directory with the exact WSL TinyTeX chain (pdflatex, bibtex, pdflatex, pdflatex; exit 0) plus two further pdflatex passes until no rerun request remained (five passes)"
+    ],
+    "compile": {
+      "exit_ok": true,
+      "pdf_pages": 9,
+      "main_text_pages": 8,
+      "conclusion_page": 8,
+      "llm_statement_page": 9,
+      "references_start_page": 9,
+      "overfull_or_underfull_boxes": 0,
+      "rerun_requests_after_final_pass": 0
+    },
+    "greps_sections_and_main_tex": {
+      "pending": 0,
+      "http": 0,
+      "github": 0,
+      "Quinn": 0,
+      "OriginX": 0,
+      "Yang": 0,
+      "Ma,": 0
+    },
+    "mask_task_outcome_cells_with_numbers": false,
+    "page_text_extraction": "pypdfium2 in WSL python3 (pdftotext unavailable); the regex page counter from the task returns 0 because of compressed object streams",
+    "aux_files_shipped": "main.bbl only",
+    "recorded_utc": "2026-10-27T17:00:40.745054+00:00"
+  },
+  "post_review_edits_v1": {
+    "recorded_utc": "2026-10-27T17:12:17.635609+00:00",
+    "edits": [
+      "inserted Figure 1 (TikZ pipeline overview, figures/fig_architecture.tex) at the start of Sec. 3 with one referencing sentence",
+      "contact-sheet figure reduced to one column showing the place-like block only; caption rewritten; Eq. reference fixed to eq:ring",
+      "tightened prose without removing any number: results Sec. 5.2 pre-fix diagnostic, policy-input audit, Sec. 5.3, Sec. 5.4; protocol paragraphs (completed study, fidelity checks and gates, frozen protocol); introduction paragraphs 1 and 4; limitations (rendering cohort merged with statistical scope); conclusion; Table 4 caption",
+      "build chain: build5.sh = pdflatex, bibtex, pdflatex repeated until no rerun request"
+    ],
+    "pdf": {
+      "path": "D:\\codex\\2026-09-27\\review\\outputs\\OriginX_Masks_CVPR2027_Submission_v1\\main.pdf",
+      "sha256": "5ba325ee2d98240866d2463c71f1483af0137a899e22d51cb95b22b62d201828",
+      "bytes": 1189675,
+      "pages": 9,
+      "conclusion_page": 8,
+      "llm_statement_and_references_start_page": 9,
+      "main_text_within_8_pages": true
+    },
+    "source_zip": {
+      "path": "D:\\codex\\2026-09-27\\review\\outputs\\OriginX_Masks_CVPR2027_Submission_v1\\OriginX_Masks_CVPR2027_source_v1.zip",
+      "sha256": "8d5c8278e98723862bf1a29d9e3888ef59b63949cfab8f153d194eae5e55426f",
+      "members": [
+        "build5.sh",
+        "cvpr.sty",
+        "figures/fig_architecture.tex",
+        "figures/seed-20261026-grasp-initial.png",
+        "figures/seed-20261026-place-at_site.png",
+        "ieeenat_fullname.bst",
+        "main.tex",
+        "references.bib",
+        "sections/abstract.tex",
+        "sections/conclusion.tex",
+        "sections/introduction.tex",
+        "sections/limitations.tex",
+        "sections/llm_usage.tex",
+        "sections/method.tex",
+        "sections/protocol.tex",
+        "sections/related.tex",
+        "sections/results.tex"
+      ]
+    },
+    "section_sha256": {
+      "abstract.tex": "5c6fbe3106d5a5fed5809518e34d2448888697712437c5364f0448dcefcc9377",
+      "conclusion.tex": "e700f1865a5db7f48fe2374dd321d1a7384600e8feb42560fcfd0a46824f7876",
+      "introduction.tex": "164651688652454dcc29eb95032ccef4ab520b1033155074f03e55563965a347",
+      "limitations.tex": "e4563100e29e121963c211c6e3f48cc3c30147cc52b4a1d2269ee86f6dbb2316",
+      "llm_usage.tex": "01c0ff648c38d48cea178e8a058248f221e8c5bab1884e0992e60b156571b960",
+      "method.tex": "0b3bbadbc9cde5e18ad724facb95aa787c6915b7df29a27a81ba28e5bd88e8ee",
+      "protocol.tex": "57582745908ad1c91e15b82cdeade6b14d2401d4ff7fc6d814a74146941d5d5c",
+      "related.tex": "a5b76c0ad1bad7a6b8c7e71c0d9999ec923a8f8888019e21740bf3e21eff2c34",
+      "results.tex": "eb99423cee5071999417a5231acac923862212d3f553c03ba495fc47ff6b3a0c"
+    },
+    "visual_page_inspection": "all 9 pages rendered with PyMuPDF at 100 dpi and inspected by the operating assistant; no overlap, no overfull boxes, figures and tables legible",
+    "human_author_review": "not performed as of this receipt; the user must read the PDF before upload"
+  }
+}

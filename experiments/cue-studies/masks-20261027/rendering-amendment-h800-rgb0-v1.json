@@ -1,0 +1,56 @@
+{
+  "schema": "id60-rendering-amendment-v1",
+  "registered_utc": "2026-10-25T18:36:53.3150173Z",
+  "phase": "Before any mask development-pilot or prospective policy outcome on H800",
+  "reason": "Native 4-sample RGB varies across repeated renders at fixed physics, so initial RGB SHA pair admission and unmodified-render tests cannot pass. A shared single-sample cohort is declared before outcomes.",
+  "scope": {
+    "gpu_renderer": "NVIDIA H800 PCIe/PCIe/SSE2",
+    "arms": [
+      "point",
+      "masks"
+    ],
+    "task": "CoffeeSetupMug",
+    "model_and_context_samples_asserted_after_hard_reset": true,
+    "xml_change": "mujoco/visual/quality/@offsamples only",
+    "site": "linux_egl",
+    "policy_rgb_samples": 0,
+    "factory": "originx_harness.id60_masks_validation.site_rendering.make_environment",
+    "physics_seed_action_changes": false
+  },
+  "controls": {
+    "source_mask_interior_gate": "unchanged zero changed pixels",
+    "automatic_case_retry": false,
+    "old_5090_results_not_pooled": true,
+    "automatic_seed_replacement": false,
+    "other_rendering_cohorts_not_pooled": true,
+    "old_MSAA4_failure_preserved": true,
+    "all_existing_T3_gates": "unchanged",
+    "initial_signature_gate": "unchanged byte-equality"
+  },
+  "prior_evidence": {
+    "native_debug_path": "review/work/masks-repair-20261025/native-rgb-debug-v1/report.json",
+    "prior_t3_status": "FAILED",
+    "short_t3_path": "review/work/masks-repair-20261025/t3-short-v2.json",
+    "short_t3_sha256": "d4fa5b32b0492cdf039444be855cae4526710566aa7197822ce62ed13bc53f18",
+    "baseline_MSAA4_not_claimed_passed": true,
+    "native_debug_sha256": "816ebdb1b0481a416ea3f682bcc97b5fdcdbedfb5f59dbc57550c3cc92441eda"
+  },
+  "source_sha256_at_amendment": {
+    "scripts/run_id60_masks_validation_local.py": "15a55b0bfef659f00caee29e87cc4d168958ee8f7fe92da2f5d0e2281c5dc721",
+    "originx_harness/id60_masks_validation/registration.py": "02425ecf0f68e4ffcd43cec2f3e5508692d436a1888b36041530b47ab9bba4d2",
+    "originx_harness/id60_masks_validation/site_rendering.py": "d448f7a9af980517ea403cd9dab8c0887930deba4c0b7ab4fcec145310488679",
+    "tests/test_id60_masks_site_rendering.py": "6bf38447e1a8be5b918b3c551140c6fc477c475f920e4171ef8f6af34ed30ef1",
+    "work/id60-masks-validation/check_mask_exactness.py": "698cd3a81739c9411e466fc9db91fc6da034fa62639dfdf5fab08b23f6ed3850"
+  },
+  "site_overrides_sha256": "15c696d229a01d5879d921e605e09ad2e2ea15597032a8fa6ecbe16b59ce5be0",
+  "cpu_checks": {
+    "independent_actual_task_physics_equivalence": "pending independent reviewer",
+    "cloud_pinned_mujoco": "25 passed; 0 skipped",
+    "short_T3": "pending new cohort run",
+    "windows": "24 passed; 1 MuJoCo unavailable skip",
+    "formal_source_freeze": "pending parent registration"
+  },
+  "prospective_seeds_reset_or_stepped": false,
+  "prospective_results_exist": false,
+  "success_based_selection": false
+}

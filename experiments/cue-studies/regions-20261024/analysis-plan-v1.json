@@ -1,0 +1,35 @@
+{
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "created_at_utc": "2026-10-24T16:10:21.510862+00:00",
+  "primary": "Official success within600 steps; paired regions minus point",
+  "seeds": [
+    20261031,
+    20261032,
+    20261033,
+    20261034,
+    20261035,
+    20261036,
+    20261037,
+    20261038,
+    20261039,
+    20261040,
+    20261041,
+    20261042
+  ],
+  "planned_pairs": 12,
+  "planned_cases": 24,
+  "statistical_tests": "Two-sided exact McNemar; per-arm Wilson95; paired risk difference with conservative Bonferroni Clopper-Pearson95 interval",
+  "secondary": "Terminal object-root-to-selected-site XY median including task failures; coverage reported",
+  "unknown": "Invalid pairing, infrastructure interruption, unattempted separated; no outcome replacement",
+  "development_seeds_excluded": [
+    20261025,
+    20261026,
+    20261027
+  ],
+  "source_sha256": {
+    "work/id60-regions-validation/analyze_regions_validation.py": "d9cb8f468b9c493432c5a291b96355f0f693da001296a562b810de2ee57b4aff",
+    "work/id60-regions-validation/analysis-cpu-checks-v1.json": "655c177f00ce5dffd71f0e24c57cbe9ad2165d69f57f111c8c17c77898e4a440",
+    "work/id60-targeted-parser/analyze_targeted.py": "bf1ce205153cdbde2cf7ffe7ca658b65d9ff784c5659beb2bd230aa010a6f341",
+    "work/id60-regions-validation/manifest.json": "ec686401d0300bbb0740d009a7bf9b5570ab3e60f709835fdb00cb991d638bbe"
+  }
+}

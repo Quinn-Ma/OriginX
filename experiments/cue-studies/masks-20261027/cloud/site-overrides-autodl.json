@@ -1,0 +1,20 @@
+{
+  "python": {
+    "sim": "/root/autodl-tmp/originx-harness-v2/work/autodl/sim-env/bin/python",
+    "policy": "/root/originx-policy-env/bin/python",
+    "planner": "/root/originx-planner-env/bin/python"
+  },
+  "pythonpath_sim": [
+    "/root/autodl-tmp/originx-harness-v2/vendor/robocasa",
+    "/root/autodl-tmp/originx-harness-v2/vendor/robosuite"
+  ],
+  "planner_weights": "/root/originx-models/planner",
+  "backend_config": "/root/autodl-tmp/originx-harness-v2/work/autodl/backend-xr1-cloud.json",
+  "env": {
+    "HF_HOME": "/root/autodl-tmp/originx-harness-v2/work/autodl/hf-cache",
+    "MPLCONFIGDIR": "/root/autodl-tmp/originx-harness-v2/work/autodl/mpl-cache",
+    "TMPDIR": "/root/autodl-tmp/originx-harness-v2/work/autodl/tmp",
+    "OMP_NUM_THREADS": "8"
+  },
+  "gl_renderer": "NVIDIA H800 PCIe/PCIe/SSE2"
+}
