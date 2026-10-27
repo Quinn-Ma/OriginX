@@ -5,7 +5,7 @@ Qinzhen Ma · Harry Yang · Jialin Wu · Shichen Tang · Gordon Dai
 **Subsequent fresh-seed study.** X/A/B/BV each completed 50 trials, with 30/32/33/32 successes and one matched rescue offset by one regression. The separate GR00T extension completed 31/50 two-arm cases, retaining 19 unknown/unrun cases per arm; 29 matched pairs contain one rescue and no regression. See the [full new study](FRESH_SEED_STUDY.md). The original evaluation and earlier follow-up below retain their own records and are not combined into a new benchmark score.
 
 
-![OriginX overview: adaptation from a public checkpoint and continuous action conditioning.](docs/assets/originx-overview.png)
+![OriginX overview: adaptation from a public checkpoint, continuous action conditioning, and stage cues on the frozen policy (fine-region cues: no benefit; mask cues: fidelity verified, task outcomes not measured).](docs/assets/originx-overview-v2.svg)
 
 *Method overview. (a) Action LoRA adaptation and training the continuous B branch with the adapted policy frozen. (b) Observed features and proprioception modulate the frozen action generator. This is an illustrative schematic; the kitchen scenes are not rollout screenshots.*
 
