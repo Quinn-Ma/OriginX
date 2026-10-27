@@ -1,0 +1,66 @@
+{
+  "backend_config": "/ephemeral/qinzhen/originx-harness-v2/work/hkust/backend-xr1-hkust.json",
+  "benchmark": "robocasa",
+  "env": {
+    "CUDA_DEVICE_ORDER": "PCI_BUS_ID",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "HF_HOME": "/ephemeral/qinzhen/originx-harness-v2/work/hkust/hf-cache",
+    "HF_HUB_OFFLINE": "1",
+    "MPLBACKEND": "Agg",
+    "MPLCONFIGDIR": "/ephemeral/qinzhen/originx-harness-v2/work/hkust/mpl-cache",
+    "MUJOCO_GL": "egl",
+    "OMP_NUM_THREADS": "8",
+    "PYOPENGL_PLATFORM": "egl",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONHASHSEED": "0",
+    "PYTHONNOUSERSITE": "1",
+    "TMPDIR": "/ephemeral/qinzhen/originx-harness-v2/work/hkust/tmp",
+    "TOKENIZERS_PARALLELISM": "false",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "gpus_allowed": null,
+  "model": "xr1",
+  "model_residency": "resident",
+  "native_device": "cuda:0",
+  "native_timeout": 600,
+  "placement": "linux_egl",
+  "planner_weights": "/dev/shm/qinzhen/originx-models/planner",
+  "policy_rendering": {
+    "cohort": "policy_rgb_samples_0",
+    "initial_signature_and_pixel_gates_unchanged": true,
+    "mutation": "mujoco/visual/quality/@offsamples only",
+    "policy_rgb_samples": 0,
+    "pool_with_other_rendering_cohorts": false,
+    "schema": "id60-site-policy-rendering-v1",
+    "shared_across_arms": true
+  },
+  "policy_rgb_samples": 0,
+  "python": {
+    "planner": "/dev/shm/qinzhen/originx-envs/planner/bin/python",
+    "policy": "/dev/shm/qinzhen/originx-envs/policy/bin/python",
+    "sim": "/dev/shm/qinzhen/originx-envs/sim/bin/python"
+  },
+  "pythonpath": {
+    "sim": [
+      "/ephemeral/qinzhen/originx-harness-v2/vendor/robocasa",
+      "/ephemeral/qinzhen/originx-harness-v2/vendor/robosuite",
+      "/ephemeral/qinzhen/originx-harness-v2/work/id60-masks-validation/deps/sim-overlay"
+    ]
+  },
+  "renderer": {
+    "admission": "NVIDIA vendor and renderer prefix, no Mesa D3D12, EGL platform; exact string pinned per worker by the preflight (and by gl_renderer when set)",
+    "forbidden_env": [
+      "MESA_D3D12_DEFAULT_ADAPTER_NAME"
+    ],
+    "gl_renderer": "NVIDIA H100 PCIe/PCIe/SSE2",
+    "gl_renderer_prefix": "NVIDIA ",
+    "gl_vendor": "NVIDIA Corporation",
+    "kind": "native_nvidia_egl"
+  },
+  "sequential_gpu": false,
+  "site_name": "linux_egl",
+  "site_overrides": {
+    "path": "/ephemeral/qinzhen/originx-harness-v2/work/hkust/site-overrides-hkust.json",
+    "sha256": "9541395233a9e8173c4ebfbc984160ea20713800936d4d0292d6be29e533bbcc"
+  }
+}

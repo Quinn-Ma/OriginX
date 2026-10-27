@@ -1,0 +1,48 @@
+{
+  "site_name": "linux_egl",
+  "placement": "linux_egl",
+  "benchmark": "robocasa",
+  "model": "xr1",
+  "sequential_gpu": false,
+  "model_residency": "resident",
+  "native_device": "cuda:0",
+  "python": {
+    "sim": "/dev/shm/qinzhen/originx-envs/sim/bin/python",
+    "policy": "/dev/shm/qinzhen/originx-envs/policy/bin/python",
+    "planner": "/dev/shm/qinzhen/originx-envs/planner/bin/python"
+  },
+  "pythonpath": {
+    "sim": [
+      "/ephemeral/qinzhen/originx-harness-v2/vendor/robocasa",
+      "/ephemeral/qinzhen/originx-harness-v2/vendor/robosuite"
+    ]
+  },
+  "env": {
+    "MUJOCO_GL": "egl",
+    "PYOPENGL_PLATFORM": "egl",
+    "CUDA_VISIBLE_DEVICES": "5",
+    "MUJOCO_EGL_DEVICE_ID": "5",
+    "CUDA_DEVICE_ORDER": "PCI_BUS_ID",
+    "PYTHONHASHSEED": "0",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONNOUSERSITE": "1",
+    "OMP_NUM_THREADS": "4",
+    "TOKENIZERS_PARALLELISM": "false",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "HF_HOME": "/ephemeral/qinzhen/originx-harness-v2/work/hkust/hf-cache",
+    "MPLBACKEND": "Agg",
+    "MPLCONFIGDIR": "/ephemeral/qinzhen/originx-harness-v2/work/hkust/mpl-cache"
+  },
+  "renderer": {
+    "kind": "native_nvidia_egl",
+    "gl_vendor": "NVIDIA Corporation",
+    "gl_renderer_prefix": "NVIDIA ",
+    "gl_renderer": "NVIDIA H100 PCIe/PCIe/SSE2",
+    "forbidden_env": [
+      "MESA_D3D12_DEFAULT_ADAPTER_NAME"
+    ]
+  },
+  "scope": "T3 engineering only; policy/planner paths are not yet admitted for task runs",
+  "policy_rgb_samples": 0
+}

@@ -1,0 +1,9 @@
+2026-10-27T16:36:31Z CHAIN_START pid=3993651 host=h800-8-1
+POLICY_OK 2.8.0+cu128 2.8.3
+PLANNER_OK 5.5.0
+2026-10-27T16:36:39Z PREREQ_OK renderer=NVIDIA H100 PCIe/PCIe/SSE2 gpu5=30424MiB gpu6=30344MiB gpu7=30436MiB
+2026-10-27T16:36:39Z PILOT_START
+2026-10-27T16:36:40Z PILOT_EXIT code=1 results=6
+2026-10-27T16:36:40Z PILOT_ANALYSIS_EXIT code=0
+PILOT_GATE_CHECKS {"G9_complete_valid_traces": false, "G5_inside_mask_all_reported_zero": false, "sources_match": true} g9 {"complete_valid_traces": 0, "invalid_or_missing_case_ids": ["25f9e1c5443779e5ac699516f1c4487fd617b2c9617b35df0d07cdb4320dfadd", "3ce4b5ab8c1f85020a98eb42e0628b4bca8fbfad86befd586d4f01acf53d2d22", "c09c9c6363dc82becefb41b3c3b647a70131d1c73af2088a9dffb716b8d5e65e", "752243073776cb8d6c4d5d3da12c7c3f29da21ad18ad31d048078d678c1909c9", "cd599f1fc59c629bea15a45472b0cd2e93413122dff2349daf1a385b399e476c", "44502846dee3de3d0619b9c7d0c64e7cc788776b3846630d4312046d0e6420c3"], "mask_event_cadence_issues": ["25f9e1c5443779e5ac699516f1c4487fd617b2c9617b35df0d07cdb4320dfadd", "3ce4b5ab8c1f85020a98eb42e0628b4bca8fbfad86befd586d4f01acf53d2d22", "c09c9c6363dc82becefb41b3c3b647a70131d1c73af2088a9dffb716b8d5e65e", "752243073776cb8d6c4d5d3da12c7c3f29da21ad18ad31d048078d678c1909c9", "cd599f1fc59c629bea15a45472b0cd2e93413122dff2349daf1a385b399e476c", "44502846dee3de3d0619b9c7d0c64e7cc788776b3846630d4312046d0e6420c3"]} counts {"point": {"unknown": 3}, "masks": {"unknown": 3}}
+2026-10-27T16:36:40Z PILOT_GATES_FAIL manual decision required

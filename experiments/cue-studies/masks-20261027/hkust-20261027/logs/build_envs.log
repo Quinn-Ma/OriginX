@@ -1,0 +1,364 @@
+2026-10-27T16:00:32Z BUILD_START python=Python 3.12.3 uv=uv 0.12.21 (7af826859 2026-09-29 x86_64-unknown-linux-gnu)
+Using CPython 3.12.3 interpreter at: /usr/bin/python3.12
+Creating virtual environment at: /dev/shm/qinzhen/originx-envs/sim
+Activate with: source /dev/shm/qinzhen/originx-envs/sim/bin/activate
+Using Python 3.12.3 environment at: /dev/shm/qinzhen/originx-envs/sim
+Resolved 47 packages in 263ms
+Downloading kiwisolver (1.4MiB)
+Downloading pygments (1.2MiB)
+Downloading pillow (6.6MiB)
+Downloading scipy (35.6MiB)
+Downloading numba (3.7MiB)
+Downloading numpy (15.4MiB)
+Downloading lxml (5.0MiB)
+Downloading opencv-python-headless (58.4MiB)
+Downloading h5py (5.2MiB)
+Downloading imageio-ffmpeg (28.1MiB)
+Downloading fonttools (5.2MiB)
+Downloading pyopengl (3.0MiB)
+Downloading llvmlite (40.4MiB)
+Downloading matplotlib (9.4MiB)
+Downloading mujoco (6.4MiB)
+ Downloaded pygments
+ Downloaded kiwisolver
+ Downloaded pyopengl
+ Downloaded numba
+ Downloaded lxml
+ Downloaded fonttools
+ Downloaded h5py
+ Downloaded pillow
+ Downloaded matplotlib
+ Downloaded mujoco
+ Downloaded numpy
+ Downloaded imageio-ffmpeg
+ Downloaded llvmlite
+ Downloaded scipy
+ Downloaded opencv-python-headless
+Prepared 47 packages in 780ms
+Installed 47 packages in 200ms
+ + absl-py==2.5.1
+ + certifi==2026.10.19
+ + charset-normalizer==3.5.2
+ + cloudpickle==3.1.2
+ + contourpy==1.3.3
+ + cycler==0.12.1
+ + defusedxml==0.7.1
+ + etils==1.14.0
+ + farama-notifications==0.0.6
+ + fonttools==4.67.0
+ + fsspec==2026.9.0
+ + glfw==2.11.0
+ + gymnasium==0.29.1
+ + h5py==3.16.0
+ + idna==3.20
+ + imageio==2.38.0
+ + imageio-ffmpeg==0.6.0
+ + iniconfig==2.3.1
+ + kiwisolver==1.5.1
+ + llvmlite==0.44.0
+ + lxml==6.1.3
+ + matplotlib==3.11.2
+ + mujoco==3.3.1
+ + numba==0.61.2
+ + numpy==2.2.5
+ + opencv-python-headless==5.0.0.93
+ + packaging==26.3
+ + pillow==12.3.0
+ + pluggy==1.7.0
+ + pygments==2.21.0
+ + pyopengl==3.1.10
+ + pyparsing==3.3.3
+ + pytest==9.1.1
+ + python-dateutil==3.0.0
+ + pyyaml==6.0.3
+ + qpsolvers==4.13.0
+ + quadprog==0.1.13
+ + requests==2.34.2
+ + scipy==1.15.3
+ + six==1.17.0
+ + supervision==0.27.0
+ + termcolor==3.3.0
+ + tqdm==4.70.1
+ + typing-extensions==4.16.0
+ + tzdata==2026.5
+ + urllib3==2.8.0
+ + zipp==4.1.2
+Using Python 3.12.3 environment at: /dev/shm/qinzhen/originx-envs/sim
+Resolved 2 packages in 6ms
+Prepared 2 packages in 49ms
+Uninstalled 2 packages in 2ms
+Installed 2 packages in 4ms
+ - defusedxml==0.7.1
+ + defusedxml==0.7.1 (from file:///ephemeral/qinzhen/originx-harness-v2/work/id60-masks-validation/deps/wheels/defusedxml-0.7.1-py2.py3-none-any.whl)
+ - supervision==0.27.0
+ + supervision==0.27.0 (from file:///ephemeral/qinzhen/originx-harness-v2/work/id60-masks-validation/deps/wheels/supervision-0.27.0-py3-none-any.whl)
+SIM_OK 3.3.1 0.27.0 2.2.5
+2026-10-27T16:00:36Z ENV_DONE sim
+Using CPython 3.12.3 interpreter at: /usr/bin/python3.12
+Creating virtual environment at: /dev/shm/qinzhen/originx-envs/policy
+Activate with: source /dev/shm/qinzhen/originx-envs/policy/bin/activate
+Using Python 3.12.3 environment at: /dev/shm/qinzhen/originx-envs/policy
+Resolved 28 packages in 379ms
+Downloading sympy (6.0MiB)
+Downloading triton (148.4MiB)
+Downloading nvidia-nccl-cu12 (307.4MiB)
+Downloading networkx (2.0MiB)
+Downloading pillow (6.8MiB)
+Downloading numpy (16.0MiB)
+Downloading nvidia-cuda-cupti-cu12 (9.8MiB)
+Downloading nvidia-cufft-cu12 (184.2MiB)
+Downloading nvidia-cusparselt-cu12 (273.9MiB)
+Downloading nvidia-curand-cu12 (60.7MiB)
+Downloading nvidia-nvjitlink-cu12 (37.4MiB)
+Downloading nvidia-cusparse-cu12 (274.9MiB)
+Downloading nvidia-cusolver-cu12 (255.1MiB)
+Downloading nvidia-cublas-cu12 (566.8MiB)
+Downloading nvidia-cuda-nvrtc-cu12 (84.0MiB)
+Downloading nvidia-cudnn-cu12 (674.0MiB)
+Downloading nvidia-cufile-cu12 (1.1MiB)
+Downloading torch (847.9MiB)
+Downloading torchvision (8.2MiB)
+ Downloaded nvidia-cufile-cu12
+ Downloaded networkx
+ Downloaded sympy
+ Downloaded pillow
+ Downloaded nvidia-cuda-cupti-cu12
+ Downloaded torchvision
+ Downloaded numpy
+ Downloaded nvidia-nvjitlink-cu12
+ Downloaded nvidia-curand-cu12
+ Downloaded nvidia-cuda-nvrtc-cu12
+ Downloaded triton
+ Downloaded nvidia-cufft-cu12
+ Downloaded nvidia-cusolver-cu12
+ Downloaded nvidia-cusparse-cu12
+ Downloaded nvidia-cusparselt-cu12
+ Downloaded nvidia-nccl-cu12
+ Downloaded nvidia-cublas-cu12
+ Downloaded torch
+ Downloaded nvidia-cudnn-cu12
+Prepared 26 packages in 12.61s
+Installed 28 packages in 1.47s
+ + filelock==4.2.4
+ + fsspec==2026.9.0
+ + jinja2==3.1.6
+ + markupsafe==3.0.4
+ + mpmath==1.3.0
+ + networkx==3.7
+ + numpy==2.5.4
+ + nvidia-cublas-cu12==12.8.4.1
+ + nvidia-cuda-cupti-cu12==12.8.90
+ + nvidia-cuda-nvrtc-cu12==12.8.93
+ + nvidia-cuda-runtime-cu12==12.8.90
+ + nvidia-cudnn-cu12==9.10.2.21
+ + nvidia-cufft-cu12==11.3.3.83
+ + nvidia-cufile-cu12==1.13.1.3
+ + nvidia-curand-cu12==10.3.9.90
+ + nvidia-cusolver-cu12==11.7.3.90
+ + nvidia-cusparse-cu12==12.5.8.93
+ + nvidia-cusparselt-cu12==0.7.1
+ + nvidia-nccl-cu12==2.27.3
+ + nvidia-nvjitlink-cu12==12.8.93
+ + nvidia-nvtx-cu12==12.8.90
+ + pillow==13.0.0
+ + setuptools==84.2.1
+ + sympy==1.14.0
+ + torch==2.8.0+cu128
+ + torchvision==0.23.0+cu128
+ + triton==3.4.0
+ + typing-extensions==4.16.0
+Using Python 3.12.3 environment at: /dev/shm/qinzhen/originx-envs/policy
+Resolved 72 packages in 637ms
+   Building antlr4-python3-runtime==4.9.3
+Downloading tokenizers (3.1MiB)
+Downloading hf-xet (4.0MiB)
+Downloading networkx (2.0MiB)
+Downloading numpy (15.3MiB)
+Downloading pillow (6.3MiB)
+Downloading transformers (11.4MiB)
+Downloading setuptools (1.2MiB)
+Downloading opencv-python (70.4MiB)
+ Downloaded setuptools
+ Downloaded networkx
+ Downloaded tokenizers
+ Downloaded hf-xet
+ Downloaded pillow
+ Downloaded transformers
+ Downloaded numpy
+      Built antlr4-python3-runtime==4.9.3
+ Downloaded opencv-python
+Prepared 28 packages in 503ms
+Uninstalled 7 packages in 42ms
+Installed 52 packages in 144ms
+ + accelerate==1.11.0
+ + addict==2.4.0
+ + antlr4-python3-runtime==4.9.3
+ + certifi==2026.10.19
+ + charset-normalizer==3.5.2
+ + contourpy==1.3.3
+ + cycler==0.12.1
+ + einops==0.8.2
+ - filelock==4.2.4
+ + filelock==3.32.3
+ + fonttools==4.67.0
+ - fsspec==2026.9.0
+ + fsspec==2026.7.0
+ + hf-xet==1.7.0
+ + huggingface-hub==0.36.2
+ + hydra-core==1.3.2
+ + idna==3.20
+ + imageio==2.38.0
+ + imageio-ffmpeg==0.6.0
+ + iniconfig==2.3.1
+ + kiwisolver==1.5.1
+ + markdown-it-py==4.2.0
+ - markupsafe==3.0.4
+ + markupsafe==3.0.3
+ + matplotlib==3.11.2
+ + mdurl==0.1.2
+ + mmengine==0.10.7
+ + msgpack==1.2.3
+ - networkx==3.7
+ + networkx==3.6.1
+ - numpy==2.5.4
+ + numpy==2.1.3
+ + omegaconf==2.3.0
+ + opencv-python==5.0.0.93
+ + packaging==26.3
+ - pillow==13.0.0
+ + pillow==11.3.0
+ + platformdirs==4.13.5
+ + pluggy==1.7.0
+ + psutil==7.2.2
+ + pygments==2.21.0
+ + pyparsing==3.3.3
+ + pytest==9.1.1
+ + python-dateutil==3.0.0
+ + pyyaml==6.0.3
+ + regex==2026.9.29
+ + requests==2.34.2
+ + rich==15.0.0
+ + safetensors==0.6.2
+ - setuptools==84.2.1
+ + setuptools==78.1.0
+ + six==1.17.0
+ + termcolor==3.3.0
+ + tokenizers==0.22.2
+ + tqdm==4.70.1
+ + transformers==4.57.1
+ + tzdata==2026.5
+ + urllib3==2.8.0
+ + yapf==0.43.0
+2026-10-27T16:00:52Z ENV_DONE policy
+Using CPython 3.12.3 interpreter at: /usr/bin/python3.12
+Creating virtual environment at: /dev/shm/qinzhen/originx-envs/planner
+Activate with: source /dev/shm/qinzhen/originx-envs/planner/bin/activate
+Using Python 3.12.3 environment at: /dev/shm/qinzhen/originx-envs/planner
+Resolved 28 packages in 10ms
+Installed 28 packages in 1.44s
+ + filelock==4.2.4
+ + fsspec==2026.9.0
+ + jinja2==3.1.6
+ + markupsafe==3.0.4
+ + mpmath==1.3.0
+ + networkx==3.7
+ + numpy==2.5.4
+ + nvidia-cublas-cu12==12.8.4.1
+ + nvidia-cuda-cupti-cu12==12.8.90
+ + nvidia-cuda-nvrtc-cu12==12.8.93
+ + nvidia-cuda-runtime-cu12==12.8.90
+ + nvidia-cudnn-cu12==9.10.2.21
+ + nvidia-cufft-cu12==11.3.3.83
+ + nvidia-cufile-cu12==1.13.1.3
+ + nvidia-curand-cu12==10.3.9.90
+ + nvidia-cusolver-cu12==11.7.3.90
+ + nvidia-cusparse-cu12==12.5.8.93
+ + nvidia-cusparselt-cu12==0.7.1
+ + nvidia-nccl-cu12==2.27.3
+ + nvidia-nvjitlink-cu12==12.8.93
+ + nvidia-nvtx-cu12==12.8.90
+ + pillow==13.0.0
+ + setuptools==84.2.1
+ + sympy==1.14.0
+ + torch==2.8.0+cu128
+ + torchvision==0.23.0+cu128
+ + triton==3.4.0
+ + typing-extensions==4.16.0
+Using Python 3.12.3 environment at: /dev/shm/qinzhen/originx-envs/planner
+Resolved 60 packages in 73ms
+Downloading diffusers (5.4MiB)
+Downloading transformers (9.8MiB)
+ Downloaded diffusers
+ Downloaded transformers
+Prepared 14 packages in 119ms
+Uninstalled 7 packages in 42ms
+Installed 40 packages in 192ms
+ + accelerate==1.15.0
+ + annotated-doc==0.0.5
+ + anyio==4.15.1
+ + certifi==2026.10.19
+ + charset-normalizer==3.5.2
+ + click==8.5.0
+ + diffusers==0.39.0
+ - filelock==4.2.4
+ + filelock==3.32.3
+ - fsspec==2026.9.0
+ + fsspec==2026.7.0
+ + h11==0.16.0
+ + hf-xet==1.7.0
+ + httpcore==1.0.9
+ + httpx==0.28.1
+ + huggingface-hub==1.33.0
+ + idna==3.20
+ + imageio-ffmpeg==0.6.0
+ + importlib-metadata==9.1.0
+ + markdown-it-py==4.2.0
+ - markupsafe==3.0.4
+ + markupsafe==3.0.3
+ + mdurl==0.1.2
+ + msgpack==1.2.3
+ - networkx==3.7
+ + networkx==3.6.1
+ - numpy==2.5.4
+ + numpy==2.2.5
+ + packaging==26.3
+ - pillow==13.0.0
+ + pillow==11.3.0
+ + psutil==7.2.2
+ + pygments==2.21.0
+ + pyyaml==6.0.3
+ + regex==2026.9.29
+ + requests==2.34.2
+ + rich==15.0.0
+ + safetensors==0.8.0
+ - setuptools==84.2.1
+ + setuptools==78.1.0
+ + shellingham==1.5.4
+ + tokenizers==0.22.2
+ + tqdm==4.70.1
+ + transformers==5.5.0
+ + typer==0.27.3
+ + urllib3==2.8.0
+ + zipp==4.1.2
+2026-10-27T16:00:55Z ENV_DONE planner
+/dev/shm/qinzhen/flash_attn-2.8.3+cu12torch2.8cxx11abiTRUE-cp312-cp312-linux_x86_64.whl: OK
+Using Python 3.12.3 environment at: /dev/shm/qinzhen/originx-envs/policy
+Resolved 1 package in 2ms
+Prepared 1 package in 1.75s
+Installed 1 package in 558ms
+ + flash-attn==2.8.3+cu12torch2.8cxx11abitrue (from file:///dev/shm/qinzhen/flash_attn-2.8.3+cu12torch2.8cxx11abiTRUE-cp312-cp312-linux_x86_64.whl)
+2026-10-27T16:01:00Z FLASH_OK
+POLICY_OK 2.8.0+cu128 2.8.3 4.57.1 2.1.3
+PLANNER_OK 2.8.0+cu128 5.5.0 2.2.5
+== uv pip check policy
+Using Python 3.12.3 environment at: /dev/shm/qinzhen/originx-envs/policy
+Checked 74 packages in 2ms
+All installed packages are compatible
+== uv pip check planner
+Using Python 3.12.3 environment at: /dev/shm/qinzhen/originx-envs/planner
+Checked 61 packages in 1ms
+All installed packages are compatible
+6.6G	/dev/shm/qinzhen/originx-envs/planner
+7.8G	/dev/shm/qinzhen/originx-envs/policy
+728M	/dev/shm/qinzhen/originx-envs/sim
+2026-10-27T16:01:12Z ALL_ENVS_DONE

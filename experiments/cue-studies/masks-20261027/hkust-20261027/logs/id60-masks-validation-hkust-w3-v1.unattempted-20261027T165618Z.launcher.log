@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/ephemeral/qinzhen/originx-harness-v2/scripts/launch_id60_cell.py", line 207, in assert_port_free
+    probe.bind(("127.0.0.1", port))
+OSError: [Errno 98] Address already in use
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/ephemeral/qinzhen/originx-harness-v2/scripts/run_id60_masks_validation_local.py", line 838, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/ephemeral/qinzhen/originx-harness-v2/scripts/run_id60_masks_validation_local.py", line 834, in main
+    return launch(args, study, manifest, site, Path(args.output).resolve())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ephemeral/qinzhen/originx-harness-v2/scripts/run_id60_masks_validation_local.py", line 756, in launch
+    assert_port_free(row['planner_port'])
+  File "/ephemeral/qinzhen/originx-harness-v2/scripts/launch_id60_cell.py", line 209, in assert_port_free
+    raise RuntimeError(f"Port {port} is already occupied; existing processes will not be touched") from exc
+RuntimeError: Port 20292 is already occupied; existing processes will not be touched

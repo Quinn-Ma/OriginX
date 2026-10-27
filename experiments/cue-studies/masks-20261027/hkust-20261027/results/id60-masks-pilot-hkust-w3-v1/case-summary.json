@@ -1,0 +1,76 @@
+{
+  "accounted_cases": 6,
+  "cases": [
+    {
+      "case_id": "25f9e1c5443779e5ac699516f1c4487fd617b2c9617b35df0d07cdb4320dfadd",
+      "comparison_arm": "point",
+      "elapsed_seconds": 306.7590023049852,
+      "outcome_category": "task_success",
+      "reason": null,
+      "seed": 20261025,
+      "status": "success",
+      "steps": 294,
+      "worker": 0
+    },
+    {
+      "case_id": "3ce4b5ab8c1f85020a98eb42e0628b4bca8fbfad86befd586d4f01acf53d2d22",
+      "comparison_arm": "masks",
+      "elapsed_seconds": 623.2696978989989,
+      "outcome_category": "task_failure",
+      "reason": null,
+      "seed": 20261025,
+      "status": "failure",
+      "steps": 600,
+      "worker": 0
+    },
+    {
+      "case_id": "c09c9c6363dc82becefb41b3c3b647a70131d1c73af2088a9dffb716b8d5e65e",
+      "comparison_arm": "masks",
+      "elapsed_seconds": 606.4678707010462,
+      "outcome_category": "task_failure",
+      "reason": null,
+      "seed": 20261026,
+      "status": "failure",
+      "steps": 600,
+      "worker": 1
+    },
+    {
+      "case_id": "752243073776cb8d6c4d5d3da12c7c3f29da21ad18ad31d048078d678c1909c9",
+      "comparison_arm": "point",
+      "elapsed_seconds": 312.00038673798554,
+      "outcome_category": "task_success",
+      "reason": null,
+      "seed": 20261026,
+      "status": "success",
+      "steps": 305,
+      "worker": 1
+    },
+    {
+      "case_id": "cd599f1fc59c629bea15a45472b0cd2e93413122dff2349daf1a385b399e476c",
+      "comparison_arm": "point",
+      "elapsed_seconds": 585.9075056400034,
+      "outcome_category": "task_failure",
+      "reason": null,
+      "seed": 20261027,
+      "status": "failure",
+      "steps": 600,
+      "worker": 2
+    },
+    {
+      "case_id": "44502846dee3de3d0619b9c7d0c64e7cc788776b3846630d4312046d0e6420c3",
+      "comparison_arm": "masks",
+      "elapsed_seconds": 274.0191465730313,
+      "outcome_category": "task_success",
+      "reason": null,
+      "seed": 20261027,
+      "status": "success",
+      "steps": 303,
+      "worker": 2
+    }
+  ],
+  "completed_cases": 6,
+  "planned_cases": 6,
+  "prospective_validation": false,
+  "purpose": "masks_point_dev_pilot",
+  "workers": 3
+}

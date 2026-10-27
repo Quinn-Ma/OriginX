@@ -1,0 +1,3792 @@
+{
+  "status": "PILOT_ENGINEERING_OFFLINE_ANALYSIS",
+  "purpose": "masks_point_dev_pilot",
+  "prospective_evidence": false,
+  "formal_freeze_performed": false,
+  "effect_estimation_performed": false,
+  "manifest_sha256": "7c89c95a12e75ac4c95e5444e75b09c45cc269c3eafa036b7c135a6982d40c76",
+  "planned_pairs": 3,
+  "planned_cases": 6,
+  "source_files_match": true,
+  "source_mismatches": [],
+  "run": "runs/id60-masks-pilot-hkust-w3-v1",
+  "cases": [
+    {
+      "case_id": "25f9e1c5443779e5ac699516f1c4487fd617b2c9617b35df0d07cdb4320dfadd",
+      "seed": 20261025,
+      "task": "CoffeeSetupMug",
+      "comparison_arm": "point",
+      "pair_key": "e0c305bda12487313a215c823350d0de8b3359ce0e8357e23dee0dd19aff22a4",
+      "pair_index": 0,
+      "pair_position": 0,
+      "worker": 0,
+      "outcome": "success",
+      "category": "benchmark_success",
+      "reported_status": "success",
+      "reason": null,
+      "reported_outcome_category": "task_success",
+      "steps": 294,
+      "elapsed_seconds": 306.7590023049852,
+      "timing": {
+        "clock": "monotonic",
+        "contract": "composebrain_task_time_v1",
+        "engineering_only": false,
+        "excludes": [
+          "environment_reset",
+          "model_startup",
+          "post_terminal_logging",
+          "resource_close"
+        ],
+        "executed_control_steps": 294,
+        "includes": [
+          "online_augmentation",
+          "planning_and_verification",
+          "policy_rpc",
+          "online_rendering",
+          "execution",
+          "intermediate_logging"
+        ],
+        "start_boundary": "reset_return_first_observation_before_augmentation_or_planning",
+        "stop_boundary": "terminal_env_step_return_before_logging",
+        "success_completion_seconds": 299.6763598599937,
+        "task_elapsed_seconds": 299.6763598599937,
+        "terminal_control_steps": 294,
+        "terminal_observed": true,
+        "termination_reason": "success"
+      },
+      "integrity_issues": [],
+      "result_path": "runs/id60-masks-pilot-hkust-w3-v1/worker-0/run/results/25f9e1c5443779e5ac699516f1c4487fd617b2c9617b35df0d07cdb4320dfadd.json",
+      "result_sha256": "548ab4feb7e7f98f37e9a45f299f485099a055ae97f514a5a168c38cc729e7b5",
+      "journal_sha256": "c3cc695208c69c085147d49838e4ef6a1ec35a45ef75ab645b28d2b30d09ef6b",
+      "journal_record_count": 1827,
+      "initial_signature": {
+        "camera_names": [
+          "robot0_agentview_left",
+          "robot0_agentview_right",
+          "robot0_eye_in_hand"
+        ],
+        "candidates_all_sha256": "258b1d8e71245c4b860f12cc3d45c396c76d94158999f57e93700febdcd8e27a",
+        "candidates_visible_sha256": "499ad923f9b1b32cc18e43970c9d83ed5958749fd95eb6a3691f997998ad823b",
+        "initial_fingerprint": "962c94e2fc1167d293e0971b305243574f5a697a0bae8c5eac708eddcd2d94c5",
+        "instruction": "Pick the mug from the counter and place it under the coffee machine dispenser.",
+        "proprio": {
+          "dtype": "<f4",
+          "sha256": "b016e4613cc875e797e04a5bbc6687beb4ea18dc662058604c7a2eab69a28c53",
+          "shape": [
+            16
+          ]
+        },
+        "rgb": {
+          "dtype": "|u1",
+          "sha256": "ed9ba7e087e3d2c04a769db86e84fd5675f332eeebf03d53a1280cc6db743d39",
+          "shape": [
+            3,
+            256,
+            256,
+            3
+          ]
+        },
+        "shared_augmentation_sha256": "a8322ac54f0d9040fee2239adf223e27e5c0977a67807e1305c4acdf02f46393",
+        "step": 0
+      },
+      "initial_plan": [
+        {
+          "completion_predicate": "The mug is no longer on the counter and is being held by the robot.",
+          "instruction": "Pick up the mug from the counter.",
+          "operation": "grasp",
+          "primary_target_id": "O970ccd9b5f",
+          "related_entity_ids": []
+        },
+        {
+          "completion_predicate": "The mug is visible under the coffee machine dispenser.",
+          "instruction": "Place the mug under the coffee machine dispenser.",
+          "operation": "place",
+          "primary_target_id": "Rc56bdb0edb",
+          "related_entity_ids": []
+        }
+      ],
+      "pair_reference": null,
+      "natural_plan_matches_paired_reference": null,
+      "initial_gate_events": [
+        {
+          "sequence": 1,
+          "step": 0,
+          "payload": {
+            "kind": "initial_comparison",
+            "gate": {
+              "passed": null,
+              "role": "natural_first_arm_reference",
+              "comparison_arm": "point",
+              "injected": false
+            },
+            "actual": {
+              "initial_fingerprint": "962c94e2fc1167d293e0971b305243574f5a697a0bae8c5eac708eddcd2d94c5",
+              "rgb": {
+                "sha256": "ed9ba7e087e3d2c04a769db86e84fd5675f332eeebf03d53a1280cc6db743d39",
+                "dtype": "|u1",
+                "shape": [
+                  3,
+                  256,
+                  256,
+                  3
+                ]
+              },
+              "proprio": {
+                "sha256": "b016e4613cc875e797e04a5bbc6687beb4ea18dc662058604c7a2eab69a28c53",
+                "dtype": "<f4",
+                "shape": [
+                  16
+                ]
+              },
+              "instruction": "Pick the mug from the counter and place it under the coffee machine dispenser.",
+              "camera_names": [
+                "robot0_agentview_left",
+                "robot0_agentview_right",
+                "robot0_eye_in_hand"
+              ],
+              "step": 0,
+              "candidates_visible_sha256": "499ad923f9b1b32cc18e43970c9d83ed5958749fd95eb6a3691f997998ad823b",
+              "candidates_all_sha256": "258b1d8e71245c4b860f12cc3d45c396c76d94158999f57e93700febdcd8e27a",
+              "shared_augmentation_sha256": "a8322ac54f0d9040fee2239adf223e27e5c0977a67807e1305c4acdf02f46393"
+            }
+          }
+        }
+      ],
+      "natural_plan_gate_events": [
+        {
+          "sequence": 5,
+          "step": 0,
+          "payload": {
+            "kind": "initial_plan_comparison",
+            "role": "point",
+            "passed": null,
+            "pair_position": 0,
+            "expected_plan": null,
+            "natural_plan": [
+              {
+                "operation": "grasp",
+                "primary_target_id": "O970ccd9b5f",
+                "related_entity_ids": [],
+                "completion_predicate": "The mug is no longer on the counter and is being held by the robot.",
+                "instruction": "Pick up the mug from the counter."
+              },
+              {
+                "operation": "place",
+                "primary_target_id": "Rc56bdb0edb",
+                "related_entity_ids": [],
+                "completion_predicate": "The mug is visible under the coffee machine dispenser.",
+                "instruction": "Place the mug under the coffee machine dispenser."
+              }
+            ],
+            "injected": false
+          }
+        }
+      ],
+      "native_chunk_sha256": [
+        "b44cb5194c5db1b2131b0cf4b98b41348c10c3f75fe2add4e689e1286cc75efa",
+        "fbf12fd61cbe5758fa2ee9709ac6ce99e0a2d5c9e2950a79d177acfa49ac5fef",
+        "2fb1c4074934623b3b5f24ac1de70a008e6f2fb7f1c149cf6bfc6998023b1cf1",
+        "5711a536dac9c4dc32350a69ecc3106bd32ae5edab492cd2a79a43fde3896233",
+        "348ba22f95009a773724ea53d65186b40a7a14e88fd59bb10e55d46884576a49",
+        "c8799990537adedd20750e5a6cd89840f1bbf70c7055cb243822d75ceef0e38d",
+        "f6008ea3b7707b53b8a3ca3d3a17fb10289c168776c45f9f01d349f1b3543cea",
+        "8a9f19fa1d1d6b9a77f12ea516cf49fb685fe1690169ab5b1fdc48679809cec6",
+        "47470737776118aec3ffa2da6b28c0b952a18587313727844aeef7ae10048eed",
+        "6495f8a6b55b6370a30fbc3b8bf7c53bf4d2031e2dd19cd976112f9ba68571f5",
+        "5fdf8152f8c121458a0dd9157edfaf31723e31863d08bed16d8a175510e51bc3",
+        "9447aee591c8260255632a6c2316b6af2e1ceedd8179a747c76fe46712427801",
+        "f2f222edfc42a5b23a30c20b0d21e4f5b509c6e5a532a728c2f05766318431b4",
+        "a5bb809b21b578876910e2a8c503b2fd28d4f8622c660d5d0a7946811c6c35a5",
+        "786411222a04accb76d8e53fe7450cdf392c63aba9fe8c2a8f2e8bc5fa0967a7",
+        "9f01d86bb30d8630be93ed519bbaac4cd5ba4199c2758daf0ce77526d3c73e2c",
+        "9f90dfc6ce9b65ba18837ddd69918330965e1b62a3aca0143a3b2c7a603054df",
+        "eb8e9644fb842685d009e92241f57003caa31232dc5e277e79121c83b6a728da",
+        "e725b081751840c3eee898fdcd10da29f88ecfd45f0bdeba0e2495ec25a8057e"
+      ],
+      "event_counts": {
+        "prepare_events": 19,
+        "status_focused": 19,
+        "policy_segment_resets": 2,
+        "planner_calls": 21,
+        "planner_calls_plan": 1,
+        "planner_calls_step": 20,
+        "raw_resolve_generations": 20,
+        "stage_commits": 1,
+        "native_fallback_events": 0,
+        "parser_rejection_events": 0,
+        "selected_target_semantic_rejections": 0,
+        "reused_permanent_abstention_events": 0,
+        "raw_resolve_semantically_invalid": 0,
+        "generation_json_invalid": 0,
+        "raw_resolve_unparseable_with_server_rule": 0,
+        "raw_resolve_missing_field": 0
+      },
+      "final_xy": {
+        "status": "RECORDED_FINAL_XY",
+        "state_step": 294,
+        "xy_error_m": 0.03832116834892242,
+        "abs_z_error_m": 0.04290857585485508,
+        "subject_id": "O970ccd9b5f",
+        "destination_id": "Rc56bdb0edb",
+        "source": "Natural plan plus actual binding and logging-only recorded coordinates; not an oracle control input.",
+        "includes_unsuccessful_episode": false,
+        "threshold_used_for_control": false
+      },
+      "array_hash_status": "Descriptor/source integrity only here; complete NPZ byte audit is required separately before archival acceptance.",
+      "mask_fidelity": {
+        "events": 294,
+        "drawn_events": 0,
+        "status_counts": {
+          "point_control": 294
+        },
+        "arm_label_mismatch_events": 0,
+        "scope_issue_events": 0,
+        "events_without_mask_leaves": 0,
+        "point_cue_pixels_inside_masks": {
+          "events_reporting": 294,
+          "events_missing": 0,
+          "events_nonzero": 266,
+          "invalid_values": 0,
+          "max": 204,
+          "drawn_events_missing": 0,
+          "source_fields": {
+            "point_cue_pixels_inside_masks": 294
+          },
+          "requirement": null,
+          "interpretation": "Role-mask pixels changed by the frozen point-arm bbox/crosshair cue; descriptive only, never a fidelity requirement."
+        },
+        "by_operation": {
+          "grasp": {
+            "steps": 128,
+            "cameras": {
+              "robot0_agentview_left": {
+                "mask_available_steps": 128,
+                "drawn_steps": 0,
+                "roles": {
+                  "target": {
+                    "available_steps": 128,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_agentview_right": {
+                "mask_available_steps": 99,
+                "drawn_steps": 0,
+                "roles": {
+                  "target": {
+                    "available_steps": 99,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 0.7734375
+              },
+              "robot0_eye_in_hand": {
+                "mask_available_steps": 128,
+                "drawn_steps": 0,
+                "roles": {
+                  "target": {
+                    "available_steps": 128,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              }
+            }
+          },
+          "place": {
+            "steps": 166,
+            "cameras": {
+              "robot0_agentview_left": {
+                "mask_available_steps": 166,
+                "drawn_steps": 0,
+                "roles": {
+                  "destination": {
+                    "available_steps": 166,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  },
+                  "subject": {
+                    "available_steps": 166,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_agentview_right": {
+                "mask_available_steps": 166,
+                "drawn_steps": 0,
+                "roles": {
+                  "destination": {
+                    "available_steps": 166,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  },
+                  "subject": {
+                    "available_steps": 138,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_eye_in_hand": {
+                "mask_available_steps": 166,
+                "drawn_steps": 0,
+                "roles": {
+                  "destination": {
+                    "available_steps": 132,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  },
+                  "subject": {
+                    "available_steps": 166,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              }
+            }
+          }
+        },
+        "raw_counts": {
+          "events": 294,
+          "drawn_events": 0,
+          "status_counts": {
+            "point_control": 294
+          },
+          "arm_label_mismatch_events": 0,
+          "scope_issue_events": 0,
+          "events_without_mask_leaves": 0,
+          "point_cue_pixels_inside_masks": {
+            "events_reporting": 294,
+            "events_missing": 0,
+            "events_nonzero": 266,
+            "invalid_values": 0,
+            "max": 204,
+            "drawn_events_missing": 0,
+            "source_fields": {
+              "point_cue_pixels_inside_masks": 294
+            }
+          },
+          "by_operation": {
+            "grasp": {
+              "steps": 128,
+              "cameras": {
+                "robot0_agentview_left": {
+                  "mask_available_steps": 128,
+                  "drawn_steps": 0,
+                  "roles": {
+                    "target": {
+                      "available_steps": 128,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    }
+                  }
+                },
+                "robot0_agentview_right": {
+                  "mask_available_steps": 99,
+                  "drawn_steps": 0,
+                  "roles": {
+                    "target": {
+                      "available_steps": 99,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    }
+                  }
+                },
+                "robot0_eye_in_hand": {
+                  "mask_available_steps": 128,
+                  "drawn_steps": 0,
+                  "roles": {
+                    "target": {
+                      "available_steps": 128,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    }
+                  }
+                }
+              }
+            },
+            "place": {
+              "steps": 166,
+              "cameras": {
+                "robot0_agentview_left": {
+                  "mask_available_steps": 166,
+                  "drawn_steps": 0,
+                  "roles": {
+                    "destination": {
+                      "available_steps": 166,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    },
+                    "subject": {
+                      "available_steps": 166,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    }
+                  }
+                },
+                "robot0_agentview_right": {
+                  "mask_available_steps": 166,
+                  "drawn_steps": 0,
+                  "roles": {
+                    "destination": {
+                      "available_steps": 166,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    },
+                    "subject": {
+                      "available_steps": 138,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    }
+                  }
+                },
+                "robot0_eye_in_hand": {
+                  "mask_available_steps": 166,
+                  "drawn_steps": 0,
+                  "roles": {
+                    "destination": {
+                      "available_steps": 132,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    },
+                    "subject": {
+                      "available_steps": 166,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "camera_names": [
+          "robot0_agentview_left",
+          "robot0_agentview_right",
+          "robot0_eye_in_hand"
+        ],
+        "event_steps_match_observation_steps": true,
+        "point_cue_pixels_inside_masks_nonzero_steps": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      }
+    },
+    {
+      "case_id": "3ce4b5ab8c1f85020a98eb42e0628b4bca8fbfad86befd586d4f01acf53d2d22",
+      "seed": 20261025,
+      "task": "CoffeeSetupMug",
+      "comparison_arm": "masks",
+      "pair_key": "e0c305bda12487313a215c823350d0de8b3359ce0e8357e23dee0dd19aff22a4",
+      "pair_index": 0,
+      "pair_position": 1,
+      "worker": 0,
+      "outcome": "failure",
+      "category": "task_horizon_timeout",
+      "reported_status": "failure",
+      "reason": null,
+      "reported_outcome_category": "task_failure",
+      "steps": 600,
+      "elapsed_seconds": 623.2696978989989,
+      "timing": {
+        "clock": "monotonic",
+        "contract": "composebrain_task_time_v1",
+        "engineering_only": false,
+        "excludes": [
+          "environment_reset",
+          "model_startup",
+          "post_terminal_logging",
+          "resource_close"
+        ],
+        "executed_control_steps": 600,
+        "includes": [
+          "online_augmentation",
+          "planning_and_verification",
+          "policy_rpc",
+          "online_rendering",
+          "execution",
+          "intermediate_logging"
+        ],
+        "start_boundary": "reset_return_first_observation_before_augmentation_or_planning",
+        "stop_boundary": "terminal_env_step_return_before_logging",
+        "success_completion_seconds": null,
+        "task_elapsed_seconds": 617.2671829700121,
+        "terminal_control_steps": 600,
+        "terminal_observed": true,
+        "termination_reason": "environment_done"
+      },
+      "integrity_issues": [],
+      "result_path": "runs/id60-masks-pilot-hkust-w3-v1/worker-0/run/results/3ce4b5ab8c1f85020a98eb42e0628b4bca8fbfad86befd586d4f01acf53d2d22.json",
+      "result_sha256": "20e1f2e4c300633b5d0a667ab31202bff286bc901cde3644fb59e1955698dc83",
+      "journal_sha256": "bfae5b9d4e7ae580b57035237e8b5f514f2fc0b536d723cb5b47ad5773c6c71c",
+      "journal_record_count": 3720,
+      "initial_signature": {
+        "camera_names": [
+          "robot0_agentview_left",
+          "robot0_agentview_right",
+          "robot0_eye_in_hand"
+        ],
+        "candidates_all_sha256": "258b1d8e71245c4b860f12cc3d45c396c76d94158999f57e93700febdcd8e27a",
+        "candidates_visible_sha256": "499ad923f9b1b32cc18e43970c9d83ed5958749fd95eb6a3691f997998ad823b",
+        "initial_fingerprint": "962c94e2fc1167d293e0971b305243574f5a697a0bae8c5eac708eddcd2d94c5",
+        "instruction": "Pick the mug from the counter and place it under the coffee machine dispenser.",
+        "proprio": {
+          "dtype": "<f4",
+          "sha256": "b016e4613cc875e797e04a5bbc6687beb4ea18dc662058604c7a2eab69a28c53",
+          "shape": [
+            16
+          ]
+        },
+        "rgb": {
+          "dtype": "|u1",
+          "sha256": "ed9ba7e087e3d2c04a769db86e84fd5675f332eeebf03d53a1280cc6db743d39",
+          "shape": [
+            3,
+            256,
+            256,
+            3
+          ]
+        },
+        "shared_augmentation_sha256": "a8322ac54f0d9040fee2239adf223e27e5c0977a67807e1305c4acdf02f46393",
+        "step": 0
+      },
+      "initial_plan": [
+        {
+          "completion_predicate": "The mug is no longer on the counter and is being held by the robot.",
+          "instruction": "Pick up the mug from the counter.",
+          "operation": "grasp",
+          "primary_target_id": "O970ccd9b5f",
+          "related_entity_ids": []
+        },
+        {
+          "completion_predicate": "The mug is visible under the coffee machine dispenser.",
+          "instruction": "Place the mug under the coffee machine dispenser.",
+          "operation": "place",
+          "primary_target_id": "Rc56bdb0edb",
+          "related_entity_ids": []
+        }
+      ],
+      "pair_reference": {
+        "case_id": "25f9e1c5443779e5ac699516f1c4487fd617b2c9617b35df0d07cdb4320dfadd",
+        "comparison_arm": "point",
+        "expected_initial": {
+          "camera_names": [
+            "robot0_agentview_left",
+            "robot0_agentview_right",
+            "robot0_eye_in_hand"
+          ],
+          "candidates_all_sha256": "258b1d8e71245c4b860f12cc3d45c396c76d94158999f57e93700febdcd8e27a",
+          "candidates_visible_sha256": "499ad923f9b1b32cc18e43970c9d83ed5958749fd95eb6a3691f997998ad823b",
+          "initial_fingerprint": "962c94e2fc1167d293e0971b305243574f5a697a0bae8c5eac708eddcd2d94c5",
+          "instruction": "Pick the mug from the counter and place it under the coffee machine dispenser.",
+          "proprio": {
+            "dtype": "<f4",
+            "sha256": "b016e4613cc875e797e04a5bbc6687beb4ea18dc662058604c7a2eab69a28c53",
+            "shape": [
+              16
+            ]
+          },
+          "rgb": {
+            "dtype": "|u1",
+            "sha256": "ed9ba7e087e3d2c04a769db86e84fd5675f332eeebf03d53a1280cc6db743d39",
+            "shape": [
+              3,
+              256,
+              256,
+              3
+            ]
+          },
+          "shared_augmentation_sha256": "a8322ac54f0d9040fee2239adf223e27e5c0977a67807e1305c4acdf02f46393",
+          "step": 0
+        },
+        "expected_plan": [
+          {
+            "completion_predicate": "The mug is no longer on the counter and is being held by the robot.",
+            "instruction": "Pick up the mug from the counter.",
+            "operation": "grasp",
+            "primary_target_id": "O970ccd9b5f",
+            "related_entity_ids": []
+          },
+          {
+            "completion_predicate": "The mug is visible under the coffee machine dispenser.",
+            "instruction": "Place the mug under the coffee machine dispenser.",
+            "operation": "place",
+            "primary_target_id": "Rc56bdb0edb",
+            "related_entity_ids": []
+          }
+        ],
+        "injected": false,
+        "result_sha256": "548ab4feb7e7f98f37e9a45f299f485099a055ae97f514a5a168c38cc729e7b5"
+      },
+      "natural_plan_matches_paired_reference": true,
+      "initial_gate_events": [
+        {
+          "sequence": 1,
+          "step": 0,
+          "payload": {
+            "kind": "initial_comparison",
+            "gate": {
+              "passed": true,
+              "compared_fields": [
+                "initial_fingerprint",
+                "rgb",
+                "proprio",
+                "instruction",
+                "camera_names",
+                "step",
+                "candidates_visible_sha256",
+                "candidates_all_sha256",
+                "shared_augmentation_sha256"
+              ],
+              "excluded_run_identity_fields": [
+                "episode_id",
+                "recorded_utc"
+              ],
+              "claim": "Only explicitly compared initial fields are asserted equal."
+            },
+            "actual": {
+              "initial_fingerprint": "962c94e2fc1167d293e0971b305243574f5a697a0bae8c5eac708eddcd2d94c5",
+              "rgb": {
+                "sha256": "ed9ba7e087e3d2c04a769db86e84fd5675f332eeebf03d53a1280cc6db743d39",
+                "dtype": "|u1",
+                "shape": [
+                  3,
+                  256,
+                  256,
+                  3
+                ]
+              },
+              "proprio": {
+                "sha256": "b016e4613cc875e797e04a5bbc6687beb4ea18dc662058604c7a2eab69a28c53",
+                "dtype": "<f4",
+                "shape": [
+                  16
+                ]
+              },
+              "instruction": "Pick the mug from the counter and place it under the coffee machine dispenser.",
+              "camera_names": [
+                "robot0_agentview_left",
+                "robot0_agentview_right",
+                "robot0_eye_in_hand"
+              ],
+              "step": 0,
+              "candidates_visible_sha256": "499ad923f9b1b32cc18e43970c9d83ed5958749fd95eb6a3691f997998ad823b",
+              "candidates_all_sha256": "258b1d8e71245c4b860f12cc3d45c396c76d94158999f57e93700febdcd8e27a",
+              "shared_augmentation_sha256": "a8322ac54f0d9040fee2239adf223e27e5c0977a67807e1305c4acdf02f46393"
+            }
+          }
+        }
+      ],
+      "natural_plan_gate_events": [
+        {
+          "sequence": 5,
+          "step": 0,
+          "payload": {
+            "kind": "initial_plan_comparison",
+            "role": "masks",
+            "passed": true,
+            "pair_position": 1,
+            "expected_plan": [
+              {
+                "completion_predicate": "The mug is no longer on the counter and is being held by the robot.",
+                "instruction": "Pick up the mug from the counter.",
+                "operation": "grasp",
+                "primary_target_id": "O970ccd9b5f",
+                "related_entity_ids": []
+              },
+              {
+                "completion_predicate": "The mug is visible under the coffee machine dispenser.",
+                "instruction": "Place the mug under the coffee machine dispenser.",
+                "operation": "place",
+                "primary_target_id": "Rc56bdb0edb",
+                "related_entity_ids": []
+              }
+            ],
+            "natural_plan": [
+              {
+                "operation": "grasp",
+                "primary_target_id": "O970ccd9b5f",
+                "related_entity_ids": [],
+                "completion_predicate": "The mug is no longer on the counter and is being held by the robot.",
+                "instruction": "Pick up the mug from the counter."
+              },
+              {
+                "operation": "place",
+                "primary_target_id": "Rc56bdb0edb",
+                "related_entity_ids": [],
+                "completion_predicate": "The mug is visible under the coffee machine dispenser.",
+                "instruction": "Place the mug under the coffee machine dispenser."
+              }
+            ],
+            "injected": false
+          }
+        }
+      ],
+      "native_chunk_sha256": [
+        "dc3a4d4a89fffde5131ba6f96cf49676fb26d8e3e37b7806ef1b088fcb343dc0",
+        "79245da3879958c62a570d142c325843775e15fb2134c3981a0ddea7ad18acaa",
+        "07064627fe7d292a8de2d746bbaa68c4439dc46899fcf0d0a9f9634b8d41de21",
+        "fc8f0db153a332a5ed1614aa7bff7f7389409c598ea03733b969e79e62000e7a",
+        "b12c32edad56c03c3771d5dc9efdfbeb41ca878ddbd85773a7dd3368b688b353",
+        "e462ff0115530d28b1f647c752eb9ea09ff185938f54d5d0ecea752800a305d3",
+        "11192e2d1295489221e33320eed0aa61a25871a702d9f105f95a9471a93de306",
+        "b18be943cc92092d0473ede2f07b067fc00b493ca7ab8383944e1bb41869e220",
+        "cc6ed891579a0935b06fc57e9b2e46bf6707c596e30bb6c581a458fee36e2bd7",
+        "b88babfd56270454b34b77e9a5b1b4f06d56bb2192ba0dea29d3b41aebd62f66",
+        "37784287e1e617b66c65b642fb3a2b1e6e3695cc2e2da7fb9689e1b7656579b6",
+        "d9dd413f0e69e078214913142c7975fb83a5d56717e486bc5659059caa387fa2",
+        "2cd5f1c9a69bd150b5d3bd04b38b820fc5d5c45401a870f92943e2bef79ead8c",
+        "5ec5745ee773dbc94be7c7613acd0a5ce0255f0df1e8f7c2e7b528c5b867f297",
+        "d13c1861f377a9a8ac962608aaf96220597602e2cfc2b2508e68a64b696e035d",
+        "1e95b589a43550117693e7688f4846445c3664a57bfed9d2cfca30fa97073af2",
+        "e068831c27b3107cc8a2bfa7385f832a098728e7a6632ed8d44c669c32e291d2",
+        "edcf53f4599a93d20729ee59c5b0804339b5c4247fb2a0dd21c92d6828f1dbcb",
+        "cfb1a537ca57913dc67c426575e78a3a11320e9aa475937479b7187b817ad72b",
+        "8606d25bcc66b4acafdec87831def13663032f64fdf4d972a9ee5312d728c013",
+        "16a89c74f4d025ef0edaae54958a1b16080b19ce358d900b296c41b27c602501",
+        "6991eeb44078dbff64680fd3790e8f7d5a19442819134ab530072fb65b68c971",
+        "f3ac48316ec2fd970f955bdff1f0cd2cad1259f6475219435765e6b6933682cc",
+        "add48fad8da0c0408da834d7c67c058f06a62a9136a78bfd685ac21915d1b493",
+        "087f90bd98f5de22f11d472425bdf3f09d381dde70d81cb0db3e3a40f7343416",
+        "2d3a269a3219caddcb8713269b2eeb7f81cc4e570c0790daa302a3c7ba6dc7f6",
+        "dc4bd7874018f95495294d6a150d488acdebdfc7379f43b75538b7244a4af786",
+        "9644ce096a0fb34871028ad3f82a863e481023703eb73e35577f272706926a49",
+        "eeb2f8bcc80046bc7c9e283570b68492cfe8a46f34baf4773c022bc8fab1affc",
+        "a80fd6492bf6e9a6bd2661eab1021fb4426061ecdfdc73e2031e900b499754de",
+        "5e58dcc2cf0726cfdc6c5d796cc33fa30c538cf783c5daf70987732958e6641a",
+        "7299f54190c40f9b15d9e7da2fd4eb35a9618c891194a5b9d582d926b0f2d35d",
+        "70a9a23eeccd327ee07c6eeb85f7a66b2d407807fd1f842b5a78bba48aec6eaa",
+        "9c68e6098ea3f5b574343244eb7d2c24be25f3d54f5baba7f3dc6a3784170942",
+        "c1f371c07e2ed9d27305f970752e9d6dcadeb9f874762b37e6f2900aee07eae6",
+        "1747b581ade834ec22748585dcdb0a2764dcea86155ab74e18719eb69fdf0fb6",
+        "1a2e80258f0fd3eeb3b371bce321c98d581c2fa1552b3a5cfff72cfad557e1b9",
+        "825d17afd7dc7af636b8fb3b6429e49294c974b52a605b7c456fc1ffe49c2c76"
+      ],
+      "event_counts": {
+        "prepare_events": 38,
+        "status_focused": 38,
+        "policy_segment_resets": 2,
+        "planner_calls": 40,
+        "planner_calls_plan": 1,
+        "planner_calls_step": 39,
+        "raw_resolve_generations": 39,
+        "stage_commits": 1,
+        "native_fallback_events": 0,
+        "parser_rejection_events": 0,
+        "selected_target_semantic_rejections": 0,
+        "reused_permanent_abstention_events": 0,
+        "raw_resolve_semantically_invalid": 0,
+        "generation_json_invalid": 0,
+        "raw_resolve_unparseable_with_server_rule": 0,
+        "raw_resolve_missing_field": 0
+      },
+      "final_xy": {
+        "status": "RECORDED_FINAL_XY",
+        "state_step": 600,
+        "xy_error_m": 0.06329142103107617,
+        "abs_z_error_m": 0.04601239038788796,
+        "subject_id": "O970ccd9b5f",
+        "destination_id": "Rc56bdb0edb",
+        "source": "Natural plan plus actual binding and logging-only recorded coordinates; not an oracle control input.",
+        "includes_unsuccessful_episode": true,
+        "threshold_used_for_control": false
+      },
+      "array_hash_status": "Descriptor/source integrity only here; complete NPZ byte audit is required separately before archival acceptance.",
+      "mask_fidelity": {
+        "events": 600,
+        "drawn_events": 441,
+        "status_counts": {
+          "presented": 600
+        },
+        "arm_label_mismatch_events": 0,
+        "scope_issue_events": 0,
+        "events_without_mask_leaves": 0,
+        "inside_mask_pixels_changed": {
+          "events_reporting": 600,
+          "events_missing": 0,
+          "events_nonzero": 0,
+          "invalid_values": 0,
+          "max": 0,
+          "drawn_events_missing": 0,
+          "source_fields": {
+            "inside_mask_pixels_changed": 600
+          },
+          "requirement": "zero wherever reported (gate G5, masks arm only)",
+          "all_reported_zero": true,
+          "all_drawn_events_reported_zero": true
+        },
+        "by_operation": {
+          "grasp": {
+            "steps": 112,
+            "cameras": {
+              "robot0_agentview_left": {
+                "mask_available_steps": 112,
+                "drawn_steps": 112,
+                "roles": {
+                  "target": {
+                    "available_steps": 112,
+                    "drawn_steps": 112,
+                    "drawn_and_available_steps": 112,
+                    "drawn_fraction_of_stage_steps": 1.0,
+                    "drawn_fraction_when_mask_available": 1.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 1.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_agentview_right": {
+                "mask_available_steps": 112,
+                "drawn_steps": 112,
+                "roles": {
+                  "target": {
+                    "available_steps": 112,
+                    "drawn_steps": 112,
+                    "drawn_and_available_steps": 112,
+                    "drawn_fraction_of_stage_steps": 1.0,
+                    "drawn_fraction_when_mask_available": 1.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 1.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_eye_in_hand": {
+                "mask_available_steps": 112,
+                "drawn_steps": 112,
+                "roles": {
+                  "target": {
+                    "available_steps": 112,
+                    "drawn_steps": 112,
+                    "drawn_and_available_steps": 112,
+                    "drawn_fraction_of_stage_steps": 1.0,
+                    "drawn_fraction_when_mask_available": 1.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 1.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              }
+            }
+          },
+          "place": {
+            "steps": 488,
+            "cameras": {
+              "robot0_agentview_left": {
+                "mask_available_steps": 329,
+                "drawn_steps": 328,
+                "roles": {
+                  "destination": {
+                    "available_steps": 258,
+                    "drawn_steps": 249,
+                    "drawn_and_available_steps": 249,
+                    "drawn_fraction_of_stage_steps": 0.5102459016393442,
+                    "drawn_fraction_when_mask_available": 0.9651162790697675
+                  },
+                  "subject": {
+                    "available_steps": 326,
+                    "drawn_steps": 325,
+                    "drawn_and_available_steps": 325,
+                    "drawn_fraction_of_stage_steps": 0.6659836065573771,
+                    "drawn_fraction_when_mask_available": 0.9969325153374233
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.6721311475409836,
+                "mask_available_fraction_of_stage_steps": 0.6741803278688525
+              },
+              "robot0_agentview_right": {
+                "mask_available_steps": 322,
+                "drawn_steps": 322,
+                "roles": {
+                  "destination": {
+                    "available_steps": 322,
+                    "drawn_steps": 322,
+                    "drawn_and_available_steps": 322,
+                    "drawn_fraction_of_stage_steps": 0.6598360655737705,
+                    "drawn_fraction_when_mask_available": 1.0
+                  },
+                  "subject": {
+                    "available_steps": 281,
+                    "drawn_steps": 257,
+                    "drawn_and_available_steps": 257,
+                    "drawn_fraction_of_stage_steps": 0.5266393442622951,
+                    "drawn_fraction_when_mask_available": 0.9145907473309609
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.6598360655737705,
+                "mask_available_fraction_of_stage_steps": 0.6598360655737705
+              },
+              "robot0_eye_in_hand": {
+                "mask_available_steps": 306,
+                "drawn_steps": 306,
+                "roles": {
+                  "destination": {
+                    "available_steps": 274,
+                    "drawn_steps": 274,
+                    "drawn_and_available_steps": 274,
+                    "drawn_fraction_of_stage_steps": 0.5614754098360656,
+                    "drawn_fraction_when_mask_available": 1.0
+                  },
+                  "subject": {
+                    "available_steps": 304,
+                    "drawn_steps": 303,
+                    "drawn_and_available_steps": 303,
+                    "drawn_fraction_of_stage_steps": 0.6209016393442623,
+                    "drawn_fraction_when_mask_available": 0.9967105263157895
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.6270491803278688,
+                "mask_available_fraction_of_stage_steps": 0.6270491803278688
+              }
+            }
+          }
+        },
+        "raw_counts": {
+          "events": 600,
+          "drawn_events": 441,
+          "status_counts": {
+            "presented": 600
+          },
+          "arm_label_mismatch_events": 0,
+          "scope_issue_events": 0,
+          "events_without_mask_leaves": 0,
+          "inside_mask_pixels_changed": {
+            "events_reporting": 600,
+            "events_missing": 0,
+            "events_nonzero": 0,
+            "invalid_values": 0,
+            "max": 0,
+            "drawn_events_missing": 0,
+            "source_fields": {
+              "inside_mask_pixels_changed": 600
+            }
+          },
+          "by_operation": {
+            "grasp": {
+              "steps": 112,
+              "cameras": {
+                "robot0_agentview_left": {
+                  "mask_available_steps": 112,
+                  "drawn_steps": 112,
+                  "roles": {
+                    "target": {
+                      "available_steps": 112,
+                      "drawn_steps": 112,
+                      "drawn_and_available_steps": 112
+                    }
+                  }
+                },
+                "robot0_agentview_right": {
+                  "mask_available_steps": 112,
+                  "drawn_steps": 112,
+                  "roles": {
+                    "target": {
+                      "available_steps": 112,
+                      "drawn_steps": 112,
+                      "drawn_and_available_steps": 112
+                    }
+                  }
+                },
+                "robot0_eye_in_hand": {
+                  "mask_available_steps": 112,
+                  "drawn_steps": 112,
+                  "roles": {
+                    "target": {
+                      "available_steps": 112,
+                      "drawn_steps": 112,
+                      "drawn_and_available_steps": 112
+                    }
+                  }
+                }
+              }
+            },
+            "place": {
+              "steps": 488,
+              "cameras": {
+                "robot0_agentview_left": {
+                  "mask_available_steps": 329,
+                  "drawn_steps": 328,
+                  "roles": {
+                    "destination": {
+                      "available_steps": 258,
+                      "drawn_steps": 249,
+                      "drawn_and_available_steps": 249
+                    },
+                    "subject": {
+                      "available_steps": 326,
+                      "drawn_steps": 325,
+                      "drawn_and_available_steps": 325
+                    }
+                  }
+                },
+                "robot0_agentview_right": {
+                  "mask_available_steps": 322,
+                  "drawn_steps": 322,
+                  "roles": {
+                    "destination": {
+                      "available_steps": 322,
+                      "drawn_steps": 322,
+                      "drawn_and_available_steps": 322
+                    },
+                    "subject": {
+                      "available_steps": 281,
+                      "drawn_steps": 257,
+                      "drawn_and_available_steps": 257
+                    }
+                  }
+                },
+                "robot0_eye_in_hand": {
+                  "mask_available_steps": 306,
+                  "drawn_steps": 306,
+                  "roles": {
+                    "destination": {
+                      "available_steps": 274,
+                      "drawn_steps": 274,
+                      "drawn_and_available_steps": 274
+                    },
+                    "subject": {
+                      "available_steps": 304,
+                      "drawn_steps": 303,
+                      "drawn_and_available_steps": 303
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "camera_names": [
+          "robot0_agentview_left",
+          "robot0_agentview_right",
+          "robot0_eye_in_hand"
+        ],
+        "event_steps_match_observation_steps": true,
+        "inside_mask_pixels_changed_nonzero_steps": []
+      }
+    },
+    {
+      "case_id": "c09c9c6363dc82becefb41b3c3b647a70131d1c73af2088a9dffb716b8d5e65e",
+      "seed": 20261026,
+      "task": "CoffeeSetupMug",
+      "comparison_arm": "masks",
+      "pair_key": "5bdf39768e6cb2ca7251b58950b4c36a891cb9465810844ec472128f96d16848",
+      "pair_index": 1,
+      "pair_position": 0,
+      "worker": 1,
+      "outcome": "failure",
+      "category": "task_horizon_timeout",
+      "reported_status": "failure",
+      "reason": null,
+      "reported_outcome_category": "task_failure",
+      "steps": 600,
+      "elapsed_seconds": 606.4678707010462,
+      "timing": {
+        "clock": "monotonic",
+        "contract": "composebrain_task_time_v1",
+        "engineering_only": false,
+        "excludes": [
+          "environment_reset",
+          "model_startup",
+          "post_terminal_logging",
+          "resource_close"
+        ],
+        "executed_control_steps": 600,
+        "includes": [
+          "online_augmentation",
+          "planning_and_verification",
+          "policy_rpc",
+          "online_rendering",
+          "execution",
+          "intermediate_logging"
+        ],
+        "start_boundary": "reset_return_first_observation_before_augmentation_or_planning",
+        "stop_boundary": "terminal_env_step_return_before_logging",
+        "success_completion_seconds": null,
+        "task_elapsed_seconds": 597.1934146480053,
+        "terminal_control_steps": 600,
+        "terminal_observed": true,
+        "termination_reason": "environment_done"
+      },
+      "integrity_issues": [],
+      "result_path": "runs/id60-masks-pilot-hkust-w3-v1/worker-1/run/results/c09c9c6363dc82becefb41b3c3b647a70131d1c73af2088a9dffb716b8d5e65e.json",
+      "result_sha256": "47b9756cf0bee293ad4cf75307f5fe0e0dbe44a843c42f18f050d7da50be4cf3",
+      "journal_sha256": "73f0ea2be9c9ae25c957351a7e03999da2964f59762e4c8e84b5b47f767fb6ab",
+      "journal_record_count": 3720,
+      "initial_signature": {
+        "camera_names": [
+          "robot0_agentview_left",
+          "robot0_agentview_right",
+          "robot0_eye_in_hand"
+        ],
+        "candidates_all_sha256": "d06baa6991b2639104abac8f61442980e62b6a9d84cc62720cb29f39958ba62e",
+        "candidates_visible_sha256": "bae3470155eb8268822ee0b1c4100bdd5796dd3207f13f1a417891b6347cc1a8",
+        "initial_fingerprint": "cc34dd1847627e15ee398158e5407be44a8d20011aa2c1f7aa34ac215f4cfc35",
+        "instruction": "Pick the mug from the counter and place it under the coffee machine dispenser.",
+        "proprio": {
+          "dtype": "<f4",
+          "sha256": "c08f3b0dc37bf3e61e172fa9ed6b3e2cfdf7bdb58357d03f9ab2f809b8aa8207",
+          "shape": [
+            16
+          ]
+        },
+        "rgb": {
+          "dtype": "|u1",
+          "sha256": "25aa1e7d80d214b67856f02030a580881304cbd47e66cb3c540d3679c37164e4",
+          "shape": [
+            3,
+            256,
+            256,
+            3
+          ]
+        },
+        "shared_augmentation_sha256": "071c31f81652e3d28a2e553d2642b36226ff0c44931ca6d9a617a82bc0eac7ca",
+        "step": 0
+      },
+      "initial_plan": [
+        {
+          "completion_predicate": "The mug is no longer on the counter and is held by the robot.",
+          "instruction": "Pick up the mug from the counter.",
+          "operation": "grasp",
+          "primary_target_id": "O970ccd9b5f",
+          "related_entity_ids": []
+        },
+        {
+          "completion_predicate": "The mug is visible under the coffee machine dispenser.",
+          "instruction": "Place the mug under the coffee machine dispenser.",
+          "operation": "place",
+          "primary_target_id": "Rc56bdb0edb",
+          "related_entity_ids": []
+        }
+      ],
+      "pair_reference": null,
+      "natural_plan_matches_paired_reference": null,
+      "initial_gate_events": [
+        {
+          "sequence": 1,
+          "step": 0,
+          "payload": {
+            "kind": "initial_comparison",
+            "gate": {
+              "passed": null,
+              "role": "natural_first_arm_reference",
+              "comparison_arm": "masks",
+              "injected": false
+            },
+            "actual": {
+              "initial_fingerprint": "cc34dd1847627e15ee398158e5407be44a8d20011aa2c1f7aa34ac215f4cfc35",
+              "rgb": {
+                "sha256": "25aa1e7d80d214b67856f02030a580881304cbd47e66cb3c540d3679c37164e4",
+                "dtype": "|u1",
+                "shape": [
+                  3,
+                  256,
+                  256,
+                  3
+                ]
+              },
+              "proprio": {
+                "sha256": "c08f3b0dc37bf3e61e172fa9ed6b3e2cfdf7bdb58357d03f9ab2f809b8aa8207",
+                "dtype": "<f4",
+                "shape": [
+                  16
+                ]
+              },
+              "instruction": "Pick the mug from the counter and place it under the coffee machine dispenser.",
+              "camera_names": [
+                "robot0_agentview_left",
+                "robot0_agentview_right",
+                "robot0_eye_in_hand"
+              ],
+              "step": 0,
+              "candidates_visible_sha256": "bae3470155eb8268822ee0b1c4100bdd5796dd3207f13f1a417891b6347cc1a8",
+              "candidates_all_sha256": "d06baa6991b2639104abac8f61442980e62b6a9d84cc62720cb29f39958ba62e",
+              "shared_augmentation_sha256": "071c31f81652e3d28a2e553d2642b36226ff0c44931ca6d9a617a82bc0eac7ca"
+            }
+          }
+        }
+      ],
+      "natural_plan_gate_events": [
+        {
+          "sequence": 5,
+          "step": 0,
+          "payload": {
+            "kind": "initial_plan_comparison",
+            "role": "masks",
+            "passed": null,
+            "pair_position": 0,
+            "expected_plan": null,
+            "natural_plan": [
+              {
+                "operation": "grasp",
+                "primary_target_id": "O970ccd9b5f",
+                "related_entity_ids": [],
+                "completion_predicate": "The mug is no longer on the counter and is held by the robot.",
+                "instruction": "Pick up the mug from the counter."
+              },
+              {
+                "operation": "place",
+                "primary_target_id": "Rc56bdb0edb",
+                "related_entity_ids": [],
+                "completion_predicate": "The mug is visible under the coffee machine dispenser.",
+                "instruction": "Place the mug under the coffee machine dispenser."
+              }
+            ],
+            "injected": false
+          }
+        }
+      ],
+      "native_chunk_sha256": [
+        "8a4176027b30d5464d31aacb7f4fb323f7a921e8082b991e008fc0f30eaa2690",
+        "bedc071abadeecda7a0d78a801babb5426e25730cddc5003c23e96f43b7e8b8a",
+        "6ba028edc0727980d0b1bc9740c6c0f2be85f9e953d4503c93e0b54453b1a935",
+        "aecc0b59dca0c74ca8d0341e152237f21a65fa7a98b94b2594180cb65aecb565",
+        "69fe96782b976241e0d94b85a9b58a3a3574b6f86d63282e25a1bb005583698e",
+        "163796c24980befe059aee246bd254a94556a858a079c8bfe674368924f9cdd6",
+        "b02b2d901184fd41386a9c39d9c97bf43fef4fc817ff08df5fddd505827b7209",
+        "39233ff9f37b4318630e0643523e12a16237667dd3e346c3b8c6f5519d42e90c",
+        "241fcf5b03ab88bf91ae00402e770f357403990fe973f80ac8c92695ab94a046",
+        "b1868965935d3fe0ee8722409ca32c26a3e91a0a8d02f12016db1911d6f7370c",
+        "f1a78ed718493b24716a275aa228d98996fe1090d7bbc824b2c0ecd94adf717f",
+        "76b2ae4366674d6b2f32e1166fc9947e9d14b7d3db2bd5acb22871e07175e415",
+        "de160487b4e62142a345d867283e1575ca477a8a4f90c645ed6c90ef3989e86c",
+        "53357d543cf60910c4993c942db2b984e339c557090c4b186e4a3ac1f2a8fc66",
+        "f1d5affd18609e3354024223488704d5671f1e8c6c454340a4c89393e01fe5aa",
+        "2f42b73c6b1bfe7feaf190b154b6a7ec7987f3a17e1054344ffce1f37e1f134c",
+        "db5717e60429627a0da1fdbd59de0c6bf9060f342187043e2727e5c2a56303b8",
+        "c22037c8212dde818f3c48ef66de32c5398309d0c806c964458699318880297b",
+        "50e1d093364fbfc8da047ea003946c3e8a012463afa96a4a93fd41e13d2e2773",
+        "e0c61bac207c9cea5768d697479654aeb2f232e2355ef9cf1c4d78742563908a",
+        "e37691bc626a7e4880650e1d5f337c84afffaddb64fffa6ab9951538d751e8ac",
+        "aaa45eadbedc33d0198ab42bd8da20ad8072c13aada7bfb3e6db4c84149a1cea",
+        "ab405b9bc744bf2e83cf29e4a04a20247ccbd75c3d93baee1767a0a31f72a3b6",
+        "ec6d35465526685429e5d011ebe1ac90402f4c2ff5a12ab2088e3f05e477989a",
+        "cea3c733e5e3b9b8a8694cda12e88953629744416d0a83200240725bad4dd386",
+        "952353ffb3485eec187e79d2d0dae858a0a1d4bc0d1786801b97f239beb1827e",
+        "bf3398485231d3995dc7e2e50ababa188d3441293d8bdd9c326cab7d2a1a12b5",
+        "c9d5596455a1cb97d3bf8c755f0c31c7d5f83ac291d9cdc38a96c52c641f5a8a",
+        "5918a8eb9632e4b8691b7bd9d525764fe63d9e430018fdc2e038f86f1917a435",
+        "f68f6d294d06f97f0b384bd268aa4cbf13a2df7aa84377082b9578b144e9591f",
+        "cb1b9d0898253c99be345306109e4c4810cb74a2e586e37f724d8081257b4b0d",
+        "ca05dce3daa2377adb37ab970fed1bb0dac677bb12701bf3ba5ccd44e5c6b230",
+        "408c2e4c78d97365ed1cdb6dd6abd7b3f71badf70bee634148dd7a5394fc2bbd",
+        "9cbd8329619e305e9c112031e15bec5cfd01ddf33bed6340cc9da2c84bd86d9e",
+        "104feadcc85d15de415ca548e21fa05b3ea21dc0807c0944cd47582d973b171a",
+        "b0b5080ef8855b267641b156e2d4b5c1550f5ae9380b6ebc71009f193d66b9ec",
+        "66af5d04f7f31f139aaadd3e65766774185f401660909199a7fb45c11a8fc7c9",
+        "997cbf86667538fde6b8b7926441e2961c8f5cb14ec6e34c9d185ba92f0308ee"
+      ],
+      "event_counts": {
+        "prepare_events": 38,
+        "status_focused": 38,
+        "policy_segment_resets": 2,
+        "planner_calls": 40,
+        "planner_calls_plan": 1,
+        "planner_calls_step": 39,
+        "raw_resolve_generations": 39,
+        "stage_commits": 1,
+        "native_fallback_events": 0,
+        "parser_rejection_events": 0,
+        "selected_target_semantic_rejections": 0,
+        "reused_permanent_abstention_events": 0,
+        "raw_resolve_semantically_invalid": 0,
+        "generation_json_invalid": 0,
+        "raw_resolve_unparseable_with_server_rule": 0,
+        "raw_resolve_missing_field": 0
+      },
+      "final_xy": {
+        "status": "RECORDED_FINAL_XY",
+        "state_step": 600,
+        "xy_error_m": 0.04077467590235597,
+        "abs_z_error_m": 0.02595863540451382,
+        "subject_id": "O970ccd9b5f",
+        "destination_id": "Rc56bdb0edb",
+        "source": "Natural plan plus actual binding and logging-only recorded coordinates; not an oracle control input.",
+        "includes_unsuccessful_episode": true,
+        "threshold_used_for_control": false
+      },
+      "array_hash_status": "Descriptor/source integrity only here; complete NPZ byte audit is required separately before archival acceptance.",
+      "mask_fidelity": {
+        "events": 600,
+        "drawn_events": 600,
+        "status_counts": {
+          "presented": 600
+        },
+        "arm_label_mismatch_events": 0,
+        "scope_issue_events": 0,
+        "events_without_mask_leaves": 0,
+        "inside_mask_pixels_changed": {
+          "events_reporting": 600,
+          "events_missing": 0,
+          "events_nonzero": 0,
+          "invalid_values": 0,
+          "max": 0,
+          "drawn_events_missing": 0,
+          "source_fields": {
+            "inside_mask_pixels_changed": 600
+          },
+          "requirement": "zero wherever reported (gate G5, masks arm only)",
+          "all_reported_zero": true,
+          "all_drawn_events_reported_zero": true
+        },
+        "by_operation": {
+          "grasp": {
+            "steps": 160,
+            "cameras": {
+              "robot0_agentview_left": {
+                "mask_available_steps": 160,
+                "drawn_steps": 160,
+                "roles": {
+                  "target": {
+                    "available_steps": 160,
+                    "drawn_steps": 160,
+                    "drawn_and_available_steps": 160,
+                    "drawn_fraction_of_stage_steps": 1.0,
+                    "drawn_fraction_when_mask_available": 1.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 1.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_agentview_right": {
+                "mask_available_steps": 123,
+                "drawn_steps": 117,
+                "roles": {
+                  "target": {
+                    "available_steps": 123,
+                    "drawn_steps": 117,
+                    "drawn_and_available_steps": 117,
+                    "drawn_fraction_of_stage_steps": 0.73125,
+                    "drawn_fraction_when_mask_available": 0.9512195121951219
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.73125,
+                "mask_available_fraction_of_stage_steps": 0.76875
+              },
+              "robot0_eye_in_hand": {
+                "mask_available_steps": 160,
+                "drawn_steps": 160,
+                "roles": {
+                  "target": {
+                    "available_steps": 160,
+                    "drawn_steps": 160,
+                    "drawn_and_available_steps": 160,
+                    "drawn_fraction_of_stage_steps": 1.0,
+                    "drawn_fraction_when_mask_available": 1.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 1.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              }
+            }
+          },
+          "place": {
+            "steps": 440,
+            "cameras": {
+              "robot0_agentview_left": {
+                "mask_available_steps": 440,
+                "drawn_steps": 440,
+                "roles": {
+                  "destination": {
+                    "available_steps": 440,
+                    "drawn_steps": 440,
+                    "drawn_and_available_steps": 440,
+                    "drawn_fraction_of_stage_steps": 1.0,
+                    "drawn_fraction_when_mask_available": 1.0
+                  },
+                  "subject": {
+                    "available_steps": 440,
+                    "drawn_steps": 440,
+                    "drawn_and_available_steps": 440,
+                    "drawn_fraction_of_stage_steps": 1.0,
+                    "drawn_fraction_when_mask_available": 1.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 1.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_agentview_right": {
+                "mask_available_steps": 440,
+                "drawn_steps": 440,
+                "roles": {
+                  "destination": {
+                    "available_steps": 440,
+                    "drawn_steps": 435,
+                    "drawn_and_available_steps": 435,
+                    "drawn_fraction_of_stage_steps": 0.9886363636363636,
+                    "drawn_fraction_when_mask_available": 0.9886363636363636
+                  },
+                  "subject": {
+                    "available_steps": 435,
+                    "drawn_steps": 431,
+                    "drawn_and_available_steps": 431,
+                    "drawn_fraction_of_stage_steps": 0.9795454545454545,
+                    "drawn_fraction_when_mask_available": 0.9908045977011494
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 1.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_eye_in_hand": {
+                "mask_available_steps": 440,
+                "drawn_steps": 440,
+                "roles": {
+                  "destination": {
+                    "available_steps": 440,
+                    "drawn_steps": 440,
+                    "drawn_and_available_steps": 440,
+                    "drawn_fraction_of_stage_steps": 1.0,
+                    "drawn_fraction_when_mask_available": 1.0
+                  },
+                  "subject": {
+                    "available_steps": 440,
+                    "drawn_steps": 440,
+                    "drawn_and_available_steps": 440,
+                    "drawn_fraction_of_stage_steps": 1.0,
+                    "drawn_fraction_when_mask_available": 1.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 1.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              }
+            }
+          }
+        },
+        "raw_counts": {
+          "events": 600,
+          "drawn_events": 600,
+          "status_counts": {
+            "presented": 600
+          },
+          "arm_label_mismatch_events": 0,
+          "scope_issue_events": 0,
+          "events_without_mask_leaves": 0,
+          "inside_mask_pixels_changed": {
+            "events_reporting": 600,
+            "events_missing": 0,
+            "events_nonzero": 0,
+            "invalid_values": 0,
+            "max": 0,
+            "drawn_events_missing": 0,
+            "source_fields": {
+              "inside_mask_pixels_changed": 600
+            }
+          },
+          "by_operation": {
+            "grasp": {
+              "steps": 160,
+              "cameras": {
+                "robot0_agentview_left": {
+                  "mask_available_steps": 160,
+                  "drawn_steps": 160,
+                  "roles": {
+                    "target": {
+                      "available_steps": 160,
+                      "drawn_steps": 160,
+                      "drawn_and_available_steps": 160
+                    }
+                  }
+                },
+                "robot0_agentview_right": {
+                  "mask_available_steps": 123,
+                  "drawn_steps": 117,
+                  "roles": {
+                    "target": {
+                      "available_steps": 123,
+                      "drawn_steps": 117,
+                      "drawn_and_available_steps": 117
+                    }
+                  }
+                },
+                "robot0_eye_in_hand": {
+                  "mask_available_steps": 160,
+                  "drawn_steps": 160,
+                  "roles": {
+                    "target": {
+                      "available_steps": 160,
+                      "drawn_steps": 160,
+                      "drawn_and_available_steps": 160
+                    }
+                  }
+                }
+              }
+            },
+            "place": {
+              "steps": 440,
+              "cameras": {
+                "robot0_agentview_left": {
+                  "mask_available_steps": 440,
+                  "drawn_steps": 440,
+                  "roles": {
+                    "destination": {
+                      "available_steps": 440,
+                      "drawn_steps": 440,
+                      "drawn_and_available_steps": 440
+                    },
+                    "subject": {
+                      "available_steps": 440,
+                      "drawn_steps": 440,
+                      "drawn_and_available_steps": 440
+                    }
+                  }
+                },
+                "robot0_agentview_right": {
+                  "mask_available_steps": 440,
+                  "drawn_steps": 440,
+                  "roles": {
+                    "destination": {
+                      "available_steps": 440,
+                      "drawn_steps": 435,
+                      "drawn_and_available_steps": 435
+                    },
+                    "subject": {
+                      "available_steps": 435,
+                      "drawn_steps": 431,
+                      "drawn_and_available_steps": 431
+                    }
+                  }
+                },
+                "robot0_eye_in_hand": {
+                  "mask_available_steps": 440,
+                  "drawn_steps": 440,
+                  "roles": {
+                    "destination": {
+                      "available_steps": 440,
+                      "drawn_steps": 440,
+                      "drawn_and_available_steps": 440
+                    },
+                    "subject": {
+                      "available_steps": 440,
+                      "drawn_steps": 440,
+                      "drawn_and_available_steps": 440
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "camera_names": [
+          "robot0_agentview_left",
+          "robot0_agentview_right",
+          "robot0_eye_in_hand"
+        ],
+        "event_steps_match_observation_steps": true,
+        "inside_mask_pixels_changed_nonzero_steps": []
+      }
+    },
+    {
+      "case_id": "752243073776cb8d6c4d5d3da12c7c3f29da21ad18ad31d048078d678c1909c9",
+      "seed": 20261026,
+      "task": "CoffeeSetupMug",
+      "comparison_arm": "point",
+      "pair_key": "5bdf39768e6cb2ca7251b58950b4c36a891cb9465810844ec472128f96d16848",
+      "pair_index": 1,
+      "pair_position": 1,
+      "worker": 1,
+      "outcome": "success",
+      "category": "benchmark_success",
+      "reported_status": "success",
+      "reason": null,
+      "reported_outcome_category": "task_success",
+      "steps": 305,
+      "elapsed_seconds": 312.00038673798554,
+      "timing": {
+        "clock": "monotonic",
+        "contract": "composebrain_task_time_v1",
+        "engineering_only": false,
+        "excludes": [
+          "environment_reset",
+          "model_startup",
+          "post_terminal_logging",
+          "resource_close"
+        ],
+        "executed_control_steps": 305,
+        "includes": [
+          "online_augmentation",
+          "planning_and_verification",
+          "policy_rpc",
+          "online_rendering",
+          "execution",
+          "intermediate_logging"
+        ],
+        "start_boundary": "reset_return_first_observation_before_augmentation_or_planning",
+        "stop_boundary": "terminal_env_step_return_before_logging",
+        "success_completion_seconds": 304.8134867620538,
+        "task_elapsed_seconds": 304.8134867620538,
+        "terminal_control_steps": 305,
+        "terminal_observed": true,
+        "termination_reason": "success"
+      },
+      "integrity_issues": [],
+      "result_path": "runs/id60-masks-pilot-hkust-w3-v1/worker-1/run/results/752243073776cb8d6c4d5d3da12c7c3f29da21ad18ad31d048078d678c1909c9.json",
+      "result_sha256": "859423ba4578eb124724824f327fea5583c3ec1f63295b91d64dfe87b3788e96",
+      "journal_sha256": "3373ec96f8af6bca0283eb30f60f1ea2aa8fb474021ff31fbbc621816a872be1",
+      "journal_record_count": 1896,
+      "initial_signature": {
+        "camera_names": [
+          "robot0_agentview_left",
+          "robot0_agentview_right",
+          "robot0_eye_in_hand"
+        ],
+        "candidates_all_sha256": "d06baa6991b2639104abac8f61442980e62b6a9d84cc62720cb29f39958ba62e",
+        "candidates_visible_sha256": "bae3470155eb8268822ee0b1c4100bdd5796dd3207f13f1a417891b6347cc1a8",
+        "initial_fingerprint": "cc34dd1847627e15ee398158e5407be44a8d20011aa2c1f7aa34ac215f4cfc35",
+        "instruction": "Pick the mug from the counter and place it under the coffee machine dispenser.",
+        "proprio": {
+          "dtype": "<f4",
+          "sha256": "c08f3b0dc37bf3e61e172fa9ed6b3e2cfdf7bdb58357d03f9ab2f809b8aa8207",
+          "shape": [
+            16
+          ]
+        },
+        "rgb": {
+          "dtype": "|u1",
+          "sha256": "25aa1e7d80d214b67856f02030a580881304cbd47e66cb3c540d3679c37164e4",
+          "shape": [
+            3,
+            256,
+            256,
+            3
+          ]
+        },
+        "shared_augmentation_sha256": "071c31f81652e3d28a2e553d2642b36226ff0c44931ca6d9a617a82bc0eac7ca",
+        "step": 0
+      },
+      "initial_plan": [
+        {
+          "completion_predicate": "The mug is no longer on the counter and is held by the robot.",
+          "instruction": "Pick up the mug from the counter.",
+          "operation": "grasp",
+          "primary_target_id": "O970ccd9b5f",
+          "related_entity_ids": []
+        },
+        {
+          "completion_predicate": "The mug is visible under the coffee machine dispenser.",
+          "instruction": "Place the mug under the coffee machine dispenser.",
+          "operation": "place",
+          "primary_target_id": "Rc56bdb0edb",
+          "related_entity_ids": []
+        }
+      ],
+      "pair_reference": {
+        "case_id": "c09c9c6363dc82becefb41b3c3b647a70131d1c73af2088a9dffb716b8d5e65e",
+        "comparison_arm": "masks",
+        "expected_initial": {
+          "camera_names": [
+            "robot0_agentview_left",
+            "robot0_agentview_right",
+            "robot0_eye_in_hand"
+          ],
+          "candidates_all_sha256": "d06baa6991b2639104abac8f61442980e62b6a9d84cc62720cb29f39958ba62e",
+          "candidates_visible_sha256": "bae3470155eb8268822ee0b1c4100bdd5796dd3207f13f1a417891b6347cc1a8",
+          "initial_fingerprint": "cc34dd1847627e15ee398158e5407be44a8d20011aa2c1f7aa34ac215f4cfc35",
+          "instruction": "Pick the mug from the counter and place it under the coffee machine dispenser.",
+          "proprio": {
+            "dtype": "<f4",
+            "sha256": "c08f3b0dc37bf3e61e172fa9ed6b3e2cfdf7bdb58357d03f9ab2f809b8aa8207",
+            "shape": [
+              16
+            ]
+          },
+          "rgb": {
+            "dtype": "|u1",
+            "sha256": "25aa1e7d80d214b67856f02030a580881304cbd47e66cb3c540d3679c37164e4",
+            "shape": [
+              3,
+              256,
+              256,
+              3
+            ]
+          },
+          "shared_augmentation_sha256": "071c31f81652e3d28a2e553d2642b36226ff0c44931ca6d9a617a82bc0eac7ca",
+          "step": 0
+        },
+        "expected_plan": [
+          {
+            "completion_predicate": "The mug is no longer on the counter and is held by the robot.",
+            "instruction": "Pick up the mug from the counter.",
+            "operation": "grasp",
+            "primary_target_id": "O970ccd9b5f",
+            "related_entity_ids": []
+          },
+          {
+            "completion_predicate": "The mug is visible under the coffee machine dispenser.",
+            "instruction": "Place the mug under the coffee machine dispenser.",
+            "operation": "place",
+            "primary_target_id": "Rc56bdb0edb",
+            "related_entity_ids": []
+          }
+        ],
+        "injected": false,
+        "result_sha256": "47b9756cf0bee293ad4cf75307f5fe0e0dbe44a843c42f18f050d7da50be4cf3"
+      },
+      "natural_plan_matches_paired_reference": true,
+      "initial_gate_events": [
+        {
+          "sequence": 1,
+          "step": 0,
+          "payload": {
+            "kind": "initial_comparison",
+            "gate": {
+              "passed": true,
+              "compared_fields": [
+                "initial_fingerprint",
+                "rgb",
+                "proprio",
+                "instruction",
+                "camera_names",
+                "step",
+                "candidates_visible_sha256",
+                "candidates_all_sha256",
+                "shared_augmentation_sha256"
+              ],
+              "excluded_run_identity_fields": [
+                "episode_id",
+                "recorded_utc"
+              ],
+              "claim": "Only explicitly compared initial fields are asserted equal."
+            },
+            "actual": {
+              "initial_fingerprint": "cc34dd1847627e15ee398158e5407be44a8d20011aa2c1f7aa34ac215f4cfc35",
+              "rgb": {
+                "sha256": "25aa1e7d80d214b67856f02030a580881304cbd47e66cb3c540d3679c37164e4",
+                "dtype": "|u1",
+                "shape": [
+                  3,
+                  256,
+                  256,
+                  3
+                ]
+              },
+              "proprio": {
+                "sha256": "c08f3b0dc37bf3e61e172fa9ed6b3e2cfdf7bdb58357d03f9ab2f809b8aa8207",
+                "dtype": "<f4",
+                "shape": [
+                  16
+                ]
+              },
+              "instruction": "Pick the mug from the counter and place it under the coffee machine dispenser.",
+              "camera_names": [
+                "robot0_agentview_left",
+                "robot0_agentview_right",
+                "robot0_eye_in_hand"
+              ],
+              "step": 0,
+              "candidates_visible_sha256": "bae3470155eb8268822ee0b1c4100bdd5796dd3207f13f1a417891b6347cc1a8",
+              "candidates_all_sha256": "d06baa6991b2639104abac8f61442980e62b6a9d84cc62720cb29f39958ba62e",
+              "shared_augmentation_sha256": "071c31f81652e3d28a2e553d2642b36226ff0c44931ca6d9a617a82bc0eac7ca"
+            }
+          }
+        }
+      ],
+      "natural_plan_gate_events": [
+        {
+          "sequence": 5,
+          "step": 0,
+          "payload": {
+            "kind": "initial_plan_comparison",
+            "role": "point",
+            "passed": true,
+            "pair_position": 1,
+            "expected_plan": [
+              {
+                "completion_predicate": "The mug is no longer on the counter and is held by the robot.",
+                "instruction": "Pick up the mug from the counter.",
+                "operation": "grasp",
+                "primary_target_id": "O970ccd9b5f",
+                "related_entity_ids": []
+              },
+              {
+                "completion_predicate": "The mug is visible under the coffee machine dispenser.",
+                "instruction": "Place the mug under the coffee machine dispenser.",
+                "operation": "place",
+                "primary_target_id": "Rc56bdb0edb",
+                "related_entity_ids": []
+              }
+            ],
+            "natural_plan": [
+              {
+                "operation": "grasp",
+                "primary_target_id": "O970ccd9b5f",
+                "related_entity_ids": [],
+                "completion_predicate": "The mug is no longer on the counter and is held by the robot.",
+                "instruction": "Pick up the mug from the counter."
+              },
+              {
+                "operation": "place",
+                "primary_target_id": "Rc56bdb0edb",
+                "related_entity_ids": [],
+                "completion_predicate": "The mug is visible under the coffee machine dispenser.",
+                "instruction": "Place the mug under the coffee machine dispenser."
+              }
+            ],
+            "injected": false
+          }
+        }
+      ],
+      "native_chunk_sha256": [
+        "9296acb99473d947693cf4c1a81a4faa126b3cb79e9cef96547aaf4046cdac31",
+        "b853de2e3eb30eeaefab72b00f6a7cd110c32ebb212a6f231f31a018b693470d",
+        "8a9282152044621e656914aba892b6a00d401eda4dfeaedf17475a1b74ed9df2",
+        "77471a847df08d4f90411f72c028467abce45f1ce44b7bfbb4976a8b8cdfa136",
+        "777b6183a004ac0809259a2f1c6f3831f5167e954147b3ea18f1f82349ab287d",
+        "31aa04d695ba0d3799573ae8bccb4056bb0d716cc3f8acee98254be70e7302f7",
+        "6dc86fa255c70e504fd324c12e1f75f713aa41b6d9b553893b30959d9ad7b67a",
+        "930d74176f375e64fd13cbb7ab1a71dfba9a1a8b5853612d75309143a4efe4b0",
+        "55b03bdf172cf7508bb7f6eee151440998cd440942cb9aa413df0f2d67a5aba2",
+        "031aae1c3fff12e34d2ba95b666bcfa631ba958a18d2ac497b2c7a73ba8c0313",
+        "f3a8dd13e7a430abedc6815bb1e9b3c267f3a736874b07460c406669acd42565",
+        "7ad72e6030888a0d92dea33e4566d651266357c1f1509cfa1757c1de75864563",
+        "113e0d8ba187a1eeab03e0227d5333fbc2e366a53b8d866e5eed542e35cee017",
+        "9716d136d238cf0f03f0a755b588e4f8db2a7812e5475249d30092272002181c",
+        "d92a8ffa8032429234a641f9b29ae18e916a7108da3366b96537c730ec20483e",
+        "1bf062d5747f0740a78aad819c9bfa9ef3e5df243b4b7cf8065612a1a30341ff",
+        "c6d836b028416926b6b603225d7745bfdc9a6ea4834a4fb200a5d30e165b4241",
+        "d8bf2845b6294a2f24eeeefa3dc6c688d86a125e858f06bd3288a31af22325db",
+        "79b29df0a17e7fcb9785b0cc9b1ac0f8e6f4f4b1821f365f7a2a69b73ad985eb",
+        "7b16d2947d65f82353b015362c0a486d05a8167fa72f1c78bfcd78c447245fa7"
+      ],
+      "event_counts": {
+        "prepare_events": 20,
+        "status_focused": 20,
+        "policy_segment_resets": 2,
+        "planner_calls": 22,
+        "planner_calls_plan": 1,
+        "planner_calls_step": 21,
+        "raw_resolve_generations": 21,
+        "stage_commits": 1,
+        "native_fallback_events": 0,
+        "parser_rejection_events": 0,
+        "selected_target_semantic_rejections": 0,
+        "reused_permanent_abstention_events": 0,
+        "raw_resolve_semantically_invalid": 0,
+        "generation_json_invalid": 0,
+        "raw_resolve_unparseable_with_server_rule": 0,
+        "raw_resolve_missing_field": 0
+      },
+      "final_xy": {
+        "status": "RECORDED_FINAL_XY",
+        "state_step": 305,
+        "xy_error_m": 0.02248131030794388,
+        "abs_z_error_m": 0.043814144371611796,
+        "subject_id": "O970ccd9b5f",
+        "destination_id": "Rc56bdb0edb",
+        "source": "Natural plan plus actual binding and logging-only recorded coordinates; not an oracle control input.",
+        "includes_unsuccessful_episode": false,
+        "threshold_used_for_control": false
+      },
+      "array_hash_status": "Descriptor/source integrity only here; complete NPZ byte audit is required separately before archival acceptance.",
+      "mask_fidelity": {
+        "events": 305,
+        "drawn_events": 0,
+        "status_counts": {
+          "point_control": 305
+        },
+        "arm_label_mismatch_events": 0,
+        "scope_issue_events": 0,
+        "events_without_mask_leaves": 0,
+        "point_cue_pixels_inside_masks": {
+          "events_reporting": 305,
+          "events_missing": 0,
+          "events_nonzero": 305,
+          "invalid_values": 0,
+          "max": 205,
+          "drawn_events_missing": 0,
+          "source_fields": {
+            "point_cue_pixels_inside_masks": 305
+          },
+          "requirement": null,
+          "interpretation": "Role-mask pixels changed by the frozen point-arm bbox/crosshair cue; descriptive only, never a fidelity requirement."
+        },
+        "by_operation": {
+          "grasp": {
+            "steps": 144,
+            "cameras": {
+              "robot0_agentview_left": {
+                "mask_available_steps": 144,
+                "drawn_steps": 0,
+                "roles": {
+                  "target": {
+                    "available_steps": 144,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_agentview_right": {
+                "mask_available_steps": 97,
+                "drawn_steps": 0,
+                "roles": {
+                  "target": {
+                    "available_steps": 97,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 0.6736111111111112
+              },
+              "robot0_eye_in_hand": {
+                "mask_available_steps": 144,
+                "drawn_steps": 0,
+                "roles": {
+                  "target": {
+                    "available_steps": 144,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              }
+            }
+          },
+          "place": {
+            "steps": 161,
+            "cameras": {
+              "robot0_agentview_left": {
+                "mask_available_steps": 161,
+                "drawn_steps": 0,
+                "roles": {
+                  "destination": {
+                    "available_steps": 161,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  },
+                  "subject": {
+                    "available_steps": 161,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_agentview_right": {
+                "mask_available_steps": 152,
+                "drawn_steps": 0,
+                "roles": {
+                  "destination": {
+                    "available_steps": 128,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  },
+                  "subject": {
+                    "available_steps": 137,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 0.9440993788819876
+              },
+              "robot0_eye_in_hand": {
+                "mask_available_steps": 161,
+                "drawn_steps": 0,
+                "roles": {
+                  "destination": {
+                    "available_steps": 161,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  },
+                  "subject": {
+                    "available_steps": 161,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              }
+            }
+          }
+        },
+        "raw_counts": {
+          "events": 305,
+          "drawn_events": 0,
+          "status_counts": {
+            "point_control": 305
+          },
+          "arm_label_mismatch_events": 0,
+          "scope_issue_events": 0,
+          "events_without_mask_leaves": 0,
+          "point_cue_pixels_inside_masks": {
+            "events_reporting": 305,
+            "events_missing": 0,
+            "events_nonzero": 305,
+            "invalid_values": 0,
+            "max": 205,
+            "drawn_events_missing": 0,
+            "source_fields": {
+              "point_cue_pixels_inside_masks": 305
+            }
+          },
+          "by_operation": {
+            "grasp": {
+              "steps": 144,
+              "cameras": {
+                "robot0_agentview_left": {
+                  "mask_available_steps": 144,
+                  "drawn_steps": 0,
+                  "roles": {
+                    "target": {
+                      "available_steps": 144,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    }
+                  }
+                },
+                "robot0_agentview_right": {
+                  "mask_available_steps": 97,
+                  "drawn_steps": 0,
+                  "roles": {
+                    "target": {
+                      "available_steps": 97,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    }
+                  }
+                },
+                "robot0_eye_in_hand": {
+                  "mask_available_steps": 144,
+                  "drawn_steps": 0,
+                  "roles": {
+                    "target": {
+                      "available_steps": 144,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    }
+                  }
+                }
+              }
+            },
+            "place": {
+              "steps": 161,
+              "cameras": {
+                "robot0_agentview_left": {
+                  "mask_available_steps": 161,
+                  "drawn_steps": 0,
+                  "roles": {
+                    "destination": {
+                      "available_steps": 161,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    },
+                    "subject": {
+                      "available_steps": 161,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    }
+                  }
+                },
+                "robot0_agentview_right": {
+                  "mask_available_steps": 152,
+                  "drawn_steps": 0,
+                  "roles": {
+                    "destination": {
+                      "available_steps": 128,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    },
+                    "subject": {
+                      "available_steps": 137,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    }
+                  }
+                },
+                "robot0_eye_in_hand": {
+                  "mask_available_steps": 161,
+                  "drawn_steps": 0,
+                  "roles": {
+                    "destination": {
+                      "available_steps": 161,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    },
+                    "subject": {
+                      "available_steps": 161,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "camera_names": [
+          "robot0_agentview_left",
+          "robot0_agentview_right",
+          "robot0_eye_in_hand"
+        ],
+        "event_steps_match_observation_steps": true,
+        "point_cue_pixels_inside_masks_nonzero_steps": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      }
+    },
+    {
+      "case_id": "cd599f1fc59c629bea15a45472b0cd2e93413122dff2349daf1a385b399e476c",
+      "seed": 20261027,
+      "task": "CoffeeSetupMug",
+      "comparison_arm": "point",
+      "pair_key": "f9cc90e907c100246cc8822c005a59290f092481ec984d3bb02b3c1932b27a53",
+      "pair_index": 2,
+      "pair_position": 0,
+      "worker": 2,
+      "outcome": "failure",
+      "category": "task_horizon_timeout",
+      "reported_status": "failure",
+      "reason": null,
+      "reported_outcome_category": "task_failure",
+      "steps": 600,
+      "elapsed_seconds": 585.9075056400034,
+      "timing": {
+        "clock": "monotonic",
+        "contract": "composebrain_task_time_v1",
+        "engineering_only": false,
+        "excludes": [
+          "environment_reset",
+          "model_startup",
+          "post_terminal_logging",
+          "resource_close"
+        ],
+        "executed_control_steps": 600,
+        "includes": [
+          "online_augmentation",
+          "planning_and_verification",
+          "policy_rpc",
+          "online_rendering",
+          "execution",
+          "intermediate_logging"
+        ],
+        "start_boundary": "reset_return_first_observation_before_augmentation_or_planning",
+        "stop_boundary": "terminal_env_step_return_before_logging",
+        "success_completion_seconds": null,
+        "task_elapsed_seconds": 579.5205597470049,
+        "terminal_control_steps": 600,
+        "terminal_observed": true,
+        "termination_reason": "environment_done"
+      },
+      "integrity_issues": [],
+      "result_path": "runs/id60-masks-pilot-hkust-w3-v1/worker-2/run/results/cd599f1fc59c629bea15a45472b0cd2e93413122dff2349daf1a385b399e476c.json",
+      "result_sha256": "0ce3e934fd2937fcd91cd745ece71cfd14ae1a6032438912b343bf89733c0633",
+      "journal_sha256": "8a77867f5157b1757ed88f0cf47e0e9b0a01f831bb4f8e0bd310e359d1f67439",
+      "journal_record_count": 3720,
+      "initial_signature": {
+        "camera_names": [
+          "robot0_agentview_left",
+          "robot0_agentview_right",
+          "robot0_eye_in_hand"
+        ],
+        "candidates_all_sha256": "e3886e46052534475e0e880a30e514d22f699612efcc6a8c97cffba3f9d0ab2a",
+        "candidates_visible_sha256": "9914adbfcb4063619e10291467a5c22e0ccc3f1021f06d20185322b8d2871ebe",
+        "initial_fingerprint": "b0a830f9be98f1625abfa4a0e758fe192a85014d4e79346cd0716e6b16057684",
+        "instruction": "Pick the mug from the counter and place it under the coffee machine dispenser.",
+        "proprio": {
+          "dtype": "<f4",
+          "sha256": "5c11edd2ceedf5acb4672a9be9257c19edabadee3cc8e61c010b3255382215a5",
+          "shape": [
+            16
+          ]
+        },
+        "rgb": {
+          "dtype": "|u1",
+          "sha256": "dc104d1402da02f09cbd4100b14f6ac851b4ec9a7dccbd62168a58b835c745bf",
+          "shape": [
+            3,
+            256,
+            256,
+            3
+          ]
+        },
+        "shared_augmentation_sha256": "54ba1a830bcf1a27329826128bd038c32984eab243fef2fe80c6d3c5ac8cbc56",
+        "step": 0
+      },
+      "initial_plan": [
+        {
+          "completion_predicate": "The mug is no longer on the counter and is being held by the robot.",
+          "instruction": "Pick up the mug from the counter.",
+          "operation": "grasp",
+          "primary_target_id": "O970ccd9b5f",
+          "related_entity_ids": []
+        },
+        {
+          "completion_predicate": "The mug is visible under the coffee machine dispenser.",
+          "instruction": "Place the mug under the coffee machine dispenser.",
+          "operation": "place",
+          "primary_target_id": "R2bca244f69",
+          "related_entity_ids": []
+        }
+      ],
+      "pair_reference": null,
+      "natural_plan_matches_paired_reference": null,
+      "initial_gate_events": [
+        {
+          "sequence": 1,
+          "step": 0,
+          "payload": {
+            "kind": "initial_comparison",
+            "gate": {
+              "passed": null,
+              "role": "natural_first_arm_reference",
+              "comparison_arm": "point",
+              "injected": false
+            },
+            "actual": {
+              "initial_fingerprint": "b0a830f9be98f1625abfa4a0e758fe192a85014d4e79346cd0716e6b16057684",
+              "rgb": {
+                "sha256": "dc104d1402da02f09cbd4100b14f6ac851b4ec9a7dccbd62168a58b835c745bf",
+                "dtype": "|u1",
+                "shape": [
+                  3,
+                  256,
+                  256,
+                  3
+                ]
+              },
+              "proprio": {
+                "sha256": "5c11edd2ceedf5acb4672a9be9257c19edabadee3cc8e61c010b3255382215a5",
+                "dtype": "<f4",
+                "shape": [
+                  16
+                ]
+              },
+              "instruction": "Pick the mug from the counter and place it under the coffee machine dispenser.",
+              "camera_names": [
+                "robot0_agentview_left",
+                "robot0_agentview_right",
+                "robot0_eye_in_hand"
+              ],
+              "step": 0,
+              "candidates_visible_sha256": "9914adbfcb4063619e10291467a5c22e0ccc3f1021f06d20185322b8d2871ebe",
+              "candidates_all_sha256": "e3886e46052534475e0e880a30e514d22f699612efcc6a8c97cffba3f9d0ab2a",
+              "shared_augmentation_sha256": "54ba1a830bcf1a27329826128bd038c32984eab243fef2fe80c6d3c5ac8cbc56"
+            }
+          }
+        }
+      ],
+      "natural_plan_gate_events": [
+        {
+          "sequence": 5,
+          "step": 0,
+          "payload": {
+            "kind": "initial_plan_comparison",
+            "role": "point",
+            "passed": null,
+            "pair_position": 0,
+            "expected_plan": null,
+            "natural_plan": [
+              {
+                "operation": "grasp",
+                "primary_target_id": "O970ccd9b5f",
+                "related_entity_ids": [],
+                "completion_predicate": "The mug is no longer on the counter and is being held by the robot.",
+                "instruction": "Pick up the mug from the counter."
+              },
+              {
+                "operation": "place",
+                "primary_target_id": "R2bca244f69",
+                "related_entity_ids": [],
+                "completion_predicate": "The mug is visible under the coffee machine dispenser.",
+                "instruction": "Place the mug under the coffee machine dispenser."
+              }
+            ],
+            "injected": false
+          }
+        }
+      ],
+      "native_chunk_sha256": [
+        "3071afb08d0a2462185fbb84323f477fe3e45c5873860f6353c0a4a4b1fea39e",
+        "da0649589e53a4b4673dceadfd46275d5a4c254aeb0bc799adcc7d9117949c1c",
+        "5b1552d5c798e6a4d3196b9efe9747038e28b20eef26d95c17d6216305028c66",
+        "2c5f9414a8ef38fd402498eeda9ce14b41d39537994d909912f05911c3fb0eeb",
+        "08da2a242ffed42a35f88e02a1d506cd1fa69ff8ddd2e504f534d26f961a49e2",
+        "50576310b921fddbb440695e4df762bcff315ed210bf38f8901d4a6f87389949",
+        "985115e3dbcfc3a0e453f8fcad1b5528a5fbc8103ce7e903633bd9acf772e06e",
+        "3f2f5cb1155ced1d0e3f3742b3580476571da608bb749ababc4669a2234cf8b5",
+        "a3b1631e3f9caf9d96f37fe7f633b5c4e68951d7b59fa63a6a611c523fed62fc",
+        "97ec0e7ada6a96dacd16643b684104f26f1c5faeb5ea17c15530d17e54dd9719",
+        "4962909c9a2a6af6463e16d43b8280a25e087ff8b33ad2872b761fa85a44fc17",
+        "f849514644abaac8039d3fba51b317f2c9ac201c702b1b6f6632ae1111dcd396",
+        "2533364149b2abd6107511039d1a3917aa27af8e9c816fcc7da27eb6b5c33578",
+        "76345dec97bb5bbd632334e251845417118cdcd58f065412017d8e642950c93b",
+        "a14ca4eb129131302e8a86a4746685cfc0e24fe4f019bfc02373434533a183b5",
+        "a95900f0464b609e010e12a3156eb12ea4394962bd64adc8991f552acc7f1912",
+        "49e03ac9a5c9286d87f7229627756c01f9fffb68a65d8875cf2e40b735af2690",
+        "726ac07a0b0eb46893cb4c30f1a839c856522e92a8180ab47e89c1b4f350c4b7",
+        "45094e2a9c3f0ba97b97758cdc25c7d7bb06f9641e1f35599ea9002e6a2efb8e",
+        "6496fff0de4620abaf05d3ca747d08d8b14696f95cce4634db89091f35a044ec",
+        "254585a99a2e504a94884efb24c049c2dc6792425265f974ccd122e46c33fc4d",
+        "022998e066a1a1def86a31e4e16d999e7adcb4b4a538d46d97ac9f412f352104",
+        "a3d703f092296e930d687628f459e76ec00001044a82d05864c83e8983702da9",
+        "3c732006ac01777b47bfd628d0ce183ec89f909f6056c931c5915c72570bf4c2",
+        "4995fbd8428853b4cb9fd1d3b902c78a4201bca122aeebd6a0b035a7f0755afd",
+        "b987cfb8ee00084b3511261c78a6525ebf9ea1817d7bceed1c4bb5534e4d6da3",
+        "e24d236e2473a944fc80633a55fc48b0e7cdbf47764d24233ffee5985a241373",
+        "8bcbd8548ccc3118282df1f62e9a0710387592254b9dd628ace1712b185590a8",
+        "98413b3146b60c6629a550032bb26b2ff9baaf69a0b2165c1beaa557503022ea",
+        "5d65b414ff25543ee5ac9213e01a556ae3a69c429db9b91a39391614ac5ef2e2",
+        "b68b9e1242b33954da3ce6b427d63c89dc08d7db9a420810fc6dba15cd44bf31",
+        "97fbf541e07486272eb551cc2957f95d7c6f9e0afbfbd75158698abafa4a455d",
+        "8b6c3a851dfe193a0639c7d4dd7818d9f41168792abb450a2f19b7db57f13ec5",
+        "e32219512d12f74545fd9440995a7180eb9cbb1f916aff4d8da87699505bb3b8",
+        "3898c3f1c7c97192be3fd884ad6e8744c6524a09c346711cdc0c69678efefb55",
+        "8cfb7875366e6726000f38908dee978e91efe010cb0f74f31e7c6eaa868276a1",
+        "7177f267a0d063f40fac757e4245de24c350e1e7cb79fa80522d7f68e015ff3d",
+        "1c7604c2f6fd77038297f4de7b627117a19e0805c5ce9292ba6858234cbe58cd"
+      ],
+      "event_counts": {
+        "prepare_events": 38,
+        "status_focused": 38,
+        "policy_segment_resets": 2,
+        "planner_calls": 40,
+        "planner_calls_plan": 1,
+        "planner_calls_step": 39,
+        "raw_resolve_generations": 39,
+        "stage_commits": 1,
+        "native_fallback_events": 0,
+        "parser_rejection_events": 0,
+        "selected_target_semantic_rejections": 0,
+        "reused_permanent_abstention_events": 0,
+        "raw_resolve_semantically_invalid": 0,
+        "generation_json_invalid": 0,
+        "raw_resolve_unparseable_with_server_rule": 0,
+        "raw_resolve_missing_field": 0
+      },
+      "final_xy": {
+        "status": "RECORDED_FINAL_XY",
+        "state_step": 600,
+        "xy_error_m": 0.08445159809997495,
+        "abs_z_error_m": 0.0230720704104852,
+        "subject_id": "O970ccd9b5f",
+        "destination_id": "R2bca244f69",
+        "source": "Natural plan plus actual binding and logging-only recorded coordinates; not an oracle control input.",
+        "includes_unsuccessful_episode": true,
+        "threshold_used_for_control": false
+      },
+      "array_hash_status": "Descriptor/source integrity only here; complete NPZ byte audit is required separately before archival acceptance.",
+      "mask_fidelity": {
+        "events": 600,
+        "drawn_events": 0,
+        "status_counts": {
+          "point_control": 600
+        },
+        "arm_label_mismatch_events": 0,
+        "scope_issue_events": 0,
+        "events_without_mask_leaves": 0,
+        "point_cue_pixels_inside_masks": {
+          "events_reporting": 600,
+          "events_missing": 0,
+          "events_nonzero": 506,
+          "invalid_values": 0,
+          "max": 330,
+          "drawn_events_missing": 0,
+          "source_fields": {
+            "point_cue_pixels_inside_masks": 600
+          },
+          "requirement": null,
+          "interpretation": "Role-mask pixels changed by the frozen point-arm bbox/crosshair cue; descriptive only, never a fidelity requirement."
+        },
+        "by_operation": {
+          "grasp": {
+            "steps": 176,
+            "cameras": {
+              "robot0_agentview_left": {
+                "mask_available_steps": 176,
+                "drawn_steps": 0,
+                "roles": {
+                  "target": {
+                    "available_steps": 176,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_agentview_right": {
+                "mask_available_steps": 176,
+                "drawn_steps": 0,
+                "roles": {
+                  "target": {
+                    "available_steps": 176,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_eye_in_hand": {
+                "mask_available_steps": 176,
+                "drawn_steps": 0,
+                "roles": {
+                  "target": {
+                    "available_steps": 176,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              }
+            }
+          },
+          "place": {
+            "steps": 424,
+            "cameras": {
+              "robot0_agentview_left": {
+                "mask_available_steps": 424,
+                "drawn_steps": 0,
+                "roles": {
+                  "destination": {
+                    "available_steps": 424,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  },
+                  "subject": {
+                    "available_steps": 424,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_agentview_right": {
+                "mask_available_steps": 424,
+                "drawn_steps": 0,
+                "roles": {
+                  "destination": {
+                    "available_steps": 424,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  },
+                  "subject": {
+                    "available_steps": 409,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_eye_in_hand": {
+                "mask_available_steps": 424,
+                "drawn_steps": 0,
+                "roles": {
+                  "destination": {
+                    "available_steps": 424,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  },
+                  "subject": {
+                    "available_steps": 424,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              }
+            }
+          }
+        },
+        "raw_counts": {
+          "events": 600,
+          "drawn_events": 0,
+          "status_counts": {
+            "point_control": 600
+          },
+          "arm_label_mismatch_events": 0,
+          "scope_issue_events": 0,
+          "events_without_mask_leaves": 0,
+          "point_cue_pixels_inside_masks": {
+            "events_reporting": 600,
+            "events_missing": 0,
+            "events_nonzero": 506,
+            "invalid_values": 0,
+            "max": 330,
+            "drawn_events_missing": 0,
+            "source_fields": {
+              "point_cue_pixels_inside_masks": 600
+            }
+          },
+          "by_operation": {
+            "grasp": {
+              "steps": 176,
+              "cameras": {
+                "robot0_agentview_left": {
+                  "mask_available_steps": 176,
+                  "drawn_steps": 0,
+                  "roles": {
+                    "target": {
+                      "available_steps": 176,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    }
+                  }
+                },
+                "robot0_agentview_right": {
+                  "mask_available_steps": 176,
+                  "drawn_steps": 0,
+                  "roles": {
+                    "target": {
+                      "available_steps": 176,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    }
+                  }
+                },
+                "robot0_eye_in_hand": {
+                  "mask_available_steps": 176,
+                  "drawn_steps": 0,
+                  "roles": {
+                    "target": {
+                      "available_steps": 176,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    }
+                  }
+                }
+              }
+            },
+            "place": {
+              "steps": 424,
+              "cameras": {
+                "robot0_agentview_left": {
+                  "mask_available_steps": 424,
+                  "drawn_steps": 0,
+                  "roles": {
+                    "destination": {
+                      "available_steps": 424,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    },
+                    "subject": {
+                      "available_steps": 424,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    }
+                  }
+                },
+                "robot0_agentview_right": {
+                  "mask_available_steps": 424,
+                  "drawn_steps": 0,
+                  "roles": {
+                    "destination": {
+                      "available_steps": 424,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    },
+                    "subject": {
+                      "available_steps": 409,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    }
+                  }
+                },
+                "robot0_eye_in_hand": {
+                  "mask_available_steps": 424,
+                  "drawn_steps": 0,
+                  "roles": {
+                    "destination": {
+                      "available_steps": 424,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    },
+                    "subject": {
+                      "available_steps": 424,
+                      "drawn_steps": 0,
+                      "drawn_and_available_steps": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "camera_names": [
+          "robot0_agentview_left",
+          "robot0_agentview_right",
+          "robot0_eye_in_hand"
+        ],
+        "event_steps_match_observation_steps": true,
+        "point_cue_pixels_inside_masks_nonzero_steps": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      }
+    },
+    {
+      "case_id": "44502846dee3de3d0619b9c7d0c64e7cc788776b3846630d4312046d0e6420c3",
+      "seed": 20261027,
+      "task": "CoffeeSetupMug",
+      "comparison_arm": "masks",
+      "pair_key": "f9cc90e907c100246cc8822c005a59290f092481ec984d3bb02b3c1932b27a53",
+      "pair_index": 2,
+      "pair_position": 1,
+      "worker": 2,
+      "outcome": "success",
+      "category": "benchmark_success",
+      "reported_status": "success",
+      "reason": null,
+      "reported_outcome_category": "task_success",
+      "steps": 303,
+      "elapsed_seconds": 274.0191465730313,
+      "timing": {
+        "clock": "monotonic",
+        "contract": "composebrain_task_time_v1",
+        "engineering_only": false,
+        "excludes": [
+          "environment_reset",
+          "model_startup",
+          "post_terminal_logging",
+          "resource_close"
+        ],
+        "executed_control_steps": 303,
+        "includes": [
+          "online_augmentation",
+          "planning_and_verification",
+          "policy_rpc",
+          "online_rendering",
+          "execution",
+          "intermediate_logging"
+        ],
+        "start_boundary": "reset_return_first_observation_before_augmentation_or_planning",
+        "stop_boundary": "terminal_env_step_return_before_logging",
+        "success_completion_seconds": 267.8094847390312,
+        "task_elapsed_seconds": 267.8094847390312,
+        "terminal_control_steps": 303,
+        "terminal_observed": true,
+        "termination_reason": "success"
+      },
+      "integrity_issues": [],
+      "result_path": "runs/id60-masks-pilot-hkust-w3-v1/worker-2/run/results/44502846dee3de3d0619b9c7d0c64e7cc788776b3846630d4312046d0e6420c3.json",
+      "result_sha256": "0eff0259a1be9c1b59f4193b15f708f0a14187eb289df21998a4a2ccc01fcd62",
+      "journal_sha256": "d675b99d67b0eb86780fc7274d4124bfd9511f50bfcac3ac0fb1632ae9715c8f",
+      "journal_record_count": 1881,
+      "initial_signature": {
+        "camera_names": [
+          "robot0_agentview_left",
+          "robot0_agentview_right",
+          "robot0_eye_in_hand"
+        ],
+        "candidates_all_sha256": "e3886e46052534475e0e880a30e514d22f699612efcc6a8c97cffba3f9d0ab2a",
+        "candidates_visible_sha256": "9914adbfcb4063619e10291467a5c22e0ccc3f1021f06d20185322b8d2871ebe",
+        "initial_fingerprint": "b0a830f9be98f1625abfa4a0e758fe192a85014d4e79346cd0716e6b16057684",
+        "instruction": "Pick the mug from the counter and place it under the coffee machine dispenser.",
+        "proprio": {
+          "dtype": "<f4",
+          "sha256": "5c11edd2ceedf5acb4672a9be9257c19edabadee3cc8e61c010b3255382215a5",
+          "shape": [
+            16
+          ]
+        },
+        "rgb": {
+          "dtype": "|u1",
+          "sha256": "dc104d1402da02f09cbd4100b14f6ac851b4ec9a7dccbd62168a58b835c745bf",
+          "shape": [
+            3,
+            256,
+            256,
+            3
+          ]
+        },
+        "shared_augmentation_sha256": "54ba1a830bcf1a27329826128bd038c32984eab243fef2fe80c6d3c5ac8cbc56",
+        "step": 0
+      },
+      "initial_plan": [
+        {
+          "completion_predicate": "The mug is no longer on the counter and is being held by the robot.",
+          "instruction": "Pick up the mug from the counter.",
+          "operation": "grasp",
+          "primary_target_id": "O970ccd9b5f",
+          "related_entity_ids": []
+        },
+        {
+          "completion_predicate": "The mug is visible under the coffee machine dispenser.",
+          "instruction": "Place the mug under the coffee machine dispenser.",
+          "operation": "place",
+          "primary_target_id": "R2bca244f69",
+          "related_entity_ids": []
+        }
+      ],
+      "pair_reference": {
+        "case_id": "cd599f1fc59c629bea15a45472b0cd2e93413122dff2349daf1a385b399e476c",
+        "comparison_arm": "point",
+        "expected_initial": {
+          "camera_names": [
+            "robot0_agentview_left",
+            "robot0_agentview_right",
+            "robot0_eye_in_hand"
+          ],
+          "candidates_all_sha256": "e3886e46052534475e0e880a30e514d22f699612efcc6a8c97cffba3f9d0ab2a",
+          "candidates_visible_sha256": "9914adbfcb4063619e10291467a5c22e0ccc3f1021f06d20185322b8d2871ebe",
+          "initial_fingerprint": "b0a830f9be98f1625abfa4a0e758fe192a85014d4e79346cd0716e6b16057684",
+          "instruction": "Pick the mug from the counter and place it under the coffee machine dispenser.",
+          "proprio": {
+            "dtype": "<f4",
+            "sha256": "5c11edd2ceedf5acb4672a9be9257c19edabadee3cc8e61c010b3255382215a5",
+            "shape": [
+              16
+            ]
+          },
+          "rgb": {
+            "dtype": "|u1",
+            "sha256": "dc104d1402da02f09cbd4100b14f6ac851b4ec9a7dccbd62168a58b835c745bf",
+            "shape": [
+              3,
+              256,
+              256,
+              3
+            ]
+          },
+          "shared_augmentation_sha256": "54ba1a830bcf1a27329826128bd038c32984eab243fef2fe80c6d3c5ac8cbc56",
+          "step": 0
+        },
+        "expected_plan": [
+          {
+            "completion_predicate": "The mug is no longer on the counter and is being held by the robot.",
+            "instruction": "Pick up the mug from the counter.",
+            "operation": "grasp",
+            "primary_target_id": "O970ccd9b5f",
+            "related_entity_ids": []
+          },
+          {
+            "completion_predicate": "The mug is visible under the coffee machine dispenser.",
+            "instruction": "Place the mug under the coffee machine dispenser.",
+            "operation": "place",
+            "primary_target_id": "R2bca244f69",
+            "related_entity_ids": []
+          }
+        ],
+        "injected": false,
+        "result_sha256": "0ce3e934fd2937fcd91cd745ece71cfd14ae1a6032438912b343bf89733c0633"
+      },
+      "natural_plan_matches_paired_reference": true,
+      "initial_gate_events": [
+        {
+          "sequence": 1,
+          "step": 0,
+          "payload": {
+            "kind": "initial_comparison",
+            "gate": {
+              "passed": true,
+              "compared_fields": [
+                "initial_fingerprint",
+                "rgb",
+                "proprio",
+                "instruction",
+                "camera_names",
+                "step",
+                "candidates_visible_sha256",
+                "candidates_all_sha256",
+                "shared_augmentation_sha256"
+              ],
+              "excluded_run_identity_fields": [
+                "episode_id",
+                "recorded_utc"
+              ],
+              "claim": "Only explicitly compared initial fields are asserted equal."
+            },
+            "actual": {
+              "initial_fingerprint": "b0a830f9be98f1625abfa4a0e758fe192a85014d4e79346cd0716e6b16057684",
+              "rgb": {
+                "sha256": "dc104d1402da02f09cbd4100b14f6ac851b4ec9a7dccbd62168a58b835c745bf",
+                "dtype": "|u1",
+                "shape": [
+                  3,
+                  256,
+                  256,
+                  3
+                ]
+              },
+              "proprio": {
+                "sha256": "5c11edd2ceedf5acb4672a9be9257c19edabadee3cc8e61c010b3255382215a5",
+                "dtype": "<f4",
+                "shape": [
+                  16
+                ]
+              },
+              "instruction": "Pick the mug from the counter and place it under the coffee machine dispenser.",
+              "camera_names": [
+                "robot0_agentview_left",
+                "robot0_agentview_right",
+                "robot0_eye_in_hand"
+              ],
+              "step": 0,
+              "candidates_visible_sha256": "9914adbfcb4063619e10291467a5c22e0ccc3f1021f06d20185322b8d2871ebe",
+              "candidates_all_sha256": "e3886e46052534475e0e880a30e514d22f699612efcc6a8c97cffba3f9d0ab2a",
+              "shared_augmentation_sha256": "54ba1a830bcf1a27329826128bd038c32984eab243fef2fe80c6d3c5ac8cbc56"
+            }
+          }
+        }
+      ],
+      "natural_plan_gate_events": [
+        {
+          "sequence": 5,
+          "step": 0,
+          "payload": {
+            "kind": "initial_plan_comparison",
+            "role": "masks",
+            "passed": true,
+            "pair_position": 1,
+            "expected_plan": [
+              {
+                "completion_predicate": "The mug is no longer on the counter and is being held by the robot.",
+                "instruction": "Pick up the mug from the counter.",
+                "operation": "grasp",
+                "primary_target_id": "O970ccd9b5f",
+                "related_entity_ids": []
+              },
+              {
+                "completion_predicate": "The mug is visible under the coffee machine dispenser.",
+                "instruction": "Place the mug under the coffee machine dispenser.",
+                "operation": "place",
+                "primary_target_id": "R2bca244f69",
+                "related_entity_ids": []
+              }
+            ],
+            "natural_plan": [
+              {
+                "operation": "grasp",
+                "primary_target_id": "O970ccd9b5f",
+                "related_entity_ids": [],
+                "completion_predicate": "The mug is no longer on the counter and is being held by the robot.",
+                "instruction": "Pick up the mug from the counter."
+              },
+              {
+                "operation": "place",
+                "primary_target_id": "R2bca244f69",
+                "related_entity_ids": [],
+                "completion_predicate": "The mug is visible under the coffee machine dispenser.",
+                "instruction": "Place the mug under the coffee machine dispenser."
+              }
+            ],
+            "injected": false
+          }
+        }
+      ],
+      "native_chunk_sha256": [
+        "04886594d99b18cb5465fdff09b9de562a240106d44f2cc1d83a755796c01b6c",
+        "0a4d6596cece7d034bc8c80e227e530a01306e1b1c6d078ab138c6e8bf5d844c",
+        "ed5fc3efb121079fcb4c7be768fa4b290cee6df7858f3e264bc69f2c9d13cade",
+        "3110048257eed5daa176bb7b83739a843781dbc6e499147ef560dfe34dee498f",
+        "6ce98db3543690e76fb4fb8c0bc9ff259eba878e8b607b0ef5ee7dc7ab3e40bd",
+        "8043e21b39fb691eacca9a4f2f71e40cd30a1b10a8a2477d2ef60fce3bf9313b",
+        "a7e30579914387135fe387ebc78c33c36d0124b9db9c0d435e0349e306f89ddb",
+        "7c3f8f97c6c85b2e031a085e485a5ba4c0e6ce068e5edbab6d8afa7f323a50df",
+        "0324b59c5041223c5ee38d5c831bdd147c0959c6cb95982ad1c5c4c3caf34b10",
+        "4950a6e0902fff9a2e3cf8ecd99cb804e890fac88340d287565f2af6f93cf856",
+        "399a306c93b3cfcad778cf00f970f89ab3a98449bff1eb898ae4b8902c72d3a5",
+        "812e2793ee13996dcf2f977b4378322d80ff04ed67c6317fec712fb3a60ceb36",
+        "269e2ddb3afc0d21d8f95722916aa2b20432289e8a288beefab2381df670f1be",
+        "6b8ce92049bd2b66f95b8be68856c3445b27b8cf423e03aa64895c79eb6cf783",
+        "0a6bfa2206768e660febe8b88484429c390f7000b7d2d69c3402a0477dfc1b9e",
+        "8393b618ec8f4e537568b172b799642edde5318b71c28e1ffa5645eb09a40f98",
+        "f5db4ecf83e0fb155d260d2311db14d7c4f228fb3724fec8503c77a986ca5740",
+        "37e67d712e8ca7684cacc54dff8adf5a7e634d7de362c9d168a8a8613a8ca6bc",
+        "02cc29b659433f60d0f7428741931c9cb455ce488378be324078f8cfc5527084"
+      ],
+      "event_counts": {
+        "prepare_events": 19,
+        "status_focused": 19,
+        "policy_segment_resets": 2,
+        "planner_calls": 21,
+        "planner_calls_plan": 1,
+        "planner_calls_step": 20,
+        "raw_resolve_generations": 20,
+        "stage_commits": 1,
+        "native_fallback_events": 0,
+        "parser_rejection_events": 0,
+        "selected_target_semantic_rejections": 0,
+        "reused_permanent_abstention_events": 0,
+        "raw_resolve_semantically_invalid": 0,
+        "generation_json_invalid": 0,
+        "raw_resolve_unparseable_with_server_rule": 0,
+        "raw_resolve_missing_field": 0
+      },
+      "final_xy": {
+        "status": "RECORDED_FINAL_XY",
+        "state_step": 303,
+        "xy_error_m": 0.015339720302908933,
+        "abs_z_error_m": 0.04033573575499705,
+        "subject_id": "O970ccd9b5f",
+        "destination_id": "R2bca244f69",
+        "source": "Natural plan plus actual binding and logging-only recorded coordinates; not an oracle control input.",
+        "includes_unsuccessful_episode": false,
+        "threshold_used_for_control": false
+      },
+      "array_hash_status": "Descriptor/source integrity only here; complete NPZ byte audit is required separately before archival acceptance.",
+      "mask_fidelity": {
+        "events": 303,
+        "drawn_events": 303,
+        "status_counts": {
+          "presented": 303
+        },
+        "arm_label_mismatch_events": 0,
+        "scope_issue_events": 0,
+        "events_without_mask_leaves": 0,
+        "inside_mask_pixels_changed": {
+          "events_reporting": 303,
+          "events_missing": 0,
+          "events_nonzero": 0,
+          "invalid_values": 0,
+          "max": 0,
+          "drawn_events_missing": 0,
+          "source_fields": {
+            "inside_mask_pixels_changed": 303
+          },
+          "requirement": "zero wherever reported (gate G5, masks arm only)",
+          "all_reported_zero": true,
+          "all_drawn_events_reported_zero": true
+        },
+        "by_operation": {
+          "grasp": {
+            "steps": 192,
+            "cameras": {
+              "robot0_agentview_left": {
+                "mask_available_steps": 192,
+                "drawn_steps": 192,
+                "roles": {
+                  "target": {
+                    "available_steps": 192,
+                    "drawn_steps": 192,
+                    "drawn_and_available_steps": 192,
+                    "drawn_fraction_of_stage_steps": 1.0,
+                    "drawn_fraction_when_mask_available": 1.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 1.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_agentview_right": {
+                "mask_available_steps": 192,
+                "drawn_steps": 192,
+                "roles": {
+                  "target": {
+                    "available_steps": 192,
+                    "drawn_steps": 192,
+                    "drawn_and_available_steps": 192,
+                    "drawn_fraction_of_stage_steps": 1.0,
+                    "drawn_fraction_when_mask_available": 1.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 1.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_eye_in_hand": {
+                "mask_available_steps": 192,
+                "drawn_steps": 192,
+                "roles": {
+                  "target": {
+                    "available_steps": 192,
+                    "drawn_steps": 192,
+                    "drawn_and_available_steps": 192,
+                    "drawn_fraction_of_stage_steps": 1.0,
+                    "drawn_fraction_when_mask_available": 1.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 1.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              }
+            }
+          },
+          "place": {
+            "steps": 111,
+            "cameras": {
+              "robot0_agentview_left": {
+                "mask_available_steps": 111,
+                "drawn_steps": 111,
+                "roles": {
+                  "destination": {
+                    "available_steps": 111,
+                    "drawn_steps": 111,
+                    "drawn_and_available_steps": 111,
+                    "drawn_fraction_of_stage_steps": 1.0,
+                    "drawn_fraction_when_mask_available": 1.0
+                  },
+                  "subject": {
+                    "available_steps": 111,
+                    "drawn_steps": 88,
+                    "drawn_and_available_steps": 88,
+                    "drawn_fraction_of_stage_steps": 0.7927927927927928,
+                    "drawn_fraction_when_mask_available": 0.7927927927927928
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 1.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_agentview_right": {
+                "mask_available_steps": 111,
+                "drawn_steps": 111,
+                "roles": {
+                  "destination": {
+                    "available_steps": 111,
+                    "drawn_steps": 111,
+                    "drawn_and_available_steps": 111,
+                    "drawn_fraction_of_stage_steps": 1.0,
+                    "drawn_fraction_when_mask_available": 1.0
+                  },
+                  "subject": {
+                    "available_steps": 111,
+                    "drawn_steps": 111,
+                    "drawn_and_available_steps": 111,
+                    "drawn_fraction_of_stage_steps": 1.0,
+                    "drawn_fraction_when_mask_available": 1.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 1.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_eye_in_hand": {
+                "mask_available_steps": 111,
+                "drawn_steps": 111,
+                "roles": {
+                  "destination": {
+                    "available_steps": 111,
+                    "drawn_steps": 111,
+                    "drawn_and_available_steps": 111,
+                    "drawn_fraction_of_stage_steps": 1.0,
+                    "drawn_fraction_when_mask_available": 1.0
+                  },
+                  "subject": {
+                    "available_steps": 111,
+                    "drawn_steps": 80,
+                    "drawn_and_available_steps": 80,
+                    "drawn_fraction_of_stage_steps": 0.7207207207207207,
+                    "drawn_fraction_when_mask_available": 0.7207207207207207
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 1.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              }
+            }
+          }
+        },
+        "raw_counts": {
+          "events": 303,
+          "drawn_events": 303,
+          "status_counts": {
+            "presented": 303
+          },
+          "arm_label_mismatch_events": 0,
+          "scope_issue_events": 0,
+          "events_without_mask_leaves": 0,
+          "inside_mask_pixels_changed": {
+            "events_reporting": 303,
+            "events_missing": 0,
+            "events_nonzero": 0,
+            "invalid_values": 0,
+            "max": 0,
+            "drawn_events_missing": 0,
+            "source_fields": {
+              "inside_mask_pixels_changed": 303
+            }
+          },
+          "by_operation": {
+            "grasp": {
+              "steps": 192,
+              "cameras": {
+                "robot0_agentview_left": {
+                  "mask_available_steps": 192,
+                  "drawn_steps": 192,
+                  "roles": {
+                    "target": {
+                      "available_steps": 192,
+                      "drawn_steps": 192,
+                      "drawn_and_available_steps": 192
+                    }
+                  }
+                },
+                "robot0_agentview_right": {
+                  "mask_available_steps": 192,
+                  "drawn_steps": 192,
+                  "roles": {
+                    "target": {
+                      "available_steps": 192,
+                      "drawn_steps": 192,
+                      "drawn_and_available_steps": 192
+                    }
+                  }
+                },
+                "robot0_eye_in_hand": {
+                  "mask_available_steps": 192,
+                  "drawn_steps": 192,
+                  "roles": {
+                    "target": {
+                      "available_steps": 192,
+                      "drawn_steps": 192,
+                      "drawn_and_available_steps": 192
+                    }
+                  }
+                }
+              }
+            },
+            "place": {
+              "steps": 111,
+              "cameras": {
+                "robot0_agentview_left": {
+                  "mask_available_steps": 111,
+                  "drawn_steps": 111,
+                  "roles": {
+                    "destination": {
+                      "available_steps": 111,
+                      "drawn_steps": 111,
+                      "drawn_and_available_steps": 111
+                    },
+                    "subject": {
+                      "available_steps": 111,
+                      "drawn_steps": 88,
+                      "drawn_and_available_steps": 88
+                    }
+                  }
+                },
+                "robot0_agentview_right": {
+                  "mask_available_steps": 111,
+                  "drawn_steps": 111,
+                  "roles": {
+                    "destination": {
+                      "available_steps": 111,
+                      "drawn_steps": 111,
+                      "drawn_and_available_steps": 111
+                    },
+                    "subject": {
+                      "available_steps": 111,
+                      "drawn_steps": 111,
+                      "drawn_and_available_steps": 111
+                    }
+                  }
+                },
+                "robot0_eye_in_hand": {
+                  "mask_available_steps": 111,
+                  "drawn_steps": 111,
+                  "roles": {
+                    "destination": {
+                      "available_steps": 111,
+                      "drawn_steps": 111,
+                      "drawn_and_available_steps": 111
+                    },
+                    "subject": {
+                      "available_steps": 111,
+                      "drawn_steps": 80,
+                      "drawn_and_available_steps": 80
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "camera_names": [
+          "robot0_agentview_left",
+          "robot0_agentview_right",
+          "robot0_eye_in_hand"
+        ],
+        "event_steps_match_observation_steps": true,
+        "inside_mask_pixels_changed_nonzero_steps": []
+      }
+    }
+  ],
+  "pair_integrity": [
+    {
+      "seed": 20261025,
+      "pair_index": 0,
+      "complete": true,
+      "eligible": true
+    },
+    {
+      "seed": 20261026,
+      "pair_index": 1,
+      "complete": true,
+      "eligible": true
+    },
+    {
+      "seed": 20261027,
+      "pair_index": 2,
+      "complete": true,
+      "eligible": true
+    }
+  ],
+  "g9_complete_trace_gate": {
+    "passed": true,
+    "expected_traces": 6,
+    "complete_valid_traces": 6,
+    "invalid_or_missing_case_ids": [],
+    "mask_event_cadence_issues": []
+  },
+  "descriptive_outcome_counts": {
+    "point": {
+      "success": 2,
+      "failure": 1
+    },
+    "masks": {
+      "failure": 2,
+      "success": 1
+    }
+  },
+  "fidelity": {
+    "descriptive_only": true,
+    "conditions_primary_analysis": false,
+    "event_kind": "mask_presentation",
+    "arms": {
+      "point": {
+        "events": 1199,
+        "drawn_events": 0,
+        "status_counts": {
+          "point_control": 1199
+        },
+        "arm_label_mismatch_events": 0,
+        "scope_issue_events": 0,
+        "events_without_mask_leaves": 0,
+        "point_cue_pixels_inside_masks": {
+          "events_reporting": 1199,
+          "events_missing": 0,
+          "events_nonzero": 1077,
+          "invalid_values": 0,
+          "max": 330,
+          "drawn_events_missing": 0,
+          "source_fields": {
+            "point_cue_pixels_inside_masks": 1199
+          },
+          "requirement": null,
+          "interpretation": "Role-mask pixels changed by the frozen point-arm bbox/crosshair cue; descriptive only, never a fidelity requirement."
+        },
+        "by_operation": {
+          "grasp": {
+            "steps": 448,
+            "cameras": {
+              "robot0_agentview_left": {
+                "mask_available_steps": 448,
+                "drawn_steps": 0,
+                "roles": {
+                  "target": {
+                    "available_steps": 448,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_agentview_right": {
+                "mask_available_steps": 372,
+                "drawn_steps": 0,
+                "roles": {
+                  "target": {
+                    "available_steps": 372,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 0.8303571428571429
+              },
+              "robot0_eye_in_hand": {
+                "mask_available_steps": 448,
+                "drawn_steps": 0,
+                "roles": {
+                  "target": {
+                    "available_steps": 448,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              }
+            }
+          },
+          "place": {
+            "steps": 751,
+            "cameras": {
+              "robot0_agentview_left": {
+                "mask_available_steps": 751,
+                "drawn_steps": 0,
+                "roles": {
+                  "destination": {
+                    "available_steps": 751,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  },
+                  "subject": {
+                    "available_steps": 751,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_agentview_right": {
+                "mask_available_steps": 742,
+                "drawn_steps": 0,
+                "roles": {
+                  "destination": {
+                    "available_steps": 718,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  },
+                  "subject": {
+                    "available_steps": 684,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 0.9880159786950732
+              },
+              "robot0_eye_in_hand": {
+                "mask_available_steps": 751,
+                "drawn_steps": 0,
+                "roles": {
+                  "destination": {
+                    "available_steps": 717,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  },
+                  "subject": {
+                    "available_steps": 751,
+                    "drawn_steps": 0,
+                    "drawn_and_available_steps": 0,
+                    "drawn_fraction_of_stage_steps": 0.0,
+                    "drawn_fraction_when_mask_available": 0.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              }
+            }
+          }
+        },
+        "cases": 3,
+        "cases_with_mask_events": 3,
+        "cases_with_complete_task_outcome": 3,
+        "cases_event_steps_differ_from_observation_steps": [],
+        "cases_with_point_cue_pixels_inside_masks": [
+          "25f9e1c5443779e5ac699516f1c4487fd617b2c9617b35df0d07cdb4320dfadd",
+          "752243073776cb8d6c4d5d3da12c7c3f29da21ad18ad31d048078d678c1909c9",
+          "cd599f1fc59c629bea15a45472b0cd2e93413122dff2349daf1a385b399e476c"
+        ]
+      },
+      "masks": {
+        "events": 1503,
+        "drawn_events": 1344,
+        "status_counts": {
+          "presented": 1503
+        },
+        "arm_label_mismatch_events": 0,
+        "scope_issue_events": 0,
+        "events_without_mask_leaves": 0,
+        "inside_mask_pixels_changed": {
+          "events_reporting": 1503,
+          "events_missing": 0,
+          "events_nonzero": 0,
+          "invalid_values": 0,
+          "max": 0,
+          "drawn_events_missing": 0,
+          "source_fields": {
+            "inside_mask_pixels_changed": 1503
+          },
+          "requirement": "zero wherever reported (gate G5, masks arm only)",
+          "all_reported_zero": true,
+          "all_drawn_events_reported_zero": true
+        },
+        "by_operation": {
+          "grasp": {
+            "steps": 464,
+            "cameras": {
+              "robot0_agentview_left": {
+                "mask_available_steps": 464,
+                "drawn_steps": 464,
+                "roles": {
+                  "target": {
+                    "available_steps": 464,
+                    "drawn_steps": 464,
+                    "drawn_and_available_steps": 464,
+                    "drawn_fraction_of_stage_steps": 1.0,
+                    "drawn_fraction_when_mask_available": 1.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 1.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              },
+              "robot0_agentview_right": {
+                "mask_available_steps": 427,
+                "drawn_steps": 421,
+                "roles": {
+                  "target": {
+                    "available_steps": 427,
+                    "drawn_steps": 421,
+                    "drawn_and_available_steps": 421,
+                    "drawn_fraction_of_stage_steps": 0.9073275862068966,
+                    "drawn_fraction_when_mask_available": 0.9859484777517564
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.9073275862068966,
+                "mask_available_fraction_of_stage_steps": 0.9202586206896551
+              },
+              "robot0_eye_in_hand": {
+                "mask_available_steps": 464,
+                "drawn_steps": 464,
+                "roles": {
+                  "target": {
+                    "available_steps": 464,
+                    "drawn_steps": 464,
+                    "drawn_and_available_steps": 464,
+                    "drawn_fraction_of_stage_steps": 1.0,
+                    "drawn_fraction_when_mask_available": 1.0
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 1.0,
+                "mask_available_fraction_of_stage_steps": 1.0
+              }
+            }
+          },
+          "place": {
+            "steps": 1039,
+            "cameras": {
+              "robot0_agentview_left": {
+                "mask_available_steps": 880,
+                "drawn_steps": 879,
+                "roles": {
+                  "destination": {
+                    "available_steps": 809,
+                    "drawn_steps": 800,
+                    "drawn_and_available_steps": 800,
+                    "drawn_fraction_of_stage_steps": 0.7699711260827719,
+                    "drawn_fraction_when_mask_available": 0.9888751545117429
+                  },
+                  "subject": {
+                    "available_steps": 877,
+                    "drawn_steps": 853,
+                    "drawn_and_available_steps": 853,
+                    "drawn_fraction_of_stage_steps": 0.8209817131857555,
+                    "drawn_fraction_when_mask_available": 0.9726339794754846
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.8460057747834456,
+                "mask_available_fraction_of_stage_steps": 0.8469682386910491
+              },
+              "robot0_agentview_right": {
+                "mask_available_steps": 873,
+                "drawn_steps": 873,
+                "roles": {
+                  "destination": {
+                    "available_steps": 873,
+                    "drawn_steps": 868,
+                    "drawn_and_available_steps": 868,
+                    "drawn_fraction_of_stage_steps": 0.8354186717998076,
+                    "drawn_fraction_when_mask_available": 0.9942726231386025
+                  },
+                  "subject": {
+                    "available_steps": 827,
+                    "drawn_steps": 799,
+                    "drawn_and_available_steps": 799,
+                    "drawn_fraction_of_stage_steps": 0.7690086621751684,
+                    "drawn_fraction_when_mask_available": 0.966142684401451
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.8402309913378249,
+                "mask_available_fraction_of_stage_steps": 0.8402309913378249
+              },
+              "robot0_eye_in_hand": {
+                "mask_available_steps": 857,
+                "drawn_steps": 857,
+                "roles": {
+                  "destination": {
+                    "available_steps": 825,
+                    "drawn_steps": 825,
+                    "drawn_and_available_steps": 825,
+                    "drawn_fraction_of_stage_steps": 0.7940327237728585,
+                    "drawn_fraction_when_mask_available": 1.0
+                  },
+                  "subject": {
+                    "available_steps": 855,
+                    "drawn_steps": 823,
+                    "drawn_and_available_steps": 823,
+                    "drawn_fraction_of_stage_steps": 0.7921077959576516,
+                    "drawn_fraction_when_mask_available": 0.9625730994152046
+                  }
+                },
+                "drawn_fraction_of_stage_steps": 0.8248315688161694,
+                "mask_available_fraction_of_stage_steps": 0.8248315688161694
+              }
+            }
+          }
+        },
+        "cases": 3,
+        "cases_with_mask_events": 3,
+        "cases_with_complete_task_outcome": 3,
+        "cases_event_steps_differ_from_observation_steps": [],
+        "cases_with_nonzero_inside_mask_pixels_changed": []
+      }
+    },
+    "inside_mask_gate": {
+      "gate": "G5",
+      "arm": "masks",
+      "field": "inside_mask_pixels_changed",
+      "requirement": "0 wherever reported",
+      "events_reporting": 1503,
+      "events_missing": 0,
+      "events_nonzero": 0,
+      "invalid_values": 0,
+      "max": 0,
+      "all_reported_zero": true,
+      "all_drawn_events_reported_zero": true,
+      "cases_with_nonzero": [],
+      "control_arm": "point",
+      "control_arm_field": "point_cue_pixels_inside_masks",
+      "control_arm_requirement": null
+    },
+    "reading_rule": "Leaves are dicts with mask_px and/or ring_px inside the event payload; camera and role come from their camera/role fields or enclosing mapping keys; operation from payload operation, stage_operation or stage.operation (else no_active_stage). A leaf counts as drawn when its own drawn flag (else ring_px>0) and the event drawn flag (else arm==treatment) hold. Masks arm: inside_mask_pixels_changed is collected at any depth. Point arm: point_cue_pixels_inside_masks is collected at any depth, else the older point-arm name inside_mask_pixels_changed; source_fields counts which name each event used.",
+    "interpretation": "Coverage counts steps per operation and camera on which any outline of that camera was drawn. Gate G5 applies to the masks (treatment) arm only: inside_mask_pixels_changed is 0 wherever reported. The point-arm count of mask pixels covered by the frozen point cue is descriptive and has no requirement. These numbers never alter outcomes, pair eligibility or the registered contrast."
+  },
+  "task_time": {
+    "contract": "composebrain_task_time_v1",
+    "descriptive_only": true,
+    "comparison_claim": null,
+    "percentile_method": "linear interpolation at p*(n-1)",
+    "arms": {
+      "point": {
+        "eligible_terminal_cases": 3,
+        "valid_timing_cases": 3,
+        "unavailable": [],
+        "success_completion_seconds": {
+          "n": 2,
+          "median": 302.24492331102374,
+          "mean": 302.24492331102374,
+          "minimum": 299.6763598599937,
+          "maximum": 304.8134867620538,
+          "p90": 304.29977407184776
+        },
+        "all_terminal_task_elapsed_seconds": {
+          "n": 3,
+          "median": 304.8134867620538,
+          "mean": 394.6701354563508,
+          "minimum": 299.6763598599937,
+          "maximum": 579.5205597470049,
+          "p90": 524.5791451500147
+        },
+        "all_terminal_control_steps": {
+          "n": 3,
+          "median": 305,
+          "mean": 399.6666666666667,
+          "minimum": 294,
+          "maximum": 600,
+          "p90": 541.0
+        },
+        "success_control_steps": {
+          "n": 2,
+          "median": 299.5,
+          "mean": 299.5,
+          "minimum": 294,
+          "maximum": 305,
+          "p90": 303.9
+        }
+      },
+      "masks": {
+        "eligible_terminal_cases": 3,
+        "valid_timing_cases": 3,
+        "unavailable": [],
+        "success_completion_seconds": {
+          "n": 1,
+          "median": 267.8094847390312,
+          "mean": 267.8094847390312,
+          "minimum": 267.8094847390312,
+          "maximum": 267.8094847390312,
+          "p90": 267.8094847390312
+        },
+        "all_terminal_task_elapsed_seconds": {
+          "n": 3,
+          "median": 597.1934146480053,
+          "mean": 494.0900274523495,
+          "minimum": 267.8094847390312,
+          "maximum": 617.2671829700121,
+          "p90": 613.2524293056107
+        },
+        "all_terminal_control_steps": {
+          "n": 3,
+          "median": 600,
+          "mean": 501,
+          "minimum": 303,
+          "maximum": 600,
+          "p90": 600.0
+        },
+        "success_control_steps": {
+          "n": 1,
+          "median": 303,
+          "mean": 303,
+          "minimum": 303,
+          "maximum": 303,
+          "p90": 303.0
+        }
+      }
+    },
+    "limits": [
+      "Success time is conditioned on success; it is not a standalone efficiency comparison.",
+      "Failures retain terminal elapsed time and control steps, but have null success completion time.",
+      "Whole-run elapsed_seconds is never relabeled or substituted for missing task_time_v1.",
+      "Hardware, model service placement, and concurrency form an execution cohort; no cross-cohort speedup is claimed."
+    ]
+  },
+  "launch_cleanup": {
+    "status": "all_cases_accounted",
+    "owned_processes_stopped": true,
+    "cleanup_errors": [],
+    "elapsed_seconds": 998.8841514587402
+  },
+  "analysis_sha256": "c964118f4860f8462ad8f390c6cd21bceb103d1b625f43e3bc37a5d7bcb6dc78",
+  "complete_trace_gate_sha256": "bf1ce205153cdbde2cf7ffe7ca658b65d9ff784c5659beb2bd230aa010a6f341",
+  "new_model_generations": 0,
+  "new_env_resets": 0,
+  "new_env_steps": 0,
+  "limits": [
+    "Six development episodes validate engineering and trace fidelity only; success counts are descriptive.",
+    "No prospective success-rate improvement, statistical significance, generalization or leaderboard claim.",
+    "All six complete valid traces and paired initial conditions are required for gate G9; task failures may pass engineering checks.",
+    "Pixel geometry, crop fidelity, full array hashes, GPU renderer identity and cleanup require their separate gates.",
+    "This analysis neither performs a seed audit nor freezes a formal prospective experiment."
+  ]
+}

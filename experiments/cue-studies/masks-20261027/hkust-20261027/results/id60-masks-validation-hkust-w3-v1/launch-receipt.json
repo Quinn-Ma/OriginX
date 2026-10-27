@@ -1,0 +1,93 @@
+{
+  "active_workers": [
+    0,
+    1,
+    2
+  ],
+  "cleanup_errors": [],
+  "cloud_provider_api_calls": 0,
+  "elapsed_seconds": 4327.829518079758,
+  "finished_epoch": 1793124614.981455,
+  "graphics_preflight": {
+    "0": {
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "5",
+        "MESA_D3D12_DEFAULT_ADAPTER_NAME": null,
+        "MUJOCO_EGL_DEVICE_ID": "5",
+        "MUJOCO_GL": "egl",
+        "PYOPENGL_PLATFORM": "egl"
+      },
+      "gl_error": 0,
+      "gl_renderer": "NVIDIA H100 PCIe/PCIe/SSE2",
+      "gl_vendor": "NVIDIA Corporation",
+      "gl_version": "4.6.0 NVIDIA 570.195.03",
+      "prior_error_scope": "Recorded before identity query; health/physics are checked independently. The healthy NVIDIA diagnostic also recorded GL_INVALID_VALUE (1281) after rendering.",
+      "prior_gl_errors": []
+    },
+    "1": {
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "6",
+        "MESA_D3D12_DEFAULT_ADAPTER_NAME": null,
+        "MUJOCO_EGL_DEVICE_ID": "6",
+        "MUJOCO_GL": "egl",
+        "PYOPENGL_PLATFORM": "egl"
+      },
+      "gl_error": 0,
+      "gl_renderer": "NVIDIA H100 PCIe/PCIe/SSE2",
+      "gl_vendor": "NVIDIA Corporation",
+      "gl_version": "4.6.0 NVIDIA 570.195.03",
+      "prior_error_scope": "Recorded before identity query; health/physics are checked independently. The healthy NVIDIA diagnostic also recorded GL_INVALID_VALUE (1281) after rendering.",
+      "prior_gl_errors": []
+    },
+    "2": {
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "7",
+        "MESA_D3D12_DEFAULT_ADAPTER_NAME": null,
+        "MUJOCO_EGL_DEVICE_ID": "7",
+        "MUJOCO_GL": "egl",
+        "PYOPENGL_PLATFORM": "egl"
+      },
+      "gl_error": 0,
+      "gl_renderer": "NVIDIA H100 PCIe/PCIe/SSE2",
+      "gl_vendor": "NVIDIA Corporation",
+      "gl_version": "4.6.0 NVIDIA 570.195.03",
+      "prior_error_scope": "Recorded before identity query; health/physics are checked independently. The healthy NVIDIA diagnostic also recorded GL_INVALID_VALUE (1281) after rendering.",
+      "prior_gl_errors": []
+    }
+  },
+  "owned_processes_stopped": true,
+  "purpose": "masks_point_unseen_seed_validation",
+  "site": "linux_egl",
+  "status": "all_cases_accounted",
+  "study": "validation",
+  "worker_states": {
+    "0": {
+      "cleanup": {
+        "cleanup_errors": [],
+        "owned_processes_stopped": true
+      },
+      "phase": "finished",
+      "reason": null,
+      "returncode": 0
+    },
+    "1": {
+      "cleanup": {
+        "cleanup_errors": [],
+        "owned_processes_stopped": true
+      },
+      "phase": "finished",
+      "reason": null,
+      "returncode": 0
+    },
+    "2": {
+      "cleanup": {
+        "cleanup_errors": [],
+        "owned_processes_stopped": true
+      },
+      "phase": "finished",
+      "reason": null,
+      "returncode": 0
+    }
+  },
+  "workers": 3
+}

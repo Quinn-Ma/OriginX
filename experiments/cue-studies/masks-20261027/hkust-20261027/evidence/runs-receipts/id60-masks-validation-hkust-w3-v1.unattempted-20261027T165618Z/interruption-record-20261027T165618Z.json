@@ -1,0 +1,8 @@
+{
+  "schema": "id60-masks-formal-interruption-v1",
+  "recorded_utc": "20261027T165618Z",
+  "run": "runs/id60-masks-validation-hkust-w3-v1",
+  "reason": "launch refused 10 s after the pilot ended: a worker port was still held by a winding-down pilot service; the driver marks all 24 cases unattempted and never touches existing processes",
+  "execution_attempted": false,
+  "treatment": "archived unchanged; the chain now waits for the ports to clear before the formal launch; formal re-run from scratch"
+}

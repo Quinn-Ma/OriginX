@@ -1,0 +1,18 @@
+{
+  "decision": "launch",
+  "failed_checks": [
+    "G4_gl_mismatch_within_1px_band_production_single_sample"
+  ],
+  "known_disclosed_exception": [
+    "G4_gl_mismatch_within_1px_band_production_single_sample"
+  ],
+  "rule": "every pre-declared check passes except the stricter 1-px-band engineering check, which failed identically on the H800 (3 px in 1 of 117 masks) and is disclosed; registered gate G4 IoU>=0.98 passes",
+  "gl_iou_min": 0.9924698795180723,
+  "gl_iou_median": 1.0,
+  "overhead_ms_median_per_seed": [
+    58.41514852363616,
+    46.0344240127597,
+    45.902485988335684
+  ],
+  "decided_utc": "2026-10-27T16:31:45.761254Z"
+}

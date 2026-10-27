@@ -1,0 +1,178 @@
+{
+  "active_workers": [
+    0,
+    1,
+    2
+  ],
+  "commands": {
+    "0": {
+      "gpu": "5",
+      "native": [
+        "/dev/shm/qinzhen/originx-envs/policy/bin/python",
+        "/ephemeral/qinzhen/originx-harness-v2/scripts/serve_id60_hierarchical_policy.py",
+        "--kind",
+        "policy",
+        "--config",
+        "/ephemeral/qinzhen/originx-harness-v2/work/hkust/backend-xr1-hkust.json",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "20272",
+        "--cuda-audit-log",
+        "/ephemeral/qinzhen/originx-harness-v2/runs/id60-masks-pilot-hkust-w3-v1/native-cuda-evidence-worker-0.jsonl"
+      ],
+      "native_port": 20272,
+      "planner": [
+        "/dev/shm/qinzhen/originx-envs/planner/bin/python",
+        "/ephemeral/qinzhen/originx-harness-v2/scripts/serve_id60_hierarchical_verifier.py",
+        "--weights",
+        "/dev/shm/qinzhen/originx-models/planner",
+        "--port",
+        "20292",
+        "--identity-output",
+        "/ephemeral/qinzhen/originx-harness-v2/runs/id60-masks-pilot-hkust-w3-v1/planner-startup-identity-worker-0.json",
+        "--duration-seconds",
+        "14400"
+      ],
+      "planner_port": 20292,
+      "preflight": [
+        "/dev/shm/qinzhen/originx-envs/sim/bin/python",
+        "-c",
+        "from scripts.run_id60_masks_validation_local import graphics_preflight; graphics_preflight('/ephemeral/qinzhen/originx-harness-v2/runs/id60-masks-pilot-hkust-w3-v1/graphics-preflight-worker-0.json', '/ephemeral/qinzhen/originx-harness-v2/runs/id60-masks-pilot-hkust-w3-v1/site.json')"
+      ],
+      "worker": [
+        "/dev/shm/qinzhen/originx-envs/sim/bin/python",
+        "/ephemeral/qinzhen/originx-harness-v2/scripts/run_id60_masks_pilot_local.py",
+        "--worker",
+        "--worker-index",
+        "0",
+        "--manifest",
+        "/ephemeral/qinzhen/originx-harness-v2/work/id60-masks-validation/pilot-manifest-hkust-w3.json",
+        "--output",
+        "/ephemeral/qinzhen/originx-harness-v2/runs/id60-masks-pilot-hkust-w3-v1",
+        "--duration-seconds",
+        "14400"
+      ]
+    },
+    "1": {
+      "gpu": "6",
+      "native": [
+        "/dev/shm/qinzhen/originx-envs/policy/bin/python",
+        "/ephemeral/qinzhen/originx-harness-v2/scripts/serve_id60_hierarchical_policy.py",
+        "--kind",
+        "policy",
+        "--config",
+        "/ephemeral/qinzhen/originx-harness-v2/work/hkust/backend-xr1-hkust.json",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "20274",
+        "--cuda-audit-log",
+        "/ephemeral/qinzhen/originx-harness-v2/runs/id60-masks-pilot-hkust-w3-v1/native-cuda-evidence-worker-1.jsonl"
+      ],
+      "native_port": 20274,
+      "planner": [
+        "/dev/shm/qinzhen/originx-envs/planner/bin/python",
+        "/ephemeral/qinzhen/originx-harness-v2/scripts/serve_id60_hierarchical_verifier.py",
+        "--weights",
+        "/dev/shm/qinzhen/originx-models/planner",
+        "--port",
+        "20294",
+        "--identity-output",
+        "/ephemeral/qinzhen/originx-harness-v2/runs/id60-masks-pilot-hkust-w3-v1/planner-startup-identity-worker-1.json",
+        "--duration-seconds",
+        "14400"
+      ],
+      "planner_port": 20294,
+      "preflight": [
+        "/dev/shm/qinzhen/originx-envs/sim/bin/python",
+        "-c",
+        "from scripts.run_id60_masks_validation_local import graphics_preflight; graphics_preflight('/ephemeral/qinzhen/originx-harness-v2/runs/id60-masks-pilot-hkust-w3-v1/graphics-preflight-worker-1.json', '/ephemeral/qinzhen/originx-harness-v2/runs/id60-masks-pilot-hkust-w3-v1/site.json')"
+      ],
+      "worker": [
+        "/dev/shm/qinzhen/originx-envs/sim/bin/python",
+        "/ephemeral/qinzhen/originx-harness-v2/scripts/run_id60_masks_pilot_local.py",
+        "--worker",
+        "--worker-index",
+        "1",
+        "--manifest",
+        "/ephemeral/qinzhen/originx-harness-v2/work/id60-masks-validation/pilot-manifest-hkust-w3.json",
+        "--output",
+        "/ephemeral/qinzhen/originx-harness-v2/runs/id60-masks-pilot-hkust-w3-v1",
+        "--duration-seconds",
+        "14400"
+      ]
+    },
+    "2": {
+      "gpu": "7",
+      "native": [
+        "/dev/shm/qinzhen/originx-envs/policy/bin/python",
+        "/ephemeral/qinzhen/originx-harness-v2/scripts/serve_id60_hierarchical_policy.py",
+        "--kind",
+        "policy",
+        "--config",
+        "/ephemeral/qinzhen/originx-harness-v2/work/hkust/backend-xr1-hkust.json",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "20276",
+        "--cuda-audit-log",
+        "/ephemeral/qinzhen/originx-harness-v2/runs/id60-masks-pilot-hkust-w3-v1/native-cuda-evidence-worker-2.jsonl"
+      ],
+      "native_port": 20276,
+      "planner": [
+        "/dev/shm/qinzhen/originx-envs/planner/bin/python",
+        "/ephemeral/qinzhen/originx-harness-v2/scripts/serve_id60_hierarchical_verifier.py",
+        "--weights",
+        "/dev/shm/qinzhen/originx-models/planner",
+        "--port",
+        "20296",
+        "--identity-output",
+        "/ephemeral/qinzhen/originx-harness-v2/runs/id60-masks-pilot-hkust-w3-v1/planner-startup-identity-worker-2.json",
+        "--duration-seconds",
+        "14400"
+      ],
+      "planner_port": 20296,
+      "preflight": [
+        "/dev/shm/qinzhen/originx-envs/sim/bin/python",
+        "-c",
+        "from scripts.run_id60_masks_validation_local import graphics_preflight; graphics_preflight('/ephemeral/qinzhen/originx-harness-v2/runs/id60-masks-pilot-hkust-w3-v1/graphics-preflight-worker-2.json', '/ephemeral/qinzhen/originx-harness-v2/runs/id60-masks-pilot-hkust-w3-v1/site.json')"
+      ],
+      "worker": [
+        "/dev/shm/qinzhen/originx-envs/sim/bin/python",
+        "/ephemeral/qinzhen/originx-harness-v2/scripts/run_id60_masks_pilot_local.py",
+        "--worker",
+        "--worker-index",
+        "2",
+        "--manifest",
+        "/ephemeral/qinzhen/originx-harness-v2/work/id60-masks-validation/pilot-manifest-hkust-w3.json",
+        "--output",
+        "/ephemeral/qinzhen/originx-harness-v2/runs/id60-masks-pilot-hkust-w3-v1",
+        "--duration-seconds",
+        "14400"
+      ]
+    }
+  },
+  "dry_run": false,
+  "layout": [
+    {
+      "gpu": "5",
+      "native_port": 20272,
+      "planner_port": 20292,
+      "worker": 0
+    },
+    {
+      "gpu": "6",
+      "native_port": 20274,
+      "planner_port": 20294,
+      "worker": 1
+    },
+    {
+      "gpu": "7",
+      "native_port": 20276,
+      "planner_port": 20296,
+      "worker": 2
+    }
+  ],
+  "site": "linux_egl"
+}

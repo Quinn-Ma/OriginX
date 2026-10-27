@@ -1,0 +1,24 @@
+{
+  "case": {
+    "arm": "full",
+    "benchmark": "robocasa",
+    "case_id": "ff97dd47a6674db6ccdb7ddc3d3aa9d908e2c7d2501c46d7f02a88d6e83385ff",
+    "comparison_arm": "masks",
+    "max_steps": 600,
+    "model": "xr1",
+    "order_in_worker": 7,
+    "pair_index": 10,
+    "pair_key": "7b22fba1d0e7bc07791b3331d7752fa5960db238ad7fe99e15bda38400428a3a",
+    "pair_position": 1,
+    "seed": 20261054,
+    "task": "CoffeeSetupMug",
+    "worker": 1
+  },
+  "epoch": 1793124610.9408333,
+  "index": 8,
+  "phase": "episode_finished",
+  "status": "failure",
+  "steps": 600,
+  "total": 8,
+  "worker": 1
+}

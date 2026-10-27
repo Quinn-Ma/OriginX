@@ -1,0 +1,119 @@
+{
+  "schema": "id60-masks-preexecution-worker-amendment-v1",
+  "recorded_utc": "20261027T163622Z",
+  "instruction": "user 2026-10-27 (relayed from the forked session): use GPU 5/6/7, as many workers as fit, break the 2-worker setting; one ~20 GiB replica fits per GPU beside other users' jobs (~28-30 GB free each) -> 3 workers",
+  "phase": "before any pilot or formal case completed on this site (the 2-worker pilot ran 3 min, 0 results, archived)",
+  "pairs": {
+    "pilot": {
+      "old": {
+        "path": "work/id60-masks-validation/pilot-manifest-v1.json",
+        "file_sha256": "6a923a0f9559e4e081e62165f2166be9bbd93881dfd3207f9675276227039d2a",
+        "manifest_sha256": "df91a4d285706b0dc80fbd1fdb8e5156a7b2e0fdd7b1b0178df183d33928ef80",
+        "workers": 2,
+        "max_local_seconds": 14400
+      },
+      "new": {
+        "path": "work/id60-masks-validation/pilot-manifest-hkust-w3.json",
+        "file_sha256": "81410a79832fe383cda02d455a463a2362760ced8e38fb77b3b8f9ddf71ed723",
+        "manifest_sha256": "7c89c95a12e75ac4c95e5444e75b09c45cc269c3eafa036b7c135a6982d40c76",
+        "workers": 3,
+        "max_local_seconds": 14400
+      },
+      "cases_invariant_fields_identical": {
+        "fields": [
+          "seed",
+          "pair_index",
+          "pair_position",
+          "comparison_arm",
+          "arm",
+          "task",
+          "model",
+          "max_steps"
+        ],
+        "identical": true,
+        "pair_key_identical": true,
+        "note": "case_id is a hash that includes the worker/order fields, so it changes with the worker count by construction"
+      },
+      "top_level_keys_changed": [
+        "cases",
+        "execution_budget",
+        "manifest_sha256",
+        "worker_assignment",
+        "workers"
+      ],
+      "execution_budget_new": {
+        "basis": "Registered before launch from the regions validation run (about 2 s per control step; 600-step failures took 1,064-1,368 s) plus the measured mask overhead of 276-301 ms per step in both arms (about 180 s per 600-step case): 1,600 s covers the slowest observed failure plus that overhead. Service startup measured 5.5-7 min per worker; 1,800 s is reserved for the whole launch.",
+        "cap_seconds": 14400,
+        "cases_per_worker": [
+          2,
+          2,
+          2
+        ],
+        "max_cases_per_worker": 2,
+        "per_case_budget_seconds": 1600,
+        "required_seconds": 5000,
+        "rule": "startup_budget_seconds + per_case_budget_seconds * max_cases_per_worker <= max_local_seconds <= cap_seconds",
+        "startup_budget_seconds": 1800,
+        "watchdog_expiry_resumable": false
+      }
+    },
+    "formal": {
+      "old": {
+        "path": "work/id60-masks-validation/manifest.json",
+        "file_sha256": "74895559be91168a3a5e39d58a3cc69553170adea27e20bac38aaf512c184a9f",
+        "manifest_sha256": "94d4721e1452671ecda3ff0fd988c4c794755fe0a9ae267eae951e2134229278",
+        "workers": 2,
+        "max_local_seconds": 21000
+      },
+      "new": {
+        "path": "work/id60-masks-validation/manifest-hkust-w3.json",
+        "file_sha256": "4964c8ffd6c5b9c437d36366a085c0cd5b2f9a340a2918314c78989f3e5d9ee8",
+        "manifest_sha256": "8266cc63310241367c77475b96c22e855304160686e98d0dbcc998a544a302dd",
+        "workers": 3,
+        "max_local_seconds": 14600
+      },
+      "cases_invariant_fields_identical": {
+        "fields": [
+          "seed",
+          "pair_index",
+          "pair_position",
+          "comparison_arm",
+          "arm",
+          "task",
+          "model",
+          "max_steps"
+        ],
+        "identical": true,
+        "pair_key_identical": true,
+        "note": "case_id is a hash that includes the worker/order fields, so it changes with the worker count by construction"
+      },
+      "top_level_keys_changed": [
+        "cases",
+        "execution_budget",
+        "manifest_sha256",
+        "max_local_seconds",
+        "worker_assignment",
+        "workers"
+      ],
+      "execution_budget_new": {
+        "basis": "Registered before launch from the regions validation run (about 2 s per control step; 600-step failures took 1,064-1,368 s) plus the measured mask overhead of 276-301 ms per step in both arms (about 180 s per 600-step case): 1,600 s covers the slowest observed failure plus that overhead. Service startup measured 5.5-7 min per worker; 1,800 s is reserved for the whole launch.",
+        "cap_seconds": 36000,
+        "cases_per_worker": [
+          8,
+          8,
+          8
+        ],
+        "max_cases_per_worker": 8,
+        "per_case_budget_seconds": 1600,
+        "required_seconds": 14600,
+        "rule": "startup_budget_seconds + per_case_budget_seconds * max_cases_per_worker <= max_local_seconds <= cap_seconds",
+        "startup_budget_seconds": 1800,
+        "watchdog_expiry_resumable": false
+      }
+    }
+  },
+  "port_collision_first_attempt": {
+    "recorded_utc": "20261027T163816Z",
+    "run_archived": "runs/id60-masks-pilot-hkust-w3-v1.unattempted-20261027T163816Z"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "graphics_preflight": {
+    "environment": {
+      "CUDA_VISIBLE_DEVICES": "6",
+      "MESA_D3D12_DEFAULT_ADAPTER_NAME": null,
+      "MUJOCO_EGL_DEVICE_ID": "6",
+      "MUJOCO_GL": "egl",
+      "PYOPENGL_PLATFORM": "egl"
+    },
+    "gl_error": 0,
+    "gl_renderer": "NVIDIA H100 PCIe/PCIe/SSE2",
+    "gl_vendor": "NVIDIA Corporation",
+    "gl_version": "4.6.0 NVIDIA 570.195.03",
+    "prior_error_scope": "Recorded before identity query; health/physics are checked independently. The healthy NVIDIA diagnostic also recorded GL_INVALID_VALUE (1281) after rendering.",
+    "prior_gl_errors": []
+  },
+  "painter": {
+    "module": "/dev/shm/qinzhen/originx-envs/sim/lib/python3.12/site-packages/supervision/__init__.py",
+    "supervision_version": "0.27.0"
+  },
+  "policy_rendering": {
+    "cohort": "policy_rgb_samples_0",
+    "initial_signature_and_pixel_gates_unchanged": true,
+    "mutation": "mujoco/visual/quality/@offsamples only",
+    "policy_rgb_samples": 0,
+    "pool_with_other_rendering_cohorts": false,
+    "schema": "id60-site-policy-rendering-v1",
+    "shared_across_arms": true
+  },
+  "worker": {
+    "gpu": "6",
+    "native_port": 20274,
+    "planner_port": 20294,
+    "worker": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "id60-masks-pilot-interruption-v1",
+  "recorded_utc": "20261027T163816Z",
+  "run": "runs/id60-masks-pilot-hkust-w3-v1",
+  "reason": "launch refused: planner port 20292 still held by a planner service of the stopped 2-worker chain; the driver marks all 6 cases unattempted and never touches existing processes",
+  "result_files_present": 6,
+  "execution_attempted": false,
+  "treatment": "archived unchanged; the lingering service (my own) was then stopped and the pilot re-run from scratch"
+}

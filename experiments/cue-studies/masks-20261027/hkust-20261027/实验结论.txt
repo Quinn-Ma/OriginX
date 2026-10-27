@@ -1,0 +1,67 @@
+# Mask-vs-point 配对评测（masks-20261027）— HKUST 集群执行结果，2026-10-27
+
+执行：hkust-cluster `h800-8-1`，NVIDIA H100 PCIe ×3（GPU 5/6/7，各 1 个 worker，与他人训练作业共卡），驱动 570.195.03，
+原生 NVIDIA EGL，渲染器 `NVIDIA H100 PCIe/PCIe/SSE2`，零采样 policy-RGB 队列（两臂相同）。
+冻结策略 Xiaomi-Robotics-1-RoboCasa365（checkpoint ccaa6517…）、冻结规划/验证器 Qwen3-VL-4B-Instruct（6efa4249…），
+任务 RoboCasa365 `CoffeeSetupMug`，600 步上限。
+
+## 主结果（注册的配对分析，12 对全部可纳入，0 个 UNKNOWN，0 个配对失配）
+
+| | masks（掩码+目的地幽灵框） | point（原点提示） |
+|---|---|---|
+| 成功 / 12 | **5**（41.7%，Wilson 95% [19.3, 68.0]） | **8**（66.7%，Wilson 95% [39.1, 86.2]） |
+| 失败（600 步耗尽） | 7 | 4 |
+
+- 不一致对：masks-only 成功 2，point-only 成功 5；两臂都成功 3，都失败 2。
+- 成功率差（masks − point）= **−25.0 个百分点**，保守 95% 区间 **[−74.1, +39.7]**，精确配对 McNemar 双侧 p = **0.453**。
+- 结论：**未发现掩码提示带来的成功率收益；点数值上更好，但差异不显著，也不能据此声称等价。**
+  与 regions-20261024（6/10 vs 6/10）一致：更"精确"的空间提示没有提高这个冻结策略的放置成功率。
+
+次要描述性指标（不作主张）：终止时物体到接收位点的 XY 距离（含失败），masks 中位数 9.83 cm（n=11），point 2.14 cm（n=11）；
+成功用时中位数 masks 277 s / point 282 s；全部终止例中位数 masks 534 s / point 300 s。
+
+## 逐对账本（seed：第一臂 → 第二臂；S/F = 成功/失败，步数）
+
+| seed | 第一臂 | 第二臂 | 不一致 |
+|---|---|---|---|
+| 20261044 | point S 304 | masks F 600 | point-only |
+| 20261045 | masks F 600 | point F 600 | — |
+| 20261046 | point S 302 | masks S 317 | — |
+| 20261047 | masks F 600 | point S 308 | point-only |
+| 20261048 | point F 600 | masks S 323 | masks-only |
+| 20261049 | masks S 222 | point S 215 | — |
+| 20261050 | point S 312 | masks F 600 | point-only |
+| 20261051 | masks F 600 | point F 600 | — |
+| 20261052 | point S 257 | masks F 600 | point-only |
+| 20261053 | masks S 253 | point S 379 | — |
+| 20261054 | point S 263 | masks F 600 | point-only |
+| 20261055 | masks S 315 | point F 600 | masks-only |
+
+每例 217–630 s，远低于注册的 1,600 s/例预算；无基础设施超时；源码 138 个注册文件哈希全部匹配（sources_match = true）；
+清理状态 all_cases_accounted。
+
+## 呈现保真（masks 臂）
+
+5,630 个掩码呈现事件，5,281 个实际绘制；各阶段/相机绘制覆盖率 86–99%；G5 门槛（掩码内部像素零改动）5,630/5,630 为 0；
+臂标签失配 0，范围问题 0。T3 像素保真在本站点重跑：11/12 预声明检查通过，注册门槛 G4（GL 交叉检查 IoU ≥ 0.98：min 0.9925 / median 1.0）通过，
+更严格的 1 像素带检查与 H800 上一样因同一掩码的 3 个像素不通过（已披露），每步开销 46–58 ms（预算 100 ms）。
+
+## 工程 pilot（6 例，开发种子 20261025–27，只做门槛，不作证据）
+
+G9 完整有效轨迹 6/6、G5 零改动、sources_match 通过；描述计数 point 2/3、masks 1/3。
+
+## 协议偏离与披露（详见 `site-change-note-hkust-v1.md`、`preexecution-worker-amendment-v1.json`）
+
+1. 执行站点由 AutoDL H800 改为 HKUST H100 集群（manifest 允许的 `linux_egl` 站点）；环境按同一锁文件重建、权重逐文件 SHA-256 校验；T3 在本站点重跑。
+2. GPU 2/3 处于 `GPU Recovery Action: Reset`，EGL 深度读回损坏（探针与最小复现均失败），排除不用。
+3. 应用户要求（占满 GPU 5/6/7），执行前把 worker 数从 2 改为 3（每卡 1 个）：清单由冻结驱动重冻结，
+   pilot `df91a4d28570 → 7c89c95a12e7`，formal `94d4721e1452 → 8266cc633102`（派生 max_local_seconds 21,000 → 14,600 s）；
+   种子、配对、顺序、臂、任务逐例核对不变；README/论文引用的哈希前缀需同步更新。
+4. 三次未产生结果的启动已原样归档：2-worker pilot（0 结果，运行 3 分钟后停止）、3-worker pilot（端口被残留服务占用，6 例 unattempted）、
+   formal 首次启动（同样端口原因，24 例 unattempted）。没有任何结果被合并或重跑。
+
+## 文件
+
+- 集群：`/ephemeral/qinzhen/originx-harness-v2/runs/id60-masks-validation-hkust-w3-v1{,-analysis}`（7.1 GB 含轨迹）、`…pilot-hkust-w3-v1{,-analysis}`（1.8 GB）、`work/hkust/`（站点文件、T3、修正记录、chain 日志）。
+- 本地镜像：`D:\codex\originx-harness-v2\runs\hkust-mirror\`（`results-bundle-20261027.tar.gz` 471 MB 不含 NPZ；含轨迹的完整目录已拉取，formal 7.1 GB + pilot 1.8 GB）。
+- 本地 WSL 权威分析 `validation-results-local-wsl-v1.json`（Python 3.11.13 冻结 sim 运行时，含轨迹的完整目录）与服务器端分析 `validation-results-server-v1.json` 的配对统计逐项一致（2/5/3/2，−25 pp，[−74.1, +39.7]，p = 0.453）；差异仅为路径字段和浮点末位。pilot 的本地复核 G9/G5/sources 同样通过。

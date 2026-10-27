@@ -1,0 +1,8 @@
+{
+  "backend": "xiaomi",
+  "device": "cuda:0",
+  "formal": true,
+  "source_path": "/ephemeral/qinzhen/originx-harness-v2/vendor/Xiaomi-Robotics-1",
+  "checkpoint_path": "/dev/shm/qinzhen/originx-models/policy",
+  "checkpoint_sha256": "ccaa65176cf4294b7c0c618e1cc3be7b65617359630c35d3a18dd75c406fc184"
+}

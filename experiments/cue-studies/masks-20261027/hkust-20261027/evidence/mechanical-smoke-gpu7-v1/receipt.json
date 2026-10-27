@@ -1,0 +1,658 @@
+{
+  "policy_identity": {
+    "backend": "xiaomi",
+    "variant": "xiaomi-native",
+    "adapter_implementation_sha256": "1b436e133569381e2b767ad69307b4c73636b9f442d5b33cc912cf137517ef13",
+    "fixture": false,
+    "source_commit": "0dd7aef8dc87296246aae812a1f59ccb708e5546",
+    "source_files_sha256": {
+      "deploy/client.py": "5e50b3a110fa7ac08f171a8c226ceb45bccf5881c1a589beab4679c8a68239b3",
+      "deploy/server.py": "648eb93680c530d7f6cd3056f98e69339e021fb0e91cee06f135e91c461d37d4",
+      "eval_robocasa/eval_logs/eval_results_CloseDoubleDoor.json": "97b70bcf53a507ac28822a4cb47f4d6903feb3090399f64c6fc7ab2929761bd3",
+      "eval_robocasa/eval_logs/eval_results_CloseDrawer.json": "9f2bbb8298c2fa750e67a47dbdc10ab49b1dc75d4ed2eba60999877cef2645de",
+      "eval_robocasa/eval_logs/eval_results_CloseSingleDoor.json": "2f50b48870e8546f970a14acd7ef41af69fafaab3a58de1ca84875e913e03099",
+      "eval_robocasa/eval_logs/eval_results_CoffeePressButton.json": "00976c365a7fd01a51dd85e24c022c47894cda8f66f2f39ba2ab02098fc4c027",
+      "eval_robocasa/eval_logs/eval_results_CoffeeServeMug.json": "7776a1ca8ec7d7f0c60656d65a7606451447ac4248f67beaa29cba6b4aec387a",
+      "eval_robocasa/eval_logs/eval_results_CoffeeSetupMug.json": "648ad2783a3c57627b767460d159a0b0ae7eb990f5b94f55a473934903d6e557",
+      "eval_robocasa/eval_logs/eval_results_OpenDoubleDoor.json": "3c29ba2980e232100f180209e6918c22fc300040e096003a3458957a752c13a7",
+      "eval_robocasa/eval_logs/eval_results_OpenDrawer.json": "acc52a8d1c493da62e7f53167c89baf9bbc6824217fe71fa5b8e2b792ecea471",
+      "eval_robocasa/eval_logs/eval_results_OpenSingleDoor.json": "22a0ead513e468af41a53ccbbcc4154d5a18df0b3f65d32bfbb825fd6843db61",
+      "eval_robocasa/eval_logs/eval_results_PnPCabToCounter.json": "4605a18f57f751fe7015d90e6a6726ed3b7ed4e0c193e98dc498808d0a221c03",
+      "eval_robocasa/eval_logs/eval_results_PnPCounterToCab.json": "d2222df6f955151b1e88c4cd025450a019aabeb4c6b857bbedcbdcd0301131f7",
+      "eval_robocasa/eval_logs/eval_results_PnPCounterToMicrowave.json": "61acdf47eb63aacc9b86520b58d99e6b5091ceee7e6a45a9aefb2e630dccd058",
+      "eval_robocasa/eval_logs/eval_results_PnPCounterToSink.json": "7b31fba077498d383122665432606230b0a17bcc760036250437b04c2e51cdef",
+      "eval_robocasa/eval_logs/eval_results_PnPCounterToStove.json": "45a40459808a0793039ad58bc4e90775b7934547053b2600ed6008516b0bb279",
+      "eval_robocasa/eval_logs/eval_results_PnPMicrowaveToCounter.json": "0f8c937c412dd0f67cd1cf9d584c1a910dd0db33709c81b66ec566aa3c168305",
+      "eval_robocasa/eval_logs/eval_results_PnPSinkToCounter.json": "987862f073c7596340d0635ed84b661cb1982fe8369132e878141c5ac2ace1d6",
+      "eval_robocasa/eval_logs/eval_results_PnPStoveToCounter.json": "a5300c04164d80763f169efb8b728da45eb41bde2e45e9839e5d9caadbb6583b",
+      "eval_robocasa/eval_logs/eval_results_TurnOffMicrowave.json": "bcd936700c9c8335b86bbc45e7f932bcbcf678cf55631ffebb71d19fdfe5282e",
+      "eval_robocasa/eval_logs/eval_results_TurnOffSinkFaucet.json": "c57a4c67706e28dcf20850519c46302f9ef872c57ef354dd8f3e2c553bffa59c",
+      "eval_robocasa/eval_logs/eval_results_TurnOffStove.json": "47c12409ad98f54d62f6a75c2e25031dace7c2d57d02753caecdf05ca7322f9b",
+      "eval_robocasa/eval_logs/eval_results_TurnOnMicrowave.json": "a34a2c4cb05b2bd169ed23ff055403204142b9999fc64dc2c8ae9045f97f3fe3",
+      "eval_robocasa/eval_logs/eval_results_TurnOnSinkFaucet.json": "65ba2b58d1b43552787aa478f935d68ce381cfb5da67a98ec8e3f40af55ff89a",
+      "eval_robocasa/eval_logs/eval_results_TurnOnStove.json": "0c4a560a2093c239caf375cbea8c2013bf80a51c1dfc774a075141d4afd032eb",
+      "eval_robocasa/eval_logs/eval_results_TurnSinkSpout.json": "45fe68fbb20e16e5c30418f4bccd3048a2a0e335fc662d1a67a380ecfd642b92",
+      "eval_robocasa/eval_logs/merged_results.json": "f916bf8a2809a854a5b69821b9016c7cb72ab9a7d255664e1b1e04a14a7474ea",
+      "eval_robocasa/main.py": "4111149e30ad3495a20d078763756559a70af18f00e02185633eb2d362f45ed5",
+      "eval_robocasa/merge_results.py": "ca5c0c57866d01674096ddf7db459fb542d5d291cac08788bbe5892d859cfc09",
+      "eval_robocasa365/dynamic_eval.py": "8a358d2e5b566152dbcf60f90ec1d1ab51a8ab080dcf0add03e519afd32cfbaf",
+      "eval_robocasa365/entry.py": "18d70fade4c990210dc5b9c34285c8030eac142d9c332066c73335e1c0aaa28e",
+      "eval_robocasa365/summary.json": "98c5e472243b0962789beb73372889e8bd1313aa107b2499e17ce4b2ba234656",
+      "eval_vlabench/dispatch.py": "783f6678ce2221c2668e658b832e8e4d52d0962c858c42dd5f22835e0eaa36e5",
+      "eval_vlabench/main.py": "ad42946ef3e004ccff7ebfb28f7bfa9cab8c00298ea24a02d8b7bdbd11a8e679",
+      "eval_vlabench/merge_results.py": "4a3bc6a5cfddb5d67d8f394ab5753fbe5b3401aeb513a0cce320c5940c4fbecf",
+      "xr1/assets/requirements.txt": "1357d5f27e5ffcbe758b6ccb6baf623d1ad13d7db713fe20ed5ebc3352b52146",
+      "xr1/configs/__init__.py": "06842f92f268d5552854377e69b9694968c576197addb8a43d6949c9cc176faf",
+      "xr1/mibot/__init__.py": "06842f92f268d5552854377e69b9694968c576197addb8a43d6949c9cc176faf",
+      "xr1/mibot/data/__init__.py": "224e6d840dfe16e6888154a23a0227d5498bcd4af776ce2d3412a7cf77cbaecf",
+      "xr1/mibot/data/collate/__init__.py": "06842f92f268d5552854377e69b9694968c576197addb8a43d6949c9cc176faf",
+      "xr1/mibot/data/collate/custom_collate.py": "ed85a33fdb8297d0837a04f362ef26e3ad1b260b26f52d24e9b140597972fb44",
+      "xr1/mibot/data/datamodule/__init__.py": "06842f92f268d5552854377e69b9694968c576197addb8a43d6949c9cc176faf",
+      "xr1/mibot/data/datamodule/base_datamodule.py": "1a54e8d6f16e2798502507bbcb798ca090933b62bdcd5aef201a98b35643a578",
+      "xr1/mibot/data/datasets/__init__.py": "06842f92f268d5552854377e69b9694968c576197addb8a43d6949c9cc176faf",
+      "xr1/mibot/data/datasets/json_dataset.py": "c39e175661330a609676d2fe39e0b02371c64a059aa267461453fd56ed3bf602",
+      "xr1/mibot/models/VLA/XR1.py": "eeb4316e7125a0c414875e178da677c0c254af7c6a0536f8da0aace13a3928c0",
+      "xr1/mibot/models/VLA/__init__.py": "06842f92f268d5552854377e69b9694968c576197addb8a43d6949c9cc176faf",
+      "xr1/mibot/models/VLM/__init__.py": "06842f92f268d5552854377e69b9694968c576197addb8a43d6949c9cc176faf",
+      "xr1/mibot/models/VLM/qwen3vl.py": "e440a69c3c79b84e7c3133787786de4d30045e379ace72487fb438928ef41fb5",
+      "xr1/mibot/models/__init__.py": "9a7827372f76711d551c01462c9642c12ecae2a377dd5f59e171d1e913b89dba",
+      "xr1/mibot/models/runner/__init__.py": "06842f92f268d5552854377e69b9694968c576197addb8a43d6949c9cc176faf",
+      "xr1/mibot/models/runner/base_runner.py": "7124cfecddac867551f8a91d602daa17f26ac5c7916d05472e08d2f6586976f5",
+      "xr1/mibot/server/__init__.py": "06842f92f268d5552854377e69b9694968c576197addb8a43d6949c9cc176faf",
+      "xr1/mibot/server/deploy.py": "04c10076a0c5b351df4d2a2cd3daf6a65c39b1ff23daa4441f611ccf96ffcc8f",
+      "xr1/mibot/server/runtime/__init__.py": "06842f92f268d5552854377e69b9694968c576197addb8a43d6949c9cc176faf",
+      "xr1/mibot/server/runtime/client.py": "5cc24c6b4ebee738dfc91ab4439735decec4debe92ce6c27a518fe304f15c921",
+      "xr1/mibot/server/runtime/server.py": "d017f218621841b421782b93146e9fe10b777ab2615f088d4e12e8ed1959fac4",
+      "xr1/mibot/utils/__init__.py": "06842f92f268d5552854377e69b9694968c576197addb8a43d6949c9cc176faf",
+      "xr1/mibot/utils/cfg_utils.py": "cc44a36487c7feb27d43436004f642ba69d985f9d57631fbd4b29c09cf63d381",
+      "xr1/mibot/utils/cosine_warmup.py": "4be0287f8c6ea25397952799581d3600a375cbb04d4a66034b2ae868c3a37d75",
+      "xr1/mibot/utils/io.py": "a0e1a603343bc8bf01b60e29635d2050d767bb6e6837237e27ddc408b140852c",
+      "xr1/mibot/utils/model_utils.py": "abbbca1df157ad337ce96a92944fe39032e728bac9544a23de948ac5a3a738d3",
+      "xr1/setup.py": "e9766b3149e32cdc5db03177515b0641baece84eb8f372e10e84fb2cfa5aa65d",
+      "xr1/tests/test_training_logic.py": "b5c3a19c638bf9d50f66261a62898429e57f61f37473b78e18419bb4621d1137",
+      "xr1/tools/compute_normalize.py": "026010360da213565648ccc13c3a06206015c032dad424f2ab750173359818d8",
+      "xr1/tools/train.py": "54fe28d7cdccf7235192af95f656f32144ddbace1c8a32e092c86cb6c70432cd",
+      "xr1/tools/weight_convert.py": "e98ee838201530a9016cc28b64334cee034e16002f0c006ee4852f2f7fc6ab0e"
+    },
+    "source_repository": "https://github.com/XiaomiRobotics/Xiaomi-Robotics-1.git",
+    "checkpoint_sha256": "ccaa65176cf4294b7c0c618e1cc3be7b65617359630c35d3a18dd75c406fc184",
+    "checkpoint_assets": {
+      "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+      "chat_template.jinja": "3636d0f0bd6bef02654cdffdc447b79cb2cef8ab02cc75267345946291a489e4",
+      "config.json": "ff3fdf7b128376b3c52626c4874c3748d3ce087afa81af5cb1b574683ad0bedf",
+      "configuration_mibot.py": "5297e5e4b750ada89618629b793f23a4c9f86205cadc4b59e81019b2326b40c0",
+      "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+      "model-00001-of-00003.safetensors": "5c9412f29facda098d5dcf1a58c06830edeeba7c0c59799480dd28b35c3fcc53",
+      "model-00002-of-00003.safetensors": "72884ec9b026794df9e3b5c1eb75341e503ae94f0e2555d1178157e3290b7f7d",
+      "model-00003-of-00003.safetensors": "5859c4408351a0b894c6175cf6f7a41e5e431637517a1d45587ad94f03d29cac",
+      "model.safetensors.index.json": "9663e68cab7d296c4b41f3a1885afb1f6f2722828825ad4ba6bb7768c29ae396",
+      "modeling_mibot.py": "d2f90e88391ae06ce7beca27416544ad2cb623a2963b6c61ba9ddafa2fd42ec9",
+      "preprocessor_config.json": "4df0fa9082421de3ef332c01f61bc32038248ebe84e59fb8c7c633d67cecb1cf",
+      "processing_mibot.py": "45c618e4d852d4948cec32f56fc55fb24548d4a15855e2ae2d7313db4b4d3389",
+      "processor_config.json": "6a526f4eba58413920d4d68b5c3044181ad71244e2b78d66a1d05de2687b387b",
+      "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+      "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "tokenizer_config.json": "c12d8db5bd1973f5cfc377a4bfb1565a4055d52441e0f014cc7daa2e30cc3ae9",
+      "video_preprocessor_config.json": "13e504b2403d57f0046ac63315e5367ba5eafc2a6ce2a6bf96b346b9256c0b1c",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    "adapter_sha256": null,
+    "source_audit": {
+      "status": "native_baseline",
+      "formal_eligible": true,
+      "reason": "Pinned local checkpoint"
+    },
+    "observation_stride": 1,
+    "replan_steps": 16,
+    "seed_policy": "episode-stream-first-proposal-seed",
+    "native_preprocessing": {
+      "crop_ratio": 0.95,
+      "history": 4,
+      "interval": 2
+    },
+    "residual_policy": "nine-axes-no-extra-clip",
+    "versions": {
+      "numpy": "2.1.3",
+      "torch": "2.8.0+cu128",
+      "transformers": "4.57.1",
+      "torchvision": "0.23.0+cu128",
+      "flash-attn": "2.8.3",
+      "imageio-ffmpeg": "0.6.0"
+    },
+    "precision": {
+      "model_dtype": "torch.bfloat16",
+      "lora_master_dtype": null,
+      "autocast_dtype": null,
+      "torch_cuda_build": "12.8",
+      "tf32_matmul": false,
+      "tf32_cudnn": true,
+      "float32_matmul_precision": "highest"
+    },
+    "policy_residency": {
+      "version": 1,
+      "scope": "weights-only-no-dtype-or-state-change",
+      "configured_device": "cuda:0",
+      "allowed_devices": [
+        "cpu",
+        "cuda:0"
+      ]
+    },
+    "policy_service_source_sha256": "8171373cdd9d9590a3c3b37bd19cd581ce4f7031a9c0d20f6525142e95d53b68",
+    "gpu_inference_only": true,
+    "request_cache_release": "unused_cuda_cache_after_propose",
+    "native_inputs_actions_and_rng_unchanged": true,
+    "cuda_evidence_scope": "Parameter/buffer admission plus allocator telemetry around original propose; inputs transferred by frozen adapter."
+  },
+  "planner_identity": {
+    "backend": "Qwen3-VL-4B-Instruct",
+    "checkpoint_sha256": "6efa4249417c81fb61d50abe3d27e7bec93db5766656ca0c1f83da22551512d6",
+    "source_sha256": "3277713be9175c0d53e38e94cee31657370c2e16cd796cf73f4c12c9ff324321",
+    "prompt_sha256": "08522b9ffd97db91637aca29c0bfc8631f57f257445a5423b255c65f24f04cfd",
+    "torch": "2.8.0+cu128",
+    "transformers": "5.5.0",
+    "parameter_updates": 0,
+    "do_sample": false,
+    "fixture": false,
+    "execution_device": "cuda:0",
+    "offload_between_requests": false,
+    "release_protocol": 1,
+    "plan_max_new_tokens": 1024,
+    "step_max_new_tokens": 384,
+    "request_cuda_cache_release_policy": "keep_weights_cuda_synchronize_empty_cache_after_complete_request",
+    "selection_history": "current-images-and-command-only-separate-generation",
+    "verification_view_mode": "labeled_current_crops",
+    "verification_view_source_sha256": "0b1071b456011324b9dd5355e8bd7230dab028efd5a030bbf203f8fee24b93d9",
+    "verification_original_prompt_sha256": "8fa333daa10864f8cdfaff1eee9d2bbbef4460250c2c8827450e8b577f1ab022",
+    "verification_context_preserved": false,
+    "server_modifies_policy_markers": false,
+    "policy_marker_treatment": {
+      "point": "original_point",
+      "regions": "hierarchical",
+      "feedback": "hierarchical"
+    },
+    "policy_text_treatment": {
+      "point": "frozen_compiled_instruction",
+      "regions": "frozen_compiled_instruction_plus_stable_legend",
+      "feedback": "finite_align_execute_instruction_plus_stable_legend"
+    },
+    "nonplace_verification_context_preserved": true,
+    "placement_context_augmented": true,
+    "placement_original_context_values_preserved": true,
+    "hierarchical_patch_id": "shared-hierarchical-presentation-and-finite-feedback-v1",
+    "hierarchical_schema": "id60-hierarchical-verification-v1",
+    "hierarchical_source_sha256": "2bcb0cc9590e2b70e767ae17b7670b50eaccd251fdc6ecb7b34f29ba4e0330ed",
+    "hierarchical_controller_source_sha256": "b893b28a8a0d2a074b6f3b96908b18b2c6b21a7561aa5ae688e0be604c637778",
+    "hierarchical_prompt_sha256": "2b52b8e5cee05f2830dc2b97847908edbf12b1296ca1cce0011bf156bb357199",
+    "same_verifier_for_all_arms": true,
+    "arm_or_feedback_phase_in_prompt": false,
+    "response_metadata_template": "exact_current_public_context_unknown_visual_facts",
+    "generation_cuda_evidence": "id60-generation-cuda-evidence-v1",
+    "supported_controller_variants": [
+      "full"
+    ],
+    "nonplace_verification_unchanged": true
+  },
+  "all_replicas_resident_epoch": 1793118257.1270761,
+  "first_propose_seconds": 2.420788190967869,
+  "actions_shape": [
+    16,
+    12
+  ],
+  "finite": true,
+  "zero_delta_exact": true,
+  "reset_seed_repeat_exact": true,
+  "planner_generation_audit": [
+    [
+      {
+        "phase": "plan",
+        "status": "passed",
+        "forward_started": true,
+        "schema": "id60-generation-cuda-evidence-v1",
+        "execution_device": "cuda:0",
+        "device_validation_passed": true,
+        "cpu_inference_fallback": false,
+        "memory_scope": "torch_process_allocator; global_free_includes_other_processes",
+        "actual_parameter_devices": [
+          "cuda:0"
+        ],
+        "actual_buffer_devices": [
+          "cuda:0"
+        ],
+        "parameter_tensor_count": 713,
+        "buffer_tensor_count": 3,
+        "parameter_bytes": 8875631616,
+        "input_tensor_devices": {
+          "encoded.input_ids": "cuda:0",
+          "encoded.attention_mask": "cuda:0",
+          "encoded.mm_token_type_ids": "cuda:0",
+          "encoded.pixel_values": "cuda:0",
+          "encoded.image_grid_thw": "cuda:0"
+        },
+        "unexpected_parameter_tensors": [],
+        "unexpected_buffer_tensors": [],
+        "unexpected_input_tensors": {},
+        "device_name": "NVIDIA H100 PCIe",
+        "memory_before": {
+          "allocated_bytes": 8938191872,
+          "reserved_bytes": 8971616256,
+          "peak_allocated_bytes": 8938191872,
+          "peak_reserved_bytes": 8971616256,
+          "global_free_bytes": 64594509824,
+          "global_total_bytes": 85028372480
+        },
+        "memory_after": {
+          "allocated_bytes": 8971753984,
+          "reserved_bytes": 9208594432,
+          "peak_allocated_bytes": 9162927616,
+          "peak_reserved_bytes": 9208594432,
+          "global_free_bytes": 63712067584,
+          "global_total_bytes": 85028372480
+        },
+        "forward_completed": true
+      }
+    ],
+    [
+      {
+        "phase": "resolve",
+        "status": "passed",
+        "forward_started": true,
+        "schema": "id60-generation-cuda-evidence-v1",
+        "execution_device": "cuda:0",
+        "device_validation_passed": true,
+        "cpu_inference_fallback": false,
+        "memory_scope": "torch_process_allocator; global_free_includes_other_processes",
+        "actual_parameter_devices": [
+          "cuda:0"
+        ],
+        "actual_buffer_devices": [
+          "cuda:0"
+        ],
+        "parameter_tensor_count": 713,
+        "buffer_tensor_count": 3,
+        "parameter_bytes": 8875631616,
+        "input_tensor_devices": {
+          "encoded.input_ids": "cuda:0",
+          "encoded.attention_mask": "cuda:0",
+          "encoded.mm_token_type_ids": "cuda:0",
+          "encoded.pixel_values": "cuda:0",
+          "encoded.image_grid_thw": "cuda:0"
+        },
+        "unexpected_parameter_tensors": [],
+        "unexpected_buffer_tensors": [],
+        "unexpected_input_tensors": {},
+        "device_name": "NVIDIA H100 PCIe",
+        "memory_before": {
+          "allocated_bytes": 8971740672,
+          "reserved_bytes": 9005170688,
+          "peak_allocated_bytes": 8971740672,
+          "peak_reserved_bytes": 9005170688,
+          "global_free_bytes": 63833702400,
+          "global_total_bytes": 85028372480
+        },
+        "memory_after": {
+          "allocated_bytes": 8971744768,
+          "reserved_bytes": 9145679872,
+          "peak_allocated_bytes": 9082408960,
+          "peak_reserved_bytes": 9145679872,
+          "global_free_bytes": 63691096064,
+          "global_total_bytes": 85028372480
+        },
+        "forward_completed": true
+      },
+      {
+        "phase": "verify",
+        "status": "passed",
+        "forward_started": true,
+        "schema": "id60-generation-cuda-evidence-v1",
+        "execution_device": "cuda:0",
+        "device_validation_passed": true,
+        "cpu_inference_fallback": false,
+        "memory_scope": "torch_process_allocator; global_free_includes_other_processes",
+        "actual_parameter_devices": [
+          "cuda:0"
+        ],
+        "actual_buffer_devices": [
+          "cuda:0"
+        ],
+        "parameter_tensor_count": 713,
+        "buffer_tensor_count": 3,
+        "parameter_bytes": 8875631616,
+        "input_tensor_devices": {
+          "encoded.input_ids": "cuda:0",
+          "encoded.attention_mask": "cuda:0",
+          "encoded.mm_token_type_ids": "cuda:0",
+          "encoded.pixel_values": "cuda:0",
+          "encoded.image_grid_thw": "cuda:0"
+        },
+        "unexpected_parameter_tensors": [],
+        "unexpected_buffer_tensors": [],
+        "unexpected_input_tensors": {},
+        "device_name": "NVIDIA H100 PCIe",
+        "memory_before": {
+          "allocated_bytes": 8981194752,
+          "reserved_bytes": 9145679872,
+          "peak_allocated_bytes": 8981194752,
+          "peak_reserved_bytes": 9145679872,
+          "global_free_bytes": 63691096064,
+          "global_total_bytes": 85028372480
+        },
+        "memory_after": {
+          "allocated_bytes": 8981205504,
+          "reserved_bytes": 9487515648,
+          "peak_allocated_bytes": 9276807168,
+          "peak_reserved_bytes": 9487515648,
+          "global_free_bytes": 63349260288,
+          "global_total_bytes": 85028372480
+        },
+        "forward_completed": true
+      }
+    ]
+  ],
+  "status": "passed",
+  "schema": "originx-cloud-worker-mechanical-smoke-v1",
+  "elapsed_seconds": 57.96804463700391,
+  "synthetic_observation": true,
+  "policy_score": null,
+  "real_model": true,
+  "benchmark_episodes": 0,
+  "limitation": "Synthetic 3-image plan and 6-full+3-crop grasp verify; not a worst-case placement/context bound.",
+  "samples": [
+    {
+      "seconds": 0.3420121420058422,
+      "used_mib": 50656,
+      "free_mib": 30434,
+      "utilization_percent": 100
+    },
+    {
+      "seconds": 1.1957792199682444,
+      "used_mib": 50656,
+      "free_mib": 30434,
+      "utilization_percent": 100
+    },
+    {
+      "seconds": 1.9183939889771864,
+      "used_mib": 50656,
+      "free_mib": 30434,
+      "utilization_percent": 100
+    },
+    {
+      "seconds": 2.6392550870077685,
+      "used_mib": 50656,
+      "free_mib": 30434,
+      "utilization_percent": 100
+    },
+    {
+      "seconds": 3.4937156590167433,
+      "used_mib": 50656,
+      "free_mib": 30434,
+      "utilization_percent": 88
+    },
+    {
+      "seconds": 4.040171040978748,
+      "used_mib": 50656,
+      "free_mib": 30434,
+      "utilization_percent": 0
+    },
+    {
+      "seconds": 7.38323928398313,
+      "used_mib": 53,
+      "free_mib": 81038,
+      "utilization_percent": 0
+    },
+    {
+      "seconds": 8.790117832017131,
+      "used_mib": 5,
+      "free_mib": 81086,
+      "utilization_percent": 0
+    },
+    {
+      "seconds": 9.638375124020968,
+      "used_mib": 21,
+      "free_mib": 81069,
+      "utilization_percent": 0
+    },
+    {
+      "seconds": 10.239833000989165,
+      "used_mib": 920,
+      "free_mib": 80170,
+      "utilization_percent": 1
+    },
+    {
+      "seconds": 11.207997296005487,
+      "used_mib": 2710,
+      "free_mib": 78380,
+      "utilization_percent": 1
+    },
+    {
+      "seconds": 12.078854898980353,
+      "used_mib": 3642,
+      "free_mib": 77448,
+      "utilization_percent": 1
+    },
+    {
+      "seconds": 12.907145347970072,
+      "used_mib": 4562,
+      "free_mib": 76528,
+      "utilization_percent": 1
+    },
+    {
+      "seconds": 14.545532754971646,
+      "used_mib": 5426,
+      "free_mib": 75664,
+      "utilization_percent": 2
+    },
+    {
+      "seconds": 15.157489945995621,
+      "used_mib": 6202,
+      "free_mib": 74888,
+      "utilization_percent": 1
+    },
+    {
+      "seconds": 16.393569022999145,
+      "used_mib": 7230,
+      "free_mib": 73860,
+      "utilization_percent": 0
+    },
+    {
+      "seconds": 17.270535639021546,
+      "used_mib": 7975,
+      "free_mib": 73115,
+      "utilization_percent": 1
+    },
+    {
+      "seconds": 18.513180856010877,
+      "used_mib": 8904,
+      "free_mib": 72187,
+      "utilization_percent": 2
+    },
+    {
+      "seconds": 19.11057450401131,
+      "used_mib": 11148,
+      "free_mib": 69943,
+      "utilization_percent": 0
+    },
+    {
+      "seconds": 20.02080058498541,
+      "used_mib": 12748,
+      "free_mib": 68343,
+      "utilization_percent": 1
+    },
+    {
+      "seconds": 20.941762047004886,
+      "used_mib": 13612,
+      "free_mib": 67479,
+      "utilization_percent": 2
+    },
+    {
+      "seconds": 21.788991404988337,
+      "used_mib": 14348,
+      "free_mib": 66743,
+      "utilization_percent": 0
+    },
+    {
+      "seconds": 22.602015762997326,
+      "used_mib": 15028,
+      "free_mib": 66063,
+      "utilization_percent": 1
+    },
+    {
+      "seconds": 23.200718994019553,
+      "used_mib": 16676,
+      "free_mib": 64415,
+      "utilization_percent": 2
+    },
+    {
+      "seconds": 24.18370189302368,
+      "used_mib": 18304,
+      "free_mib": 62787,
+      "utilization_percent": 1
+    },
+    {
+      "seconds": 25.034297711972613,
+      "used_mib": 19124,
+      "free_mib": 61967,
+      "utilization_percent": 1
+    },
+    {
+      "seconds": 25.843983453989495,
+      "used_mib": 19378,
+      "free_mib": 61713,
+      "utilization_percent": 1
+    },
+    {
+      "seconds": 26.633614628983196,
+      "used_mib": 19378,
+      "free_mib": 61713,
+      "utilization_percent": 0
+    },
+    {
+      "seconds": 27.263471052981913,
+      "used_mib": 19388,
+      "free_mib": 61703,
+      "utilization_percent": 0
+    },
+    {
+      "seconds": 28.22689997102134,
+      "used_mib": 19574,
+      "free_mib": 61517,
+      "utilization_percent": 0
+    },
+    {
+      "seconds": 29.08363567001652,
+      "used_mib": 19488,
+      "free_mib": 61603,
+      "utilization_percent": 0
+    },
+    {
+      "seconds": 29.946674411999993,
+      "used_mib": 19588,
+      "free_mib": 61503,
+      "utilization_percent": 4
+    },
+    {
+      "seconds": 30.80137935199309,
+      "used_mib": 19488,
+      "free_mib": 61603,
+      "utilization_percent": 0
+    },
+    {
+      "seconds": 31.434926596004516,
+      "used_mib": 19552,
+      "free_mib": 61539,
+      "utilization_percent": 0
+    },
+    {
+      "seconds": 32.4178297080216,
+      "used_mib": 19576,
+      "free_mib": 61515,
+      "utilization_percent": 5
+    },
+    {
+      "seconds": 33.29303548700409,
+      "used_mib": 19530,
+      "free_mib": 61561,
+      "utilization_percent": 0
+    },
+    {
+      "seconds": 34.59043741598725,
+      "used_mib": 19586,
+      "free_mib": 61505,
+      "utilization_percent": 1
+    },
+    {
+      "error": "TimeoutExpired(['nvidia-smi', '--query-gpu=memory.used,memory.free,utilization.gpu', '-i', '7', '--format=csv,noheader,nounits'], 5)"
+    },
+    {
+      "seconds": 42.5601232899935,
+      "used_mib": 19538,
+      "free_mib": 61553,
+      "utilization_percent": 0
+    },
+    {
+      "error": "TimeoutExpired(['nvidia-smi', '--query-gpu=memory.used,memory.free,utilization.gpu', '-i', '7', '--format=csv,noheader,nounits'], 5)"
+    },
+    {
+      "seconds": 49.67655895301141,
+      "used_mib": 19716,
+      "free_mib": 61375,
+      "utilization_percent": 0
+    },
+    {
+      "seconds": 50.830844677984715,
+      "used_mib": 19887,
+      "free_mib": 61204,
+      "utilization_percent": 56
+    },
+    {
+      "seconds": 51.80055710900342,
+      "used_mib": 19893,
+      "free_mib": 61197,
+      "utilization_percent": 60
+    },
+    {
+      "seconds": 52.65567558899056,
+      "used_mib": 20325,
+      "free_mib": 60765,
+      "utilization_percent": 63
+    },
+    {
+      "seconds": 53.20516907697311,
+      "used_mib": 20213,
+      "free_mib": 60877,
+      "utilization_percent": 0
+    },
+    {
+      "seconds": 53.808400804991834,
+      "used_mib": 20425,
+      "free_mib": 60665,
+      "utilization_percent": 1
+    },
+    {
+      "seconds": 54.920422433002386,
+      "used_mib": 20675,
+      "free_mib": 60415,
+      "utilization_percent": 41
+    },
+    {
+      "seconds": 55.78074971900787,
+      "used_mib": 20675,
+      "free_mib": 60415,
+      "utilization_percent": 59
+    },
+    {
+      "seconds": 57.026443023991305,
+      "used_mib": 20291,
+      "free_mib": 60799,
+      "utilization_percent": 0
+    },
+    {
+      "seconds": 57.929244066006504,
+      "used_mib": 20215,
+      "free_mib": 60875,
+      "utilization_percent": 0
+    }
+  ],
+  "max_global_used_mib": 50656,
+  "replica_count": 1,
+  "cross_replica_inference_schedule": "single_worker"
+}

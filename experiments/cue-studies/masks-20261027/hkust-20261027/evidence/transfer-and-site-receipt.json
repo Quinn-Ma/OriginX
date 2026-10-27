@@ -1,0 +1,33 @@
+{
+  "host": "hkust-cluster h800-8-1 (NVIDIA H100 PCIe x8)",
+  "archives": [
+    {
+      "archive": "stage-a-upstreams.tar.gz",
+      "sha256": "57cf637ab54242b424d68660ad817d7ef20ce8c8aceb783c9f35252f69f2fdad",
+      "bytes": 282970478
+    },
+    {
+      "archive": "stage-a-assets.tar.gz",
+      "sha256": "6f7ed1c3b74b3933e00e56e87838ef9ed286f083bf854af256c43aa83acfd425",
+      "bytes": 70177672
+    },
+    {
+      "archive": "dev-seeds-assets-delta-v1.tar.gz",
+      "sha256": "5dfabac2fd111f9b19c250522cb3cd0b22008fe047dfd2f5cb63e0f7002d1359",
+      "bytes": 52889762
+    },
+    {
+      "archive": "formal-seeds-assets-delta-v1.tar.gz",
+      "sha256": "93a9b3f925efee9cae783285e184b4b8f90b995d706fe8ec62ddb37e16bac3ca",
+      "bytes": 111522831
+    }
+  ],
+  "site": "/ephemeral/qinzhen/originx-harness-v2/work/hkust/site-t3.json",
+  "python_original": "3.11.13",
+  "python_deployment": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "same_python_patch_claimed": false,
+  "env_tier": "RAM tier /dev/shm/qinzhen (regenerable from the lock files under work/hkust)",
+  "asset_delta_validation": "pending",
+  "policy_calls": 0,
+  "task_rollouts": 0
+}

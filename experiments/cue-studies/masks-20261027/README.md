@@ -1,19 +1,23 @@
-# Mask-cue study (exterior contour masks + destination ghost box) — status: task outcomes not obtained
+# Mask-cue study (exterior contour masks + destination ghost box) — status: done, no benefit found
 
 This folder holds the evidence for the mask-cue arm of the cue-precision studies: a pixel-exact
 object-mask prompt for the frozen XR1 policy (Xiaomi-Robotics-1-RoboCasa365) on RoboCasa
 `CoffeeSetupMug`, drawn with `supervision` 0.27.0, compared against the frozen point cue under the
 same preregistered paired protocol as the fine-region study in `../regions-20261024/`.
 
-**What exists:** the implementation, its CPU test suite, the pixel-fidelity validation (T3) on an
-NVIDIA H800, the rendering-determinism amendment, the seed audit and the frozen pilot/formal
-manifests.
+**Result (2026-10-27, HKUST H100 cluster; registered paired analysis, 12/12 pairs admissible, 0 UNKNOWN):**
+masks 5/12 vs point 8/12 (2 mask-only, 5 point-only, 3 both, 2 neither); difference masks − point
+= −25.0 percentage points, conservative 95% interval [−74.1, +39.7], exact paired McNemar p = 0.453.
+No success benefit from exact contours; the point estimate favors the point cue; equivalence is not
+established. Everything about that execution — analyzer reports, re-frozen manifests (pilot
+`7c89c95a12e7`, formal `8266cc633102`), cluster T3 (11/12, same failing mask), GPU probes, scripts,
+logs and the disclosure note — is in [`hkust-20261027/`](hkust-20261027/).
 
-**What does not exist:** any mask-arm task outcome. The 6-case engineering pilot was launched on the
-H800 at 2026-10-26 23:06:50 UTC and the instance became unreachable about 20 minutes later
-(balance exhausted); no episode result was retrieved and the 12-pair formal run was never started.
-Success rates, paired effects and completion times for the mask cue are therefore **not measured**.
-Nothing in this folder supports a claim that mask cues help or hurt.
+**History:** the first pilot launch on a rented H800 (2026-10-26 23:06:50 UTC) was lost with the
+instance about 20 minutes later; no episode result was retrieved, and nothing from it is counted.
+The material below (implementation, CPU test suite, H800 T3, rendering amendment, seed audit, the
+originally frozen manifests `df91a4d28570` / `94d4721e1452`, AutoDL deployment scripts and the v1
+manuscript) is kept as registered.
 
 ## T3 pixel-fidelity result (H800, EGL, zero-sample policy-RGB cohort)
 

@@ -1,0 +1,21 @@
+{
+  "python": {
+    "sim": "/dev/shm/qinzhen/originx-envs/sim/bin/python",
+    "policy": "/dev/shm/qinzhen/originx-envs/policy/bin/python",
+    "planner": "/dev/shm/qinzhen/originx-envs/planner/bin/python"
+  },
+  "pythonpath_sim": [
+    "/ephemeral/qinzhen/originx-harness-v2/vendor/robocasa",
+    "/ephemeral/qinzhen/originx-harness-v2/vendor/robosuite"
+  ],
+  "planner_weights": "/dev/shm/qinzhen/originx-models/planner",
+  "backend_config": "/ephemeral/qinzhen/originx-harness-v2/work/hkust/backend-xr1-hkust.json",
+  "env": {
+    "HF_HOME": "/ephemeral/qinzhen/originx-harness-v2/work/hkust/hf-cache",
+    "MPLCONFIGDIR": "/ephemeral/qinzhen/originx-harness-v2/work/hkust/mpl-cache",
+    "TMPDIR": "/ephemeral/qinzhen/originx-harness-v2/work/hkust/tmp",
+    "OMP_NUM_THREADS": "8"
+  },
+  "gl_renderer": "NVIDIA H100 PCIe/PCIe/SSE2",
+  "policy_rgb_samples": 0
+}

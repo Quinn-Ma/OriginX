@@ -1,0 +1,80 @@
+{
+  "base_driver_sha256": "15a55b0bfef659f00caee29e87cc4d168958ee8f7fe92da2f5d0e2281c5dc721",
+  "case_count": 24,
+  "case_ids": [
+    "95423ecf17cadb41377e1d81572a6a133bd07229305f0f9b32830c907f554b38",
+    "62d566e78f904f1a266c217023a1a2283460a0d7bfdc717c059c6c73d4eecb71",
+    "1c74062a426b669e793adac024a27eb982468d3bc2e921b8b5700267ab090ada",
+    "0f014ca69d343e322e5d74105a0b731919b78a2d6da415a671c17e7b64b15147",
+    "62e4ab4aa30674b3963ac3770b598f49099b8b28fe78dbc5eebb3fb593f7be7f",
+    "655fa0fa71e6e10462ff69e4285cbfc6208843a7fdffb292326278a367516825",
+    "be1bda574551dd263308d570e0a0de3521ac694cf90e6b3278f34c6ee5fdd12e",
+    "06b4b16e63090dd0faabda7bc80d4a13555249545bb242e9bef2f6cf673e6188",
+    "dbce9ce78fe21d0094062aa5265b7f83754bd3e02622f915eeb28d9f0d739e78",
+    "8e2e2b5fbc1a838d145daa216305b121e032e4a789eee2ecdc8ce55d5c830b2c",
+    "609b7b4bad22aa2e91e223e45346ca62f1e508d08f28e775643a52ea73f9f321",
+    "6881b63b83bdc36d331226fd4a705ddd111310006dea61e33c412a7e403fc265",
+    "11c57770f2907696801ff3d3d62635bb54e4d6b10d0747207110ae2518664c58",
+    "514fc67b1e27da3437cc3753f5cac371aae7d86dd0ce80c07003f0a490cd2a57",
+    "d88429f6dabf4a730fefe1588ddb9e92ca47dd80c8a9a839d44a24e29909a631",
+    "15bc9dc8f31e34270edb8e280c52dbd9c225d48153d1c6ca722d0eb3c51b7a5d",
+    "91906d42c9152162c48d463c6f46b85895e74d6cff29eeed13c7206e9e8a2f41",
+    "37849c61b3b91b92d8623185e0cff3dee76b524a11d3ccdce143ae6dd15a3751",
+    "6c4975484d919aeea4c9a3e07d851edd9ac6a3ca52351e111ccda9f0d1860ecf",
+    "784a3202f7d6afd6bc9a2e2caf939de58b252138dbf1ef04053d5dfd0d307910",
+    "2b6930b498288433aab568ff67638c30b71f6ba767026e7172f6e0d4e1750c8e",
+    "ff97dd47a6674db6ccdb7ddc3d3aa9d908e2c7d2501c46d7f02a88d6e83385ff",
+    "c31bb212e45c91d5724c929a43a9f9302818a73d50a733c4b264f1decf5dce1c",
+    "1e9f22c685a75d05fe52270437545791417ebed5743cea1373295aee1eff6d09"
+  ],
+  "cleanup_reserve_seconds": 60,
+  "cloud_provider_api_calls": 0,
+  "concurrency": 3,
+  "cpu_model_inference_allowed": false,
+  "deadline_epoch": 1793134713.3359447,
+  "driver_sha256": "15a55b0bfef659f00caee29e87cc4d168958ee8f7fe92da2f5d0e2281c5dc721",
+  "dry_run": false,
+  "gpus": [
+    "5",
+    "6",
+    "7"
+  ],
+  "host_billing": "outside_driver_user_provisioned_host",
+  "layout": [
+    {
+      "gpu": "5",
+      "native_port": 20272,
+      "planner_port": 20292,
+      "worker": 0
+    },
+    {
+      "gpu": "6",
+      "native_port": 20274,
+      "planner_port": 20294,
+      "worker": 1
+    },
+    {
+      "gpu": "7",
+      "native_port": 20276,
+      "planner_port": 20296,
+      "worker": 2
+    }
+  ],
+  "manifest_sha256": "8266cc63310241367c77475b96c22e855304160686e98d0dbcc998a544a302dd",
+  "model_inference_device": "cuda:0",
+  "model_residency": "resident",
+  "native_base_port": 20272,
+  "owed_case_ids": null,
+  "placement": "linux_egl",
+  "planner_base_port": 20292,
+  "purpose": "masks_point_unseen_seed_validation",
+  "sequential_gpu": false,
+  "site_sha256": "f606dc3eaad58719300e43d93255118b4364623297462098f717a108542cf495",
+  "start_epoch": 1793120113.3359447,
+  "start_utc": "2026-10-27T16:55:13.335963+00:00",
+  "study": "validation",
+  "watchdog_seconds": 14600,
+  "work_deadline_epoch": 1793134653.3359447,
+  "workers": 3,
+  "workers_per_gpu": 1
+}

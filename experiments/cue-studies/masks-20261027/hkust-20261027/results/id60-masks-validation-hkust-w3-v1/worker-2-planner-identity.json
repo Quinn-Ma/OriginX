@@ -1,0 +1,49 @@
+{
+  "arm_or_feedback_phase_in_prompt": false,
+  "backend": "Qwen3-VL-4B-Instruct",
+  "checkpoint_sha256": "6efa4249417c81fb61d50abe3d27e7bec93db5766656ca0c1f83da22551512d6",
+  "do_sample": false,
+  "execution_device": "cuda:0",
+  "fixture": false,
+  "generation_cuda_evidence": "id60-generation-cuda-evidence-v1",
+  "hierarchical_controller_source_sha256": "b893b28a8a0d2a074b6f3b96908b18b2c6b21a7561aa5ae688e0be604c637778",
+  "hierarchical_patch_id": "shared-hierarchical-presentation-and-finite-feedback-v1",
+  "hierarchical_prompt_sha256": "2b52b8e5cee05f2830dc2b97847908edbf12b1296ca1cce0011bf156bb357199",
+  "hierarchical_schema": "id60-hierarchical-verification-v1",
+  "hierarchical_source_sha256": "2bcb0cc9590e2b70e767ae17b7670b50eaccd251fdc6ecb7b34f29ba4e0330ed",
+  "nonplace_verification_context_preserved": true,
+  "nonplace_verification_unchanged": true,
+  "offload_between_requests": false,
+  "parameter_updates": 0,
+  "placement_context_augmented": true,
+  "placement_original_context_values_preserved": true,
+  "plan_max_new_tokens": 1024,
+  "policy_marker_treatment": {
+    "feedback": "hierarchical",
+    "point": "original_point",
+    "regions": "hierarchical"
+  },
+  "policy_text_treatment": {
+    "feedback": "finite_align_execute_instruction_plus_stable_legend",
+    "point": "frozen_compiled_instruction",
+    "regions": "frozen_compiled_instruction_plus_stable_legend"
+  },
+  "prompt_sha256": "08522b9ffd97db91637aca29c0bfc8631f57f257445a5423b255c65f24f04cfd",
+  "release_protocol": 1,
+  "request_cuda_cache_release_policy": "keep_weights_cuda_synchronize_empty_cache_after_complete_request",
+  "response_metadata_template": "exact_current_public_context_unknown_visual_facts",
+  "same_verifier_for_all_arms": true,
+  "selection_history": "current-images-and-command-only-separate-generation",
+  "server_modifies_policy_markers": false,
+  "source_sha256": "3277713be9175c0d53e38e94cee31657370c2e16cd796cf73f4c12c9ff324321",
+  "step_max_new_tokens": 384,
+  "supported_controller_variants": [
+    "full"
+  ],
+  "torch": "2.8.0+cu128",
+  "transformers": "5.5.0",
+  "verification_context_preserved": false,
+  "verification_original_prompt_sha256": "8fa333daa10864f8cdfaff1eee9d2bbbef4460250c2c8827450e8b577f1ab022",
+  "verification_view_mode": "labeled_current_crops",
+  "verification_view_source_sha256": "0b1071b456011324b9dd5355e8bd7230dab028efd5a030bbf203f8fee24b93d9"
+}

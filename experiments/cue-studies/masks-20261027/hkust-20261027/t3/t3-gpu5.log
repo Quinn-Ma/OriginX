@@ -1,0 +1,108 @@
+/ephemeral/qinzhen/originx-harness-v2/vendor/robocasa/robocasa/__init__.py:1030: SyntaxWarning: invalid escape sequence '\ '
+  __logo__ = """
+/ephemeral/qinzhen/originx-harness-v2/vendor/robosuite/robosuite/__init__.py:45: SyntaxWarning: invalid escape sequence '\ '
+  __logo__ = """
+[robosuite WARNING] No private macro file found! (macros.py:57)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:58)
+[robosuite WARNING] To setup, run: python /ephemeral/qinzhen/originx-harness-v2/vendor/robosuite/robosuite/scripts/setup_macros.py (macros.py:59)
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:30)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly (e.g. pip install mink==0.0.5), otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:40)
+[robosuite WARNING] No private macro file found! (macros.py:28)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:29)
+[robosuite WARNING] To setup, run: python /ephemeral/qinzhen/originx-harness-v2/vendor/robocasa/robocasa/scripts/setup_macros.py (macros.py:30)
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+Creating CoffeeSetupMug with split=pretrain
+[robosuite INFO] Loading controller configuration from: /ephemeral/qinzhen/originx-harness-v2/vendor/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+/dev/shm/qinzhen/originx-envs/sim/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:159: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.[0m
+  logger.warn(f"{pre} is not within the observation space.")
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+UserWarning: [33mWARN: The obs returned by the `step()` method is not within the observation space.[0m
+Creating CoffeeSetupMug with split=pretrain
+[robosuite INFO] Loading controller configuration from: /ephemeral/qinzhen/originx-harness-v2/vendor/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.[0m
+Creating CoffeeSetupMug with split=pretrain
+[robosuite INFO] Loading controller configuration from: /ephemeral/qinzhen/originx-harness-v2/vendor/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+{
+ "all_gates_are_predeclared": true,
+ "all_passed": false,
+ "augmenter_extra_ms_median_per_seed": [
+  36.44623950822279,
+  23.696929012658074,
+  23.636047000763938
+ ],
+ "depth_convention_frozen": "legacy",
+ "depth_convention_selected": [
+  "legacy"
+ ],
+ "ghost_subject_exclusion_ok": true,
+ "gl_evaluated_masks": 115,
+ "gl_iou_median_evaluated": 1.0,
+ "gl_iou_min_evaluated": 0.9924698795180723,
+ "gl_mismatch_outside_1px_band_total": 3,
+ "gl_non_ghost_pixels_equal_plain_render": true,
+ "gl_total_masks": 117,
+ "independent_reference_render_and_decode": true,
+ "inside_mask_pixels_changed_total": 0,
+ "mask_offscreen_samples": [
+  0
+ ],
+ "overhead_ms_median_per_seed": [
+  58.41514852363616,
+  46.0344240127597,
+  45.902485988335684
+ ],
+ "passed": {
+  "G2_pixel_identical_single_sample_reference": true,
+  "G2_production_context_single_sample": true,
+  "G2_site_hiding_superset_and_only_site_pixels_gained_production": true,
+  "G2_strict_frozen_extractor_rule_100pct": true,
+  "G3_depth_convention": true,
+  "G4_gl_iou_ge_098_production_single_sample": true,
+  "G4_gl_mismatch_within_1px_band_production_single_sample": false,
+  "G4_non_ghost_pixels_unchanged": true,
+  "G5_masks_source_inside_unchanged": true,
+  "G8_overhead_le_100ms": true,
+  "exclusion_rings_painter_production_controller": true,
+  "policy_rgb_byte_identical": true
+ },
+ "place_cue_ms_median_per_seed": [
+  21.968909015413374,
+  22.337495000101626,
+  22.266438987571746
+ ],
+ "policy_offscreen_samples": [
+  0
+ ],
+ "policy_rgb_unchanged": true,
+ "production_single_sample_registry_checks": {
+  "bbox_diagnostic_status": {
+   "both_hidden": 169158,
+   "contains": 193,
+   "equal": 19865,
+   "inconsistent": 0,
+   "registry_hidden": 9
+  },
+  "comparisons": 189225,
+  "entity_cameras_gaining_px": 4201,
+  "gained_px_not_site": 0,
+  "gained_px_total": 789877,
+  "registry_visible": 20058,
+  "strict_with_sites_equal": 189225,
+  "superset_violation_px": 0
+ },
+ "reference_scope": "independent official robosuite render/read_pixels in a private single-sample MjrContext",
+ "rings_disjoint_and_exterior": true,
+ "scope": "source_resolution_only; actual XR1 crop/resize diagnostics are separate T2 evidence",
+ "single_sample_reference_pixel_comparison": {
+  "analytic_ghost_mismatch_px": 0,
+  "depth_mismatch_px": 0,
+  "object_camera_comparisons": 189225,
+  "object_mask_mismatch_px": 0,
+  "segmentation_mismatch_px": 0,
+  "with_sites_mismatch_px": 0
+ },
+ "supervision_equals_reference": true
+}
