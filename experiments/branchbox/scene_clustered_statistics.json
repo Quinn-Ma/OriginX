@@ -1,0 +1,307 @@
+{
+  "pooled": {
+    "n_per_arm": 160,
+    "unique_task_initial_states": 80,
+    "counts": {
+      "N0": 73,
+      "P0": 89,
+      "PS": 91
+    },
+    "rates_percent": {
+      "N0": 45.625,
+      "P0": 55.625,
+      "PS": 56.875
+    },
+    "contrasts": {
+      "PS-N0": {
+        "effect_pp": 11.25,
+        "ci95_pp": [
+          1.875,
+          20.625
+        ],
+        "discordant_wins": 38,
+        "discordant_losses": 20
+      },
+      "P0-N0": {
+        "effect_pp": 10.0,
+        "ci95_pp": [
+          0.0,
+          19.375
+        ],
+        "discordant_wins": 36,
+        "discordant_losses": 20
+      },
+      "PS-P0": {
+        "effect_pp": 1.25,
+        "ci95_pp": [
+          -8.125,
+          10.0
+        ],
+        "discordant_wins": 28,
+        "discordant_losses": 26
+      }
+    }
+  },
+  "by_model": {
+    "smolvla": {
+      "n_per_arm": 80,
+      "unique_task_initial_states": 80,
+      "counts": {
+        "N0": 42,
+        "P0": 51,
+        "PS": 50
+      },
+      "rates_percent": {
+        "N0": 52.5,
+        "P0": 63.74999999999999,
+        "PS": 62.5
+      },
+      "contrasts": {
+        "PS-N0": {
+          "effect_pp": 10.0,
+          "ci95_pp": [
+            -2.5,
+            22.5
+          ],
+          "discordant_wins": 17,
+          "discordant_losses": 9
+        },
+        "P0-N0": {
+          "effect_pp": 11.25,
+          "ci95_pp": [
+            -1.25,
+            23.75
+          ],
+          "discordant_wins": 19,
+          "discordant_losses": 10
+        },
+        "PS-P0": {
+          "effect_pp": -1.25,
+          "ci95_pp": [
+            -13.75,
+            11.25
+          ],
+          "discordant_wins": 13,
+          "discordant_losses": 14
+        }
+      }
+    },
+    "xvla": {
+      "n_per_arm": 80,
+      "unique_task_initial_states": 80,
+      "counts": {
+        "N0": 31,
+        "P0": 38,
+        "PS": 41
+      },
+      "rates_percent": {
+        "N0": 38.75,
+        "P0": 47.5,
+        "PS": 51.24999999999999
+      },
+      "contrasts": {
+        "PS-N0": {
+          "effect_pp": 12.5,
+          "ci95_pp": [
+            -1.25,
+            26.25
+          ],
+          "discordant_wins": 21,
+          "discordant_losses": 11
+        },
+        "P0-N0": {
+          "effect_pp": 8.75,
+          "ci95_pp": [
+            -3.75,
+            21.25
+          ],
+          "discordant_wins": 17,
+          "discordant_losses": 10
+        },
+        "PS-P0": {
+          "effect_pp": 3.75,
+          "ci95_pp": [
+            -8.75,
+            16.25
+          ],
+          "discordant_wins": 15,
+          "discordant_losses": 12
+        }
+      }
+    }
+  },
+  "by_task": {
+    "0": {
+      "n_per_arm": 40,
+      "unique_task_initial_states": 20,
+      "counts": {
+        "N0": 25,
+        "P0": 33,
+        "PS": 29
+      },
+      "rates_percent": {
+        "N0": 62.5,
+        "P0": 82.5,
+        "PS": 72.5
+      },
+      "contrasts": {
+        "PS-N0": {
+          "effect_pp": 10.0,
+          "ci95_pp": [
+            -5.0,
+            27.5
+          ],
+          "discordant_wins": 9,
+          "discordant_losses": 5
+        },
+        "P0-N0": {
+          "effect_pp": 20.0,
+          "ci95_pp": [
+            7.5,
+            32.5
+          ],
+          "discordant_wins": 10,
+          "discordant_losses": 2
+        },
+        "PS-P0": {
+          "effect_pp": -10.0,
+          "ci95_pp": [
+            -30.0,
+            7.5
+          ],
+          "discordant_wins": 5,
+          "discordant_losses": 9
+        }
+      }
+    },
+    "3": {
+      "n_per_arm": 40,
+      "unique_task_initial_states": 20,
+      "counts": {
+        "N0": 15,
+        "P0": 16,
+        "PS": 21
+      },
+      "rates_percent": {
+        "N0": 37.5,
+        "P0": 40.0,
+        "PS": 52.5
+      },
+      "contrasts": {
+        "PS-N0": {
+          "effect_pp": 15.0,
+          "ci95_pp": [
+            -5.0,
+            35.0
+          ],
+          "discordant_wins": 10,
+          "discordant_losses": 4
+        },
+        "P0-N0": {
+          "effect_pp": 2.5,
+          "ci95_pp": [
+            -17.5,
+            20.0
+          ],
+          "discordant_wins": 6,
+          "discordant_losses": 5
+        },
+        "PS-P0": {
+          "effect_pp": 12.5,
+          "ci95_pp": [
+            -2.5,
+            27.5
+          ],
+          "discordant_wins": 8,
+          "discordant_losses": 3
+        }
+      }
+    },
+    "4": {
+      "n_per_arm": 40,
+      "unique_task_initial_states": 20,
+      "counts": {
+        "N0": 18,
+        "P0": 22,
+        "PS": 21
+      },
+      "rates_percent": {
+        "N0": 45.0,
+        "P0": 55.00000000000001,
+        "PS": 52.5
+      },
+      "contrasts": {
+        "PS-N0": {
+          "effect_pp": 7.5,
+          "ci95_pp": [
+            -12.5,
+            25.0
+          ],
+          "discordant_wins": 10,
+          "discordant_losses": 7
+        },
+        "P0-N0": {
+          "effect_pp": 10.0,
+          "ci95_pp": [
+            -17.5,
+            37.5
+          ],
+          "discordant_wins": 13,
+          "discordant_losses": 9
+        },
+        "PS-P0": {
+          "effect_pp": -2.5,
+          "ci95_pp": [
+            -27.5,
+            20.0
+          ],
+          "discordant_wins": 8,
+          "discordant_losses": 9
+        }
+      }
+    },
+    "5": {
+      "n_per_arm": 40,
+      "unique_task_initial_states": 20,
+      "counts": {
+        "N0": 15,
+        "P0": 18,
+        "PS": 20
+      },
+      "rates_percent": {
+        "N0": 37.5,
+        "P0": 45.0,
+        "PS": 50.0
+      },
+      "contrasts": {
+        "PS-N0": {
+          "effect_pp": 12.5,
+          "ci95_pp": [
+            -5.0,
+            30.0
+          ],
+          "discordant_wins": 9,
+          "discordant_losses": 4
+        },
+        "P0-N0": {
+          "effect_pp": 7.5,
+          "ci95_pp": [
+            -7.5,
+            22.5
+          ],
+          "discordant_wins": 7,
+          "discordant_losses": 4
+        },
+        "PS-P0": {
+          "effect_pp": 5.0,
+          "ci95_pp": [
+            -7.5,
+            17.5
+          ],
+          "discordant_wins": 7,
+          "discordant_losses": 5
+        }
+      }
+    }
+  }
+}

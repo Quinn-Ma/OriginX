@@ -6,6 +6,20 @@ Qinzhen Ma · Harry Yang · Jialin Wu · Shichen Tang · Gordon Dai
 
 [📄 Paper](paper/OriginX_arXiv_manuscript.pdf) · [🤗 Models](https://huggingface.co/Qinzhen3/OriginX) · [🌐 Website](https://robocasa.originxairobotics.com) · [🔁 Reproduce](REPRODUCIBILITY.md) · [📦 TeX](paper/OriginX_arXiv_source.zip)
 
+## Latest research: BranchBox
+
+Qinzhen Ma* · Harry Yang* · Changsheng Lu* · Xiaogang Xu
+
+*Equal contribution. Rice University · HKUST · Zhejiang University.*
+
+**Stage and target supervision for multi-object manipulation.** On a retrospective selection of four two-object LIBERO-Long tasks with SmolVLA and X-VLA, BranchBox with self-generated prompts reaches **56.9% (91/160)** task success versus **45.6% (73/160)** for matched action-only training: **+11.3 percentage points** (unadjusted 95% CI: **+1.9 to +20.6**) and a **24.7% relative increase in success**. The same trained networks reach 55.6% with ordinary inputs.
+
+The analysis uses **80 shared initial scenes**, each evaluated with both model families, for 160 model–scene outcomes per condition. Intervals resample the shared scenes and are conditional on the selected tasks, models and one training seed; they are not adjusted for retrospective selection. The supplied task-specific stage table provides decomposition. This is a separate LIBERO study from the RoboCasa365 research below.
+
+[Project page](https://robocasa.originxairobotics.com/branchbox/) · [Research draft](website/branchbox/assets/BranchBox_CVPR2027_reviewer_v3.pdf) · [Supplement](website/branchbox/assets/BranchBox_CVPR2027_reviewer_v3_supplementary.pdf) · [LaTeX source](website/branchbox/assets/BranchBox_CVPR2027_reviewer_v3_source.zip)
+
+## OriginX: RoboCasa365 study
+
 **59.84% in a complete 2,500-episode author-run evaluation. [Paper](paper/OriginX_arXiv_manuscript.pdf) · [Evaluation evidence](evidence/).**
 
 OriginX adapts [Xiaomi-Robotics-1-RoboCasa365](https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-1-RoboCasa365) with Action LoRA, then freezes the policy and trains a **4.22M-parameter conditioning branch**. Visual-language features and robot state guide action generation.

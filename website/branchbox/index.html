@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BranchBox — stage and target supervision for multi-object manipulation</title>
+  <meta name="description" content="BranchBox studies stage and target supervision in two compact robot policies. A retrospective four-task LIBERO analysis reports 56.9% versus 45.6% success: +11.3 percentage points and +24.7% relative success.">
+  <link rel="canonical" href="https://robocasa.originxairobotics.com/branchbox/">
+  <meta property="og:title" content="BranchBox — stage and target supervision for multi-object manipulation">
+  <meta property="og:description" content="Four two-object LIBERO tasks. Two compact policies. 56.9% versus 45.6% success in a retrospective paired analysis.">
+  <meta property="og:url" content="https://robocasa.originxairobotics.com/branchbox/">
+  <meta property="og:type" content="article">
+  <meta name="citation_title" content="BranchBox: Stage and Target Supervision for Multi-Object Placement">
+  <meta name="citation_author" content="Qinzhen Ma">
+  <meta name="citation_author" content="Harry Yang">
+  <meta name="citation_author" content="Changsheng Lu">
+  <meta name="citation_author" content="Xiaogang Xu">
+  <meta name="citation_publication_date" content="2026/11/01">
+  <meta name="theme-color" content="#f1f3ff">
+  <link rel="stylesheet" href="../styles.css?v=method-v1">
+  <style>
+    .bb-nav{max-width:1240px;margin:auto}.bb-main{max-width:1100px;margin:auto;padding:64px 32px 80px}.bb-eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:#5262ac;margin:0 0 20px}.bb-title{font-size:clamp(2.6rem,6vw,4.7rem);line-height:1.06;letter-spacing:-.05em;margin:0 0 24px;max-width:980px}.bb-title span{color:#354bea}.bb-lede{font-size:1.2rem;line-height:1.65;color:#526076;max-width:790px}.bb-meta{color:#687184;font-size:.88rem}.bb-results{margin:44px 0 0;border:1px solid #cbd3f0;border-radius:22px;overflow:hidden;background:#f6f7ff}.bb-result-grid{display:grid;grid-template-columns:1.05fr 1fr 1fr;gap:30px;padding:34px}.bb-stat-label{font-size:.82rem;color:#56627d;margin:0 0 10px}.bb-stat{font-size:clamp(2.6rem,4.9vw,4rem);line-height:1.1;letter-spacing:-.055em;color:#263ab3;margin:0}.bb-stat small{font-size:.34em;letter-spacing:-.02em}.bb-stat-sub{font-size:.85rem;color:#54617b;margin:12px 0 0}.bb-scope{padding:20px 34px;border-top:1px solid #dce1f2;color:#5b657a;background:#fff;font-size:.86rem;line-height:1.7;margin:0}.bb-section{margin-top:66px}.bb-section h2{font-size:2rem;line-height:1.2;letter-spacing:-.035em;margin:0 0 22px}.bb-copy{max-width:790px;color:#4b5568;font-size:1.06rem;line-height:1.8}.bb-method{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:26px}.bb-card{padding:25px;border:1px solid #e0e4ee;border-radius:16px;background:#fafbfe}.bb-card .bb-step{font-size:.8rem;color:#5363b3}.bb-card h3{font-size:1.13rem;line-height:1.4;margin:13px 0}.bb-card p{font-size:.94rem;line-height:1.75;color:#5d687c;margin:0}.bb-table-wrap{overflow-x:auto;border:1px solid #e0e4ee;border-radius:16px;margin:26px 0}.bb-table{width:100%;border-collapse:collapse;text-align:left;font-size:.96rem}.bb-table th,.bb-table td{padding:17px 22px;border-bottom:1px solid #e4e7f0}.bb-table th{font-weight:600;color:#4c5870;background:#f8f9fc}.bb-table tr:last-child td{border-bottom:0}.bb-table .bb-emph{color:#263ab3;font-weight:600}.bb-note{font-size:.88rem;color:#667085;line-height:1.8;max-width:850px}.bb-tasks{display:flex;flex-wrap:wrap;gap:10px;padding:0;list-style:none;margin:23px 0}.bb-tasks li{border:1px solid #dce1ed;border-radius:20px;padding:7px 15px;font-size:.87rem;color:#506079}.bb-downloads{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.bb-downloads a{display:block;border:1px solid #d9dfed;border-radius:14px;padding:23px;text-decoration:none}.bb-downloads a:hover{background:#f6f7ff}.bb-downloads strong{display:block;font-size:1rem;margin-bottom:7px}.bb-downloads span{font-size:.84rem;color:#67728a}.bb-footer{margin-top:60px;padding-top:24px;border-top:1px solid #e1e5ee;color:#788195;font-size:.84rem}.bb-masthead{height:auto;min-height:76px;flex-wrap:wrap;padding-top:18px;padding-bottom:18px}.bb-masthead nav{gap:22px}.bb-masthead nav a{display:inline-block;min-height:32px;padding-top:5px}.bb-top{background:linear-gradient(180deg,#f1f3ff 0,#fff 650px)}@media(max-width:760px){.bb-result-grid,.bb-method,.bb-downloads{grid-template-columns:1fr}.bb-result-grid{gap:24px}.bb-result-grid>div+div{border-top:1px solid #dce1f2;padding-top:22px}.bb-main{padding:42px 23px 60px}.bb-result-grid{padding:28px}.bb-scope{padding:20px 28px}.bb-section{margin-top:48px}.bb-masthead{padding-left:23px;padding-right:23px;gap:18px}.bb-masthead nav{gap:17px;font-size:.8rem}.bb-title{font-size:2.65rem}.bb-lede{font-size:1.06rem}.bb-table th,.bb-table td{padding:14px}.bb-copy{font-size:1rem}}
+    .bb-authors{font-size:1rem;line-height:1.9;color:#35415c;margin:22px 0 7px}.bb-authors a{text-decoration:none}.bb-authors sup{font-size:.65em;margin-left:3px}
+  </style>
+</head>
+<body class="bb-top">
+<a class="skip" href="#main">Skip to article</a>
+<header class="masthead bb-masthead bb-nav">
+  <a class="wordmark" href="../" aria-label="OriginX research home">Origin<span>X</span><span class="wordmark-divider" aria-hidden="true"></span><span class="wordmark-caption">Research</span></a>
+  <nav aria-label="Main navigation"><a href="#method">Method</a><a href="#results">Results</a><a href="#downloads">Downloads</a><a class="nav-github" href="https://github.com/Quinn-Ma/OriginX">GitHub</a></nav>
+</header>
+<main id="main" class="bb-main">
+  <header>
+    <p class="bb-eyebrow">Robot learning / Multi-object manipulation</p>
+    <h1 class="bb-title"><span>BranchBox</span><br>Supervising what comes next, and where.</h1>
+    <p class="bb-lede">Stage and spatial-target supervision for compact vision-language-action policies, with a text and image interface that can carry the policy’s predictions into its next action query.</p>
+    <p class="bb-meta">Research draft · SmolVLA &amp; X-VLA · LIBERO-Long two-object placement</p>
+    <p class="bb-authors"><a href="https://quinn-ma.github.io/">Qinzhen Ma</a><sup>1,*</sup> · <a href="https://hyang.org/">Harry Yang</a><sup>2,*</sup> · <a href="https://alanlusun.github.io/">Changsheng Lu</a><sup>2,*</sup> · <a href="https://xuxiaogang.com/">Xiaogang Xu</a><sup>3</sup></p>
+    <p class="bb-meta"><sup>1</sup> Rice University · <sup>2</sup> The Hong Kong University of Science and Technology · <sup>3</sup> Zhejiang University<br><sup>*</sup> Equal contribution.</p>
+    <div class="release-links"><a href="assets/BranchBox_CVPR2027_reviewer_v3.pdf">Read the research draft</a><a href="#results">Explore the results</a><a href="assets/BranchBox_CVPR2027_reviewer_v3_source.zip">Download source</a></div>
+  </header>
+
+  <section class="bb-results" aria-labelledby="headline-title">
+    <div class="bb-result-grid">
+      <div><h2 id="headline-title" class="bb-stat-label">Absolute success gain</h2><p class="bb-stat">+11.3 <small>pp</small></p><p class="bb-stat-sub">Unadjusted 95% CI: +1.9 to +20.6 pp</p></div>
+      <div><p class="bb-stat-label">Relative increase in success</p><p class="bb-stat">+24.7<small>%</small></p><p class="bb-stat-sub">Computed from 91 versus 73 successes</p></div>
+      <div><p class="bb-stat-label">Task success</p><p class="bb-stat">56.9<small>%</small></p><p class="bb-stat-sub">versus 45.6% with matched action-only training</p></div>
+    </div>
+    <p class="bb-scope">Retrospective, exploratory analysis of four two-object tasks and two model families. The evaluation uses 80 shared initial scenes, each evaluated with both models: 160 model–scene outcomes per deployment condition. Intervals resample the shared scenes and remain conditional on the selected tasks, models and one training seed; they are not adjusted for retrospective selection.</p>
+  </section>
+
+  <section id="method" class="bb-section" aria-labelledby="method-title">
+    <p class="bb-eyebrow">The training recipe</p>
+    <h2 id="method-title">Make stage and target explicit.</h2>
+    <p class="bb-copy">Two-object placement repeatedly changes the active object and its destination. BranchBox trains two small heads to predict the current stage and spatial target from pooled action-decoder features. The visual and language backbones stay frozen; auxiliary gradients update the action-decoder representation.</p>
+    <div class="bb-method">
+      <section class="bb-card"><span class="bb-step">01 / Supervise</span><h3>Stage + spatial target</h3><p>Stage classification and continuous point or box regression share the decoder features used to generate robot actions.</p></section>
+      <section class="bb-card"><span class="bb-step">02 / Perturb</span><h3>Train with varied prompts</h3><p>Stage text and a separate marked image provide intermediate cues. Independent prompt dropout and temporal perturbations vary those inputs during training.</p></section>
+      <section class="bb-card"><span class="bb-step">03 / Deploy</span><h3>Reuse the predictions</h3><p>A supplied task-specific table maps predicted stages to text and mark types for the next query. The same trained policy can also run with ordinary inputs.</p></section>
+    </div>
+    <p class="bb-note">The task table supplies the decomposition. BranchBox predicts progress within that structure and target coordinates; it does not infer an open-ended task plan. The reported comparison evaluates the combined training recipe and deployment interface.</p>
+  </section>
+
+  <section id="results" class="bb-section" aria-labelledby="results-title">
+    <p class="bb-eyebrow">Paired evaluation</p>
+    <h2 id="results-title">A focused view of multi-object placement.</h2>
+    <p class="bb-copy">SmolVLA and X-VLA are evaluated on the same 20 initial scenes for each of four tasks. Matched action-only training and BranchBox use the same training data within each model family. Both model families and all four tasks have positive success-rate point estimates in this analysis.</p>
+    <ul class="bb-tasks" aria-label="Evaluated task families"><li>Two moka pots</li><li>Two mugs</li><li>Mug + pudding</li><li>Soup + sauce</li></ul>
+    <div class="bb-table-wrap"><table class="bb-table"><caption class="sr-only">Pooled task success over two models and 80 shared initial scenes</caption><thead><tr><th scope="col">Training and deployment</th><th scope="col">Successes</th><th scope="col">Success rate</th></tr></thead><tbody><tr><td>Matched action-only training</td><td>73 / 160</td><td>45.6%</td></tr><tr><td class="bb-emph">BranchBox + self-generated prompts</td><td class="bb-emph">91 / 160</td><td class="bb-emph">56.9%</td></tr><tr><td>BranchBox + ordinary inputs</td><td>89 / 160</td><td>55.6%</td></tr></tbody></table></div>
+    <p class="bb-note">The +24.7% figure is the relative increase in success, (91 − 73) / 73; +11.3 percentage points is the rounded absolute difference, (91 − 73) / 160. These describe the same comparison. The manuscript and supplementary material report the study scope, comparisons, uncertainty and limitations. Independent replication is needed to test generality beyond this selected task and model subset.</p>
+  </section>
+
+  <section id="downloads" class="bb-section" aria-labelledby="downloads-title">
+    <p class="bb-eyebrow">Research materials</p>
+    <h2 id="downloads-title">Read the analysis and its evidence.</h2>
+    <div class="bb-downloads">
+      <a href="assets/BranchBox_CVPR2027_reviewer_v3.pdf"><strong>Research draft ↗</strong><span>Method and focused paired analysis · PDF</span></a>
+      <a href="assets/BranchBox_CVPR2027_reviewer_v3_supplementary.pdf"><strong>Supplementary material ↗</strong><span>Complete study scope and diagnostics · PDF</span></a>
+      <a href="assets/BranchBox_CVPR2027_reviewer_v3_source.zip"><strong>Manuscript source ↗</strong><span>LaTeX, per-episode data and analysis · ZIP</span></a>
+    </div>
+    <p class="bb-note"><a href="assets/CITATION.bib">Download BibTeX citation</a>. Research preprint; no conference acceptance is claimed.</p>
+    <p class="bb-note">BranchBox is a separate LIBERO study within the <a href="../">OriginX research collection</a>. Its task-success rates use a different benchmark and protocol from the collection’s RoboCasa365 results.</p>
+  </section>
+  <footer class="bb-footer"><a href="../">OriginX research</a> · <a href="https://github.com/Quinn-Ma/OriginX">Repository</a> · Research draft, November 2026.</footer>
+</main>
+</body>
+</html>

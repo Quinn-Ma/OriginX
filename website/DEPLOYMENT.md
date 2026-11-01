@@ -11,3 +11,11 @@ npx wrangler@4 pages deploy website --project-name originx-robotics --branch mai
 ```
 
 The live site preserves the fixed 1496/2500 benchmark and separately reports 56 strict rescues among 1004 B2000 failures, including all unknown and initial-deviation counts. Model weights remain on Hugging Face and code/evidence on GitHub.
+
+The `branchbox/` page is a separate LIBERO multi-object study. Its main manuscript, supplementary PDF and source ZIP are served from `branchbox/assets/`. Before deploying this page, populate and verify these three files:
+
+- `branchbox/assets/BranchBox_CVPR2027_reviewer_v3.pdf`
+- `branchbox/assets/BranchBox_CVPR2027_reviewer_v3_supplementary.pdf`
+- `branchbox/assets/BranchBox_CVPR2027_reviewer_v3_source.zip`
+
+The same static deployment command publishes both studies. BranchBox's 56.9% versus 45.6% result concerns a retrospectively selected set of four two-object tasks and two models, and does not replace the RoboCasa365 result.
