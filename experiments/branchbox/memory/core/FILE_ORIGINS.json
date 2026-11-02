@@ -1,0 +1,67 @@
+{
+  "created_utc": "2026-11-02T08:16:43.296035+00:00",
+  "frozen_code_modified": false,
+  "upstream_reference_commit": "e268134a9e5c4b99a4607b92f466f25d784b3f26",
+  "file_origins": {
+    "code/full_policy.py": {
+      "sha256": "07ce294cf8540675dd78ddba48cfdb1b3ea206d946cd3c468e6a4ae2a722b36b",
+      "license": "Apache-2.0 derivative; upstream attribution retained in package notice",
+      "upstream": [
+        "LeRobot/XVLA/modeling_xvla.py",
+        "LeRobot/XVLA/soft_transformer.py",
+        "MemBodied/pi0_mem_vector.py"
+      ],
+      "scope": "Native forward_vlm arithmetic, token order, timestep embedding, expert attention/decode and clean-action denoising are adapted from X-VLA; memory insertion and episode anchor integrate the MemBodied architecture.",
+      "changes": "PyTorch explicit carry; 24 action-expert memory reads; two appended state/memory tokens; widened domain action affine for first-frame anchor; native Florence7x7 clean patches pooled4x4; full fine tuning with sequence BPTT."
+    },
+    "code/full_memory.py": {
+      "sha256": "c065cb0ee8d14287dea3bc7e77176d7f7d9b4ec6df542fdd74b5e75a352b0ab5",
+      "license": "Apache-2.0 semantic port of MemBodied/OpenPI architecture",
+      "upstream": [
+        "MemBodied/pi0_mem_vector.py",
+        "MemBodied/training/config.py"
+      ],
+      "scope": "Associative vector-gated delta memory, learned state/memory tokens, state-query visual summarization and first-frame anchor attention.",
+      "changes": "JAX/Flax to PyTorch; X-VLA dimensions24x1024/rank128; explicit immutable carry; two physical cameras; native7x7 to4x4 pooling; one executed30-action chunk per delayed write."
+    },
+    "code/PORT_MAPPING.md": {
+      "sha256": "6d4370e37b2217feedad470a9c39fced34f04317ccaf0055ca7dedbc142f8ffc",
+      "scope": "Detailed preserved mechanisms and explicit backbone/cadence deviations; not a claim of independent invention or official pi0 numerical reproduction."
+    }
+  },
+  "upstream_source_hashes": {
+    "LeRobot/XVLA/modeling_xvla.py": {
+      "sha256": "be140ca28ff614d398280bd124fcdc9f44136d127e0d165b514151c3c5f9fef1"
+    },
+    "LeRobot/XVLA/soft_transformer.py": {
+      "sha256": "92da48b75f7ba14583fe2be89f9eb15157361252084ae18643e279648db817cc"
+    },
+    "Transformers/Florence2/modeling_florence2.py": {
+      "sha256": "be8532984d5ea3aff7edc7c42456a428aaaba2e1765601e1ab167a6c69fca61e"
+    },
+    "MemBodied/pi0_mem_vector.py": {
+      "sha256": "07ff77144143e964609501eb202735336b3b34e15459910d93a9a1566c064ffb"
+    },
+    "MemBodied/training/config.py": {
+      "sha256": "1f89a667cee8ab1ec76acd032f364de8c1a2d3c242d147657c84f04ba3940a26"
+    }
+  },
+  "preserved_licenses": {
+    "LICENSE-MemBodied-Apache-2.0.txt": {
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "LICENSE-OpenPI-Apache-2.0.txt": {
+      "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1"
+    },
+    "MemBodied-THIRD_PARTY_NOTICES.md": {
+      "sha256": "9d2ecbf87ccc37a6e6a241073ce2ebbcc3a6cf5909a64525f39be5849e1373bc"
+    },
+    "LICENSE-LeRobot-Apache-2.0.txt": {
+      "sha256": "0583375a0ec642ec79c447781f34322b0cfa66baff31258214d040f1f6d86d7c"
+    },
+    "LICENSE-RMBench-MIT.txt": {
+      "sha256": "0502864a740bca3cdae4a5eba76e43cbbf2cb72a567c96813ecc31ee94a130e3"
+    }
+  },
+  "public_release_source_map": "PUBLIC_SOURCE_MAP.json"
+}

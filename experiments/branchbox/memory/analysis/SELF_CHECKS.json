@@ -1,0 +1,29 @@
+{
+  "historical_cpu_checks": {
+    "cpu_unit_tests_passed": 5,
+    "synthetic_panels_compared_with_frozen_canonical_analyzer": 12,
+    "canonical_statistics_match": "exact",
+    "real_experimental_data_read": false,
+    "final_experimental_comparison_status": "pending_complete_audited_panel",
+    "dependencies": [
+      "Python standard library",
+      "NumPy"
+    ],
+    "source_sha256": {
+      "reproduce_memory.py": "c6fae4ef1f1dc736893ab0212503130ab27d0bd12c76825631d5b28819692cd6",
+      "README.txt": "d9aaba689ea75edb9deb6449e63309c26b86a1272290afa580f79c396a60e873",
+      "test_reproduce_memory.py": "09ab1607a930d2f08f20cd50d550382a8c385a0a42ed7f6ea89582fb6370134d"
+    }
+  },
+  "current_source_sha256": {
+    "reproduce_memory.py": "c6fae4ef1f1dc736893ab0212503130ab27d0bd12c76825631d5b28819692cd6",
+    "README.txt": "789e61b55591fb7c30286482200fdb1a8c050f9885de424d36c2d392d2ea6306",
+    "test_reproduce_memory.py": "09ab1607a930d2f08f20cd50d550382a8c385a0a42ed7f6ea89582fb6370134d"
+  },
+  "analysis_code_unchanged_since_historical_checks": true,
+  "readme_updated_for_final_protocol_scope": true,
+  "real_experimental_data_read": true,
+  "final_experimental_comparison_status": "complete_exact_canonical_match",
+  "paired_csv_sha256": "dbddd772ce51670d86da0eb501fe0ff073313877e06b71f9a05ba32c5c5bcb6f",
+  "reproduction_sha256": "49fc7c7469d6c5e2f4ca6e35bf4ba79a3a035caf17cc7ac068d87e3fb86cc65e"
+}

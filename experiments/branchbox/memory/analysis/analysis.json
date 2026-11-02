@@ -1,0 +1,305 @@
+{
+  "status": "complete",
+  "declared_final_updates": 6000,
+  "independent_recount_matches": true,
+  "successes": {
+    "baseline": 13,
+    "memory": 12,
+    "reset": 11
+  },
+  "success_rates_percent": {
+    "baseline": 65.0,
+    "memory": 60.0,
+    "reset": 55.0
+  },
+  "n_per_condition": 20,
+  "paired_scenes": 20,
+  "total_rollouts": 60,
+  "contrasts": {
+    "memory_vs_baseline": {
+      "rescues": 4,
+      "regressions": 5,
+      "difference_pp": -5.0,
+      "ci95_unadjusted_pp": [
+        -30.0,
+        20.0
+      ],
+      "relative_success_change_percent": -7.692307692307687,
+      "mcnemar_exact_two_sided_p": 1.0,
+      "rescue_scenes": [
+        {
+          "task": 0,
+          "init": 40
+        },
+        {
+          "task": 3,
+          "init": 40
+        },
+        {
+          "task": 3,
+          "init": 43
+        },
+        {
+          "task": 5,
+          "init": 44
+        }
+      ],
+      "regression_scenes": [
+        {
+          "task": 4,
+          "init": 41
+        },
+        {
+          "task": 4,
+          "init": 42
+        },
+        {
+          "task": 4,
+          "init": 43
+        },
+        {
+          "task": 5,
+          "init": 41
+        },
+        {
+          "task": 5,
+          "init": 42
+        }
+      ],
+      "attribution": "additional full fine-tuning plus memory; no equal-budget no-memory fine-tuning control",
+      "holm_adjusted_p": 1.0
+    },
+    "memory_vs_reset": {
+      "rescues": 3,
+      "regressions": 2,
+      "difference_pp": 5.0,
+      "ci95_unadjusted_pp": [
+        -15.0,
+        25.0
+      ],
+      "relative_success_change_percent": 9.090909090909083,
+      "mcnemar_exact_two_sided_p": 1.0,
+      "rescue_scenes": [
+        {
+          "task": 0,
+          "init": 43
+        },
+        {
+          "task": 3,
+          "init": 40
+        },
+        {
+          "task": 3,
+          "init": 43
+        }
+      ],
+      "regression_scenes": [
+        {
+          "task": 4,
+          "init": 41
+        },
+        {
+          "task": 5,
+          "init": 41
+        }
+      ],
+      "attribution": "combined added MemBodied associative/anchor history, conditional on identical trained weights and the shared outer prompt-controller algorithm",
+      "holm_adjusted_p": 1.0
+    }
+  },
+  "task_table": [
+    {
+      "task": 0,
+      "n_scenes": 5,
+      "baseline_successes": 4,
+      "memory_successes": 5,
+      "reset_successes": 4,
+      "baseline_success_percent": 80.0,
+      "memory_success_percent": 100.0,
+      "reset_success_percent": 80.0,
+      "memory_vs_baseline_pp": 20.0,
+      "memory_vs_reset_pp": 20.0
+    },
+    {
+      "task": 3,
+      "n_scenes": 5,
+      "baseline_successes": 0,
+      "memory_successes": 2,
+      "reset_successes": 0,
+      "baseline_success_percent": 0.0,
+      "memory_success_percent": 40.0,
+      "reset_success_percent": 0.0,
+      "memory_vs_baseline_pp": 40.0,
+      "memory_vs_reset_pp": 40.0
+    },
+    {
+      "task": 4,
+      "n_scenes": 5,
+      "baseline_successes": 5,
+      "memory_successes": 2,
+      "reset_successes": 3,
+      "baseline_success_percent": 100.0,
+      "memory_success_percent": 40.0,
+      "reset_success_percent": 60.0,
+      "memory_vs_baseline_pp": -60.0,
+      "memory_vs_reset_pp": -20.0
+    },
+    {
+      "task": 5,
+      "n_scenes": 5,
+      "baseline_successes": 4,
+      "memory_successes": 3,
+      "reset_successes": 4,
+      "baseline_success_percent": 80.0,
+      "memory_success_percent": 60.0,
+      "reset_success_percent": 80.0,
+      "memory_vs_baseline_pp": -20.0,
+      "memory_vs_reset_pp": -20.0
+    }
+  ],
+  "paired_outcomes": [
+    {
+      "task": 0,
+      "init": 40,
+      "baseline": false,
+      "memory": true,
+      "reset": true
+    },
+    {
+      "task": 0,
+      "init": 41,
+      "baseline": true,
+      "memory": true,
+      "reset": true
+    },
+    {
+      "task": 0,
+      "init": 42,
+      "baseline": true,
+      "memory": true,
+      "reset": true
+    },
+    {
+      "task": 0,
+      "init": 43,
+      "baseline": true,
+      "memory": true,
+      "reset": false
+    },
+    {
+      "task": 0,
+      "init": 44,
+      "baseline": true,
+      "memory": true,
+      "reset": true
+    },
+    {
+      "task": 3,
+      "init": 40,
+      "baseline": false,
+      "memory": true,
+      "reset": false
+    },
+    {
+      "task": 3,
+      "init": 41,
+      "baseline": false,
+      "memory": false,
+      "reset": false
+    },
+    {
+      "task": 3,
+      "init": 42,
+      "baseline": false,
+      "memory": false,
+      "reset": false
+    },
+    {
+      "task": 3,
+      "init": 43,
+      "baseline": false,
+      "memory": true,
+      "reset": false
+    },
+    {
+      "task": 3,
+      "init": 44,
+      "baseline": false,
+      "memory": false,
+      "reset": false
+    },
+    {
+      "task": 4,
+      "init": 40,
+      "baseline": true,
+      "memory": true,
+      "reset": true
+    },
+    {
+      "task": 4,
+      "init": 41,
+      "baseline": true,
+      "memory": false,
+      "reset": true
+    },
+    {
+      "task": 4,
+      "init": 42,
+      "baseline": true,
+      "memory": false,
+      "reset": false
+    },
+    {
+      "task": 4,
+      "init": 43,
+      "baseline": true,
+      "memory": false,
+      "reset": false
+    },
+    {
+      "task": 4,
+      "init": 44,
+      "baseline": true,
+      "memory": true,
+      "reset": true
+    },
+    {
+      "task": 5,
+      "init": 40,
+      "baseline": true,
+      "memory": true,
+      "reset": true
+    },
+    {
+      "task": 5,
+      "init": 41,
+      "baseline": true,
+      "memory": false,
+      "reset": true
+    },
+    {
+      "task": 5,
+      "init": 42,
+      "baseline": true,
+      "memory": false,
+      "reset": false
+    },
+    {
+      "task": 5,
+      "init": 43,
+      "baseline": true,
+      "memory": true,
+      "reset": true
+    },
+    {
+      "task": 5,
+      "init": 44,
+      "baseline": false,
+      "memory": true,
+      "reset": true
+    }
+  ],
+  "training_seed": 1,
+  "scope": "Repeated development panel; four tasks, five scenes per task, one training run.",
+  "control": "Reset removes the added associative state and episode-first anchor history. The original BranchBox stage filter and target feedback remain enabled in all arms."
+}

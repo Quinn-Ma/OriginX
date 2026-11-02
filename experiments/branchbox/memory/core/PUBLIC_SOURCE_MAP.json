@@ -1,0 +1,29 @@
+{
+  "release_sources_prepared": true,
+  "canonical_sources_modified": false,
+  "files": {
+    "code/full_policy.py": {
+      "canonical_sha256": "07ce294cf8540675dd78ddba48cfdb1b3ea206d946cd3c468e6a4ae2a722b36b",
+      "release_sha256": "32c1c262a65dc223893d6c3dd045e863586c4ac76608dfc1840205197370dbb1",
+      "AST_exact": true,
+      "modification": "Attribution/license/change comment header only; executable source unchanged.",
+      "upstream": [
+        "LeRobot/XVLA/modeling_xvla.py",
+        "LeRobot/XVLA/soft_transformer.py",
+        "MemBodied/pi0_mem_vector.py"
+      ],
+      "semantic_changes_from_upstream": "PyTorch explicit carry; 24 action-expert memory reads; two appended state/memory tokens; widened domain action affine for first-frame anchor; native Florence7x7 clean patches pooled4x4; full fine tuning with sequence BPTT."
+    },
+    "code/full_memory.py": {
+      "canonical_sha256": "c065cb0ee8d14287dea3bc7e77176d7f7d9b4ec6df542fdd74b5e75a352b0ab5",
+      "release_sha256": "6ca14353c665555565a19428da64e3862d5eb8407ec60c94fd03efa96e7f4145",
+      "AST_exact": true,
+      "modification": "Attribution/license/change comment header only; executable source unchanged.",
+      "upstream": [
+        "MemBodied/pi0_mem_vector.py",
+        "MemBodied/training/config.py"
+      ],
+      "semantic_changes_from_upstream": "JAX/Flax to PyTorch; X-VLA dimensions24x1024/rank128; explicit immutable carry; two physical cameras; native7x7 to4x4 pooling; one executed30-action chunk per delayed write."
+    }
+  }
+}

@@ -23,12 +23,15 @@
     .bb-authors{font-size:1rem;line-height:1.9;color:#35415c;margin:22px 0 7px}.bb-authors a{text-decoration:none}.bb-authors sup{font-size:.65em;margin-left:3px}
     .bb-method-summary h2{font-size:1.85rem;line-height:1.2;letter-spacing:-.035em;color:#26334c;margin:0 0 16px}.bb-method-summary>p:last-child{font-size:1rem;line-height:1.75;color:#54617b;margin:0}.bb-headline-gain{padding-left:32px;border-left:1px solid #dce1f2}@media(max-width:760px){.bb-headline-gain{padding-left:0;border-left:0}.bb-method-summary h2{font-size:1.65rem}}
   </style>
+  <style id="bb-memory-style">
+    .bb-memory-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:26px}.bb-memory-ref a{color:#354bea}.bb-memory .bb-table{font-size:.9rem}.bb-memory .bb-table td{vertical-align:top}@media(max-width:760px){.bb-memory-grid{grid-template-columns:1fr}}
+  </style>
 </head>
 <body class="bb-top">
 <a class="skip" href="#main">Skip to article</a>
 <header class="masthead bb-masthead bb-nav">
   <a class="wordmark" href="../" aria-label="OriginX research home">Origin<span>X</span><span class="wordmark-divider" aria-hidden="true"></span><span class="wordmark-caption">Research</span></a>
-  <nav aria-label="Main navigation"><a href="#method">Method</a><a href="#results">Results</a><a href="#downloads">Downloads</a><a class="nav-github" href="https://github.com/Quinn-Ma/OriginX">GitHub</a></nav>
+  <nav aria-label="Main navigation"><a href="#method">Method</a><a href="#results">Results</a><a href="#memory">Memory</a><a href="#downloads">Downloads</a><a class="nav-github" href="https://github.com/Quinn-Ma/OriginX">GitHub</a></nav>
 </header>
 <main id="main" class="bb-main">
   <header>
@@ -38,7 +41,7 @@
     <p class="bb-meta">Research draft · SmolVLA &amp; X-VLA · LIBERO-Long two-object placement</p>
     <p class="bb-authors"><a href="https://quinn-ma.github.io/">Qinzhen Ma</a><sup>1,*</sup> · <a href="https://hyang.org/">Harry Yang</a><sup>2,*</sup> · <a href="https://alanlusun.github.io/">Changsheng Lu</a><sup>2,*</sup> · <a href="https://xuxiaogang.com/">Xiaogang Xu</a><sup>3</sup></p>
     <p class="bb-meta"><sup>1</sup> Rice University · <sup>2</sup> The Hong Kong University of Science and Technology · <sup>3</sup> Zhejiang University<br><sup>*</sup> Equal contribution.</p>
-    <div class="release-links"><a href="assets/BranchBox_CVPR2027_reviewer_v3.pdf">Read the research draft</a><a href="#results">Explore the results</a><a href="assets/BranchBox_CVPR2027_reviewer_v3_source.zip">Download source</a></div>
+    <div class="release-links"><a href="assets/BranchBox_CVPR2027_6000_public.pdf">Read the research draft</a><a href="#results">Explore the results</a><a href="assets/BranchBox_CVPR2027_6000_public_source.zip">Download source</a></div>
   </header>
 
   <section class="bb-results" aria-labelledby="headline-title">
@@ -59,7 +62,7 @@
   <section id="method" class="bb-section" aria-labelledby="method-title">
     <p class="bb-eyebrow">The training recipe</p>
     <h2 id="method-title">Make stage and target explicit.</h2>
-    <p class="bb-copy">Two-object placement repeatedly changes the active object and its destination. BranchBox trains two small heads to predict the current stage and spatial target from pooled action-decoder features. The visual and language backbones stay frozen; auxiliary gradients update the action-decoder representation.</p>
+    <p class="bb-copy">Two-object placement repeatedly changes the active object and its destination. BranchBox trains two small heads to predict the current stage and spatial target from pooled action-decoder features. In the original two-model study, the visual and language backbones stay frozen; auxiliary gradients update the action-decoder representation. The separate memory adaptation below instead fine-tunes the full policy.</p>
     <div class="bb-method">
       <section class="bb-card"><span class="bb-step">01 / Supervise</span><h3>Stage + spatial target</h3><p>Stage classification and continuous point or box regression share the decoder features used to generate robot actions.</p></section>
       <section class="bb-card"><span class="bb-step">02 / Perturb</span><h3>Train with varied prompts</h3><p>Stage text and a separate marked image provide intermediate cues. Independent prompt dropout and temporal perturbations vary those inputs during training.</p></section>
@@ -78,13 +81,31 @@
     <p class="bb-note">The +24.7% figure is the relative increase in success, (91 − 73) / 73; +11.3 percentage points is the rounded absolute difference, (91 − 73) / 160. These describe the same comparison. The manuscript and supplementary material report the study scope, comparisons, uncertainty and limitations. Independent replication is needed to test generality beyond this selected task and model subset.</p>
   </section>
 
+  <section id="memory" class="bb-section bb-memory" aria-labelledby="memory-title">
+    <p class="bb-eyebrow">A separate X-VLA development study</p>
+    <h2 id="memory-title">Memory inside the policy.</h2>
+    <p class="bb-copy">We adapt <a href="https://arxiv.org/abs/2609.28256v1">MemBodied</a> to the existing BranchBox-trained X-VLA-P policy and fine-tune the full policy and memory modules for 6,000 retained updates. Four components carry interaction history into action prediction.</p>
+    <div class="bb-memory-grid">
+      <section class="bb-card"><span class="bb-step">01 / Read</span><h3>Associative memory</h3><p>Each of the 24 action-expert layers reads a recurrent matrix before predicting the next action chunk.</p></section>
+      <section class="bb-card"><span class="bb-step">02 / Represent</span><h3>State and memory tokens</h3><p>Dedicated proprioceptive-state and memory tokens carry retrieved information through the action expert’s attention.</p></section>
+      <section class="bb-card"><span class="bb-step">03 / Anchor</span><h3>The original first frames</h3><p>The first main-camera and wrist observations supply 32 pooled anchor tokens, providing a fixed initial-scene reference.</p></section>
+      <section class="bb-card"><span class="bb-step">04 / Write</span><h3>Executed actions and their outcome</h3><p>After 30 actions are executed, the next observation and those actual commands update memory once. Memory stays fixed within action denoising.</p></section>
+    </div>
+    <div class="bb-table-wrap"><table class="bb-table"><caption class="sr-only">All three conditions on the separate 20-scene memory-development panel</caption><thead><tr><th scope="col">Condition</th><th scope="col">Successes</th><th scope="col">Success rate</th></tr></thead><tbody><tr><th scope="row">Existing BranchBox-trained X-VLA-P</th><td>13 / 20</td><td>65.0%</td></tr><tr><th scope="row">Full memory, final EMA</th><td>12 / 20</td><td>60.0%</td></tr><tr><th scope="row">Same weights, added-memory reset</th><td>11 / 20</td><td>55.0%</td></tr></tbody></table></div>
+    <div class="bb-table-wrap"><table class="bb-table"><caption class="sr-only">The two fixed paired contrasts, with pointwise confidence intervals and adjusted tests</caption><thead><tr><th scope="col">Paired contrast</th><th scope="col">Difference</th><th scope="col">Pointwise 95% CI</th><th scope="col">Holm-adjusted p</th><th scope="col">Rescues / regressions</th></tr></thead><tbody><tr><th scope="row">Full memory − existing policy</th><td>-5.0 pp</td><td>[-30.0, +20.0] pp</td><td>1.000</td><td>4 / 5</td></tr><tr><th scope="row">Full memory − same-weight reset</th><td>+5.0 pp</td><td>[-15.0, +25.0] pp</td><td>1.000</td><td>3 / 2</td></tr></tbody></table></div>
+    <p class="bb-note"><strong>Observed outcome:</strong> Full memory did not improve the existing policy on this panel (60% versus 65%). Both paired-difference intervals cross zero. <a href="https://github.com/Quinn-Ma/OriginX/tree/main/experiments/branchbox/memory">Mechanism code and all paired outcomes ↗</a></p>
+    <p class="bb-note">All 60 main rollouts cover the same four tasks and initial-state IDs 40–44: 20 paired scenes, one training seed. These scenes appeared in earlier pilots and form a repeated development panel. Confidence intervals use 100,000 paired-scene bootstrap samples within task, seed one; intervals are pointwise and unadjusted. The two-sided exact McNemar tests use Holm correction across the two contrasts. These estimates do not establish performance on unseen tasks or variation across training seeds.</p>
+    <p class="bb-note">The existing-policy comparison includes additional full-weight training and the memory-equipped architecture; it cannot attribute the entire difference to memory. The same-weight reset restores the learned initial matrices, clears pending transitions and uses the current frame as the anchor at each query. It tests the combined added associative and initial-scene history, without separating their individual effects. The original BranchBox stage filter and target-feedback controller remain active in all three conditions, using each policy’s own predictions.</p>
+    <p class="bb-note bb-memory-ref">This is an attributed backbone adaptation of <a href="https://arxiv.org/abs/2609.28256v1">MemBodied: Recurrent Associative Memory for Vision-Language-Action Models</a>. The same-weight reset follows the diagnostic principle of <a href="https://arxiv.org/abs/2609.22854v1">SmoLSTM: A Compact Vision-Language-Action Model with Recurrent Memory that Persists</a>. It is a separate experiment from the historical +24.7% two-model result above. The supplementary material includes the complete paired outcomes, backbone mapping, training schedule and preserved recovery record.</p>
+  </section>
+
   <section id="downloads" class="bb-section" aria-labelledby="downloads-title">
     <p class="bb-eyebrow">Research materials</p>
     <h2 id="downloads-title">Read the analysis and its evidence.</h2>
     <div class="bb-downloads">
-      <a href="assets/BranchBox_CVPR2027_reviewer_v3.pdf"><strong>Research draft ↗</strong><span>Method and focused paired analysis · PDF</span></a>
-      <a href="assets/BranchBox_CVPR2027_reviewer_v3_supplementary.pdf"><strong>Supplementary material ↗</strong><span>Complete study scope and diagnostics · PDF</span></a>
-      <a href="assets/BranchBox_CVPR2027_reviewer_v3_source.zip"><strong>Manuscript source ↗</strong><span>LaTeX, per-episode data and analysis · ZIP</span></a>
+      <a href="assets/BranchBox_CVPR2027_6000_public.pdf"><strong>Research draft ↗</strong><span>Method and focused paired analysis · PDF</span></a>
+      <a href="assets/BranchBox_CVPR2027_6000_public_supplementary.pdf"><strong>Supplementary material ↗</strong><span>Complete study scope and diagnostics · PDF</span></a>
+      <a href="assets/BranchBox_CVPR2027_6000_public_source.zip"><strong>Manuscript source ↗</strong><span>LaTeX, per-episode data and analysis · ZIP</span></a>
     </div>
     <p class="bb-note"><a href="assets/CITATION.bib">Download BibTeX citation</a>. Research preprint; no conference acceptance is claimed.</p>
     <p class="bb-note">BranchBox is a separate LIBERO study within the <a href="../">OriginX research collection</a>. Its task-success rates use a different benchmark and protocol from the collection’s RoboCasa365 results.</p>

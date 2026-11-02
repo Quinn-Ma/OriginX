@@ -1,0 +1,42 @@
+THIRD-PARTY NOTICE â€” BranchBox full-memory X-VLA port
+
+This package contains a PyTorch/X-VLA adaptation of MemBodied. The memory
+architecture is attributed to MemBodied and its OpenPI foundations. It is not
+represented as an independently invented architecture or an exact reproduction
+of the official pi0 experiments. See code/PORT_MAPPING.md and FILE_ORIGINS.json.
+
+X-VLA / LeRobot (Apache License 2.0)
+Copyright 2025 The HuggingFace Inc. team and 2toINF (https://github.com/2toINF)
+Copyright 2025 2toINF (https://github.com/2toINF)
+Source: https://github.com/huggingface/lerobot (installed release0.6.1).
+code/full_policy.py adapts native forward_vlm arithmetic, token layout,
+timestep embeddings, action-expert processing and clean-action decoding.
+It changes those operations to integrate memory/anchor tokens and explicit
+state, and enables all-weight sequence training. Upstream copyright notices
+are retained here together with the full Apache2 license.
+
+Florence2 / Transformers dependency (Apache License 2.0)
+Copyright 2025 Microsoft and the HuggingFace Team. All rights reserved.
+Source: https://github.com/huggingface/transformers (installed release5.5.4).
+The native Florence2 encoder is used through the pinned dependency; no claim
+of authorship is made for its implementation or pretrained weights.
+
+MemBodied / OpenPI (Apache License 2.0)
+Source: https://github.com/declare-lab/MemBodied
+Pinned commit: e268134a9e5c4b99a4607b92f466f25d784b3f26
+Reference: RMBench/policy/pi0/src/openpi/models/pi0_mem_vector.py.
+code/full_memory.py is a JAX/Flax-to-PyTorch semantic port of its associative
+memory, state-query observer and first-frame anchor mechanisms. full_policy.py
+adapts their insertion and lifecycle to X-VLA. OpenPI source attribution:
+https://github.com/Physical-Intelligence/openpi . The complete upstream
+MemBodied THIRD_PARTY_NOTICES and both Apache2 license texts are included.
+The reference repository also vendors RMBench under MIT; its original license
+is retained in third_party/ although no simulator implementation is reauthored.
+
+Public release copies carry file-level attribution, license and modification
+headers. PUBLIC_SOURCE_MAP.json records canonical and release hashes and
+confirms that executable Python ASTs are unchanged. Frozen experimental source
+records are retained separately and are not replaced by these release copies.
+
+Licenses of pretrained models, datasets and external dependencies remain with
+their respective rights holders; this notice does not relicense those assets.

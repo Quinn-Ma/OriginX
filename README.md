@@ -16,7 +16,9 @@ Qinzhen Ma* · Harry Yang* · Changsheng Lu* · Xiaogang Xu
 
 The analysis uses **80 shared initial scenes**, each evaluated with both model families, for 160 model–scene outcomes per condition. Intervals resample the shared scenes and are conditional on the selected tasks, models and one training seed; they are not adjusted for retrospective selection. The supplied task-specific stage table provides decomposition. This is a separate LIBERO study from the RoboCasa365 research below.
 
-[Project page](https://robocasa.originxairobotics.com/branchbox/) · [Research draft](website/branchbox/assets/BranchBox_CVPR2027_reviewer_v3.pdf) · [Supplement](website/branchbox/assets/BranchBox_CVPR2027_reviewer_v3_supplementary.pdf) · [LaTeX source](website/branchbox/assets/BranchBox_CVPR2027_reviewer_v3_source.zip)
+[Project page](https://robocasa.originxairobotics.com/branchbox/) · [Research draft](website/branchbox/assets/BranchBox_CVPR2027_6000_public.pdf) · [Supplement](website/branchbox/assets/BranchBox_CVPR2027_6000_public_supplementary.pdf) · [LaTeX source](website/branchbox/assets/BranchBox_CVPR2027_6000_public_source.zip)
+
+**Separate memory-development study.** A full-weight MemBodied adaptation of the existing X-VLA-P, trained for 6,000 updates with seed 1, solves **12/20 (60%)** scenes, versus **13/20 (65%)** for the existing policy and **11/20 (55%)** for the same weights with added-memory reset. The paired differences are -5 and +5 percentage points; both intervals cross zero. This experiment does not establish an overall gain. [Mechanism code and complete reproducible results](experiments/branchbox/memory/).
 
 ## OriginX: RoboCasa365 study
 

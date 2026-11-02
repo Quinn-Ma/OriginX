@@ -1,0 +1,12 @@
+{
+  "final_updates": 6000,
+  "training_seed": 1,
+  "paired_scenes": 20,
+  "total_rollouts": 60,
+  "canonical_analysis_sha256": "59917499a5d86b2dc550b7edd84efdbab17b33bca7a5d6692953e23323a0815a",
+  "independent_audit_sha256": "7c3155373df54ef57e8686e23716ad5eea6cdc37d1cea77376e2bfbdff491607",
+  "episodes_sha256": "24dc60bad810dad0626d46b3d84ab81447f8f1703085c7fc418ae5cf5036f47c",
+  "paired_csv_sha256": "dbddd772ce51670d86da0eb501fe0ff073313877e06b71f9a05ba32c5c5bcb6f",
+  "public_analysis_sha256": "ec947fcb783a6b0e24a522121f59d584651c3f6e4b006a042541a0737297540d",
+  "public_export": "Statistics preserved exactly; private machine paths and runtime audit details omitted."
+}

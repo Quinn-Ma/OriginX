@@ -32,6 +32,10 @@ for the retrospective selection or variation across training seeds. They are
 not a whole-benchmark performance claim. Complete broader results and method
 details are included in the supplementary PDF.
 
-This directory contains an analysis snapshot, not trained model weights or a
-new evaluation. No new training or robot evaluation was performed in this
-revision. It is separate from the repository's RoboCasa365 study.
+The original focused-analysis files at this directory's top level are a snapshot
+of the historical evaluation. They are separate from the newly trained memory
+extension below and from the repository's RoboCasa365 study.
+
+## Separate memory study
+
+The full-weight 6,000-update X-VLA adaptation has a separate 20-scene, three-condition development panel. [Code, all outcomes and reproduction](memory/README.md). It does not establish an overall gain and is not part of the original +24.7% calculation.
