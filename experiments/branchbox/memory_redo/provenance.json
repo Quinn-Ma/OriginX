@@ -1,0 +1,19 @@
+{
+  "source_episode_records_sha256": "4e8d0dac4dc8a6839bd133c0122e65fec223b4ede5cddccef80fe50f6ff04a16",
+  "source_original_analysis_sha256": "b2627991c7045cdafb49b0d81408e2a7c63a531b732b6bd23d6262f55d1922fc",
+  "source_pre_rollout_protocol_sha256": "2bec82e8b4121bc570b931add48e861a265bfe6bf468a95949b248405c263c0d",
+  "source_selection_record_sha256": "413a0ae728f10b4582eacb48eb8bde4dd59ae1671e56b3de62f7e69670a2fb09",
+  "checkpoint_sha256": {
+    "baseline": "8d7f3d661f3034ce0cb4d73d4f8c1ffe35df185715bb43fe2e8408d92e8028b5",
+    "memory": "88eb6949b0b4564b8ed1bb5eb515e0895c86d0acfcabaa55898b165b7fc1cc50",
+    "sreset": "88eb6949b0b4564b8ed1bb5eb515e0895c86d0acfcabaa55898b165b7fc1cc50",
+    "reset": "88eb6949b0b4564b8ed1bb5eb515e0895c86d0acfcabaa55898b165b7fc1cc50"
+  },
+  "data": "one row per paired scene; binary outcomes extracted from all720formal episodes; no exclusions",
+  "package_file_sha256": {
+    "paired_outcomes.csv": "dc4762a150c44ba9add222d1f047b06308c4b6d3e3bb108722315384dfac247d",
+    "analysis.json": "01e93beb8afbfadfbbb0a4807c37175761bc4d25b4b07166e6eb320148b04b08",
+    "reproduce.py": "2237f7d20b99a6f763b86fab476863cf9629b95181c69d9ab98ffa09492f4d60",
+    "README.txt": "f1e6ff333437f6edc931dc292a51c0cf5a07004f3b4ad6a6f3b7f3481c889f1a"
+  }
+}

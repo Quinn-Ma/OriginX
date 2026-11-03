@@ -1,0 +1,10 @@
+{
+  "format": "sha256",
+  "files": {
+    "paired_outcomes.csv": "c391639edb5cfc0b3d9859eb6bb84ec69fe3e28432737292c14ccbf0fa39c283",
+    "provenance.json": "1862d96added75e21211bfa4568df3663c8fdb4760fd19e4b13ea7c1318c1a15",
+    "README.txt": "e70037f1d12ede8a4e11448b180f6a21347f5a52793e3db4ec08258910c66190",
+    "reproduce_memory_cache.py": "34de38ef39e98ff2304e735017b7bc4d4057a6475f925209600d5eb6913d29b2",
+    "statistics.json": "b71e4e1ad7c32a993bb0d36bf511b2952608921fa4946c175e18c6ad54f46fd5"
+  }
+}

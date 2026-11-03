@@ -39,3 +39,14 @@ simulator or retrain the policy. This public source release contains the model
 mechanism, not checkpoint weights, training videos or private orchestration.
 See the paper supplement for the complete training recipe, backbone mapping,
 single-seed limitations and retained 6,000-update recovery lineage.
+
+## Later diagnostics and separate memory studies
+
+The final manuscript retains this 6,000-update result and adds its monitoring diagnostic: action loss on 43 fixed monitoring windows rose overall from **0.05133 at update 200 to 0.08169 at update 6,000 (+59.1%)**. The curve is not monotonic. These are raw-weight measurements; rollouts used the final EMA. The monitoring demonstrations were excluded from this additional training but were part of the starting policy’s original training data. There is no equally fine-tuned memory-free control, so neither this curve nor the success comparison identifies a causal explanation. Small readout weights do not establish zero functional memory use.
+
+Two additional experiments remain separate:
+
+- **[One-query target cache](../memory_cache/):** reads disabled **19/40**, cache enabled **14/40**; paired change **−12.5 points**, 95% CI **[−27.5, +2.5]**. This controller uses an alignment gate and its control is not the original PS arm.
+- **[Revised learned-memory study](../memory_redo/):** original policy **118/180**, selected LoRA memory **103/180**, same-weight state reset with first-frame anchor **107/180**, joint state/anchor reset **113/180**. The primary history effect is **−2.2 points**, 95% CI **[−8.9, +4.4]**, with Holm-adjusted exact McNemar **p=0.783**. The evaluated checkpoint is validation-selected LoRA at update **100**, distinct from this directory’s final 6,000-update full-weight model.
+
+The follow-up selected checkpoint has near-identical validation action loss with reads enabled and zeroed (0.01490071 vs 0.01489845); this describes aggregate loss sensitivity, not proof of unused memory in every action or checkpoint. It does not establish an overall memory gain. Counts and intervals across these different experiments must not be pooled. Complete training amendments, all task-level increases and decreases, and the limits of reset interventions are reported in the final supplementary material.

@@ -1,0 +1,110 @@
+{
+  "pairs": 40,
+  "successes": {
+    "off": 19,
+    "hold1": 14
+  },
+  "success_percent": {
+    "off": 47.5,
+    "hold1": 35.0
+  },
+  "difference_pp": -12.5,
+  "ci95_pp": [
+    -27.5,
+    2.5
+  ],
+  "rescues": 3,
+  "regressions": 8,
+  "concordant_successes": 11,
+  "concordant_failures": 18,
+  "mcnemar_exact_two_sided_p": 0.2265625,
+  "per_task": {
+    "0": {
+      "pairs": 10,
+      "successes": {
+        "off": 5,
+        "hold1": 5
+      },
+      "success_percent": {
+        "off": 50.0,
+        "hold1": 50.0
+      },
+      "difference_pp": 0.0,
+      "ci95_pp": [
+        -40.0,
+        40.0
+      ],
+      "rescues": 2,
+      "regressions": 2,
+      "concordant_successes": 3,
+      "concordant_failures": 3,
+      "mcnemar_exact_two_sided_p": 1.0
+    },
+    "3": {
+      "pairs": 10,
+      "successes": {
+        "off": 4,
+        "hold1": 1
+      },
+      "success_percent": {
+        "off": 40.0,
+        "hold1": 10.0
+      },
+      "difference_pp": -30.0,
+      "ci95_pp": [
+        -60.0,
+        0.0
+      ],
+      "rescues": 0,
+      "regressions": 3,
+      "concordant_successes": 1,
+      "concordant_failures": 6,
+      "mcnemar_exact_two_sided_p": 0.25
+    },
+    "4": {
+      "pairs": 10,
+      "successes": {
+        "off": 3,
+        "hold1": 2
+      },
+      "success_percent": {
+        "off": 30.0,
+        "hold1": 20.0
+      },
+      "difference_pp": -10.0,
+      "ci95_pp": [
+        -40.0,
+        20.0
+      ],
+      "rescues": 1,
+      "regressions": 2,
+      "concordant_successes": 1,
+      "concordant_failures": 6,
+      "mcnemar_exact_two_sided_p": 1.0
+    },
+    "5": {
+      "pairs": 10,
+      "successes": {
+        "off": 7,
+        "hold1": 6
+      },
+      "success_percent": {
+        "off": 70.0,
+        "hold1": 60.0
+      },
+      "difference_pp": -10.0,
+      "ci95_pp": [
+        -30.0,
+        0.0
+      ],
+      "rescues": 0,
+      "regressions": 1,
+      "concordant_successes": 6,
+      "concordant_failures": 3,
+      "mcnemar_exact_two_sided_p": 1.0
+    }
+  },
+  "nonnegative_tasks": 1,
+  "net_additional_successes": -5,
+  "screening_go": false
+}
