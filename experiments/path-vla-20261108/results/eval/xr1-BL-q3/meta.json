@@ -1,0 +1,9 @@
+{
+  "model": "xr1",
+  "condition": "BL",
+  "adapter": "/dev/shm/qinzhen/sbl/train/runs/xr1-BL/final/adapter.pt",
+  "gpu": 4,
+  "policy_seed": 4242,
+  "adapter_sha256": "fb7f2a4eac481843f223fd36665d06d993a6b68d77fcee7a5646d46eae0a6510",
+  "inputs": "ordinary: original task instruction, clean RGB, raw state16; no box/stage prompts; no feedback"
+}

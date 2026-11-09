@@ -1,0 +1,9 @@
+{
+  "model": "awomo_v",
+  "condition": "F",
+  "adapter": "/dev/shm/qinzhen/sbl/train/runs/awomo_v-F/final/adapter.pt",
+  "gpu": 6,
+  "policy_seed": 4242,
+  "adapter_sha256": "1c212a1d4b9386919c9649ee048bc90cca92795b3a887cab0572508560708be5",
+  "inputs": "ordinary: original task instruction, clean RGB, raw state16; no box/stage prompts; no feedback"
+}

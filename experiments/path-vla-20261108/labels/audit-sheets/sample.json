@@ -1,0 +1,386 @@
+[
+ {
+  "index": 1,
+  "task": "GetToastedBread",
+  "episode": 89,
+  "anchor": 240,
+  "kind": "wait",
+  "description": "wait for the toaster to finish and the lever to pop up"
+ },
+ {
+  "index": 2,
+  "task": "StirVegetables",
+  "episode": 67,
+  "anchor": 352,
+  "kind": "pick",
+  "description": "pick up the garlic from the counter"
+ },
+ {
+  "index": 3,
+  "task": "GetToastedBread",
+  "episode": 11,
+  "anchor": 896,
+  "kind": "pick",
+  "description": "pick up the bread from the toaster"
+ },
+ {
+  "index": 4,
+  "task": "PackIdenticalLunches",
+  "episode": 47,
+  "anchor": 496,
+  "kind": "navigate",
+  "description": "navigate to the tupperware with the carrot"
+ },
+ {
+  "index": 5,
+  "task": "SearingMeat",
+  "episode": 23,
+  "anchor": 976,
+  "kind": "place",
+  "description": "place the pan on the rear-right burner"
+ },
+ {
+  "index": 6,
+  "task": "DeliverStraw",
+  "episode": 37,
+  "anchor": 560,
+  "kind": "navigate",
+  "description": "navigate to the cup on the dining counter"
+ },
+ {
+  "index": 7,
+  "task": "DeliverStraw",
+  "episode": 63,
+  "anchor": 64,
+  "kind": "execute",
+  "description": "open the drawer in front of the robot"
+ },
+ {
+  "index": 8,
+  "task": "SearingMeat",
+  "episode": 89,
+  "anchor": 288,
+  "kind": "navigate",
+  "description": "navigate to the stove"
+ },
+ {
+  "index": 9,
+  "task": "PackIdenticalLunches",
+  "episode": 93,
+  "anchor": 816,
+  "kind": "place",
+  "description": "place the fish in the empty tupperware"
+ },
+ {
+  "index": 10,
+  "task": "DeliverStraw",
+  "episode": 77,
+  "anchor": 112,
+  "kind": "execute",
+  "description": "open the drawer in front of the robot"
+ },
+ {
+  "index": 11,
+  "task": "PackIdenticalLunches",
+  "episode": 40,
+  "anchor": 640,
+  "kind": "pick",
+  "description": "pick up a eggplant from the fridge"
+ },
+ {
+  "index": 12,
+  "task": "SearingMeat",
+  "episode": 0,
+  "anchor": 2288,
+  "kind": "execute",
+  "description": "turn on the rear-right burner"
+ },
+ {
+  "index": 13,
+  "task": "DeliverStraw",
+  "episode": 48,
+  "anchor": 304,
+  "kind": "execute",
+  "description": "open the drawer in front of the robot"
+ },
+ {
+  "index": 14,
+  "task": "StirVegetables",
+  "episode": 46,
+  "anchor": 832,
+  "kind": "execute",
+  "description": "stir the vegetables in the pot"
+ },
+ {
+  "index": 15,
+  "task": "PackIdenticalLunches",
+  "episode": 86,
+  "anchor": 320,
+  "kind": "navigate",
+  "description": "navigate to a tupperware on the counter"
+ },
+ {
+  "index": 16,
+  "task": "GetToastedBread",
+  "episode": 22,
+  "anchor": 1312,
+  "kind": "navigate",
+  "description": "navigate to the plate on the dining counter"
+ },
+ {
+  "index": 17,
+  "task": "DeliverStraw",
+  "episode": 28,
+  "anchor": 464,
+  "kind": "navigate",
+  "description": "navigate to the cup on the dining counter"
+ },
+ {
+  "index": 18,
+  "task": "DeliverStraw",
+  "episode": 63,
+  "anchor": 2064,
+  "kind": "place",
+  "description": "place the straw in the glass cup"
+ },
+ {
+  "index": 19,
+  "task": "PackIdenticalLunches",
+  "episode": 54,
+  "anchor": 928,
+  "kind": "navigate",
+  "description": "navigate back to the fridge"
+ },
+ {
+  "index": 20,
+  "task": "PackIdenticalLunches",
+  "episode": 50,
+  "anchor": 272,
+  "kind": "navigate",
+  "description": "navigate back to the fridge"
+ },
+ {
+  "index": 21,
+  "task": "DeliverStraw",
+  "episode": 60,
+  "anchor": 464,
+  "kind": "navigate",
+  "description": "navigate to the cup on the dining counter"
+ },
+ {
+  "index": 22,
+  "task": "GetToastedBread",
+  "episode": 38,
+  "anchor": 752,
+  "kind": "wait",
+  "description": "wait for the toaster to finish and the lever to pop up"
+ },
+ {
+  "index": 23,
+  "task": "DeliverStraw",
+  "episode": 66,
+  "anchor": 448,
+  "kind": "navigate",
+  "description": "navigate to the cup on the dining counter"
+ },
+ {
+  "index": 24,
+  "task": "PackIdenticalLunches",
+  "episode": 99,
+  "anchor": 96,
+  "kind": "navigate",
+  "description": "navigate to a tupperware on the counter"
+ },
+ {
+  "index": 25,
+  "task": "PackIdenticalLunches",
+  "episode": 50,
+  "anchor": 1168,
+  "kind": "navigate",
+  "description": "navigate back to the fridge"
+ },
+ {
+  "index": 26,
+  "task": "DeliverStraw",
+  "episode": 48,
+  "anchor": 448,
+  "kind": "execute",
+  "description": "open the drawer in front of the robot"
+ },
+ {
+  "index": 27,
+  "task": "SearingMeat",
+  "episode": 89,
+  "anchor": 1024,
+  "kind": "place",
+  "description": "place the chicken drumstick on the pan"
+ },
+ {
+  "index": 28,
+  "task": "PackIdenticalLunches",
+  "episode": 100,
+  "anchor": 1328,
+  "kind": "place",
+  "description": "place the tomato in the tupperware with only fish in it"
+ },
+ {
+  "index": 29,
+  "task": "DeliverStraw",
+  "episode": 98,
+  "anchor": 912,
+  "kind": "place",
+  "description": "place the straw in the glass cup"
+ },
+ {
+  "index": 30,
+  "task": "StirVegetables",
+  "episode": 67,
+  "anchor": 304,
+  "kind": "pick",
+  "description": "pick up the garlic from the counter"
+ },
+ {
+  "index": 31,
+  "task": "GetToastedBread",
+  "episode": 28,
+  "anchor": 1008,
+  "kind": "place",
+  "description": "place the bread on the plate"
+ },
+ {
+  "index": 32,
+  "task": "SearingMeat",
+  "episode": 17,
+  "anchor": 224,
+  "kind": "navigate",
+  "description": "navigate to the stove"
+ },
+ {
+  "index": 33,
+  "task": "SearingMeat",
+  "episode": 10,
+  "anchor": 1584,
+  "kind": "execute",
+  "description": "turn on the center burner"
+ },
+ {
+  "index": 34,
+  "task": "SearingMeat",
+  "episode": 0,
+  "anchor": 2304,
+  "kind": "execute",
+  "description": "turn on the rear-right burner"
+ },
+ {
+  "index": 35,
+  "task": "StirVegetables",
+  "episode": 67,
+  "anchor": 336,
+  "kind": "pick",
+  "description": "pick up the garlic from the counter"
+ },
+ {
+  "index": 36,
+  "task": "DeliverStraw",
+  "episode": 48,
+  "anchor": 912,
+  "kind": "pick",
+  "description": "pick up the straw from the drawer"
+ },
+ {
+  "index": 37,
+  "task": "SearingMeat",
+  "episode": 0,
+  "anchor": 1536,
+  "kind": "place",
+  "description": "place the chicken drumstick on the pan"
+ },
+ {
+  "index": 38,
+  "task": "SearingMeat",
+  "episode": 1,
+  "anchor": 144,
+  "kind": "pick",
+  "description": "pick up the pan from the cabinet"
+ },
+ {
+  "index": 39,
+  "task": "PackIdenticalLunches",
+  "episode": 47,
+  "anchor": 752,
+  "kind": "pick",
+  "description": "pick up a carrot from the fridge"
+ },
+ {
+  "index": 40,
+  "task": "DeliverStraw",
+  "episode": 37,
+  "anchor": 736,
+  "kind": "place",
+  "description": "place the straw in the glass cup"
+ },
+ {
+  "index": 41,
+  "task": "StirVegetables",
+  "episode": 90,
+  "anchor": 928,
+  "kind": "execute",
+  "description": "stir the vegetables in the pot"
+ },
+ {
+  "index": 42,
+  "task": "GetToastedBread",
+  "episode": 28,
+  "anchor": 640,
+  "kind": "wait",
+  "description": "wait for the toaster to finish and the lever to pop up"
+ },
+ {
+  "index": 43,
+  "task": "DeliverStraw",
+  "episode": 37,
+  "anchor": 272,
+  "kind": "execute",
+  "description": "open the drawer in front of the robot"
+ },
+ {
+  "index": 44,
+  "task": "PackIdenticalLunches",
+  "episode": 99,
+  "anchor": 880,
+  "kind": "navigate",
+  "description": "navigate to the tupperware with only the tomato in it"
+ },
+ {
+  "index": 45,
+  "task": "StirVegetables",
+  "episode": 15,
+  "anchor": 640,
+  "kind": "pick",
+  "description": "pick up the spatula from the counter"
+ },
+ {
+  "index": 46,
+  "task": "DeliverStraw",
+  "episode": 103,
+  "anchor": 416,
+  "kind": "pick",
+  "description": "pick up the straw from the drawer"
+ },
+ {
+  "index": 47,
+  "task": "GetToastedBread",
+  "episode": 62,
+  "anchor": 1664,
+  "kind": "place",
+  "description": "place the bread on the plate"
+ },
+ {
+  "index": 48,
+  "task": "PackIdenticalLunches",
+  "episode": 50,
+  "anchor": 400,
+  "kind": "pick",
+  "description": "pick up a mushroom from the fridge"
+ }
+]

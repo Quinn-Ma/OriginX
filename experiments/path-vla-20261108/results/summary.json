@@ -1,0 +1,1974 @@
+{
+ "per_policy": {
+  "xr1-original": {
+   "tasks": {
+    "DeliverStraw": {
+     "n": 20,
+     "success": 10
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "success": 2
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "success": 5
+    },
+    "SearingMeat": {
+     "n": 20,
+     "success": 5
+    },
+    "StirVegetables": {
+     "n": 20,
+     "success": 6
+    },
+    "ArrangeTea": {
+     "n": 20,
+     "success": 10
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "success": 9
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "success": 1
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "success": 12
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "success": 8
+    }
+   },
+   "errors": 0,
+   "seen": [
+    28,
+    100
+   ],
+   "unseen": [
+    40,
+    100
+   ],
+   "all": [
+    68,
+    200
+   ],
+   "rate": 34.0
+  },
+  "xr1-S": {
+   "tasks": {
+    "DeliverStraw": {
+     "n": 20,
+     "success": 7
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "success": 5
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "success": 8
+    },
+    "SearingMeat": {
+     "n": 20,
+     "success": 9
+    },
+    "StirVegetables": {
+     "n": 20,
+     "success": 8
+    },
+    "ArrangeTea": {
+     "n": 20,
+     "success": 14
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "success": 12
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "success": 0
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "success": 12
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "success": 6
+    }
+   },
+   "errors": 0,
+   "seen": [
+    37,
+    100
+   ],
+   "unseen": [
+    44,
+    100
+   ],
+   "all": [
+    81,
+    200
+   ],
+   "rate": 40.5
+  },
+  "xr1-BL": {
+   "tasks": {
+    "DeliverStraw": {
+     "n": 20,
+     "success": 7
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "success": 6
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "success": 8
+    },
+    "SearingMeat": {
+     "n": 20,
+     "success": 7
+    },
+    "StirVegetables": {
+     "n": 20,
+     "success": 9
+    },
+    "ArrangeTea": {
+     "n": 20,
+     "success": 9
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "success": 13
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "success": 3
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "success": 10
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "success": 9
+    }
+   },
+   "errors": 0,
+   "seen": [
+    37,
+    100
+   ],
+   "unseen": [
+    44,
+    100
+   ],
+   "all": [
+    81,
+    200
+   ],
+   "rate": 40.5
+  },
+  "xr1-F": {
+   "tasks": {
+    "DeliverStraw": {
+     "n": 20,
+     "success": 10
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "success": 6
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "success": 8
+    },
+    "SearingMeat": {
+     "n": 20,
+     "success": 9
+    },
+    "StirVegetables": {
+     "n": 20,
+     "success": 8
+    },
+    "ArrangeTea": {
+     "n": 20,
+     "success": 9
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "success": 11
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "success": 2
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "success": 12
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "success": 8
+    }
+   },
+   "errors": 0,
+   "seen": [
+    41,
+    100
+   ],
+   "unseen": [
+    42,
+    100
+   ],
+   "all": [
+    83,
+    200
+   ],
+   "rate": 41.5
+  },
+  "awomo_i-original": {
+   "tasks": {
+    "DeliverStraw": {
+     "n": 20,
+     "success": 12
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "success": 6
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "success": 5
+    },
+    "SearingMeat": {
+     "n": 20,
+     "success": 4
+    },
+    "StirVegetables": {
+     "n": 20,
+     "success": 10
+    },
+    "ArrangeTea": {
+     "n": 20,
+     "success": 10
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "success": 12
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "success": 6
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "success": 12
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "success": 12
+    }
+   },
+   "errors": 0,
+   "seen": [
+    37,
+    100
+   ],
+   "unseen": [
+    52,
+    100
+   ],
+   "all": [
+    89,
+    200
+   ],
+   "rate": 44.5
+  },
+  "awomo_i-S": {
+   "tasks": {
+    "DeliverStraw": {
+     "n": 20,
+     "success": 13
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "success": 6
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "success": 5
+    },
+    "SearingMeat": {
+     "n": 20,
+     "success": 8
+    },
+    "StirVegetables": {
+     "n": 20,
+     "success": 6
+    },
+    "ArrangeTea": {
+     "n": 20,
+     "success": 11
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "success": 9
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "success": 2
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "success": 10
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "success": 9
+    }
+   },
+   "errors": 0,
+   "seen": [
+    38,
+    100
+   ],
+   "unseen": [
+    41,
+    100
+   ],
+   "all": [
+    79,
+    200
+   ],
+   "rate": 39.5
+  },
+  "awomo_i-BL": {
+   "tasks": {
+    "DeliverStraw": {
+     "n": 20,
+     "success": 14
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "success": 4
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "success": 9
+    },
+    "SearingMeat": {
+     "n": 20,
+     "success": 4
+    },
+    "StirVegetables": {
+     "n": 20,
+     "success": 4
+    },
+    "ArrangeTea": {
+     "n": 20,
+     "success": 8
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "success": 11
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "success": 3
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "success": 6
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "success": 6
+    }
+   },
+   "errors": 0,
+   "seen": [
+    35,
+    100
+   ],
+   "unseen": [
+    34,
+    100
+   ],
+   "all": [
+    69,
+    200
+   ],
+   "rate": 34.5
+  },
+  "awomo_i-F": {
+   "tasks": {
+    "DeliverStraw": {
+     "n": 20,
+     "success": 10
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "success": 4
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "success": 9
+    },
+    "SearingMeat": {
+     "n": 20,
+     "success": 6
+    },
+    "StirVegetables": {
+     "n": 20,
+     "success": 8
+    },
+    "ArrangeTea": {
+     "n": 20,
+     "success": 7
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "success": 9
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "success": 4
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "success": 9
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "success": 10
+    }
+   },
+   "errors": 0,
+   "seen": [
+    37,
+    100
+   ],
+   "unseen": [
+    39,
+    100
+   ],
+   "all": [
+    76,
+    200
+   ],
+   "rate": 38.0
+  },
+  "awomo_v-original": {
+   "tasks": {
+    "DeliverStraw": {
+     "n": 20,
+     "success": 13
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "success": 10
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "success": 7
+    },
+    "SearingMeat": {
+     "n": 20,
+     "success": 6
+    },
+    "StirVegetables": {
+     "n": 20,
+     "success": 8
+    },
+    "ArrangeTea": {
+     "n": 20,
+     "success": 13
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "success": 7
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "success": 9
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "success": 7
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "success": 8
+    }
+   },
+   "errors": 0,
+   "seen": [
+    44,
+    100
+   ],
+   "unseen": [
+    44,
+    100
+   ],
+   "all": [
+    88,
+    200
+   ],
+   "rate": 44.0
+  },
+  "awomo_v-S": {
+   "tasks": {
+    "DeliverStraw": {
+     "n": 20,
+     "success": 9
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "success": 7
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "success": 10
+    },
+    "SearingMeat": {
+     "n": 20,
+     "success": 4
+    },
+    "StirVegetables": {
+     "n": 20,
+     "success": 12
+    },
+    "ArrangeTea": {
+     "n": 20,
+     "success": 11
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "success": 6
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "success": 8
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "success": 9
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "success": 7
+    }
+   },
+   "errors": 0,
+   "seen": [
+    42,
+    100
+   ],
+   "unseen": [
+    41,
+    100
+   ],
+   "all": [
+    83,
+    200
+   ],
+   "rate": 41.5
+  },
+  "awomo_v-BL": {
+   "tasks": {
+    "DeliverStraw": {
+     "n": 20,
+     "success": 8
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "success": 5
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "success": 8
+    },
+    "SearingMeat": {
+     "n": 20,
+     "success": 4
+    },
+    "StirVegetables": {
+     "n": 20,
+     "success": 9
+    },
+    "ArrangeTea": {
+     "n": 20,
+     "success": 12
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "success": 3
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "success": 8
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "success": 8
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "success": 8
+    }
+   },
+   "errors": 0,
+   "seen": [
+    34,
+    100
+   ],
+   "unseen": [
+    39,
+    100
+   ],
+   "all": [
+    73,
+    200
+   ],
+   "rate": 36.5
+  },
+  "awomo_v-F": {
+   "tasks": {
+    "DeliverStraw": {
+     "n": 20,
+     "success": 10
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "success": 6
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "success": 1
+    },
+    "SearingMeat": {
+     "n": 20,
+     "success": 4
+    },
+    "StirVegetables": {
+     "n": 20,
+     "success": 9
+    },
+    "ArrangeTea": {
+     "n": 20,
+     "success": 8
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "success": 5
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "success": 4
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "success": 9
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "success": 10
+    }
+   },
+   "errors": 0,
+   "seen": [
+    30,
+    100
+   ],
+   "unseen": [
+    36,
+    100
+   ],
+   "all": [
+    66,
+    200
+   ],
+   "rate": 33.0
+  }
+ },
+ "contrasts": {
+  "xr1:F-BL": {
+   "n_pairs": 200,
+   "a_success": 83,
+   "b_success": 81,
+   "diff_pp": 1.0,
+   "ci95": [
+    -6.0,
+    8.0
+   ],
+   "ci975": [
+    -7.0,
+    9.0
+   ],
+   "wins": 28,
+   "losses": 26,
+   "mcnemar_p": 0.8919,
+   "per_task": {
+    "ArrangeTea": {
+     "n": 20,
+     "a": 9,
+     "b": 9
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "a": 11,
+     "b": 13
+    },
+    "DeliverStraw": {
+     "n": 20,
+     "a": 10,
+     "b": 7
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "a": 6,
+     "b": 6
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "a": 8,
+     "b": 8
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "a": 2,
+     "b": 3
+    },
+    "SearingMeat": {
+     "n": 20,
+     "a": 9,
+     "b": 7
+    },
+    "StirVegetables": {
+     "n": 20,
+     "a": 8,
+     "b": 9
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "a": 12,
+     "b": 10
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "a": 8,
+     "b": 9
+    }
+   },
+   "primary": true,
+   "holm_p": 0.8919,
+   "supported": false
+  },
+  "xr1:F-S": {
+   "n_pairs": 200,
+   "a_success": 83,
+   "b_success": 81,
+   "diff_pp": 1.0,
+   "ci95": [
+    -5.5,
+    7.5
+   ],
+   "ci975": [
+    -6.5,
+    8.5
+   ],
+   "wins": 25,
+   "losses": 23,
+   "mcnemar_p": 0.8854,
+   "per_task": {
+    "ArrangeTea": {
+     "n": 20,
+     "a": 9,
+     "b": 14
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "a": 11,
+     "b": 12
+    },
+    "DeliverStraw": {
+     "n": 20,
+     "a": 10,
+     "b": 7
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "a": 6,
+     "b": 5
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "a": 8,
+     "b": 8
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "a": 2,
+     "b": 0
+    },
+    "SearingMeat": {
+     "n": 20,
+     "a": 9,
+     "b": 9
+    },
+    "StirVegetables": {
+     "n": 20,
+     "a": 8,
+     "b": 8
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "a": 12,
+     "b": 12
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "a": 8,
+     "b": 6
+    }
+   },
+   "primary": true,
+   "holm_p": 1.0,
+   "supported": false
+  },
+  "xr1:F-original": {
+   "n_pairs": 200,
+   "a_success": 83,
+   "b_success": 68,
+   "diff_pp": 7.5,
+   "ci95": [
+    0.5,
+    14.5
+   ],
+   "ci975": [
+    -0.5,
+    15.5
+   ],
+   "wins": 33,
+   "losses": 18,
+   "mcnemar_p": 0.0489,
+   "per_task": {
+    "ArrangeTea": {
+     "n": 20,
+     "a": 9,
+     "b": 10
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "a": 11,
+     "b": 9
+    },
+    "DeliverStraw": {
+     "n": 20,
+     "a": 10,
+     "b": 10
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "a": 6,
+     "b": 2
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "a": 8,
+     "b": 5
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "a": 2,
+     "b": 1
+    },
+    "SearingMeat": {
+     "n": 20,
+     "a": 9,
+     "b": 5
+    },
+    "StirVegetables": {
+     "n": 20,
+     "a": 8,
+     "b": 6
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "a": 12,
+     "b": 12
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "a": 8,
+     "b": 8
+    }
+   },
+   "primary": false
+  },
+  "xr1:S-original": {
+   "n_pairs": 200,
+   "a_success": 81,
+   "b_success": 68,
+   "diff_pp": 6.5,
+   "ci95": [
+    -0.5,
+    13.5
+   ],
+   "ci975": [
+    -1.0,
+    14.5
+   ],
+   "wins": 33,
+   "losses": 20,
+   "mcnemar_p": 0.0984,
+   "per_task": {
+    "ArrangeTea": {
+     "n": 20,
+     "a": 14,
+     "b": 10
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "a": 12,
+     "b": 9
+    },
+    "DeliverStraw": {
+     "n": 20,
+     "a": 7,
+     "b": 10
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "a": 5,
+     "b": 2
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "a": 8,
+     "b": 5
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "a": 0,
+     "b": 1
+    },
+    "SearingMeat": {
+     "n": 20,
+     "a": 9,
+     "b": 5
+    },
+    "StirVegetables": {
+     "n": 20,
+     "a": 8,
+     "b": 6
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "a": 12,
+     "b": 12
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "a": 6,
+     "b": 8
+    }
+   },
+   "primary": false
+  },
+  "xr1:BL-original": {
+   "n_pairs": 200,
+   "a_success": 81,
+   "b_success": 68,
+   "diff_pp": 6.5,
+   "ci95": [
+    0.0,
+    13.0
+   ],
+   "ci975": [
+    -1.0,
+    14.0
+   ],
+   "wins": 31,
+   "losses": 18,
+   "mcnemar_p": 0.0854,
+   "per_task": {
+    "ArrangeTea": {
+     "n": 20,
+     "a": 9,
+     "b": 10
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "a": 13,
+     "b": 9
+    },
+    "DeliverStraw": {
+     "n": 20,
+     "a": 7,
+     "b": 10
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "a": 6,
+     "b": 2
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "a": 8,
+     "b": 5
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "a": 3,
+     "b": 1
+    },
+    "SearingMeat": {
+     "n": 20,
+     "a": 7,
+     "b": 5
+    },
+    "StirVegetables": {
+     "n": 20,
+     "a": 9,
+     "b": 6
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "a": 10,
+     "b": 12
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "a": 9,
+     "b": 8
+    }
+   },
+   "primary": false
+  },
+  "xr1:S-BL": {
+   "n_pairs": 200,
+   "a_success": 81,
+   "b_success": 81,
+   "diff_pp": 0.0,
+   "ci95": [
+    -6.5,
+    7.0
+   ],
+   "ci975": [
+    -7.5,
+    7.5
+   ],
+   "wins": 24,
+   "losses": 24,
+   "mcnemar_p": 1.0,
+   "per_task": {
+    "ArrangeTea": {
+     "n": 20,
+     "a": 14,
+     "b": 9
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "a": 12,
+     "b": 13
+    },
+    "DeliverStraw": {
+     "n": 20,
+     "a": 7,
+     "b": 7
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "a": 5,
+     "b": 6
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "a": 8,
+     "b": 8
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "a": 0,
+     "b": 3
+    },
+    "SearingMeat": {
+     "n": 20,
+     "a": 9,
+     "b": 7
+    },
+    "StirVegetables": {
+     "n": 20,
+     "a": 8,
+     "b": 9
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "a": 12,
+     "b": 10
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "a": 6,
+     "b": 9
+    }
+   },
+   "primary": false
+  },
+  "awomo_i:F-BL": {
+   "n_pairs": 200,
+   "a_success": 76,
+   "b_success": 69,
+   "diff_pp": 3.5,
+   "ci95": [
+    -3.5,
+    10.5
+   ],
+   "ci975": [
+    -5.0,
+    11.5
+   ],
+   "wins": 32,
+   "losses": 25,
+   "mcnemar_p": 0.427,
+   "per_task": {
+    "ArrangeTea": {
+     "n": 20,
+     "a": 7,
+     "b": 8
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "a": 9,
+     "b": 11
+    },
+    "DeliverStraw": {
+     "n": 20,
+     "a": 10,
+     "b": 14
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "a": 4,
+     "b": 4
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "a": 9,
+     "b": 9
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "a": 4,
+     "b": 3
+    },
+    "SearingMeat": {
+     "n": 20,
+     "a": 6,
+     "b": 4
+    },
+    "StirVegetables": {
+     "n": 20,
+     "a": 8,
+     "b": 4
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "a": 9,
+     "b": 6
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "a": 10,
+     "b": 6
+    }
+   },
+   "primary": true,
+   "holm_p": 0.854,
+   "supported": false
+  },
+  "awomo_i:F-S": {
+   "n_pairs": 200,
+   "a_success": 76,
+   "b_success": 79,
+   "diff_pp": -1.5,
+   "ci95": [
+    -9.5,
+    6.5
+   ],
+   "ci975": [
+    -10.5,
+    7.5
+   ],
+   "wins": 33,
+   "losses": 36,
+   "mcnemar_p": 0.8099,
+   "per_task": {
+    "ArrangeTea": {
+     "n": 20,
+     "a": 7,
+     "b": 11
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "a": 9,
+     "b": 9
+    },
+    "DeliverStraw": {
+     "n": 20,
+     "a": 10,
+     "b": 13
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "a": 4,
+     "b": 6
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "a": 9,
+     "b": 5
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "a": 4,
+     "b": 2
+    },
+    "SearingMeat": {
+     "n": 20,
+     "a": 6,
+     "b": 8
+    },
+    "StirVegetables": {
+     "n": 20,
+     "a": 8,
+     "b": 6
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "a": 9,
+     "b": 10
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "a": 10,
+     "b": 9
+    }
+   },
+   "primary": true,
+   "holm_p": 0.8099,
+   "supported": false
+  },
+  "awomo_i:F-original": {
+   "n_pairs": 200,
+   "a_success": 76,
+   "b_success": 89,
+   "diff_pp": -6.5,
+   "ci95": [
+    -14.0,
+    1.0
+   ],
+   "ci975": [
+    -15.0,
+    2.0
+   ],
+   "wins": 24,
+   "losses": 37,
+   "mcnemar_p": 0.1237,
+   "per_task": {
+    "ArrangeTea": {
+     "n": 20,
+     "a": 7,
+     "b": 10
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "a": 9,
+     "b": 12
+    },
+    "DeliverStraw": {
+     "n": 20,
+     "a": 10,
+     "b": 12
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "a": 4,
+     "b": 6
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "a": 9,
+     "b": 5
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "a": 4,
+     "b": 6
+    },
+    "SearingMeat": {
+     "n": 20,
+     "a": 6,
+     "b": 4
+    },
+    "StirVegetables": {
+     "n": 20,
+     "a": 8,
+     "b": 10
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "a": 9,
+     "b": 12
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "a": 10,
+     "b": 12
+    }
+   },
+   "primary": false
+  },
+  "awomo_i:S-original": {
+   "n_pairs": 200,
+   "a_success": 79,
+   "b_success": 89,
+   "diff_pp": -5.0,
+   "ci95": [
+    -13.0,
+    3.0
+   ],
+   "ci975": [
+    -14.5,
+    4.5
+   ],
+   "wins": 33,
+   "losses": 43,
+   "mcnemar_p": 0.3019,
+   "per_task": {
+    "ArrangeTea": {
+     "n": 20,
+     "a": 11,
+     "b": 10
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "a": 9,
+     "b": 12
+    },
+    "DeliverStraw": {
+     "n": 20,
+     "a": 13,
+     "b": 12
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "a": 6,
+     "b": 6
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "a": 5,
+     "b": 5
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "a": 2,
+     "b": 6
+    },
+    "SearingMeat": {
+     "n": 20,
+     "a": 8,
+     "b": 4
+    },
+    "StirVegetables": {
+     "n": 20,
+     "a": 6,
+     "b": 10
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "a": 10,
+     "b": 12
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "a": 9,
+     "b": 12
+    }
+   },
+   "primary": false
+  },
+  "awomo_i:BL-original": {
+   "n_pairs": 200,
+   "a_success": 69,
+   "b_success": 89,
+   "diff_pp": -10.0,
+   "ci95": [
+    -18.5,
+    -1.5
+   ],
+   "ci975": [
+    -19.5,
+    -0.5
+   ],
+   "wins": 30,
+   "losses": 50,
+   "mcnemar_p": 0.033,
+   "per_task": {
+    "ArrangeTea": {
+     "n": 20,
+     "a": 8,
+     "b": 10
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "a": 11,
+     "b": 12
+    },
+    "DeliverStraw": {
+     "n": 20,
+     "a": 14,
+     "b": 12
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "a": 4,
+     "b": 6
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "a": 9,
+     "b": 5
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "a": 3,
+     "b": 6
+    },
+    "SearingMeat": {
+     "n": 20,
+     "a": 4,
+     "b": 4
+    },
+    "StirVegetables": {
+     "n": 20,
+     "a": 4,
+     "b": 10
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "a": 6,
+     "b": 12
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "a": 6,
+     "b": 12
+    }
+   },
+   "primary": false
+  },
+  "awomo_i:S-BL": {
+   "n_pairs": 200,
+   "a_success": 79,
+   "b_success": 69,
+   "diff_pp": 5.0,
+   "ci95": [
+    -2.0,
+    11.5
+   ],
+   "ci975": [
+    -3.0,
+    13.0
+   ],
+   "wins": 32,
+   "losses": 22,
+   "mcnemar_p": 0.2203,
+   "per_task": {
+    "ArrangeTea": {
+     "n": 20,
+     "a": 11,
+     "b": 8
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "a": 9,
+     "b": 11
+    },
+    "DeliverStraw": {
+     "n": 20,
+     "a": 13,
+     "b": 14
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "a": 6,
+     "b": 4
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "a": 5,
+     "b": 9
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "a": 2,
+     "b": 3
+    },
+    "SearingMeat": {
+     "n": 20,
+     "a": 8,
+     "b": 4
+    },
+    "StirVegetables": {
+     "n": 20,
+     "a": 6,
+     "b": 4
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "a": 10,
+     "b": 6
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "a": 9,
+     "b": 6
+    }
+   },
+   "primary": false
+  },
+  "awomo_v:F-BL": {
+   "n_pairs": 200,
+   "a_success": 66,
+   "b_success": 73,
+   "diff_pp": -3.5,
+   "ci95": [
+    -11.0,
+    4.0
+   ],
+   "ci975": [
+    -12.0,
+    5.0
+   ],
+   "wins": 29,
+   "losses": 36,
+   "mcnemar_p": 0.457,
+   "per_task": {
+    "ArrangeTea": {
+     "n": 20,
+     "a": 8,
+     "b": 12
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "a": 5,
+     "b": 3
+    },
+    "DeliverStraw": {
+     "n": 20,
+     "a": 10,
+     "b": 8
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "a": 6,
+     "b": 5
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "a": 1,
+     "b": 8
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "a": 4,
+     "b": 8
+    },
+    "SearingMeat": {
+     "n": 20,
+     "a": 4,
+     "b": 4
+    },
+    "StirVegetables": {
+     "n": 20,
+     "a": 9,
+     "b": 9
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "a": 9,
+     "b": 8
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "a": 10,
+     "b": 8
+    }
+   },
+   "primary": true,
+   "holm_p": 0.457,
+   "supported": false
+  },
+  "awomo_v:F-S": {
+   "n_pairs": 200,
+   "a_success": 66,
+   "b_success": 83,
+   "diff_pp": -8.5,
+   "ci95": [
+    -15.5,
+    -1.5
+   ],
+   "ci975": [
+    -16.5,
+    -1.0
+   ],
+   "wins": 19,
+   "losses": 36,
+   "mcnemar_p": 0.03,
+   "per_task": {
+    "ArrangeTea": {
+     "n": 20,
+     "a": 8,
+     "b": 11
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "a": 5,
+     "b": 6
+    },
+    "DeliverStraw": {
+     "n": 20,
+     "a": 10,
+     "b": 9
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "a": 6,
+     "b": 7
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "a": 1,
+     "b": 10
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "a": 4,
+     "b": 8
+    },
+    "SearingMeat": {
+     "n": 20,
+     "a": 4,
+     "b": 4
+    },
+    "StirVegetables": {
+     "n": 20,
+     "a": 9,
+     "b": 12
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "a": 9,
+     "b": 9
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "a": 10,
+     "b": 7
+    }
+   },
+   "primary": true,
+   "holm_p": 0.06,
+   "supported": false
+  },
+  "awomo_v:F-original": {
+   "n_pairs": 200,
+   "a_success": 66,
+   "b_success": 88,
+   "diff_pp": -11.0,
+   "ci95": [
+    -19.5,
+    -3.0
+   ],
+   "ci975": [
+    -20.5,
+    -2.0
+   ],
+   "wins": 27,
+   "losses": 49,
+   "mcnemar_p": 0.0154,
+   "per_task": {
+    "ArrangeTea": {
+     "n": 20,
+     "a": 8,
+     "b": 13
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "a": 5,
+     "b": 7
+    },
+    "DeliverStraw": {
+     "n": 20,
+     "a": 10,
+     "b": 13
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "a": 6,
+     "b": 10
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "a": 1,
+     "b": 7
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "a": 4,
+     "b": 9
+    },
+    "SearingMeat": {
+     "n": 20,
+     "a": 4,
+     "b": 6
+    },
+    "StirVegetables": {
+     "n": 20,
+     "a": 9,
+     "b": 8
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "a": 9,
+     "b": 7
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "a": 10,
+     "b": 8
+    }
+   },
+   "primary": false
+  },
+  "awomo_v:S-original": {
+   "n_pairs": 200,
+   "a_success": 83,
+   "b_success": 88,
+   "diff_pp": -2.5,
+   "ci95": [
+    -10.5,
+    5.5
+   ],
+   "ci975": [
+    -11.5,
+    6.5
+   ],
+   "wins": 31,
+   "losses": 36,
+   "mcnemar_p": 0.6254,
+   "per_task": {
+    "ArrangeTea": {
+     "n": 20,
+     "a": 11,
+     "b": 13
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "a": 6,
+     "b": 7
+    },
+    "DeliverStraw": {
+     "n": 20,
+     "a": 9,
+     "b": 13
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "a": 7,
+     "b": 10
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "a": 10,
+     "b": 7
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "a": 8,
+     "b": 9
+    },
+    "SearingMeat": {
+     "n": 20,
+     "a": 4,
+     "b": 6
+    },
+    "StirVegetables": {
+     "n": 20,
+     "a": 12,
+     "b": 8
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "a": 9,
+     "b": 7
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "a": 7,
+     "b": 8
+    }
+   },
+   "primary": false
+  },
+  "awomo_v:BL-original": {
+   "n_pairs": 200,
+   "a_success": 73,
+   "b_success": 88,
+   "diff_pp": -7.5,
+   "ci95": [
+    -15.5,
+    0.0
+   ],
+   "ci975": [
+    -16.5,
+    1.5
+   ],
+   "wins": 26,
+   "losses": 41,
+   "mcnemar_p": 0.0864,
+   "per_task": {
+    "ArrangeTea": {
+     "n": 20,
+     "a": 12,
+     "b": 13
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "a": 3,
+     "b": 7
+    },
+    "DeliverStraw": {
+     "n": 20,
+     "a": 8,
+     "b": 13
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "a": 5,
+     "b": 10
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "a": 8,
+     "b": 7
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "a": 8,
+     "b": 9
+    },
+    "SearingMeat": {
+     "n": 20,
+     "a": 4,
+     "b": 6
+    },
+    "StirVegetables": {
+     "n": 20,
+     "a": 9,
+     "b": 8
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "a": 8,
+     "b": 7
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "a": 8,
+     "b": 8
+    }
+   },
+   "primary": false
+  },
+  "awomo_v:S-BL": {
+   "n_pairs": 200,
+   "a_success": 83,
+   "b_success": 73,
+   "diff_pp": 5.0,
+   "ci95": [
+    -3.0,
+    13.0
+   ],
+   "ci975": [
+    -4.5,
+    14.5
+   ],
+   "wins": 41,
+   "losses": 31,
+   "mcnemar_p": 0.2888,
+   "per_task": {
+    "ArrangeTea": {
+     "n": 20,
+     "a": 11,
+     "b": 12
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "a": 6,
+     "b": 3
+    },
+    "DeliverStraw": {
+     "n": 20,
+     "a": 9,
+     "b": 8
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "a": 7,
+     "b": 5
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "a": 10,
+     "b": 8
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "a": 8,
+     "b": 8
+    },
+    "SearingMeat": {
+     "n": 20,
+     "a": 4,
+     "b": 4
+    },
+    "StirVegetables": {
+     "n": 20,
+     "a": 12,
+     "b": 9
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "a": 9,
+     "b": 8
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "a": 7,
+     "b": 8
+    }
+   },
+   "primary": false
+  }
+ }
+}

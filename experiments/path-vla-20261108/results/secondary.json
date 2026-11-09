@@ -1,0 +1,744 @@
+{
+ "split_contrasts": {
+  "xr1:F-BL:seen": {
+   "n_pairs": 100,
+   "a_success": 41,
+   "b_success": 37,
+   "diff_pp": 4.0,
+   "ci95": [
+    -7.0,
+    16.0
+   ],
+   "wins": 19,
+   "losses": 15,
+   "mcnemar_p": 0.6076
+  },
+  "xr1:F-BL:unseen": {
+   "n_pairs": 100,
+   "a_success": 42,
+   "b_success": 44,
+   "diff_pp": -2.0,
+   "ci95": [
+    -11.0,
+    7.0
+   ],
+   "wins": 9,
+   "losses": 11,
+   "mcnemar_p": 0.8238
+  },
+  "xr1:F-S:seen": {
+   "n_pairs": 100,
+   "a_success": 41,
+   "b_success": 37,
+   "diff_pp": 4.0,
+   "ci95": [
+    -6.0,
+    14.0
+   ],
+   "wins": 16,
+   "losses": 12,
+   "mcnemar_p": 0.5716
+  },
+  "xr1:F-S:unseen": {
+   "n_pairs": 100,
+   "a_success": 42,
+   "b_success": 44,
+   "diff_pp": -2.0,
+   "ci95": [
+    -10.0,
+    7.0
+   ],
+   "wins": 9,
+   "losses": 11,
+   "mcnemar_p": 0.8238
+  },
+  "xr1:F-original:seen": {
+   "n_pairs": 100,
+   "a_success": 41,
+   "b_success": 28,
+   "diff_pp": 13.0,
+   "ci95": [
+    2.0,
+    24.0
+   ],
+   "wins": 23,
+   "losses": 10,
+   "mcnemar_p": 0.0351
+  },
+  "xr1:F-original:unseen": {
+   "n_pairs": 100,
+   "a_success": 42,
+   "b_success": 40,
+   "diff_pp": 2.0,
+   "ci95": [
+    -6.0,
+    11.0
+   ],
+   "wins": 10,
+   "losses": 8,
+   "mcnemar_p": 0.8145
+  },
+  "xr1:S-original:seen": {
+   "n_pairs": 100,
+   "a_success": 37,
+   "b_success": 28,
+   "diff_pp": 9.0,
+   "ci95": [
+    -2.0,
+    20.0
+   ],
+   "wins": 21,
+   "losses": 12,
+   "mcnemar_p": 0.1628
+  },
+  "xr1:S-original:unseen": {
+   "n_pairs": 100,
+   "a_success": 44,
+   "b_success": 40,
+   "diff_pp": 4.0,
+   "ci95": [
+    -4.0,
+    12.0
+   ],
+   "wins": 12,
+   "losses": 8,
+   "mcnemar_p": 0.5034
+  },
+  "xr1:BL-original:seen": {
+   "n_pairs": 100,
+   "a_success": 37,
+   "b_success": 28,
+   "diff_pp": 9.0,
+   "ci95": [
+    -2.0,
+    20.0
+   ],
+   "wins": 21,
+   "losses": 12,
+   "mcnemar_p": 0.1628
+  },
+  "xr1:BL-original:unseen": {
+   "n_pairs": 100,
+   "a_success": 44,
+   "b_success": 40,
+   "diff_pp": 4.0,
+   "ci95": [
+    -3.0,
+    12.0
+   ],
+   "wins": 10,
+   "losses": 6,
+   "mcnemar_p": 0.4545
+  },
+  "awomo_i:F-BL:seen": {
+   "n_pairs": 100,
+   "a_success": 37,
+   "b_success": 35,
+   "diff_pp": 2.0,
+   "ci95": [
+    -8.0,
+    13.0
+   ],
+   "wins": 16,
+   "losses": 14,
+   "mcnemar_p": 0.8555
+  },
+  "awomo_i:F-BL:unseen": {
+   "n_pairs": 100,
+   "a_success": 39,
+   "b_success": 34,
+   "diff_pp": 5.0,
+   "ci95": [
+    -4.0,
+    15.0
+   ],
+   "wins": 16,
+   "losses": 11,
+   "mcnemar_p": 0.4421
+  },
+  "awomo_i:F-S:seen": {
+   "n_pairs": 100,
+   "a_success": 37,
+   "b_success": 38,
+   "diff_pp": -1.0,
+   "ci95": [
+    -13.0,
+    11.0
+   ],
+   "wins": 20,
+   "losses": 21,
+   "mcnemar_p": 1.0
+  },
+  "awomo_i:F-S:unseen": {
+   "n_pairs": 100,
+   "a_success": 39,
+   "b_success": 41,
+   "diff_pp": -2.0,
+   "ci95": [
+    -12.0,
+    8.0
+   ],
+   "wins": 13,
+   "losses": 15,
+   "mcnemar_p": 0.8506
+  },
+  "awomo_i:F-original:seen": {
+   "n_pairs": 100,
+   "a_success": 37,
+   "b_success": 37,
+   "diff_pp": 0.0,
+   "ci95": [
+    -11.0,
+    10.0
+   ],
+   "wins": 15,
+   "losses": 15,
+   "mcnemar_p": 1.0
+  },
+  "awomo_i:F-original:unseen": {
+   "n_pairs": 100,
+   "a_success": 39,
+   "b_success": 52,
+   "diff_pp": -13.0,
+   "ci95": [
+    -24.0,
+    -2.0
+   ],
+   "wins": 9,
+   "losses": 22,
+   "mcnemar_p": 0.0294
+  },
+  "awomo_i:S-original:seen": {
+   "n_pairs": 100,
+   "a_success": 38,
+   "b_success": 37,
+   "diff_pp": 1.0,
+   "ci95": [
+    -11.0,
+    13.0
+   ],
+   "wins": 21,
+   "losses": 20,
+   "mcnemar_p": 1.0
+  },
+  "awomo_i:S-original:unseen": {
+   "n_pairs": 100,
+   "a_success": 41,
+   "b_success": 52,
+   "diff_pp": -11.0,
+   "ci95": [
+    -22.0,
+    0.0
+   ],
+   "wins": 12,
+   "losses": 23,
+   "mcnemar_p": 0.0895
+  },
+  "awomo_i:BL-original:seen": {
+   "n_pairs": 100,
+   "a_success": 35,
+   "b_success": 37,
+   "diff_pp": -2.0,
+   "ci95": [
+    -15.0,
+    11.0
+   ],
+   "wins": 21,
+   "losses": 23,
+   "mcnemar_p": 0.8804
+  },
+  "awomo_i:BL-original:unseen": {
+   "n_pairs": 100,
+   "a_success": 34,
+   "b_success": 52,
+   "diff_pp": -18.0,
+   "ci95": [
+    -29.0,
+    -7.0
+   ],
+   "wins": 9,
+   "losses": 27,
+   "mcnemar_p": 0.0039
+  },
+  "awomo_v:F-BL:seen": {
+   "n_pairs": 100,
+   "a_success": 30,
+   "b_success": 34,
+   "diff_pp": -4.0,
+   "ci95": [
+    -15.0,
+    7.0
+   ],
+   "wins": 16,
+   "losses": 20,
+   "mcnemar_p": 0.6177
+  },
+  "awomo_v:F-BL:unseen": {
+   "n_pairs": 100,
+   "a_success": 36,
+   "b_success": 39,
+   "diff_pp": -3.0,
+   "ci95": [
+    -13.0,
+    7.0
+   ],
+   "wins": 13,
+   "losses": 16,
+   "mcnemar_p": 0.7111
+  },
+  "awomo_v:F-S:seen": {
+   "n_pairs": 100,
+   "a_success": 30,
+   "b_success": 42,
+   "diff_pp": -12.0,
+   "ci95": [
+    -21.0,
+    -3.0
+   ],
+   "wins": 8,
+   "losses": 20,
+   "mcnemar_p": 0.0357
+  },
+  "awomo_v:F-S:unseen": {
+   "n_pairs": 100,
+   "a_success": 36,
+   "b_success": 41,
+   "diff_pp": -5.0,
+   "ci95": [
+    -15.0,
+    4.0
+   ],
+   "wins": 11,
+   "losses": 16,
+   "mcnemar_p": 0.4421
+  },
+  "awomo_v:F-original:seen": {
+   "n_pairs": 100,
+   "a_success": 30,
+   "b_success": 44,
+   "diff_pp": -14.0,
+   "ci95": [
+    -25.0,
+    -3.0
+   ],
+   "wins": 11,
+   "losses": 25,
+   "mcnemar_p": 0.0288
+  },
+  "awomo_v:F-original:unseen": {
+   "n_pairs": 100,
+   "a_success": 36,
+   "b_success": 44,
+   "diff_pp": -8.0,
+   "ci95": [
+    -20.0,
+    4.0
+   ],
+   "wins": 16,
+   "losses": 24,
+   "mcnemar_p": 0.2682
+  },
+  "awomo_v:S-original:seen": {
+   "n_pairs": 100,
+   "a_success": 42,
+   "b_success": 44,
+   "diff_pp": -2.0,
+   "ci95": [
+    -14.0,
+    10.0
+   ],
+   "wins": 19,
+   "losses": 21,
+   "mcnemar_p": 0.8746
+  },
+  "awomo_v:S-original:unseen": {
+   "n_pairs": 100,
+   "a_success": 41,
+   "b_success": 44,
+   "diff_pp": -3.0,
+   "ci95": [
+    -13.0,
+    7.0
+   ],
+   "wins": 12,
+   "losses": 15,
+   "mcnemar_p": 0.7011
+  },
+  "awomo_v:BL-original:seen": {
+   "n_pairs": 100,
+   "a_success": 34,
+   "b_success": 44,
+   "diff_pp": -10.0,
+   "ci95": [
+    -21.0,
+    1.0
+   ],
+   "wins": 13,
+   "losses": 23,
+   "mcnemar_p": 0.1325
+  },
+  "awomo_v:BL-original:unseen": {
+   "n_pairs": 100,
+   "a_success": 39,
+   "b_success": 44,
+   "diff_pp": -5.0,
+   "ci95": [
+    -16.0,
+    5.0
+   ],
+   "wins": 13,
+   "losses": 18,
+   "mcnemar_p": 0.4731
+  }
+ },
+ "steps": {
+  "xr1-original": {
+   "median_steps_success": 1384,
+   "timeouts": 132,
+   "early_terminations": 0,
+   "mean_elapsed_s": 199.8
+  },
+  "xr1-S": {
+   "median_steps_success": 1427,
+   "timeouts": 119,
+   "early_terminations": 0,
+   "mean_elapsed_s": 226.2
+  },
+  "xr1-BL": {
+   "median_steps_success": 1332,
+   "timeouts": 119,
+   "early_terminations": 0,
+   "mean_elapsed_s": 205.5
+  },
+  "xr1-F": {
+   "median_steps_success": 1281,
+   "timeouts": 117,
+   "early_terminations": 0,
+   "mean_elapsed_s": 228.2
+  },
+  "awomo_i-original": {
+   "median_steps_success": 1314,
+   "timeouts": 111,
+   "early_terminations": 0,
+   "mean_elapsed_s": 326.4
+  },
+  "awomo_i-S": {
+   "median_steps_success": 1351,
+   "timeouts": 121,
+   "early_terminations": 0,
+   "mean_elapsed_s": 322.0
+  },
+  "awomo_i-BL": {
+   "median_steps_success": 1585,
+   "timeouts": 131,
+   "early_terminations": 0,
+   "mean_elapsed_s": 353.1
+  },
+  "awomo_i-F": {
+   "median_steps_success": 1397,
+   "timeouts": 124,
+   "early_terminations": 0,
+   "mean_elapsed_s": 328.0
+  },
+  "awomo_v-original": {
+   "median_steps_success": 1376,
+   "timeouts": 112,
+   "early_terminations": 0,
+   "mean_elapsed_s": 384.9
+  },
+  "awomo_v-S": {
+   "median_steps_success": 1422,
+   "timeouts": 117,
+   "early_terminations": 0,
+   "mean_elapsed_s": 380.2
+  },
+  "awomo_v-BL": {
+   "median_steps_success": 1319,
+   "timeouts": 127,
+   "early_terminations": 0,
+   "mean_elapsed_s": 394.3
+  },
+  "awomo_v-F": {
+   "median_steps_success": 1271,
+   "timeouts": 134,
+   "early_terminations": 0,
+   "mean_elapsed_s": 376.2
+  }
+ },
+ "rescues": {
+  "xr1": {
+   "rescued": {
+    "DeliverStraw": 4,
+    "GetToastedBread": 4,
+    "PackIdenticalLunches": 5,
+    "SearingMeat": 6,
+    "StirVegetables": 4,
+    "ArrangeTea": 4,
+    "CuttingToolSelection": 2,
+    "RecycleBottlesByType": 2,
+    "WeighIngredients": 2
+   },
+   "regressed": {
+    "DeliverStraw": 4,
+    "ArrangeTea": 5,
+    "WeighIngredients": 2,
+    "PackIdenticalLunches": 2,
+    "StirVegetables": 2,
+    "RecycleBottlesByType": 1,
+    "SearingMeat": 2
+   }
+  },
+  "awomo_i": {
+   "rescued": {
+    "GetToastedBread": 1,
+    "PackIdenticalLunches": 6,
+    "SearingMeat": 4,
+    "RecycleBottlesByType": 2,
+    "DeliverStraw": 2,
+    "ArrangeTea": 2,
+    "StirVegetables": 2,
+    "CuttingToolSelection": 2,
+    "WaffleReheat": 1,
+    "WeighIngredients": 2
+   },
+   "regressed": {
+    "SearingMeat": 2,
+    "StirVegetables": 4,
+    "ArrangeTea": 5,
+    "CuttingToolSelection": 5,
+    "RecycleBottlesByType": 4,
+    "WaffleReheat": 4,
+    "WeighIngredients": 4,
+    "DeliverStraw": 4,
+    "PackIdenticalLunches": 2,
+    "GetToastedBread": 3
+   }
+  },
+  "awomo_v": {
+   "rescued": {
+    "DeliverStraw": 2,
+    "GetToastedBread": 2,
+    "ArrangeTea": 3,
+    "WeighIngredients": 6,
+    "PackIdenticalLunches": 1,
+    "SearingMeat": 2,
+    "StirVegetables": 4,
+    "RecycleBottlesByType": 2,
+    "CuttingToolSelection": 1,
+    "WaffleReheat": 4
+   },
+   "regressed": {
+    "GetToastedBread": 6,
+    "PackIdenticalLunches": 7,
+    "ArrangeTea": 8,
+    "RecycleBottlesByType": 7,
+    "WeighIngredients": 4,
+    "DeliverStraw": 5,
+    "SearingMeat": 4,
+    "StirVegetables": 3,
+    "WaffleReheat": 2,
+    "CuttingToolSelection": 3
+   }
+  }
+ },
+ "qual_pairs": {
+  "xr1": {
+   "rescue": [
+    [
+     772,
+     [
+      "WeighIngredients",
+      12
+     ]
+    ],
+    [
+     928,
+     [
+      "StirVegetables",
+      6
+     ]
+    ],
+    [
+     949,
+     [
+      "StirVegetables",
+      8
+     ]
+    ]
+   ],
+   "regression": [
+    [
+     888,
+     [
+      "DeliverStraw",
+      12
+     ]
+    ],
+    [
+     900,
+     [
+      "DeliverStraw",
+      2
+     ]
+    ],
+    [
+     936,
+     [
+      "WeighIngredients",
+      2
+     ]
+    ]
+   ]
+  },
+  "awomo_i": {
+   "rescue": [
+    [
+     361,
+     [
+      "CuttingToolSelection",
+      11
+     ]
+    ],
+    [
+     530,
+     [
+      "CuttingToolSelection",
+      16
+     ]
+    ],
+    [
+     809,
+     [
+      "DeliverStraw",
+      9
+     ]
+    ]
+   ],
+   "regression": [
+    [
+     326,
+     [
+      "CuttingToolSelection",
+      0
+     ]
+    ],
+    [
+     360,
+     [
+      "CuttingToolSelection",
+      18
+     ]
+    ],
+    [
+     363,
+     [
+      "CuttingToolSelection",
+      19
+     ]
+    ]
+   ]
+  },
+  "awomo_v": {
+   "rescue": [
+    [
+     375,
+     [
+      "CuttingToolSelection",
+      12
+     ]
+    ],
+    [
+     634,
+     [
+      "WeighIngredients",
+      3
+     ]
+    ],
+    [
+     926,
+     [
+      "WaffleReheat",
+      16
+     ]
+    ]
+   ],
+   "regression": [
+    [
+     292,
+     [
+      "CuttingToolSelection",
+      13
+     ]
+    ],
+    [
+     473,
+     [
+      "CuttingToolSelection",
+      17
+     ]
+    ],
+    [
+     702,
+     [
+      "WeighIngredients",
+      12
+     ]
+    ]
+   ]
+  }
+ },
+ "instructions_per_task": {
+  "DeliverStraw": [
+   "Take a straw from the drawer in front and place it inside the glass cup on the dining counter."
+  ],
+  "GetToastedBread": [
+   "Start the toaster. Once the lever pops up, take the bread to the plate on the dining counter."
+  ],
+  "PackIdenticalLunches": [
+   "Place one avocado and one fish in each tupperware on the nearby counter, to pack two identical lunches.",
+   "Place one avocado and one steak in each tupperware on the nearby counter, to pack two identical lunches.",
+   "Place one bell pepper and one steak in each tupperware on the nearby counter, to pack two identical lunches."
+  ],
+  "SearingMeat": [
+   "Grab the pan from the cabinet and place it on the front left burner on the stove. Then place the chicken drumstick on the stove and turn the burner on.",
+   "Grab the pan from the cabinet and place it on the front left burner on the stove. Then place the fish on the stove and turn the burner on.",
+   "Grab the pan from the cabinet and place it on the front left burner on the stove. Then place the shrimp on the stove and turn the burner on."
+  ],
+  "StirVegetables": [
+   "Put the broccoli and cucumber in the pot. Retrieve the spatula and lightly stir the vegetables in the pot.",
+   "Put the broccoli and potato in the pot. Retrieve the spatula and lightly stir the vegetables in the pot.",
+   "Put the carrot and lemon in the pot. Retrieve the spatula and lightly stir the vegetables in the pot."
+  ],
+  "ArrangeTea": [
+   "Pick the kettle from the counter and place it on the tray. Then pick the mug from the cabinet and place it on the tray. Then close the cabinet doors."
+  ],
+  "CuttingToolSelection": [
+   "Place the appropriate cutting tool for cutting the avocado skin on the cutting board.",
+   "Place the appropriate cutting tool for cutting the broccoli skin on the cutting board.",
+   "Place the appropriate cutting tool for cutting the carrot skin on the cutting board."
+  ],
+  "RecycleBottlesByType": [
+   "Move the plastic bottles in the middle to the plastics group, and the glass bottles in the middle to the glass group."
+  ],
+  "WaffleReheat": [
+   "Open the microwave, place the bowl with waffle inside the microwave, then close the microwave door and turn it on."
+  ],
+  "WeighIngredients": [
+   "Pick the bar and place it on the digital scale for weighing, and close the cabinet.",
+   "Pick the boxed food and place it on the digital scale for weighing, and close the cabinet.",
+   "Pick the canned food and place it on the digital scale for weighing, and close the cabinet."
+  ]
+ },
+ "n_distinct_instructions": {
+  "DeliverStraw": 1,
+  "GetToastedBread": 1,
+  "PackIdenticalLunches": 18,
+  "SearingMeat": 10,
+  "StirVegetables": 19,
+  "ArrangeTea": 1,
+  "CuttingToolSelection": 7,
+  "RecycleBottlesByType": 1,
+  "WaffleReheat": 1,
+  "WeighIngredients": 7
+ }
+}

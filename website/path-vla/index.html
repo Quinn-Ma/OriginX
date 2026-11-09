@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PaTH-VLA — progress-and-target context for long-horizon robot policy adaptation</title>
+  <meta name="description" content="A pre-registered ablation of progress (stage) and target (box + location) supervision when adapting three pretrained RoboCasa365 policies. 2,400 paired episodes: the two signals are not complementary, progress supervision is harmless, box supervision can backfire.">
+  <link rel="canonical" href="https://robocasa.originxairobotics.com/path-vla/">
+  <meta property="og:title" content="PaTH-VLA — progress-and-target context for robot policy adaptation">
+  <meta property="og:description" content="Three pretrained RoboCasa365 policies, three adaptation arms, 2,400 paired episodes. Stage supervision is harmless; box supervision can backfire.">
+  <meta property="og:url" content="https://robocasa.originxairobotics.com/path-vla/">
+  <meta property="og:type" content="article">
+  <meta name="citation_title" content="PaTH-VLA: Progress-and-Target Context for Long-Horizon Robot Policy Adaptation">
+  <meta name="citation_author" content="Qinzhen Ma">
+  <meta name="citation_author" content="Harry Yang">
+  <meta name="citation_author" content="Changsheng Lu">
+  <meta name="citation_author" content="Xiaogang Xu">
+  <meta name="citation_publication_date" content="2026/11/08">
+  <meta name="theme-color" content="#f1f3ff">
+  <link rel="stylesheet" href="../styles.css?v=method-v1">
+  <style>
+    .bb-nav{max-width:1240px;margin:auto}.bb-main{max-width:1100px;margin:auto;padding:64px 32px 80px}.bb-eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:#5262ac;margin:0 0 20px}.bb-title{font-size:clamp(2.6rem,6vw,4.7rem);line-height:1.06;letter-spacing:-.05em;margin:0 0 24px;max-width:980px}.bb-title span{color:#354bea}.bb-lede{font-size:1.2rem;line-height:1.65;color:#526076;max-width:790px}.bb-meta{color:#687184;font-size:.88rem}.bb-results{margin:44px 0 0;border:1px solid #cbd3f0;border-radius:22px;overflow:hidden;background:#f6f7ff}.bb-result-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(240px,1fr);align-items:center;gap:48px;padding:38px}.bb-stat-label{font-size:.82rem;color:#56627d;margin:0 0 10px}.bb-stat{font-size:clamp(2.6rem,4.9vw,4rem);line-height:1.1;letter-spacing:-.055em;color:#263ab3;margin:0}.bb-stat small{font-size:.34em;letter-spacing:-.02em}.bb-stat-sub{font-size:.85rem;color:#54617b;margin:12px 0 0}.bb-section{margin-top:66px}.bb-section h2{font-size:2rem;line-height:1.2;letter-spacing:-.035em;margin:0 0 22px}.bb-copy{max-width:790px;color:#4b5568;font-size:1.06rem;line-height:1.8}.bb-method{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:26px}.bb-card{padding:25px;border:1px solid #e0e4ee;border-radius:16px;background:#fafbfe}.bb-card .bb-step{font-size:.8rem;color:#5363b3}.bb-card h3{font-size:1.13rem;line-height:1.4;margin:13px 0}.bb-card p{font-size:.94rem;line-height:1.75;color:#5d687c;margin:0}.bb-table-wrap{overflow-x:auto;border:1px solid #e0e4ee;border-radius:16px;margin:26px 0}.bb-table{width:100%;border-collapse:collapse;text-align:left;font-size:.96rem}.bb-table th,.bb-table td{padding:17px 22px;border-bottom:1px solid #e4e7f0}.bb-table th{font-weight:600;color:#4c5870;background:#f8f9fc}.bb-table tr:last-child td{border-bottom:0}.bb-table .bb-emph{color:#263ab3;font-weight:600}.bb-note{font-size:.88rem;color:#667085;line-height:1.8;max-width:850px}.bb-tasks{display:flex;flex-wrap:wrap;gap:10px;padding:0;list-style:none;margin:23px 0}.bb-tasks li{border:1px solid #dce1ed;border-radius:20px;padding:7px 15px;font-size:.87rem;color:#506079}.bb-downloads{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.bb-downloads a{display:block;border:1px solid #d9dfed;border-radius:14px;padding:23px;text-decoration:none}.bb-downloads a:hover{background:#f6f7ff}.bb-downloads strong{display:block;font-size:1rem;margin-bottom:7px}.bb-downloads span{font-size:.84rem;color:#67728a}.bb-footer{margin-top:60px;padding-top:24px;border-top:1px solid #e1e5ee;color:#788195;font-size:.84rem}.bb-masthead{height:auto;min-height:76px;flex-wrap:wrap;padding-top:18px;padding-bottom:18px}.bb-masthead nav{gap:22px}.bb-masthead nav a{display:inline-block;min-height:32px;padding-top:5px}.bb-top{background:linear-gradient(180deg,#f1f3ff 0,#fff 650px)}@media(max-width:760px){.bb-result-grid,.bb-method,.bb-downloads{grid-template-columns:1fr}.bb-result-grid{gap:24px}.bb-result-grid>div+div{border-top:1px solid #dce1f2;padding-top:22px}.bb-main{padding:42px 23px 60px}.bb-result-grid{padding:28px}.bb-section{margin-top:48px}.bb-masthead{padding-left:23px;padding-right:23px;gap:18px}.bb-masthead nav{gap:17px;font-size:.8rem}.bb-title{font-size:2.65rem}.bb-lede{font-size:1.06rem}.bb-table th,.bb-table td{padding:14px}.bb-copy{font-size:1rem}}
+    .bb-authors{font-size:1rem;line-height:1.9;color:#35415c;margin:22px 0 7px}.bb-authors a{text-decoration:none}.bb-authors sup{font-size:.65em;margin-left:3px}
+    .bb-method-summary h2{font-size:1.85rem;line-height:1.2;letter-spacing:-.035em;color:#26334c;margin:0 0 16px}.bb-method-summary>p:last-child{font-size:1rem;line-height:1.75;color:#54617b;margin:0}.bb-headline-gain{padding-left:32px;border-left:1px solid #dce1f2}@media(max-width:760px){.bb-headline-gain{padding-left:0;border-left:0}.bb-method-summary h2{font-size:1.65rem}}
+  </style>
+  <style>
+    .pv-fig{margin:26px 0 0;border:1px solid #e0e4ee;border-radius:16px;overflow:hidden;background:#fff}.pv-fig img{display:block;width:100%;height:auto}.pv-fig figcaption{padding:14px 20px;font-size:.88rem;line-height:1.7;color:#5d687c;border-top:1px solid #e4e7f0}.pv-verdict{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:26px}.pv-neg{color:#b3261e;font-weight:600}.pv-pos{color:#1f7a3a;font-weight:600}@media(max-width:760px){.pv-verdict{grid-template-columns:1fr}}
+  </style>
+</head>
+<body class="bb-top">
+<a class="skip" href="#main">Skip to article</a>
+<header class="masthead bb-masthead bb-nav">
+  <a class="wordmark" href="../" aria-label="OriginX research home">Origin<span>X</span><span class="wordmark-divider" aria-hidden="true"></span><span class="wordmark-caption">Research</span></a>
+  <nav aria-label="Main navigation"><a href="#method">Method</a><a href="#results">Results</a><a href="#labels">Labels</a><a href="#downloads">Downloads</a><a href="../branchbox/">BranchBox</a><a class="nav-github" href="https://github.com/Quinn-Ma/OriginX/tree/main/experiments/path-vla-20261108">GitHub</a></nav>
+</header>
+<main id="main" class="bb-main">
+  <header>
+    <p class="bb-eyebrow">Robot learning / Long-horizon manipulation</p>
+    <h1 class="bb-title"><span>PaTH-VLA</span><br>Where am I, where do I look?</h1>
+    <p class="bb-lede">Progress-and-Target context for adapting pretrained generalist robot policies: a pre-registered, paired ablation of stage supervision and box-plus-location supervision on three RoboCasa365 policies, evaluated with ordinary inputs on 2,400 episodes.</p>
+    <p class="bb-meta">Research preprint · Xiaomi Robotics 1, Awomo-0.5I, Awomo-0.5V · RoboCasa365 composite tasks (5 seen + 5 unseen)</p>
+    <p class="bb-authors"><a href="https://quinn-ma.github.io/">Qinzhen Ma</a><sup>1</sup> · <a href="https://hyang.org/">Harry Yang</a><sup>2</sup> · <a href="https://alanlusun.github.io/">Changsheng Lu</a><sup>2</sup> · <a href="https://xuxiaogang.com/">Xiaogang Xu</a><sup>3</sup></p>
+    <p class="bb-meta"><sup>1</sup> Rice University · <sup>2</sup> The Hong Kong University of Science and Technology · <sup>3</sup> Zhejiang University</p>
+    <div class="release-links"><a href="assets/PaTH-VLA_preprint.pdf">Read the preprint</a><a href="#results">Explore the results</a><a href="https://github.com/Quinn-Ma/OriginX/tree/main/experiments/path-vla-20261108">Code, labels and 2,400 episode logs</a></div>
+  </header>
+
+  <section class="bb-results" aria-labelledby="headline-title">
+    <div class="bb-result-grid">
+      <div class="bb-method-summary">
+        <p class="bb-stat-label">The question</p>
+        <h2 id="headline-title">Which context does a pretrained policy actually learn from?</h2>
+        <p>Three arms share the checkpoint, the demonstrations, the window panel, the optimizer and 1,000 updates; only the auxiliary signal differs. Every arm is then run exactly like the official checkpoint, with no prompt at test time.</p>
+      </div>
+      <div class="bb-headline-gain">
+        <p class="bb-stat-label">Pre-registered primary contrasts</p>
+        <p class="bb-stat">0<small> of 6 supported</small></p>
+        <p class="bb-stat-sub">F − BL and F − S in three models; the only interval excluding zero is negative (Awomo-0.5V, F − S = −8.5 pp)</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="method" class="bb-section" aria-labelledby="method-title">
+    <p class="bb-eyebrow">The adaptation recipe</p>
+    <h2 id="method-title">Two cheap context signals, one controlled comparison.</h2>
+    <p class="bb-copy">A frozen policy keeps its vision and language backbones and its action transformer; rank-8 LoRA adapters on four late projections and two linear heads are the only trainable parameters. The <em>progress</em> head predicts the official RoboCasa365 subtask stage; the <em>target</em> head predicts the normalized centre of the current target in each camera, and the target's box is drawn on the current frame during training. Boxes are automatic pseudo-labels: Grounding DINO proposals, SAM 2.1 tight masks, and Qwen3-VL-4B picking the described instance.</p>
+    <div class="bb-method">
+      <section class="bb-card"><span class="bb-step">S / Progress</span><h3>Stage supervision only</h3><p>Action loss + 0.1 × stage cross-entropy on the shared feature. Clean frames.</p></section>
+      <section class="bb-card"><span class="bb-step">BL / Target</span><h3>Box + location only</h3><p>Action loss + 0.1 × location smooth-L1; the target box is drawn on the current frame of every camera where it is visible.</p></section>
+      <section class="bb-card"><span class="bb-step">F / PaTH-VLA</span><h3>Both channels</h3><p>Stage and location losses, box drawn. F − BL isolates the progress channel, F − S the target channel.</p></section>
+    </div>
+    <p class="bb-note">No stage text is added to the instruction in any arm, and all arms are evaluated with ordinary inputs (original instruction, clean frames, heads ignored), so the comparison measures what the supervision taught the policy rather than how an inference-time prompting loop performs. The official checkpoint is the external reference; by design there is no matched action-only arm, so differences to the official checkpoint mix the auxiliary signal with extra action training.</p>
+  </section>
+
+  <section id="results" class="bb-section" aria-labelledby="results-title">
+    <p class="bb-eyebrow">Paired, pre-registered evaluation</p>
+    <h2 id="results-title">Stage supervision is harmless; box supervision can backfire.</h2>
+    <p class="bb-copy">Each of the twelve policies runs the same 200 episodes: ten RoboCasa365 composite tasks × twenty fixed seeds, five tasks whose demonstrations were used for adaptation and five never seen. A seed fixes the kitchen, objects and initial state, verified by hashing the first observation across processes, so all comparisons are paired.</p>
+    <ul class="bb-tasks" aria-label="Evaluated tasks"><li>DeliverStraw</li><li>GetToastedBread</li><li>PackIdenticalLunches</li><li>SearingMeat</li><li>StirVegetables</li><li>ArrangeTea*</li><li>CuttingToolSelection*</li><li>RecycleBottlesByType*</li><li>WaffleReheat*</li><li>WeighIngredients*</li></ul>
+    <p class="bb-note">* composite-unseen: never used for adaptation, labelling or tuning. Tasks were screened before any run by published success rates in [20%, 60%] for all three models.</p>
+    <div class="bb-table-wrap"><table class="bb-table"><caption class="sr-only">Successes out of 200 episodes per policy</caption><thead><tr><th scope="col">Model</th><th scope="col">Official checkpoint</th><th scope="col">S (progress)</th><th scope="col">BL (target)</th><th scope="col">F (PaTH-VLA)</th></tr></thead><tbody>
+      <tr><td>Xiaomi Robotics 1</td><td>68 / 200 · 34.0%</td><td>81 · 40.5%</td><td>81 · 40.5%</td><td class="bb-emph">83 · 41.5%</td></tr>
+      <tr><td>Awomo-0.5I</td><td class="bb-emph">89 / 200 · 44.5%</td><td>79 · 39.5%</td><td>69 · 34.5%</td><td>76 · 38.0%</td></tr>
+      <tr><td>Awomo-0.5V</td><td class="bb-emph">88 / 200 · 44.0%</td><td>83 · 41.5%</td><td>73 · 36.5%</td><td>66 · 33.0%</td></tr>
+    </tbody></table></div>
+    <div class="bb-table-wrap"><table class="bb-table"><caption class="sr-only">Paired contrasts</caption><thead><tr><th scope="col">Model</th><th scope="col">F − BL (progress given target)</th><th scope="col">F − S (target given progress)</th><th scope="col">F − official</th></tr></thead><tbody>
+      <tr><td>Xiaomi Robotics 1</td><td>+1.0 pp [−6.0, +8.0], p = 0.89</td><td>+1.0 pp [−5.5, +7.5], p = 0.89</td><td class="pv-pos">+7.5 pp [+0.5, +14.5], p = 0.049</td></tr>
+      <tr><td>Awomo-0.5I</td><td>+3.5 pp [−3.5, +10.5], p = 0.43</td><td>−1.5 pp [−9.5, +6.5], p = 0.81</td><td>−6.5 pp [−14.0, +1.0], p = 0.12</td></tr>
+      <tr><td>Awomo-0.5V</td><td>−3.5 pp [−11.0, +4.0], p = 0.46</td><td class="pv-neg">−8.5 pp [−15.5, −1.5], p = 0.030</td><td class="pv-neg">−11.0 pp [−19.5, −3.0], p = 0.015</td></tr>
+    </tbody></table></div>
+    <p class="bb-note">Differences in percentage points pooled over 200 (task, seed) pairs; brackets are 95% task-stratified paired-bootstrap intervals; p from the exact two-sided McNemar test on discordant pairs. Holm correction over the two primary contrasts per model leaves none supported under the pre-registered rule (corrected interval excludes 0 and gain ≥ 5 pp). XR-1's gain over the official checkpoint is +13 pp on the five seen tasks and +2 pp on the five unseen tasks and is the same in all three arms. Awomo-0.5I's BL arm loses 10.0 pp (p = 0.033), 18 pp on unseen tasks.</p>
+    <div class="pv-verdict">
+      <section class="bb-card"><span class="bb-step">Finding 1</span><h3>Not complementary</h3><p>Given one signal, adding the other moves success by at most +3.5 pp in any model.</p></section>
+      <section class="bb-card"><span class="bb-step">Finding 2</span><h3>Progress is the safe signal</h3><p>The stage-only arm is never significantly below the official checkpoint (+6.5, −5.0, −2.5 pp).</p></section>
+      <section class="bb-card"><span class="bb-step">Finding 3</span><h3>Boxes can backfire</h3><p>Every significant loss is in an arm that drew boxes during training, on the two world-action models whose future-latent pathway consumes the painted frame.</p></section>
+    </div>
+    <figure class="pv-fig"><img src="assets/results_main.png" alt="Bar chart of success rates per model and arm, and a forest plot of paired contrasts" loading="lazy"><figcaption>Success counts with Wilson 95% intervals (left) and paired contrasts with task-stratified bootstrap intervals (right); red markers are the pre-registered primary contrasts.</figcaption></figure>
+    <figure class="pv-fig"><img src="assets/rollouts.png" alt="Six-frame strips of four episodes: an XR-1 rescue on WeighIngredients and an Awomo-0.5V regression on PackIdenticalLunches" loading="lazy"><figcaption>Top: WeighIngredients, seed 12 — the official XR-1 wanders until the horizon, the F-adapted policy places the jam on the scale at step 772. Bottom: PackIdenticalLunches, seed 17 — the official Awomo-0.5V succeeds, its F-adapted version drifts to the wrong drawers. Identical initial scenes.</figcaption></figure>
+  </section>
+
+  <section id="labels" class="bb-section" aria-labelledby="labels-title">
+    <p class="bb-eyebrow">Automatic target labels</p>
+    <h2 id="labels-title">No human drew a box.</h2>
+    <p class="bb-copy">198 distinct stage descriptions were mapped to a detector class and an instance hint. Grounding DINO proposes boxes, SAM 2.1 tightens them to masks, and Qwen3-VL-4B selects the described instance per camera (the container <em>with the carrot</em>, the knob of the <em>rear-right</em> burner) or declares it not visible. 8,174 of 8,931 training windows have a visible target in at least one camera and form the panel shared by all arms. An audit of 48 random windows found 93 of 103 boxes (90%) on the described target; the errors are robot links and wrong instances among duplicates.</p>
+    <figure class="pv-fig"><img src="assets/label_examples.png" alt="Six training windows across three cameras with the selected target box" loading="lazy"><figcaption>Selected pseudo-labels on six training windows (left, right, wrist cameras). The plate example shows a typical error: the wrist view boxes a chair.</figcaption></figure>
+  </section>
+
+  <section id="downloads" class="bb-section" aria-labelledby="downloads-title">
+    <p class="bb-eyebrow">Research materials</p>
+    <h2 id="downloads-title">Read the study and rerun its analysis.</h2>
+    <div class="bb-downloads">
+      <a href="assets/PaTH-VLA_preprint.pdf"><strong>Preprint ↗</strong><span>Method, protocol, results and limitations · PDF</span></a>
+      <a href="assets/PaTH-VLA_supplementary.pdf"><strong>Supplementary material ↗</strong><span>Pre-registration, target rules, label audit, training curves, split tables · PDF</span></a>
+      <a href="https://github.com/Quinn-Ma/OriginX/tree/main/experiments/path-vla-20261108"><strong>Code and data ↗</strong><span>Labelling pipeline, trainer, evaluator, 2,400 episode logs · GitHub</span></a>
+    </div>
+    <p class="bb-note"><a href="assets/CITATION.bib">Download BibTeX citation</a> · <a href="assets/PaTH-VLA_source.zip">Manuscript source (ZIP)</a>. Research preprint; no conference acceptance is claimed.</p>
+    <p class="bb-note">PaTH-VLA succeeds the <a href="../branchbox/">BranchBox</a> study, which examined the same two signals on LIBERO with compact policies; the two use different benchmarks, models and protocols and their numbers are not comparable. Both belong to the <a href="../">OriginX research collection</a>.</p>
+  </section>
+  <footer class="bb-footer"><a href="../">OriginX research</a> · <a href="https://github.com/Quinn-Ma/OriginX">Repository</a> · Research preprint, November 2026.</footer>
+</main>
+</body>
+</html>

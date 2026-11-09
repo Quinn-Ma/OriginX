@@ -1,0 +1,9 @@
+{
+  "model": "awomo_v",
+  "condition": "original",
+  "adapter": null,
+  "gpu": 5,
+  "policy_seed": 4242,
+  "adapter_sha256": null,
+  "inputs": "ordinary: original task instruction, clean RGB, raw state16; no box/stage prompts; no feedback"
+}

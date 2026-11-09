@@ -19,3 +19,6 @@ The `branchbox/` page is a separate LIBERO multi-object study. Its main manuscri
 - `branchbox/assets/BranchBox_CVPR2027_reviewer_v3_source.zip`
 
 The same static deployment command publishes both studies. BranchBox's 56.9% versus 45.6% result concerns a retrospectively selected set of four two-object tasks and two models, and does not replace the RoboCasa365 result.
+
+
+The `path-vla/` page (added 2026-11-08) is the RoboCasa365 progress/target adaptation study. Its preprint, supplementary PDF, source ZIP and figures are served from `path-vla/assets/`; the study folder in the repository is `experiments/path-vla-20261108/`. The home-page leader now points to PaTH-VLA and keeps the BranchBox link.

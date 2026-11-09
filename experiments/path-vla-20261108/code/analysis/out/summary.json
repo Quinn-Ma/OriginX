@@ -1,0 +1,179 @@
+{
+ "per_policy": {
+  "xr1-original": {
+   "tasks": {
+    "DeliverStraw": {
+     "n": 17,
+     "success": 9
+    },
+    "GetToastedBread": {
+     "n": 0,
+     "success": 0
+    },
+    "PackIdenticalLunches": {
+     "n": 0,
+     "success": 0
+    },
+    "SearingMeat": {
+     "n": 0,
+     "success": 0
+    },
+    "StirVegetables": {
+     "n": 0,
+     "success": 0
+    },
+    "ArrangeTea": {
+     "n": 0,
+     "success": 0
+    },
+    "CuttingToolSelection": {
+     "n": 0,
+     "success": 0
+    },
+    "RecycleBottlesByType": {
+     "n": 0,
+     "success": 0
+    },
+    "WaffleReheat": {
+     "n": 0,
+     "success": 0
+    },
+    "WeighIngredients": {
+     "n": 0,
+     "success": 0
+    }
+   },
+   "errors": 0,
+   "seen": [
+    9,
+    17
+   ],
+   "unseen": [
+    0,
+    0
+   ],
+   "all": [
+    9,
+    17
+   ],
+   "rate": 52.9
+  },
+  "awomo_i-original": {
+   "tasks": {
+    "DeliverStraw": {
+     "n": 10,
+     "success": 7
+    },
+    "GetToastedBread": {
+     "n": 0,
+     "success": 0
+    },
+    "PackIdenticalLunches": {
+     "n": 0,
+     "success": 0
+    },
+    "SearingMeat": {
+     "n": 0,
+     "success": 0
+    },
+    "StirVegetables": {
+     "n": 0,
+     "success": 0
+    },
+    "ArrangeTea": {
+     "n": 0,
+     "success": 0
+    },
+    "CuttingToolSelection": {
+     "n": 0,
+     "success": 0
+    },
+    "RecycleBottlesByType": {
+     "n": 0,
+     "success": 0
+    },
+    "WaffleReheat": {
+     "n": 0,
+     "success": 0
+    },
+    "WeighIngredients": {
+     "n": 0,
+     "success": 0
+    }
+   },
+   "errors": 0,
+   "seen": [
+    7,
+    10
+   ],
+   "unseen": [
+    0,
+    0
+   ],
+   "all": [
+    7,
+    10
+   ],
+   "rate": 70.0
+  },
+  "awomo_v-original": {
+   "tasks": {
+    "DeliverStraw": {
+     "n": 6,
+     "success": 4
+    },
+    "GetToastedBread": {
+     "n": 0,
+     "success": 0
+    },
+    "PackIdenticalLunches": {
+     "n": 0,
+     "success": 0
+    },
+    "SearingMeat": {
+     "n": 0,
+     "success": 0
+    },
+    "StirVegetables": {
+     "n": 0,
+     "success": 0
+    },
+    "ArrangeTea": {
+     "n": 0,
+     "success": 0
+    },
+    "CuttingToolSelection": {
+     "n": 0,
+     "success": 0
+    },
+    "RecycleBottlesByType": {
+     "n": 0,
+     "success": 0
+    },
+    "WaffleReheat": {
+     "n": 0,
+     "success": 0
+    },
+    "WeighIngredients": {
+     "n": 0,
+     "success": 0
+    }
+   },
+   "errors": 0,
+   "seen": [
+    4,
+    6
+   ],
+   "unseen": [
+    0,
+    0
+   ],
+   "all": [
+    4,
+    6
+   ],
+   "rate": 66.7
+  }
+ },
+ "contrasts": {}
+}

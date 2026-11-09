@@ -1,0 +1,7 @@
+{
+  "status": "completed",
+  "optimizer_updates": 1000,
+  "microbatches": 8000,
+  "elapsed_seconds": 10177.263505708019,
+  "scored_rollouts": 0
+}

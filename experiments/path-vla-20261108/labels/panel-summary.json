@@ -1,0 +1,84 @@
+{
+  "stats": {
+    "train": 8174,
+    "no_visible_target": 841,
+    "dev": 1813
+  },
+  "per_task": {
+    "DeliverStraw": {
+      "windows": 1565,
+      "train": 1120,
+      "visible_cams_total": 2850,
+      "excluded_no_target": 177,
+      "dev": 268
+    },
+    "GetToastedBread": {
+      "windows": 2310,
+      "train": 1665,
+      "visible_cams_total": 5123,
+      "excluded_no_target": 233,
+      "dev": 412
+    },
+    "PackIdenticalLunches": {
+      "windows": 2528,
+      "dev": 453,
+      "visible_cams_total": 5323,
+      "excluded_no_target": 227,
+      "train": 1848
+    },
+    "SearingMeat": {
+      "windows": 2781,
+      "train": 2259,
+      "visible_cams_total": 5696,
+      "excluded_no_target": 118,
+      "dev": 404
+    },
+    "StirVegetables": {
+      "windows": 1644,
+      "dev": 276,
+      "visible_cams_total": 2707,
+      "excluded_no_target": 86,
+      "train": 1282
+    }
+  },
+  "per_kind": {
+    "execute": {
+      "windows": 1492,
+      "train": 1242,
+      "dev": 238,
+      "excluded_no_target": 12
+    },
+    "pick": {
+      "windows": 2973,
+      "train": 2326,
+      "excluded_no_target": 134,
+      "dev": 513
+    },
+    "navigate": {
+      "windows": 2987,
+      "excluded_no_target": 606,
+      "train": 1924,
+      "dev": 457
+    },
+    "place": {
+      "windows": 2134,
+      "train": 1696,
+      "excluded_no_target": 78,
+      "dev": 360
+    },
+    "press": {
+      "windows": 287,
+      "train": 236,
+      "dev": 51
+    },
+    "wait": {
+      "windows": 955,
+      "train": 750,
+      "dev": 194,
+      "excluded_no_target": 11
+    }
+  },
+  "panel_sha256": "bf1d8abf757c412eb2855cd2c542fec40256ae5833baf54f2195d860962afb4a",
+  "panel_windows": 8174,
+  "panel_path": "/dev/shm/qinzhen/sbl/ann/panel/panel-train.json"
+}

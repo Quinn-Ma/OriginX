@@ -37,7 +37,7 @@
 | 20261054 | point S 263 | masks F 600 | point-only |
 | 20261055 | masks S 315 | point F 600 | masks-only |
 
-每例 217–630 s，远低于注册的 1,600 s/例预算；无基础设施超时；源码 138 个注册文件哈希全部匹配（sources_match = true）；
+每例 217–630 s，远低于注册的 1,600 s/例预算；无基础设施超时；源码 160 个注册文件哈希全部匹配（sources_match = true；manifest 中 historical_source_count = 138 是上一轮 regions 研究的文件数，不是本次注册文件数）；
 清理状态 all_cases_accounted。
 
 ## 呈现保真（masks 臂）

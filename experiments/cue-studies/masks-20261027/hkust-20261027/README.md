@@ -19,7 +19,7 @@ establish equivalence. Secondary, descriptive only: terminal XY distance median 
 (n = 11 each); time to success median masks 277 s vs point 282 s. The mask cue was drawn on 5,281 of 5,630
 presentation events (86–99 % of the steps of every stage and camera); gate G5 (zero interior pixels changed)
 held on all 5,630. Per case 217–630 s wall time (budget 1,600 s); no infrastructure timeout; no resume;
-138/138 registered source files matched.
+160/160 registered source files matched (the manifest field historical_source_count = 138 is the parent regions study's count, not the number of registered files).
 
 Authoritative numbers: `results/validation-results-local-wsl-v1.json` (frozen analyzer, offline, WSL sim
 runtime, complete run directory with traces); the cluster-side `validation-results-server-v1.json` is identical
