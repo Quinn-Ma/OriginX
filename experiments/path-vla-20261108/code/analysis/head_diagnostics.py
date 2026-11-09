@@ -582,7 +582,7 @@ def render_table(v):
          r'drawn before. Bottom: paired change vs.\ S. Paired standard errors: stage ${\le}' + f'{se["stage_first_visits_nats"]:.2f}'
          + r'$, location ${\le}' + f'{se["location_first_visits_x1e3"]:.1f}' + r'$, action ${\le}' + f'{se["action_rel_pct"]:.1f}'
          + r'$\%, future latent ${\le}' + f'{se["future_latent_rel_pct"]:.1f}' + r'$\%. '
-         r'$^\dagger$Fitted on held-out demonstrations; elapsed time in ' + f'{CLOCK_TABLE}' + r'-frame bins. '
+         r'$^\dagger$Leave-one-demonstration-out: each demonstration is scored with a reference fitted on the other demonstrations of its task; elapsed time in ' + f'{CLOCK_TABLE}' + r'-frame bins. '
          r'$^\ddagger$\xr{}'"'"r's heads were initialised differently in each arm.}'),
         r'\label{tab:heads}',
         r'\end{table}',

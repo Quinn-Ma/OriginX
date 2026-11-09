@@ -1,0 +1,810 @@
+{
+ "what": "Second visual inspection of the 48-window label-audit sample (review sheets page00-05), one decision per camera view",
+ "by": "Claude Opus 5.5, view by view, after the experiments; an independent check of every view by a second instance changed ten decisions (all towards more errors), recorded in the notes. The first inspection, by the executing agent before any training result, counted 10 wrong boxes of 103 without per-view records",
+ "categories": {
+  "correct": "box on the described target or its named part",
+  "coarse": "box on the target object but not on the named part (whole toaster, stove top, drawer front)",
+  "wrong:robot": "box on a robot link or the gripper",
+  "wrong:instance": "box on the wrong instance among duplicates",
+  "wrong:chair": "box on a chair",
+  "wrong:carried_object": "box on the carried object instead of the destination",
+  "probably_wrong": "most likely wrong, not certain",
+  "nv": "labelled not visible (not audited for misses)",
+  "wrong:other_object": "box on another object (not the target, a duplicate of it, the robot or a chair)"
+ },
+ "counts": {
+  "wrong:robot": 12,
+  "coarse": 10,
+  "nv": 41,
+  "correct": 66,
+  "wrong:other_object": 3,
+  "wrong:carried_object": 1,
+  "wrong:instance": 8,
+  "probably_wrong": 1,
+  "wrong:chair": 2
+ },
+ "windows": [
+  {
+   "index": 1,
+   "task": "GetToastedBread",
+   "episode": 89,
+   "anchor": 240,
+   "kind": "wait",
+   "description": "wait for the toaster to finish and the lever to pop up",
+   "target": "toaster lever",
+   "decisions": {
+    "left": "wrong:robot",
+    "right": "coarse",
+    "wrist": "coarse"
+   },
+   "notes": {
+    "left": "toaster plus the robot wrist links; the centre lies on the robot (corrected by the independent check; first recorded as coarse)",
+    "right": "whole toaster instead of its lever",
+    "wrist": "whole toaster top instead of its lever"
+   }
+  },
+  {
+   "index": 2,
+   "task": "StirVegetables",
+   "episode": 67,
+   "anchor": 352,
+   "kind": "pick",
+   "description": "pick up the garlic from the counter",
+   "target": "garlic",
+   "decisions": {
+    "left": "nv",
+    "right": "nv",
+    "wrist": "correct"
+   },
+   "notes": {}
+  },
+  {
+   "index": 3,
+   "task": "GetToastedBread",
+   "episode": 11,
+   "anchor": 896,
+   "kind": "pick",
+   "description": "pick up the bread from the toaster",
+   "target": "slice of bread",
+   "decisions": {
+    "left": "wrong:robot",
+    "right": "wrong:other_object",
+    "wrist": "correct"
+   },
+   "notes": {
+    "left": "robot arm",
+    "right": "the toaster (gripper in front), not the bread in it (corrected by the independent check; first recorded as coarse)"
+   }
+  },
+  {
+   "index": 4,
+   "task": "PackIdenticalLunches",
+   "episode": 47,
+   "anchor": 496,
+   "kind": "navigate",
+   "description": "navigate to the tupperware with the carrot",
+   "target": "plastic food container",
+   "decisions": {
+    "left": "correct",
+    "right": "correct",
+    "wrist": "correct"
+   },
+   "notes": {}
+  },
+  {
+   "index": 5,
+   "task": "SearingMeat",
+   "episode": 23,
+   "anchor": 976,
+   "kind": "place",
+   "description": "place the pan on the rear-right burner",
+   "target": "stove burner",
+   "decisions": {
+    "left": "coarse",
+    "right": "coarse",
+    "wrist": "wrong:carried_object"
+   },
+   "notes": {
+    "left": "whole cooktop instead of the rear-right burner",
+    "right": "whole cooktop instead of the rear-right burner",
+    "wrist": "the carried pan, not the destination burner"
+   }
+  },
+  {
+   "index": 6,
+   "task": "DeliverStraw",
+   "episode": 37,
+   "anchor": 560,
+   "kind": "navigate",
+   "description": "navigate to the cup on the dining counter",
+   "target": "glass cup",
+   "decisions": {
+    "left": "nv",
+    "right": "nv",
+    "wrist": "wrong:robot"
+   },
+   "notes": {
+    "wrist": "part of the robot seen from the wrist camera (the same structure appears in 17W and 21W), not the cup (corrected by the independent check; first recorded as correct)"
+   }
+  },
+  {
+   "index": 7,
+   "task": "DeliverStraw",
+   "episode": 63,
+   "anchor": 64,
+   "kind": "execute",
+   "description": "open the drawer in front of the robot",
+   "target": "drawer handle",
+   "decisions": {
+    "left": "correct",
+    "right": "correct",
+    "wrist": "coarse"
+   },
+   "notes": {
+    "wrist": "drawer front instead of its handle"
+   }
+  },
+  {
+   "index": 8,
+   "task": "SearingMeat",
+   "episode": 89,
+   "anchor": 288,
+   "kind": "navigate",
+   "description": "navigate to the stove",
+   "target": "stove",
+   "decisions": {
+    "left": "correct",
+    "right": "correct",
+    "wrist": "nv"
+   },
+   "notes": {}
+  },
+  {
+   "index": 9,
+   "task": "PackIdenticalLunches",
+   "episode": 93,
+   "anchor": 816,
+   "kind": "place",
+   "description": "place the fish in the empty tupperware",
+   "target": "plastic food container",
+   "decisions": {
+    "left": "correct",
+    "right": "wrong:instance",
+    "wrist": "correct"
+   },
+   "notes": {
+    "right": "the tray holding a fish, not the empty one",
+    "wrist": "ambiguous: the held fish occludes the empty tray the box may bound; counted correct"
+   }
+  },
+  {
+   "index": 10,
+   "task": "DeliverStraw",
+   "episode": 77,
+   "anchor": 112,
+   "kind": "execute",
+   "description": "open the drawer in front of the robot",
+   "target": "drawer handle",
+   "decisions": {
+    "left": "coarse",
+    "right": "wrong:robot",
+    "wrist": "probably_wrong"
+   },
+   "notes": {
+    "left": "drawer front instead of its handle",
+    "right": "outline of the wrist band and gripper; the centre lies on a finger (corrected by the independent check; first recorded as correct)",
+    "wrist": "probably the handle of a neighbouring cabinet door"
+   }
+  },
+  {
+   "index": 11,
+   "task": "PackIdenticalLunches",
+   "episode": 40,
+   "anchor": 640,
+   "kind": "pick",
+   "description": "pick up a eggplant from the fridge",
+   "target": "eggplant",
+   "decisions": {
+    "left": "nv",
+    "right": "nv",
+    "wrist": "correct"
+   },
+   "notes": {}
+  },
+  {
+   "index": 12,
+   "task": "SearingMeat",
+   "episode": 0,
+   "anchor": 2288,
+   "kind": "execute",
+   "description": "turn on the rear-right burner",
+   "target": "stove knob",
+   "decisions": {
+    "left": "correct",
+    "right": "wrong:instance",
+    "wrist": "correct"
+   },
+   "notes": {
+    "right": "the knob next to the one the gripper is turning (corrected by the independent check; first recorded as correct)"
+   }
+  },
+  {
+   "index": 13,
+   "task": "DeliverStraw",
+   "episode": 48,
+   "anchor": 304,
+   "kind": "execute",
+   "description": "open the drawer in front of the robot",
+   "target": "drawer handle",
+   "decisions": {
+    "left": "wrong:other_object",
+    "right": "coarse",
+    "wrist": "correct"
+   },
+   "notes": {
+    "left": "oven control panel instead of the drawer in front of the robot (corrected by the independent check; first recorded as probably_wrong)",
+    "right": "drawer front instead of its handle"
+   }
+  },
+  {
+   "index": 14,
+   "task": "StirVegetables",
+   "episode": 46,
+   "anchor": 832,
+   "kind": "execute",
+   "description": "stir the vegetables in the pot",
+   "target": "cooking pot",
+   "decisions": {
+    "left": "nv",
+    "right": "correct",
+    "wrist": "nv"
+   },
+   "notes": {}
+  },
+  {
+   "index": 15,
+   "task": "PackIdenticalLunches",
+   "episode": 86,
+   "anchor": 320,
+   "kind": "navigate",
+   "description": "navigate to a tupperware on the counter",
+   "target": "plastic food container",
+   "decisions": {
+    "left": "correct",
+    "right": "nv",
+    "wrist": "correct"
+   },
+   "notes": {}
+  },
+  {
+   "index": 16,
+   "task": "GetToastedBread",
+   "episode": 22,
+   "anchor": 1312,
+   "kind": "navigate",
+   "description": "navigate to the plate on the dining counter",
+   "target": "plate",
+   "decisions": {
+    "left": "correct",
+    "right": "correct",
+    "wrist": "wrong:robot"
+   },
+   "notes": {
+    "wrist": "white link near the gripper (neutral white like the arm, unlike the warm stool seats), not the plate"
+   }
+  },
+  {
+   "index": 17,
+   "task": "DeliverStraw",
+   "episode": 28,
+   "anchor": 464,
+   "kind": "navigate",
+   "description": "navigate to the cup on the dining counter",
+   "target": "glass cup",
+   "decisions": {
+    "left": "nv",
+    "right": "correct",
+    "wrist": "wrong:chair"
+   },
+   "notes": {
+    "wrist": "chair seat and leg, not the glass cup"
+   }
+  },
+  {
+   "index": 18,
+   "task": "DeliverStraw",
+   "episode": 63,
+   "anchor": 2064,
+   "kind": "place",
+   "description": "place the straw in the glass cup",
+   "target": "glass cup",
+   "decisions": {
+    "left": "correct",
+    "right": "correct",
+    "wrist": "nv"
+   },
+   "notes": {}
+  },
+  {
+   "index": 19,
+   "task": "PackIdenticalLunches",
+   "episode": 54,
+   "anchor": 928,
+   "kind": "navigate",
+   "description": "navigate back to the fridge",
+   "target": "refrigerator",
+   "decisions": {
+    "left": "correct",
+    "right": "correct",
+    "wrist": "correct"
+   },
+   "notes": {}
+  },
+  {
+   "index": 20,
+   "task": "PackIdenticalLunches",
+   "episode": 50,
+   "anchor": 272,
+   "kind": "navigate",
+   "description": "navigate back to the fridge",
+   "target": "refrigerator",
+   "decisions": {
+    "left": "correct",
+    "right": "correct",
+    "wrist": "correct"
+   },
+   "notes": {}
+  },
+  {
+   "index": 21,
+   "task": "DeliverStraw",
+   "episode": 60,
+   "anchor": 464,
+   "kind": "navigate",
+   "description": "navigate to the cup on the dining counter",
+   "target": "glass cup",
+   "decisions": {
+    "left": "nv",
+    "right": "nv",
+    "wrist": "wrong:robot"
+   },
+   "notes": {
+    "wrist": "robot link near the camera"
+   }
+  },
+  {
+   "index": 22,
+   "task": "GetToastedBread",
+   "episode": 38,
+   "anchor": 752,
+   "kind": "wait",
+   "description": "wait for the toaster to finish and the lever to pop up",
+   "target": "toaster lever",
+   "decisions": {
+    "left": "nv",
+    "right": "coarse",
+    "wrist": "nv"
+   },
+   "notes": {
+    "right": "whole toaster instead of its lever"
+   }
+  },
+  {
+   "index": 23,
+   "task": "DeliverStraw",
+   "episode": 66,
+   "anchor": 448,
+   "kind": "navigate",
+   "description": "navigate to the cup on the dining counter",
+   "target": "glass cup",
+   "decisions": {
+    "left": "nv",
+    "right": "wrong:other_object",
+    "wrist": "nv"
+   },
+   "notes": {
+    "right": "a paper-towel holder by the wall, not the glass cup (corrected by the independent check; first recorded as correct)"
+   }
+  },
+  {
+   "index": 24,
+   "task": "PackIdenticalLunches",
+   "episode": 99,
+   "anchor": 96,
+   "kind": "navigate",
+   "description": "navigate to a tupperware on the counter",
+   "target": "plastic food container",
+   "decisions": {
+    "left": "correct",
+    "right": "nv",
+    "wrist": "nv"
+   },
+   "notes": {}
+  },
+  {
+   "index": 25,
+   "task": "PackIdenticalLunches",
+   "episode": 50,
+   "anchor": 1168,
+   "kind": "navigate",
+   "description": "navigate back to the fridge",
+   "target": "refrigerator",
+   "decisions": {
+    "left": "nv",
+    "right": "correct",
+    "wrist": "nv"
+   },
+   "notes": {}
+  },
+  {
+   "index": 26,
+   "task": "DeliverStraw",
+   "episode": 48,
+   "anchor": 448,
+   "kind": "execute",
+   "description": "open the drawer in front of the robot",
+   "target": "drawer handle",
+   "decisions": {
+    "left": "correct",
+    "right": "coarse",
+    "wrist": "correct"
+   },
+   "notes": {
+    "left": "tiny box at the gripper grasping the handle; counted correct",
+    "right": "drawer front instead of its handle"
+   }
+  },
+  {
+   "index": 27,
+   "task": "SearingMeat",
+   "episode": 89,
+   "anchor": 1024,
+   "kind": "place",
+   "description": "place the chicken drumstick on the pan",
+   "target": "frying pan",
+   "decisions": {
+    "left": "correct",
+    "right": "nv",
+    "wrist": "nv"
+   },
+   "notes": {}
+  },
+  {
+   "index": 28,
+   "task": "PackIdenticalLunches",
+   "episode": 100,
+   "anchor": 1328,
+   "kind": "place",
+   "description": "place the tomato in the tupperware with only fish in it",
+   "target": "plastic food container",
+   "decisions": {
+    "left": "correct",
+    "right": "wrong:instance",
+    "wrist": "correct"
+   },
+   "notes": {
+    "right": "the container that already holds fish and tomato; the target holds only fish"
+   }
+  },
+  {
+   "index": 29,
+   "task": "DeliverStraw",
+   "episode": 98,
+   "anchor": 912,
+   "kind": "place",
+   "description": "place the straw in the glass cup",
+   "target": "glass cup",
+   "decisions": {
+    "left": "nv",
+    "right": "correct",
+    "wrist": "wrong:chair"
+   },
+   "notes": {
+    "wrist": "a chair"
+   }
+  },
+  {
+   "index": 30,
+   "task": "StirVegetables",
+   "episode": 67,
+   "anchor": 304,
+   "kind": "pick",
+   "description": "pick up the garlic from the counter",
+   "target": "garlic",
+   "decisions": {
+    "left": "nv",
+    "right": "nv",
+    "wrist": "correct"
+   },
+   "notes": {}
+  },
+  {
+   "index": 31,
+   "task": "GetToastedBread",
+   "episode": 28,
+   "anchor": 1008,
+   "kind": "place",
+   "description": "place the bread on the plate",
+   "target": "plate",
+   "decisions": {
+    "left": "correct",
+    "right": "correct",
+    "wrist": "correct"
+   },
+   "notes": {}
+  },
+  {
+   "index": 32,
+   "task": "SearingMeat",
+   "episode": 17,
+   "anchor": 224,
+   "kind": "navigate",
+   "description": "navigate to the stove",
+   "target": "stove",
+   "decisions": {
+    "left": "correct",
+    "right": "correct",
+    "wrist": "nv"
+   },
+   "notes": {}
+  },
+  {
+   "index": 33,
+   "task": "SearingMeat",
+   "episode": 10,
+   "anchor": 1584,
+   "kind": "execute",
+   "description": "turn on the center burner",
+   "target": "stove knob",
+   "decisions": {
+    "left": "nv",
+    "right": "correct",
+    "wrist": "correct"
+   },
+   "notes": {}
+  },
+  {
+   "index": 34,
+   "task": "SearingMeat",
+   "episode": 0,
+   "anchor": 2304,
+   "kind": "execute",
+   "description": "turn on the rear-right burner",
+   "target": "stove knob",
+   "decisions": {
+    "left": "correct",
+    "right": "correct",
+    "wrist": "wrong:instance"
+   },
+   "notes": {
+    "wrist": "oven temperature dial left of the gripper, not the knob being turned (corrected by the independent check; first recorded as correct)"
+   }
+  },
+  {
+   "index": 35,
+   "task": "StirVegetables",
+   "episode": 67,
+   "anchor": 336,
+   "kind": "pick",
+   "description": "pick up the garlic from the counter",
+   "target": "garlic",
+   "decisions": {
+    "left": "nv",
+    "right": "nv",
+    "wrist": "correct"
+   },
+   "notes": {}
+  },
+  {
+   "index": 36,
+   "task": "DeliverStraw",
+   "episode": 48,
+   "anchor": 912,
+   "kind": "pick",
+   "description": "pick up the straw from the drawer",
+   "target": "straw",
+   "decisions": {
+    "left": "nv",
+    "right": "nv",
+    "wrist": "correct"
+   },
+   "notes": {}
+  },
+  {
+   "index": 37,
+   "task": "SearingMeat",
+   "episode": 0,
+   "anchor": 1536,
+   "kind": "place",
+   "description": "place the chicken drumstick on the pan",
+   "target": "frying pan",
+   "decisions": {
+    "left": "correct",
+    "right": "correct",
+    "wrist": "nv"
+   },
+   "notes": {}
+  },
+  {
+   "index": 38,
+   "task": "SearingMeat",
+   "episode": 1,
+   "anchor": 144,
+   "kind": "pick",
+   "description": "pick up the pan from the cabinet",
+   "target": "frying pan",
+   "decisions": {
+    "left": "correct",
+    "right": "nv",
+    "wrist": "correct"
+   },
+   "notes": {}
+  },
+  {
+   "index": 39,
+   "task": "PackIdenticalLunches",
+   "episode": 47,
+   "anchor": 752,
+   "kind": "pick",
+   "description": "pick up a carrot from the fridge",
+   "target": "carrot",
+   "decisions": {
+    "left": "correct",
+    "right": "nv",
+    "wrist": "correct"
+   },
+   "notes": {}
+  },
+  {
+   "index": 40,
+   "task": "DeliverStraw",
+   "episode": 37,
+   "anchor": 736,
+   "kind": "place",
+   "description": "place the straw in the glass cup",
+   "target": "glass cup",
+   "decisions": {
+    "left": "correct",
+    "right": "nv",
+    "wrist": "correct"
+   },
+   "notes": {}
+  },
+  {
+   "index": 41,
+   "task": "StirVegetables",
+   "episode": 90,
+   "anchor": 928,
+   "kind": "execute",
+   "description": "stir the vegetables in the pot",
+   "target": "cooking pot",
+   "decisions": {
+    "left": "nv",
+    "right": "correct",
+    "wrist": "nv"
+   },
+   "notes": {}
+  },
+  {
+   "index": 42,
+   "task": "GetToastedBread",
+   "episode": 28,
+   "anchor": 640,
+   "kind": "wait",
+   "description": "wait for the toaster to finish and the lever to pop up",
+   "target": "toaster lever",
+   "decisions": {
+    "left": "wrong:robot",
+    "right": "wrong:robot",
+    "wrist": "coarse"
+   },
+   "notes": {
+    "left": "gripper fingers on top of the toaster",
+    "right": "wrist link above the toaster",
+    "wrist": "whole toaster top instead of its lever"
+   }
+  },
+  {
+   "index": 43,
+   "task": "DeliverStraw",
+   "episode": 37,
+   "anchor": 272,
+   "kind": "execute",
+   "description": "open the drawer in front of the robot",
+   "target": "drawer handle",
+   "decisions": {
+    "left": "wrong:instance",
+    "right": "wrong:instance",
+    "wrist": "correct"
+   },
+   "notes": {
+    "left": "a cabinet-door handle, not the drawer handle the gripper holds (corrected by the independent check; first recorded as correct)",
+    "right": "another drawer handle, not the one the gripper holds (corrected by the independent check; first recorded as correct)"
+   }
+  },
+  {
+   "index": 44,
+   "task": "PackIdenticalLunches",
+   "episode": 99,
+   "anchor": 880,
+   "kind": "navigate",
+   "description": "navigate to the tupperware with only the tomato in it",
+   "target": "plastic food container",
+   "decisions": {
+    "left": "correct",
+    "right": "wrong:instance",
+    "wrist": "wrong:instance"
+   },
+   "notes": {
+    "right": "container holding the tomato and another item; the target holds only the tomato",
+    "wrist": "same container as 44R"
+   }
+  },
+  {
+   "index": 45,
+   "task": "StirVegetables",
+   "episode": 15,
+   "anchor": 640,
+   "kind": "pick",
+   "description": "pick up the spatula from the counter",
+   "target": "spatula",
+   "decisions": {
+    "left": "nv",
+    "right": "wrong:robot",
+    "wrist": "wrong:robot"
+   },
+   "notes": {
+    "right": "robot arm",
+    "wrist": "gripper finger"
+   }
+  },
+  {
+   "index": 46,
+   "task": "DeliverStraw",
+   "episode": 103,
+   "anchor": 416,
+   "kind": "pick",
+   "description": "pick up the straw from the drawer",
+   "target": "straw",
+   "decisions": {
+    "left": "correct",
+    "right": "nv",
+    "wrist": "correct"
+   },
+   "notes": {}
+  },
+  {
+   "index": 47,
+   "task": "GetToastedBread",
+   "episode": 62,
+   "anchor": 1664,
+   "kind": "place",
+   "description": "place the bread on the plate",
+   "target": "plate",
+   "decisions": {
+    "left": "correct",
+    "right": "correct",
+    "wrist": "correct"
+   },
+   "notes": {}
+  },
+  {
+   "index": 48,
+   "task": "PackIdenticalLunches",
+   "episode": 50,
+   "anchor": 400,
+   "kind": "pick",
+   "description": "pick up a mushroom from the fridge",
+   "target": "mushroom",
+   "decisions": {
+    "left": "wrong:robot",
+    "right": "wrong:robot",
+    "wrist": "correct"
+   },
+   "notes": {
+    "left": "robot arm",
+    "right": "robot arm"
+   }
+  }
+ ]
+}

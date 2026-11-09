@@ -23,7 +23,7 @@ for model in MODELS:
         res['steps']['%s-%s' % (model, cond)] = {'median_steps_success': statistics.median(succ) if succ else None,  # conventional median (mean of the two middle values for even n)
                                                  'timeouts': sum(1 for r in recs if not r['success'] and r['steps'] >= r['horizon']),
                                                  'early_terminations': sum(1 for r in recs if not r['success'] and r['steps'] < r['horizon']),
-                                                 'mean_elapsed_s': round(sum(r['elapsed_s'] for r in recs) / len(recs), 1)}
+                                                 'mean_elapsed_s': round(sum(r['elapsed_s'] for r in recs) / len(recs), 3)}  # 3 decimals: the table rounds once
     # rescues / regressions of F vs original with task breakdown
     ro, rf = data[(model, 'original')], data[(model, 'F')]
     resc = collections.Counter(); regr = collections.Counter()

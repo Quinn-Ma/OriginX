@@ -44,7 +44,8 @@ and the upper 95% bounds (+6.5 to +10.5 pp in four of the six contrasts) do not 
 Secondary, uncorrected contrasts against the official checkpoints: XR-1 gains 6.5–7.5 pp in every arm (F: +7.5 pp
 [+0.5, +14.5], p = 0.049), mostly on the five seen tasks (F: +13 pp seen, +2 pp unseen; S and BL: +9 and +4).
 Both Awomo models lose. Every nominally significant loss is in an arm that drew boxes during training: Awomo-0.5I BL −10.0 pp
-(p = 0.033; −18 pp on the unseen tasks) and Awomo-0.5V F −11.0 pp (p = 0.015, see the crash reruns below).
+(p = 0.033; −18 pp on the unseen tasks) and Awomo-0.5V F −11.0 pp (p = 0.015; pooled only with the crash reruns
+below, but −14 pp, p = 0.029, on the seen tasks regardless).
 There is no matched action-only arm (by design), so these differences cannot be attributed to either signal.
 Full tables: [`results/tables.md`](results/tables.md); per-episode logs: `results/eval/<model>-<arm>-q*/results.jsonl`.
 
@@ -52,14 +53,14 @@ Full tables: [`results/tables.md`](results/tables.md); per-episode logs: `result
 
 Deviations from the pre-registration and post-hoc analyses (none of these analyses was pre-registered):
 
-- **Scene identity.** A seed is meant to fix the kitchen, objects and initial state. Hashing the first observation
-  shows it byte-identical across all twelve policies for 191 of the 200 seeds; SearingMeat seeds 1, 4, 6, 11 and 14
+- **Scene identity.** A seed is meant to fix the kitchen, objects and initial state. Hashing the first left
+  agent-view frame shows it byte-identical (and the initial state identical) across all twelve policies for 191 of the 200 seeds; SearingMeat seeds 1, 4, 6, 11 and 14
   and StirVegetables seeds 1, 11, 14 and 16 came in two first-frame variants, and for StirVegetables 1 and 11 the
   initial base pose also differed. All 200 pairs are kept. On the 191 identical seeds no contrast becomes supported;
   Awomo-0.5V F − S is −9.4 pp (p = 0.015, Holm p = 0.031) and Awomo-0.5I BL − official is −9.4 pp (p = 0.054).
   Output: `code/analysis/out/sensitivity.json`.
-- **Crashed episodes.** 18 Awomo-0.5V official-checkpoint episodes crashed with a GPU out-of-memory error and were
-  rerun from scratch. That decision was taken after partial results had been seen. The released logs contain the
+- **Crashed episodes.** 18 Awomo-0.5V official-checkpoint episodes, all on unseen tasks, crashed with a GPU
+  out-of-memory error and were rerun from scratch. That decision was taken after partial results had been seen. The released logs contain the
   reruns; the original shards with the error rows are in `results/eval_crashed/`, and their 132 completed rows are
   unchanged in the release. 5 of the 18 reruns succeeded. Counting the crashes as failures gives 83 instead of 88
   official successes and changes only the contrasts against this checkpoint: F − official −8.5 pp [−17.0, −0.5],
@@ -117,14 +118,16 @@ results/eval_unreleased/   the nine duplicate episodes that are not part of the 
 results/summary.json       primary analysis output; results/tables.md human-readable tables
 results/secondary.json     secondary contrasts (official checkpoint, seen/unseen splits)
 results/training_logs/     per-microbatch loss terms of the nine LoRA runs
-labels/                    label panel (panel-train.json), its statistics, and the 48-window visual audit
+labels/                    label panel (panel-train.json), its statistics, the 48-window audit sheets and the
+                           per-view audit decisions
 figures/                   overview, label examples, main result, per-task heatmap, rollouts, training curves
 paper/                     preprint, supplementary material, LaTeX source
 ```
 
 The analysis scripts compute every number in the paper from these logs, the training logs and the label files.
-The exceptions are the label-audit counts, the number of discarded feedback episodes, the number of queued windows
-and the trainable-parameter counts, which come from cluster run logs. The scripts were run in the study's
+The exceptions are the label-audit counts, the training wall-clock times and per-task window coverage (read from the
+training logs), and the number of discarded feedback episodes, the number of queued windows and the
+trainable-parameter counts, which come from cluster run logs. The scripts were run in the study's
 working layout (analysis/, results/ and train/runs/ side by side, with the label panel at results/panel-train.json
 and the primary summary at results/analysis/summary.json); to rerun them here, point their root paths at the
 corresponding folders of this directory. The training framework these scripts plug
@@ -137,9 +140,13 @@ weights are the public RoboCasa365 checkpoints.
 Target boxes are automatic pseudo-labels. 198 task-specific stage descriptions are mapped to a detector class and
 an instance hint (`code/ann/targets.py`). Grounding DINO (base) proposes boxes, SAM 2.1 tightens them to masks,
 and Qwen3-VL-4B picks the described instance per camera or says "not visible". 8,174 of 8,931 training windows
-have a visible target in at least one camera and form the shared panel. An audit of 48 random windows (103 boxes)
-found 93 (90%) on the described target. The ten errors are six robot links, three wrong instances among
-duplicates and one unrelated object (`labels/audit-sheets/`). The panel itself (8,174 windows with stage index,
+have a visible target in at least one camera and form the shared panel. An audit of 48 random windows (103 boxes) was done
+twice. The first pass, before any training result, counted 10 wrong boxes; the second, view by view after the
+experiments and checked independently, found 26 clearly wrong (12 on a robot link or the gripper, 8 on the wrong
+instance among duplicates, 3 on another object, 2 on a chair, 1 on the carried pan instead of the destination
+burner) and one more probably wrong, so 76 to 77 (74–75%) bound the described target, 10 of them only coarsely (the
+whole toaster, stove top or drawer front instead of the named part). Sheets: `labels/audit-sheets/`; per-view decisions of the second pass:
+`labels/label_audit_second_pass.json`. The panel itself (8,174 windows with stage index,
 stage description and per-camera target box and centre) is `labels/panel-train.json`.
 
 ## What is and is not claimed

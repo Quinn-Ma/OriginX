@@ -396,73 +396,73 @@
    "median_steps_success": 1365.0,
    "timeouts": 132,
    "early_terminations": 0,
-   "mean_elapsed_s": 199.8
+   "mean_elapsed_s": 199.843
   },
   "xr1-S": {
    "median_steps_success": 1427,
    "timeouts": 119,
    "early_terminations": 0,
-   "mean_elapsed_s": 226.2
+   "mean_elapsed_s": 226.22
   },
   "xr1-BL": {
    "median_steps_success": 1332,
    "timeouts": 119,
    "early_terminations": 0,
-   "mean_elapsed_s": 205.5
+   "mean_elapsed_s": 205.477
   },
   "xr1-F": {
    "median_steps_success": 1281,
    "timeouts": 117,
    "early_terminations": 0,
-   "mean_elapsed_s": 228.2
+   "mean_elapsed_s": 228.187
   },
   "awomo_i-original": {
    "median_steps_success": 1314,
    "timeouts": 111,
    "early_terminations": 0,
-   "mean_elapsed_s": 326.4
+   "mean_elapsed_s": 326.38
   },
   "awomo_i-S": {
    "median_steps_success": 1351,
    "timeouts": 121,
    "early_terminations": 0,
-   "mean_elapsed_s": 322.0
+   "mean_elapsed_s": 321.962
   },
   "awomo_i-BL": {
    "median_steps_success": 1585,
    "timeouts": 131,
    "early_terminations": 0,
-   "mean_elapsed_s": 353.1
+   "mean_elapsed_s": 353.063
   },
   "awomo_i-F": {
    "median_steps_success": 1387.0,
    "timeouts": 124,
    "early_terminations": 0,
-   "mean_elapsed_s": 328.0
+   "mean_elapsed_s": 327.98
   },
   "awomo_v-original": {
    "median_steps_success": 1372.5,
    "timeouts": 112,
    "early_terminations": 0,
-   "mean_elapsed_s": 384.9
+   "mean_elapsed_s": 384.904
   },
   "awomo_v-S": {
    "median_steps_success": 1422,
    "timeouts": 117,
    "early_terminations": 0,
-   "mean_elapsed_s": 380.2
+   "mean_elapsed_s": 380.207
   },
   "awomo_v-BL": {
    "median_steps_success": 1319,
    "timeouts": 127,
    "early_terminations": 0,
-   "mean_elapsed_s": 394.3
+   "mean_elapsed_s": 394.254
   },
   "awomo_v-F": {
    "median_steps_success": 1271.0,
    "timeouts": 134,
    "early_terminations": 0,
-   "mean_elapsed_s": 376.2
+   "mean_elapsed_s": 376.156
   }
  },
  "rescues": {

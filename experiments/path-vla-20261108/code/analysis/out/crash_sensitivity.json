@@ -179,6 +179,205 @@
    "mcnemar_p": 0.275
   }
  },
+ "all_crashes_unseen": true,
+ "split_contrasts": {
+  "S-official:seen:released": {
+   "n_pairs": 100,
+   "diff_pp": -2.0,
+   "ci95": [
+    -14.0,
+    10.0
+   ],
+   "wins": 19,
+   "losses": 21,
+   "mcnemar_p": 0.8746
+  },
+  "S-official:seen:strict": {
+   "n_pairs": 100,
+   "diff_pp": -2.0,
+   "ci95": [
+    -14.0,
+    10.0
+   ],
+   "wins": 19,
+   "losses": 21,
+   "mcnemar_p": 0.8746
+  },
+  "S-official:unseen:released": {
+   "n_pairs": 100,
+   "diff_pp": -3.0,
+   "ci95": [
+    -13.0,
+    7.0
+   ],
+   "wins": 12,
+   "losses": 15,
+   "mcnemar_p": 0.7011
+  },
+  "S-official:unseen:strict": {
+   "n_pairs": 100,
+   "diff_pp": 2.0,
+   "ci95": [
+    -9.0,
+    13.0
+   ],
+   "wins": 17,
+   "losses": 15,
+   "mcnemar_p": 0.8601
+  },
+  "BL-official:seen:released": {
+   "n_pairs": 100,
+   "diff_pp": -10.0,
+   "ci95": [
+    -21.0,
+    1.0
+   ],
+   "wins": 13,
+   "losses": 23,
+   "mcnemar_p": 0.1325
+  },
+  "BL-official:seen:strict": {
+   "n_pairs": 100,
+   "diff_pp": -10.0,
+   "ci95": [
+    -21.0,
+    1.0
+   ],
+   "wins": 13,
+   "losses": 23,
+   "mcnemar_p": 0.1325
+  },
+  "BL-official:unseen:released": {
+   "n_pairs": 100,
+   "diff_pp": -5.0,
+   "ci95": [
+    -16.0,
+    5.0
+   ],
+   "wins": 13,
+   "losses": 18,
+   "mcnemar_p": 0.4731
+  },
+  "BL-official:unseen:strict": {
+   "n_pairs": 100,
+   "diff_pp": 0.0,
+   "ci95": [
+    -11.0,
+    11.0
+   ],
+   "wins": 16,
+   "losses": 16,
+   "mcnemar_p": 1.0
+  },
+  "F-official:seen:released": {
+   "n_pairs": 100,
+   "diff_pp": -14.0,
+   "ci95": [
+    -25.0,
+    -3.0
+   ],
+   "wins": 11,
+   "losses": 25,
+   "mcnemar_p": 0.0288
+  },
+  "F-official:seen:strict": {
+   "n_pairs": 100,
+   "diff_pp": -14.0,
+   "ci95": [
+    -25.0,
+    -3.0
+   ],
+   "wins": 11,
+   "losses": 25,
+   "mcnemar_p": 0.0288
+  },
+  "F-official:unseen:released": {
+   "n_pairs": 100,
+   "diff_pp": -8.0,
+   "ci95": [
+    -20.0,
+    4.0
+   ],
+   "wins": 16,
+   "losses": 24,
+   "mcnemar_p": 0.2682
+  },
+  "F-official:unseen:strict": {
+   "n_pairs": 100,
+   "diff_pp": -3.0,
+   "ci95": [
+    -15.0,
+    9.0
+   ],
+   "wins": 19,
+   "losses": 22,
+   "mcnemar_p": 0.7552
+  }
+ },
+ "official_unseen_successes": {
+  "released": 44,
+  "strict": 39
+ },
+ "official_per_task": {
+  "CuttingToolSelection": {
+   "released": 7,
+   "strict": 7
+  },
+  "RecycleBottlesByType": {
+   "released": 9,
+   "strict": 7
+  },
+  "WaffleReheat": {
+   "released": 7,
+   "strict": 5
+  },
+  "WeighIngredients": {
+   "released": 8,
+   "strict": 7
+  }
+ },
+ "F-official:strict:identical_seeds": {
+  "n_pairs": 191,
+  "diff_pp": -8.38,
+  "ci95": [
+   -16.75,
+   0.0
+  ],
+  "wins": 29,
+  "losses": 45,
+  "mcnemar_p": 0.0805
+ },
+ "F-official_per_task": {
+  "released": {
+   "DeliverStraw": -3,
+   "GetToastedBread": -4,
+   "PackIdenticalLunches": -6,
+   "SearingMeat": -2,
+   "StirVegetables": 1,
+   "ArrangeTea": -5,
+   "CuttingToolSelection": -2,
+   "RecycleBottlesByType": -5,
+   "WaffleReheat": 2,
+   "WeighIngredients": 2
+  },
+  "strict": {
+   "DeliverStraw": -3,
+   "GetToastedBread": -4,
+   "PackIdenticalLunches": -6,
+   "SearingMeat": -2,
+   "StirVegetables": 1,
+   "ArrangeTea": -5,
+   "CuttingToolSelection": -2,
+   "RecycleBottlesByType": -3,
+   "WaffleReheat": 4,
+   "WeighIngredients": 3
+  }
+ },
+ "F-official_sum_without_largest_loss": {
+  "released": -16,
+  "strict": -11,
+  "largest_loss_task": "PackIdenticalLunches"
+ },
  "unreleased": {
   "n": 9,
   "identical_to_released": 9,

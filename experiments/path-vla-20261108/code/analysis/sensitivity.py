@@ -111,7 +111,7 @@ for i, (m, x, y, c) in enumerate(rows):
         lines.append(r'\midrule')
 lines += [r'\bottomrule', r'\end{tabular}',
           r'\caption{\textbf{Sensitivity to scene identity (post hoc).} Every contrast recomputed on the %d of %d seeds whose first '
-          r'observation and initial state are identical across all 12 policies (task-stratified paired bootstrap, 10{,}000 draws; '
+          r'left agent-view frame and initial state are identical across all 12 policies (task-stratified paired bootstrap, 10{,}000 draws; '
           r'exact McNemar $p$, uncorrected). Bold: pre-registered primary contrasts, with the Holm-corrected $p$; %s of them '
           r'is supported under the pre-registered rule.}' % (len(keep), len(hashes), 'none' if n_supported == 0 else str(n_supported)),
           r'\label{tab:sensitivity}', r'\end{table}']
