@@ -10,8 +10,15 @@ SHORT = {'DeliverStraw': 'Straw', 'GetToastedBread': 'Toast', 'PackIdenticalLunc
          'ArrangeTea': 'Tea', 'CuttingToolSelection': 'Cut', 'RecycleBottlesByType': 'Recycle', 'WaffleReheat': 'Waffle', 'WeighIngredients': 'Weigh'}
 
 
+def sg(x):
+    """one-decimal signed number for math mode; zero is printed without a sign"""
+    s = '%.1f' % abs(x)
+    return s if float(s) == 0 else ('+' if x > 0 else '-') + s
+
+
 def fmt_ci(c):
-    return '[%+.1f, %+.1f]' % (c[0], c[1])
+    """interval for math mode (true minus sign, unsigned zero)"""
+    return '[%s, %s]' % (sg(c[0]), sg(c[1]))
 
 
 def main():
@@ -37,7 +44,7 @@ def main():
                 m('succ%s%s' % (MK[mk], ck), '%d/%d' % tuple(v['all']))
     for key, c in s['contrasts'].items():
         mk, pair = key.split(':'); x, y = pair.split('-'); nm = 'c%s%s%s' % (MK[mk], x, y)
-        m(nm + 'diff', '%+.1f' % c['diff_pp']); m(nm + 'ci', fmt_ci(c['ci95'])); m(nm + 'p', '%.3f' % c['mcnemar_p'])
+        m(nm + 'diff', '\\ensuremath{%s}' % sg(c['diff_pp'])); m(nm + 'ci', '\\ensuremath{%s}' % fmt_ci(c['ci95'])); m(nm + 'p', '%.3f' % c['mcnemar_p'])
         m(nm + 'wl', '%d/%d' % (c['wins'], c['losses']))
         if 'holm_p' in c:
             m(nm + 'holm', '%.3f' % c['holm_p'])
@@ -45,8 +52,9 @@ def main():
     # main results table: success counts per task per policy
     lines = ['\\begin{table*}[t]\\centering\\small', '\\setlength{\\tabcolsep}{4pt}',
              '\\begin{tabular}{ll' + 'c' * 10 + 'ccc}', '\\toprule',
-             'Model & Policy & ' + ' & '.join(SHORT[t] for t in SEEN) + ' & ' + ' & '.join(SHORT[t] for t in UNSEEN) + ' & Seen & Unseen & All \\\\',
-             ' & & \\multicolumn{5}{c}{composite-seen} & \\multicolumn{5}{c}{composite-unseen} & & & \\\\', '\\midrule']
+             ' & & \\multicolumn{5}{c}{composite-seen} & \\multicolumn{5}{c}{composite-unseen} & & & \\\\',
+             '\\cmidrule(lr){3-7}\\cmidrule(lr){8-12}',
+             'Model & Policy & ' + ' & '.join(SHORT[t] for t in SEEN) + ' & ' + ' & '.join(SHORT[t] for t in UNSEEN) + ' & Seen & Unseen & All \\\\', '\\midrule']
     for mk, mn in MODELS:
         first = True
         for ck, cn in CONDS:
@@ -61,12 +69,12 @@ def main():
             lines.append(row); first = False
         lines.append('\\midrule')
     lines[-1] = '\\bottomrule'
-    lines += ['\\end{tabular}', '\\caption{\\textbf{Successes out of 20 seeded episodes per task}, with seen, unseen and overall success rates (\\%) for the official checkpoint and the three adapted arms of each model. All arms are evaluated with ordinary inputs on the same 200 initial scenes.}',
+    lines += ['\\end{tabular}', '\\caption{\\textbf{Per-task success counts.} Successes out of 20 seeded episodes per task, with seen, unseen and overall success rates (\\%) for the official checkpoint and the three adapted arms of each model. All arms are evaluated with ordinary inputs on the same 200 seeded episodes.}',
               '\\label{tab:main}', '\\end{table*}']
     (out / 'main_table.tex').write_text('\n'.join(lines) + '\n')
-    # contrasts table
-    lines = ['\\begin{table}[t]\\centering\\small', '\\setlength{\\tabcolsep}{3pt}', '\\begin{tabular}{llrrrr}', '\\toprule',
-             'Model & Contrast & $\\Delta$ (pp) & 95\\% CI & W/L & $p$ \\\\', '\\midrule']
+    # contrasts table; the interval is set in two right-aligned columns ("[lo," and "hi]") so that brackets and commas line up
+    lines = ['\\begin{table}[t]\\centering\\footnotesize', '\\setlength{\\tabcolsep}{3.5pt}', '\\begin{tabular}{@{}llrr@{\\,}rrr@{}}', '\\toprule',
+             'Model & Contrast & $\\Delta$ (pp) & \\multicolumn{2}{c}{95\\% CI} & W/L & $p$ \\\\', '\\midrule']
     order = [('F', 'BL'), ('F', 'S'), ('F', 'original'), ('S', 'original'), ('BL', 'original')]
     for mk, mn in MODELS:
         first = True
@@ -77,11 +85,12 @@ def main():
             lab = '%s$-$%s' % (x, 'official' if y == 'original' else y)
             if c.get('primary'):
                 lab = '\\textbf{' + lab + '}'
-            lines.append(('\\multirow{5}{*}{%s}' % mn if first else '') + ' & %s & %+.1f & %s & %d/%d & %.3f \\\\' % (lab, c['diff_pp'], fmt_ci(c['ci95']), c['wins'], c['losses'], c['mcnemar_p']))
+            lines.append(('\\multirow{5}{*}{%s}' % mn if first else '') + ' & %s & $%s$ & $[%s,$ & $%s]$ & %d/%d & %.3f \\\\' % (
+                lab, sg(c['diff_pp']), sg(c['ci95'][0]), sg(c['ci95'][1]), c['wins'], c['losses'], c['mcnemar_p']))
             first = False
         lines.append('\\midrule')
     lines[-1] = '\\bottomrule'
-    lines += ['\\end{tabular}', '\\caption{\\textbf{Paired contrasts} pooled over 200 (task, seed) pairs per model: success-rate difference, task-stratified paired-bootstrap 95\\% interval, wins/losses among discordant pairs, exact McNemar $p$. Bold rows are the two pre-registered primary contrasts; the Holm-corrected verdicts are in the text.}',
+    lines += ['\\end{tabular}', '\\caption{\\textbf{Paired contrasts.} Pooled over 200 (task, seed) pairs per model: success-rate difference, task-stratified paired-bootstrap 95\\% interval, wins/losses among discordant pairs, exact McNemar $p$ (uncorrected). Bold rows are the two pre-registered primary contrasts; their Holm-corrected verdicts are in the text.}',
               '\\label{tab:contrasts}', '\\end{table}']
     (out / 'contrast_table.tex').write_text('\n'.join(lines) + '\n')
     print('wrote', out / 'macros.tex', len(macros), 'macros')

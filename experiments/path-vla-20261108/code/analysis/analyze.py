@@ -122,12 +122,17 @@ def main():
         if len(ps) < 2:
             continue
         ps.sort(key=lambda kv: kv[1]['mcnemar_p'])
+        # Holm step-down over the two contrasts: the one with the smaller p is judged on its 97.5% interval and doubled p; the
+        # other only if the first is rejected, on its 95% interval. Adjusted p-values are monotone: p_adj(2) = max(p_adj(1), p(2)).
+        prev_holm, prev_rejected = 0.0, True
         for rank, (k, v) in enumerate(ps):
-            holm_p = min(1.0, v['mcnemar_p'] * (2 - rank))
+            holm_p = max(prev_holm, min(1.0, v['mcnemar_p'] * (2 - rank)))
             v['holm_p'] = round(holm_p, 4)
             ci = v['ci975'] if rank == 0 else v['ci95']
-            supported = (ci[0] > 0) and v['diff_pp'] >= 5
+            rejected = prev_rejected and (ci[0] > 0 or ci[1] < 0)
+            supported = rejected and (ci[0] > 0) and v['diff_pp'] >= 5
             v['supported'] = bool(supported)
+            prev_holm, prev_rejected = holm_p, rejected
             lines.append('- %s: diff %+.2f pp, Holm-adjusted interval [%+.2f, %+.2f], Holm p = %.4f → %s' % (k, v['diff_pp'], ci[0], ci[1], holm_p, 'SUPPORTED' if supported else 'not supported'))
     (out / 'summary.json').write_text(json.dumps(summary, indent=1)); (out / 'tables.md').write_text('\n'.join(lines))
     print('\n'.join(lines))

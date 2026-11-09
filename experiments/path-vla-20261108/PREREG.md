@@ -60,4 +60,4 @@ Same F checkpoint with self-generated stage/box feedback vs ordinary inputs; not
 
 ## Compute window
 Training and evaluation on hkust-cluster GPUs 0,1,4,5,6,7 (user authorized exclusive use on 2026-11-08).
-Deadline-driven: CVPR 2027 registration 2026-11-10 23:59 AoE, paper 2026-11-16 23:59 AoE.
+[One administrative scheduling line is withheld in this public copy; the SHA-256 in the README refers to the complete file.]

@@ -1,7 +1,7 @@
 """Secondary, descriptive analyses from the episode logs: seen/unseen split of contrasts, rescues/regressions,
 episode length, and candidate qualitative pairs. Reads the local mirror results/eval/*/results.jsonl."""
 from pathlib import Path
-import collections, json, math, random, sys
+import collections, json, math, random, statistics, sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from analyze import load, paired_contrast, SEEN, UNSEEN, MODELS
 
@@ -15,12 +15,12 @@ for model in MODELS:
         for split, tasks in [('seen', SEEN), ('unseen', UNSEEN)]:
             ra = {k: v for k, v in data[(model, x)].items() if k[0] in tasks}
             rb = {k: v for k, v in data[(model, y)].items() if k[0] in tasks}
-            c = paired_contrast(ra, rb, n_boot=4000)
+            c = paired_contrast(ra, rb, n_boot=10000)  # pre-registered: 10,000 draws for every 95% CI
             res['split_contrasts']['%s:%s-%s:%s' % (model, x, y, split)] = {k: c[k] for k in ['n_pairs', 'a_success', 'b_success', 'diff_pp', 'ci95', 'wins', 'losses', 'mcnemar_p']}
     for cond in ['original', 'S', 'BL', 'F']:
         recs = data[(model, cond)].values()
         succ = [r['steps'] for r in recs if r['success']]; fail = [r['steps'] for r in recs if not r['success']]
-        res['steps']['%s-%s' % (model, cond)] = {'median_steps_success': sorted(succ)[len(succ) // 2] if succ else None,
+        res['steps']['%s-%s' % (model, cond)] = {'median_steps_success': statistics.median(succ) if succ else None,  # conventional median (mean of the two middle values for even n)
                                                  'timeouts': sum(1 for r in recs if not r['success'] and r['steps'] >= r['horizon']),
                                                  'early_terminations': sum(1 for r in recs if not r['success'] and r['steps'] < r['horizon']),
                                                  'mean_elapsed_s': round(sum(r['elapsed_s'] for r in recs) / len(recs), 1)}

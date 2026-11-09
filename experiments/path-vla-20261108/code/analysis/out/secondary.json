@@ -46,7 +46,7 @@
    "diff_pp": -2.0,
    "ci95": [
     -10.0,
-    7.0
+    6.0
    ],
    "wins": 9,
    "losses": 11,
@@ -72,7 +72,7 @@
    "diff_pp": 2.0,
    "ci95": [
     -6.0,
-    11.0
+    10.0
    ],
    "wins": 10,
    "losses": 8,
@@ -149,7 +149,7 @@
    "b_success": 34,
    "diff_pp": 5.0,
    "ci95": [
-    -4.0,
+    -5.0,
     15.0
    ],
    "wins": 16,
@@ -189,7 +189,7 @@
    "diff_pp": 0.0,
    "ci95": [
     -11.0,
-    10.0
+    11.0
    ],
    "wins": 15,
    "losses": 15,
@@ -201,8 +201,8 @@
    "b_success": 52,
    "diff_pp": -13.0,
    "ci95": [
-    -24.0,
-    -2.0
+    -23.0,
+    -3.0
    ],
    "wins": 9,
    "losses": 22,
@@ -241,7 +241,7 @@
    "diff_pp": -2.0,
    "ci95": [
     -15.0,
-    11.0
+    10.0
    ],
    "wins": 21,
    "losses": 23,
@@ -306,7 +306,7 @@
    "diff_pp": -5.0,
    "ci95": [
     -15.0,
-    4.0
+    5.0
    ],
    "wins": 11,
    "losses": 16,
@@ -393,7 +393,7 @@
  },
  "steps": {
   "xr1-original": {
-   "median_steps_success": 1384,
+   "median_steps_success": 1365.0,
    "timeouts": 132,
    "early_terminations": 0,
    "mean_elapsed_s": 199.8
@@ -435,13 +435,13 @@
    "mean_elapsed_s": 353.1
   },
   "awomo_i-F": {
-   "median_steps_success": 1397,
+   "median_steps_success": 1387.0,
    "timeouts": 124,
    "early_terminations": 0,
    "mean_elapsed_s": 328.0
   },
   "awomo_v-original": {
-   "median_steps_success": 1376,
+   "median_steps_success": 1372.5,
    "timeouts": 112,
    "early_terminations": 0,
    "mean_elapsed_s": 384.9
@@ -459,7 +459,7 @@
    "mean_elapsed_s": 394.3
   },
   "awomo_v-F": {
-   "median_steps_success": 1271,
+   "median_steps_success": 1271.0,
    "timeouts": 134,
    "early_terminations": 0,
    "mean_elapsed_s": 376.2

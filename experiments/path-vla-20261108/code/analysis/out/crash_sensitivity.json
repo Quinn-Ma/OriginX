@@ -1,0 +1,194 @@
+{
+ "n_crashed": 18,
+ "crashed": [
+  [
+   "CuttingToolSelection",
+   19
+  ],
+  [
+   "RecycleBottlesByType",
+   15
+  ],
+  [
+   "RecycleBottlesByType",
+   16
+  ],
+  [
+   "WaffleReheat",
+   3
+  ],
+  [
+   "WaffleReheat",
+   15
+  ],
+  [
+   "WaffleReheat",
+   16
+  ],
+  [
+   "WaffleReheat",
+   17
+  ],
+  [
+   "WaffleReheat",
+   18
+  ],
+  [
+   "WaffleReheat",
+   19
+  ],
+  [
+   "WeighIngredients",
+   2
+  ],
+  [
+   "WeighIngredients",
+   3
+  ],
+  [
+   "WeighIngredients",
+   5
+  ],
+  [
+   "WeighIngredients",
+   6
+  ],
+  [
+   "WeighIngredients",
+   8
+  ],
+  [
+   "WeighIngredients",
+   15
+  ],
+  [
+   "WeighIngredients",
+   16
+  ],
+  [
+   "WeighIngredients",
+   17
+  ],
+  [
+   "WeighIngredients",
+   18
+  ]
+ ],
+ "rerun_successes": [
+  [
+   "RecycleBottlesByType",
+   15
+  ],
+  [
+   "RecycleBottlesByType",
+   16
+  ],
+  [
+   "WaffleReheat",
+   3
+  ],
+  [
+   "WaffleReheat",
+   19
+  ],
+  [
+   "WeighIngredients",
+   16
+  ]
+ ],
+ "completed_rows_unchanged": 132,
+ "official_successes_released": 88,
+ "official_successes_errors_as_failures": 83,
+ "contrasts": {
+  "F-official:released": {
+   "n_pairs": 200,
+   "a_success": 66,
+   "b_success": 88,
+   "diff_pp": -11.0,
+   "ci95": [
+    -19.5,
+    -3.0
+   ],
+   "wins": 27,
+   "losses": 49,
+   "mcnemar_p": 0.0154
+  },
+  "F-official:strict": {
+   "n_pairs": 200,
+   "a_success": 66,
+   "b_success": 83,
+   "diff_pp": -8.5,
+   "ci95": [
+    -17.0,
+    -0.5
+   ],
+   "wins": 30,
+   "losses": 47,
+   "mcnemar_p": 0.0675
+  },
+  "S-official:released": {
+   "n_pairs": 200,
+   "a_success": 83,
+   "b_success": 88,
+   "diff_pp": -2.5,
+   "ci95": [
+    -10.5,
+    5.5
+   ],
+   "wins": 31,
+   "losses": 36,
+   "mcnemar_p": 0.6254
+  },
+  "S-official:strict": {
+   "n_pairs": 200,
+   "a_success": 83,
+   "b_success": 83,
+   "diff_pp": 0.0,
+   "ci95": [
+    -8.0,
+    8.0
+   ],
+   "wins": 36,
+   "losses": 36,
+   "mcnemar_p": 1.0
+  },
+  "BL-official:released": {
+   "n_pairs": 200,
+   "a_success": 73,
+   "b_success": 88,
+   "diff_pp": -7.5,
+   "ci95": [
+    -15.5,
+    0.0
+   ],
+   "wins": 26,
+   "losses": 41,
+   "mcnemar_p": 0.0864
+  },
+  "BL-official:strict": {
+   "n_pairs": 200,
+   "a_success": 73,
+   "b_success": 83,
+   "diff_pp": -5.0,
+   "ci95": [
+    -13.0,
+    2.5
+   ],
+   "wins": 29,
+   "losses": 39,
+   "mcnemar_p": 0.275
+  }
+ },
+ "unreleased": {
+  "n": 9,
+  "identical_to_released": 9,
+  "sources": [
+   "old-split/awomo_i-original-seen",
+   "old-split/awomo_i-original-unseen",
+   "old-split/awomo_v-original-unseen",
+   "old-split/xr1-original-seen",
+   "old-split/xr1-original-unseen",
+   "smoke-xr1"
+  ]
+ }
+}

@@ -43,8 +43,8 @@
 ## Primary verdicts (Holm over F−BL and F−S within each model; supported = corrected CI excludes 0 and diff ≥ +5 pp)
 
 - xr1:F-S: diff +1.00 pp, Holm-adjusted interval [-6.50, +8.50], Holm p = 1.0000 → not supported
-- xr1:F-BL: diff +1.00 pp, Holm-adjusted interval [-6.00, +8.00], Holm p = 0.8919 → not supported
+- xr1:F-BL: diff +1.00 pp, Holm-adjusted interval [-6.00, +8.00], Holm p = 1.0000 → not supported
 - awomo_i:F-BL: diff +3.50 pp, Holm-adjusted interval [-5.00, +11.50], Holm p = 0.8540 → not supported
-- awomo_i:F-S: diff -1.50 pp, Holm-adjusted interval [-9.50, +6.50], Holm p = 0.8099 → not supported
+- awomo_i:F-S: diff -1.50 pp, Holm-adjusted interval [-9.50, +6.50], Holm p = 0.8540 → not supported
 - awomo_v:F-S: diff -8.50 pp, Holm-adjusted interval [-16.50, -1.00], Holm p = 0.0600 → not supported
 - awomo_v:F-BL: diff -3.50 pp, Holm-adjusted interval [-11.00, +4.00], Holm p = 0.4570 → not supported

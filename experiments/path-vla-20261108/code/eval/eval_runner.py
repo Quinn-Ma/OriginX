@@ -54,7 +54,7 @@ def first_attr(env, name):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--model', choices=['xr1', 'awomo_i', 'awomo_v'], required=True)
-    ap.add_argument('--condition', choices=['original', 'S', 'BL', 'F'], required=True)
+    ap.add_argument('--condition', choices=['original', 'S', 'BL', 'F', 'FB'], required=True)
     ap.add_argument('--adapter', default=None); ap.add_argument('--gpu', type=int, required=True)
     ap.add_argument('--tasks', default=','.join(SEEN + UNSEEN)); ap.add_argument('--seeds', default='0-19')
     ap.add_argument('--out', default=None); ap.add_argument('--video', action='store_true'); ap.add_argument('--max-episodes', type=int, default=0)
@@ -92,6 +92,10 @@ def main():
     if a.condition == 'original':
         from adapter import NativeRoboCasaAdapter
         policy = NativeRoboCasaAdapter(a.model, physical_gpu=a.gpu, seed=a.policy_seed)
+    elif a.condition == 'FB':
+        sys.path.insert(0, str(ROOT / 'eval'))
+        from feedback_adapter import FeedbackAdapter
+        policy = FeedbackAdapter(a.model, a.adapter, physical_gpu=a.gpu, seed=a.policy_seed)
     else:
         from adapter_inference import BranchBoxInferenceAdapter
         policy = BranchBoxInferenceAdapter(a.model, a.adapter, physical_gpu=a.gpu, seed=a.policy_seed)
@@ -135,7 +139,7 @@ def main():
                             frames.append(obs['observation.images.robot0_agentview_left'][0].copy())
                         if success or terminated or truncated or steps >= horizon:
                             break
-                    rec.update(success=success, steps=steps, terminated=terminated, truncated=truncated,
+                    rec.update(location_trace=getattr(policy, 'location_trace', None), success=success, steps=steps, terminated=terminated, truncated=truncated,
                                policy_queries=len(policy.query_receipts), elapsed_s=round(time.time() - t0, 1),
                                query_latency_median_s=round(float(np.median(latencies)), 4) if latencies else None,
                                status='ok')

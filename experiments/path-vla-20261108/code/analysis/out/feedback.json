@@ -1,0 +1,855 @@
+{
+ "generated_utc": "2026-11-09 10:03",
+ "sync": {
+  "attempted": true,
+  "reachable": true,
+  "time_utc": "2026-11-09T10:02:35+00:00",
+  "remote_shards": {
+   "awomo_i-FB-h0": 100,
+   "awomo_i-FB-h1": 100,
+   "awomo_v-FB-q0": 50,
+   "awomo_v-FB-q1": 50,
+   "awomo_v-FB-q2": 50,
+   "awomo_v-FB-q3": 50,
+   "xr1-FB-q0": 50,
+   "xr1-FB-q1": 50,
+   "xr1-FB-q2": 50,
+   "xr1-FB-q3": 50
+  },
+  "pulled": [
+   "awomo_i-FB-h0",
+   "awomo_i-FB-h1",
+   "awomo_v-FB-q0",
+   "awomo_v-FB-q1",
+   "awomo_v-FB-q2",
+   "awomo_v-FB-q3",
+   "xr1-FB-q0",
+   "xr1-FB-q1",
+   "xr1-FB-q2",
+   "xr1-FB-q3"
+  ],
+  "not_pulled": [],
+  "ignored_remote_dirs": [
+   "discarded-awomo_v-FB-wrong-feature"
+  ],
+  "discarded_remote_shards": [
+   "awomo_v-FB-h0",
+   "awomo_v-FB-h1"
+  ]
+ },
+ "load_notes": [],
+ "protocol": "F checkpoint; at every policy query (every 16 env steps) the location-head prediction of the previous query is drawn as a fixed 32x32-px 2-px red box centred on the predicted point on the current frame of all three cameras; no box at the first query; original instruction; stage head unused. Training drew tight label mask boxes only where the target was visible.",
+ "comparison": "paired by (task, seed) with the primary ordinary-input F and official runs (results/eval); task-stratified paired bootstrap (10000 draws, seed 20261108) and exact two-sided McNemar from analyze.py; p uncorrected",
+ "discarded": {
+  "awomo_v": {
+   "episodes": 73,
+   "where": "/dev/shm/qinzhen/sbl/eval/discarded-awomo_v-FB-wrong-feature/",
+   "reason": "location head read the last denoising-step feature instead of the observation-only warm-up feature used in training",
+   "analysed": false
+  }
+ },
+ "primary_seeds_with_two_first_frame_variants": 9,
+ "models": {
+  "xr1": {
+   "n_fb_episodes": 200,
+   "n_fb_errors": 0,
+   "n_pairs": 200,
+   "fb_without_primary_partner": [],
+   "status": "complete",
+   "first_frame_unknown_variant": [],
+   "first_frame_differs_from_F": [
+    "SearingMeat/14",
+    "SearingMeat/6",
+    "StirVegetables/1",
+    "StirVegetables/14"
+   ],
+   "first_frame_differs_from_official": [
+    "SearingMeat/1",
+    "SearingMeat/4",
+    "StirVegetables/1",
+    "StirVegetables/14",
+    "StirVegetables/16"
+   ],
+   "instruction_or_horizon_differs_from_F": [],
+   "tasks_covered": {
+    "DeliverStraw": 20,
+    "GetToastedBread": 20,
+    "PackIdenticalLunches": 20,
+    "SearingMeat": 20,
+    "StirVegetables": 20,
+    "ArrangeTea": 20,
+    "CuttingToolSelection": 20,
+    "RecycleBottlesByType": 20,
+    "WaffleReheat": 20,
+    "WeighIngredients": 20
+   },
+   "n_seen_pairs": 100,
+   "n_unseen_pairs": 100,
+   "fb_success": 63,
+   "f_success": 83,
+   "official_success": 68,
+   "f_success_all200": 83,
+   "official_success_all200": 68,
+   "per_task": {
+    "DeliverStraw": {
+     "n": 20,
+     "FB": 12,
+     "F": 10,
+     "official": 10
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "FB": 4,
+     "F": 6,
+     "official": 2
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "FB": 4,
+     "F": 8,
+     "official": 5
+    },
+    "SearingMeat": {
+     "n": 20,
+     "FB": 6,
+     "F": 9,
+     "official": 5
+    },
+    "StirVegetables": {
+     "n": 20,
+     "FB": 3,
+     "F": 8,
+     "official": 6
+    },
+    "ArrangeTea": {
+     "n": 20,
+     "FB": 7,
+     "F": 9,
+     "official": 10
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "FB": 9,
+     "F": 11,
+     "official": 9
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "FB": 2,
+     "F": 2,
+     "official": 1
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "FB": 11,
+     "F": 12,
+     "official": 12
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "FB": 5,
+     "F": 8,
+     "official": 8
+    }
+   },
+   "fb_minus_F": {
+    "n_pairs": 200,
+    "a_success": 63,
+    "b_success": 83,
+    "diff_pp": -10.0,
+    "ci95": [
+     -17.5,
+     -2.5
+    ],
+    "wins": 20,
+    "losses": 40,
+    "mcnemar_p": 0.0135,
+    "mcnemar_p_exact": 0.01348929373119186
+   },
+   "fb_minus_official": {
+    "n_pairs": 200,
+    "a_success": 63,
+    "b_success": 68,
+    "diff_pp": -2.5,
+    "ci95": [
+     -9.0,
+     4.0
+    ],
+    "wins": 21,
+    "losses": 26,
+    "mcnemar_p": 0.5601,
+    "mcnemar_p_exact": 0.5600646295802107
+   },
+   "fb_minus_F_identical_first_frame": {
+    "n_pairs": 196,
+    "a_success": 62,
+    "b_success": 82,
+    "diff_pp": -10.2,
+    "ci95": [
+     -17.35,
+     -3.06
+    ],
+    "wins": 19,
+    "losses": 39,
+    "mcnemar_p": 0.0119,
+    "mcnemar_p_exact": 0.011928139715763175
+   },
+   "split": {
+    "seen": {
+     "fb_minus_F": {
+      "n_pairs": 100,
+      "a_success": 29,
+      "b_success": 41,
+      "diff_pp": -12.0,
+      "ci95": [
+       -24.0,
+       0.0
+      ],
+      "wins": 14,
+      "losses": 26,
+      "mcnemar_p": 0.0807,
+      "mcnemar_p_exact": 0.0806904677519924
+     },
+     "fb_minus_official": {
+      "n_pairs": 100,
+      "a_success": 29,
+      "b_success": 28,
+      "diff_pp": 1.0,
+      "ci95": [
+       -9.0,
+       11.0
+      ],
+      "wins": 14,
+      "losses": 13,
+      "mcnemar_p": 1.0,
+      "mcnemar_p_exact": 1.0
+     }
+    },
+    "unseen": {
+     "fb_minus_F": {
+      "n_pairs": 100,
+      "a_success": 34,
+      "b_success": 42,
+      "diff_pp": -8.0,
+      "ci95": [
+       -17.0,
+       0.0
+      ],
+      "wins": 6,
+      "losses": 14,
+      "mcnemar_p": 0.1153,
+      "mcnemar_p_exact": 0.11531829833984375
+     },
+     "fb_minus_official": {
+      "n_pairs": 100,
+      "a_success": 34,
+      "b_success": 40,
+      "diff_pp": -6.0,
+      "ci95": [
+       -15.0,
+       3.0
+      ],
+      "wins": 7,
+      "losses": 13,
+      "mcnemar_p": 0.2632,
+      "mcnemar_p_exact": 0.26317596435546875
+     }
+    }
+   },
+   "steps": {
+    "median_steps_success_FB": 1322.0,
+    "early_terminations_FB": 0
+   },
+   "trace": {
+    "n_episodes": 200,
+    "n_queries": 30884,
+    "frac_queries_with_prediction": 1.0,
+    "frac_queries_with_box_drawn": 0.9935,
+    "episodes_trace_length_mismatch": 0,
+    "spread_px": {
+     "median": 32.0,
+     "q25": 29.3,
+     "q75": 34.3,
+     "n_episodes": 200
+    },
+    "spread_px_per_camera": {
+     "left": {
+      "median": 36.7,
+      "q25": 31.8,
+      "q75": 40.6,
+      "n_episodes": 200
+     },
+     "right": {
+      "median": 31.3,
+      "q25": 28.3,
+      "q75": 33.7,
+      "n_episodes": 200
+     },
+     "wrist": {
+      "median": 27.3,
+      "q25": 24.9,
+      "q75": 29.3,
+      "n_episodes": 200
+     }
+    },
+    "jump_px": {
+     "median": 19.8,
+     "q25": 17.0,
+     "q75": 21.7,
+     "n_episodes": 200
+    },
+    "frac_boxes_clipped_by_border": 0.0
+   },
+   "label": "XR-1",
+   "shards": [
+    "xr1-FB-q0",
+    "xr1-FB-q1",
+    "xr1-FB-q2",
+    "xr1-FB-q3"
+   ],
+   "adapter_sha256": "abb7624aa21cc1c978314eeb8226637b2e7e915fdf0f726b5765af291a38efef",
+   "adapter_matches_F": true
+  },
+  "awomo_i": {
+   "n_fb_episodes": 200,
+   "n_fb_errors": 0,
+   "n_pairs": 200,
+   "fb_without_primary_partner": [],
+   "status": "complete",
+   "first_frame_unknown_variant": [],
+   "first_frame_differs_from_F": [
+    "SearingMeat/1",
+    "SearingMeat/4",
+    "SearingMeat/6",
+    "StirVegetables/1",
+    "StirVegetables/14",
+    "StirVegetables/16"
+   ],
+   "first_frame_differs_from_official": [
+    "SearingMeat/6",
+    "StirVegetables/1",
+    "StirVegetables/16"
+   ],
+   "instruction_or_horizon_differs_from_F": [],
+   "tasks_covered": {
+    "DeliverStraw": 20,
+    "GetToastedBread": 20,
+    "PackIdenticalLunches": 20,
+    "SearingMeat": 20,
+    "StirVegetables": 20,
+    "ArrangeTea": 20,
+    "CuttingToolSelection": 20,
+    "RecycleBottlesByType": 20,
+    "WaffleReheat": 20,
+    "WeighIngredients": 20
+   },
+   "n_seen_pairs": 100,
+   "n_unseen_pairs": 100,
+   "fb_success": 66,
+   "f_success": 76,
+   "official_success": 89,
+   "f_success_all200": 76,
+   "official_success_all200": 89,
+   "per_task": {
+    "DeliverStraw": {
+     "n": 20,
+     "FB": 5,
+     "F": 10,
+     "official": 12
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "FB": 4,
+     "F": 4,
+     "official": 6
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "FB": 4,
+     "F": 9,
+     "official": 5
+    },
+    "SearingMeat": {
+     "n": 20,
+     "FB": 8,
+     "F": 6,
+     "official": 4
+    },
+    "StirVegetables": {
+     "n": 20,
+     "FB": 6,
+     "F": 8,
+     "official": 10
+    },
+    "ArrangeTea": {
+     "n": 20,
+     "FB": 10,
+     "F": 7,
+     "official": 10
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "FB": 14,
+     "F": 9,
+     "official": 12
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "FB": 1,
+     "F": 4,
+     "official": 6
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "FB": 8,
+     "F": 9,
+     "official": 12
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "FB": 6,
+     "F": 10,
+     "official": 12
+    }
+   },
+   "fb_minus_F": {
+    "n_pairs": 200,
+    "a_success": 66,
+    "b_success": 76,
+    "diff_pp": -5.0,
+    "ci95": [
+     -12.5,
+     2.5
+    ],
+    "wins": 27,
+    "losses": 37,
+    "mcnemar_p": 0.2604,
+    "mcnemar_p_exact": 0.2604354765766535
+   },
+   "fb_minus_official": {
+    "n_pairs": 200,
+    "a_success": 66,
+    "b_success": 89,
+    "diff_pp": -11.5,
+    "ci95": [
+     -19.5,
+     -3.5
+    ],
+    "wins": 28,
+    "losses": 51,
+    "mcnemar_p": 0.0128,
+    "mcnemar_p_exact": 0.012812402175831366
+   },
+   "fb_minus_F_identical_first_frame": {
+    "n_pairs": 194,
+    "a_success": 65,
+    "b_success": 75,
+    "diff_pp": -5.15,
+    "ci95": [
+     -12.37,
+     2.58
+    ],
+    "wins": 26,
+    "losses": 36,
+    "mcnemar_p": 0.2529,
+    "mcnemar_p_exact": 0.2528543941881108
+   },
+   "split": {
+    "seen": {
+     "fb_minus_F": {
+      "n_pairs": 100,
+      "a_success": 27,
+      "b_success": 37,
+      "diff_pp": -10.0,
+      "ci95": [
+       -21.0,
+       0.0
+      ],
+      "wins": 11,
+      "losses": 21,
+      "mcnemar_p": 0.1102,
+      "mcnemar_p_exact": 0.11018416518345475
+     },
+     "fb_minus_official": {
+      "n_pairs": 100,
+      "a_success": 27,
+      "b_success": 37,
+      "diff_pp": -10.0,
+      "ci95": [
+       -22.0,
+       2.0
+      ],
+      "wins": 15,
+      "losses": 25,
+      "mcnemar_p": 0.1539,
+      "mcnemar_p_exact": 0.1538599441628321
+     }
+    },
+    "unseen": {
+     "fb_minus_F": {
+      "n_pairs": 100,
+      "a_success": 39,
+      "b_success": 39,
+      "diff_pp": 0.0,
+      "ci95": [
+       -11.0,
+       11.0
+      ],
+      "wins": 16,
+      "losses": 16,
+      "mcnemar_p": 1.0,
+      "mcnemar_p_exact": 1.0
+     },
+     "fb_minus_official": {
+      "n_pairs": 100,
+      "a_success": 39,
+      "b_success": 52,
+      "diff_pp": -13.0,
+      "ci95": [
+       -24.0,
+       -1.0
+      ],
+      "wins": 13,
+      "losses": 26,
+      "mcnemar_p": 0.0533,
+      "mcnemar_p_exact": 0.05325191409792751
+     }
+    }
+   },
+   "steps": {
+    "median_steps_success_FB": 1305.0,
+    "early_terminations_FB": 0
+   },
+   "trace": {
+    "n_episodes": 200,
+    "n_queries": 31197,
+    "frac_queries_with_prediction": 1.0,
+    "frac_queries_with_box_drawn": 0.9936,
+    "episodes_trace_length_mismatch": 0,
+    "spread_px": {
+     "median": 10.6,
+     "q25": 9.6,
+     "q75": 11.7,
+     "n_episodes": 200
+    },
+    "spread_px_per_camera": {
+     "left": {
+      "median": 11.6,
+      "q25": 9.8,
+      "q75": 12.9,
+      "n_episodes": 200
+     },
+     "right": {
+      "median": 10.7,
+      "q25": 9.2,
+      "q75": 12.5,
+      "n_episodes": 200
+     },
+     "wrist": {
+      "median": 9.5,
+      "q25": 8.2,
+      "q75": 11.1,
+      "n_episodes": 200
+     }
+    },
+    "jump_px": {
+     "median": 4.3,
+     "q25": 3.8,
+     "q75": 4.6,
+     "n_episodes": 200
+    },
+    "frac_boxes_clipped_by_border": 0.0
+   },
+   "label": "Awomo-0.5I",
+   "shards": [
+    "awomo_i-FB-h0",
+    "awomo_i-FB-h1"
+   ],
+   "adapter_sha256": "c41c983405eacaa90e2fac410bf6cc210dc97332ce3b829d08caf53fd9d9a59c",
+   "adapter_matches_F": true
+  },
+  "awomo_v": {
+   "n_fb_episodes": 200,
+   "n_fb_errors": 0,
+   "n_pairs": 200,
+   "fb_without_primary_partner": [],
+   "status": "complete",
+   "first_frame_unknown_variant": [],
+   "first_frame_differs_from_F": [
+    "SearingMeat/4",
+    "SearingMeat/6",
+    "StirVegetables/11",
+    "StirVegetables/14",
+    "StirVegetables/16"
+   ],
+   "first_frame_differs_from_official": [
+    "SearingMeat/4",
+    "StirVegetables/1",
+    "StirVegetables/14"
+   ],
+   "instruction_or_horizon_differs_from_F": [],
+   "tasks_covered": {
+    "DeliverStraw": 20,
+    "GetToastedBread": 20,
+    "PackIdenticalLunches": 20,
+    "SearingMeat": 20,
+    "StirVegetables": 20,
+    "ArrangeTea": 20,
+    "CuttingToolSelection": 20,
+    "RecycleBottlesByType": 20,
+    "WaffleReheat": 20,
+    "WeighIngredients": 20
+   },
+   "n_seen_pairs": 100,
+   "n_unseen_pairs": 100,
+   "fb_success": 58,
+   "f_success": 66,
+   "official_success": 88,
+   "f_success_all200": 66,
+   "official_success_all200": 88,
+   "per_task": {
+    "DeliverStraw": {
+     "n": 20,
+     "FB": 6,
+     "F": 10,
+     "official": 13
+    },
+    "GetToastedBread": {
+     "n": 20,
+     "FB": 9,
+     "F": 6,
+     "official": 10
+    },
+    "PackIdenticalLunches": {
+     "n": 20,
+     "FB": 4,
+     "F": 1,
+     "official": 7
+    },
+    "SearingMeat": {
+     "n": 20,
+     "FB": 2,
+     "F": 4,
+     "official": 6
+    },
+    "StirVegetables": {
+     "n": 20,
+     "FB": 6,
+     "F": 9,
+     "official": 8
+    },
+    "ArrangeTea": {
+     "n": 20,
+     "FB": 7,
+     "F": 8,
+     "official": 13
+    },
+    "CuttingToolSelection": {
+     "n": 20,
+     "FB": 4,
+     "F": 5,
+     "official": 7
+    },
+    "RecycleBottlesByType": {
+     "n": 20,
+     "FB": 4,
+     "F": 4,
+     "official": 9
+    },
+    "WaffleReheat": {
+     "n": 20,
+     "FB": 7,
+     "F": 9,
+     "official": 7
+    },
+    "WeighIngredients": {
+     "n": 20,
+     "FB": 9,
+     "F": 10,
+     "official": 8
+    }
+   },
+   "fb_minus_F": {
+    "n_pairs": 200,
+    "a_success": 58,
+    "b_success": 66,
+    "diff_pp": -4.0,
+    "ci95": [
+     -11.5,
+     3.5
+    ],
+    "wins": 28,
+    "losses": 36,
+    "mcnemar_p": 0.3817,
+    "mcnemar_p_exact": 0.38173279479333766
+   },
+   "fb_minus_official": {
+    "n_pairs": 200,
+    "a_success": 58,
+    "b_success": 88,
+    "diff_pp": -15.0,
+    "ci95": [
+     -22.5,
+     -7.5
+    ],
+    "wins": 18,
+    "losses": 48,
+    "mcnemar_p": 0.0003,
+    "mcnemar_p_exact": 0.00028711844966164033
+   },
+   "fb_minus_F_identical_first_frame": {
+    "n_pairs": 195,
+    "a_success": 57,
+    "b_success": 66,
+    "diff_pp": -4.62,
+    "ci95": [
+     -12.31,
+     3.08
+    ],
+    "wins": 27,
+    "losses": 36,
+    "mcnemar_p": 0.3135,
+    "mcnemar_p_exact": 0.31350305329645284
+   },
+   "split": {
+    "seen": {
+     "fb_minus_F": {
+      "n_pairs": 100,
+      "a_success": 27,
+      "b_success": 30,
+      "diff_pp": -3.0,
+      "ci95": [
+       -14.0,
+       8.0
+      ],
+      "wins": 16,
+      "losses": 19,
+      "mcnemar_p": 0.7359,
+      "mcnemar_p_exact": 0.7358788008568808
+     },
+     "fb_minus_official": {
+      "n_pairs": 100,
+      "a_success": 27,
+      "b_success": 44,
+      "diff_pp": -17.0,
+      "ci95": [
+       -28.0,
+       -6.0
+      ],
+      "wins": 8,
+      "losses": 25,
+      "mcnemar_p": 0.0046,
+      "mcnemar_p_exact": 0.004551384132355452
+     }
+    },
+    "unseen": {
+     "fb_minus_F": {
+      "n_pairs": 100,
+      "a_success": 31,
+      "b_success": 36,
+      "diff_pp": -5.0,
+      "ci95": [
+       -15.0,
+       6.0
+      ],
+      "wins": 12,
+      "losses": 17,
+      "mcnemar_p": 0.4583,
+      "mcnemar_p_exact": 0.45825831964612007
+     },
+     "fb_minus_official": {
+      "n_pairs": 100,
+      "a_success": 31,
+      "b_success": 44,
+      "diff_pp": -13.0,
+      "ci95": [
+       -23.0,
+       -2.0
+      ],
+      "wins": 10,
+      "losses": 23,
+      "mcnemar_p": 0.0351,
+      "mcnemar_p_exact": 0.03508203336969018
+     }
+    }
+   },
+   "steps": {
+    "median_steps_success_FB": 1337.0,
+    "early_terminations_FB": 0
+   },
+   "trace": {
+    "n_episodes": 200,
+    "n_queries": 31702,
+    "frac_queries_with_prediction": 1.0,
+    "frac_queries_with_box_drawn": 0.9937,
+    "episodes_trace_length_mismatch": 0,
+    "spread_px": {
+     "median": 11.7,
+     "q25": 10.4,
+     "q75": 13.5,
+     "n_episodes": 200
+    },
+    "spread_px_per_camera": {
+     "left": {
+      "median": 13.9,
+      "q25": 11.9,
+      "q75": 16.2,
+      "n_episodes": 200
+     },
+     "right": {
+      "median": 9.9,
+      "q25": 8.3,
+      "q75": 11.3,
+      "n_episodes": 200
+     },
+     "wrist": {
+      "median": 11.3,
+      "q25": 9.9,
+      "q75": 13.5,
+      "n_episodes": 200
+     }
+    },
+    "jump_px": {
+     "median": 3.7,
+     "q25": 3.2,
+     "q75": 4.1,
+     "n_episodes": 200
+    },
+    "frac_boxes_clipped_by_border": 0.0
+   },
+   "label": "Awomo-0.5V",
+   "shards": [
+    "awomo_v-FB-q0",
+    "awomo_v-FB-q1",
+    "awomo_v-FB-q2",
+    "awomo_v-FB-q3"
+   ],
+   "adapter_sha256": "1c212a1d4b9386919c9649ee048bc90cca92795b3a887cab0572508560708be5",
+   "adapter_matches_F": true
+  }
+ },
+ "label_reference": {
+  "source": "results\\panel-train.json",
+  "n_demonstrations": 100,
+  "n_windows": 8174,
+  "spread_px": {
+   "median": 58.6,
+   "q25": 51.4,
+   "q75": 64.1,
+   "n_episodes": 100
+  },
+  "jump_px": {
+   "median": 16.1,
+   "q25": 10.5,
+   "q75": 31.5,
+   "n_episodes": 100
+  },
+  "note": "labelled centres exist only in cameras where the target is visible; demonstrations are shorter and more direct than rollouts"
+ },
+ "text_checks": {
+  "XR-1 FB run is complete (200 pairs)": true,
+  "XR-1 FB-F interval lies below zero (\"erases F's gain\")": true,
+  "XR-1 F-official is positive (\"F's gain over the official checkpoint\")": true,
+  "XR-1 FB-official interval covers zero (\"erases\", not \"reverses\")": true
+ }
+}

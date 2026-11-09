@@ -1,0 +1,9 @@
+{
+  "model": "awomo_i",
+  "condition": "FB",
+  "adapter": "train/runs/awomo_i-F/final/adapter.pt",
+  "gpu": 0,
+  "policy_seed": 4242,
+  "adapter_sha256": "c41c983405eacaa90e2fac410bf6cc210dc97332ce3b829d08caf53fd9d9a59c",
+  "inputs": "ordinary: original task instruction, clean RGB, raw state16; no box/stage prompts; no feedback"
+}

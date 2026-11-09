@@ -78,7 +78,7 @@
       "excluded_no_target": 11
     }
   },
-  "panel_sha256": "bf1d8abf757c412eb2855cd2c542fec40256ae5833baf54f2195d860962afb4a",
+  "panel_sha256": "a1ef1941093390efeeeb85e7b6f908fd2075bdb7fd13b9584cabd5cf2a201289",
   "panel_windows": 8174,
   "panel_path": "/dev/shm/qinzhen/sbl/ann/panel/panel-train.json"
 }

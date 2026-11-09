@@ -43,7 +43,16 @@ def main():
                 def _enc_rec(sample):
                     c = _enc(sample); core.history_len = c['history'].shape[1]; core.reference_len = c['reference'].shape[1]; return c
                 core.native.encode = _enc_rec
-        mods = {'policy': core.native} if variant == 'xr1' else {k: v for k, v in vars(core.native).items() if isinstance(v, torch.nn.Module)}
+            if variant == 'awomo_v':  # training captured the head feature only during the observation-only warm-up pass
+                _wu = core.native.warm_up
+                def _wu_capture(*a, **k):
+                    core.capture_clean = True
+                    try:
+                        return _wu(*a, **k)
+                    finally:
+                        core.capture_clean = False
+                core.native.warm_up = _wu_capture
+        mods ={'policy': core.native} if variant == 'xr1' else {k: v for k, v in vars(core.native).items() if isinstance(v, torch.nn.Module)}
         devices = {n: sorted(set(str(p.device) for p in m.parameters())) for n, m in mods.items()}
         receipt = {'ok': True, 'variant': variant, 'load_seconds': time.perf_counter() - start, 'devices': devices,
                    'loading': {'adapter': args.adapter, 'feedback': 'own location head, one-chunk delay, 32px box'}, 'training_started': False,
@@ -86,10 +95,7 @@ def main():
                             for i in range(3):
                                 frames[-1, i] = paint(frames[-1, i], fb[i])
                             req['camera_frames'] = frames
-                        if variant == 'awomo_v':
-                            core.capture_clean = True
                         out = native.predict(req); actions = out['actions']
-                        core.capture_clean = False
                     loc = None
                     if core.feature is not None:
                         loc = core.location_head(core.feature.float()).sigmoid().reshape(-1, 3, 2)[0].detach().cpu().numpy().tolist()

@@ -767,7 +767,7 @@
     }
    },
    "primary": true,
-   "holm_p": 0.8919,
+   "holm_p": 1.0,
    "supported": false
   },
   "xr1:F-S": {
@@ -1263,7 +1263,7 @@
     }
    },
    "primary": true,
-   "holm_p": 0.8099,
+   "holm_p": 0.854,
    "supported": false
   },
   "awomo_i:F-original": {
